@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=3 uid="uid://btsi4wcq6nij6"]
+[gd_scene load_steps=39 format=3 uid="uid://btsi4wcq6nij6"]
 
 [ext_resource type="Texture2D" uid="uid://kn2yuvhn4fw5" path="res://resources/hues/divine_hue.tres" id="1_6j3vh"]
 [ext_resource type="Shader" uid="uid://bma8lujm58b6b" path="res://resources/shaders/item_texture_rect.gdshader" id="1_pgw2g"]
@@ -19,6 +19,7 @@
 [ext_resource type="Texture2D" uid="uid://coja5b7gnulhf" path="res://assets/textures/ui/upgrade_mark.png" id="15_5m0rr"]
 [ext_resource type="Shader" uid="uid://d3xjtajhn6spb" path="res://scenes/ui/item_texture_rect/item_texture_rect.gdshader" id="15_gi6tl"]
 [ext_resource type="Texture2D" uid="uid://bwkv5l8gpulym" path="res://assets/textures/icons/p_dot.png" id="18_g3au6"]
+[ext_resource type="Texture2D" uid="uid://de6gl75bp7wed" path="res://assets/textures/icons/build_planner_match.png" id="20_13qpm"]
 
 [sub_resource type="Animation" id="Animation_s53pi"]
 length = 0.001
@@ -595,6 +596,25 @@ range_layer_max = 1
 [node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
 position = Vector2(17, 17)
 scale = Vector2(1.7, 1.7)
+
+[node name="BuildPlannerMatchRect" type="TextureRect" parent="."]
+visible = false
+modulate = Color(1, 0.654902, 0.0588235, 1)
+self_modulate = Color(1, 0.654902, 0.0588235, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = 5.0
+offset_right = -5.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("20_13qpm")
+expand_mode = 1
 
 [connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
 [connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
