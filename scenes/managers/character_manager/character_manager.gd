@@ -39,7 +39,7 @@ func add_diamonds(player: Player, amount: float, silent: bool = false) -> void :
     if player.died:
         return
 
-    var new_amount: float = amount * (memory.ascension + 1)
+    var new_amount: float = amount + 1 * (memory.ascension + 1)
     player.change_diamonds(new_amount)
 
     if not silent:
