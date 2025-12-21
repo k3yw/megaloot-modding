@@ -327,18 +327,19 @@ shader_parameter/gradient_size = 1.0
 shader_parameter/gradient_animated = false
 shader_parameter/gradient_time = 0.0
 
-[node name="MemorySlotContainer" type="MarginContainer" node_paths=PackedStringArray("adventurer_portrait_container", "seperator_labels", "floor_number_label", "game_mode_label", "ascension_label", "floor_label", "selection_panel")]
+[node name="MemorySlotContainer" type="MarginContainer" node_paths=PackedStringArray("adventurer_portrait_container", "seperator_labels", "floor_number_label", "game_mode_label", "ascension_label", "floor_label", "trial_label", "selection_panel")]
 offset_right = 377.0
 offset_bottom = 58.0
 size_flags_horizontal = 3
 size_flags_vertical = 0
 script = ExtResource("1_sm5ts")
 adventurer_portrait_container = NodePath("MarginContainer/VBoxContainer/AdventurerPortraitContainer")
-seperator_labels = [NodePath("MarginContainer/VBoxContainer/HBoxContainer/SeperatorLabel"), NodePath("MarginContainer/VBoxContainer/HBoxContainer/SeperatorLabel2")]
+seperator_labels = [NodePath("MarginContainer/VBoxContainer/HBoxContainer/SeperatorLabel"), NodePath("MarginContainer/VBoxContainer/HBoxContainer/SeperatorLabel2"), NodePath("MarginContainer/VBoxContainer/HBoxContainer/SeperatorLabel3")]
 floor_number_label = NodePath("MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer2/HBoxContainer/FloorNumberLabel")
 game_mode_label = NodePath("MarginContainer/VBoxContainer/HBoxContainer/GameModeLabel")
 ascension_label = NodePath("MarginContainer/VBoxContainer/HBoxContainer/AscensionLabel")
 floor_label = NodePath("MarginContainer/VBoxContainer/HBoxContainer/HBoxContainer2/HBoxContainer/FloorLabel")
+trial_label = NodePath("MarginContainer/VBoxContainer/HBoxContainer/TrialLabel")
 selection_panel = NodePath("SelectionPanel")
 
 [node name="SelectionPanel" parent="." instance=ExtResource("2_fyaig")]
@@ -433,6 +434,18 @@ translate = false
 material = SubResource("ShaderMaterial_7l854")
 layout_mode = 2
 text = "Ascension I"
+translate = false
+
+[node name="SeperatorLabel3" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("6_u7gsk")]
+material = SubResource("ShaderMaterial_qyjew")
+layout_mode = 2
+text = "|"
+translate = false
+
+[node name="TrialLabel" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("6_u7gsk")]
+material = SubResource("ShaderMaterial_7l854")
+layout_mode = 2
+text = "Trial"
 translate = false
 
 [node name="AdventurerPortraitContainer" type="VBoxContainer" parent="MarginContainer/VBoxContainer"]
