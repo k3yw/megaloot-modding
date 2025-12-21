@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://dslkbiemcgtpr"]
+
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_1dtej"]
+[ext_resource type="Script" uid="uid://c4ctjyf126oxv" path="res://resources/bb_scripts/timeout.gd" id="1_ilehu"]
+[ext_resource type="Texture2D" uid="uid://kogth1ypxse2" path="res://assets/textures/icons/timeout_icon.png" id="1_kcr60"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="3_utem7"]
+
+[resource]
+script = ExtResource("1_1dtej")
+name = "Timeout"
+icon = ExtResource("1_kcr60")
+color = Color(0.545098, 0.576471, 0.686275, 1)
+type = ExtResource("3_utem7")
+is_temporary = true
+is_percent = false
+limit = 99
+application_message = ""
+bb_script = ExtResource("1_ilehu")

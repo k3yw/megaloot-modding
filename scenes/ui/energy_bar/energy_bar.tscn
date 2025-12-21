@@ -1,0 +1,159 @@
+[gd_scene load_steps=7 format=3 uid="uid://d0or2f4qnj7nl"]
+
+[ext_resource type="PackedScene" uid="uid://c3nf02glhhiyf" path="res://scenes/ui/resource_bar/resource_bar.tscn" id="1_hxt85"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_ney5n"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_llqsw"]
+resource_local_to_scene = true
+shader = ExtResource("2_ney5n")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ry73u"]
+resource_local_to_scene = true
+shader = ExtResource("2_ney5n")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hxxin"]
+resource_local_to_scene = true
+shader = ExtResource("2_ney5n")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(0.937255, 0.792157, 0.564706, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w56jn"]
+resource_local_to_scene = true
+shader = ExtResource("2_ney5n")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(0.937255, 0.792157, 0.564706, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="EnergyBar" instance=ExtResource("1_hxt85")]
+size_flags_horizontal = 3
+
+[node name="BackPanel" parent="HBoxContainer/MarginContainer" index="0"]
+modulate = Color(0.937255, 0.792157, 0.564706, 1)
+
+[node name="ProgressBarUnder" parent="HBoxContainer/MarginContainer/MainBarContainer" index="0"]
+modulate = Color(0.458824, 0.372549, 0.298039, 1)
+
+[node name="ProgressBarMain" parent="HBoxContainer/MarginContainer/MainBarContainer" index="1"]
+modulate = Color(0.937255, 0.792157, 0.564706, 1)
+
+[node name="LabelPanel" parent="HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/DebuffsContainer/MarginContainer" index="0"]
+material = SubResource("ShaderMaterial_llqsw")
+
+[node name="GenericPanel" parent="HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/MarginContainer/MarginContainer" index="0"]
+material = SubResource("ShaderMaterial_ry73u")
+
+[node name="AmountLabel" parent="HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/MarginContainer/HBoxContainer" index="0"]
+material = SubResource("ShaderMaterial_hxxin")
+
+[node name="MiscLabel" parent="HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/MarginContainer/HBoxContainer" index="1"]
+material = SubResource("ShaderMaterial_w56jn")
+
+[node name="MaxAmountLabel" parent="HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/MarginContainer/HBoxContainer" index="2"]
+material = SubResource("ShaderMaterial_w56jn")

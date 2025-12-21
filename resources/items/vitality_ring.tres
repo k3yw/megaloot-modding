@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://cqcvf4nex2v7b"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_h1d6i"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_1otta"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_uvgo0"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="6_42i3d"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_yxu3p"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="7_ag1na"]
+[ext_resource type="Texture2D" uid="uid://6f1hqoiw3qyf" path="res://assets/textures/items/vitality_ring.png" id="8_e227f"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_fpnux"]
+
+[sub_resource type="Resource" id="Resource_n203n"]
+script = ExtResource("1_h1d6i")
+boosting_sets = Array[ExtResource("6_yxu3p")]([])
+resource = ExtResource("2_1otta")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_uvgo0")
+name = &"Vitality Ring"
+texture = ExtResource("8_e227f")
+socket_type = ExtResource("6_42i3d")
+set_resources = Array[ExtResource("6_yxu3p")]([ExtResource("7_ag1na")])
+bonus_stats = Array[ExtResource("1_h1d6i")]([SubResource("Resource_n203n")])
+unlock_requirements = Array[ExtResource("8_fpnux")]([])
+extra_price = 10.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

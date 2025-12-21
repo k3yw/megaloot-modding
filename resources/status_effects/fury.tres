@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://c7nspo8qf15gy"]
+
+[ext_resource type="Script" uid="uid://xrtx4cqltquk" path="res://resources/bb_scripts/fury.gd" id="1_lvydi"]
+[ext_resource type="Texture2D" uid="uid://h0x4kpllstm6" path="res://assets/textures/icons/fury_icon.png" id="1_sahph"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_w4vqb"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_xstyu"]
+
+[resource]
+script = ExtResource("1_w4vqb")
+name = "Fury"
+icon = ExtResource("1_sahph")
+color = Color(1, 0.278431, 0.00784314, 1)
+type = ExtResource("3_xstyu")
+is_temporary = false
+is_percent = false
+limit = -1
+application_message = "FURY"
+bb_script = ExtResource("1_lvydi")

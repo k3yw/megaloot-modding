@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=3 format=3 uid="uid://bauhrobfl1jfi"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_bxjix"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="1_hlo1h"]
+
+[resource]
+script = ExtResource("1_hlo1h")
+name = "Ironclad"
+bonus_stats = Array[ExtResource("1_bxjix")]([])

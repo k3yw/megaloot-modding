@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://did0ki8t64v1y"]
+
+[ext_resource type="Script" uid="uid://2edmfrbpv2uy" path="res://scenes/managers/gameplay_popup_manager/gameplay_popup_manager.gd" id="1_njmn7"]
+
+[node name="GameplayPopupManager" type="Node2D"]
+z_index = 2
+script = ExtResource("1_njmn7")

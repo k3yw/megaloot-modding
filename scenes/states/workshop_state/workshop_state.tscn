@@ -1,0 +1,308 @@
+[gd_scene load_steps=14 format=3 uid="uid://de6a8qp7os033"]
+
+[ext_resource type="Script" uid="uid://g4rt1fhjpc7w" path="res://scenes/states/workshop_state/workshop_state.gd" id="1_lbs2r"]
+[ext_resource type="PackedScene" uid="uid://coe38e75le0dh" path="res://scenes/ui/tab_button/tab_button.tscn" id="2_ag075"]
+[ext_resource type="PackedScene" uid="uid://duwxqia2hvbth" path="res://scenes/ui/generic_panel/generic_panel.tscn" id="3_qlr36"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="4_s08s5"]
+[ext_resource type="PackedScene" uid="uid://c4aawipxq5brq" path="res://scenes/ui/generic_tab_container/generic_tab_container.tscn" id="5_kw5c7"]
+[ext_resource type="PackedScene" uid="uid://ibsed7a42sou" path="res://scenes/ui/generic_line_edit/generic_line_edit.tscn" id="6_qlr36"]
+[ext_resource type="PackedScene" uid="uid://bsv1i4g07qhyg" path="res://scenes/ui/image_selection_container/image_selection_container.tscn" id="6_s08s5"]
+[ext_resource type="PackedScene" uid="uid://dce7wjacgnrxs" path="res://scenes/ui/flat_generic_button/flat_generic_button.tscn" id="7_s08s5"]
+[ext_resource type="PackedScene" uid="uid://bxoncw32voayn" path="res://scenes/ui/generic_button/generic_button.tscn" id="7_ued8b"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ms8un"]
+resource_local_to_scene = true
+shader = ExtResource("4_s08s5")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hxvkm"]
+resource_local_to_scene = true
+shader = ExtResource("4_s08s5")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qlr36"]
+resource_local_to_scene = true
+shader = ExtResource("4_s08s5")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s08s5"]
+resource_local_to_scene = true
+shader = ExtResource("4_s08s5")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="WorkshopState" type="Node" node_paths=PackedStringArray("active_mods_label_container", "image_selection_container", "select_file_button", "file_dialog", "workshop_id_line_edit", "file_path_line_edit", "name_line_edit", "update_upload_button", "back_button")]
+script = ExtResource("1_lbs2r")
+active_mods_label_container = NodePath("CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/ActiveModsContainer/ActiveModsLabelContainer")
+image_selection_container = NodePath("CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/ImageSelectionContainer")
+select_file_button = NodePath("CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer/SelectFileButton")
+file_dialog = NodePath("FileDialog")
+workshop_id_line_edit = NodePath("CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2/WorkshopIDLineEdit/MarginContainer/LineEdit")
+file_path_line_edit = NodePath("CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer/FilePathLineEdit/MarginContainer/LineEdit")
+name_line_edit = NodePath("CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2/NameLineEdit/MarginContainer/LineEdit")
+update_upload_button = NodePath("CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/UpdateUploadButton")
+back_button = NodePath("CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/MarginContainer/BackButton")
+
+[node name="FileDialog" type="FileDialog" parent="."]
+title = "Open a Directory"
+ok_button_text = "Select Current Folder"
+file_mode = 2
+access = 2
+use_native_dialog = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="ActiveModsButton" parent="CanvasLayer/VBoxContainer/HBoxContainer" instance=ExtResource("2_ag075")]
+custom_minimum_size = Vector2(95, 26)
+layout_mode = 2
+text = "active mods"
+
+[node name="UploadButton" parent="CanvasLayer/VBoxContainer/HBoxContainer" instance=ExtResource("2_ag075")]
+layout_mode = 2
+text = "upload"
+is_pressed = true
+
+[node name="MarginContainer2" type="MarginContainer" parent="CanvasLayer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="GenericPanel" parent="CanvasLayer/VBoxContainer/MarginContainer2" instance=ExtResource("3_qlr36")]
+material = SubResource("ShaderMaterial_ms8un")
+layout_mode = 2
+region_rect = Rect2(0, 2, 7, 5)
+patch_margin_top = 2
+patch_margin_bottom = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GenericTabContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer" node_paths=PackedStringArray("tab_buttons") instance=ExtResource("5_kw5c7")]
+layout_mode = 2
+current_tab = 1
+tab_buttons = [NodePath("../../../HBoxContainer/ActiveModsButton"), NodePath("../../../HBoxContainer/UploadButton")]
+
+[node name="ActiveModsContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer"]
+visible = false
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 22
+theme_override_constants/margin_bottom = 20
+metadata/_tab_index = 0
+
+[node name="ActiveModsLabelContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/ActiveModsContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="UploadContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 22
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 22
+theme_override_constants/margin_bottom = 20
+metadata/_tab_index = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer"]
+layout_mode = 2
+theme_override_constants/separation = 23
+
+[node name="ImageSelectionContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer" instance=ExtResource("6_s08s5")]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 15
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="NameLineEdit" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("6_qlr36")]
+custom_minimum_size = Vector2(345, 0)
+layout_mode = 2
+
+[node name="GenericPanel" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2/NameLineEdit" index="0"]
+material = SubResource("ShaderMaterial_hxvkm")
+
+[node name="LineEdit" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2/NameLineEdit/MarginContainer" index="0"]
+placeholder_text = "name..."
+
+[node name="WorkshopIDLineEdit" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2" instance=ExtResource("6_qlr36")]
+custom_minimum_size = Vector2(0, 28)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GenericPanel" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2/WorkshopIDLineEdit" index="0"]
+material = SubResource("ShaderMaterial_qlr36")
+
+[node name="LineEdit" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2/WorkshopIDLineEdit/MarginContainer" index="0"]
+placeholder_text = "workshop id..."
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 0
+theme_override_constants/separation = 15
+
+[node name="FilePathLineEdit" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("6_qlr36")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GenericPanel" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer/FilePathLineEdit" index="0"]
+material = SubResource("ShaderMaterial_s08s5")
+
+[node name="LineEdit" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer/FilePathLineEdit/MarginContainer" index="0"]
+custom_minimum_size = Vector2(0, 28)
+placeholder_text = "file path..."
+
+[node name="SelectFileButton" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("7_s08s5")]
+layout_mode = 2
+text = "SELECT FILE"
+
+[node name="UpdateUploadButton" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer" instance=ExtResource("7_s08s5")]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "UPLOAD"
+
+[node name="MarginContainer" type="MarginContainer" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="BackButton" parent="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/MarginContainer" groups=["main_joypad_selection"] instance=ExtResource("7_ued8b")]
+custom_minimum_size = Vector2(86, 0)
+layout_mode = 2
+size_flags_horizontal = 0
+text = "BACK"
+
+[connection signal="dir_selected" from="FileDialog" to="." method="_on_file_dialog_dir_selected"]
+[connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]
+
+[editable path="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2/NameLineEdit"]
+[editable path="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer2/WorkshopIDLineEdit"]
+[editable path="CanvasLayer/VBoxContainer/MarginContainer2/VBoxContainer/GenericTabContainer/UploadContainer/HBoxContainer/VBoxContainer/HBoxContainer/FilePathLineEdit"]

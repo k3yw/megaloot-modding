@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Keyword" load_steps=3 format=3 uid="uid://cem2b55ugkfw6"]
+
+[ext_resource type="Script" uid="uid://ivypbte45ghh" path="res://resources/bb_scripts/tier_i_reward.gd" id="1_a6m0b"]
+[ext_resource type="Script" uid="uid://3d38osm0yilr" path="res://classes/resource/keyword.gd" id="1_y0o6w"]
+
+[resource]
+script = ExtResource("1_y0o6w")
+name = &"Tier I Reward"
+color = Color(0, 0, 0, 1)
+bb_script = ExtResource("1_a6m0b")
+metadata/_custom_type_script = "uid://3d38osm0yilr"

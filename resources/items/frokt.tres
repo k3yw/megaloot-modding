@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=8 format=3 uid="uid://btcjkmac1uvnc"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_qhuyv"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_vg53i"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_510cx"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="4_81qak"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="5_1wwdk"]
+[ext_resource type="Resource" uid="uid://cx3yom37ddk2n" path="res://resources/stats/freeze_attack.tres" id="5_510cx"]
+[ext_resource type="Texture2D" uid="uid://bvl17tjk55abt" path="res://assets/textures/items/frokt.png" id="5_vg53i"]
+
+[resource]
+script = ExtResource("2_vg53i")
+name = &"Frokt"
+texture = ExtResource("5_vg53i")
+set_resources = Array[ExtResource("3_510cx")]([ExtResource("4_81qak")])
+stat_to_adapt = ExtResource("5_510cx")
+bonus_stats = Array[ExtResource("1_qhuyv")]([])
+unlock_requirements = Array[ExtResource("5_1wwdk")]([])
+extra_price = 0.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = false
+is_artifact = false
+is_special = true
+metadata/_custom_type_script = "uid://bp3opkohcamor"

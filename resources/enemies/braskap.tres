@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://b3s6e7uh0mtax"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_xyo6k"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_ekfvx"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_k6lkp"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="4_rexam"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_rwc28"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_ckwpc"]
+[ext_resource type="Resource" uid="uid://dpl8agabg0hnp" path="res://resources/stats/elemental_resistance.tres" id="5_opmdr"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="6_6bn5j"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_rexam"]
+[ext_resource type="Resource" uid="uid://xnovuq7jfivb" path="res://resources/stats/toxicity.tres" id="7_2jg5d"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="7_opmdr"]
+[ext_resource type="Resource" uid="uid://cq0hagrajnnll" path="res://resources/passives/plated_rot.tres" id="9_opmdr"]
+[ext_resource type="Texture2D" uid="uid://dteis4dm825c0" path="res://assets/textures/enemies/braskap.png" id="12_50bac"]
+
+[sub_resource type="Resource" id="Resource_am2hv"]
+script = ExtResource("3_k6lkp")
+boosting_sets = Array[ExtResource("2_ekfvx")]([])
+resource = ExtResource("4_rexam")
+amount = 24.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_xym3b"]
+script = ExtResource("3_k6lkp")
+boosting_sets = Array[ExtResource("2_ekfvx")]([])
+resource = ExtResource("5_opmdr")
+amount = 24.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_a6kfa"]
+script = ExtResource("3_k6lkp")
+boosting_sets = Array[ExtResource("2_ekfvx")]([])
+resource = ExtResource("6_6bn5j")
+amount = 6.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_uaikp"]
+script = ExtResource("3_k6lkp")
+boosting_sets = Array[ExtResource("2_ekfvx")]([])
+resource = ExtResource("7_2jg5d")
+amount = 3.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("5_ckwpc")
+name = "Braskap"
+texture = ExtResource("12_50bac")
+floor_number = 9
+flying = false
+starting_status_effects = Array[ExtResource("6_rexam")]([])
+active_item_sets = Array[ExtResource("2_ekfvx")]([])
+stats_per_level = Array[ExtResource("7_opmdr")]([])
+base_stats = Array[ExtResource("3_k6lkp")]([SubResource("Resource_am2hv"), SubResource("Resource_xym3b"), SubResource("Resource_a6kfa"), SubResource("Resource_uaikp")])
+abilities = Array[ExtResource("1_xyo6k")]([])
+passives = Array[ExtResource("4_rwc28")]([ExtResource("9_opmdr")])
+is_unique = false
+hide_stats = false
+metadata/_custom_type_script = "uid://p2rd2m1ktgi5"

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=15 format=3 uid="uid://dwqerrvnyldh2"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_bfykv"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_drpmi"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_so6te"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_y8amh"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_0yrpq"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="3_pf7w6"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_8pgy8"]
+[ext_resource type="Texture2D" uid="uid://c0lohcag1m46i" path="res://assets/textures/enemies/leafing.png" id="4_xwder"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="6_cfm5x"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="7_olrho"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="10_xhjvn"]
+
+[sub_resource type="Resource" id="Resource_a38r3"]
+script = ExtResource("2_0yrpq")
+boosting_sets = Array[ExtResource("1_bfykv")]([])
+resource = ExtResource("1_y8amh")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_k4e0u"]
+script = ExtResource("2_0yrpq")
+boosting_sets = Array[ExtResource("1_bfykv")]([])
+resource = ExtResource("3_pf7w6")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0a1rn"]
+script = ExtResource("2_0yrpq")
+boosting_sets = Array[ExtResource("1_bfykv")]([])
+resource = ExtResource("4_8pgy8")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_drpmi")
+name = "Leafing"
+texture = ExtResource("4_xwder")
+floor_number = 0
+flying = false
+starting_status_effects = Array[ExtResource("7_olrho")]([])
+active_item_sets = Array[ExtResource("1_bfykv")]([])
+stats_per_level = Array[ExtResource("10_xhjvn")]([])
+base_stats = Array[ExtResource("2_0yrpq")]([SubResource("Resource_a38r3"), SubResource("Resource_k4e0u"), SubResource("Resource_0a1rn")])
+abilities = Array[ExtResource("1_so6te")]([])
+passives = Array[ExtResource("6_cfm5x")]([])
+hide_stats = false

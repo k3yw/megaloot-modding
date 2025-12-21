@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_by2q1"]
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/scout.png" id="2_lqm6b"]
+[ext_resource type="Resource" path="res://resources/item_sets/scout.tres" id="3_o8vab"]
+[ext_resource type="Resource" path="res://resources/stats/total_attacks.tres" id="6_4xcig"]
+[ext_resource type="Resource" path="res://resources/stats/agility.tres" id="7_xcc5k"]
+[ext_resource type="Resource" path="res://resources/stats/crit_chance.tres" id="8_8ydqb"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_xfniw"]
+
+[resource]
+script = ExtResource("2_by2q1")
+name = "Windwalker"
+color = Color(0.752941, 0.941176, 1, 1)
+icon = ExtResource("2_lqm6b")
+original_item_set = ExtResource("3_o8vab")
+completed_floor_to_unlock = 5
+stats = Array[ExtResource("9_xfniw")]([ExtResource("6_4xcig"), ExtResource("7_xcc5k"), ExtResource("8_8ydqb")])
+stats_new = Array[ExtResource("9_xfniw")]([ExtResource("6_4xcig"), ExtResource("7_xcc5k"), ExtResource("8_8ydqb")])

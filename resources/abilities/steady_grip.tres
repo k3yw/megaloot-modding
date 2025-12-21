@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=7 format=3 uid="uid://wogswc2i51qs"]
+
+[ext_resource type="Script" uid="uid://bauiwod0o11yh" path="res://resources/ability_scripts/steady_grip.gd" id="1_1dw37"]
+[ext_resource type="Script" uid="uid://c7oft6kdlx64k" path="res://resources/bb_scripts/steady_grip.gd" id="2_6hjwx"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_461my"]
+[ext_resource type="Texture2D" uid="uid://dfhofwms3u8vh" path="res://assets/textures/icons/extra_attack_icon.png" id="4_po2w4"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="5_2uwg6"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="6_cbsaj"]
+
+[resource]
+script = ExtResource("5_2uwg6")
+name = "Steady Grip"
+icon = ExtResource("4_po2w4")
+mana_cost = 0
+use_limit = 3
+status_effects_on_activation = Array[ExtResource("6_cbsaj")]([])
+bonus_stats_while_active = Array[ExtResource("3_461my")]([])
+quick_cast = false
+non_target = true
+to_attack = true
+ability_script = ExtResource("1_1dw37")
+bb_script = ExtResource("2_6hjwx")

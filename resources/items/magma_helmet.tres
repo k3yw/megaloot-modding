@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://dnrp2hvudupl4"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_6g7x0"]
+[ext_resource type="Resource" uid="uid://1n584t8hda8s" path="res://resources/item_sets/magma.tres" id="2_nxxrg"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_2d7we"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="4_q6362"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_it8ic"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_lu3p2"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_ehinh"]
+[ext_resource type="Texture2D" uid="uid://dvr6hfsfvde80" path="res://assets/textures/items/magma_helmet.png" id="7_o14cx"]
+
+[sub_resource type="Resource" id="Resource_cnlkg"]
+script = ExtResource("1_6g7x0")
+boosting_sets = Array[ExtResource("6_lu3p2")]([ExtResource("2_nxxrg")])
+resource = ExtResource("3_2d7we")
+amount = 14.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_amy70"]
+script = ExtResource("1_6g7x0")
+boosting_sets = Array[ExtResource("6_lu3p2")]([])
+resource = ExtResource("4_q6362")
+amount = 8.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_it8ic")
+name = &"Magma Helmet"
+texture = ExtResource("7_o14cx")
+description = ""
+socket_type = ExtResource("7_ehinh")
+set_resources = Array[ExtResource("6_lu3p2")]([ExtResource("2_nxxrg")])
+bonus_stats = Array[ExtResource("1_6g7x0")]([SubResource("Resource_cnlkg"), SubResource("Resource_amy70")])
+extra_price = 65.0
+spawn_floor = 15
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

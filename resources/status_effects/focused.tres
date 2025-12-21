@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://c50hlqkwnyjap"]
+
+[ext_resource type="Script" uid="uid://c5f6mf2u5mch6" path="res://resources/bb_scripts/focused.gd" id="1_q6bpv"]
+[ext_resource type="Texture2D" uid="uid://b13y5eu8k0rd6" path="res://assets/textures/icons/perfect_focus.png" id="2_ojphp"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="3_14aye"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="4_i18ay"]
+
+[resource]
+script = ExtResource("3_14aye")
+name = "Focused"
+icon = ExtResource("2_ojphp")
+color = Color(0.505882, 0.52549, 0.67451, 1)
+type = ExtResource("4_i18ay")
+is_temporary = true
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_q6bpv")

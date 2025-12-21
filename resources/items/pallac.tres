@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=8 format=3 uid="uid://x5fhurgm2t7i"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_u0kue"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_p1txg"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_0v0fy"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="4_bx4kv"]
+[ext_resource type="Resource" uid="uid://b64ap6hlsvruc" path="res://resources/stats/armored_attack.tres" id="5_0v0fy"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="5_oop36"]
+[ext_resource type="Texture2D" uid="uid://elkf5jrrahs1" path="res://assets/textures/items/pallac.png" id="6_bx4kv"]
+
+[resource]
+script = ExtResource("2_p1txg")
+name = &"Pallac"
+texture = ExtResource("6_bx4kv")
+set_resources = Array[ExtResource("3_0v0fy")]([ExtResource("4_bx4kv")])
+stat_to_adapt = ExtResource("5_0v0fy")
+bonus_stats = Array[ExtResource("1_u0kue")]([])
+unlock_requirements = Array[ExtResource("5_oop36")]([])
+extra_price = 0.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = false
+is_artifact = false
+is_special = true
+metadata/_custom_type_script = "uid://bp3opkohcamor"

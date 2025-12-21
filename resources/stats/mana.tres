@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=4 format=3 uid="uid://ki8bs41guflj"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_2iknc"]
+[ext_resource type="Script" uid="uid://dbitaab6e6mgl" path="res://resources/bb_scripts/mana.gd" id="1_24h6s"]
+[ext_resource type="Texture2D" uid="uid://d36r4fpk6ay55" path="res://assets/textures/icons/mana_icon.png" id="1_34m8l"]
+
+[resource]
+script = ExtResource("1_2iknc")
+name = "Mana"
+icon = ExtResource("1_34m8l")
+color = Color(0.156863, 0.360784, 0.768627, 1)
+is_percentage = false
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0
+bb_script = ExtResource("1_24h6s")

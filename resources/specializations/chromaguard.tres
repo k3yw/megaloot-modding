@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_23enk"]
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/chromalure_icon.png" id="2_npdeo"]
+[ext_resource type="Resource" path="res://resources/item_sets/chromalure.tres" id="3_ps08l"]
+[ext_resource type="Resource" path="res://resources/stats/toxicity.tres" id="6_dtex7"]
+[ext_resource type="Resource" path="res://resources/stats/armor.tres" id="7_4dij1"]
+[ext_resource type="Resource" path="res://resources/stats/total_attacks.tres" id="8_emcfd"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_it2cd"]
+
+[resource]
+script = ExtResource("2_23enk")
+name = "Chromaguard"
+color = Color(0.462745, 0.380392, 0.67451, 1)
+icon = ExtResource("2_npdeo")
+original_item_set = ExtResource("3_ps08l")
+completed_floor_to_unlock = 4
+stats = Array[ExtResource("9_it2cd")]([ExtResource("6_dtex7"), ExtResource("7_4dij1"), ExtResource("8_emcfd")])
+stats_new = Array[ExtResource("9_it2cd")]([ExtResource("6_dtex7"), ExtResource("7_4dij1"), ExtResource("8_emcfd")])

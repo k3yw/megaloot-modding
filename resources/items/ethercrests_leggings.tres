@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://din2k1lnmur80"]
+
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="1_fy7ks"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_pm8ev"]
+[ext_resource type="Resource" uid="uid://g3um3f8ovjwk" path="res://resources/item_sets/ancient_ice.tres" id="2_ydf08"]
+[ext_resource type="Texture2D" uid="uid://baimsrn0pj25f" path="res://assets/textures/items/ethercrests_leggings.png" id="3_cg1bb"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_k000h"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_0igif"]
+[ext_resource type="Resource" uid="uid://cmw0nuwmn0iiu" path="res://resources/socket_types/leggings.tres" id="6_yul32"]
+
+[sub_resource type="Resource" id="Resource_e6ydw"]
+script = ExtResource("3_k000h")
+boosting_sets = Array[ExtResource("6_0igif")]([ExtResource("2_ydf08")])
+resource = ExtResource("2_pm8ev")
+amount = 14.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_fy7ks")
+name = &"Ethercrest\'s Leggings"
+texture = ExtResource("3_cg1bb")
+description = ""
+socket_type = ExtResource("6_yul32")
+set_resources = Array[ExtResource("6_0igif")]([ExtResource("2_ydf08")])
+bonus_stats = Array[ExtResource("3_k000h")]([SubResource("Resource_e6ydw")])
+extra_price = 20.0
+spawn_floor = 14
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

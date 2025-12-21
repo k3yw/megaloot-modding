@@ -1,0 +1,227 @@
+[gd_scene load_steps=13 format=3 uid="uid://d32fjec5dsci"]
+
+[ext_resource type="Script" uid="uid://bhbjsodqenshu" path="res://scenes/ui/synergy_container/synergy_container.gd" id="1_4pc8p"]
+[ext_resource type="PackedScene" uid="uid://duwxqia2hvbth" path="res://scenes/ui/generic_panel/generic_panel.tscn" id="1_b6gg7"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_4pc8p"]
+[ext_resource type="Texture2D" uid="uid://cain1lwf4wicd" path="res://assets/textures/ui/small_panel_background.png" id="3_ffiik"]
+[ext_resource type="Texture2D" uid="uid://d8e52ogpvr7y" path="res://assets/textures/icons/item_sets/scout.png" id="4_ph2qs"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="5_pijw2"]
+[ext_resource type="PackedScene" uid="uid://c44wlrtoiy84r" path="res://scenes/modules/hover_info_module/hover_info_module.tscn" id="6_ffiik"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1n7oc"]
+resource_local_to_scene = true
+shader = ExtResource("2_4pc8p")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4pc8p"]
+resource_local_to_scene = true
+shader = ExtResource("2_4pc8p")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 1
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ffiik"]
+resource_local_to_scene = true
+shader = ExtResource("2_4pc8p")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 1
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_eh80j"]
+resource_local_to_scene = true
+shader = ExtResource("2_4pc8p")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ph2qs"]
+resource_local_to_scene = true
+shader = ExtResource("2_4pc8p")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 1
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="SynergyContainer" type="MarginContainer" node_paths=PackedStringArray("main_set_texture_rect", "synergy_set_texture_rect", "result_set_texture_rect", "main_set_hover_info_module", "synergy_set_hover_info_module", "result_set_hover_info_module")]
+offset_right = 66.0
+offset_bottom = 16.0
+script = ExtResource("1_4pc8p")
+main_set_texture_rect = NodePath("MarginContainer/HBoxContainer/MainSetTextureRect")
+synergy_set_texture_rect = NodePath("MarginContainer/HBoxContainer/SynergySetTextureRect")
+result_set_texture_rect = NodePath("MarginContainer/HBoxContainer/ResultSetTextureRect")
+main_set_hover_info_module = NodePath("MarginContainer/HBoxContainer/MainSetTextureRect/HoverInfoModule")
+synergy_set_hover_info_module = NodePath("MarginContainer/HBoxContainer/SynergySetTextureRect/HoverInfoModule")
+result_set_hover_info_module = NodePath("MarginContainer/HBoxContainer/ResultSetTextureRect/HoverInfoModule")
+
+[node name="GenericPanel" parent="." instance=ExtResource("1_b6gg7")]
+material = SubResource("ShaderMaterial_1n7oc")
+layout_mode = 2
+texture = ExtResource("3_ffiik")
+region_rect = Rect2(0, 0, 5, 5)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="MainSetTextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer" groups=["visible_by_joypad"]]
+material = SubResource("ShaderMaterial_4pc8p")
+layout_mode = 2
+texture = ExtResource("4_ph2qs")
+
+[node name="HoverInfoModule" parent="MarginContainer/HBoxContainer/MainSetTextureRect" instance=ExtResource("6_ffiik")]
+translate = false
+
+[node name="SynergySetTextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer" groups=["visible_by_joypad"]]
+material = SubResource("ShaderMaterial_ffiik")
+layout_mode = 2
+texture = ExtResource("4_ph2qs")
+
+[node name="HoverInfoModule" parent="MarginContainer/HBoxContainer/SynergySetTextureRect" instance=ExtResource("6_ffiik")]
+translate = false
+
+[node name="MiscLabel" parent="MarginContainer/HBoxContainer" instance=ExtResource("5_pijw2")]
+material = SubResource("ShaderMaterial_eh80j")
+layout_mode = 2
+text = "="
+
+[node name="ResultSetTextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer" groups=["visible_by_joypad"]]
+material = SubResource("ShaderMaterial_ph2qs")
+layout_mode = 2
+texture = ExtResource("4_ph2qs")
+
+[node name="HoverInfoModule" parent="MarginContainer/HBoxContainer/ResultSetTextureRect" instance=ExtResource("6_ffiik")]
+translate = false

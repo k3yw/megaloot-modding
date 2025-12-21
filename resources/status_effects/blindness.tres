@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://d2o6vpbsdrcpc"]
+
+[ext_resource type="Script" uid="uid://cq84ioyu3o5t4" path="res://resources/bb_scripts/blindness.gd" id="1_etyk7"]
+[ext_resource type="Texture2D" uid="uid://dscwkoa78nw2o" path="res://assets/textures/icons/blindness_icon.png" id="2_nxh4v"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="3_djnkm"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="4_70in0"]
+
+[resource]
+script = ExtResource("3_djnkm")
+name = "Blindness"
+icon = ExtResource("2_nxh4v")
+color = Color(0.2418, 0.342653, 0.62, 1)
+type = ExtResource("4_70in0")
+is_temporary = true
+is_percent = false
+limit = 10
+application_message = ""
+bb_script = ExtResource("1_etyk7")

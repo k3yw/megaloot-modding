@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=4 format=3 uid="uid://ccu74s84ulyq0"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_dmqlg"]
+[ext_resource type="Script" uid="uid://c7omr0fninyd1" path="res://resources/bb_scripts/lethality.gd" id="1_uaxgl"]
+[ext_resource type="Texture2D" uid="uid://ckb34mqex2k0k" path="res://assets/textures/icons/stats/lethality_icon.png" id="2_7s3dk"]
+
+[resource]
+script = ExtResource("1_dmqlg")
+name = "Lethality"
+icon = ExtResource("2_7s3dk")
+color = Color(0.701961, 0.72549, 0.819608, 1)
+is_percentage = true
+max_amount = 100
+ignore_minimum_amount = false
+minimum_amount = 0.0
+bb_script = ExtResource("1_uaxgl")
+metadata/_custom_type_script = "uid://ctq5askfk0kre"

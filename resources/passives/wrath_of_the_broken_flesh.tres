@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://nqchk6knxses"]
+
+[ext_resource type="Script" uid="uid://blea62vwr7iyw" path="res://resources/bb_scripts/wrath_of_the_broken_flesh.gd" id="1_rd3qw"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_x0rkb"]
+[ext_resource type="Script" uid="uid://bd3nb8uk1nbbj" path="res://resources/passive_scripts/wrath_of_the_broken_flesh.gd" id="3_oxbvx"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_dl78o"]
+
+[resource]
+script = ExtResource("4_dl78o")
+name = "Wrath of the Broken Flesh"
+bonus_stats = Array[ExtResource("2_x0rkb")]([])
+game_logic_script = ExtResource("3_oxbvx")
+bb_script = ExtResource("1_rd3qw")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

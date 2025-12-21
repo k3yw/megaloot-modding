@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=13 format=3 uid="uid://bwn55vcdysuod"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ysnen"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="2_qphsr"]
+[ext_resource type="Resource" uid="uid://jcye68q8k8ja" path="res://resources/stats/faith.tres" id="3_dji2e"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_aabko"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_5uuv3"]
+[ext_resource type="Resource" uid="uid://cpbx0xacy8n4l" path="res://resources/passives/arcane_equilibrium.tres" id="5_su8b7"]
+[ext_resource type="Resource" uid="uid://dd23l0hhej72l" path="res://resources/item_sets/legacy.tres" id="6_mt5uv"]
+[ext_resource type="Texture2D" uid="uid://b537f1dmvk4ue" path="res://assets/textures/items/ring_of_unity.png" id="7_1t0og"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="7_hrfot"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="10_oa5r8"]
+
+[sub_resource type="Resource" id="Resource_vme8g"]
+script = ExtResource("1_ysnen")
+boosting_sets = Array[ExtResource("5_5uuv3")]([])
+resource = ExtResource("2_qphsr")
+amount = 13571.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_pbapn"]
+script = ExtResource("1_ysnen")
+boosting_sets = Array[ExtResource("5_5uuv3")]([null])
+resource = ExtResource("3_dji2e")
+amount = 75.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_aabko")
+name = &"Ring of Unity"
+texture = ExtResource("7_1t0og")
+socket_type = ExtResource("7_hrfot")
+set_resources = Array[ExtResource("5_5uuv3")]([ExtResource("6_mt5uv")])
+passive = ExtResource("5_su8b7")
+bonus_stats = Array[ExtResource("1_ysnen")]([SubResource("Resource_vme8g"), SubResource("Resource_pbapn")])
+unlock_requirements = Array[ExtResource("10_oa5r8")]([])
+extra_price = 327115.0
+spawn_floor = 60
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

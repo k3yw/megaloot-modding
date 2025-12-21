@@ -1,0 +1,18 @@
+class_name GlobalColors
+
+
+
+
+enum Type{
+    CUSTOM, 
+    BACKGROUND_COLOR, 
+    BORDER_COLOR, 
+    DARKER_BORDER_COLOR, 
+    PRIMARY_COLOR, 
+    SECONDARY_COLOR, 
+    ACCENT_COLOR, 
+    DARKER_ACCENT_COLOR, 
+    HIGHLIGHT_COLOR, 
+    POSITIVE_COLOR, 
+    ERROR, 
+}

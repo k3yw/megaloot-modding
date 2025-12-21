@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/mercenary_icon.png" id="2_anvu5"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_snaja"]
+[ext_resource type="Resource" path="res://resources/item_sets/mercenary.tres" id="3_bt18b"]
+[ext_resource type="Resource" path="res://resources/stats/combat.tres" id="6_oc3jt"]
+[ext_resource type="Resource" path="res://resources/stats/total_attacks.tres" id="7_2tg51"]
+[ext_resource type="Resource" path="res://resources/stats/greed.tres" id="8_ryd30"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_opnfd"]
+
+[resource]
+script = ExtResource("2_snaja")
+name = "Deserter"
+color = Color(0.66, 0.5412, 0.396, 1)
+icon = ExtResource("2_anvu5")
+original_item_set = ExtResource("3_bt18b")
+completed_floor_to_unlock = 7
+stats = Array[ExtResource("9_opnfd")]([ExtResource("6_oc3jt"), ExtResource("7_2tg51"), ExtResource("8_ryd30")])
+stats_new = Array[ExtResource("9_opnfd")]([ExtResource("6_oc3jt"), ExtResource("7_2tg51"), ExtResource("8_ryd30")])

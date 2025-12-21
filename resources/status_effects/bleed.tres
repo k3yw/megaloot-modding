@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://dknnuc7sl1qvj"]
+
+[ext_resource type="Script" uid="uid://cak51ta6qd7s4" path="res://resources/bb_scripts/bleed.gd" id="1_8sdws"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_61gtu"]
+[ext_resource type="Texture2D" uid="uid://bq0dujb8hgryi" path="res://assets/textures/icons/bleed.png" id="1_rgdbb"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="3_8sdws"]
+
+[resource]
+script = ExtResource("1_61gtu")
+name = "Bleed"
+icon = ExtResource("1_rgdbb")
+color = Color(0.705882, 0.12549, 0.270588, 1)
+type = ExtResource("3_8sdws")
+affected_by_tenacity = false
+is_temporary = false
+is_percent = true
+limit = 100
+application_message = ""
+bb_script = ExtResource("1_8sdws")
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=5 format=3 uid="uid://dd23l0hhej72l"]
+
+[ext_resource type="Texture2D" uid="uid://b6rjenjw1wkte" path="res://assets/textures/icons/item_sets/legacy_icon.png" id="1_1w4e4"]
+[ext_resource type="Script" uid="uid://d2yl0o7s5tf5v" path="res://resources/bb_scripts/legacy.gd" id="1_5rmi8"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_sm5hi"]
+[ext_resource type="Script" uid="uid://dfyh4di3ao3ft" path="res://resources/item_set_scripts/legacy.gd" id="2_fpioo"]
+
+[resource]
+script = ExtResource("1_sm5hi")
+name = "Legacy"
+icon = ExtResource("1_1w4e4")
+color = Color(0.996078, 0.952941, 0.752941, 1)
+value = 0
+flow_cost = 25
+game_logic_script = ExtResource("2_fpioo")
+bb_script = ExtResource("1_5rmi8")

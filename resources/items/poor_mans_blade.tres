@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://dtu0opy705v2c"]
+
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="1_2iy22"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="1_r68rt"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_emt8i"]
+[ext_resource type="Resource" uid="uid://cyku26uwvyikp" path="res://resources/item_sets/poverty.tres" id="5_fhio8"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_iusy5"]
+[ext_resource type="Texture2D" uid="uid://dmhjgp3i0koe6" path="res://assets/textures/items/poor_mans_blade.png" id="6_mes7e"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="6_uaod8"]
+
+[sub_resource type="Resource" id="Resource_sixwr"]
+script = ExtResource("2_emt8i")
+boosting_sets = Array[ExtResource("6_iusy5")]([ExtResource("5_fhio8")])
+resource = ExtResource("1_r68rt")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_2iy22")
+name = &"Poor Man\'s Blade"
+texture = ExtResource("6_mes7e")
+description = ""
+socket_type = ExtResource("6_uaod8")
+set_resources = Array[ExtResource("6_iusy5")]([ExtResource("5_fhio8")])
+bonus_stats = Array[ExtResource("2_emt8i")]([SubResource("Resource_sixwr")])
+extra_price = 2.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Trial" load_steps=4 format=3 uid="uid://cnwsnbqjjklww"]
+
+[ext_resource type="Script" uid="uid://dc7u05eyry0nl" path="res://classes/resource/trial.gd" id="1_c6p2l"]
+[ext_resource type="Texture2D" uid="uid://dqdx6uh5wps7x" path="res://assets/textures/icons/sagacity_trial.png" id="1_i60ac"]
+[ext_resource type="Script" uid="uid://va77pgn6b1t2" path="res://resources/bb_scripts/sagacity.gd" id="1_oy7rl"]
+
+[resource]
+script = ExtResource("1_c6p2l")
+name = "Sagacity"
+icon = ExtResource("1_i60ac")
+reward_tier = 1
+bb_script = ExtResource("1_oy7rl")
+metadata/_custom_type_script = "uid://dc7u05eyry0nl"

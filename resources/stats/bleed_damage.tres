@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://b1t0y8ypwxkd"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_pdw3l"]
+[ext_resource type="Texture2D" uid="uid://bq0dujb8hgryi" path="res://assets/textures/icons/bleed.png" id="1_wh1sw"]
+
+[resource]
+script = ExtResource("1_pdw3l")
+name = "Bleed Damage"
+icon = ExtResource("1_wh1sw")
+color = Color(0.705882, 0.12549, 0.270588, 1)
+is_attack_type = false
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+metadata/_custom_type_script = "uid://ctq5askfk0kre"

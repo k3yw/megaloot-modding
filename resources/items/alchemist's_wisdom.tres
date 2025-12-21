@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://c331b7pq4jwmp"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_1yqfr"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="2_12der"]
+[ext_resource type="Resource" uid="uid://7y0w2enfo0o1" path="res://resources/stats/spelldom.tres" id="3_i7q05"]
+[ext_resource type="Resource" uid="uid://csugqpm6rf23w" path="res://resources/passives/manaflow.tres" id="4_u6lyh"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_te7gc"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_rk686"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="7_xqju4"]
+[ext_resource type="Texture2D" uid="uid://bg0po76xcxfnt" path="res://assets/textures/items/alchemists_wisdom.png" id="8_20bkn"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="8_i2lfc"]
+
+[sub_resource type="Resource" id="Resource_k4f2t"]
+script = ExtResource("1_1yqfr")
+boosting_sets = Array[ExtResource("6_rk686")]([])
+resource = ExtResource("2_12der")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_crirl"]
+script = ExtResource("1_1yqfr")
+boosting_sets = Array[ExtResource("6_rk686")]([null])
+resource = ExtResource("3_i7q05")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_te7gc")
+name = &"Alchemist\'s Wisdom"
+texture = ExtResource("8_20bkn")
+description = ""
+socket_type = ExtResource("8_i2lfc")
+set_resources = Array[ExtResource("6_rk686")]([ExtResource("7_xqju4")])
+passive = ExtResource("4_u6lyh")
+bonus_stats = Array[ExtResource("1_1yqfr")]([SubResource("Resource_k4f2t"), SubResource("Resource_crirl")])
+extra_price = 76.0
+spawn_floor = 9
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

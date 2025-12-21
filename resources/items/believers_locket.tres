@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://c061mv1yl3f0g"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ieohc"]
+[ext_resource type="Resource" uid="uid://m25hhepu4mn4" path="res://resources/item_sets/silver.tres" id="2_3wfkv"]
+[ext_resource type="Resource" uid="uid://jcye68q8k8ja" path="res://resources/stats/faith.tres" id="3_obn5n"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_wt8gw"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="6_3dvlx"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_150nm"]
+[ext_resource type="Texture2D" uid="uid://brw1epo22etlh" path="res://assets/textures/items/believers_locket.png" id="7_sbigr"]
+
+[sub_resource type="Resource" id="Resource_lshmq"]
+script = ExtResource("1_ieohc")
+boosting_sets = Array[ExtResource("6_150nm")]([ExtResource("2_3wfkv")])
+resource = ExtResource("3_obn5n")
+amount = 36.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_wt8gw")
+name = &"Believer\'s Locket"
+texture = ExtResource("7_sbigr")
+description = ""
+socket_type = ExtResource("6_3dvlx")
+set_resources = Array[ExtResource("6_150nm")]([ExtResource("2_3wfkv")])
+bonus_stats = Array[ExtResource("1_ieohc")]([SubResource("Resource_lshmq")])
+extra_price = 125.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

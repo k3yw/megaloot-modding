@@ -1,0 +1,89 @@
+[gd_scene load_steps=10 format=3 uid="uid://b22elh5y580d0"]
+
+[ext_resource type="Texture2D" uid="uid://sp1r3od58q0s" path="res://assets/textures/items/training_sword.png" id="1_8b6iw"]
+[ext_resource type="Script" uid="uid://d2gh1bnaugw58" path="res://scenes/vfx/banished_item_effect/banished_item_effect.gd" id="2_wurbc"]
+
+[sub_resource type="Shader" id="Shader_l5vn3"]
+code = "shader_type canvas_item;
+
+uniform sampler2D dissolve_texture : source_color;
+uniform float dissolve_value : hint_range(0,1);
+uniform float burn_size: hint_range(0.0, 1.0, 0.01);
+uniform vec4 burn_color: source_color;
+
+void fragment(){
+    vec4 main_texture = texture(TEXTURE, UV);
+    vec4 noise_texture = texture(dissolve_texture, UV);
+	
+	// This is needed to avoid keeping a small burn_color dot with dissolve being 0 or 1
+	// is there another way to do it?
+	float burn_size_step = burn_size * step(0.001, dissolve_value) * step(dissolve_value, 0.999);
+	float threshold = smoothstep(noise_texture.x-burn_size_step, noise_texture.x, dissolve_value);
+	float border = smoothstep(noise_texture.x, noise_texture.x + burn_size_step, dissolve_value);
+	
+	COLOR.a *= threshold;
+	COLOR.rgb = mix(burn_color.rgb, main_texture.rgb, border);
+}"
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_1yir8"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_vm7yo"]
+noise = SubResource("FastNoiseLite_1yir8")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7xqyj"]
+resource_local_to_scene = true
+shader = SubResource("Shader_l5vn3")
+shader_parameter/dissolve_texture = SubResource("NoiseTexture2D_vm7yo")
+shader_parameter/dissolve_value = 1.0
+shader_parameter/burn_size = 0.1
+shader_parameter/burn_color = Color(0.234, 0.2901, 0.3, 1)
+
+[sub_resource type="Animation" id="Animation_15tdj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/dissolve_value")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_2ot3r"]
+resource_name = "start"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/dissolve_value")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_fkhli"]
+_data = {
+&"RESET": SubResource("Animation_15tdj"),
+&"start": SubResource("Animation_2ot3r")
+}
+
+[node name="BanishedItemEffect" type="Sprite2D"]
+material = SubResource("ShaderMaterial_7xqyj")
+texture = ExtResource("1_8b6iw")
+script = ExtResource("2_wurbc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_fkhli")
+}
+autoplay = "start"
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

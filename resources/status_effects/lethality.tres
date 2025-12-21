@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://chqywmcess50b"]
+
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_85blr"]
+[ext_resource type="Texture2D" uid="uid://ckb34mqex2k0k" path="res://assets/textures/icons/stats/lethality_icon.png" id="1_air2v"]
+[ext_resource type="Script" uid="uid://c7omr0fninyd1" path="res://resources/bb_scripts/lethality.gd" id="1_dnvu8"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="3_k57mi"]
+
+[resource]
+script = ExtResource("1_85blr")
+name = "Lethality"
+icon = ExtResource("1_air2v")
+color = Color(0.701961, 0.72549, 0.819608, 1)
+type = ExtResource("3_k57mi")
+is_temporary = false
+is_percent = true
+limit = 100
+application_message = ""
+bb_script = ExtResource("1_dnvu8")

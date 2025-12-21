@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=4 format=3 uid="uid://b55x24lihkwfj"]
+
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_bhiv8"]
+[ext_resource type="Texture2D" uid="uid://dvok53ry1k1ok" path="res://assets/textures/icons/stats/critical_strike_icon.png" id="1_bnetn"]
+[ext_resource type="Script" uid="uid://dmqc3j5plui0l" path="res://resources/bb_scripts/critical_strike.gd" id="1_q3hru"]
+
+[resource]
+script = ExtResource("1_bhiv8")
+name = "Omni Crit"
+icon = ExtResource("1_bnetn")
+color = Color(0.737255, 0.290196, 0.607843, 1)
+use_limit = 0
+popup_color = Color(0, 0, 0, 1)
+popup_text = ""
+popup_delay = 0.0
+screen_shake = true
+is_hit = true
+bb_script = ExtResource("1_q3hru")

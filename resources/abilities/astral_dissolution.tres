@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=5 format=3 uid="uid://dndeblvcpcyh3"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_5asqs"]
+[ext_resource type="Script" uid="uid://d1yb7jjfkdysf" path="res://resources/bb_scripts/astral_dissolution.gd" id="1_7tiat"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_pi70m"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_lei00"]
+
+[resource]
+script = ExtResource("2_pi70m")
+name = "Astral Dissolution"
+mana_cost = 2
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_lei00")]([])
+bonus_stats_while_active = Array[ExtResource("1_5asqs")]([])
+quick_cast = false
+non_target = false
+value = 0
+bb_script = ExtResource("1_7tiat")

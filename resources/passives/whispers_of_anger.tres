@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=6 format=3 uid="uid://dyc3urjawtjos"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_00pel"]
+[ext_resource type="Resource" uid="uid://i7el4x0fmvyc" path="res://resources/stats/crit_chance.tres" id="2_67mh0"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_yk5gj"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_dq0dc"]
+
+[sub_resource type="Resource" id="Resource_w18t3"]
+script = ExtResource("1_00pel")
+boosting_sets = Array[ExtResource("2_yk5gj")]([])
+resource = ExtResource("2_67mh0")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_dq0dc")
+name = "Whispers of Anger"
+bonus_stats = Array[ExtResource("1_00pel")]([SubResource("Resource_w18t3")])

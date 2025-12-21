@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=22 format=3 uid="uid://djck2jx0npri1"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_3a3ov"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_5dnfs"]
+[ext_resource type="Resource" uid="uid://cyctakuu2fani" path="res://resources/item_sets/flesh.tres" id="2_kolgn"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_tfv8e"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_k3hss"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="4_7mdwg"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_vxodx"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_b647s"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="6_nhtjg"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="7_6vxro"]
+[ext_resource type="Texture2D" uid="uid://d0l4jtod2ymml" path="res://assets/textures/enemies/eldrids_flesh.png" id="7_8lmxq"]
+[ext_resource type="Resource" uid="uid://nmolc84dhefq" path="res://resources/stats/life_steal.tres" id="8_6101q"]
+[ext_resource type="Resource" uid="uid://pvbac0njnmpw" path="res://resources/stats/penetration.tres" id="9_nkf3l"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="10_8hy2f"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="14_4apdt"]
+
+[sub_resource type="Resource" id="Resource_xeblc"]
+script = ExtResource("2_tfv8e")
+boosting_sets = Array[ExtResource("1_3a3ov")]([])
+resource = ExtResource("3_k3hss")
+amount = 24.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_cbxef"]
+script = ExtResource("2_tfv8e")
+boosting_sets = Array[ExtResource("1_3a3ov")]([])
+resource = ExtResource("4_7mdwg")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_a85s2"]
+script = ExtResource("2_tfv8e")
+boosting_sets = Array[ExtResource("1_3a3ov")]([])
+resource = ExtResource("6_nhtjg")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_uxnu4"]
+script = ExtResource("2_tfv8e")
+boosting_sets = Array[ExtResource("1_3a3ov")]([])
+resource = ExtResource("7_6vxro")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ibjsc"]
+script = ExtResource("2_tfv8e")
+boosting_sets = Array[ExtResource("1_3a3ov")]([])
+resource = ExtResource("8_6101q")
+amount = 45.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_jcop5"]
+script = ExtResource("2_tfv8e")
+boosting_sets = Array[ExtResource("1_3a3ov")]([])
+resource = ExtResource("9_nkf3l")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_vxodx")
+name = "Eldrid's Flesh"
+texture = ExtResource("7_8lmxq")
+floor_number = 13
+flying = false
+starting_status_effects = Array[ExtResource("6_b647s")]([])
+active_item_sets = Array[ExtResource("1_3a3ov")]([ExtResource("2_kolgn")])
+stats_per_level = Array[ExtResource("14_4apdt")]([])
+base_stats = Array[ExtResource("2_tfv8e")]([SubResource("Resource_xeblc"), SubResource("Resource_cbxef"), SubResource("Resource_a85s2"), SubResource("Resource_uxnu4"), SubResource("Resource_ibjsc"), SubResource("Resource_jcop5")])
+abilities = Array[ExtResource("1_5dnfs")]([])
+passives = Array[ExtResource("10_8hy2f")]([])
+hide_stats = false

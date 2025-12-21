@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://ce3m2sdfyysic"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_jxydo"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_lflff"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_hka7d"]
+[ext_resource type="Resource" uid="uid://xnovuq7jfivb" path="res://resources/stats/toxicity.tres" id="4_hka7d"]
+[ext_resource type="Resource" uid="uid://b0reailgui4vy" path="res://resources/item_sets/chromalure.tres" id="4_lflff"]
+[ext_resource type="Texture2D" uid="uid://b2sld5b3x5o5d" path="res://assets/textures/items/ashcrow.png" id="5_hka7d"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="6_0sd2p"]
+
+[sub_resource type="Resource" id="Resource_0sd2p"]
+script = ExtResource("1_jxydo")
+boosting_sets = Array[ExtResource("3_hka7d")]([ExtResource("4_lflff")])
+resource = ExtResource("4_hka7d")
+amount = 12.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_lflff")
+name = &"Ashcrow"
+texture = ExtResource("5_hka7d")
+description = ""
+socket_type = ExtResource("6_0sd2p")
+set_resources = Array[ExtResource("3_hka7d")]([ExtResource("4_lflff")])
+bonus_stats = Array[ExtResource("1_jxydo")]([SubResource("Resource_0sd2p")])
+extra_price = 27.0
+spawn_floor = 9
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

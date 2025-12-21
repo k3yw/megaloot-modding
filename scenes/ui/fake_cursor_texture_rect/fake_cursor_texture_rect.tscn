@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://uau331o2mjlu"]
+
+[ext_resource type="Script" uid="uid://cfplrq5dj67rq" path="res://scenes/ui/fake_cursor_texture_rect/fake_cursor_texture_rect.gd" id="1_6vngb"]
+
+[node name="FakeCursorTextureRect" type="TextureRect"]
+z_index = 1
+offset_right = 16.0
+offset_bottom = 16.0
+stretch_mode = 5
+script = ExtResource("1_6vngb")

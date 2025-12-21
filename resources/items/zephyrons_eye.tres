@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://bqjwjvocwx1ap"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_oh82m"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="2_pslai"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_1q7kh"]
+[ext_resource type="Resource" uid="uid://d061jaw1ok5dr" path="res://resources/passives/spell_block.tres" id="4_ijp1i"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_walmq"]
+[ext_resource type="Resource" uid="uid://barfiwkq2fcrm" path="res://resources/item_sets/zephyron.tres" id="6_af61r"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="6_iju6i"]
+[ext_resource type="Texture2D" uid="uid://cpnb2ngyaiv0u" path="res://assets/textures/items/zephyrons_eye.png" id="7_3mkhf"]
+
+[sub_resource type="Resource" id="Resource_e4mjv"]
+script = ExtResource("1_oh82m")
+boosting_sets = Array[ExtResource("5_walmq")]([])
+resource = ExtResource("2_pslai")
+amount = 25.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_1q7kh")
+name = &"Zephyron\'s Eye"
+texture = ExtResource("7_3mkhf")
+description = ""
+socket_type = ExtResource("6_iju6i")
+set_resources = Array[ExtResource("5_walmq")]([ExtResource("6_af61r")])
+passive = ExtResource("4_ijp1i")
+bonus_stats = Array[ExtResource("1_oh82m")]([SubResource("Resource_e4mjv")])
+extra_price = 11.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

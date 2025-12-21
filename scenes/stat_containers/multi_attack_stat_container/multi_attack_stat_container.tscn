@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://ov4uv4bk6xro"]
+
+[ext_resource type="PackedScene" uid="uid://cnbj83ewdsqam" path="res://scenes/stat_containers/stat_container/stat_container.tscn" id="1_svjg8"]
+[ext_resource type="Texture2D" uid="uid://c5c8i1q1dm7uj" path="res://assets/textures/icons/stats/combat_icon.png" id="2_2u3fg"]
+
+[node name="MultiAttackStatContainer" instance=ExtResource("1_svjg8")]
+
+[node name="TextureRect" parent="." index="0"]
+texture = ExtResource("2_2u3fg")

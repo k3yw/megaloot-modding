@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=4 format=3 uid="uid://cy1phciwbtpxy"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_bunnc"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_heh6h"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_nfrqi"]
+
+[resource]
+script = ExtResource("1_heh6h")
+name = "Fear of Faith"
+mana_cost = 2
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_nfrqi")]([])
+bonus_stats_while_active = Array[ExtResource("1_bunnc")]([])
+quick_cast = false
+non_target = true
+value = 0

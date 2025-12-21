@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfy4x71hymcn2"]
+
+[ext_resource type="Script" uid="uid://dcvimi0ivx6kj" path="res://scenes/ui/animated_box_container/animated_box_container.gd" id="1_xgwqv"]
+
+[node name="AnimatedBoxContainer" type="Container"]
+offset_right = 275.0
+offset_bottom = 13.0
+script = ExtResource("1_xgwqv")

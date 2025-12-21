@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=6 format=3 uid="uid://b56g72qmj0lp6"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_rwfku"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_p33a4"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_1jta8"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="4_h6tai"]
+[ext_resource type="Texture2D" uid="uid://dqr3fhohutich" path="res://assets/textures/items/insightus.png" id="5_36mq2"]
+
+[resource]
+script = ExtResource("2_p33a4")
+name = &"Insightus"
+texture = ExtResource("5_36mq2")
+description = ""
+set_resources = Array[ExtResource("3_1jta8")]([ExtResource("4_h6tai")])
+bonus_stats = Array[ExtResource("1_rwfku")]([])
+extra_price = 250.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = false
+is_special = true
+metadata/_custom_type_script = "uid://bp3opkohcamor"

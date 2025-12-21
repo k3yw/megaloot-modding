@@ -1,0 +1,600 @@
+[gd_scene load_steps=38 format=3 uid="uid://btsi4wcq6nij6"]
+
+[ext_resource type="Texture2D" uid="uid://kn2yuvhn4fw5" path="res://resources/hues/divine_hue.tres" id="1_6j3vh"]
+[ext_resource type="Shader" uid="uid://bma8lujm58b6b" path="res://resources/shaders/item_texture_rect.gdshader" id="1_pgw2g"]
+[ext_resource type="Script" uid="uid://ce3mg4egwncjp" path="res://scenes/ui/item_texture_rect/item_texture_rect.gd" id="3_r4ny0"]
+[ext_resource type="Texture2D" uid="uid://vg5m56mcu1r3" path="res://assets/textures/ui/merge_icon.png" id="4_g4qid"]
+[ext_resource type="Texture2D" uid="uid://chq4q8j0h3e27" path="res://assets/textures/rarity_borders/divine_rarity_border.png" id="5_en8dk"]
+[ext_resource type="Texture2D" uid="uid://cgc4ildkpaw2q" path="res://assets/textures/rarity_borders/blank_rarity_border.png" id="6_cgyfi"]
+[ext_resource type="Texture2D" uid="uid://c1uy1h7gh16bs" path="res://assets/textures/ui/activation_progress.png" id="7_3q6qu"]
+[ext_resource type="Texture2D" uid="uid://dskwwali8e0oj" path="res://assets/textures/ui/item_slot_outline.png" id="8_l2del"]
+[ext_resource type="Texture2D" uid="uid://bigjdqgpd4dcn" path="res://assets/vfx/flare.png" id="9_hx70i"]
+[ext_resource type="Texture2D" uid="uid://cg3uih7mhead7" path="res://assets/textures/ui/reforged_border.png" id="11_empbu"]
+[ext_resource type="Texture2D" uid="uid://dqr3fhohutich" path="res://assets/textures/items/insightus.png" id="12_7q1pb"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="13_5gmlc"]
+[ext_resource type="Texture2D" uid="uid://bexq2ja3j4xar" path="res://assets/textures/rarity_borders/border_outline.png" id="13_5wvhx"]
+[ext_resource type="Texture2D" uid="uid://daf1bqt86k7ws" path="res://assets/textures/icons/discount_icon.png" id="13_7q1pb"]
+[ext_resource type="Texture2D" uid="uid://73arh1ada6cq" path="res://assets/textures/ui/lock_icon.png" id="14_ca781"]
+[ext_resource type="PackedScene" uid="uid://fj5of8u2cfea" path="res://scenes/vfx/item_glow_effect/item_glow_effect.tscn" id="14_rrjwy"]
+[ext_resource type="Texture2D" uid="uid://coja5b7gnulhf" path="res://assets/textures/ui/upgrade_mark.png" id="15_5m0rr"]
+[ext_resource type="Shader" uid="uid://d3xjtajhn6spb" path="res://scenes/ui/item_texture_rect/item_texture_rect.gdshader" id="15_gi6tl"]
+[ext_resource type="Texture2D" uid="uid://bwkv5l8gpulym" path="res://assets/textures/icons/p_dot.png" id="18_g3au6"]
+
+[sub_resource type="Animation" id="Animation_s53pi"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_difha"]
+resource_name = "spawn"
+length = 0.15
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("..:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.15),
+"transitions": PackedFloat32Array(0.3, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6iv6o"]
+_data = {
+&"RESET": SubResource("Animation_s53pi"),
+&"spawn": SubResource("Animation_difha")
+}
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7q1pb"]
+bg_color = Color(0.321569, 0.360784, 0.419608, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_13qpm"]
+bg_color = Color(1, 0.494118, 0.247059, 1)
+
+[sub_resource type="Shader" id="Shader_attir"]
+code = "shader_type canvas_item;
+
+uniform float ratio: hint_range(0.0, 1.0, 0.1);
+uniform sampler2D new_tex: filter_nearest;
+uniform vec4 modulate: source_color;
+
+uniform float alpha = 1.0;
+
+
+uniform float strength: hint_range(0., 1.) = 0.5;
+uniform float speed: hint_range(0., 10.) = 0.5;
+
+uniform sampler2D hue_tex: repeat_enable;
+
+
+
+void fragment() {
+	vec2 uv = UV;
+	vec3 hue = texture(hue_tex, UV + (speed * TIME)).rgb;
+	
+	
+	vec4 curr_col = texture(TEXTURE, UV);
+	vec4 new_col = texture(new_tex, UV);
+	vec4 final = mix(curr_col, new_col, ratio) * vec4(modulate.rgb, alpha);
+	COLOR = mix(final, vec4(hue, final.a), strength);
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s5f8e"]
+resource_local_to_scene = true
+shader = SubResource("Shader_attir")
+shader_parameter/ratio = 1.0
+shader_parameter/new_tex = ExtResource("5_en8dk")
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/alpha = 1.0
+shader_parameter/strength = 0.137
+shader_parameter/speed = 0.3
+shader_parameter/hue_tex = ExtResource("1_6j3vh")
+
+[sub_resource type="Shader" id="Shader_ngtno"]
+code = "shader_type canvas_item;
+
+
+uniform float fill_ratio:hint_range(0., 1.) = 1.;
+uniform float start_angle:hint_range(0., 360.) = 0.;
+uniform float max_angle:hint_range(0., 360.) = 360.;
+uniform bool invert_fill = false;
+uniform bool reflect_x = false;
+uniform bool reflect_y = false;
+uniform vec2 offset = vec2(0., 0.);
+
+uniform int pixelSize = 2;
+
+
+mat2 tex_rotate(float _angle){
+	return mat2(vec2(cos(_angle), -sin(_angle)), vec2(sin(_angle), cos(_angle)));
+}
+
+void fragment() {
+	
+	ivec2 size = textureSize(TEXTURE, 0);
+	
+	int xRes = size.x;
+	int yRes = size.y;
+	
+	float xFactor = float(xRes) / float(pixelSize);
+	float yFactor = float(yRes) / float(pixelSize);
+	
+	float grid_uv_x = round(UV.x * xFactor) / xFactor;
+	float grid_uv_y = round(UV.y * yFactor) / yFactor;
+	
+	
+	vec2 pixel_uv = vec2(grid_uv_x, grid_uv_y);
+	
+	
+	
+	
+	float fill_angle = radians(fill_ratio * max_angle);
+	vec2 uv = ((pixel_uv * 2.0 - 1.0) + offset) * tex_rotate(-radians(start_angle));
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	if (reflect_x) {
+		uv *= mat2(vec2(1.0, 0.0), vec2(0., 1.0));
+	}
+	if (reflect_y) {
+		uv *= mat2(vec2(1.0, 0.0), vec2(0.0, -1.0));
+	}
+		
+	if ((!invert_fill && atan(uv.x, uv.y) + PI < fill_angle) || (invert_fill && atan(uv.x, uv.y) + PI > fill_angle)) {
+		COLOR = texture(TEXTURE, UV);
+	} else {
+		COLOR = vec4(0.0);
+	}
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nmgep"]
+resource_local_to_scene = true
+shader = SubResource("Shader_ngtno")
+shader_parameter/fill_ratio = 1.0
+shader_parameter/start_angle = 360.0
+shader_parameter/max_angle = 360.0
+shader_parameter/invert_fill = true
+shader_parameter/reflect_x = false
+shader_parameter/reflect_y = false
+shader_parameter/offset = Vector2(0, 0)
+shader_parameter/pixelSize = 1
+
+[sub_resource type="Shader" id="Shader_cknkg"]
+code = "shader_type canvas_item;
+render_mode blend_add;
+
+uniform float speed = 1.0;
+uniform float alpha = 1.0;
+uniform sampler2D glow_texture: filter_nearest_mipmap, repeat_disable;
+
+
+
+vec2 scale(vec2 uv, float x, float y)
+{
+	mat2 scale = mat2(vec2(x, 0.0), vec2(0.0, y));
+	
+	uv -= 0.5;
+	uv = uv * scale;
+	uv += 0.5;
+	return uv;
+}
+
+
+vec2 rotateUV(vec2 uv, vec2 pivot, float rotation) {
+    float cosa = cos(rotation);
+    float sina = sin(rotation);
+    uv -= pivot;
+	vec2 result = vec2(
+        cosa * uv.x - sina * uv.y,
+        cosa * uv.y + sina * uv.x 
+    ) + pivot;
+	
+	
+    return clamp(result, vec2(0.0), vec2(1.0));
+}
+
+void fragment() {
+	float size = 1.25 + (sin(TIME) * 0.05);
+	vec2 scaled_uv = scale(UV, size, size);
+	vec2 uv = rotateUV(scaled_uv, vec2(0.5), TIME * speed);
+	vec4 tex_col = texture(glow_texture, uv);
+	COLOR.rgb = tex_col.rgb;
+	COLOR.a = tex_col.a;
+	COLOR.a *= alpha;
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_uafpi"]
+resource_local_to_scene = true
+shader = SubResource("Shader_cknkg")
+shader_parameter/speed = 0.25
+shader_parameter/alpha = 0.3
+shader_parameter/glow_texture = ExtResource("9_hx70i")
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y5ea7"]
+resource_local_to_scene = true
+atlas = ExtResource("11_empbu")
+region = Rect2(0, 0, 34, 34)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_pbuhg"]
+resource_local_to_scene = true
+shader = ExtResource("15_gi6tl")
+shader_parameter/outline_modulate = Color(0, 0, 0, 1)
+shader_parameter/modulate = Color(0.874207, 0.415839, 1.92523e-07, 1)
+shader_parameter/alpha = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fq7fw"]
+resource_local_to_scene = true
+shader = ExtResource("1_pgw2g")
+shader_parameter/gray_scale_overlay = Color(0.5, 0.5, 0.5, 1)
+shader_parameter/saturation = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 0.25
+shader_parameter/speed = 0.5
+shader_parameter/ratio = 1.0
+shader_parameter/wobble = 0.0
+shader_parameter/hue_tex = ExtResource("1_6j3vh")
+shader_parameter/disabled = false
+
+[sub_resource type="Shader" id="Shader_7q1pb"]
+code = "shader_type canvas_item;
+
+uniform vec4 replace: source_color;
+uniform vec4 new_color: source_color;
+uniform bool enabled;
+
+void fragment() {
+	vec4 tex = texture(TEXTURE, UV);
+
+	if (length(tex - replace) < 0.1 && enabled){
+		tex = new_color;
+	}
+
+	COLOR = tex;
+}
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_13qpm"]
+resource_local_to_scene = true
+shader = SubResource("Shader_7q1pb")
+shader_parameter/replace = Color(0.776471, 0.196078, 0.101961, 1)
+shader_parameter/new_color = Color(1, 0.494118, 0.247059, 1)
+shader_parameter/enabled = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7q1pb"]
+resource_local_to_scene = true
+atlas = ExtResource("8_l2del")
+region = Rect2(0, 0, 36, 36)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ew2qf"]
+resource_local_to_scene = true
+shader = ExtResource("13_5gmlc")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="ItemTextureRect" type="Control" groups=["visible_by_joypad"]]
+texture_filter = 1
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 34.0
+offset_bottom = 34.0
+pivot_offset = Vector2(17, 17)
+size_flags_horizontal = 4
+script = ExtResource("3_r4ny0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../CanvasGroup/IconTextureRect")
+libraries = {
+&"": SubResource("AnimationLibrary_6iv6o")
+}
+autoplay = "spawn"
+
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+texture_filter = 1
+position = Vector2(17, 17)
+
+[node name="BurnoutProgressBar" type="ProgressBar" parent="CanvasGroup"]
+offset_left = -20.0
+offset_top = -12.0
+offset_right = -19.0
+offset_bottom = 12.0
+theme_override_styles/background = SubResource("StyleBoxFlat_7q1pb")
+theme_override_styles/fill = SubResource("StyleBoxFlat_13qpm")
+max_value = 3.0
+fill_mode = 3
+show_percentage = false
+
+[node name="Split1" type="ColorRect" parent="CanvasGroup/BurnoutProgressBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_top = 3.5
+offset_right = 0.5
+offset_bottom = 4.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0431373, 0.0588235, 0.0901961, 1)
+
+[node name="Split2" type="ColorRect" parent="CanvasGroup/BurnoutProgressBar"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -0.5
+offset_top = -5.5
+offset_right = 0.5
+offset_bottom = -4.5
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0431373, 0.0588235, 0.0901961, 1)
+
+[node name="RarityTextureRect" type="TextureRect" parent="CanvasGroup"]
+show_behind_parent = true
+material = SubResource("ShaderMaterial_s5f8e")
+custom_minimum_size = Vector2(32, 32)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -17.0
+offset_top = -17.0
+offset_right = 17.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("6_cgyfi")
+
+[node name="ActivationProgressBar" type="TextureRect" parent="CanvasGroup"]
+material = SubResource("ShaderMaterial_nmgep")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("7_3q6qu")
+stretch_mode = 5
+
+[node name="ShineRect" type="ColorRect" parent="CanvasGroup"]
+show_behind_parent = true
+material = SubResource("ShaderMaterial_uafpi")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -29.5
+offset_top = -29.5
+offset_right = 29.5
+offset_bottom = 29.5
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(48, 48)
+mouse_filter = 2
+
+[node name="DebugLabel" type="Label" parent="CanvasGroup"]
+visible = false
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -24.5
+offset_top = -13.0
+offset_right = 24.5
+offset_bottom = 13.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "debug"
+
+[node name="ReforgedTextureRect" type="TextureRect" parent="CanvasGroup"]
+light_mask = 0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = -17.0
+offset_right = 17.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("AtlasTexture_y5ea7")
+
+[node name="OutlineTextureRect2" type="TextureRect" parent="CanvasGroup"]
+visible = false
+light_mask = 0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = -17.0
+offset_right = 17.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_5wvhx")
+
+[node name="UpgradeMarkTextureRect" type="TextureRect" parent="CanvasGroup"]
+z_index = 1
+material = SubResource("ShaderMaterial_pbuhg")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 9.0
+offset_top = -18.0
+offset_right = 16.0
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("15_5m0rr")
+
+[node name="IconTextureRect" type="TextureRect" parent="CanvasGroup"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_fq7fw")
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -17.0
+offset_top = -17.0
+offset_right = 17.0
+offset_bottom = 17.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(16, 16)
+mouse_filter = 2
+texture = ExtResource("12_7q1pb")
+stretch_mode = 3
+
+[node name="DiscountTextureRect" type="TextureRect" parent="CanvasGroup"]
+material = SubResource("ShaderMaterial_13qpm")
+offset_left = -22.0
+offset_top = -22.0
+offset_right = -1.0
+offset_bottom = -1.0
+texture = ExtResource("13_7q1pb")
+
+[node name="HighlightTextureRect" type="TextureRect" parent="."]
+visible = false
+modulate = Color(0.164706, 0.164706, 0.207843, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -3.0
+offset_top = 18.5
+offset_right = 3.0
+offset_bottom = 25.5
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("18_g3au6")
+
+[node name="OutlineTextureRect" type="TextureRect" parent="."]
+visible = false
+custom_minimum_size = Vector2(34, 34)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -18.0
+offset_right = 18.0
+offset_bottom = 18.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = SubResource("AtlasTexture_7q1pb")
+
+[node name="LockTextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_ew2qf")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -7.0
+offset_top = 8.0
+offset_right = 7.0
+offset_bottom = 23.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("14_ca781")
+
+[node name="MergeTextureRect" type="TextureRect" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+texture = ExtResource("4_g4qid")
+
+[node name="ItemGlowEffect" parent="." instance=ExtResource("14_rrjwy")]
+position = Vector2(17, 17)
+range_layer_max = 1
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+position = Vector2(17, 17)
+scale = Vector2(1.7, 1.7)
+
+[connection signal="screen_entered" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_entered"]
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://coyyfeo8wd8w7"]
+
+[ext_resource type="Script" uid="uid://bp7lsnmg85gp" path="res://resources/bb_scripts/combat_instinct.gd" id="1_vdnxn"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_yxn7h"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_w5k7k"]
+[ext_resource type="Script" uid="uid://dwhby3w2gsfeu" path="res://resources/passive_scripts/combat_instinct.gd" id="3_yxn7h"]
+
+[resource]
+script = ExtResource("3_w5k7k")
+name = "Combat Instinct"
+bonus_stats = Array[ExtResource("2_yxn7h")]([])
+game_logic_script = ExtResource("3_yxn7h")
+bb_script = ExtResource("1_vdnxn")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

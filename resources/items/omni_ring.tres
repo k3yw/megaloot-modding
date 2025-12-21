@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=16 format=3 uid="uid://ceqpxv84sledd"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_t21ee"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_73nnq"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="3_g1opr"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_mvrvg"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_20riq"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="7_b04r4"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="7_k7m0q"]
+[ext_resource type="Texture2D" uid="uid://dyq5n8xhq0k1x" path="res://assets/textures/items/omni_ring.png" id="8_udqyw"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="9_3l8sc"]
+[ext_resource type="Resource" uid="uid://cqcvf4nex2v7b" path="res://resources/items/vitality_ring.tres" id="10_vvkqi"]
+[ext_resource type="Resource" uid="uid://bgyicl3tkkhlc" path="res://resources/items/starborn_ring.tres" id="11_q8w8n"]
+
+[sub_resource type="Resource" id="Resource_oun3s"]
+script = ExtResource("1_t21ee")
+boosting_sets = Array[ExtResource("6_20riq")]([])
+resource = ExtResource("2_73nnq")
+amount = 24.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_tdxgc"]
+script = ExtResource("1_t21ee")
+boosting_sets = Array[ExtResource("6_20riq")]([null])
+resource = ExtResource("3_g1opr")
+amount = 14.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ukjp6"]
+script = ExtResource("9_3l8sc")
+item_resource = ExtResource("10_vvkqi")
+completed_battles = 10
+metadata/_custom_type_script = "uid://cfu5hrmkdm6q"
+
+[sub_resource type="Resource" id="Resource_vvkqi"]
+script = ExtResource("9_3l8sc")
+item_resource = ExtResource("11_q8w8n")
+completed_battles = 10
+metadata/_custom_type_script = "uid://cfu5hrmkdm6q"
+
+[resource]
+script = ExtResource("4_mvrvg")
+name = &"Omni Ring"
+texture = ExtResource("8_udqyw")
+socket_type = ExtResource("7_k7m0q")
+set_resources = Array[ExtResource("6_20riq")]([ExtResource("7_b04r4")])
+bonus_stats = Array[ExtResource("1_t21ee")]([SubResource("Resource_oun3s"), SubResource("Resource_tdxgc")])
+unlock_requirements = Array[ExtResource("9_3l8sc")]([SubResource("Resource_ukjp6"), SubResource("Resource_vvkqi")])
+extra_price = 28.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

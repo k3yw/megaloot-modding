@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://co8ttwl43cd81"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_mhlov"]
+[ext_resource type="Resource" uid="uid://d2csws3ba6vr8" path="res://resources/stats/adaptive_attack.tres" id="2_15aji"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_1ny0d"]
+[ext_resource type="Resource" uid="uid://3xisj57kjnmy" path="res://resources/passives/mimicry.tres" id="4_nsesk"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="4_puax1"]
+[ext_resource type="Resource" uid="uid://di3fmmr8t635h" path="res://resources/item_sets/unchained.tres" id="5_or2lt"]
+[ext_resource type="Texture2D" uid="uid://cyk724rrcd7hm" path="res://assets/textures/items/unchained_gauntlet.png" id="6_5br35"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="6_6k5de"]
+
+[sub_resource type="Resource" id="Resource_n225p"]
+script = ExtResource("1_mhlov")
+boosting_sets = Array[ExtResource("4_puax1")]([])
+resource = ExtResource("2_15aji")
+amount = 9.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_1ny0d")
+name = &"Unchained Gauntlet"
+texture = ExtResource("6_5br35")
+description = ""
+socket_type = ExtResource("6_6k5de")
+set_resources = Array[ExtResource("4_puax1")]([ExtResource("5_or2lt")])
+passive = ExtResource("4_nsesk")
+bonus_stats = Array[ExtResource("1_mhlov")]([SubResource("Resource_n225p")])
+extra_price = 12.0
+spawn_floor = 5
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

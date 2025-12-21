@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=7 format=3 uid="uid://dbopcbx18usri"]
+
+[ext_resource type="Script" uid="uid://c567vqc52tcdx" path="res://classes/resource/specialization.gd" id="1_27kur"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="1_vdgvw"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_vdgvw"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="4_e5t66"]
+[ext_resource type="Resource" uid="uid://ikgq5lx5b8ua" path="res://resources/stats/power.tres" id="5_ut56i"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="6_6xdm2"]
+
+[resource]
+script = ExtResource("1_27kur")
+name = "Nighthrust"
+color = Color(0.623529, 0.482353, 0.913725, 1)
+original_item_set = ExtResource("1_vdgvw")
+stats = Array[ExtResource("2_vdgvw")]([ExtResource("4_e5t66"), ExtResource("5_ut56i"), ExtResource("6_6xdm2")])
+metadata/_custom_type_script = "uid://c567vqc52tcdx"

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/warrior.png" id="2_ld8l2"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_ng6fw"]
+[ext_resource type="Resource" path="res://resources/item_sets/warrior.tres" id="3_8mkxb"]
+[ext_resource type="Resource" path="res://resources/stats/crit_chance.tres" id="6_yapro"]
+[ext_resource type="Resource" path="res://resources/stats/critical_damage.tres" id="7_jql6c"]
+[ext_resource type="Resource" path="res://resources/stats/total_attacks.tres" id="8_rn3sd"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_k1ik6"]
+
+[resource]
+script = ExtResource("2_ng6fw")
+name = "Rampager"
+color = Color(1, 0.396078, 0.392157, 1)
+icon = ExtResource("2_ld8l2")
+original_item_set = ExtResource("3_8mkxb")
+completed_floor_to_unlock = 6
+stats = Array[ExtResource("9_k1ik6")]([ExtResource("6_yapro"), ExtResource("7_jql6c"), ExtResource("8_rn3sd")])
+stats_new = Array[ExtResource("9_k1ik6")]([ExtResource("6_yapro"), ExtResource("7_jql6c"), ExtResource("8_rn3sd")])

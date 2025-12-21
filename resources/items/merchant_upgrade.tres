@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=7 format=3 uid="uid://dyacv01q2xoq8"]
+
+[ext_resource type="Script" uid="uid://2hca2aauxhoh" path="res://resources/bb_scripts/merchant_upgrade.gd" id="1_5u7yl"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_vulqk"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_3e7y4"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_5u7yl"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="4_4kiio"]
+[ext_resource type="Texture2D" uid="uid://d23u2x1sy1fj5" path="res://assets/textures/items/cheese.png" id="5_3e7y4"]
+
+[resource]
+script = ExtResource("2_3e7y4")
+name = &"Merchant Upgrade"
+texture = ExtResource("5_3e7y4")
+description = ""
+bb_script = ExtResource("1_5u7yl")
+set_resources = Array[ExtResource("3_5u7yl")]([ExtResource("4_4kiio")])
+bonus_stats = Array[ExtResource("1_vulqk")]([])
+extra_price = 0.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = false
+is_artifact = false
+is_special = true
+metadata/_custom_type_script = "uid://bp3opkohcamor"

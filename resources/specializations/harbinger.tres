@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/legacy_icon.png" id="2_4wcyn"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_74fs2"]
+[ext_resource type="Resource" path="res://resources/item_sets/legacy.tres" id="3_djhns"]
+[ext_resource type="Resource" path="res://resources/stats/power.tres" id="6_d4uvk"]
+[ext_resource type="Resource" path="res://resources/stats/toughness.tres" id="7_pis4q"]
+[ext_resource type="Resource" path="res://resources/stats/physical_attack.tres" id="8_c6huc"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_cksqg"]
+
+[resource]
+script = ExtResource("2_74fs2")
+name = "Harbinger"
+color = Color(0.603922, 0.247059, 0.407843, 1)
+icon = ExtResource("2_4wcyn")
+original_item_set = ExtResource("3_djhns")
+completed_floor_to_unlock = 29
+stats = Array[ExtResource("9_cksqg")]([ExtResource("6_d4uvk"), ExtResource("7_pis4q"), ExtResource("8_c6huc")])
+stats_new = Array[ExtResource("9_cksqg")]([ExtResource("6_d4uvk"), ExtResource("7_pis4q"), ExtResource("8_c6huc")])

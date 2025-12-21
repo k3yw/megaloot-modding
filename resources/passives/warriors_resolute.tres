@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://b7l0tabo0ptd2"]
+
+[ext_resource type="Script" uid="uid://2pvx6jfkrvxe" path="res://resources/bb_scripts/warriors_resolute.gd" id="1_bbldp"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_bpnli"]
+[ext_resource type="Script" uid="uid://bstlo4ws4if54" path="res://resources/passive_scripts/warriors_resolute.gd" id="3_i7xm6"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_dnxki"]
+
+[resource]
+script = ExtResource("4_dnxki")
+name = "Warrior's Resolute"
+bonus_stats = Array[ExtResource("2_bpnli")]([])
+game_logic_script = ExtResource("3_i7xm6")
+bb_script = ExtResource("1_bbldp")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

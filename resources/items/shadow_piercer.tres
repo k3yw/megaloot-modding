@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://cnj5ky3h3kccl"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_01sei"]
+[ext_resource type="Resource" uid="uid://pvbac0njnmpw" path="res://resources/stats/penetration.tres" id="2_1rler"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_exgck"]
+[ext_resource type="Resource" uid="uid://uxwdne2hyfvl" path="res://resources/stats/critical_damage.tres" id="5_tnq68"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="6_6xahn"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_bxjk1"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="7_opx1v"]
+[ext_resource type="Texture2D" uid="uid://bcp5lw5j5wbmq" path="res://assets/textures/items/shadow_piercer.png" id="8_o1erb"]
+
+[sub_resource type="Resource" id="Resource_b3aog"]
+script = ExtResource("1_01sei")
+boosting_sets = Array[ExtResource("7_bxjk1")]([ExtResource("6_6xahn")])
+resource = ExtResource("5_tnq68")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_dna8k"]
+script = ExtResource("1_01sei")
+boosting_sets = Array[ExtResource("7_bxjk1")]([])
+resource = ExtResource("2_1rler")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_exgck")
+name = &"Shadow Piercer"
+texture = ExtResource("8_o1erb")
+description = ""
+socket_type = ExtResource("7_opx1v")
+set_resources = Array[ExtResource("7_bxjk1")]([ExtResource("6_6xahn")])
+bonus_stats = Array[ExtResource("1_01sei")]([SubResource("Resource_b3aog"), SubResource("Resource_dna8k")])
+extra_price = 15.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

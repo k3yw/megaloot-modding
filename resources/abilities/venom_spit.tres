@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=5 format=3 uid="uid://dqi4d8bnmytal"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_1a8qn"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_8rjfy"]
+[ext_resource type="Script" uid="uid://dvihhn6byayw2" path="res://resources/bb_scripts/venom_spit.gd" id="1_tw0ck"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_tw0ck"]
+
+[resource]
+script = ExtResource("1_8rjfy")
+name = "Venom Spit"
+mana_cost = 1
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_tw0ck")]([])
+bonus_stats_while_active = Array[ExtResource("1_1a8qn")]([])
+quick_cast = false
+non_target = true
+value = 0
+bb_script = ExtResource("1_tw0ck")

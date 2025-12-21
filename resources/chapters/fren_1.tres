@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Chapter" load_steps=2 format=3 uid="uid://b0w5y5jhxynja"]
+
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="1_a0327"]
+
+[resource]
+script = ExtResource("1_a0327")
+name = "Fren"
+text = "It's middle of spring, Pyry and Fren left their small cabin in the early morning.
+
+Pyry: why can't we just hunt for some rabbits this time? all we do is try to kill wolves all day, lucky we are still alive.
+
+Fren: stop whining, I won't settle for anything less than a wolf, rabbits are too easy.
+
+Fren: and think about it, if there are less wolves, there will be more rabbits for you to hunt later without me.
+
+Pyry: why do you even need me then? just hunt them on your own...
+
+Fren: to help carry the meat ofc, now be quiet.
+
+
+
+"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://c4nkn8xxgvxwp"]
+
+[ext_resource type="Script" uid="uid://clbbqlhn3pgum" path="res://resources/bb_scripts/combat_insight.gd" id="1_14e34"]
+[ext_resource type="Texture2D" uid="uid://328sntipjf5p" path="res://assets/textures/icons/status_effects/combat_insight_icon.png" id="1_rhftq"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_vwco6"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_ck3bu"]
+
+[resource]
+script = ExtResource("1_vwco6")
+name = "Combat Insight"
+icon = ExtResource("1_rhftq")
+color = Color(0.627451, 0.87451, 1, 1)
+type = ExtResource("3_ck3bu")
+is_temporary = false
+is_percent = false
+limit = 25
+application_message = ""
+bb_script = ExtResource("1_14e34")

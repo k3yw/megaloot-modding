@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://boq4krrxnr2v8"]
+
+[ext_resource type="Texture2D" uid="uid://ofa7wce54ycq" path="res://assets/textures/icons/true_damage_icon.png" id="1_bqwes"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_i6srh"]
+
+[resource]
+script = ExtResource("1_i6srh")
+name = "True Damage"
+icon = ExtResource("1_bqwes")
+color = Color(1, 1, 1, 1)
+is_percentage = false
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0

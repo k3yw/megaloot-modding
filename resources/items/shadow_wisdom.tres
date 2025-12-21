@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://htt5gwvkbomc"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_d3y2j"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_chlx5"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="4_gl3w8"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="5_25q57"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_71u8v"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="6_fm2ms"]
+[ext_resource type="Texture2D" uid="uid://d3hgqtrfd32r8" path="res://assets/textures/items/shadow_wisdom.png" id="7_3rwlh"]
+
+[sub_resource type="Resource" id="Resource_a5ti1"]
+script = ExtResource("1_d3y2j")
+boosting_sets = Array[ExtResource("6_71u8v")]([ExtResource("5_25q57")])
+resource = ExtResource("4_gl3w8")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_chlx5")
+name = &"Shadow Wisdom"
+texture = ExtResource("7_3rwlh")
+description = ""
+socket_type = ExtResource("6_fm2ms")
+set_resources = Array[ExtResource("6_71u8v")]([ExtResource("5_25q57")])
+bonus_stats = Array[ExtResource("1_d3y2j")]([SubResource("Resource_a5ti1")])
+extra_price = 3.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

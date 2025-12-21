@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://dd0k0rtlnd1gw"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_aevaf"]
+[ext_resource type="Script" uid="uid://dw73xwk3cirq2" path="res://resources/bb_scripts/golden_altruism.gd" id="1_v7cxw"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_ul40x"]
+
+[resource]
+script = ExtResource("3_ul40x")
+name = "Golden Altruism"
+bonus_stats = Array[ExtResource("1_aevaf")]([])
+bb_script = ExtResource("1_v7cxw")

@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=18 format=3 uid="uid://bv6r2br2tf1qr"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ee8ar"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_cvdjy"]
+[ext_resource type="Resource" uid="uid://ikgq5lx5b8ua" path="res://resources/stats/power.tres" id="4_ixess"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_fu0pb"]
+[ext_resource type="Resource" uid="uid://d07dc442wyx5e" path="res://resources/item_sets/wood.tres" id="6_ejtv7"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_05v5w"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_riovj"]
+[ext_resource type="Texture2D" uid="uid://ciotro0f2jylg" path="res://assets/textures/items/wooden_crown.png" id="8_p1npa"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="9_fllsp"]
+[ext_resource type="Resource" uid="uid://77un6ov6ycco" path="res://resources/items/training_sword.tres" id="10_reotb"]
+[ext_resource type="Resource" uid="uid://dec6y0580k7fv" path="res://resources/items/training_axe.tres" id="11_ojwjq"]
+[ext_resource type="Resource" uid="uid://6sh4n8xtwdde" path="res://resources/items/training_hammer.tres" id="12_14xi6"]
+
+[sub_resource type="Resource" id="Resource_wxal4"]
+script = ExtResource("1_ee8ar")
+boosting_sets = Array[ExtResource("7_05v5w")]([ExtResource("6_ejtv7")])
+resource = ExtResource("4_ixess")
+amount = 45.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0yjk7"]
+script = ExtResource("1_ee8ar")
+boosting_sets = Array[ExtResource("7_05v5w")]([ExtResource("6_ejtv7")])
+resource = ExtResource("5_fu0pb")
+amount = 25.0
+is_modifier = true
+
+[sub_resource type="Resource" id="Resource_uuuqu"]
+script = ExtResource("9_fllsp")
+item_resource = ExtResource("12_14xi6")
+completed_battles = 12
+metadata/_custom_type_script = "uid://cfu5hrmkdm6q"
+
+[sub_resource type="Resource" id="Resource_a8tkx"]
+script = ExtResource("9_fllsp")
+item_resource = ExtResource("10_reotb")
+completed_battles = 12
+metadata/_custom_type_script = "uid://cfu5hrmkdm6q"
+
+[sub_resource type="Resource" id="Resource_nfv7y"]
+script = ExtResource("9_fllsp")
+item_resource = ExtResource("11_ojwjq")
+completed_battles = 12
+metadata/_custom_type_script = "uid://cfu5hrmkdm6q"
+
+[resource]
+script = ExtResource("2_cvdjy")
+name = &"Wooden Crown"
+texture = ExtResource("8_p1npa")
+socket_type = ExtResource("7_riovj")
+set_resources = Array[ExtResource("7_05v5w")]([ExtResource("6_ejtv7")])
+bonus_stats = Array[ExtResource("1_ee8ar")]([SubResource("Resource_wxal4"), SubResource("Resource_0yjk7")])
+unlock_requirements = Array[ExtResource("9_fllsp")]([SubResource("Resource_uuuqu"), SubResource("Resource_a8tkx"), SubResource("Resource_nfv7y")])
+extra_price = 425.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

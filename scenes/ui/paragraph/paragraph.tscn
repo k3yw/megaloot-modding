@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://dkb1y88niereu"]
+
+[ext_resource type="Script" uid="uid://dfetkcklx2td5" path="res://paragraph.gd" id="1_e2atl"]
+
+[node name="Paragraph" type="HBoxContainer"]
+custom_minimum_size = Vector2(0, 16)
+offset_right = 99.0
+offset_bottom = 28.0
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+script = ExtResource("1_e2atl")

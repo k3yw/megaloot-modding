@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://c12nbye7ukfqh"]
+
+[ext_resource type="Script" uid="uid://cvw48bq5tgs84" path="res://resources/bb_scripts/battleborn.gd" id="1_hyxka"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_tqxd0"]
+[ext_resource type="Script" uid="uid://rk00vx4jdeg3" path="res://resources/passive_scripts/battleborn.gd" id="3_rde63"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_hpewr"]
+
+[resource]
+script = ExtResource("4_hpewr")
+name = "Battleborn"
+bonus_stats = Array[ExtResource("2_tqxd0")]([])
+game_logic_script = ExtResource("3_rde63")
+bb_script = ExtResource("1_hyxka")

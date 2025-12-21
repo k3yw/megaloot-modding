@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=8 format=3 uid="uid://4tjf3n0pijsc"]
+
+[ext_resource type="Resource" uid="uid://dpqrja1q07sye" path="res://resources/abilities/barrier.tres" id="1_d2rlg"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_lpjah"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_sv54f"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_kh15a"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="7_41m1a"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="7_t0lfp"]
+[ext_resource type="Texture2D" uid="uid://n2adai35ym4l" path="res://assets/textures/items/tome_of_arcanum.png" id="8_6wngt"]
+
+[resource]
+script = ExtResource("4_sv54f")
+name = &"Tome of Arcanum"
+texture = ExtResource("8_6wngt")
+set_resources = Array[ExtResource("6_kh15a")]([ExtResource("7_t0lfp")])
+ability_to_learn = ExtResource("1_d2rlg")
+bonus_stats = Array[ExtResource("3_lpjah")]([])
+unlock_requirements = Array[ExtResource("7_41m1a")]([])
+extra_price = 0.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = true
+custom_rarity = 0
+reforgable = false
+is_artifact = false
+is_special = false

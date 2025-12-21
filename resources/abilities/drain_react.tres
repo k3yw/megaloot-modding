@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=7 format=3 uid="uid://b5dyggwyn02v5"]
+
+[ext_resource type="Script" uid="uid://ba1nfsog2qefy" path="res://resources/ability_scripts/drain_react.gd" id="1_5pcm4"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_dw4hd"]
+[ext_resource type="Script" uid="uid://boxb3possyyfr" path="res://resources/bb_scripts/drain_react.gd" id="1_su1mj"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_iaheo"]
+[ext_resource type="Texture2D" uid="uid://cm1hckou227ra" path="res://assets/textures/icons/weakness_icon.png" id="2_su1mj"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_su1mj"]
+
+[resource]
+script = ExtResource("2_iaheo")
+name = "Drain React"
+icon = ExtResource("2_su1mj")
+mana_cost = 0
+use_limit = 1
+status_effects_on_activation = Array[ExtResource("3_su1mj")]([])
+bonus_stats_while_active = Array[ExtResource("1_dw4hd")]([])
+quick_cast = false
+non_target = true
+to_attack = false
+value = 0
+ability_script = ExtResource("1_5pcm4")
+bb_script = ExtResource("1_su1mj")
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

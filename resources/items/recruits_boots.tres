@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://br2w86mnidn5r"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_6t861"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="2_1qhbw"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_bynln"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_w4upp"]
+[ext_resource type="Resource" uid="uid://bf2y3uc38gwy2" path="res://resources/item_sets/scout.tres" id="6_44b5t"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="6_kh6mh"]
+[ext_resource type="Texture2D" uid="uid://rjfvgu3s0akm" path="res://assets/textures/items/recruits_boots.png" id="7_ikcmf"]
+
+[sub_resource type="Resource" id="Resource_vqnhn"]
+script = ExtResource("1_6t861")
+boosting_sets = Array[ExtResource("5_w4upp")]([])
+resource = ExtResource("2_1qhbw")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_bynln")
+name = &"Recruit\'s Boots"
+texture = ExtResource("7_ikcmf")
+description = ""
+socket_type = ExtResource("6_kh6mh")
+set_resources = Array[ExtResource("5_w4upp")]([ExtResource("6_44b5t")])
+bonus_stats = Array[ExtResource("1_6t861")]([SubResource("Resource_vqnhn")])
+extra_price = 1.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

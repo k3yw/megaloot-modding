@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=4 format=3 uid="uid://bimnkhyfr06e0"]
+
+[ext_resource type="Texture2D" uid="uid://bcdbai8m4lnfy" path="res://assets/textures/icons/stats/agility_icon.png" id="1_w1c4l"]
+[ext_resource type="Script" uid="uid://beyqng303h7mq" path="res://resources/bb_scripts/dodge.gd" id="1_xxni2"]
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_yvi37"]
+
+[resource]
+script = ExtResource("1_yvi37")
+name = "Dodge"
+icon = ExtResource("1_w1c4l")
+color = Color(0.780392, 0.690196, 0.545098, 1)
+use_limit = 0
+popup_color = Color(0.721569, 0.52549, 0.0431373, 1)
+popup_text = "DODGED"
+popup_delay = 0.0
+screen_shake = false
+is_hit = false
+bb_script = ExtResource("1_xxni2")

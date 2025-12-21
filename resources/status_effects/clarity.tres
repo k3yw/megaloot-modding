@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://d3fklbnxjayna"]
+
+[ext_resource type="Script" uid="uid://cf00d602d8lgi" path="res://resources/bb_scripts/clarity.gd" id="1_mn17e"]
+[ext_resource type="Texture2D" uid="uid://dc4fyennnmkqi" path="res://assets/textures/icons/clarity_icon.png" id="2_h2ofo"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="2_nslaw"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="4_dpk5u"]
+
+[resource]
+script = ExtResource("2_nslaw")
+name = "Clarity"
+icon = ExtResource("2_h2ofo")
+color = Color(0.54, 0.639667, 1, 1)
+type = ExtResource("4_dpk5u")
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_mn17e")

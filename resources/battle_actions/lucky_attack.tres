@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=3 format=3 uid="uid://xiwn1er5ui1u"]
+
+[ext_resource type="Script" uid="uid://df8bxp6w37hcd" path="res://resources/bb_scripts/lucky_attack.gd" id="1_q3agr"]
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_sflrp"]
+
+[resource]
+script = ExtResource("1_sflrp")
+name = "Lucky Attack"
+color = Color(0, 0, 0, 1)
+use_limit = 0
+popup_color = Color(0, 0.803922, 0.345098, 1)
+popup_text = "LUCKY ATTACK"
+popup_delay = 0.0
+screen_shake = true
+is_hit = true
+bb_script = ExtResource("1_q3agr")
+metadata/_custom_type_script = "uid://clfulygwnbxy1"

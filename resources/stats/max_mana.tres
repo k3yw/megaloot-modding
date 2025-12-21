@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://cqixugqy6inii"]
+
+[ext_resource type="Texture2D" uid="uid://d36r4fpk6ay55" path="res://assets/textures/icons/mana_icon.png" id="1_cfki5"]
+[ext_resource type="Script" uid="uid://ccfsqbp64kn3w" path="res://resources/bb_scripts/max_mana.gd" id="1_d41wu"]
+[ext_resource type="Script" uid="uid://dns6dff6px0qs" path="res://resources/stat_scripts/max_mana.gd" id="1_fob6e"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_uikkt"]
+
+[resource]
+script = ExtResource("2_uikkt")
+name = "Max Mana"
+icon = ExtResource("1_cfki5")
+color = Color(0.156863, 0.360784, 0.768627, 1)
+is_attack_type = false
+is_percentage = false
+max_amount = 4
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("1_fob6e")
+bb_script = ExtResource("1_d41wu")

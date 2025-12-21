@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="Adventurer" load_steps=30 format=3 uid="uid://bftmvepa8qp7l"]
+
+[ext_resource type="Texture2D" uid="uid://dtfiuf1mrsq7y" path="res://assets/textures/portraits/amon_blink.png" id="1_bn0aw"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_lnxds"]
+[ext_resource type="Resource" uid="uid://cohyqygssyj5q" path="res://resources/abilities/silhouette.tres" id="1_os1ul"]
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="2_20mhv"]
+[ext_resource type="Texture2D" uid="uid://clreaari2kvaf" path="res://assets/textures/portraits/amon.png" id="3_20mhv"]
+[ext_resource type="Script" uid="uid://b5ygq7ouoi3a1" path="res://classes/resource/adventurer.gd" id="3_bn0aw"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_qyqwa"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="4_6q26f"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_dsffi"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_3ou67"]
+[ext_resource type="Resource" uid="uid://dab5eng8w5512" path="res://resources/specializations/moonlighter.tres" id="6_dsffi"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="6_kn6x1"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="7_l3ghg"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="10_qamtc"]
+[ext_resource type="Resource" uid="uid://bn78s4qdapmc4" path="res://resources/specializations/bloodmoon.tres" id="11_6q26f"]
+[ext_resource type="Script" uid="uid://bf4xfjaqogirm" path="res://classes/resource/socket_type.gd" id="11_utf0b"]
+[ext_resource type="Resource" uid="uid://dbopcbx18usri" path="res://resources/specializations/nighthrust.tres" id="12_3ou67"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="12_25rt1"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="13_qamtc"]
+[ext_resource type="Resource" uid="uid://cmw0nuwmn0iiu" path="res://resources/socket_types/leggings.tres" id="14_os1ul"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="15_605hx"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="16_ikq55"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="17_u5sa5"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="18_3lu6l"]
+[ext_resource type="Resource" uid="uid://gxiocbyvupmu" path="res://resources/socket_types/replicated_weapon.tres" id="18_25rt1"]
+
+[sub_resource type="Resource" id="Resource_keocv"]
+script = ExtResource("1_lnxds")
+boosting_sets = Array[ExtResource("3_qyqwa")]([])
+resource = ExtResource("4_6q26f")
+amount = 1.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_756sc"]
+script = ExtResource("1_lnxds")
+boosting_sets = Array[ExtResource("3_qyqwa")]([])
+resource = ExtResource("5_3ou67")
+amount = 10.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_lmj6w"]
+script = ExtResource("1_lnxds")
+boosting_sets = Array[ExtResource("3_qyqwa")]([])
+resource = ExtResource("6_kn6x1")
+amount = 1.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_li5on"]
+script = ExtResource("1_lnxds")
+boosting_sets = Array[ExtResource("3_qyqwa")]([])
+resource = ExtResource("7_l3ghg")
+amount = 1.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("3_bn0aw")
+name = &"Amon"
+portrait = ExtResource("3_20mhv")
+blink = ExtResource("1_bn0aw")
+specializations = Array[Object]([ExtResource("11_6q26f"), ExtResource("12_3ou67"), ExtResource("6_dsffi")])
+starting_inventory_items = Array[ExtResource("4_dsffi")]([])
+challenge_market_items = Array[ExtResource("4_dsffi")]([])
+starting_market_items = Array[ExtResource("4_dsffi")]([])
+main_socket = ExtResource("12_25rt1")
+main_set = ExtResource("10_qamtc")
+ability = ExtResource("1_os1ul")
+base_flow = 100
+chapters = Array[ExtResource("2_20mhv")]([])
+bonus_stats = Array[ExtResource("1_lnxds")]([SubResource("Resource_keocv"), SubResource("Resource_756sc"), SubResource("Resource_lmj6w"), SubResource("Resource_li5on")])
+sockets = Array[ExtResource("11_utf0b")]([ExtResource("12_25rt1"), ExtResource("13_qamtc"), ExtResource("14_os1ul"), ExtResource("15_605hx"), ExtResource("16_ikq55"), ExtResource("17_u5sa5"), ExtResource("18_25rt1"), ExtResource("18_3lu6l")])
+metadata/_custom_type_script = "uid://b5ygq7ouoi3a1"

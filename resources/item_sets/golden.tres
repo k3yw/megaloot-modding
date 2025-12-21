@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=3 format=3 uid="uid://dmvibnyb3mslv"]
+
+[ext_resource type="Texture2D" uid="uid://dbm0q1lv3xix5" path="res://assets/textures/icons/item_sets/golden_icon.png" id="1_ts6dr"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_r1avx"]
+
+[resource]
+script = ExtResource("2_r1avx")
+name = "Golden"
+icon = ExtResource("1_ts6dr")
+color = Color(0.972549, 0.635294, 0.105882, 1)
+value = 0
+flow_cost = 20

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=4 format=3 uid="uid://o45vgloao42g"]
+
+[ext_resource type="Script" uid="uid://dmqc3j5plui0l" path="res://resources/bb_scripts/critical_strike.gd" id="1_87g0k"]
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_qvpuk"]
+[ext_resource type="Texture2D" uid="uid://dvok53ry1k1ok" path="res://assets/textures/icons/stats/critical_strike_icon.png" id="1_v4ers"]
+
+[resource]
+script = ExtResource("1_qvpuk")
+name = "Critical Strike"
+icon = ExtResource("1_v4ers")
+color = Color(1, 0.396078, 0.262745, 1)
+use_limit = 0
+popup_color = Color(0, 0, 0, 1)
+popup_text = ""
+popup_delay = 0.0
+screen_shake = true
+is_hit = true
+bb_script = ExtResource("1_87g0k")

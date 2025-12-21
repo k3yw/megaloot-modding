@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=6 format=3 uid="uid://cqss3kkylcmlm"]
+
+[ext_resource type="Texture2D" uid="uid://bcpoqnruy0ecv" path="res://assets/textures/icons/sparkle_icon.png" id="1_64qla"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_irm8r"]
+[ext_resource type="AudioStream" uid="uid://c4vuqab7teg50" path="res://assets/sfx/sparkle_apply.wav" id="1_wrbc0"]
+[ext_resource type="Script" uid="uid://dx3nfiyfeuubx" path="res://resources/bb_scripts/sparkle.gd" id="2_n7osh"]
+[ext_resource type="Resource" uid="uid://ptn3j1afs6g2" path="res://resources/status_effect_types/debuff.tres" id="4_860ss"]
+
+[resource]
+script = ExtResource("1_irm8r")
+name = "Sparkle"
+icon = ExtResource("1_64qla")
+color = Color(0.666667, 0.890196, 0.811765, 1)
+type = ExtResource("4_860ss")
+is_temporary = false
+is_percent = false
+limit = -1
+application_message = "SPARKLE"
+application_sound = ExtResource("1_wrbc0")
+bb_script = ExtResource("2_n7osh")

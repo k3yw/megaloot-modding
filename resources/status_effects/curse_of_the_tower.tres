@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://ca8gjexrbf1me"]
+
+[ext_resource type="Script" uid="uid://c1gacr6vmjkw" path="res://resources/bb_scripts/curse_of_the_tower.gd" id="1_8ah5a"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_lvujn"]
+[ext_resource type="Texture2D" uid="uid://debj5gpvcxwc2" path="res://assets/textures/icons/difficulty_icon.png" id="1_qw07d"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="3_u5q35"]
+
+[resource]
+script = ExtResource("1_lvujn")
+name = "Curse of the Tower"
+icon = ExtResource("1_qw07d")
+color = Color(0.860369, 0.860369, 0.860369, 1)
+type = ExtResource("3_u5q35")
+is_temporary = false
+is_percent = true
+limit = 100
+application_message = ""
+bb_script = ExtResource("1_8ah5a")

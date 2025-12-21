@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://ig60fleqjpje"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_n0ux1"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_orkp0"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_3h74o"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_s5p54"]
+[ext_resource type="Resource" uid="uid://co4r8myt4rmnk" path="res://resources/item_sets/demonic.tres" id="6_iyye4"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_0ng4f"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_stjna"]
+[ext_resource type="Texture2D" uid="uid://c001o81jkh8uw" path="res://assets/textures/items/demonic_helmet.png" id="8_f1ocw"]
+
+[sub_resource type="Resource" id="Resource_rkebf"]
+script = ExtResource("1_n0ux1")
+boosting_sets = Array[ExtResource("7_0ng4f")]([ExtResource("6_iyye4")])
+resource = ExtResource("5_s5p54")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_vfq50"]
+script = ExtResource("1_n0ux1")
+boosting_sets = Array[ExtResource("7_0ng4f")]([])
+resource = ExtResource("2_orkp0")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_3h74o")
+name = &"Demonic Helmet"
+texture = ExtResource("8_f1ocw")
+description = ""
+socket_type = ExtResource("7_stjna")
+set_resources = Array[ExtResource("7_0ng4f")]([ExtResource("6_iyye4")])
+bonus_stats = Array[ExtResource("1_n0ux1")]([SubResource("Resource_rkebf"), SubResource("Resource_vfq50")])
+extra_price = 25.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

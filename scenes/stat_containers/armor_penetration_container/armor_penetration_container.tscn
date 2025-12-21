@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cv5vck0ab4wwo"]
+
+[ext_resource type="PackedScene" uid="uid://cnbj83ewdsqam" path="res://scenes/stat_containers/stat_container/stat_container.tscn" id="1_skaf8"]
+[ext_resource type="Texture2D" uid="uid://dd7qrfkv7pwk7" path="res://assets/textures/icons/stats/penetration_icon.png" id="2_j4lhu"]
+
+[node name="ArmorPenetrationContainer" instance=ExtResource("1_skaf8")]
+
+[node name="TextureRect" parent="." index="0"]
+texture = ExtResource("2_j4lhu")

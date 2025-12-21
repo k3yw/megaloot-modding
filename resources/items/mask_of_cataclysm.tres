@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://bsrncgkrd4jee"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_bqjdq"]
+[ext_resource type="Resource" uid="uid://ikgq5lx5b8ua" path="res://resources/stats/power.tres" id="2_nyf67"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_if4ni"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="4_sdfi7"]
+[ext_resource type="Resource" uid="uid://bwpnncbi5hrbg" path="res://resources/item_sets/cataclysm.tres" id="5_tox65"]
+[ext_resource type="Texture2D" uid="uid://cw58bedg5otat" path="res://assets/textures/items/mask_of_cataclysm.png" id="6_lnlai"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="6_sock1"]
+
+[sub_resource type="Resource" id="Resource_0cd3o"]
+script = ExtResource("1_bqjdq")
+boosting_sets = Array[ExtResource("4_sdfi7")]([])
+resource = ExtResource("2_nyf67")
+amount = 45.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_if4ni")
+name = &"Mask of Cataclysm"
+texture = ExtResource("6_lnlai")
+description = ""
+socket_type = ExtResource("6_sock1")
+set_resources = Array[ExtResource("4_sdfi7")]([ExtResource("5_tox65")])
+bonus_stats = Array[ExtResource("1_bqjdq")]([SubResource("Resource_0cd3o")])
+extra_price = 47.0
+spawn_floor = 14
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

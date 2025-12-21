@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Keyword" load_steps=3 format=3 uid="uid://cvlup3spyiwvd"]
+
+[ext_resource type="Script" uid="uid://3d38osm0yilr" path="res://classes/resource/keyword.gd" id="1_bie7f"]
+[ext_resource type="Texture2D" uid="uid://dk77ccmfvsksv" path="res://assets/textures/icons/stats/heal_icon.png" id="2_i20xd"]
+
+[resource]
+script = ExtResource("1_bie7f")
+name = &"Heal"
+icon = ExtResource("2_i20xd")
+color = Color(0.690196, 0.909804, 0.529412, 1)

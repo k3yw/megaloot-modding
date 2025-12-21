@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=6 format=3 uid="uid://b3vtyfu6kkeou"]
+
+[ext_resource type="Script" uid="uid://b7jadvwmma3gf" path="res://resources/bb_scripts/bastolic.gd" id="1_d3ist"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_tr2bs"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_g7sft"]
+[ext_resource type="Texture2D" uid="uid://bpwa23hw6ub5l" path="res://assets/textures/icons/item_sets/bastolic_icon.png" id="3_80ayt"]
+[ext_resource type="Script" uid="uid://qjqarufjaoq2" path="res://resources/item_set_scripts/bastolic.gd" id="3_g7sft"]
+
+[resource]
+script = ExtResource("1_tr2bs")
+name = "Bastolic"
+icon = ExtResource("3_80ayt")
+color = Color(0.737255, 0.333333, 0.639216, 1)
+game_logic_script = ExtResource("3_g7sft")
+bb_script = ExtResource("1_d3ist")
+bonus_stats = Array[ExtResource("2_g7sft")]([])

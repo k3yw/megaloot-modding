@@ -1,0 +1,49 @@
+[gd_scene load_steps=5 format=3 uid="uid://bc7o81qso8lxc"]
+
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="1_3ltsu"]
+[ext_resource type="Script" uid="uid://b3t11m0ifu5cj" path="res://scenes/ui/generic_toggle_button/generic_toggle_button.gd" id="1_22gtv"]
+[ext_resource type="Texture2D" uid="uid://d2dg3hi1c44c0" path="res://assets/textures/ui/toggle_button.png" id="2_an62r"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_judb8"]
+resource_local_to_scene = true
+shader = ExtResource("1_3ltsu")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="GenericToggleButton" type="MarginContainer" node_paths=PackedStringArray("texture_rect")]
+offset_right = 19.0
+offset_bottom = 11.0
+script = ExtResource("1_22gtv")
+texture_rect = NodePath("TextureRect")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_judb8")
+layout_mode = 2
+texture = ExtResource("2_an62r")
+stretch_mode = 3

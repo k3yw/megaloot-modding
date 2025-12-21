@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://d0ureekf4pcsi"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ul2qq"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="2_ox0g8"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="3_wykk5"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_5j71d"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_py3a2"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="7_jcbov"]
+[ext_resource type="Resource" uid="uid://cmgidfwgdx7no" path="res://resources/item_sets/arcanum.tres" id="7_wnoss"]
+[ext_resource type="Texture2D" uid="uid://cdg3w4ranes27" path="res://assets/textures/items/arcanum_shoes.png" id="8_s1jq3"]
+
+[sub_resource type="Resource" id="Resource_efjg6"]
+script = ExtResource("1_ul2qq")
+boosting_sets = Array[ExtResource("6_py3a2")]([ExtResource("7_wnoss")])
+resource = ExtResource("2_ox0g8")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_owkbo"]
+script = ExtResource("1_ul2qq")
+boosting_sets = Array[ExtResource("6_py3a2")]([])
+resource = ExtResource("3_wykk5")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_5j71d")
+name = &"Arcanum Shoes"
+texture = ExtResource("8_s1jq3")
+description = ""
+socket_type = ExtResource("7_jcbov")
+set_resources = Array[ExtResource("6_py3a2")]([ExtResource("7_wnoss")])
+bonus_stats = Array[ExtResource("1_ul2qq")]([SubResource("Resource_efjg6"), SubResource("Resource_owkbo")])
+extra_price = 9.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

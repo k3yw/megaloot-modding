@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://c5nh5ui7no3ir"]
+
+[ext_resource type="Script" uid="uid://dcncxssyoedtn" path="res://resources/bb_scripts/excalibur.gd" id="1_g5ui8"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_l7s4o"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="2_t31pq"]
+[ext_resource type="Resource" uid="uid://bptdlyx6nbrw3" path="res://resources/passives/strike_of_destiny.tres" id="3_rnhbk"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_flx4e"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_6olfc"]
+[ext_resource type="Resource" uid="uid://dd23l0hhej72l" path="res://resources/item_sets/legacy.tres" id="6_gvna0"]
+[ext_resource type="Texture2D" uid="uid://duvm2r2rc22yo" path="res://assets/textures/items/excalibur.png" id="7_elglo"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_sd1x5"]
+
+[sub_resource type="Resource" id="Resource_qdp73"]
+script = ExtResource("1_l7s4o")
+boosting_sets = Array[ExtResource("5_6olfc")]([])
+resource = ExtResource("2_t31pq")
+amount = 13571.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_flx4e")
+name = &"Excalibur"
+texture = ExtResource("7_elglo")
+description = ""
+bb_script = ExtResource("1_g5ui8")
+socket_type = ExtResource("7_sd1x5")
+set_resources = Array[ExtResource("5_6olfc")]([ExtResource("6_gvna0")])
+passive = ExtResource("3_rnhbk")
+bonus_stats = Array[ExtResource("1_l7s4o")]([SubResource("Resource_qdp73")])
+extra_price = 654231.0
+spawn_floor = 60
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

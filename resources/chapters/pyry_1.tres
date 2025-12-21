@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Chapter" load_steps=2 format=3 uid="uid://dbx3kbtwekqcb"]
+
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="1_dc6c2"]
+
+[resource]
+script = ExtResource("1_dc6c2")
+name = "Pyry"
+text = "When Pyry was young his voice was stolen by a vampire, turning him into an altermage in the process.
+
+Altermages are different from normal mages, they cannot handle their magic and die shortly after becoming one.
+
+Pyry was lucky and a mark was placed on him by another mage to remove the excess magic from his body, thus keeping him alive.
+"

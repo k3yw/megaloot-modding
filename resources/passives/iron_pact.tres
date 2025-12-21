@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://c372grbefkwme"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_oycct"]
+[ext_resource type="Script" uid="uid://c3inxrp3vepst" path="res://resources/bb_scripts/iron_pact.gd" id="1_r2oil"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_r2oil"]
+[ext_resource type="Script" uid="uid://cebm80irawf6h" path="res://resources/passive_scripts/iron_pact.gd" id="3_wwkw4"]
+
+[resource]
+script = ExtResource("2_r2oil")
+name = "Iron Pact"
+bonus_stats = Array[ExtResource("1_oycct")]([])
+game_logic_script = ExtResource("3_wwkw4")
+bb_script = ExtResource("1_r2oil")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

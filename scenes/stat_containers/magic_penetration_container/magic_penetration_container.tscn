@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpyva17vr5ffk"]
+
+[ext_resource type="PackedScene" uid="uid://cnbj83ewdsqam" path="res://scenes/stat_containers/stat_container/stat_container.tscn" id="1_v6135"]
+[ext_resource type="Texture2D" uid="uid://d3m6a2owk2jcp" path="res://assets/textures/icons/magic_shield_break_icon.png" id="2_dtknd"]
+
+[node name="MagicPenetrationContainer" instance=ExtResource("1_v6135")]
+
+[node name="TextureRect" parent="." index="0"]
+texture = ExtResource("2_dtknd")

@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=7 format=3 uid="uid://b4u1opahvsfgk"]
+
+[ext_resource type="Script" uid="uid://cpcrc3f7n2u1f" path="res://resources/ability_scripts/spell_bind.gd" id="1_0i1sh"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_grrrs"]
+[ext_resource type="Script" uid="uid://c7o6difh5e53a" path="res://resources/bb_scripts/spell_bind.gd" id="1_qytky"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_qytky"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_46vf1"]
+[ext_resource type="Texture2D" uid="uid://ylv6r41gfoms" path="res://assets/textures/icons/silence_icon.png" id="4_wcr1h"]
+
+[resource]
+script = ExtResource("2_qytky")
+name = "Spell Bind"
+icon = ExtResource("4_wcr1h")
+mana_cost = 1
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_46vf1")]([])
+bonus_stats_while_active = Array[ExtResource("1_grrrs")]([])
+quick_cast = false
+non_target = true
+to_attack = false
+ability_script = ExtResource("1_0i1sh")
+bb_script = ExtResource("1_qytky")

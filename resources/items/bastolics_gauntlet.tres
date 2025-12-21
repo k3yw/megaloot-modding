@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://cuyfh1c0i5ogw"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_8liy0"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_lj0i7"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="4_njoet"]
+[ext_resource type="Resource" uid="uid://b3vtyfu6kkeou" path="res://resources/item_sets/bastolic.tres" id="5_5k7af"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_c0cro"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="6_s36og"]
+[ext_resource type="Texture2D" uid="uid://botb7hjsdhltw" path="res://assets/textures/items/bastolics_gauntlet.png" id="7_2u514"]
+
+[sub_resource type="Resource" id="Resource_qk6vt"]
+script = ExtResource("1_8liy0")
+boosting_sets = Array[ExtResource("6_c0cro")]([ExtResource("5_5k7af")])
+resource = ExtResource("4_njoet")
+amount = 6.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_lj0i7")
+name = &"Bastolic\'s Gauntlet"
+texture = ExtResource("7_2u514")
+description = ""
+socket_type = ExtResource("6_s36og")
+set_resources = Array[ExtResource("6_c0cro")]([ExtResource("5_5k7af")])
+bonus_stats = Array[ExtResource("1_8liy0")]([SubResource("Resource_qk6vt")])
+extra_price = 12.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

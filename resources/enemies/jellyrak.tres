@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=16 format=3 uid="uid://di21ot72c3jhj"]
+
+[ext_resource type="Resource" uid="uid://blbmjs1pfmbu6" path="res://resources/abilities/stun_attack.tres" id="1_5h1id"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_844t2"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_dn1g6"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_wbdrf"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_6yy8a"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_k54pr"]
+[ext_resource type="Texture2D" uid="uid://der3fwffg1kl1" path="res://assets/textures/enemies/jellyrak.png" id="2_tt2oq"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_xqar5"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_ll2pa"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="7_lmudb"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_rgmsm"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_3xbup"]
+
+[sub_resource type="Resource" id="Resource_m61u3"]
+script = ExtResource("2_6yy8a")
+boosting_sets = Array[ExtResource("2_k54pr")]([])
+resource = ExtResource("1_844t2")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_kq6of"]
+script = ExtResource("2_6yy8a")
+boosting_sets = Array[ExtResource("2_k54pr")]([])
+resource = ExtResource("5_xqar5")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0ladd"]
+script = ExtResource("2_6yy8a")
+boosting_sets = Array[ExtResource("2_k54pr")]([])
+resource = ExtResource("7_lmudb")
+amount = 2.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("1_wbdrf")
+name = "Jellyrak"
+texture = ExtResource("2_tt2oq")
+floor_number = 2
+flying = true
+starting_status_effects = Array[ExtResource("8_rgmsm")]([])
+active_item_sets = Array[ExtResource("2_k54pr")]([])
+stats_per_level = Array[ExtResource("11_3xbup")]([])
+base_stats = Array[ExtResource("2_6yy8a")]([SubResource("Resource_m61u3"), SubResource("Resource_kq6of"), SubResource("Resource_0ladd")])
+abilities = Array[ExtResource("1_dn1g6")]([ExtResource("1_5h1id")])
+passives = Array[ExtResource("7_ll2pa")]([])
+is_unique = false
+hide_stats = false

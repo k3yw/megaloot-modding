@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://cxt61neriqkey"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_m2ajc"]
+[ext_resource type="Resource" uid="uid://i7el4x0fmvyc" path="res://resources/stats/crit_chance.tres" id="2_8bv5l"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_ygg6u"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_y3mbx"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="6_fladv"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_4kt5h"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="8_4uocy"]
+[ext_resource type="Resource" uid="uid://yafmbyqx3xa6" path="res://resources/item_sets/swiftness.tres" id="8_k6la2"]
+[ext_resource type="Texture2D" uid="uid://dt2ak4qshgs0e" path="res://assets/textures/items/shadow_sentence.png" id="9_3pxvc"]
+
+[sub_resource type="Resource" id="Resource_cl5sh"]
+script = ExtResource("1_m2ajc")
+boosting_sets = Array[ExtResource("7_4kt5h")]([ExtResource("6_fladv")])
+resource = ExtResource("5_y3mbx")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_xte0w"]
+script = ExtResource("1_m2ajc")
+boosting_sets = Array[ExtResource("7_4kt5h")]([])
+resource = ExtResource("2_8bv5l")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_ygg6u")
+name = &"Shadow Sentence"
+texture = ExtResource("9_3pxvc")
+description = ""
+socket_type = ExtResource("8_4uocy")
+set_resources = Array[ExtResource("7_4kt5h")]([ExtResource("6_fladv"), ExtResource("8_k6la2")])
+bonus_stats = Array[ExtResource("1_m2ajc")]([SubResource("Resource_cl5sh"), SubResource("Resource_xte0w")])
+extra_price = 27.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

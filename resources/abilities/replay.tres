@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=7 format=3 uid="uid://chhvedbph55rj"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_1t53p"]
+[ext_resource type="Script" uid="uid://dnnm08gqyo8n0" path="res://resources/ability_scripts/replay.gd" id="1_l4l1e"]
+[ext_resource type="Texture2D" uid="uid://b30s2o4s3w6j7" path="res://assets/textures/icons/replay_ability_icon.png" id="2_63npb"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_betw7"]
+[ext_resource type="Script" uid="uid://x63jg1ar15gk" path="res://resources/bb_scripts/replay.gd" id="2_rjj00"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_63npb"]
+
+[resource]
+script = ExtResource("2_betw7")
+name = "Replay"
+icon = ExtResource("2_63npb")
+mana_cost = 0
+use_limit = 1
+status_effects_on_activation = Array[ExtResource("3_63npb")]([])
+bonus_stats_while_active = Array[ExtResource("1_1t53p")]([])
+quick_cast = false
+non_target = true
+to_attack = true
+value = 0
+ability_script = ExtResource("1_l4l1e")
+bb_script = ExtResource("2_rjj00")
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

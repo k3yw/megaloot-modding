@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://60hr537y1ora"]
+
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="1_hnft2"]
+[ext_resource type="Resource" uid="uid://g3um3f8ovjwk" path="res://resources/item_sets/ancient_ice.tres" id="2_4tcxi"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_21h5a"]
+[ext_resource type="Texture2D" uid="uid://b8vleuypwewna" path="res://assets/textures/items/ethercrests_helmet.png" id="3_pe21i"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="4_cdrtx"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_h2wsv"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="6_v2tle"]
+
+[sub_resource type="Resource" id="Resource_tnbx5"]
+script = ExtResource("2_21h5a")
+boosting_sets = Array[ExtResource("6_h2wsv")]([ExtResource("2_4tcxi")])
+resource = ExtResource("4_cdrtx")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_hnft2")
+name = &"Ethercrest\'s Helmet"
+texture = ExtResource("3_pe21i")
+description = ""
+socket_type = ExtResource("6_v2tle")
+set_resources = Array[ExtResource("6_h2wsv")]([ExtResource("2_4tcxi")])
+bonus_stats = Array[ExtResource("2_21h5a")]([SubResource("Resource_tnbx5")])
+extra_price = 15.0
+spawn_floor = 14
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

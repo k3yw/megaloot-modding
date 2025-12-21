@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://bu6r883k5x2o4"]
+
+[ext_resource type="Script" uid="uid://bxfj68hrkgbs4" path="res://resources/bb_scripts/luminous_trial.gd" id="1_ii2uu"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_bp6su"]
+[ext_resource type="Script" uid="uid://csm5cmeqvt7w2" path="res://resources/passive_scripts/luminous_trial.gd" id="3_f3xqf"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_5qaxc"]
+
+[resource]
+script = ExtResource("4_5qaxc")
+name = "Luminous Trial"
+bonus_stats = Array[ExtResource("2_bp6su")]([])
+game_logic_script = ExtResource("3_f3xqf")
+bb_script = ExtResource("1_ii2uu")

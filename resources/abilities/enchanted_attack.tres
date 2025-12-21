@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=4 format=3 uid="uid://8fhaav8purwm"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_0igjl"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_8able"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_phxfe"]
+
+[resource]
+script = ExtResource("1_8able")
+name = "Enchanted attack"
+mana_cost = 1
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_phxfe")]([])
+bonus_stats_while_active = Array[ExtResource("1_0igjl")]([])
+quick_cast = false
+non_target = true
+value = 0

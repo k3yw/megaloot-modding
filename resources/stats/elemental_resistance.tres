@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://dpl8agabg0hnp"]
+
+[ext_resource type="Script" uid="uid://o5j5eoehwqur" path="res://resources/bb_scripts/elemental_resistance.gd" id="1_7gf2m"]
+[ext_resource type="Texture2D" uid="uid://dewirs6kull4n" path="res://assets/textures/icons/stats/elemental_resistance.png" id="2_4ev4m"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_sfcym"]
+[ext_resource type="Script" uid="uid://r66l6sj1t1om" path="res://resources/stat_scripts/elemental_resistance.gd" id="4_yahvo"]
+
+[resource]
+script = ExtResource("2_sfcym")
+name = "Elemental Resistance"
+icon = ExtResource("2_4ev4m")
+color = Color(0.4732, 0.3328, 0.52, 1)
+is_percentage = true
+max_amount = 95.0
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_yahvo")
+bb_script = ExtResource("1_7gf2m")

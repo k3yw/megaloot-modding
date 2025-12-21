@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://crj0vy5jl0266"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_mnxhx"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_pvle6"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_w1pk2"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="3_6ouob"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_bidjg"]
+[ext_resource type="Resource" uid="uid://bu6r883k5x2o4" path="res://resources/passives/luminous_trial.tres" id="3_si1oc"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="4_7iu2i"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="4_esqoh"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="5_sb64e"]
+[ext_resource type="Texture2D" uid="uid://b3pkawku4hwax" path="res://assets/textures/enemies/sun.png" id="6_3uwe3"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="6_vi85y"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_pfcts"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="12_fmr4n"]
+
+[sub_resource type="Resource" id="Resource_fp5w6"]
+script = ExtResource("2_w1pk2")
+boosting_sets = Array[ExtResource("1_mnxhx")]([])
+resource = ExtResource("3_bidjg")
+amount = 4.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_pa5dn"]
+script = ExtResource("2_w1pk2")
+boosting_sets = Array[ExtResource("1_mnxhx")]([])
+resource = ExtResource("4_7iu2i")
+amount = 84.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_hw1fu"]
+script = ExtResource("2_w1pk2")
+boosting_sets = Array[ExtResource("1_mnxhx")]([])
+resource = ExtResource("5_sb64e")
+amount = 6.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ejnh7"]
+script = ExtResource("2_w1pk2")
+boosting_sets = Array[ExtResource("1_mnxhx")]([])
+resource = ExtResource("6_vi85y")
+amount = 12.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_6ouob")
+name = "Sun"
+texture = ExtResource("6_3uwe3")
+floor_number = 24
+flying = true
+starting_status_effects = Array[ExtResource("4_esqoh")]([])
+active_item_sets = Array[ExtResource("1_mnxhx")]([])
+stats_per_level = Array[ExtResource("12_fmr4n")]([])
+base_stats = Array[ExtResource("2_w1pk2")]([SubResource("Resource_fp5w6"), SubResource("Resource_pa5dn"), SubResource("Resource_hw1fu"), SubResource("Resource_ejnh7")])
+abilities = Array[ExtResource("1_pvle6")]([])
+passives = Array[ExtResource("8_pfcts")]([null, null, ExtResource("3_si1oc")])
+hide_stats = false

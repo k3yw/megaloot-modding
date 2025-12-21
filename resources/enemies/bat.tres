@@ -1,0 +1,40 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=13 format=3 uid="uid://imqqsryrqjv6"]
+
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_2rbqn"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_k47ag"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_lh4np"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_ljgcc"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_8mu8e"]
+[ext_resource type="Texture2D" uid="uid://br0rramfmtiuu" path="res://assets/textures/enemies/bat.png" id="2_i0shb"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="3_m03s3"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="6_ooh26"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="7_lgivb"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="10_64gyv"]
+
+[sub_resource type="Resource" id="Resource_v247l"]
+script = ExtResource("2_8mu8e")
+boosting_sets = Array[ExtResource("1_ljgcc")]([])
+resource = ExtResource("1_2rbqn")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_qh8bu"]
+script = ExtResource("2_8mu8e")
+boosting_sets = Array[ExtResource("1_ljgcc")]([])
+resource = ExtResource("3_m03s3")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_lh4np")
+name = "Bat"
+texture = ExtResource("2_i0shb")
+floor_number = 0
+flying = true
+starting_status_effects = Array[ExtResource("7_lgivb")]([])
+active_item_sets = Array[ExtResource("1_ljgcc")]([])
+stats_per_level = Array[ExtResource("10_64gyv")]([])
+base_stats = Array[ExtResource("2_8mu8e")]([SubResource("Resource_v247l"), SubResource("Resource_qh8bu")])
+abilities = Array[ExtResource("1_k47ag")]([])
+passives = Array[ExtResource("6_ooh26")]([])
+hide_stats = false

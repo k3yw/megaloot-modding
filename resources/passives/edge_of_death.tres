@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://bbqeh37dmoqi4"]
+
+[ext_resource type="Script" uid="uid://c88f2wq5g6m5m" path="res://resources/bb_scripts/edge_of_death.gd" id="1_nxwop"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_rh4hn"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_fdhyc"]
+
+[resource]
+script = ExtResource("3_fdhyc")
+name = "Edge of Death"
+bonus_stats = Array[ExtResource("1_rh4hn")]([])
+bb_script = ExtResource("1_nxwop")

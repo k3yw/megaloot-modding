@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://i7el4x0fmvyc"]
+
+[ext_resource type="Script" uid="uid://e67l6sj6stwb" path="res://resources/bb_scripts/crit_chance.gd" id="1_aywcx"]
+[ext_resource type="Texture2D" uid="uid://dvok53ry1k1ok" path="res://assets/textures/icons/stats/critical_strike_icon.png" id="1_rqs3i"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_nxbf1"]
+[ext_resource type="Script" uid="uid://djut7pmhibyue" path="res://resources/stat_scripts/crit_chance.gd" id="4_5amoh"]
+
+[resource]
+script = ExtResource("2_nxbf1")
+name = "Crit Chance"
+icon = ExtResource("1_rqs3i")
+color = Color(1, 0.396078, 0.262745, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = 100
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_5amoh")
+bb_script = ExtResource("1_aywcx")

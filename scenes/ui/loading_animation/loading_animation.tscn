@@ -1,0 +1,79 @@
+[gd_scene load_steps=11 format=3 uid="uid://bemoevikwn4l6"]
+
+[ext_resource type="Texture2D" uid="uid://kxl7sbcsg3p3" path="res://assets/textures/ui/loading.png" id="1_8cweh"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o45ut"]
+atlas = ExtResource("1_8cweh")
+region = Rect2(0, 0, 7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xseb0"]
+atlas = ExtResource("1_8cweh")
+region = Rect2(7, 0, 7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_o1r1r"]
+atlas = ExtResource("1_8cweh")
+region = Rect2(14, 0, 7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7clr5"]
+atlas = ExtResource("1_8cweh")
+region = Rect2(21, 0, 7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_r5p0y"]
+atlas = ExtResource("1_8cweh")
+region = Rect2(28, 0, 7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wesdn"]
+atlas = ExtResource("1_8cweh")
+region = Rect2(35, 0, 7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p1y3s"]
+atlas = ExtResource("1_8cweh")
+region = Rect2(42, 0, 7, 7)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cnybx"]
+atlas = ExtResource("1_8cweh")
+region = Rect2(49, 0, 7, 7)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_nj541"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o45ut")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xseb0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_o1r1r")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7clr5")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_r5p0y")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_wesdn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p1y3s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cnybx")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="LoadingAnimation" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+modulate = Color(0.321569, 0.360784, 0.419608, 1)
+position = Vector2(0, 9)
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_nj541")
+autoplay = "default"
+frame_progress = 0.70783

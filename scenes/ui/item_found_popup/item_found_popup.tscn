@@ -1,0 +1,62 @@
+[gd_scene load_steps=6 format=3 uid="uid://bajkjk866p3nw"]
+
+[ext_resource type="Script" uid="uid://bdyer7wo7xwid" path="res://scenes/ui/item_found_popup/item_found_popup.gd" id="1_pmnxx"]
+[ext_resource type="Texture2D" uid="uid://bjrhh4epax8lr" path="res://assets/textures/items/greeds_grasp.png" id="2_3igw1"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="3_bia70"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="4_jtxra"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_naljy"]
+resource_local_to_scene = true
+shader = ExtResource("4_jtxra")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="ItemFoundPopup" type="MarginContainer" node_paths=PackedStringArray("texture_rect", "label")]
+offset_right = 579.0
+offset_bottom = 32.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_pmnxx")
+texture_rect = NodePath("HBoxContainer/TextureRect")
+label = NodePath("HBoxContainer/StatNameLabel")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer"]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+texture = ExtResource("2_3igw1")
+
+[node name="StatNameLabel" parent="HBoxContainer" instance=ExtResource("3_bia70")]
+material = SubResource("ShaderMaterial_naljy")
+layout_mode = 2
+text = "Item Name Found!"

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://0c3uf2jwe1qm"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_e640w"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_0icaa"]
+[ext_resource type="Resource" uid="uid://chq1wtqg02dw4" path="res://resources/stats/combat.tres" id="4_jcopm"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_hcpvq"]
+[ext_resource type="Resource" uid="uid://svvuieiqjue" path="res://resources/item_sets/orion.tres" id="6_4bw5t"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_8bqct"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_788ws"]
+[ext_resource type="Texture2D" uid="uid://dy75qr8wslx0n" path="res://assets/textures/items/orions_destiny.png" id="8_gk3b6"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="9_nhodp"]
+
+[sub_resource type="Resource" id="Resource_h238y"]
+script = ExtResource("1_e640w")
+boosting_sets = Array[ExtResource("7_8bqct")]([ExtResource("6_4bw5t")])
+resource = ExtResource("4_jcopm")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_oyheg"]
+script = ExtResource("1_e640w")
+boosting_sets = Array[ExtResource("7_8bqct")]([ExtResource("6_4bw5t")])
+resource = ExtResource("5_hcpvq")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_0icaa")
+name = &"Orion\'s Destiny"
+texture = ExtResource("8_gk3b6")
+socket_type = ExtResource("7_788ws")
+set_resources = Array[ExtResource("7_8bqct")]([ExtResource("6_4bw5t")])
+bonus_stats = Array[ExtResource("1_e640w")]([SubResource("Resource_h238y"), SubResource("Resource_oyheg")])
+unlock_requirements = Array[ExtResource("9_nhodp")]([])
+extra_price = 70.0
+spawn_floor = 6
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://omq5015gdo3k"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_p6olh"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="2_qd0bf"]
+[ext_resource type="Resource" uid="uid://dhtx0qdflmixn" path="res://resources/item_sets/darkness.tres" id="3_q3gho"]
+[ext_resource type="Resource" uid="uid://7y0w2enfo0o1" path="res://resources/stats/spelldom.tres" id="4_nak72"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_jh0sp"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_w4lfh"]
+[ext_resource type="Resource" uid="uid://d07dc442wyx5e" path="res://resources/item_sets/wood.tres" id="7_bq83c"]
+[ext_resource type="Texture2D" uid="uid://byt4ta2cyh466" path="res://assets/textures/items/dark_harness.png" id="8_5pb77"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="8_wm8yq"]
+
+[sub_resource type="Resource" id="Resource_i7au0"]
+script = ExtResource("1_p6olh")
+boosting_sets = Array[ExtResource("6_w4lfh")]([ExtResource("3_q3gho")])
+resource = ExtResource("2_qd0bf")
+amount = 45.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_mj5sq"]
+script = ExtResource("1_p6olh")
+boosting_sets = Array[ExtResource("6_w4lfh")]([])
+resource = ExtResource("4_nak72")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_jh0sp")
+name = &"Dark Harness"
+texture = ExtResource("8_5pb77")
+description = ""
+socket_type = ExtResource("8_wm8yq")
+set_resources = Array[ExtResource("6_w4lfh")]([ExtResource("3_q3gho"), ExtResource("7_bq83c")])
+bonus_stats = Array[ExtResource("1_p6olh")]([SubResource("Resource_i7au0"), SubResource("Resource_mj5sq")])
+extra_price = 45.0
+spawn_floor = 9
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

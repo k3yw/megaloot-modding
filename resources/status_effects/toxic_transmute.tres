@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://jotr2ju5l86n"]
+
+[ext_resource type="Texture2D" uid="uid://by1n1nsgepk4c" path="res://assets/textures/icons/toxic_transmute_icon.png" id="1_86vvm"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_gd6s7"]
+[ext_resource type="Script" uid="uid://8anwelmx3vsq" path="res://resources/bb_scripts/toxic_transmute.gd" id="1_n6d6q"]
+[ext_resource type="Resource" uid="uid://dkpwt31f2uxai" path="res://resources/status_effect_types/blessing.tres" id="2_gd6s7"]
+
+[resource]
+script = ExtResource("1_gd6s7")
+name = "Toxic Transmute"
+icon = ExtResource("1_86vvm")
+color = Color(0.258824, 0.643137, 0.34902, 1)
+type = ExtResource("2_gd6s7")
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_n6d6q")
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

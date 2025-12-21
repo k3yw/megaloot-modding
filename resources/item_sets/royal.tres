@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://6humi44d3jf7"]
+
+[ext_resource type="Texture2D" uid="uid://bsg0l4je26tga" path="res://assets/textures/icons/item_sets/royal_icon.png" id="1_0g3bq"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_16b0m"]
+[ext_resource type="Script" uid="uid://dxtjl5ve255k2" path="res://resources/bb_scripts/royal.gd" id="1_ky0gv"]
+
+[resource]
+script = ExtResource("1_16b0m")
+name = "Royal"
+icon = ExtResource("1_0g3bq")
+color = Color(0, 0.509804, 0.827451, 1)
+value = 0
+flow_cost = 25
+bb_script = ExtResource("1_ky0gv")

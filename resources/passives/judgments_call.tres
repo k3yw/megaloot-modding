@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://burnoufupkxf2"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_3yd4o"]
+[ext_resource type="Script" uid="uid://c0t7nhd3e27tk" path="res://resources/bb_scripts/judgments_call.gd" id="1_rrj8h"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_tx0w6"]
+
+[resource]
+script = ExtResource("3_tx0w6")
+name = "Judgment's Call"
+bonus_stats = Array[ExtResource("1_3yd4o")]([])
+bb_script = ExtResource("1_rrj8h")

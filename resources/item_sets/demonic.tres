@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=5 format=3 uid="uid://co4r8myt4rmnk"]
+
+[ext_resource type="Script" uid="uid://1sepjd3pt6mt" path="res://resources/bb_scripts/demonic.gd" id="1_ggp2k"]
+[ext_resource type="Texture2D" uid="uid://3ivxnvs4s7ue" path="res://assets/textures/icons/item_sets/demonic_icon.png" id="1_pfutd"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_5vt1d"]
+[ext_resource type="Script" path="res://resources/item_set_scripts/demonic.gd" id="2_7k1q6"]
+
+[resource]
+script = ExtResource("2_5vt1d")
+name = "Demonic"
+icon = ExtResource("1_pfutd")
+color = Color(0.517647, 0.211765, 0.25098, 1)
+value = 75
+game_logic_script = ExtResource("2_7k1q6")
+bb_script = ExtResource("1_ggp2k")

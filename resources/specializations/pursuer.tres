@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3 uid="uid://cctddoaoyof0p"]
+
+[ext_resource type="Script" uid="uid://c567vqc52tcdx" path="res://classes/resource/specialization.gd" id="2_k618s"]
+[ext_resource type="Resource" uid="uid://bf2y3uc38gwy2" path="res://resources/item_sets/scout.tres" id="3_2igds"]
+[ext_resource type="Resource" uid="uid://i7el4x0fmvyc" path="res://resources/stats/crit_chance.tres" id="6_6dyea"]
+[ext_resource type="Resource" uid="uid://bwpnncbi5hrbg" path="res://resources/item_sets/cataclysm.tres" id="7_p33gp"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="7_tkw7w"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="8_v2y4l"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="9_2yfye"]
+
+[resource]
+script = ExtResource("2_k618s")
+name = "Pursuer"
+color = Color(0.701961, 0.72549, 0.819608, 1)
+original_item_set = ExtResource("3_2igds")
+synergy_item_set = ExtResource("7_p33gp")
+stats = Array[ExtResource("9_2yfye")]([ExtResource("6_6dyea"), ExtResource("7_tkw7w"), ExtResource("8_v2y4l")])

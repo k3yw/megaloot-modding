@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://dqem1nshbv71a"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_pth1o"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="2_tq4nf"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_aqpuw"]
+[ext_resource type="Resource" uid="uid://uxwdne2hyfvl" path="res://resources/stats/critical_damage.tres" id="5_l8ipj"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="6_qlgya"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_vdxuf"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="7_w8hw1"]
+[ext_resource type="Texture2D" uid="uid://dmyjs4rr20qsr" path="res://assets/textures/items/shadow_ring.png" id="8_w25mu"]
+
+[sub_resource type="Resource" id="Resource_om465"]
+script = ExtResource("1_pth1o")
+boosting_sets = Array[ExtResource("7_vdxuf")]([ExtResource("6_qlgya")])
+resource = ExtResource("5_l8ipj")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_woke2"]
+script = ExtResource("1_pth1o")
+boosting_sets = Array[ExtResource("7_vdxuf")]([])
+resource = ExtResource("2_tq4nf")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_aqpuw")
+name = &"Shadow Ring"
+texture = ExtResource("8_w25mu")
+description = ""
+socket_type = ExtResource("7_w8hw1")
+set_resources = Array[ExtResource("7_vdxuf")]([ExtResource("6_qlgya")])
+bonus_stats = Array[ExtResource("1_pth1o")]([SubResource("Resource_om465"), SubResource("Resource_woke2")])
+extra_price = 3.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

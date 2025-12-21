@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://i6qromh3258a"]
+
+[ext_resource type="Script" uid="uid://ddejkc764v1jx" path="res://scenes/objects/animated_light/animated_light.gd" id="1_l7k0p"]
+
+[node name="AnimatedLight" type="OmniLight3D"]
+transform = Transform3D(1, 0, 0, 0, 0.983255, -0.182236, 0, 0.182236, 0.983255, 0, -1.74784, -3.72164)
+light_specular = 0.0
+shadow_transmittance_bias = -9.409
+omni_range = 14.763
+omni_attenuation = 0.05
+script = ExtResource("1_l7k0p")

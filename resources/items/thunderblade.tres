@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://c3v7qub2u4rhf"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_2cs27"]
+[ext_resource type="Resource" uid="uid://c0fl4emw02wpo" path="res://resources/stats/electricity.tres" id="2_v7raa"]
+[ext_resource type="Resource" uid="uid://m0ht7iswavoj" path="res://resources/passives/thunderstrike.tres" id="3_uld38"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_8ntd1"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="6_lbspe"]
+[ext_resource type="Resource" uid="uid://b3f48bv52mfyp" path="res://resources/item_sets/thunder.tres" id="7_rc3c8"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="8_2o6je"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="8_i01wd"]
+[ext_resource type="Texture2D" uid="uid://bxapvjkmuyvhr" path="res://assets/textures/items/thunderblade.png" id="9_mb3qy"]
+
+[sub_resource type="Resource" id="Resource_xcwgx"]
+script = ExtResource("1_2cs27")
+boosting_sets = Array[ExtResource("8_2o6je")]([ExtResource("7_rc3c8")])
+resource = ExtResource("6_lbspe")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_wfdl3"]
+script = ExtResource("1_2cs27")
+boosting_sets = Array[ExtResource("8_2o6je")]([])
+resource = ExtResource("2_v7raa")
+amount = 8.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_8ntd1")
+name = &"Thunderblade"
+texture = ExtResource("9_mb3qy")
+description = ""
+socket_type = ExtResource("8_i01wd")
+set_resources = Array[ExtResource("8_2o6je")]([ExtResource("7_rc3c8")])
+passive = ExtResource("3_uld38")
+bonus_stats = Array[ExtResource("1_2cs27")]([SubResource("Resource_xcwgx"), SubResource("Resource_wfdl3")])
+extra_price = 57.0
+spawn_floor = 8
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

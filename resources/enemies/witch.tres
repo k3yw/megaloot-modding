@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=15 format=3 uid="uid://cbena6lpltcvr"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_1h218"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_36o86"]
+[ext_resource type="Resource" uid="uid://b86gt15eid58v" path="res://resources/passives/evil_mark.tres" id="1_kd87l"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_tt63w"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_0qrx6"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_7oky1"]
+[ext_resource type="Texture2D" uid="uid://d2grwa5pt7ybx" path="res://assets/textures/enemies/witch.png" id="4_b1th1"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="5_bqyg3"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_btxqy"]
+[ext_resource type="Resource" uid="uid://cms88ci472g3i" path="res://resources/passives/cursed_chain.tres" id="8_qd3no"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_shbx5"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_8t0sk"]
+
+[sub_resource type="Resource" id="Resource_p73r7"]
+script = ExtResource("2_0qrx6")
+boosting_sets = Array[ExtResource("2_7oky1")]([])
+resource = ExtResource("1_36o86")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_wfunq"]
+script = ExtResource("2_0qrx6")
+boosting_sets = Array[ExtResource("2_7oky1")]([])
+resource = ExtResource("5_bqyg3")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_1h218")
+name = "Witch"
+texture = ExtResource("4_b1th1")
+floor_number = 3
+flying = false
+starting_status_effects = Array[ExtResource("8_shbx5")]([])
+active_item_sets = Array[ExtResource("2_7oky1")]([])
+stats_per_level = Array[ExtResource("11_8t0sk")]([])
+base_stats = Array[ExtResource("2_0qrx6")]([SubResource("Resource_p73r7"), SubResource("Resource_wfunq")])
+abilities = Array[ExtResource("1_tt63w")]([])
+passives = Array[ExtResource("7_btxqy")]([ExtResource("1_kd87l"), ExtResource("8_qd3no")])
+hide_stats = false

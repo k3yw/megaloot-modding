@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://3ay001xcocbt"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_imsqn"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_ef1jm"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_vn7w8"]
+[ext_resource type="Resource" uid="uid://c0fl4emw02wpo" path="res://resources/stats/electricity.tres" id="5_vcna4"]
+[ext_resource type="Resource" uid="uid://b3f48bv52mfyp" path="res://resources/item_sets/thunder.tres" id="6_pfrxr"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_cr4wu"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_lu7fu"]
+[ext_resource type="Texture2D" uid="uid://dlb8md8ge0ibv" path="res://assets/textures/items/thunderhelm.png" id="8_f0aps"]
+
+[sub_resource type="Resource" id="Resource_leeu3"]
+script = ExtResource("1_imsqn")
+boosting_sets = Array[ExtResource("7_cr4wu")]([ExtResource("6_pfrxr")])
+resource = ExtResource("5_vcna4")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ognpo"]
+script = ExtResource("1_imsqn")
+boosting_sets = Array[ExtResource("7_cr4wu")]([])
+resource = ExtResource("2_ef1jm")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_vn7w8")
+name = &"Thunderhelm"
+texture = ExtResource("8_f0aps")
+description = ""
+socket_type = ExtResource("7_lu7fu")
+set_resources = Array[ExtResource("7_cr4wu")]([ExtResource("6_pfrxr")])
+bonus_stats = Array[ExtResource("1_imsqn")]([SubResource("Resource_leeu3"), SubResource("Resource_ognpo")])
+extra_price = 35.0
+spawn_floor = 8
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

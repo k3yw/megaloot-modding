@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://bxqkdn8en4hdm"]
+
+[ext_resource type="Texture2D" uid="uid://c6oex7ny5wje5" path="res://assets/textures/ui/breakable_bar.png" id="1_qayg7"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wvxq1"]
+resource_local_to_scene = true
+atlas = ExtResource("1_qayg7")
+region = Rect2(11, 0, 11, 12)
+
+[node name="BreakableBarTextureRect" type="TextureRect"]
+custom_minimum_size = Vector2(11, 12)
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = SubResource("AtlasTexture_wvxq1")
+expand_mode = 1

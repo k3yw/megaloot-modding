@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://b66ffkx5c7b7"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_30im0"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_56b7u"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_thprt"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_qrs44"]
+[ext_resource type="Resource" uid="uid://dpl8agabg0hnp" path="res://resources/stats/elemental_resistance.tres" id="5_56b7u"]
+[ext_resource type="Resource" uid="uid://orugsb1sodim" path="res://resources/item_sets/celestial.tres" id="5_l5lyx"]
+[ext_resource type="Texture2D" uid="uid://sufa2dmoteey" path="res://assets/textures/items/celestial_leggings.png" id="6_5w46v"]
+[ext_resource type="Resource" uid="uid://cmw0nuwmn0iiu" path="res://resources/socket_types/leggings.tres" id="7_thprt"]
+
+[sub_resource type="Resource" id="Resource_hojpg"]
+script = ExtResource("1_30im0")
+boosting_sets = Array[ExtResource("2_56b7u")]([ExtResource("5_l5lyx")])
+resource = ExtResource("3_thprt")
+amount = 138.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_thprt"]
+script = ExtResource("1_30im0")
+boosting_sets = Array[ExtResource("2_56b7u")]([])
+resource = ExtResource("5_56b7u")
+amount = 10.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("4_qrs44")
+name = &"Celestial Leggings"
+texture = ExtResource("6_5w46v")
+description = ""
+socket_type = ExtResource("7_thprt")
+set_resources = Array[ExtResource("2_56b7u")]([ExtResource("5_l5lyx")])
+bonus_stats = Array[ExtResource("1_30im0")]([SubResource("Resource_hojpg"), SubResource("Resource_thprt")])
+extra_price = 208.0
+spawn_floor = 20
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

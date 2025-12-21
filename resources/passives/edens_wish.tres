@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://dknh7xqcpnvmw"]
+
+[ext_resource type="Script" uid="uid://c7x78hakkg16b" path="res://resources/bb_scripts/edens_wish.gd" id="1_2cdcs"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_chqi7"]
+[ext_resource type="Script" uid="uid://b3sf0pxffid0c" path="res://resources/passive_scripts/edens_wish.gd" id="3_n5w8d"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_y3p31"]
+
+[resource]
+script = ExtResource("3_y3p31")
+name = "Eden's Wish"
+bonus_stats = Array[ExtResource("1_chqi7")]([])
+game_logic_script = ExtResource("3_n5w8d")
+bb_script = ExtResource("1_2cdcs")

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://ckub8vchc341w"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_y7aao"]
+[ext_resource type="Resource" uid="uid://nmolc84dhefq" path="res://resources/stats/life_steal.tres" id="2_jabwn"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_ylawu"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_f1hbr"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="6_lor77"]
+[ext_resource type="Resource" uid="uid://dmvibnyb3mslv" path="res://resources/item_sets/golden.tres" id="7_5pxbs"]
+[ext_resource type="Texture2D" uid="uid://bjrhh4epax8lr" path="res://assets/textures/items/greeds_grasp.png" id="8_6sn3l"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_wx6ky"]
+
+[sub_resource type="Resource" id="Resource_aplcv"]
+script = ExtResource("1_y7aao")
+boosting_sets = Array[ExtResource("6_f1hbr")]([])
+resource = ExtResource("2_jabwn")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_ylawu")
+name = &"Greed\'s Grasp"
+texture = ExtResource("8_6sn3l")
+socket_type = ExtResource("6_lor77")
+set_resources = Array[ExtResource("6_f1hbr")]([ExtResource("7_5pxbs")])
+bonus_stats = Array[ExtResource("1_y7aao")]([SubResource("Resource_aplcv")])
+unlock_requirements = Array[ExtResource("8_wx6ky")]([])
+extra_price = 15.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

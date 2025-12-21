@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://wnaj7p054sm2"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_krdgc"]
+[ext_resource type="Resource" uid="uid://clysfjs400lm7" path="res://resources/stats/toughness.tres" id="2_hly5g"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_navia"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_lf4k8"]
+[ext_resource type="Resource" uid="uid://svvuieiqjue" path="res://resources/item_sets/orion.tres" id="6_g6wxd"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="7_25p18"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_j78xf"]
+[ext_resource type="Texture2D" uid="uid://d1r8b4i7uy0fk" path="res://assets/textures/items/orions_sanguine_salvation.png" id="8_muwg3"]
+
+[sub_resource type="Resource" id="Resource_ewlp2"]
+script = ExtResource("1_krdgc")
+boosting_sets = Array[ExtResource("7_j78xf")]([ExtResource("6_g6wxd")])
+resource = ExtResource("5_lf4k8")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_p1o2m"]
+script = ExtResource("1_krdgc")
+boosting_sets = Array[ExtResource("7_j78xf")]([])
+resource = ExtResource("2_hly5g")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_navia")
+name = &"Orion\'s Sanguine Salvation"
+texture = ExtResource("8_muwg3")
+description = ""
+socket_type = ExtResource("7_25p18")
+set_resources = Array[ExtResource("7_j78xf")]([ExtResource("6_g6wxd")])
+bonus_stats = Array[ExtResource("1_krdgc")]([SubResource("Resource_ewlp2"), SubResource("Resource_p1o2m")])
+extra_price = 72.0
+spawn_floor = 6
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

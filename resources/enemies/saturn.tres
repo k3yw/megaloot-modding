@@ -1,0 +1,95 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=28 format=3 uid="uid://bhwguqmbn2che"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_1alyn"]
+[ext_resource type="Resource" uid="uid://c8xkh7qq1jxpr" path="res://resources/abilities/shatter_strike.tres" id="1_r3qgb"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_yp7wu"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_gec63"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_isku5"]
+[ext_resource type="Texture2D" uid="uid://baxapmn62v226" path="res://assets/textures/enemies/saturn.png" id="2_u71t8"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_5jp2n"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="4_e43uh"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_q45ow"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="6_8dp0o"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="9_l1hon"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="11_fnenx"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="11_niaa0"]
+[ext_resource type="Resource" uid="uid://bohmbus0djkn1" path="res://resources/status_effects/armor_shield.tres" id="12_gmgbb"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="14_4ua1q"]
+
+[sub_resource type="Resource" id="Resource_he2aa"]
+script = ExtResource("3_5jp2n")
+boosting_sets = Array[ExtResource("2_isku5")]([])
+resource = ExtResource("2_gec63")
+amount = 85.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0bvv0"]
+script = ExtResource("3_5jp2n")
+boosting_sets = Array[ExtResource("2_isku5")]([])
+resource = ExtResource("4_e43uh")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0kcuy"]
+script = ExtResource("3_5jp2n")
+boosting_sets = Array[ExtResource("2_isku5")]([])
+resource = ExtResource("5_q45ow")
+amount = 50.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_fo5vy"]
+script = ExtResource("3_5jp2n")
+boosting_sets = Array[ExtResource("2_isku5")]([])
+resource = ExtResource("6_8dp0o")
+amount = 18.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_e8hxb"]
+script = ExtResource("11_fnenx")
+resource = ExtResource("12_gmgbb")
+amount = 3
+
+[sub_resource type="Resource" id="Resource_hwmdb"]
+script = ExtResource("11_niaa0")
+status_effects = Array[ExtResource("11_fnenx")]([SubResource("Resource_e8hxb")])
+
+[sub_resource type="Resource" id="Resource_ft0m7"]
+script = ExtResource("11_fnenx")
+resource = ExtResource("12_gmgbb")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_xgc4h"]
+script = ExtResource("11_niaa0")
+status_effects = Array[ExtResource("11_fnenx")]([SubResource("Resource_ft0m7")])
+
+[sub_resource type="Resource" id="Resource_ajd1o"]
+script = ExtResource("11_fnenx")
+resource = ExtResource("12_gmgbb")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_g0n5w"]
+script = ExtResource("11_niaa0")
+status_effects = Array[ExtResource("11_fnenx")]([SubResource("Resource_ajd1o")])
+
+[sub_resource type="Resource" id="Resource_felsm"]
+script = ExtResource("11_fnenx")
+resource = ExtResource("12_gmgbb")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_qenx4"]
+script = ExtResource("11_niaa0")
+status_effects = Array[ExtResource("11_fnenx")]([SubResource("Resource_felsm")])
+
+[resource]
+script = ExtResource("1_yp7wu")
+name = "Saturn"
+texture = ExtResource("2_u71t8")
+floor_number = 20
+flying = false
+starting_status_effects = Array[ExtResource("11_niaa0")]([SubResource("Resource_hwmdb"), SubResource("Resource_xgc4h"), SubResource("Resource_g0n5w"), SubResource("Resource_qenx4")])
+active_item_sets = Array[ExtResource("2_isku5")]([])
+stats_per_level = Array[ExtResource("14_4ua1q")]([])
+base_stats = Array[ExtResource("3_5jp2n")]([SubResource("Resource_he2aa"), SubResource("Resource_0bvv0"), SubResource("Resource_0kcuy"), SubResource("Resource_fo5vy")])
+abilities = Array[ExtResource("1_1alyn")]([ExtResource("1_r3qgb")])
+passives = Array[ExtResource("9_l1hon")]([])
+hide_stats = false

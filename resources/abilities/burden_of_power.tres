@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=9 format=3 uid="uid://cux2qbt7j5s4o"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_moyt2"]
+[ext_resource type="Script" uid="uid://c8br0cgbfp32a" path="res://resources/ability_scripts/burden_of_power.gd" id="1_pey2t"]
+[ext_resource type="Script" uid="uid://b56p0nf7f32ai" path="res://resources/bb_scripts/burden_of_power.gd" id="2_2xg5t"]
+[ext_resource type="Texture2D" uid="uid://bkbvyhjblm8up" path="res://assets/textures/icons/abilities/burden_of_power_icon.png" id="2_7rkmr"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_32b71"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_7rkmr"]
+[ext_resource type="Resource" uid="uid://dfo2cuwdxwmwb" path="res://resources/status_effects/dread.tres" id="7_2xg5t"]
+
+[sub_resource type="Resource" id="Resource_tyv10"]
+script = ExtResource("3_7rkmr")
+resource = ExtResource("7_2xg5t")
+amount = 1
+metadata/_custom_type_script = "uid://b3b5vhhh7jge1"
+
+[resource]
+script = ExtResource("2_32b71")
+name = "Burden of Power"
+icon = ExtResource("2_7rkmr")
+mana_cost = 0
+use_limit = 1
+status_effects_on_activation = Array[ExtResource("3_7rkmr")]([SubResource("Resource_tyv10")])
+bonus_stats_while_active = Array[ExtResource("1_moyt2")]([])
+quick_cast = false
+non_target = true
+to_attack = false
+value = 0
+ability_script = ExtResource("1_pey2t")
+bb_script = ExtResource("2_2xg5t")
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

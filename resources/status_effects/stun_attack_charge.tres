@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://xojjrpbu8hfx"]
+
+[ext_resource type="Script" uid="uid://cewxqj8tybaxj" path="res://resources/bb_scripts/stun_attack.gd" id="1_qifc5"]
+[ext_resource type="Texture2D" uid="uid://chr32r80esuym" path="res://assets/textures/icons/stun_attack_icon.png" id="2_73ek6"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="3_40s76"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="4_mgogp"]
+
+[resource]
+script = ExtResource("3_40s76")
+name = "Stun Attack Charge"
+icon = ExtResource("2_73ek6")
+color = Color(0.45098, 0.435294, 0.572549, 1)
+type = ExtResource("4_mgogp")
+is_temporary = true
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_qifc5")
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

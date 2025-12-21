@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=14 format=3 uid="uid://xsihpdbykt07"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_k8l6p"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_xy0xr"]
+[ext_resource type="Resource" uid="uid://cyty75m0w3y7p" path="res://resources/abilities/headbutt.tres" id="2_4rhar"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_8yvhd"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_sg3jt"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_6m4o3"]
+[ext_resource type="Texture2D" uid="uid://syovelnga538" path="res://assets/textures/enemies/boar.png" id="4_fjhtn"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_6o5lc"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_tmyek"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_r5uud"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_mmwce"]
+
+[sub_resource type="Resource" id="Resource_1404n"]
+script = ExtResource("3_6m4o3")
+boosting_sets = Array[ExtResource("2_8yvhd")]([])
+resource = ExtResource("2_sg3jt")
+amount = 4.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_vg05b"]
+script = ExtResource("3_6m4o3")
+boosting_sets = Array[ExtResource("2_8yvhd")]([])
+resource = ExtResource("5_6o5lc")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_xy0xr")
+name = "Boar"
+texture = ExtResource("4_fjhtn")
+floor_number = 0
+flying = false
+starting_status_effects = Array[ExtResource("8_r5uud")]([])
+active_item_sets = Array[ExtResource("2_8yvhd")]([])
+stats_per_level = Array[ExtResource("11_mmwce")]([])
+base_stats = Array[ExtResource("3_6m4o3")]([SubResource("Resource_1404n"), SubResource("Resource_vg05b")])
+abilities = Array[ExtResource("1_k8l6p")]([ExtResource("2_4rhar")])
+passives = Array[ExtResource("7_tmyek")]([])
+is_unique = false
+hide_stats = false

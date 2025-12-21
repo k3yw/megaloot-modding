@@ -1,0 +1,61 @@
+[gd_resource type="Resource" script_class="Adventurer" load_steps=25 format=3 uid="uid://dklu7genk4yyi"]
+
+[ext_resource type="Resource" uid="uid://dalshc3m5j13o" path="res://resources/abilities/my_way.tres" id="1_5poqs"]
+[ext_resource type="Texture2D" uid="uid://b1jre8tyjim6q" path="res://assets/textures/portraits/sid_blink.png" id="2_wdhyy"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_ljvg4"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_mmxf6"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="4_uf0r3"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="6_7p2sv"]
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="7_5pm14"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="7_i0scv"]
+[ext_resource type="Resource" uid="uid://dtedu6wftg7o5" path="res://resources/item_sets/mercenary.tres" id="9_ib570"]
+[ext_resource type="Texture2D" uid="uid://dh2jlnxt63fhh" path="res://assets/textures/portraits/sid.png" id="10_lhx4v"]
+[ext_resource type="Script" uid="uid://bf4xfjaqogirm" path="res://classes/resource/socket_type.gd" id="10_onj7x"]
+[ext_resource type="Script" uid="uid://b5ygq7ouoi3a1" path="res://classes/resource/adventurer.gd" id="11_4q8yt"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="11_ib570"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="12_5poqs"]
+[ext_resource type="Resource" uid="uid://bn8qelo6vlfds" path="res://resources/passives/vengeful_edge.tres" id="12_onj7x"]
+[ext_resource type="Resource" uid="uid://cmw0nuwmn0iiu" path="res://resources/socket_types/leggings.tres" id="13_u85xh"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="14_3fpyx"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="14_25bur"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="15_u2rj7"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="16_qublc"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="17_34wim"]
+
+[sub_resource type="Resource" id="Resource_0dyfn"]
+script = ExtResource("4_uf0r3")
+boosting_sets = Array[ExtResource("3_ljvg4")]([])
+resource = ExtResource("3_mmxf6")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_j31le"]
+script = ExtResource("4_uf0r3")
+boosting_sets = Array[ExtResource("3_ljvg4")]([])
+resource = ExtResource("6_7p2sv")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_vdhpg"]
+script = ExtResource("4_uf0r3")
+boosting_sets = Array[ExtResource("3_ljvg4")]([])
+resource = ExtResource("7_i0scv")
+amount = 2.0
+is_modifier = false
+
+[resource]
+script = ExtResource("11_4q8yt")
+name = &"Sid"
+portrait = ExtResource("10_lhx4v")
+blink = ExtResource("2_wdhyy")
+specializations = null
+starting_inventory_items = Array[ExtResource("14_3fpyx")]([])
+challenge_market_items = Array[ExtResource("14_3fpyx")]([])
+starting_market_items = Array[ExtResource("14_3fpyx")]([])
+main_set = ExtResource("9_ib570")
+ability = ExtResource("1_5poqs")
+passive = ExtResource("12_onj7x")
+base_flow = 100
+chapters = Array[ExtResource("7_5pm14")]([])
+bonus_stats = Array[ExtResource("4_uf0r3")]([SubResource("Resource_0dyfn"), SubResource("Resource_j31le"), SubResource("Resource_vdhpg")])
+sockets = Array[ExtResource("10_onj7x")]([ExtResource("11_ib570"), ExtResource("12_5poqs"), ExtResource("13_u85xh"), ExtResource("14_25bur"), ExtResource("15_u2rj7"), ExtResource("16_qublc"), ExtResource("17_34wim"), ExtResource("17_34wim")])

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=16 format=3 uid="uid://c6l2alrxeaaej"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_64tfi"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_ccyrb"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_dethu"]
+[ext_resource type="Resource" uid="uid://3tbdk8bfkbfd" path="res://resources/abilities/multi_shield.tres" id="1_rbpkh"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_rttnh"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_si7wx"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="4_4knja"]
+[ext_resource type="Texture2D" uid="uid://c546dip5s77tp" path="res://assets/textures/enemies/fronk.png" id="4_hhla3"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="5_qvfj2"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_uuki8"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_1y5x5"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_ye4ie"]
+
+[sub_resource type="Resource" id="Resource_bsstk"]
+script = ExtResource("2_si7wx")
+boosting_sets = Array[ExtResource("2_rttnh")]([])
+resource = ExtResource("1_dethu")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_p6kst"]
+script = ExtResource("2_si7wx")
+boosting_sets = Array[ExtResource("2_rttnh")]([])
+resource = ExtResource("4_4knja")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0avl7"]
+script = ExtResource("2_si7wx")
+boosting_sets = Array[ExtResource("2_rttnh")]([])
+resource = ExtResource("5_qvfj2")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_64tfi")
+name = "Fronk"
+texture = ExtResource("4_hhla3")
+floor_number = 0
+flying = false
+starting_status_effects = Array[ExtResource("8_1y5x5")]([])
+active_item_sets = Array[ExtResource("2_rttnh")]([])
+stats_per_level = Array[ExtResource("11_ye4ie")]([])
+base_stats = Array[ExtResource("2_si7wx")]([SubResource("Resource_bsstk"), SubResource("Resource_p6kst"), SubResource("Resource_0avl7")])
+abilities = Array[ExtResource("1_ccyrb")]([ExtResource("1_rbpkh")])
+passives = Array[ExtResource("7_uuki8")]([])
+hide_stats = false

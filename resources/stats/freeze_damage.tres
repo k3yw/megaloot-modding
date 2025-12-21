@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://tvupgq3p6710"]
+
+[ext_resource type="Texture2D" uid="uid://crwnuc8frqsqu" path="res://assets/textures/icons/freeze_icon.png" id="1_d5um3"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_lgc8b"]
+
+[resource]
+script = ExtResource("1_lgc8b")
+name = "Freeze Damage"
+icon = ExtResource("1_d5um3")
+color = Color(0.352941, 0.533333, 1, 1)
+is_percentage = true
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0

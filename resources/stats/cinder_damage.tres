@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=4 format=3 uid="uid://dyp2exxtbv3wx"]
+
+[ext_resource type="Texture2D" uid="uid://c3ghrykjoejtc" path="res://assets/textures/icons/cinder_damage_icon.png" id="1_w5x1x"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_rq3am"]
+[ext_resource type="Script" uid="uid://dw8d4adxgf6tc" path="res://resources/stat_scripts/cinder_damage.gd" id="3_dmpec"]
+
+[resource]
+script = ExtResource("2_rq3am")
+name = "Cinder Damage"
+icon = ExtResource("1_w5x1x")
+color = Color(0.976471, 0.639216, 0.105882, 1)
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_dmpec")

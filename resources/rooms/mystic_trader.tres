@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="RoomResource" load_steps=5 format=3 uid="uid://dwdlvxy57pthy"]
+
+[ext_resource type="PackedScene" uid="uid://dkrdpt6ubfuvt" path="res://scenes/ui/room_action_containers/mystic_trader_action_container/mystic_trader_action_container.tscn" id="1_ax3vt"]
+[ext_resource type="PackedScene" uid="uid://vrhsi7tw1k4r" path="res://scenes/rooms/mystic_trader.tscn" id="1_ikfgp"]
+[ext_resource type="Script" uid="uid://dercbl3566y8y" path="res://classes/resource/room_resource.gd" id="2_ax3vt"]
+[ext_resource type="Script" uid="uid://dihvx0fx45upa" path="res://resources/room_scripts/mystic_trader.gd" id="2_q2ylo"]
+
+[resource]
+script = ExtResource("2_ax3vt")
+restless = false
+scene = ExtResource("1_ikfgp")
+enemy_h_seperation = 0.0
+action_container_scene = ExtResource("1_ax3vt")
+processor_script = ExtResource("2_q2ylo")
+metadata/_custom_type_script = "uid://dercbl3566y8y"

@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://bf4wtsx1ow8yr"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_vx862"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_i6kp3"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_njhb7"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_cs5jf"]
+[ext_resource type="Resource" uid="uid://m25hhepu4mn4" path="res://resources/item_sets/silver.tres" id="6_drjht"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="6_s5mts"]
+[ext_resource type="Texture2D" uid="uid://cyi0xbpl7n70i" path="res://assets/textures/items/silver_chestplate.png" id="7_75aht"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_awamq"]
+
+[sub_resource type="Resource" id="Resource_m333s"]
+script = ExtResource("1_vx862")
+boosting_sets = Array[ExtResource("5_cs5jf")]([])
+resource = ExtResource("2_i6kp3")
+amount = 6.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_njhb7")
+name = &"Silver Chestplate"
+texture = ExtResource("7_75aht")
+socket_type = ExtResource("6_s5mts")
+set_resources = Array[ExtResource("5_cs5jf")]([ExtResource("6_drjht")])
+bonus_stats = Array[ExtResource("1_vx862")]([SubResource("Resource_m333s")])
+unlock_requirements = Array[ExtResource("8_awamq")]([])
+extra_price = 10.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

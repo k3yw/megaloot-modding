@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://0abp861lex8u"]
+
+[ext_resource type="Texture2D" uid="uid://bklu46g1fvo3a" path="res://assets/textures/icons/stats/dazzle_icon.png" id="1_h4mtq"]
+[ext_resource type="Script" uid="uid://c0qcr8kdsgx7f" path="res://resources/bb_scripts/dazzle.gd" id="1_ia6xt"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_1iho1"]
+[ext_resource type="Script" uid="uid://d0kwxlyb1l1l1" path="res://resources/stat_scripts/dazzle.gd" id="3_cfgpk"]
+
+[resource]
+script = ExtResource("2_1iho1")
+name = "Dazzle"
+icon = ExtResource("1_h4mtq")
+color = Color(0.666667, 0.890196, 0.811765, 1)
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_cfgpk")
+bb_script = ExtResource("1_ia6xt")

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=7 format=3 uid="uid://1bsbw788ci6m"]
+
+[ext_resource type="Script" uid="uid://dyoeuxsujlm1y" path="res://resources/ability_scripts/multi_stun.gd" id="1_1cotm"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_6rgwa"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_1cotm"]
+[ext_resource type="Script" uid="uid://drshdo71wh5x5" path="res://resources/bb_scripts/multi_stun.gd" id="2_48u0x"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_w4ifp"]
+[ext_resource type="Texture2D" uid="uid://crwu6neqribd3" path="res://assets/textures/icons/multi_stun_icon.png" id="4_dfqr3"]
+
+[resource]
+script = ExtResource("2_1cotm")
+name = "Multi Stun"
+icon = ExtResource("4_dfqr3")
+mana_cost = 0
+use_limit = 1
+status_effects_on_activation = Array[ExtResource("3_w4ifp")]([])
+bonus_stats_while_active = Array[ExtResource("1_6rgwa")]([])
+quick_cast = false
+non_target = true
+to_attack = true
+value = 0
+ability_script = ExtResource("1_1cotm")
+bb_script = ExtResource("2_48u0x")
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

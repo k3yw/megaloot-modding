@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://4pnw2xy0nw3c"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_3ttbu"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_hwakk"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_3d4tv"]
+[ext_resource type="Resource" uid="uid://dmvibnyb3mslv" path="res://resources/item_sets/golden.tres" id="6_od44w"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="6_rn1aw"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_46yvc"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_1py0c"]
+[ext_resource type="Texture2D" uid="uid://bw54tc5yjcrmb" path="res://assets/textures/items/golden_warden.png" id="8_in2bc"]
+
+[sub_resource type="Resource" id="Resource_k14hs"]
+script = ExtResource("1_3ttbu")
+boosting_sets = Array[ExtResource("7_46yvc")]([ExtResource("6_od44w")])
+resource = ExtResource("5_3d4tv")
+amount = 5.0
+is_modifier = true
+
+[resource]
+script = ExtResource("3_hwakk")
+name = &"Golden Warden"
+texture = ExtResource("8_in2bc")
+socket_type = ExtResource("6_rn1aw")
+set_resources = Array[ExtResource("7_46yvc")]([ExtResource("6_od44w")])
+bonus_stats = Array[ExtResource("1_3ttbu")]([SubResource("Resource_k14hs")])
+unlock_requirements = Array[ExtResource("8_1py0c")]([])
+extra_price = 15.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

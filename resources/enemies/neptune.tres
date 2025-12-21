@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://f7cfbg6pahtk"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_3dijw"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_fqy6p"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_uybx7"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_4gbch"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_hny1w"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="4_8rqap"]
+[ext_resource type="Texture2D" uid="uid://bu3rtl8fmomcy" path="res://assets/textures/enemies/neptune.png" id="4_cpee2"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_ln3cb"]
+[ext_resource type="Resource" uid="uid://h8sy5ia4uu1g" path="res://resources/abilities/mind_control.tres" id="6_n5vv8"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="6_o22ug"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_cwdkk"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="9_r8dg8"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="12_mkwrn"]
+
+[sub_resource type="Resource" id="Resource_6i55c"]
+script = ExtResource("2_hny1w")
+boosting_sets = Array[ExtResource("2_4gbch")]([])
+resource = ExtResource("1_uybx7")
+amount = 45.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_1b7n6"]
+script = ExtResource("2_hny1w")
+boosting_sets = Array[ExtResource("2_4gbch")]([])
+resource = ExtResource("4_8rqap")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_em1ab"]
+script = ExtResource("2_hny1w")
+boosting_sets = Array[ExtResource("2_4gbch")]([])
+resource = ExtResource("5_ln3cb")
+amount = 8.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_26jwm"]
+script = ExtResource("2_hny1w")
+boosting_sets = Array[ExtResource("2_4gbch")]([])
+resource = ExtResource("6_o22ug")
+amount = 15.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_3dijw")
+name = "Neptune"
+texture = ExtResource("4_cpee2")
+floor_number = 12
+flying = false
+starting_status_effects = Array[ExtResource("9_r8dg8")]([])
+active_item_sets = Array[ExtResource("2_4gbch")]([])
+stats_per_level = Array[ExtResource("12_mkwrn")]([])
+base_stats = Array[ExtResource("2_hny1w")]([SubResource("Resource_6i55c"), SubResource("Resource_1b7n6"), SubResource("Resource_em1ab"), SubResource("Resource_26jwm")])
+abilities = Array[ExtResource("1_fqy6p")]([ExtResource("6_n5vv8")])
+passives = Array[ExtResource("8_cwdkk")]([])
+hide_stats = false

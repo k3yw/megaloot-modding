@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemContainerResource" load_steps=2 format=3 uid="uid://c204jcr3goxci"]
+
+[ext_resource type="Script" uid="uid://deuwqg8d86c1h" path="res://classes/resource/item_container_resource.gd" id="1_dccix"]
+
+[resource]
+script = ExtResource("1_dccix")
+move_to_inventory_on_alt_press = false
+is_shop = true
+size = 0
+metadata/_custom_type_script = "uid://deuwqg8d86c1h"

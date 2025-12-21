@@ -1,0 +1,120 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=35 format=3 uid="uid://03ac3x7jfkm7"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_4yyex"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_gvkwd"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_o802o"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_k4onq"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_o2v4p"]
+[ext_resource type="Texture2D" uid="uid://b6h46j20ymj2y" path="res://assets/textures/enemies/perfect_slave.png" id="2_pegbc"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="3_qtqur"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_4ssd0"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="6_6lf0a"]
+[ext_resource type="Resource" uid="uid://cj2owmie2bft2" path="res://resources/passives/fear_of_pain.tres" id="9_6rrfi"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="9_6s21b"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="10_51owi"]
+[ext_resource type="Resource" uid="uid://dknh7xqcpnvmw" path="res://resources/passives/edens_wish.tres" id="10_chish"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="10_fqvv3"]
+[ext_resource type="Resource" uid="uid://bn023o3l0kypu" path="res://resources/status_effects/invulnerability.tres" id="11_03iu4"]
+[ext_resource type="Resource" uid="uid://nycki171npu8" path="res://resources/status_effects/debuff_immunity.tres" id="12_60ths"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="16_jakt6"]
+
+[sub_resource type="Resource" id="Resource_f68tw"]
+script = ExtResource("2_k4onq")
+boosting_sets = Array[ExtResource("2_o2v4p")]([])
+resource = ExtResource("1_gvkwd")
+amount = 125.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_k57pq"]
+script = ExtResource("2_k4onq")
+boosting_sets = Array[ExtResource("2_o2v4p")]([])
+resource = ExtResource("4_4ssd0")
+amount = 16.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_pma83"]
+script = ExtResource("2_k4onq")
+boosting_sets = Array[ExtResource("2_o2v4p")]([])
+resource = ExtResource("3_qtqur")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_1dcx3"]
+script = ExtResource("2_k4onq")
+boosting_sets = Array[ExtResource("2_o2v4p")]([])
+resource = ExtResource("6_6lf0a")
+amount = 6.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_716pk"]
+script = ExtResource("10_fqvv3")
+status_effects = Array[ExtResource("10_51owi")]([])
+
+[sub_resource type="Resource" id="Resource_b5n5d"]
+script = ExtResource("10_51owi")
+resource = ExtResource("11_03iu4")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_wh21w"]
+script = ExtResource("10_fqvv3")
+status_effects = Array[ExtResource("10_51owi")]([SubResource("Resource_b5n5d")])
+
+[sub_resource type="Resource" id="Resource_ncdn8"]
+script = ExtResource("10_51owi")
+resource = ExtResource("11_03iu4")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_yvohf"]
+script = ExtResource("10_fqvv3")
+status_effects = Array[ExtResource("10_51owi")]([SubResource("Resource_ncdn8")])
+
+[sub_resource type="Resource" id="Resource_e5odv"]
+script = ExtResource("10_51owi")
+resource = ExtResource("11_03iu4")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_lqdn0"]
+script = ExtResource("10_fqvv3")
+status_effects = Array[ExtResource("10_51owi")]([SubResource("Resource_e5odv")])
+
+[sub_resource type="Resource" id="Resource_6vl0f"]
+script = ExtResource("10_51owi")
+resource = ExtResource("12_60ths")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_pto5b"]
+script = ExtResource("10_fqvv3")
+status_effects = Array[ExtResource("10_51owi")]([SubResource("Resource_6vl0f")])
+
+[sub_resource type="Resource" id="Resource_1gsts"]
+script = ExtResource("10_51owi")
+resource = ExtResource("12_60ths")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_cg645"]
+script = ExtResource("10_fqvv3")
+status_effects = Array[ExtResource("10_51owi")]([SubResource("Resource_1gsts")])
+
+[sub_resource type="Resource" id="Resource_vff4i"]
+script = ExtResource("10_51owi")
+resource = ExtResource("12_60ths")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_2yxji"]
+script = ExtResource("10_fqvv3")
+status_effects = Array[ExtResource("10_51owi")]([SubResource("Resource_vff4i")])
+
+[resource]
+script = ExtResource("1_4yyex")
+name = "Perfect Slave"
+texture = ExtResource("2_pegbc")
+floor_number = 59
+flying = false
+starting_status_effects = Array[ExtResource("10_fqvv3")]([SubResource("Resource_716pk"), SubResource("Resource_wh21w"), SubResource("Resource_yvohf"), SubResource("Resource_lqdn0"), SubResource("Resource_pto5b"), SubResource("Resource_cg645"), SubResource("Resource_2yxji")])
+active_item_sets = Array[ExtResource("2_o2v4p")]([])
+stats_per_level = Array[ExtResource("16_jakt6")]([])
+base_stats = Array[ExtResource("2_k4onq")]([SubResource("Resource_f68tw"), SubResource("Resource_k57pq"), SubResource("Resource_pma83"), SubResource("Resource_1dcx3")])
+abilities = Array[ExtResource("1_o802o")]([])
+passives = Array[ExtResource("9_6s21b")]([ExtResource("9_6rrfi"), ExtResource("10_chish")])
+is_unique = false
+hide_stats = false

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://uxwdne2hyfvl"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_4o84s"]
+[ext_resource type="Script" path="res://resources/bb_scripts/critical_damage.gd" id="1_kt3c7"]
+[ext_resource type="Texture2D" uid="uid://dwrsa08wo66o6" path="res://assets/textures/icons/stats/critical_damage.png" id="1_woy33"]
+[ext_resource type="Script" uid="uid://3autaudqojlx" path="res://resources/stat_scripts/critical_damage.gd" id="3_icix3"]
+
+[resource]
+script = ExtResource("1_4o84s")
+name = "Critical Damage"
+icon = ExtResource("1_woy33")
+color = Color(1, 0.647059, 0.0235294, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_icix3")
+bb_script = ExtResource("1_kt3c7")

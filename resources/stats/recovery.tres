@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://yf08dtkn7sh5"]
+
+[ext_resource type="Script" uid="uid://binvcv1vvcvj6" path="res://resources/bb_scripts/recovery.gd" id="1_25tps"]
+[ext_resource type="Texture2D" uid="uid://buseioj3u15ht" path="res://assets/textures/icons/recovery.png" id="1_nhalk"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_nf7m7"]
+[ext_resource type="Script" uid="uid://by8m61blwxg4o" path="res://resources/stat_scripts/recovery.gd" id="4_gp4ww"]
+
+[resource]
+script = ExtResource("2_nf7m7")
+name = "Recovery"
+icon = ExtResource("1_nhalk")
+color = Color(0.705882, 0.12549, 0.270588, 1)
+is_percentage = true
+max_amount = 100.0
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_gp4ww")
+bb_script = ExtResource("1_25tps")

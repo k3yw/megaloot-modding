@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://cqiodc3nyvkq2"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_formb"]
+[ext_resource type="Resource" uid="uid://iwcwdts18a43" path="res://resources/item_sets/berserker.tres" id="2_wp5he"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="3_hxqg5"]
+[ext_resource type="Resource" uid="uid://uxwdne2hyfvl" path="res://resources/stats/critical_damage.tres" id="4_p7ffh"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_8spcw"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_0r3yt"]
+[ext_resource type="Resource" uid="uid://nqchk6knxses" path="res://resources/passives/wrath_of_the_broken_flesh.tres" id="6_567an"]
+[ext_resource type="Texture2D" uid="uid://kl56l816tq6u" path="res://assets/textures/items/berserkers_helmet.png" id="7_riow1"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_uqcio"]
+
+[sub_resource type="Resource" id="Resource_ejrpk"]
+script = ExtResource("1_formb")
+boosting_sets = Array[ExtResource("6_0r3yt")]([ExtResource("2_wp5he")])
+resource = ExtResource("3_hxqg5")
+amount = 25.0
+is_modifier = true
+
+[sub_resource type="Resource" id="Resource_d5h3e"]
+script = ExtResource("1_formb")
+boosting_sets = Array[ExtResource("6_0r3yt")]([])
+resource = ExtResource("4_p7ffh")
+amount = 15.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_8spcw")
+name = &"Berserker\'s Helmet"
+texture = ExtResource("7_riow1")
+description = ""
+socket_type = ExtResource("7_uqcio")
+set_resources = Array[ExtResource("6_0r3yt")]([ExtResource("2_wp5he")])
+passive = ExtResource("6_567an")
+bonus_stats = Array[ExtResource("1_formb")]([SubResource("Resource_ejrpk"), SubResource("Resource_d5h3e")])
+extra_price = 17.0
+spawn_floor = 7
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

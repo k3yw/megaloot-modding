@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://boh5jijing5p2"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_xht55"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_6hana"]
+[ext_resource type="Resource" uid="uid://b64ap6hlsvruc" path="res://resources/stats/armored_attack.tres" id="4_oqbec"]
+[ext_resource type="Resource" uid="uid://cq6tpc5j7tr2h" path="res://resources/item_sets/ancient_shell.tres" id="5_ubsld"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_g56m0"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="6_jj0vb"]
+[ext_resource type="Texture2D" uid="uid://c6kftqup3x87i" path="res://assets/textures/items/turtle_gauntlet.png" id="7_gyp6q"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_cogw7"]
+
+[sub_resource type="Resource" id="Resource_am1om"]
+script = ExtResource("1_xht55")
+boosting_sets = Array[ExtResource("6_g56m0")]([])
+resource = ExtResource("4_oqbec")
+amount = 25.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_6hana")
+name = &"Turtle Gauntlet"
+texture = ExtResource("7_gyp6q")
+socket_type = ExtResource("6_jj0vb")
+set_resources = Array[ExtResource("6_g56m0")]([ExtResource("5_ubsld")])
+bonus_stats = Array[ExtResource("1_xht55")]([SubResource("Resource_am1om")])
+unlock_requirements = Array[ExtResource("8_cogw7")]([])
+extra_price = 1842.0
+spawn_floor = 12
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

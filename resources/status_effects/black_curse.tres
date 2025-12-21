@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=6 format=3 uid="uid://ddkdhssj8bkx4"]
+
+[ext_resource type="AudioStream" uid="uid://cwajfejavmrm7" path="res://assets/sfx/curse.wav" id="1_4pv5d"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_grg1e"]
+[ext_resource type="Script" uid="uid://b78dth57dlh7w" path="res://resources/bb_scripts/curse.gd" id="2_uq855"]
+[ext_resource type="Texture2D" uid="uid://b664dwp5kpyrl" path="res://assets/textures/icons/curse_icon.png" id="3_vvbmi"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="5_bkgq2"]
+
+[resource]
+script = ExtResource("1_grg1e")
+name = "Black Curse"
+icon = ExtResource("3_vvbmi")
+color = Color(0.278431, 0.278431, 0.380392, 1)
+type = ExtResource("5_bkgq2")
+affected_by_tenacity = false
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = "CURSED"
+application_sound = ExtResource("1_4pv5d")
+bb_script = ExtResource("2_uq855")
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

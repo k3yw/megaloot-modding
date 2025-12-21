@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://x4iiirctkdne"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_udm5g"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_o6s1r"]
+[ext_resource type="Resource" uid="uid://b64ap6hlsvruc" path="res://resources/stats/armored_attack.tres" id="3_2q1o4"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_okeid"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="4_2q1o4"]
+[ext_resource type="Resource" uid="uid://by8q5xck7gg5" path="res://resources/stats/armor_steal.tres" id="4_e315y"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="5_e315y"]
+[ext_resource type="Texture2D" uid="uid://dukux4000mor0" path="res://assets/textures/items/iron_eater.png" id="6_xry18"]
+
+[sub_resource type="Resource" id="Resource_xry18"]
+script = ExtResource("1_udm5g")
+boosting_sets = Array[ExtResource("3_okeid")]([])
+resource = ExtResource("3_2q1o4")
+amount = 12.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_kjhgy"]
+script = ExtResource("1_udm5g")
+boosting_sets = Array[ExtResource("3_okeid")]([])
+resource = ExtResource("4_e315y")
+amount = 8.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_o6s1r")
+name = &"Iron Eater"
+texture = ExtResource("6_xry18")
+description = ""
+socket_type = ExtResource("5_e315y")
+set_resources = Array[ExtResource("3_okeid")]([ExtResource("4_2q1o4")])
+bonus_stats = Array[ExtResource("1_udm5g")]([SubResource("Resource_xry18"), SubResource("Resource_kjhgy")])
+extra_price = 0.0
+spawn_floor = 9
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

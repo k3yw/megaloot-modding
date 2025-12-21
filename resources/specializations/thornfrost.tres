@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3 uid="uid://dvwf3s60h4ifg"]
+
+[ext_resource type="Script" uid="uid://c567vqc52tcdx" path="res://classes/resource/specialization.gd" id="2_ig4gl"]
+[ext_resource type="Resource" uid="uid://tyft4f1n0dwx" path="res://resources/item_sets/blackthorn.tres" id="3_qmcbs"]
+[ext_resource type="Resource" uid="uid://cx3yom37ddk2n" path="res://resources/stats/freeze_attack.tres" id="5_ujvqr"]
+[ext_resource type="Resource" uid="uid://by8q5xck7gg5" path="res://resources/stats/armor_steal.tres" id="7_nv4r4"]
+[ext_resource type="Resource" uid="uid://g3um3f8ovjwk" path="res://resources/item_sets/ancient_ice.tres" id="7_ujvqr"]
+[ext_resource type="Resource" uid="uid://b64ap6hlsvruc" path="res://resources/stats/armored_attack.tres" id="8_jn448"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="9_pi4c0"]
+
+[resource]
+script = ExtResource("2_ig4gl")
+name = "Thornfrost"
+color = Color(0.494118, 0.827451, 1, 1)
+original_item_set = ExtResource("3_qmcbs")
+synergy_item_set = ExtResource("7_ujvqr")
+stats = Array[ExtResource("9_pi4c0")]([ExtResource("5_ujvqr"), ExtResource("7_nv4r4"), ExtResource("8_jn448")])

@@ -1,0 +1,268 @@
+[gd_scene load_steps=11 format=3 uid="uid://ftlveqh24bwh"]
+
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="1_dmyuf"]
+[ext_resource type="Script" uid="uid://bdsiegvaio3ch" path="res://scenes/ui/bb_container/bb_container.gd" id="1_jd7b6"]
+[ext_resource type="Shader" uid="uid://cnk0axf4u7vlv" path="res://resources/shaders/enemy_cleaner.gdshader" id="2_2uodj"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="5_gdbhr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_v0g5i"]
+shader = ExtResource("2_2uodj")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wrmd7"]
+resource_local_to_scene = true
+shader = ExtResource("5_gdbhr")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1os8u"]
+resource_local_to_scene = true
+shader = ExtResource("5_gdbhr")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ig50n"]
+resource_local_to_scene = true
+shader = ExtResource("5_gdbhr")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iel47"]
+resource_local_to_scene = true
+shader = ExtResource("5_gdbhr")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_74fd0"]
+resource_local_to_scene = true
+shader = ExtResource("5_gdbhr")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="BBContainer" type="MarginContainer" node_paths=PackedStringArray("header_line_containers", "left_texture_rect", "set_texture_rect", "right_texture_rect", "enemy_texture_rect", "back_label", "label")]
+offset_right = 80.0
+offset_bottom = 14.0
+size_flags_horizontal = 4
+size_flags_vertical = 2
+script = ExtResource("1_jd7b6")
+header_line_containers = [NodePath("HBoxContainer/HeaderLineContainer"), NodePath("HBoxContainer/HeaderLineContainer2")]
+left_texture_rect = NodePath("HBoxContainer/LeftTextureRect")
+set_texture_rect = NodePath("HBoxContainer/SetTextureRect")
+right_texture_rect = NodePath("HBoxContainer/RightTextureRect")
+enemy_texture_rect = NodePath("HBoxContainer/EnemyTextureRect")
+back_label = NodePath("HBoxContainer/BackLabelContainer/BackGenericLabel")
+label = NodePath("HBoxContainer/MarginContainer/GenericLabel")
+metadata/_edit_horizontal_guides_ = [5.0]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="HeaderLineContainer" type="MarginContainer" parent="HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = 4
+theme_override_constants/margin_right = 10
+
+[node name="LeftLine" type="ColorRect" parent="HBoxContainer/HeaderLineContainer"]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+color = Color(0.662745, 0.662745, 0.662745, 1)
+
+[node name="EnemyTextureRect" type="TextureRect" parent="HBoxContainer"]
+material = SubResource("ShaderMaterial_v0g5i")
+layout_mode = 2
+
+[node name="LeftTextureRect" type="TextureRect" parent="HBoxContainer"]
+visible = false
+material = SubResource("ShaderMaterial_wrmd7")
+custom_minimum_size = Vector2(6, 6)
+layout_mode = 2
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="BackLabelContainer" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/margin_top = 1
+
+[node name="BackGenericLabel" parent="HBoxContainer/BackLabelContainer" instance=ExtResource("1_dmyuf")]
+material = SubResource("ShaderMaterial_1os8u")
+layout_mode = 2
+horizontal_alignment = 1
+translate = false
+
+[node name="SetTextureRect" type="TextureRect" parent="HBoxContainer"]
+material = SubResource("ShaderMaterial_ig50n")
+layout_mode = 2
+size_flags_vertical = 4
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 0
+theme_override_constants/margin_top = 1
+
+[node name="GenericLabel" parent="HBoxContainer/MarginContainer" instance=ExtResource("1_dmyuf")]
+material = SubResource("ShaderMaterial_iel47")
+layout_mode = 2
+horizontal_alignment = 1
+translate = false
+
+[node name="RightTextureRect" type="TextureRect" parent="HBoxContainer"]
+material = SubResource("ShaderMaterial_74fd0")
+layout_mode = 2
+size_flags_vertical = 4
+expand_mode = 1
+stretch_mode = 5
+
+[node name="HeaderLineContainer2" type="MarginContainer" parent="HBoxContainer"]
+visible = false
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 4
+
+[node name="RightLine" type="ColorRect" parent="HBoxContainer/HeaderLineContainer2"]
+custom_minimum_size = Vector2(0, 1)
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+color = Color(0.662745, 0.662745, 0.662745, 1)

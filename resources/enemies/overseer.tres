@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=19 format=3 uid="uid://c2f1ksnaonqp1"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_a0yo0"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_jda6k"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_mlkax"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_s6hr8"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_pyfly"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_13utj"]
+[ext_resource type="Texture2D" uid="uid://ce1ygp2owst4a" path="res://assets/textures/enemies/overseer.png" id="4_5d5td"]
+[ext_resource type="Resource" uid="uid://0abp861lex8u" path="res://resources/stats/dazzle.tres" id="4_tqhid"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_lj0un"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="6_ug1ai"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_jeyy8"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="9_yrhum"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="12_yydoh"]
+
+[sub_resource type="Resource" id="Resource_x8icy"]
+script = ExtResource("2_pyfly")
+boosting_sets = Array[ExtResource("1_a0yo0")]([])
+resource = ExtResource("1_jda6k")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_1s5io"]
+script = ExtResource("2_pyfly")
+boosting_sets = Array[ExtResource("1_a0yo0")]([])
+resource = ExtResource("3_13utj")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_e12w2"]
+script = ExtResource("2_pyfly")
+boosting_sets = Array[ExtResource("1_a0yo0")]([])
+resource = ExtResource("4_tqhid")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_3qpvp"]
+script = ExtResource("2_pyfly")
+boosting_sets = Array[ExtResource("1_a0yo0")]([])
+resource = ExtResource("5_lj0un")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_34eoy"]
+script = ExtResource("2_pyfly")
+boosting_sets = Array[ExtResource("1_a0yo0")]([])
+resource = ExtResource("6_ug1ai")
+amount = 2.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_mlkax")
+name = "Overseer"
+texture = ExtResource("4_5d5td")
+floor_number = 8
+flying = true
+starting_status_effects = Array[ExtResource("9_yrhum")]([])
+active_item_sets = Array[ExtResource("1_a0yo0")]([])
+stats_per_level = Array[ExtResource("12_yydoh")]([])
+base_stats = Array[ExtResource("2_pyfly")]([SubResource("Resource_x8icy"), SubResource("Resource_1s5io"), SubResource("Resource_e12w2"), SubResource("Resource_3qpvp"), SubResource("Resource_34eoy")])
+abilities = Array[ExtResource("1_s6hr8")]([])
+passives = Array[ExtResource("8_jeyy8")]([])
+hide_stats = false

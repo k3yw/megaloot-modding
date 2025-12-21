@@ -1,0 +1,384 @@
+[gd_scene load_steps=26 format=3 uid="uid://b8k318je1nlnn"]
+
+[ext_resource type="Script" uid="uid://b3csqxpvs3dwc" path="res://scenes/ui/difficulty_progress_bar/difficulty_progress_bar.gd" id="1_4x02e"]
+[ext_resource type="PackedScene" uid="uid://87foots4r2wd" path="res://scenes/ui/generic_margin_container/generic_margin_container.tscn" id="1_8rr3v"]
+[ext_resource type="PackedScene" uid="uid://duwxqia2hvbth" path="res://scenes/ui/generic_panel/generic_panel.tscn" id="2_i62lo"]
+[ext_resource type="Texture2D" uid="uid://debj5gpvcxwc2" path="res://assets/textures/icons/difficulty_icon.png" id="2_oqg5s"]
+[ext_resource type="Script" uid="uid://c3d2adyqgxtvj" path="res://resources/bb_scripts/difficulity_progress.gd" id="3_1sqja"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="3_hjr7j"]
+[ext_resource type="Texture2D" uid="uid://nf8j07din755" path="res://assets/textures/ui/minimal_bar.png" id="4_pk0ec"]
+[ext_resource type="PackedScene" uid="uid://bxqkdn8en4hdm" path="res://scenes/ui/breakable_bar_texture_rect/breakable_bar_texture_rect.tscn" id="5_5blrl"]
+[ext_resource type="Texture2D" uid="uid://owu3qd1y7qy2" path="res://assets/textures/icons/floor_icon.png" id="6_1sqja"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="8_ryk7w"]
+[ext_resource type="Texture2D" uid="uid://c6oex7ny5wje5" path="res://assets/textures/ui/breakable_bar.png" id="10_1sqja"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gdflf"]
+resource_local_to_scene = true
+shader = ExtResource("3_hjr7j")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cnncm"]
+shader = ExtResource("3_hjr7j")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qxlyy"]
+resource_local_to_scene = true
+shader = ExtResource("3_hjr7j")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kakdg"]
+resource_local_to_scene = true
+shader = ExtResource("3_hjr7j")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8a23v"]
+shader = ExtResource("3_hjr7j")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_nydgk"]
+texture = ExtResource("4_pk0ec")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8g4hb"]
+shader = ExtResource("3_hjr7j")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kakdg"]
+resource_local_to_scene = true
+atlas = ExtResource("10_1sqja")
+region = Rect2(11, 0, 11, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8lm0h"]
+resource_local_to_scene = true
+atlas = ExtResource("10_1sqja")
+region = Rect2(11, 0, 11, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6fm1v"]
+resource_local_to_scene = true
+atlas = ExtResource("10_1sqja")
+region = Rect2(11, 0, 11, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_c628e"]
+resource_local_to_scene = true
+atlas = ExtResource("10_1sqja")
+region = Rect2(11, 0, 11, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gsa34"]
+resource_local_to_scene = true
+atlas = ExtResource("10_1sqja")
+region = Rect2(11, 0, 11, 12)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ibine"]
+resource_local_to_scene = true
+atlas = ExtResource("10_1sqja")
+region = Rect2(11, 0, 11, 12)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ncbpl"]
+bg_color = Color(1, 1, 1, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.196078, 0.168627, 0.156863, 1)
+
+[node name="DifficultyProgressBar" node_paths=PackedStringArray("current_battle_container", "floor_number_label", "rooms_left_label", "battle_container", "bar_container") instance=ExtResource("1_8rr3v")]
+custom_minimum_size = Vector2(0, 20)
+offset_right = 188.0
+offset_bottom = 26.0
+size_flags_horizontal = 3
+script = ExtResource("1_4x02e")
+current_battle_container = NodePath("MarginContainer/HBoxContainer/MarginContainer/CurrentBattleContainer")
+floor_number_label = NodePath("MarginContainer/HBoxContainer/MarginContainer/HBoxContainer2/HBoxContainer/FloorNumberLabel")
+rooms_left_label = NodePath("MarginContainer/HBoxContainer/MarginContainer/CurrentBattleContainer/HBoxContainer/RoomsLeftLabel")
+battle_container = NodePath("MarginContainer/HBoxContainer/BattleContainer")
+bar_container = NodePath("MarginContainer/HBoxContainer/BattleContainer/BarContainer")
+
+[node name="HoverInfoModule" parent="." index="0"]
+is_dynamic = true
+bb_script = ExtResource("3_1sqja")
+
+[node name="MarginContainer2" type="MarginContainer" parent="." index="1"]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 1
+
+[node name="BackPanel" parent="MarginContainer2" index="0" instance=ExtResource("2_i62lo")]
+material = SubResource("ShaderMaterial_gdflf")
+layout_mode = 2
+region_rect = Rect2(0, 0, 7, 5)
+patch_margin_top = 4
+patch_margin_bottom = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="." index="2"]
+layout_mode = 2
+theme_override_constants/margin_left = 12
+theme_override_constants/margin_top = 6
+theme_override_constants/margin_right = 12
+theme_override_constants/margin_bottom = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" index="0"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainer" index="0"]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/HBoxContainer/MarginContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 2
+theme_override_constants/separation = 5
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer/MarginContainer/HBoxContainer2" index="0"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_cnncm")
+layout_mode = 2
+texture = ExtResource("6_1sqja")
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/MarginContainer/HBoxContainer2" index="1"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="FloorNumberLabel" parent="MarginContainer/HBoxContainer/MarginContainer/HBoxContainer2/HBoxContainer" index="0" instance=ExtResource("8_ryk7w")]
+material = SubResource("ShaderMaterial_qxlyy")
+layout_mode = 2
+text = "100 |100"
+translate = false
+
+[node name="CurrentBattleContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/MarginContainer" index="1"]
+layout_mode = 2
+size_flags_horizontal = 8
+theme_override_constants/separation = 5
+
+[node name="TextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer/MarginContainer/CurrentBattleContainer" index="0"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_cnncm")
+layout_mode = 2
+texture = ExtResource("2_oqg5s")
+stretch_mode = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/MarginContainer/CurrentBattleContainer" index="1"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="RoomsLeftLabel" parent="MarginContainer/HBoxContainer/MarginContainer/CurrentBattleContainer/HBoxContainer" index="0" instance=ExtResource("8_ryk7w")]
+material = SubResource("ShaderMaterial_kakdg")
+custom_minimum_size = Vector2(18, 0)
+layout_mode = 2
+text = "999"
+translate = false
+
+[node name="BattleContainer" type="PanelContainer" parent="MarginContainer/HBoxContainer" index="1"]
+visible = false
+material = SubResource("ShaderMaterial_8a23v")
+custom_minimum_size = Vector2(77, 0)
+layout_mode = 2
+size_flags_horizontal = 10
+theme_override_styles/panel = SubResource("StyleBoxTexture_nydgk")
+
+[node name="BarContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/BattleContainer" index="0"]
+layout_mode = 2
+theme_override_constants/separation = 1
+
+[node name="BreakableBarTextureRect" parent="MarginContainer/HBoxContainer/BattleContainer/BarContainer" index="0" instance=ExtResource("5_5blrl")]
+material = SubResource("ShaderMaterial_8g4hb")
+layout_mode = 2
+texture = SubResource("AtlasTexture_kakdg")
+
+[node name="BreakableBarTextureRect2" parent="MarginContainer/HBoxContainer/BattleContainer/BarContainer" index="1" instance=ExtResource("5_5blrl")]
+material = SubResource("ShaderMaterial_8g4hb")
+layout_mode = 2
+texture = SubResource("AtlasTexture_8lm0h")
+
+[node name="BreakableBarTextureRect3" parent="MarginContainer/HBoxContainer/BattleContainer/BarContainer" index="2" instance=ExtResource("5_5blrl")]
+material = SubResource("ShaderMaterial_8g4hb")
+layout_mode = 2
+texture = SubResource("AtlasTexture_6fm1v")
+
+[node name="BreakableBarTextureRect4" parent="MarginContainer/HBoxContainer/BattleContainer/BarContainer" index="3" instance=ExtResource("5_5blrl")]
+material = SubResource("ShaderMaterial_8g4hb")
+layout_mode = 2
+texture = SubResource("AtlasTexture_c628e")
+
+[node name="BreakableBarTextureRect5" parent="MarginContainer/HBoxContainer/BattleContainer/BarContainer" index="4" instance=ExtResource("5_5blrl")]
+material = SubResource("ShaderMaterial_8g4hb")
+layout_mode = 2
+texture = SubResource("AtlasTexture_gsa34")
+
+[node name="BreakableBarTextureRect6" parent="MarginContainer/HBoxContainer/BattleContainer/BarContainer" index="5" instance=ExtResource("5_5blrl")]
+material = SubResource("ShaderMaterial_8g4hb")
+layout_mode = 2
+texture = SubResource("AtlasTexture_ibine")
+
+[node name="Panel" type="Panel" parent="." index="3"]
+visible = false
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_ncbpl")

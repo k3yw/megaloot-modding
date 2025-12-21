@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=2 format=3 uid="uid://b532pv5wpf07f"]
+
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_w7s1p"]
+
+[resource]
+script = ExtResource("1_w7s1p")
+name = "Hit"
+color = Color(0, 0, 0, 1)
+use_limit = 0
+popup_color = Color(0, 0, 0, 1)
+popup_text = ""
+popup_delay = 0.0
+screen_shake = true
+is_hit = true

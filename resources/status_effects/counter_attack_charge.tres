@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://bxv6028ci4lyk"]
+
+[ext_resource type="Texture2D" uid="uid://chw1po2v5eee3" path="res://assets/textures/icons/counter_attack_icon.png" id="1_bufjc"]
+[ext_resource type="Script" uid="uid://btpnf3x7q482" path="res://resources/bb_scripts/counter_attack.gd" id="1_hxt74"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_vgjjp"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_bufjc"]
+
+[resource]
+script = ExtResource("1_vgjjp")
+name = "Counter Attack Charge"
+icon = ExtResource("1_bufjc")
+color = Color(0.972549, 0.635294, 0.105882, 1)
+type = ExtResource("3_bufjc")
+is_temporary = true
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_hxt74")
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

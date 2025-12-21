@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=4 format=3 uid="uid://c8xkh7qq1jxpr"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_lpsqh"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_tohle"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_2vn55"]
+
+[resource]
+script = ExtResource("1_lpsqh")
+name = "Shatter Strike"
+mana_cost = 1
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_2vn55")]([])
+bonus_stats_while_active = Array[ExtResource("1_tohle")]([])
+quick_cast = false
+non_target = true
+value = 0

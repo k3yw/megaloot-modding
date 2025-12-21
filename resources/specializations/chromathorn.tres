@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=4 format=3 uid="uid://deix8wjkcdlq7"]
+
+[ext_resource type="Resource" uid="uid://tyft4f1n0dwx" path="res://resources/item_sets/blackthorn.tres" id="1_oycj2"]
+[ext_resource type="Script" uid="uid://c567vqc52tcdx" path="res://classes/resource/specialization.gd" id="2_kwpx5"]
+[ext_resource type="Resource" uid="uid://b0reailgui4vy" path="res://resources/item_sets/chromalure.tres" id="3_vqgus"]
+
+[resource]
+script = ExtResource("2_kwpx5")
+name = "Chromathorn"
+color = Color(0.329412, 0.239216, 0.270588, 1)
+original_item_set = ExtResource("1_oycj2")
+synergy_item_set = ExtResource("3_vqgus")

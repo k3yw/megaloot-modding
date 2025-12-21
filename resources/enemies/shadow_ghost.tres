@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=16 format=3 uid="uid://16hjriqp0hnp"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_niqiu"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_83xp6"]
+[ext_resource type="Resource" uid="uid://dhtx0qdflmixn" path="res://resources/item_sets/darkness.tres" id="3_vawn1"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="4_h0u4j"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="5_x136s"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="6_vywxd"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="7_a7ppg"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_2kf73"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="9_3k26c"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="10_tg8b3"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_n7ly8"]
+[ext_resource type="Texture2D" uid="uid://bipck6hkxi4mo" path="res://assets/textures/enemies/shadow_ghost.png" id="12_sxmel"]
+
+[sub_resource type="Resource" id="Resource_rnvt3"]
+script = ExtResource("4_h0u4j")
+boosting_sets = Array[ExtResource("2_83xp6")]([])
+resource = ExtResource("5_x136s")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_klmi7"]
+script = ExtResource("4_h0u4j")
+boosting_sets = Array[ExtResource("2_83xp6")]([])
+resource = ExtResource("6_vywxd")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_xa3cf"]
+script = ExtResource("4_h0u4j")
+boosting_sets = Array[ExtResource("2_83xp6")]([])
+resource = ExtResource("7_a7ppg")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("9_3k26c")
+name = "Shadow Ghost"
+texture = ExtResource("12_sxmel")
+floor_number = 7
+flying = true
+starting_status_effects = Array[ExtResource("10_tg8b3")]([])
+active_item_sets = Array[ExtResource("2_83xp6")]([ExtResource("3_vawn1")])
+stats_per_level = Array[ExtResource("11_n7ly8")]([])
+base_stats = Array[ExtResource("4_h0u4j")]([SubResource("Resource_rnvt3"), SubResource("Resource_klmi7"), SubResource("Resource_xa3cf")])
+abilities = Array[ExtResource("1_niqiu")]([])
+passives = Array[ExtResource("8_2kf73")]([])
+is_unique = false
+hide_stats = false

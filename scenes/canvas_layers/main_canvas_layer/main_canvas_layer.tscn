@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bf2ooujbu4umo"]
+
+[ext_resource type="Script" uid="uid://d3wey3n8paeva" path="res://scenes/canvas_layers/main_canvas_layer/main_canvas_layer.gd" id="1_7nvqb"]
+[ext_resource type="PackedScene" uid="uid://cj27syrgcth0f" path="res://scenes/ui/loading_info/loading_info.tscn" id="2_ynjt3"]
+[ext_resource type="PackedScene" uid="uid://dfu7moo7tvvn7" path="res://scenes/ui/options_screen/options_screen.tscn" id="3_jpmnd"]
+[ext_resource type="PackedScene" uid="uid://ca3w5j2ilrjcj" path="res://scenes/ui/esc_menu_screen/esc_menu_screen.tscn" id="4_ff6xr"]
+
+[node name="MainCanvasLayer" type="CanvasLayer" node_paths=PackedStringArray("esc_menu_screen", "options_screen", "loading_info")]
+layer = 125
+script = ExtResource("1_7nvqb")
+esc_menu_screen = NodePath("EscMenuScreen")
+options_screen = NodePath("OptionsScreen")
+loading_info = NodePath("LoadingInfo")
+
+[node name="EscMenuScreen" parent="." instance=ExtResource("4_ff6xr")]
+visible = false
+
+[node name="LoadingInfo" parent="." instance=ExtResource("2_ynjt3")]
+visible = false
+
+[node name="OptionsScreen" parent="." instance=ExtResource("3_jpmnd")]

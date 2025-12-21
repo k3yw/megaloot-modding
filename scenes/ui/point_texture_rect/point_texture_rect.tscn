@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://7h2obu32gnhk"]
+
+[ext_resource type="Texture2D" uid="uid://bgmoh1w0kc27r" path="res://assets/textures/deprecated/card_point.png" id="1_dur0g"]
+[ext_resource type="Script" uid="uid://dd3kbmd6sbdw7" path="res://scenes/ui/point_texture_rect/point_texture_rect.gd" id="2_y075m"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8u3wh"]
+resource_local_to_scene = true
+atlas = ExtResource("1_dur0g")
+region = Rect2(0, 0, 9, 17)
+
+[node name="PointTextureRect" type="TextureRect"]
+texture = SubResource("AtlasTexture_8u3wh")
+script = ExtResource("2_y075m")

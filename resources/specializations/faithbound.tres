@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3 uid="uid://cofqldfbcia6h"]
+
+[ext_resource type="Script" uid="uid://c567vqc52tcdx" path="res://classes/resource/specialization.gd" id="2_xjmip"]
+[ext_resource type="Resource" uid="uid://dtedu6wftg7o5" path="res://resources/item_sets/mercenary.tres" id="3_e2iwk"]
+[ext_resource type="Resource" uid="uid://jcye68q8k8ja" path="res://resources/stats/faith.tres" id="6_u47h3"]
+[ext_resource type="Resource" uid="uid://m25hhepu4mn4" path="res://resources/item_sets/silver.tres" id="7_80t15"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="7_h5mbs"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="8_6rj1o"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="9_mu1o8"]
+
+[resource]
+script = ExtResource("2_xjmip")
+name = "Faithbound"
+color = Color(0.541176, 0.572549, 0.682353, 1)
+original_item_set = ExtResource("3_e2iwk")
+synergy_item_set = ExtResource("7_80t15")
+stats = Array[ExtResource("9_mu1o8")]([ExtResource("7_h5mbs"), ExtResource("6_u47h3"), ExtResource("8_6rj1o")])

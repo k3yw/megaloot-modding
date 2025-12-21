@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3 uid="uid://05op1c4hmibb"]
+
+[ext_resource type="Script" uid="uid://c567vqc52tcdx" path="res://classes/resource/specialization.gd" id="2_8e03n"]
+[ext_resource type="Resource" uid="uid://bf2y3uc38gwy2" path="res://resources/item_sets/scout.tres" id="3_da43k"]
+[ext_resource type="Resource" uid="uid://i7el4x0fmvyc" path="res://resources/stats/crit_chance.tres" id="5_oq4kq"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="6_sb2kg"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="7_2yslj"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="7_eurcs"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="9_i3snn"]
+
+[resource]
+script = ExtResource("2_8e03n")
+name = "Striker"
+color = Color(0.282353, 0.278431, 0.278431, 1)
+original_item_set = ExtResource("3_da43k")
+synergy_item_set = ExtResource("7_2yslj")
+stats = Array[ExtResource("9_i3snn")]([ExtResource("5_oq4kq"), ExtResource("6_sb2kg"), ExtResource("7_eurcs")])

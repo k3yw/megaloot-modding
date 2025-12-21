@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=14 format=3 uid="uid://bks8f3fymivk8"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_vjvgq"]
+[ext_resource type="Resource" uid="uid://6humi44d3jf7" path="res://resources/item_sets/royal.tres" id="2_pxgja"]
+[ext_resource type="Resource" uid="uid://chq1wtqg02dw4" path="res://resources/stats/combat.tres" id="3_xrcil"]
+[ext_resource type="Resource" uid="uid://m25hhepu4mn4" path="res://resources/item_sets/silver.tres" id="4_oeqot"]
+[ext_resource type="Resource" uid="uid://jcye68q8k8ja" path="res://resources/stats/faith.tres" id="5_4aiw1"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="6_gld1l"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="7_7x6h0"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="8_emoi2"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="9_0mn6q"]
+[ext_resource type="Texture2D" uid="uid://cwuyvy7yp65ve" path="res://assets/textures/items/royal_sabatons.png" id="9_rfl5e"]
+
+[sub_resource type="Resource" id="Resource_ovsik"]
+script = ExtResource("1_vjvgq")
+boosting_sets = Array[ExtResource("8_emoi2")]([ExtResource("2_pxgja")])
+resource = ExtResource("3_xrcil")
+amount = 8.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_banw6"]
+script = ExtResource("1_vjvgq")
+boosting_sets = Array[ExtResource("8_emoi2")]([ExtResource("4_oeqot")])
+resource = ExtResource("5_4aiw1")
+amount = 6.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_g2sm7"]
+script = ExtResource("1_vjvgq")
+boosting_sets = Array[ExtResource("8_emoi2")]([])
+resource = ExtResource("6_gld1l")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("7_7x6h0")
+name = &"Royal Sabatons"
+texture = ExtResource("9_rfl5e")
+description = ""
+socket_type = ExtResource("9_0mn6q")
+set_resources = Array[ExtResource("8_emoi2")]([ExtResource("2_pxgja")])
+bonus_stats = Array[ExtResource("1_vjvgq")]([SubResource("Resource_ovsik"), SubResource("Resource_banw6"), SubResource("Resource_g2sm7")])
+extra_price = 36.0
+spawn_floor = 8
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

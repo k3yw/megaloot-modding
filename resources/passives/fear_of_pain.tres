@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://cj2owmie2bft2"]
+
+[ext_resource type="Script" uid="uid://dhxy4rbqw34ue" path="res://resources/bb_scripts/fear_of_pain.gd" id="1_7ftom"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_r6jxs"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_7ftom"]
+[ext_resource type="Script" uid="uid://cglyjrt1m1v3" path="res://resources/passive_scripts/fear_of_pain.gd" id="3_xguh7"]
+
+[resource]
+script = ExtResource("2_7ftom")
+name = "Fear of Pain"
+bonus_stats = Array[ExtResource("1_r6jxs")]([])
+game_logic_script = ExtResource("3_xguh7")
+bb_script = ExtResource("1_7ftom")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

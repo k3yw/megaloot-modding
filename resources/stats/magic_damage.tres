@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://ogk372mc8x1p"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_2217y"]
+[ext_resource type="Texture2D" uid="uid://cc256ncg1gh84" path="res://assets/textures/icons/magic_damage_icon.png" id="1_nle5p"]
+
+[resource]
+script = ExtResource("1_2217y")
+name = "Magic Damage"
+icon = ExtResource("1_nle5p")
+color = Color(0.458824, 0.411765, 0.960784, 1)
+is_percentage = false
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0

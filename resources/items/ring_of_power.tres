@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://5dudp7pvliwe"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ff27u"]
+[ext_resource type="Resource" uid="uid://ikgq5lx5b8ua" path="res://resources/stats/power.tres" id="2_r47a6"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_x40ir"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="4_hlij7"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="5_oetg7"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="6_qkfrx"]
+[ext_resource type="Texture2D" uid="uid://b3pcreexsm2qa" path="res://assets/textures/items/ring_of_power.png" id="6_rp06r"]
+
+[sub_resource type="Resource" id="Resource_yqcb7"]
+script = ExtResource("1_ff27u")
+boosting_sets = Array[ExtResource("4_hlij7")]([])
+resource = ExtResource("2_r47a6")
+amount = 25.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_x40ir")
+name = &"Ring of Power"
+texture = ExtResource("6_rp06r")
+description = ""
+socket_type = ExtResource("6_qkfrx")
+set_resources = Array[ExtResource("4_hlij7")]([ExtResource("5_oetg7")])
+bonus_stats = Array[ExtResource("1_ff27u")]([SubResource("Resource_yqcb7")])
+extra_price = 91.0
+spawn_floor = 7
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

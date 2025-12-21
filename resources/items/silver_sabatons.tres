@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://b2241bbppvd6j"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_fj2yf"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_j6n5l"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_iyxyy"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_ghsu4"]
+[ext_resource type="Resource" uid="uid://m25hhepu4mn4" path="res://resources/item_sets/silver.tres" id="6_05oku"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="6_43wtn"]
+[ext_resource type="Texture2D" uid="uid://stx7i4di3203" path="res://assets/textures/items/silver_sabatons.png" id="7_dstnv"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_dk6rd"]
+
+[sub_resource type="Resource" id="Resource_03nwo"]
+script = ExtResource("1_fj2yf")
+boosting_sets = Array[ExtResource("5_ghsu4")]([])
+resource = ExtResource("2_j6n5l")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_iyxyy")
+name = &"Silver Sabatons"
+texture = ExtResource("7_dstnv")
+socket_type = ExtResource("6_43wtn")
+set_resources = Array[ExtResource("5_ghsu4")]([ExtResource("6_05oku")])
+bonus_stats = Array[ExtResource("1_fj2yf")]([SubResource("Resource_03nwo")])
+unlock_requirements = Array[ExtResource("8_dk6rd")]([])
+extra_price = 4.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

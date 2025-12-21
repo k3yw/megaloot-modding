@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://ggbun08ooydw"]
+
+[ext_resource type="PackedScene" uid="uid://obobaix27gfy" path="res://scenes/ui/room_action_containers/room_action_container/room_action_container.tscn" id="1_c1v3h"]
+[ext_resource type="Script" uid="uid://ckbfwkjd2vvdw" path="res://scenes/ui/room_action_containers/endless_monolith_action_container/endless_monolith_action_container.gd" id="2_idgml"]
+[ext_resource type="PackedScene" uid="uid://dce7wjacgnrxs" path="res://scenes/ui/flat_generic_button/flat_generic_button.tscn" id="3_idgml"]
+[ext_resource type="PackedScene" uid="uid://bf4bdtuq87lv7" path="res://scenes/ui/icon_generic_button/icon_generic_button.tscn" id="3_k37ew"]
+[ext_resource type="Texture2D" uid="uid://dwayksbxirchc" path="res://assets/textures/ui/leave_icon.png" id="4_58xay"]
+
+[node name="EndlessMonolithActionContainer" node_paths=PackedStringArray("activate_button", "leave_button") instance=ExtResource("1_c1v3h")]
+script = ExtResource("2_idgml")
+activate_button = NodePath("HBoxContainer/ActivateButton")
+leave_button = NodePath("HBoxContainer/LeaveButton")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." index="0"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+alignment = 1
+
+[node name="LeaveButton" parent="HBoxContainer" index="0" instance=ExtResource("3_k37ew")]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+icon_texture = ExtResource("4_58xay")
+
+[node name="ActivateButton" parent="HBoxContainer" index="1" groups=["main_joypad_selection"] instance=ExtResource("3_idgml")]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "ACTIVATE ENDLESS"
+hold_time = 1.0

@@ -1,0 +1,30 @@
+[gd_resource type="Resource" script_class="Chapter" load_steps=2 format=3 uid="uid://cpkfw5i6iit7p"]
+
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="1_t7qst"]
+
+[resource]
+script = ExtResource("1_t7qst")
+name = "Sid"
+text = "It's not a battle I'm willing to die for, I have nothing to protect...
+This thought was in Sid's head from the very beginning of the battle.
+
+When he saw all his allies being murdered one by one, he ran into the forest with his shield and sword. 
+
+Two enemy cavalry noticed him and began to chase him. 
+
+Eventually, he was cornered by a cliff, and with no other choice, he jumped into the lake below.
+
+On the bottom of the lake, something shiny caught his eye... a sword.
+
+Without thinking, he swam towards it.
+
+And to his surprise, the sword was very light, almost weightless.
+
+Out of breath, he swam to the surface.
+
+When he emerged from the lake, the two cavalrymen were in front of him, but even though he was in danger of dying at that very moment, Sid was not afraid.
+
+That's quite a sword you're holding, said the cavalryman in front of him, slowly unleashing his sword.
+
+In response, Sid unconsciously assumed a fighting stance, as if something was guiding him, and in a single stroke, he sliced through the cavalryman.
+slashed through the cavalry's armor and horse, cutting both in half."

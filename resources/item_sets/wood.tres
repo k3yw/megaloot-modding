@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=11 format=3 uid="uid://d07dc442wyx5e"]
+
+[ext_resource type="Script" uid="uid://ck01jlxo602r0" path="res://resources/bb_scripts/wood.gd" id="1_5yajw"]
+[ext_resource type="Texture2D" uid="uid://cey06y8v3hgmp" path="res://assets/textures/icons/item_sets/wood_icon.png" id="1_ymj7u"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_fywio"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_sauek"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_j76wm"]
+[ext_resource type="Resource" uid="uid://cpg2ipx6be0m3" path="res://resources/stats/luck.tres" id="5_x7c64"]
+
+[sub_resource type="Resource" id="Resource_hfhig"]
+script = ExtResource("3_j76wm")
+boosting_sets = Array[ExtResource("2_sauek")]([])
+resource = ExtResource("5_x7c64")
+amount = 25.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_wxlr8"]
+script = ExtResource("2_fywio")
+bonus_stats = Array[ExtResource("3_j76wm")]([SubResource("Resource_hfhig")])
+metadata/_custom_type_script = "uid://btdg3cwxl3qjf"
+
+[sub_resource type="Resource" id="Resource_dl1wv"]
+script = ExtResource("3_j76wm")
+boosting_sets = Array[ExtResource("2_sauek")]([])
+resource = ExtResource("5_x7c64")
+amount = 10.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_cwc2d"]
+script = ExtResource("2_fywio")
+bonus_stats = Array[ExtResource("3_j76wm")]([SubResource("Resource_dl1wv")])
+metadata/_custom_type_script = "uid://btdg3cwxl3qjf"
+
+[resource]
+script = ExtResource("2_sauek")
+name = "Wood"
+icon = ExtResource("1_ymj7u")
+color = Color(0.472656, 0.402344, 0.332031, 1)
+bb_script = ExtResource("1_5yajw")
+bonus_stats = Array[ExtResource("2_fywio")]([SubResource("Resource_wxlr8"), null, SubResource("Resource_cwc2d")])

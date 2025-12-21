@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Keyword" load_steps=3 format=3 uid="uid://c6h67g53rq5by"]
+
+[ext_resource type="Script" uid="uid://3d38osm0yilr" path="res://classes/resource/keyword.gd" id="1_5nhpa"]
+[ext_resource type="Script" uid="uid://c7rad7hi3lfq8" path="res://resources/bb_scripts/ascend.gd" id="1_mod85"]
+
+[resource]
+script = ExtResource("1_5nhpa")
+name = &"Ascend"
+color = Color(0, 0, 0, 1)
+bb_script = ExtResource("1_mod85")
+metadata/_custom_type_script = "uid://3d38osm0yilr"

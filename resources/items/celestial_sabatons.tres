@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://cbiton2je5sko"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_mcu2d"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_m3cwc"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_rmatu"]
+[ext_resource type="Resource" uid="uid://orugsb1sodim" path="res://resources/item_sets/celestial.tres" id="3_s0yuy"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="4_03kvq"]
+[ext_resource type="Resource" uid="uid://dpl8agabg0hnp" path="res://resources/stats/elemental_resistance.tres" id="5_vhmpm"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="7_hoygq"]
+[ext_resource type="Texture2D" uid="uid://jcb1dro0twl8" path="res://assets/textures/items/celestial_sabatons.png" id="8_ur1s0"]
+
+[sub_resource type="Resource" id="Resource_0bums"]
+script = ExtResource("1_mcu2d")
+boosting_sets = Array[ExtResource("3_rmatu")]([ExtResource("3_s0yuy")])
+resource = ExtResource("4_03kvq")
+amount = 114.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_opbke"]
+script = ExtResource("1_mcu2d")
+boosting_sets = Array[ExtResource("3_rmatu")]([])
+resource = ExtResource("5_vhmpm")
+amount = 10.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_m3cwc")
+name = &"Celestial Sabatons"
+texture = ExtResource("8_ur1s0")
+description = ""
+socket_type = ExtResource("7_hoygq")
+set_resources = Array[ExtResource("3_rmatu")]([ExtResource("3_s0yuy")])
+bonus_stats = Array[ExtResource("1_mcu2d")]([SubResource("Resource_0bums"), SubResource("Resource_opbke")])
+extra_price = 162.0
+spawn_floor = 20
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

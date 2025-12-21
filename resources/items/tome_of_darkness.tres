@@ -1,0 +1,27 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=8 format=3 uid="uid://cku3xl3eng8um"]
+
+[ext_resource type="Resource" uid="uid://h8sy5ia4uu1g" path="res://resources/abilities/mind_control.tres" id="1_fw7xd"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_uaipw"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_xq3uf"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_gky8k"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="6_i77a2"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="7_5sey7"]
+[ext_resource type="Texture2D" uid="uid://cwosk1cbbw5cl" path="res://assets/textures/items/tome_of_darkness.png" id="7_qhd0e"]
+
+[resource]
+script = ExtResource("4_xq3uf")
+name = &"Tome of Darkness"
+texture = ExtResource("7_qhd0e")
+set_resources = Array[ExtResource("5_gky8k")]([ExtResource("6_i77a2")])
+ability_to_learn = ExtResource("1_fw7xd")
+bonus_stats = Array[ExtResource("3_uaipw")]([])
+unlock_requirements = Array[ExtResource("7_5sey7")]([])
+extra_price = 0.0
+spawn_floor = 9
+hide_level = false
+buy_limit = -1
+use_custom_rarity = true
+custom_rarity = 0
+reforgable = false
+is_artifact = false
+is_special = false

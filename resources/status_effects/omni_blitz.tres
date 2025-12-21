@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://c1x6nyyntkgxv"]
+
+[ext_resource type="Texture2D" uid="uid://cbommktfqa52p" path="res://assets/textures/icons/magic_blitz.png" id="1_4nkoj"]
+[ext_resource type="Script" uid="uid://bwvscvoj0o628" path="res://resources/bb_scripts/blitz.gd" id="1_abaki"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="2_wnaj2"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_f55qr"]
+
+[resource]
+script = ExtResource("2_wnaj2")
+name = "Omni Blitz"
+icon = ExtResource("1_4nkoj")
+color = Color(0.788235, 0.486275, 0.639216, 1)
+type = ExtResource("3_f55qr")
+is_temporary = false
+is_percent = false
+limit = -1
+application_message = "Omni Blitz"
+bb_script = ExtResource("1_abaki")

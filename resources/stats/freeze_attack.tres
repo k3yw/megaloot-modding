@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://cx3yom37ddk2n"]
+
+[ext_resource type="Texture2D" uid="uid://f1oigalpqst6" path="res://assets/textures/icons/freeze_attacks.png" id="1_d8cl7"]
+[ext_resource type="Script" uid="uid://ctlyg02xn2d5n" path="res://resources/bb_scripts/freeze_attack.gd" id="1_vsdjy"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_op5vh"]
+[ext_resource type="Script" uid="uid://dodboviwxe4u7" path="res://resources/stat_scripts/freeze_attack.gd" id="4_mnu4m"]
+
+[resource]
+script = ExtResource("2_op5vh")
+name = "Freeze Attack"
+icon = ExtResource("1_d8cl7")
+color = Color(0.352941, 0.533333, 1, 1)
+is_attack_type = true
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_mnu4m")
+bb_script = ExtResource("1_vsdjy")

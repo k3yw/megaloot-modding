@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://dfo2cuwdxwmwb"]
+
+[ext_resource type="Script" uid="uid://1v8fhereiiva" path="res://resources/bb_scripts/dread.gd" id="1_guwp6"]
+[ext_resource type="Texture2D" uid="uid://i02dhshwfdph" path="res://assets/textures/icons/dread.png" id="2_c1a0m"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="3_pwknh"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="4_35usx"]
+
+[resource]
+script = ExtResource("3_pwknh")
+name = "Dread"
+icon = ExtResource("2_c1a0m")
+color = Color(0.380392, 0.278431, 0.337255, 1)
+type = ExtResource("4_35usx")
+is_temporary = true
+is_percent = false
+limit = 2
+application_message = ""
+bb_script = ExtResource("1_guwp6")

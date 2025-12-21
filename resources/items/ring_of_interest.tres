@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://ce1mq0ypijkyb"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_hh84l"]
+[ext_resource type="Resource" uid="uid://t41a6nfn5j50" path="res://resources/stats/elemental_power.tres" id="2_skaek"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="3_2jnxp"]
+[ext_resource type="Resource" uid="uid://di0s43iy4a0ta" path="res://resources/passives/absolution.tres" id="4_go3ls"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_4ujf8"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_rhwtm"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="7_3o7hp"]
+[ext_resource type="Texture2D" uid="uid://dxyifkrjl6we0" path="res://assets/textures/items/ring_of_interest.png" id="8_0xupg"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="8_55lsi"]
+
+[sub_resource type="Resource" id="Resource_kgvgg"]
+script = ExtResource("1_hh84l")
+boosting_sets = Array[ExtResource("6_rhwtm")]([])
+resource = ExtResource("2_skaek")
+amount = 34.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_gabtd"]
+script = ExtResource("1_hh84l")
+boosting_sets = Array[ExtResource("6_rhwtm")]([null])
+resource = ExtResource("3_2jnxp")
+amount = 17.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_4ujf8")
+name = &"Ring of Interest"
+texture = ExtResource("8_0xupg")
+description = ""
+socket_type = ExtResource("8_55lsi")
+set_resources = Array[ExtResource("6_rhwtm")]([ExtResource("7_3o7hp")])
+passive = ExtResource("4_go3ls")
+bonus_stats = Array[ExtResource("1_hh84l")]([SubResource("Resource_kgvgg"), SubResource("Resource_gabtd")])
+extra_price = 128.0
+spawn_floor = 14
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

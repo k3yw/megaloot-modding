@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="BBTag" load_steps=2 format=3 uid="uid://bc7jfsl432ohr"]
+
+[ext_resource type="Script" uid="uid://b26g3ht8ulx0" path="res://classes/resource/bb_tag.gd" id="1_61gh5"]
+
+[resource]
+script = ExtResource("1_61gh5")
+name = "trial"

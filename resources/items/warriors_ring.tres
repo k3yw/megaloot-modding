@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://c5mhiuweurr55"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_guabt"]
+[ext_resource type="Resource" uid="uid://chq1wtqg02dw4" path="res://resources/stats/combat.tres" id="2_01rnm"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_w0yym"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_vr0bj"]
+[ext_resource type="Resource" uid="uid://coyyfeo8wd8w7" path="res://resources/passives/combat_instinct.tres" id="6_35cto"]
+[ext_resource type="Resource" uid="uid://ctpy2mw635lru" path="res://resources/item_sets/warrior.tres" id="6_y7tx2"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_kltl1"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="8_35cto"]
+[ext_resource type="Texture2D" uid="uid://c6dlnho4rsdyh" path="res://assets/textures/items/warriors_ring.png" id="8_y0my3"]
+
+[sub_resource type="Resource" id="Resource_o27vv"]
+script = ExtResource("1_guabt")
+boosting_sets = Array[ExtResource("7_kltl1")]([ExtResource("6_y7tx2")])
+resource = ExtResource("5_vr0bj")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_eq8dh"]
+script = ExtResource("1_guabt")
+boosting_sets = Array[ExtResource("7_kltl1")]([])
+resource = ExtResource("2_01rnm")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_w0yym")
+name = &"Warrior\'s Ring"
+texture = ExtResource("8_y0my3")
+description = ""
+socket_type = ExtResource("8_35cto")
+set_resources = Array[ExtResource("7_kltl1")]([ExtResource("6_y7tx2")])
+passive = ExtResource("6_35cto")
+bonus_stats = Array[ExtResource("1_guabt")]([SubResource("Resource_o27vv"), SubResource("Resource_eq8dh")])
+extra_price = 84.0
+spawn_floor = 5
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

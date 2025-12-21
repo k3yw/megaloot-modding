@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://cyku26uwvyikp"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_0spov"]
+[ext_resource type="Texture2D" uid="uid://gkogterdbyr8" path="res://assets/textures/icons/item_sets/poverty.png" id="1_tb1gq"]
+[ext_resource type="Script" uid="uid://dab8p0cw5s8aa" path="res://resources/bb_scripts/poverty.gd" id="1_y8hlr"]
+
+[resource]
+script = ExtResource("1_0spov")
+name = "Poverty"
+icon = ExtResource("1_tb1gq")
+color = Color(0.313726, 0.290196, 0.286275, 1)
+value = 0
+flow_cost = 15
+bb_script = ExtResource("1_y8hlr")

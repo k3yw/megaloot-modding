@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=11 format=3 uid="uid://c7ixfpv1fwfsv"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_3voqb"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_lqsrb"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_o1w4c"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_cvgsb"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="4_o1w4c"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_2evhh"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_x54u2"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="7_voi5k"]
+[ext_resource type="Texture2D" uid="uid://eefvn7nkuj5f" path="res://assets/textures/enemies/merchant.png" id="9_cvgsb"]
+
+[sub_resource type="Resource" id="Resource_2evhh"]
+script = ExtResource("3_o1w4c")
+boosting_sets = Array[ExtResource("2_lqsrb")]([])
+resource = ExtResource("4_o1w4c")
+amount = 1.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("5_2evhh")
+name = "Merchant"
+texture = ExtResource("9_cvgsb")
+floor_number = 0
+flying = false
+starting_status_effects = Array[ExtResource("6_x54u2")]([])
+active_item_sets = Array[ExtResource("2_lqsrb")]([])
+stats_per_level = Array[ExtResource("7_voi5k")]([])
+base_stats = Array[ExtResource("3_o1w4c")]([SubResource("Resource_2evhh")])
+abilities = Array[ExtResource("1_3voqb")]([])
+passives = Array[ExtResource("4_cvgsb")]([])
+is_unique = false
+hide_stats = true
+metadata/_custom_type_script = "uid://p2rd2m1ktgi5"

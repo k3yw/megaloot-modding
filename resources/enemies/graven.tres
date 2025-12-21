@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://c5cqurk5wyiad"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_hbbsc"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_4xhrg"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_6j3mh"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_6nwli"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="4_u7uir"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_1irub"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_h5clb"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="6_ha31a"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_vwilm"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="7_mipse"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="7_u7uir"]
+[ext_resource type="Texture2D" uid="uid://dqt1w87qcxnbo" path="res://assets/textures/enemies/graven.png" id="8_4xhrg"]
+[ext_resource type="Resource" uid="uid://b100kc1cd012n" path="res://resources/passives/prime_guard.tres" id="9_vw1pd"]
+
+[sub_resource type="Resource" id="Resource_ds30t"]
+script = ExtResource("3_6j3mh")
+boosting_sets = Array[ExtResource("2_4xhrg")]([])
+resource = ExtResource("4_u7uir")
+amount = 2.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_oprjh"]
+script = ExtResource("3_6j3mh")
+boosting_sets = Array[ExtResource("2_4xhrg")]([])
+resource = ExtResource("5_1irub")
+amount = 426.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_f46q6"]
+script = ExtResource("3_6j3mh")
+boosting_sets = Array[ExtResource("2_4xhrg")]([])
+resource = ExtResource("6_ha31a")
+amount = 28.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_ybdod"]
+script = ExtResource("3_6j3mh")
+boosting_sets = Array[ExtResource("2_4xhrg")]([])
+resource = ExtResource("7_mipse")
+amount = 14.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("5_h5clb")
+name = "Graven"
+texture = ExtResource("8_4xhrg")
+floor_number = 28
+flying = false
+starting_status_effects = Array[ExtResource("6_vwilm")]([])
+active_item_sets = Array[ExtResource("2_4xhrg")]([])
+stats_per_level = Array[ExtResource("7_u7uir")]([])
+base_stats = Array[ExtResource("3_6j3mh")]([SubResource("Resource_ds30t"), SubResource("Resource_oprjh"), SubResource("Resource_f46q6"), SubResource("Resource_ybdod")])
+abilities = Array[ExtResource("1_hbbsc")]([])
+passives = Array[ExtResource("4_6nwli")]([ExtResource("9_vw1pd")])
+is_unique = true
+hide_stats = false
+metadata/_custom_type_script = "uid://p2rd2m1ktgi5"

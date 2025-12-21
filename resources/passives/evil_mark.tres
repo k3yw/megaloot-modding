@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://b86gt15eid58v"]
+
+[ext_resource type="Script" uid="uid://b6afx3y5fkewb" path="res://resources/bb_scripts/evil_mark.gd" id="1_6b6ti"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_oejk0"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_t0ftt"]
+
+[resource]
+script = ExtResource("3_t0ftt")
+name = "Evil Mark"
+bonus_stats = Array[ExtResource("1_oejk0")]([])
+bb_script = ExtResource("1_6b6ti")

@@ -1,0 +1,59 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://dqos2o1w8e4wx"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_m84qw"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_nfwmo"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_w71mg"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_71hip"]
+[ext_resource type="Texture2D" uid="uid://dfq2lu56y5bg7" path="res://assets/textures/enemies/moon.png" id="2_btxjy"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_g3opk"]
+[ext_resource type="Resource" uid="uid://blbmjs1pfmbu6" path="res://resources/abilities/stun_attack.tres" id="2_wmxcw"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_8r7d0"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_nrhot"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="8_p6n4l"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_ysd50"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="9_c3pyi"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="12_5kes8"]
+
+[sub_resource type="Resource" id="Resource_52loi"]
+script = ExtResource("2_g3opk")
+boosting_sets = Array[ExtResource("2_71hip")]([])
+resource = ExtResource("1_nfwmo")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0n7r2"]
+script = ExtResource("2_g3opk")
+boosting_sets = Array[ExtResource("2_71hip")]([])
+resource = ExtResource("5_nrhot")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_3khd5"]
+script = ExtResource("2_g3opk")
+boosting_sets = Array[ExtResource("2_71hip")]([])
+resource = ExtResource("5_8r7d0")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_7vjvd"]
+script = ExtResource("2_g3opk")
+boosting_sets = Array[ExtResource("2_71hip")]([])
+resource = ExtResource("8_p6n4l")
+amount = 3.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("1_w71mg")
+name = "Moon"
+texture = ExtResource("2_btxjy")
+floor_number = 10
+flying = false
+starting_status_effects = Array[ExtResource("9_c3pyi")]([])
+active_item_sets = Array[ExtResource("2_71hip")]([])
+stats_per_level = Array[ExtResource("12_5kes8")]([])
+base_stats = Array[ExtResource("2_g3opk")]([SubResource("Resource_52loi"), SubResource("Resource_0n7r2"), SubResource("Resource_3khd5"), SubResource("Resource_7vjvd")])
+abilities = Array[ExtResource("1_m84qw")]([ExtResource("2_wmxcw")])
+passives = Array[ExtResource("8_ysd50")]([])
+is_unique = false
+hide_stats = false

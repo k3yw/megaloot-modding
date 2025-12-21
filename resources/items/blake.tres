@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://dubrtop0ip01w"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_dosvb"]
+[ext_resource type="Resource" uid="uid://bgtqv081hmavn" path="res://resources/item_sets/jade.tres" id="2_mtg0n"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="3_u00ie"]
+[ext_resource type="Resource" uid="uid://0abp861lex8u" path="res://resources/stats/dazzle.tres" id="4_ptdll"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_dsonv"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_l6xb4"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_oqboy"]
+[ext_resource type="Texture2D" uid="uid://cam0l1fn8smxe" path="res://assets/textures/items/blake.png" id="7_woca0"]
+
+[sub_resource type="Resource" id="Resource_t30f3"]
+script = ExtResource("1_dosvb")
+boosting_sets = Array[ExtResource("6_l6xb4")]([ExtResource("2_mtg0n")])
+resource = ExtResource("3_u00ie")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_q0hy2"]
+script = ExtResource("1_dosvb")
+boosting_sets = Array[ExtResource("6_l6xb4")]([])
+resource = ExtResource("4_ptdll")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_dsonv")
+name = &"Blake"
+texture = ExtResource("7_woca0")
+description = ""
+socket_type = ExtResource("7_oqboy")
+set_resources = Array[ExtResource("6_l6xb4")]([ExtResource("2_mtg0n")])
+bonus_stats = Array[ExtResource("1_dosvb")]([SubResource("Resource_t30f3"), SubResource("Resource_q0hy2")])
+extra_price = 85.0
+spawn_floor = 13
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

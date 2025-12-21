@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://cuv55gjn0pbkp"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_tybs4"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="2_lh41p"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_2xyjq"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_4iq6u"]
+[ext_resource type="Resource" uid="uid://cyctakuu2fani" path="res://resources/item_sets/flesh.tres" id="6_s60ev"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_brjsg"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_q8ow8"]
+[ext_resource type="Texture2D" uid="uid://bq2cce7xefgl5" path="res://assets/textures/items/living_helmet.png" id="8_5wncq"]
+
+[sub_resource type="Resource" id="Resource_ykh5p"]
+script = ExtResource("1_tybs4")
+boosting_sets = Array[ExtResource("7_brjsg")]([ExtResource("6_s60ev")])
+resource = ExtResource("5_4iq6u")
+amount = 15.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_r2vio"]
+script = ExtResource("1_tybs4")
+boosting_sets = Array[ExtResource("7_brjsg")]([])
+resource = ExtResource("2_lh41p")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_2xyjq")
+name = &"Living Helmet"
+texture = ExtResource("8_5wncq")
+description = ""
+socket_type = ExtResource("7_q8ow8")
+set_resources = Array[ExtResource("7_brjsg")]([ExtResource("6_s60ev")])
+bonus_stats = Array[ExtResource("1_tybs4")]([SubResource("Resource_ykh5p"), SubResource("Resource_r2vio")])
+extra_price = 4.0
+spawn_floor = 7
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

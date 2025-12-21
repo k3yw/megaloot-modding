@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=3 format=3 uid="uid://jwns7cf3augg"]
+
+[ext_resource type="Script" uid="uid://1hvtntrysdnf" path="res://resources/bb_scripts/immolate.gd" id="1_3n2lg"]
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_ioj0f"]
+
+[resource]
+script = ExtResource("1_ioj0f")
+name = "Immolate"
+color = Color(0, 0, 0, 1)
+use_limit = 0
+popup_color = Color(0, 0, 0, 1)
+popup_text = ""
+popup_delay = 0.0
+screen_shake = true
+is_hit = true
+bb_script = ExtResource("1_3n2lg")

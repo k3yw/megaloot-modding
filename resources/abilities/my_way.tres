@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=9 format=3 uid="uid://dalshc3m5j13o"]
+
+[ext_resource type="Script" uid="uid://byfhlwbcw727y" path="res://resources/ability_scripts/my_way.gd" id="1_f7rtw"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_n1pc0"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_4pdtf"]
+[ext_resource type="Texture2D" uid="uid://chw1po2v5eee3" path="res://assets/textures/icons/counter_attack_icon.png" id="2_6r6h1"]
+[ext_resource type="Script" uid="uid://c6g8urlmeekm3" path="res://resources/bb_scripts/my_way.gd" id="2_euu86"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_6r6h1"]
+[ext_resource type="Resource" uid="uid://bxv6028ci4lyk" path="res://resources/status_effects/counter_attack_charge.tres" id="5_6r6h1"]
+
+[sub_resource type="Resource" id="Resource_7p46h"]
+script = ExtResource("3_6r6h1")
+resource = ExtResource("5_6r6h1")
+amount = 1
+metadata/_custom_type_script = "uid://b3b5vhhh7jge1"
+
+[resource]
+script = ExtResource("2_4pdtf")
+name = "My Way"
+icon = ExtResource("2_6r6h1")
+mana_cost = 0
+use_limit = 2
+status_effects_on_activation = Array[ExtResource("3_6r6h1")]([SubResource("Resource_7p46h")])
+bonus_stats_while_active = Array[ExtResource("1_n1pc0")]([])
+quick_cast = false
+non_target = true
+to_attack = true
+value = 0
+ability_script = ExtResource("1_f7rtw")
+bb_script = ExtResource("2_euu86")
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RoomResource" load_steps=5 format=3 uid="uid://hdsvf2ur2xk3"]
+
+[ext_resource type="Script" uid="uid://b1oagobxqkfg1" path="res://resources/room_scripts/final_room.gd" id="1_3pq71"]
+[ext_resource type="PackedScene" uid="uid://lcpnouh2lsen" path="res://scenes/rooms/room_final.tscn" id="1_bb8qc"]
+[ext_resource type="PackedScene" uid="uid://bfepvswk4iimn" path="res://scenes/ui/room_action_containers/final_room_action_container/final_room_action_container.tscn" id="1_jreuc"]
+[ext_resource type="Script" uid="uid://dercbl3566y8y" path="res://classes/resource/room_resource.gd" id="2_3pq71"]
+
+[resource]
+script = ExtResource("2_3pq71")
+restless = false
+scene = ExtResource("1_bb8qc")
+action_container_scene = ExtResource("1_jreuc")
+processor_script = ExtResource("1_3pq71")
+metadata/_custom_type_script = "uid://dercbl3566y8y"

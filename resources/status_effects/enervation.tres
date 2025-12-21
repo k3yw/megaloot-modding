@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=6 format=3 uid="uid://djwyr53d7hxlp"]
+
+[ext_resource type="AudioStream" uid="uid://cotad71h6atcx" path="res://assets/sfx/apply_weakness.wav" id="1_8f7aa"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_o7jjj"]
+[ext_resource type="Script" uid="uid://b5a70ser7kl05" path="res://resources/bb_scripts/weakness.gd" id="2_n1uoq"]
+[ext_resource type="Texture2D" uid="uid://cm1hckou227ra" path="res://assets/textures/icons/weakness_icon.png" id="3_wl07y"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="5_232bl"]
+
+[resource]
+script = ExtResource("1_o7jjj")
+name = "Enervation"
+icon = ExtResource("3_wl07y")
+color = Color(0.580392, 0.647059, 0.6, 1)
+type = ExtResource("5_232bl")
+is_temporary = true
+is_percent = false
+limit = 10
+application_message = "ENERVATED"
+application_sound = ExtResource("1_8f7aa")
+bb_script = ExtResource("2_n1uoq")
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

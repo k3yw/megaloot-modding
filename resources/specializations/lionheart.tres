@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/legacy_icon.png" id="2_pnjht"]
+[ext_resource type="Resource" path="res://resources/item_sets/legacy.tres" id="3_o1pi4"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="4_adpp4"]
+[ext_resource type="Resource" path="res://resources/stats/max_health.tres" id="6_pig1k"]
+[ext_resource type="Resource" path="res://resources/stats/toughness.tres" id="7_0mh0e"]
+[ext_resource type="Resource" path="res://resources/stats/recovery.tres" id="8_c4hoa"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_lwaql"]
+
+[resource]
+script = ExtResource("4_adpp4")
+name = "Lionheart"
+color = Color(0.984314, 0.654902, 0.407843, 1)
+icon = ExtResource("2_pnjht")
+original_item_set = ExtResource("3_o1pi4")
+completed_floor_to_unlock = 29
+stats = Array[ExtResource("9_lwaql")]([ExtResource("6_pig1k"), ExtResource("7_0mh0e"), ExtResource("8_c4hoa")])
+stats_new = Array[ExtResource("9_lwaql")]([ExtResource("6_pig1k"), ExtResource("7_0mh0e"), ExtResource("8_c4hoa")])

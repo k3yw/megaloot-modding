@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=20 format=3 uid="uid://ckgd0ccflai2m"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_08xq7"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_bcel0"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_lbumo"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_r2x2q"]
+[ext_resource type="Resource" uid="uid://cpkms5wmlssh" path="res://resources/abilities/repulse.tres" id="1_xh0vd"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_xpsoj"]
+[ext_resource type="Texture2D" uid="uid://de5g68epkfyo8" path="res://assets/textures/enemies/kotya.png" id="3_boqq5"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_6c8dw"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_t32kl"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_fmtkd"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_nqn3c"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="11_0d8hc"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_31xxl"]
+[ext_resource type="Resource" uid="uid://d3fklbnxjayna" path="res://resources/status_effects/clarity.tres" id="12_ny54d"]
+
+[sub_resource type="Resource" id="Resource_yrprp"]
+script = ExtResource("2_xpsoj")
+boosting_sets = Array[ExtResource("1_08xq7")]([])
+resource = ExtResource("1_r2x2q")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_b8243"]
+script = ExtResource("2_xpsoj")
+boosting_sets = Array[ExtResource("1_08xq7")]([])
+resource = ExtResource("4_6c8dw")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_52l4o"]
+script = ExtResource("2_xpsoj")
+boosting_sets = Array[ExtResource("1_08xq7")]([])
+resource = ExtResource("5_t32kl")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_5iwxv"]
+script = ExtResource("11_0d8hc")
+resource = ExtResource("12_ny54d")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_ucqaw"]
+script = ExtResource("8_nqn3c")
+status_effects = Array[ExtResource("11_0d8hc")]([SubResource("Resource_5iwxv")])
+
+[resource]
+script = ExtResource("1_bcel0")
+name = "Kotya"
+texture = ExtResource("3_boqq5")
+floor_number = 8
+flying = false
+starting_status_effects = Array[ExtResource("8_nqn3c")]([null, null, SubResource("Resource_ucqaw")])
+active_item_sets = Array[ExtResource("1_08xq7")]([])
+stats_per_level = Array[ExtResource("11_31xxl")]([])
+base_stats = Array[ExtResource("2_xpsoj")]([SubResource("Resource_yrprp"), SubResource("Resource_b8243"), SubResource("Resource_52l4o")])
+abilities = Array[ExtResource("1_lbumo")]([null, ExtResource("1_xh0vd")])
+passives = Array[ExtResource("7_fmtkd")]([])
+hide_stats = false

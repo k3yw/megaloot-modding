@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://btbwgp2pj3e8a"]
+
+[ext_resource type="Script" uid="uid://c32fykcg8253q" path="res://resources/bb_scripts/magic_attack.gd" id="1_hgn0y"]
+[ext_resource type="Texture2D" uid="uid://cc256ncg1gh84" path="res://assets/textures/icons/magic_damage_icon.png" id="1_kfpa2"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_es2xv"]
+[ext_resource type="Script" uid="uid://c0qwubtbbqmyf" path="res://resources/stat_scripts/magic_attack.gd" id="3_0y643"]
+
+[resource]
+script = ExtResource("2_es2xv")
+name = "Magic Attack"
+icon = ExtResource("1_kfpa2")
+color = Color(0.458824, 0.411765, 0.960784, 1)
+is_attack_type = true
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_0y643")
+bb_script = ExtResource("1_hgn0y")

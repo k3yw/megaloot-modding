@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://ctwjqvbb5mqj7"]
+
+[ext_resource type="Texture2D" uid="uid://b664dwp5kpyrl" path="res://assets/textures/icons/curse_icon.png" id="1_bixg7"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_ne2rc"]
+
+[resource]
+script = ExtResource("1_ne2rc")
+name = "Malice Damage"
+icon = ExtResource("1_bixg7")
+color = Color(0.282353, 0.227451, 0.364706, 1)
+is_percentage = false
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=6 format=3 uid="uid://be3lmusfh4wna"]
+
+[ext_resource type="Texture2D" uid="uid://b7ptphj1rsnr2" path="res://assets/textures/icons/item_sets/vampiric_icon.png" id="1_ak5et"]
+[ext_resource type="Script" uid="uid://ckdwsivylatfa" path="res://resources/bb_scripts/vampiric.gd" id="1_ld4rm"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_qhu1i"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_3v4fr"]
+[ext_resource type="Script" uid="uid://cedv0q4etm11a" path="res://resources/item_set_scripts/vampiric.gd" id="3_vfc2h"]
+
+[resource]
+script = ExtResource("1_qhu1i")
+name = "Vampiric"
+icon = ExtResource("1_ak5et")
+color = Color(0.658824, 0.180392, 0.309804, 1)
+game_logic_script = ExtResource("3_vfc2h")
+bb_script = ExtResource("1_ld4rm")
+bonus_stats = Array[ExtResource("2_3v4fr")]([])

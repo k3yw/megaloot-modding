@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=4 format=3 uid="uid://ceittg6ggco08"]
+
+[ext_resource type="Texture2D" uid="uid://d34nyoleasqx7" path="res://assets/textures/icons/toxicity_icon.png" id="1_eomol"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_ajibk"]
+
+[sub_resource type="GDScript" id="GDScript_510t0"]
+script/source = "extends BBScript
+
+
+
+
+
+
+
+
+
+func get_bb_container_data(_args: Array = []) -> Array[BBContainerData]:
+	var bb_container_data: Array[BBContainerData] = []
+	
+	bb_container_data.push_back(BBContainerData.new(\"Unaffected by any effects\"))
+	
+	return bb_container_data
+"
+
+[resource]
+script = ExtResource("2_ajibk")
+name = "Blackrot Damage"
+icon = ExtResource("1_eomol")
+color = Color(0.278431, 0.278431, 0.380392, 1)
+is_percentage = false
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0
+bb_script = SubResource("GDScript_510t0")

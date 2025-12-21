@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://day6jmeqac72t"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_77ihf"]
+[ext_resource type="Resource" uid="uid://bgtqv081hmavn" path="res://resources/item_sets/jade.tres" id="2_aerk8"]
+[ext_resource type="Resource" uid="uid://0abp861lex8u" path="res://resources/stats/dazzle.tres" id="3_mro6r"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_4t6fr"]
+[ext_resource type="Resource" uid="uid://bosxf4agc61jc" path="res://resources/passives/faded_discipline.tres" id="5_fp1uv"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_xjpgp"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="6_glks6"]
+[ext_resource type="Texture2D" uid="uid://7e7v3q4h1es" path="res://assets/textures/items/glimmer.png" id="6_rlb81"]
+
+[sub_resource type="Resource" id="Resource_8pveu"]
+script = ExtResource("1_77ihf")
+boosting_sets = Array[ExtResource("5_xjpgp")]([ExtResource("2_aerk8")])
+resource = ExtResource("3_mro6r")
+amount = 25.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_4t6fr")
+name = &"Glimmer"
+texture = ExtResource("6_rlb81")
+description = ""
+socket_type = ExtResource("6_glks6")
+set_resources = Array[ExtResource("5_xjpgp")]([ExtResource("2_aerk8")])
+passive = ExtResource("5_fp1uv")
+bonus_stats = Array[ExtResource("1_77ihf")]([SubResource("Resource_8pveu")])
+extra_price = 428.0
+spawn_floor = 13
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

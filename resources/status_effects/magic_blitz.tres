@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://dalmlbou48r6x"]
+
+[ext_resource type="Texture2D" uid="uid://cbommktfqa52p" path="res://assets/textures/icons/magic_blitz.png" id="1_2myxs"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_jfs4u"]
+[ext_resource type="Script" uid="uid://bwvscvoj0o628" path="res://resources/bb_scripts/blitz.gd" id="1_lgqgj"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_ttqgj"]
+
+[resource]
+script = ExtResource("1_jfs4u")
+name = "Magic Blitz"
+icon = ExtResource("1_2myxs")
+color = Color(0.721569, 0.666667, 0.913725, 1)
+type = ExtResource("3_ttqgj")
+is_temporary = false
+is_percent = false
+limit = -1
+application_message = "Magic Blitz"
+bb_script = ExtResource("1_lgqgj")

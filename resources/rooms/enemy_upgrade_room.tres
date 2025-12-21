@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RoomResource" load_steps=5 format=3 uid="uid://bngcqjtswf1q"]
+
+[ext_resource type="PackedScene" uid="uid://dkiwic7jo6sbv" path="res://scenes/ui/room_action_containers/enemy_upgrade_action_container/enemy_upgrade_action_container.tscn" id="1_4kw3r"]
+[ext_resource type="Script" uid="uid://dercbl3566y8y" path="res://classes/resource/room_resource.gd" id="1_6hthg"]
+[ext_resource type="Script" uid="uid://7cp7fob5rlgl" path="res://resources/room_scripts/enemy_upgrade_room.gd" id="1_p6s8a"]
+[ext_resource type="PackedScene" uid="uid://3k5tssu4iclw" path="res://scenes/rooms/room_normal.tscn" id="2_4kw3r"]
+
+[resource]
+script = ExtResource("1_6hthg")
+restless = false
+scene = ExtResource("2_4kw3r")
+action_container_scene = ExtResource("1_4kw3r")
+processor_script = ExtResource("1_p6s8a")
+metadata/_custom_type_script = "uid://dercbl3566y8y"

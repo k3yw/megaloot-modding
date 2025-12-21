@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=6 format=3 uid="uid://dhy8qq2aomo6c"]
+
+[ext_resource type="Script" uid="uid://dspg6incxn2g4" path="res://resources/bb_scripts/cursed.gd" id="1_gmaww"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_p7nda"]
+[ext_resource type="Texture2D" uid="uid://pjhrvomwa6wv" path="res://assets/textures/icons/item_sets/cursed_icon.png" id="1_vrayt"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_glsp8"]
+[ext_resource type="Script" uid="uid://bxuslew114hwu" path="res://resources/item_set_scripts/cursed.gd" id="3_qmkfr"]
+
+[resource]
+script = ExtResource("1_p7nda")
+name = "Cursed"
+icon = ExtResource("1_vrayt")
+color = Color(0.28125, 0.226563, 0.363281, 1)
+game_logic_script = ExtResource("3_qmkfr")
+bb_script = ExtResource("1_gmaww")
+bonus_stats = Array[ExtResource("2_glsp8")]([])

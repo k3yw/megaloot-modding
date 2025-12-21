@@ -1,0 +1,77 @@
+[gd_scene load_steps=10 format=3 uid="uid://byr6p7c62atat"]
+
+[ext_resource type="Script" uid="uid://dv2am132i6tqh" path="res://scenes/states/gameplay_state/gameplay_state.gd" id="1_trjiw"]
+[ext_resource type="PackedScene" uid="uid://cgavydc55o364" path="res://scenes/managers/character_manager/character_manager.tscn" id="2_d8tmk"]
+[ext_resource type="PackedScene" uid="uid://cuxo4026dbuku" path="res://scenes/managers/market_manager/market_manager.tscn" id="3_ikoeg"]
+[ext_resource type="PackedScene" uid="uid://c0od3m27ifd85" path="res://scenes/ui/death_screen/death_screen.tscn" id="4_0cjep"]
+[ext_resource type="PackedScene" uid="uid://cmppiiq4t383p" path="res://scenes/managers/battle_manager/battle_manager.tscn" id="4_wtqpt"]
+[ext_resource type="PackedScene" uid="uid://by4vodkj40j5x" path="res://scenes/managers/enemy_manager/enemy_manager.tscn" id="6_kfn70"]
+[ext_resource type="PackedScene" uid="uid://bsgj0tnwwindv" path="res://scenes/ui/gameplay_canvas_layer/gameplay_canvas_layer.tscn" id="8_vg1lr"]
+
+[sub_resource type="Shader" id="Shader_8h3i5"]
+code = "shader_type canvas_item;
+
+
+// Ranges from 0 to 1 over the course of the transition.
+// We use this to actually animate the shader.
+uniform float progress : hint_range(0, 2);
+
+
+// Size of each diamond, in pixels.
+uniform float diamondPixelSize = 10.0;
+
+
+float when_lt(float x, float y) {
+  return max(sign(y - x), 0.0);
+}
+
+void fragment() {
+	float xFraction = fract(FRAGCOORD.x / diamondPixelSize);
+	float yFraction = fract(FRAGCOORD.y / diamondPixelSize);
+	float xDistance = abs(xFraction - 0.5);
+	float yDistance = abs(yFraction - 0.5);
+	
+	if (progress > 1.0){
+		COLOR.a *= 1.0 - when_lt(xDistance + yDistance + UV.x + UV.y, (progress - 1.0) * 4.0);
+	}else{
+		COLOR.a *= when_lt(xDistance + yDistance + UV.x + UV.y, progress * 4.0);
+	}
+	
+	
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bpq4g"]
+resource_local_to_scene = true
+shader = SubResource("Shader_8h3i5")
+shader_parameter/progress = 0.0
+shader_parameter/diamondPixelSize = 10.0
+
+[node name="GameplayState" type="Node" node_paths=PackedStringArray("character_manager", "market_manager", "battle_manager", "enemy_manager", "canvas_layer", "death_screen")]
+process_mode = 1
+script = ExtResource("1_trjiw")
+character_manager = NodePath("Managers/CharacterManager")
+market_manager = NodePath("Managers/MarketManager")
+battle_manager = NodePath("Managers/BattleManager")
+enemy_manager = NodePath("Managers/EnemyManager")
+canvas_layer = NodePath("GamelayCanvasLayer")
+death_screen = NodePath("DeathScreenCanvasLayer/DeathScreen")
+metadata/_edit_horizontal_guides_ = [0.0]
+
+[node name="Managers" type="Node" parent="."]
+
+[node name="CharacterManager" parent="Managers" instance=ExtResource("2_d8tmk")]
+
+[node name="MarketManager" parent="Managers" instance=ExtResource("3_ikoeg")]
+
+[node name="BattleManager" parent="Managers" instance=ExtResource("4_wtqpt")]
+
+[node name="EnemyManager" parent="Managers" instance=ExtResource("6_kfn70")]
+
+[node name="GamelayCanvasLayer" parent="." instance=ExtResource("8_vg1lr")]
+metadata/_edit_horizontal_guides_ = [107.0]
+metadata/_edit_vertical_guides_ = [292.0, 16.0, 253.0]
+
+[node name="DeathScreenCanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="DeathScreen" parent="DeathScreenCanvasLayer" instance=ExtResource("4_0cjep")]
+material = SubResource("ShaderMaterial_bpq4g")

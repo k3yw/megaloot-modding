@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://du18vrnswcx2a"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_jmvi5"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_gtxkq"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_d5kug"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_2tmro"]
+[ext_resource type="Resource" uid="uid://d07dc442wyx5e" path="res://resources/item_sets/wood.tres" id="6_obpia"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="6_s6fyn"]
+[ext_resource type="Texture2D" uid="uid://dp2xwojvm1236" path="res://assets/textures/items/wooden_plates.png" id="7_mauqb"]
+
+[sub_resource type="Resource" id="Resource_h4eqb"]
+script = ExtResource("1_jmvi5")
+boosting_sets = Array[ExtResource("5_2tmro")]([])
+resource = ExtResource("2_gtxkq")
+amount = 2.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_d5kug")
+name = &"Wooden Plates"
+texture = ExtResource("7_mauqb")
+description = ""
+socket_type = ExtResource("6_s6fyn")
+set_resources = Array[ExtResource("5_2tmro")]([ExtResource("6_obpia")])
+bonus_stats = Array[ExtResource("1_jmvi5")]([SubResource("Resource_h4eqb")])
+extra_price = 5.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

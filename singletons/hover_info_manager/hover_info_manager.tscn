@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://0kqrckrvkjqk"]
+
+[ext_resource type="Script" uid="uid://blooj5jwcbgsn" path="res://singletons/hover_info_manager/hover_info_manager.gd" id="1_87lgl"]
+
+[node name="HoverInfoManager" type="Node" node_paths=PackedStringArray("hover_info_holder")]
+script = ExtResource("1_87lgl")
+hover_info_holder = NodePath("CanvasLayer")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 127

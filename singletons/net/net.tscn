@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://bega322tquepm"]
+
+[ext_resource type="Script" uid="uid://cakc8f13f4bb6" path="res://singletons/net/net.gd" id="1_0ttk6"]
+
+[node name="Net" type="Node"]
+script = ExtResource("1_0ttk6")
+
+[node name="PingRequestTimer" type="Timer" parent="."]
+autostart = true
+
+[connection signal="timeout" from="PingRequestTimer" to="." method="_on_ping_request_timer_timeout"]

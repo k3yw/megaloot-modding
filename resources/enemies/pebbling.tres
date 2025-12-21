@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=15 format=3 uid="uid://cjvj3bv146bem"]
+
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_g6ajd"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_ny4bk"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_ptnno"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_xl3p1"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_ld30p"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_vgcen"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_h0tbh"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="6_4ccb0"]
+[ext_resource type="Texture2D" uid="uid://c0cmnhys1lfvs" path="res://assets/textures/enemies/pebbling.png" id="6_fki0o"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="7_sadcc"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="10_6606r"]
+
+[sub_resource type="Resource" id="Resource_2wr6b"]
+script = ExtResource("2_ld30p")
+boosting_sets = Array[ExtResource("1_xl3p1")]([])
+resource = ExtResource("1_g6ajd")
+amount = 4.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ttf8m"]
+script = ExtResource("2_ld30p")
+boosting_sets = Array[ExtResource("1_xl3p1")]([])
+resource = ExtResource("3_vgcen")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_i86po"]
+script = ExtResource("2_ld30p")
+boosting_sets = Array[ExtResource("1_xl3p1")]([])
+resource = ExtResource("4_h0tbh")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_ny4bk")
+name = "Pebbling"
+texture = ExtResource("6_fki0o")
+floor_number = 0
+flying = false
+starting_status_effects = Array[ExtResource("7_sadcc")]([])
+active_item_sets = Array[ExtResource("1_xl3p1")]([])
+stats_per_level = Array[ExtResource("10_6606r")]([])
+base_stats = Array[ExtResource("2_ld30p")]([SubResource("Resource_2wr6b"), SubResource("Resource_ttf8m"), SubResource("Resource_i86po")])
+abilities = Array[ExtResource("1_ptnno")]([])
+passives = Array[ExtResource("6_4ccb0")]([])
+hide_stats = false

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://csq17ymr17d55"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_4v8tu"]
+[ext_resource type="Script" uid="uid://ct4bwqx2a3fi6" path="res://resources/bb_scripts/undying_curse.gd" id="1_uslmk"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_ytk1r"]
+
+[resource]
+script = ExtResource("2_ytk1r")
+name = "Undying Curse"
+bonus_stats = Array[ExtResource("1_4v8tu")]([])
+bb_script = ExtResource("1_uslmk")

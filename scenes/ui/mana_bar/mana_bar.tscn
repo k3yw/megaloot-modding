@@ -1,0 +1,28 @@
+[gd_scene load_steps=4 format=3 uid="uid://pgkct3tb88du"]
+
+[ext_resource type="PackedScene" uid="uid://b1xkohxa1pcw7" path="res://scenes/ui/small_resource_bar/small_resource_bar.tscn" id="1_bx8c3"]
+[ext_resource type="Texture2D" uid="uid://dwwvve1is2o4i" path="res://assets/textures/ui/minimal_bar_fill.png" id="2_h1cxq"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_kr1c1"]
+resource_local_to_scene = true
+texture = ExtResource("2_h1cxq")
+texture_margin_left = 4.0
+texture_margin_top = 3.0
+texture_margin_right = 4.0
+texture_margin_bottom = 3.0
+expand_margin_left = 1.0
+expand_margin_top = 1.0
+expand_margin_right = 1.0
+expand_margin_bottom = 1.0
+region_rect = Rect2(0, 0, 7, 7)
+modulate_color = Color(0.156863, 0.360784, 0.768627, 1)
+
+[node name="ManaBar" instance=ExtResource("1_bx8c3")]
+custom_minimum_size = Vector2(24, 11)
+size_flags_horizontal = 0
+
+[node name="Panel" parent="." index="0"]
+modulate = Color(0.156863, 0.360784, 0.768627, 1)
+
+[node name="ProgressBar" parent="MarginContainer2" index="0"]
+theme_override_styles/background = SubResource("StyleBoxTexture_kr1c1")

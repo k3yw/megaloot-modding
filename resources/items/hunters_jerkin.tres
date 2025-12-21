@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://c2icb4odxe0o5"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_wu41k"]
+[ext_resource type="Resource" uid="uid://uxwdne2hyfvl" path="res://resources/stats/critical_damage.tres" id="2_sgp1d"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_l7mtj"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_wlgol"]
+[ext_resource type="Resource" uid="uid://vgmhf2tlhfmn" path="res://resources/item_sets/hunter.tres" id="6_jvbnh"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="6_p1e6w"]
+[ext_resource type="Texture2D" uid="uid://d4ct6nv4mme4q" path="res://assets/textures/items/hunters_jerkin.png" id="7_0432o"]
+
+[sub_resource type="Resource" id="Resource_ubrwr"]
+script = ExtResource("1_wu41k")
+boosting_sets = Array[ExtResource("5_wlgol")]([])
+resource = ExtResource("2_sgp1d")
+amount = 25.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_l7mtj")
+name = &"Hunter\'s Jerkin"
+texture = ExtResource("7_0432o")
+description = ""
+socket_type = ExtResource("6_p1e6w")
+set_resources = Array[ExtResource("5_wlgol")]([ExtResource("6_jvbnh")])
+bonus_stats = Array[ExtResource("1_wu41k")]([SubResource("Resource_ubrwr")])
+extra_price = 6.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

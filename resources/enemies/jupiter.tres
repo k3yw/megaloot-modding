@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://dpwicq8b0d2po"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_6x45o"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_h7n5n"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_nd6d3"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_tew0y"]
+[ext_resource type="Texture2D" uid="uid://bkrka356svkry" path="res://assets/textures/enemies/jupiter.png" id="2_dcl2y"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_e3a04"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="3_aqflp"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="3_vqwpp"]
+[ext_resource type="Resource" uid="uid://byglt86rhem4e" path="res://resources/passives/exploited_opportunity.tres" id="6_wjs7u"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="8_5ebxc"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_qh72a"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="9_c8qe5"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="13_vmyna"]
+
+[sub_resource type="Resource" id="Resource_45uto"]
+script = ExtResource("2_e3a04")
+boosting_sets = Array[ExtResource("1_h7n5n")]([])
+resource = ExtResource("1_tew0y")
+amount = 64.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_up8uk"]
+script = ExtResource("2_e3a04")
+boosting_sets = Array[ExtResource("1_h7n5n")]([])
+resource = ExtResource("3_vqwpp")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_yxjfi"]
+script = ExtResource("2_e3a04")
+boosting_sets = Array[ExtResource("1_h7n5n")]([])
+resource = ExtResource("3_aqflp")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_pal2m"]
+script = ExtResource("2_e3a04")
+boosting_sets = Array[ExtResource("1_h7n5n")]([])
+resource = ExtResource("8_5ebxc")
+amount = 25.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_6x45o")
+name = "Jupiter"
+texture = ExtResource("2_dcl2y")
+floor_number = 19
+flying = true
+starting_status_effects = Array[ExtResource("9_c8qe5")]([])
+active_item_sets = Array[ExtResource("1_h7n5n")]([])
+stats_per_level = Array[ExtResource("13_vmyna")]([])
+base_stats = Array[ExtResource("2_e3a04")]([SubResource("Resource_45uto"), SubResource("Resource_up8uk"), SubResource("Resource_yxjfi"), SubResource("Resource_pal2m")])
+abilities = Array[ExtResource("1_nd6d3")]([])
+passives = Array[ExtResource("8_qh72a")]([null, ExtResource("6_wjs7u")])
+hide_stats = false

@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://cpa44enujp4lq"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_dqxby"]
+[ext_resource type="Resource" uid="uid://uxwdne2hyfvl" path="res://resources/stats/critical_damage.tres" id="2_id7pn"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_l1r8b"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_wby4v"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="6_82oc2"]
+[ext_resource type="Resource" uid="uid://vgmhf2tlhfmn" path="res://resources/item_sets/hunter.tres" id="6_fu1ej"]
+[ext_resource type="Texture2D" uid="uid://uqjs3858grcl" path="res://assets/textures/items/hunters_hood.png" id="7_034xl"]
+
+[sub_resource type="Resource" id="Resource_ytgp7"]
+script = ExtResource("1_dqxby")
+boosting_sets = Array[ExtResource("5_wby4v")]([])
+resource = ExtResource("2_id7pn")
+amount = 15.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_l1r8b")
+name = &"Hunter\'s Hood"
+texture = ExtResource("7_034xl")
+description = ""
+socket_type = ExtResource("6_82oc2")
+set_resources = Array[ExtResource("5_wby4v")]([ExtResource("6_fu1ej")])
+bonus_stats = Array[ExtResource("1_dqxby")]([SubResource("Resource_ytgp7")])
+extra_price = 3.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

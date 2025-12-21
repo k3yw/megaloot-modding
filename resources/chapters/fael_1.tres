@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Chapter" load_steps=2 format=3 uid="uid://qimhvfki8w6l"]
+
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="1_erw4u"]
+
+[resource]
+script = ExtResource("1_erw4u")
+name = "Fael"
+text = "One of the highest ranks in the Monster Hunters Gulid."

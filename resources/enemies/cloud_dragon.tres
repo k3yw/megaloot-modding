@@ -1,0 +1,65 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=20 format=3 uid="uid://bta10v8cowlyh"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_n6mwf"]
+[ext_resource type="Resource" uid="uid://mcibk6dgh7hj" path="res://resources/abilities/galefire.tres" id="1_vkm6k"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_rggb4"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_w0i57"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_dtvl2"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="4_0ewal"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="5_ifu6m"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="6_mf3ha"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="7_5jwd8"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="8_rjyah"]
+[ext_resource type="Texture2D" uid="uid://bacnwbsfujg5k" path="res://assets/textures/enemies/cloud_dragon.png" id="9_ak2o8"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="9_dhjlq"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="10_l82gi"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="13_kk78r"]
+
+[sub_resource type="Resource" id="Resource_lf1nj"]
+script = ExtResource("3_dtvl2")
+boosting_sets = Array[ExtResource("2_rggb4")]([])
+resource = ExtResource("2_w0i57")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_dst1n"]
+script = ExtResource("3_dtvl2")
+boosting_sets = Array[ExtResource("2_rggb4")]([])
+resource = ExtResource("4_0ewal")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_jlqhd"]
+script = ExtResource("3_dtvl2")
+boosting_sets = Array[ExtResource("2_rggb4")]([])
+resource = ExtResource("5_ifu6m")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_nabav"]
+script = ExtResource("3_dtvl2")
+boosting_sets = Array[ExtResource("2_rggb4")]([])
+resource = ExtResource("6_mf3ha")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_qmxof"]
+script = ExtResource("3_dtvl2")
+boosting_sets = Array[ExtResource("2_rggb4")]([])
+resource = ExtResource("7_5jwd8")
+amount = 8.0
+is_modifier = false
+
+[resource]
+script = ExtResource("8_rjyah")
+name = "Cloud Dragon"
+texture = ExtResource("9_ak2o8")
+floor_number = 9
+flying = false
+starting_status_effects = Array[ExtResource("10_l82gi")]([])
+active_item_sets = Array[ExtResource("2_rggb4")]([])
+stats_per_level = Array[ExtResource("13_kk78r")]([])
+base_stats = Array[ExtResource("3_dtvl2")]([SubResource("Resource_lf1nj"), SubResource("Resource_dst1n"), SubResource("Resource_jlqhd"), SubResource("Resource_nabav"), SubResource("Resource_qmxof")])
+abilities = Array[ExtResource("1_n6mwf")]([null, ExtResource("1_vkm6k")])
+passives = Array[ExtResource("9_dhjlq")]([])
+hide_stats = false

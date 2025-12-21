@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://bwqlhdlnfoqop"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_nus45"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_x6idl"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="3_jqscc"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_lkrbj"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_cxqyg"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="7_lw8il"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="7_ormu1"]
+[ext_resource type="Texture2D" uid="uid://dr6puyf730y5w" path="res://assets/textures/items/amulet_of_life.png" id="8_2fwk5"]
+
+[sub_resource type="Resource" id="Resource_xotdj"]
+script = ExtResource("1_nus45")
+boosting_sets = Array[ExtResource("6_cxqyg")]([])
+resource = ExtResource("2_x6idl")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_jj5q7"]
+script = ExtResource("1_nus45")
+boosting_sets = Array[ExtResource("6_cxqyg")]([])
+resource = ExtResource("3_jqscc")
+amount = 2.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_lkrbj")
+name = &"Amulet of Life"
+texture = ExtResource("8_2fwk5")
+description = ""
+socket_type = ExtResource("7_ormu1")
+set_resources = Array[ExtResource("6_cxqyg")]([ExtResource("7_lw8il")])
+bonus_stats = Array[ExtResource("1_nus45")]([SubResource("Resource_xotdj"), SubResource("Resource_jj5q7")])
+extra_price = 1.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

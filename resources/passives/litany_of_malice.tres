@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://ck30jxp07nbf1"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_mievf"]
+[ext_resource type="Script" uid="uid://d1ob6p87utyta" path="res://resources/bb_scripts/litany_of_malice.gd" id="1_t68kt"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_t68kt"]
+[ext_resource type="Script" uid="uid://bgroquy5aps1o" path="res://resources/passive_scripts/litany_of_malice.gd" id="3_m7e4a"]
+
+[resource]
+script = ExtResource("2_t68kt")
+name = "Litany of Malice"
+bonus_stats = Array[ExtResource("1_mievf")]([])
+game_logic_script = ExtResource("3_m7e4a")
+bb_script = ExtResource("1_t68kt")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

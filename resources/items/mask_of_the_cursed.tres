@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://dffir1j2k8j03"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_2ltkb"]
+[ext_resource type="Resource" uid="uid://dhy8qq2aomo6c" path="res://resources/item_sets/cursed.tres" id="2_7tkii"]
+[ext_resource type="Resource" uid="uid://c7o4swfv7phdu" path="res://resources/stats/malice.tres" id="3_difmi"]
+[ext_resource type="Resource" uid="uid://b86gt15eid58v" path="res://resources/passives/evil_mark.tres" id="4_l03x4"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_omrd0"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_jjn0h"]
+[ext_resource type="Texture2D" uid="uid://bx8gebwqwhihu" path="res://assets/textures/items/mask_of_the_cursed.png" id="7_kv8dt"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_s2lra"]
+
+[sub_resource type="Resource" id="Resource_h3co2"]
+script = ExtResource("1_2ltkb")
+boosting_sets = Array[ExtResource("6_jjn0h")]([ExtResource("2_7tkii")])
+resource = ExtResource("3_difmi")
+amount = 75.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_omrd0")
+name = &"Mask of the Cursed"
+texture = ExtResource("7_kv8dt")
+description = ""
+socket_type = ExtResource("7_s2lra")
+set_resources = Array[ExtResource("6_jjn0h")]([ExtResource("2_7tkii")])
+passive = ExtResource("4_l03x4")
+bonus_stats = Array[ExtResource("1_2ltkb")]([SubResource("Resource_h3co2")])
+extra_price = 47.0
+spawn_floor = 11
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

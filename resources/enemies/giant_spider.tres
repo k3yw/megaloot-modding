@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=15 format=3 uid="uid://cvqnnds2qvxl"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_0xhxy"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_l6h1a"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_v74iy"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_mcjcm"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="3_oy035"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_2w0h5"]
+[ext_resource type="Texture2D" uid="uid://da45nl5tx0ny7" path="res://assets/textures/enemies/giant_spider.png" id="4_6gocu"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="4_lcumb"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="6_xfvmy"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="7_q7mf6"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="10_3phkp"]
+
+[sub_resource type="Resource" id="Resource_1a0b1"]
+script = ExtResource("2_mcjcm")
+boosting_sets = Array[ExtResource("1_0xhxy")]([])
+resource = ExtResource("1_v74iy")
+amount = 9.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_jhxhe"]
+script = ExtResource("2_mcjcm")
+boosting_sets = Array[ExtResource("1_0xhxy")]([])
+resource = ExtResource("4_lcumb")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_rp0ja"]
+script = ExtResource("2_mcjcm")
+boosting_sets = Array[ExtResource("1_0xhxy")]([])
+resource = ExtResource("4_2w0h5")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_oy035")
+name = "Giant Spider"
+texture = ExtResource("4_6gocu")
+floor_number = 3
+flying = false
+starting_status_effects = Array[ExtResource("7_q7mf6")]([])
+active_item_sets = Array[ExtResource("1_0xhxy")]([])
+stats_per_level = Array[ExtResource("10_3phkp")]([])
+base_stats = Array[ExtResource("2_mcjcm")]([SubResource("Resource_1a0b1"), SubResource("Resource_jhxhe"), SubResource("Resource_rp0ja")])
+abilities = Array[ExtResource("1_l6h1a")]([])
+passives = Array[ExtResource("6_xfvmy")]([])
+hide_stats = false

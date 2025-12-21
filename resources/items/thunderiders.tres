@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://c4hywyjctqndq"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_kya23"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_hud2w"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_fhjxi"]
+[ext_resource type="Resource" uid="uid://c0fl4emw02wpo" path="res://resources/stats/electricity.tres" id="5_otow6"]
+[ext_resource type="Resource" uid="uid://b3f48bv52mfyp" path="res://resources/item_sets/thunder.tres" id="6_ffsrq"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_jrsi5"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="7_qb7te"]
+[ext_resource type="Texture2D" uid="uid://bbeefp2hk3ann" path="res://assets/textures/items/thunderiders.png" id="8_b7alk"]
+
+[sub_resource type="Resource" id="Resource_8xbtr"]
+script = ExtResource("1_kya23")
+boosting_sets = Array[ExtResource("7_jrsi5")]([ExtResource("6_ffsrq")])
+resource = ExtResource("5_otow6")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_w4sys"]
+script = ExtResource("1_kya23")
+boosting_sets = Array[ExtResource("7_jrsi5")]([])
+resource = ExtResource("2_hud2w")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_fhjxi")
+name = &"Thunderiders"
+texture = ExtResource("8_b7alk")
+description = ""
+socket_type = ExtResource("7_qb7te")
+set_resources = Array[ExtResource("7_jrsi5")]([ExtResource("6_ffsrq")])
+bonus_stats = Array[ExtResource("1_kya23")]([SubResource("Resource_8xbtr"), SubResource("Resource_w4sys")])
+extra_price = 25.0
+spawn_floor = 8
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

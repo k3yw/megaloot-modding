@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://csm06y615leau"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ljggn"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_dnr20"]
+[ext_resource type="Resource" uid="uid://i7el4x0fmvyc" path="res://resources/stats/crit_chance.tres" id="3_0rxtb"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_ti8dy"]
+[ext_resource type="Resource" uid="uid://vgmhf2tlhfmn" path="res://resources/item_sets/hunter.tres" id="4_ti8dy"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="5_0rxtb"]
+[ext_resource type="Texture2D" uid="uid://b5qwil38kvc3m" path="res://assets/textures/items/hunters_necklace.png" id="6_bg6wd"]
+
+[sub_resource type="Resource" id="Resource_bg6wd"]
+script = ExtResource("1_ljggn")
+boosting_sets = Array[ExtResource("3_ti8dy")]([])
+resource = ExtResource("3_0rxtb")
+amount = 5.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_dnr20")
+name = &"Hunter\'s Necklace"
+texture = ExtResource("6_bg6wd")
+socket_type = ExtResource("5_0rxtb")
+set_resources = Array[ExtResource("3_ti8dy")]([ExtResource("4_ti8dy")])
+bonus_stats = Array[ExtResource("1_ljggn")]([SubResource("Resource_bg6wd")])
+extra_price = 4.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://bruww6knmmoao"]
+
+[ext_resource type="Script" uid="uid://ejlk3f6o220e" path="res://resources/bb_scripts/poison.gd" id="1_6haof"]
+[ext_resource type="Texture2D" uid="uid://d34nyoleasqx7" path="res://assets/textures/icons/toxicity_icon.png" id="1_bub4l"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_y00oq"]
+[ext_resource type="Resource" uid="uid://ptn3j1afs6g2" path="res://resources/status_effect_types/debuff.tres" id="3_h7mhh"]
+
+[resource]
+script = ExtResource("1_y00oq")
+name = "Poison"
+icon = ExtResource("1_bub4l")
+color = Color(0.360784, 0.537255, 0.388235, 1)
+type = ExtResource("3_h7mhh")
+is_temporary = false
+is_percent = false
+limit = -1
+application_message = "POISONED"
+bb_script = ExtResource("1_6haof")

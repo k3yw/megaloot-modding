@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://barfiwkq2fcrm"]
+
+[ext_resource type="Texture2D" uid="uid://0o2t86tkcce6" path="res://assets/textures/icons/item_sets/zephyrons_icon.png" id="1_lf8bu"]
+[ext_resource type="Script" uid="uid://bakv8lpyutaha" path="res://resources/bb_scripts/zephyron.gd" id="1_wtkuq"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_gmmkt"]
+
+[resource]
+script = ExtResource("2_gmmkt")
+name = "Zephyron"
+icon = ExtResource("1_lf8bu")
+color = Color(0.398438, 0.296875, 0.6875, 1)
+value = 0
+flow_cost = 25
+bb_script = ExtResource("1_wtkuq")

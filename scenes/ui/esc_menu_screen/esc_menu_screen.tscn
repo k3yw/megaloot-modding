@@ -1,0 +1,441 @@
+[gd_scene load_steps=24 format=3 uid="uid://ca3w5j2ilrjcj"]
+
+[ext_resource type="Script" uid="uid://d1if0d3kmiujl" path="res://scenes/ui/esc_menu_screen/esc_menu_screen.gd" id="1_odgtc"]
+[ext_resource type="PackedScene" uid="uid://duwxqia2hvbth" path="res://scenes/ui/generic_panel/generic_panel.tscn" id="2_j6bc5"]
+[ext_resource type="PackedScene" uid="uid://bxoncw32voayn" path="res://scenes/ui/generic_button/generic_button.tscn" id="2_w2g0k"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="3_00oi1"]
+[ext_resource type="Texture2D" uid="uid://dpu73rmqso3q1" path="res://assets/textures/ui/right_generic_button.png" id="5_h76ny"]
+[ext_resource type="Texture2D" uid="uid://tuk7htg2tdq7" path="res://assets/textures/ui/left_generic_button.png" id="6_vel7g"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4puun"]
+resource_local_to_scene = true
+shader = ExtResource("3_00oi1")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_wgbj6"]
+atlas = ExtResource("5_h76ny")
+region = Rect2(106, 0, 53, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_twqx1"]
+atlas = ExtResource("5_h76ny")
+region = Rect2(0, 0, 53, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cgqjy"]
+atlas = ExtResource("5_h76ny")
+region = Rect2(0, 0, 53, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jyksd"]
+atlas = ExtResource("5_h76ny")
+region = Rect2(53, 0, 53, 29)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1u3iw"]
+resource_local_to_scene = true
+shader = ExtResource("3_00oi1")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qxweu"]
+resource_local_to_scene = true
+shader = ExtResource("3_00oi1")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_fx7un"]
+resource_local_to_scene = true
+shader = ExtResource("3_00oi1")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6qnhl"]
+resource_local_to_scene = true
+shader = ExtResource("3_00oi1")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7nid4"]
+atlas = ExtResource("6_vel7g")
+region = Rect2(106, 0, 53, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cvqv6"]
+atlas = ExtResource("6_vel7g")
+region = Rect2(0, 0, 53, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vkd27"]
+atlas = ExtResource("6_vel7g")
+region = Rect2(0, 0, 53, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m62nw"]
+atlas = ExtResource("6_vel7g")
+region = Rect2(53, 0, 53, 29)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lxhfo"]
+resource_local_to_scene = true
+shader = ExtResource("3_00oi1")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_syyed"]
+resource_local_to_scene = true
+shader = ExtResource("3_00oi1")
+shader_parameter/type = 5
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k4qd4"]
+resource_local_to_scene = true
+shader = ExtResource("3_00oi1")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d1lg2"]
+resource_local_to_scene = true
+shader = ExtResource("3_00oi1")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="EscMenuScreen" type="MarginContainer" node_paths=PackedStringArray("resume_button", "save_and_exit_button", "restart_button", "options_button", "library_button", "library_holder")]
+process_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_odgtc")
+resume_button = NodePath("MarginContainer/VBoxContainer/HBoxContainer/ResumeButton")
+save_and_exit_button = NodePath("MarginContainer/VBoxContainer/SaveAndExitButton")
+restart_button = NodePath("MarginContainer/VBoxContainer/HBoxContainer/RestartButton")
+options_button = NodePath("MarginContainer/VBoxContainer/OptionsButton")
+library_button = NodePath("MarginContainer/VBoxContainer/LibraryButton")
+library_holder = NodePath("LibraryHolder")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="GenericPanel" parent="MarginContainer" instance=ExtResource("2_j6bc5")]
+material = SubResource("ShaderMaterial_4puun")
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+custom_minimum_size = Vector2(145, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 7
+alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="RestartButton" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_w2g0k")]
+layout_mode = 2
+text = "RESTART"
+disabled_texture = SubResource("AtlasTexture_wgbj6")
+pressed_texture = SubResource("AtlasTexture_twqx1")
+default_texture = SubResource("AtlasTexture_cgqjy")
+hover_texture = SubResource("AtlasTexture_jyksd")
+hold_time = 0.5
+
+[node name="OutlineNinePatchRect" parent="MarginContainer/VBoxContainer/HBoxContainer/RestartButton/OutlineMarginContainer" index="0"]
+material = SubResource("ShaderMaterial_1u3iw")
+
+[node name="NinePatchRect" parent="MarginContainer/VBoxContainer/HBoxContainer/RestartButton" index="2"]
+material = SubResource("ShaderMaterial_qxweu")
+texture = SubResource("AtlasTexture_cgqjy")
+
+[node name="IconTextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/RestartButton/NinePatchRect" index="0"]
+material = SubResource("ShaderMaterial_fx7un")
+
+[node name="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/RestartButton" index="3"]
+theme_override_constants/margin_left = 35
+theme_override_constants/margin_right = 20
+
+[node name="HoldProgressBar" parent="MarginContainer/VBoxContainer/HBoxContainer/RestartButton/MarginContainer/HBoxContainer/MarginContainer" index="0"]
+max_value = 0.5
+value = 0.5
+
+[node name="NameLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/RestartButton/MarginContainer/HBoxContainer" index="1"]
+material = SubResource("ShaderMaterial_6qnhl")
+text = "RESTART"
+
+[node name="ResumeButton" parent="MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_w2g0k")]
+layout_mode = 2
+text = "RESUME"
+disabled_texture = SubResource("AtlasTexture_7nid4")
+pressed_texture = SubResource("AtlasTexture_cvqv6")
+default_texture = SubResource("AtlasTexture_vkd27")
+hover_texture = SubResource("AtlasTexture_m62nw")
+button_color = 5
+
+[node name="OutlineNinePatchRect" parent="MarginContainer/VBoxContainer/HBoxContainer/ResumeButton/OutlineMarginContainer" index="0"]
+material = SubResource("ShaderMaterial_lxhfo")
+
+[node name="NinePatchRect" parent="MarginContainer/VBoxContainer/HBoxContainer/ResumeButton" index="2"]
+material = SubResource("ShaderMaterial_syyed")
+texture = SubResource("AtlasTexture_vkd27")
+
+[node name="IconTextureRect" parent="MarginContainer/VBoxContainer/HBoxContainer/ResumeButton/NinePatchRect" index="0"]
+material = SubResource("ShaderMaterial_k4qd4")
+
+[node name="MarginContainer" parent="MarginContainer/VBoxContainer/HBoxContainer/ResumeButton" index="3"]
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_right = 30
+
+[node name="NameLabel" parent="MarginContainer/VBoxContainer/HBoxContainer/ResumeButton/MarginContainer/HBoxContainer" index="1"]
+material = SubResource("ShaderMaterial_d1lg2")
+text = "RESUME"
+
+[node name="LibraryButton" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_w2g0k")]
+layout_mode = 2
+text = "LIBRARY"
+
+[node name="OptionsButton" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_w2g0k")]
+layout_mode = 2
+text = "OPTIONS"
+
+[node name="SaveAndExitButton" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_w2g0k")]
+layout_mode = 2
+text = "SAVE & EXIT"
+
+[node name="LibraryHolder" type="Control" parent="."]
+layout_mode = 2
+
+[editable path="MarginContainer/VBoxContainer/HBoxContainer/RestartButton"]
+[editable path="MarginContainer/VBoxContainer/HBoxContainer/ResumeButton"]

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Keyword" load_steps=2 format=3 uid="uid://c4o32aq7qyfp6"]
+
+[ext_resource type="Script" uid="uid://3d38osm0yilr" path="res://classes/resource/keyword.gd" id="1_7m4hu"]
+
+[resource]
+script = ExtResource("1_7m4hu")
+name = &"Attack Damage"
+color = Color(0, 0, 0, 1)

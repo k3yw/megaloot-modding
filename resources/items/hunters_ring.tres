@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://bc6sbvqnsb0c1"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_k3w35"]
+[ext_resource type="Resource" uid="uid://i7el4x0fmvyc" path="res://resources/stats/crit_chance.tres" id="2_o8lc4"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_lmy27"]
+[ext_resource type="Resource" uid="uid://bhvvn5fwnttf4" path="res://resources/passives/critical_focus.tres" id="4_41xq7"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_g1pa1"]
+[ext_resource type="Resource" uid="uid://vgmhf2tlhfmn" path="res://resources/item_sets/hunter.tres" id="6_7v4p6"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="6_o7rgk"]
+[ext_resource type="Texture2D" uid="uid://q7lehgq0iqb" path="res://assets/textures/items/hunters_ring.png" id="7_e1hr2"]
+
+[sub_resource type="Resource" id="Resource_5o6fi"]
+script = ExtResource("1_k3w35")
+boosting_sets = Array[ExtResource("5_g1pa1")]([])
+resource = ExtResource("2_o8lc4")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_lmy27")
+name = &"Hunter\'s Ring"
+texture = ExtResource("7_e1hr2")
+socket_type = ExtResource("6_o7rgk")
+set_resources = Array[ExtResource("5_g1pa1")]([ExtResource("6_7v4p6")])
+passive = ExtResource("4_41xq7")
+bonus_stats = Array[ExtResource("1_k3w35")]([SubResource("Resource_5o6fi")])
+extra_price = 5.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

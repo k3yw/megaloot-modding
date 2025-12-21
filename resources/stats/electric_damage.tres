@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://bcmuc40ep0gv6"]
+
+[ext_resource type="Texture2D" uid="uid://dohmtikrinjra" path="res://assets/textures/icons/item_sets/thunder.png" id="1_px35w"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_ld2ai"]
+
+[resource]
+script = ExtResource("2_ld2ai")
+name = "Electric Damage"
+icon = ExtResource("1_px35w")
+color = Color(0, 0.666667, 1, 1)
+is_percentage = false
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0

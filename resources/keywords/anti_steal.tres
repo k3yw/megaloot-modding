@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Keyword" load_steps=3 format=3 uid="uid://bhaxpjrpgvihk"]
+
+[ext_resource type="Script" uid="uid://4egtaikcaghu" path="res://resources/bb_scripts/anti_steal.gd" id="1_3b5qr"]
+[ext_resource type="Script" uid="uid://3d38osm0yilr" path="res://classes/resource/keyword.gd" id="1_igc3k"]
+
+[resource]
+script = ExtResource("1_igc3k")
+name = &"Anti Steal"
+color = Color(0, 0, 0, 1)
+bb_script = ExtResource("1_3b5qr")

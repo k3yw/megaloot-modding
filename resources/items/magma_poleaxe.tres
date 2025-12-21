@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://bddgw7oysrhkc"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ihtfy"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="2_yer8s"]
+[ext_resource type="Resource" uid="uid://dxhb0xj4iysge" path="res://resources/passives/cinder_touch.tres" id="3_e81aq"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_1lkh3"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_liv38"]
+[ext_resource type="Resource" uid="uid://1n584t8hda8s" path="res://resources/item_sets/magma.tres" id="6_dpcs8"]
+[ext_resource type="Texture2D" uid="uid://dr3dd8j4jqqg1" path="res://assets/textures/items/magma_poleaxe.png" id="7_4ffe2"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_8s65w"]
+
+[sub_resource type="Resource" id="Resource_b7ch6"]
+script = ExtResource("1_ihtfy")
+boosting_sets = Array[ExtResource("5_liv38")]([ExtResource("6_dpcs8")])
+resource = ExtResource("2_yer8s")
+amount = 27.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_1lkh3")
+name = &"Magma Poleaxe"
+texture = ExtResource("7_4ffe2")
+description = ""
+socket_type = ExtResource("7_8s65w")
+set_resources = Array[ExtResource("5_liv38")]([ExtResource("6_dpcs8")])
+passive = ExtResource("3_e81aq")
+bonus_stats = Array[ExtResource("1_ihtfy")]([SubResource("Resource_b7ch6")])
+extra_price = 275.0
+spawn_floor = 15
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

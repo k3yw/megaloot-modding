@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://cmspdvss0kjjh"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_14uxc"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_34v4f"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_3m41y"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_75xok"]
+[ext_resource type="Resource" uid="uid://tyft4f1n0dwx" path="res://resources/item_sets/blackthorn.tres" id="4_34v4f"]
+[ext_resource type="Texture2D" uid="uid://djclq8m2vw0cw" path="res://assets/textures/items/blackthorn_sabatons.png" id="5_3m41y"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="6_75xok"]
+
+[sub_resource type="Resource" id="Resource_cira2"]
+script = ExtResource("1_14uxc")
+boosting_sets = Array[ExtResource("3_3m41y")]([ExtResource("4_34v4f")])
+resource = ExtResource("3_75xok")
+amount = 6.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_34v4f")
+name = &"Blackthorn Sabatons"
+texture = ExtResource("5_3m41y")
+description = ""
+socket_type = ExtResource("6_75xok")
+set_resources = Array[ExtResource("3_3m41y")]([ExtResource("4_34v4f")])
+bonus_stats = Array[ExtResource("1_14uxc")]([SubResource("Resource_cira2")])
+extra_price = 15.0
+spawn_floor = 5
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

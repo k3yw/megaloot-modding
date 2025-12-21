@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://db60icg44sg83"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_8o0jo"]
+[ext_resource type="Resource" uid="uid://1n584t8hda8s" path="res://resources/item_sets/magma.tres" id="2_ok1os"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_0ials"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="4_x1hrq"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="6_rc8w0"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_4cpxn"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="7_g1hgb"]
+[ext_resource type="Texture2D" uid="uid://bgccwqxsvqqcq" path="res://assets/textures/items/magma_chestplate.png" id="8_4l7qx"]
+
+[sub_resource type="Resource" id="Resource_8xqla"]
+script = ExtResource("1_8o0jo")
+boosting_sets = Array[ExtResource("7_4cpxn")]([ExtResource("2_ok1os")])
+resource = ExtResource("3_0ials")
+amount = 21.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_atfpl"]
+script = ExtResource("1_8o0jo")
+boosting_sets = Array[ExtResource("7_4cpxn")]([])
+resource = ExtResource("4_x1hrq")
+amount = 15.0
+is_modifier = false
+
+[resource]
+script = ExtResource("6_rc8w0")
+name = &"Magma Chestplate"
+texture = ExtResource("8_4l7qx")
+description = ""
+socket_type = ExtResource("7_g1hgb")
+set_resources = Array[ExtResource("7_4cpxn")]([ExtResource("2_ok1os")])
+bonus_stats = Array[ExtResource("1_8o0jo")]([SubResource("Resource_8xqla"), SubResource("Resource_atfpl")])
+extra_price = 85.0
+spawn_floor = 15
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

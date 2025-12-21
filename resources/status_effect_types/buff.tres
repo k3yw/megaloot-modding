@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="StatusEffectType" load_steps=2 format=3 uid="uid://db4hyx8xc6wmf"]
+
+[ext_resource type="Script" uid="uid://l1k7ou0hn56b" path="res://classes/resource/status_effect_type.gd" id="1_w10qn"]
+
+[resource]
+script = ExtResource("1_w10qn")
+name = "Buff"

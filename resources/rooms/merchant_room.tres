@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RoomResource" load_steps=5 format=3 uid="uid://ccvt66s5p11q4"]
+
+[ext_resource type="Script" uid="uid://dc4qon7x4sx3w" path="res://resources/room_scripts/merchant_room.gd" id="1_cjacw"]
+[ext_resource type="PackedScene" uid="uid://nslysdjb1n5h" path="res://scenes/ui/room_action_containers/merchant_action_container/merchant_action_container.tscn" id="1_wgs3g"]
+[ext_resource type="PackedScene" uid="uid://cm3ljwkyl5ad8" path="res://scenes/rooms/chest_room.tscn" id="2_wgs3g"]
+[ext_resource type="Script" uid="uid://dercbl3566y8y" path="res://classes/resource/room_resource.gd" id="3_8tkji"]
+
+[resource]
+script = ExtResource("3_8tkji")
+restless = false
+scene = ExtResource("2_wgs3g")
+action_container_scene = ExtResource("1_wgs3g")
+processor_script = ExtResource("1_cjacw")
+metadata/_custom_type_script = "uid://dercbl3566y8y"

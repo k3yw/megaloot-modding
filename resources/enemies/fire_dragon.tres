@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=15 format=3 uid="uid://dk8ecx1hdj3hv"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_bv5xw"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_cgrk0"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_cqtgb"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_moml7"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_ehels"]
+[ext_resource type="Texture2D" uid="uid://dyajhp48c0qkl" path="res://assets/textures/enemies/fire_dragon.png" id="2_wgj27"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="3_5o61n"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="4_hd2uu"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="6_lb5r0"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="7_3gt48"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="10_ktt6s"]
+
+[sub_resource type="Resource" id="Resource_23cjm"]
+script = ExtResource("2_ehels")
+boosting_sets = Array[ExtResource("1_cgrk0")]([])
+resource = ExtResource("1_moml7")
+amount = 11.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_nis2y"]
+script = ExtResource("2_ehels")
+boosting_sets = Array[ExtResource("1_cgrk0")]([])
+resource = ExtResource("3_5o61n")
+amount = 4.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ikf8i"]
+script = ExtResource("2_ehels")
+boosting_sets = Array[ExtResource("1_cgrk0")]([])
+resource = ExtResource("4_hd2uu")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_bv5xw")
+name = "Fire Dragon"
+texture = ExtResource("2_wgj27")
+floor_number = 6
+flying = false
+starting_status_effects = Array[ExtResource("7_3gt48")]([])
+active_item_sets = Array[ExtResource("1_cgrk0")]([])
+stats_per_level = Array[ExtResource("10_ktt6s")]([])
+base_stats = Array[ExtResource("2_ehels")]([SubResource("Resource_23cjm"), SubResource("Resource_nis2y"), SubResource("Resource_ikf8i")])
+abilities = Array[ExtResource("1_cqtgb")]([])
+passives = Array[ExtResource("6_lb5r0")]([])
+hide_stats = false

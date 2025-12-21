@@ -1,0 +1,115 @@
+[gd_scene load_steps=7 format=3 uid="uid://dl5tffawv1mop"]
+
+[ext_resource type="Script" uid="uid://i2jokxom16e" path="res://scenes/ui/bestiary_container/bestiary_container.gd" id="1_4l2vt"]
+[ext_resource type="PackedScene" uid="uid://b1ua27d8xdy1w" path="res://scenes/ui/generic_scroll_container/generic_scroll_container.tscn" id="2_68vf3"]
+[ext_resource type="Texture2D" uid="uid://c57pevbbjegga" path="res://assets/textures/enemies/slime.png" id="3_8m3pt"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="3_e036g"]
+[ext_resource type="Texture2D" uid="uid://cain1lwf4wicd" path="res://assets/textures/ui/small_panel_background.png" id="4_4d5hj"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rc62q"]
+resource_local_to_scene = true
+shader = ExtResource("3_e036g")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="BestiaryContainer" type="MarginContainer" node_paths=PackedStringArray("enemy_texture_container")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 25
+theme_override_constants/margin_bottom = 25
+script = ExtResource("1_4l2vt")
+enemy_texture_container = NodePath("GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer")
+
+[node name="GenericScrollContainer" parent="." instance=ExtResource("2_68vf3")]
+layout_mode = 2
+
+[node name="GenericPanel" parent="GenericScrollContainer/MarginContainer" index="0"]
+material = SubResource("ShaderMaterial_rc62q")
+texture = ExtResource("4_4d5hj")
+region_rect = Rect2(0, 0, 5, 5)
+
+[node name="MarginContainer" type="MarginContainer" parent="GenericScrollContainer/MarginContainer/ScrollContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 6
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="GridContainer" type="GridContainer" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/h_separation = 15
+theme_override_constants/v_separation = 15
+columns = 7
+
+[node name="TextureRect" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[node name="TextureRect2" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[node name="TextureRect3" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[node name="TextureRect4" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[node name="TextureRect5" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[node name="TextureRect6" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[node name="TextureRect7" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[node name="TextureRect8" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[node name="TextureRect9" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[node name="TextureRect10" type="TextureRect" parent="GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/GridContainer"]
+layout_mode = 2
+texture = ExtResource("3_8m3pt")
+
+[editable path="GenericScrollContainer"]

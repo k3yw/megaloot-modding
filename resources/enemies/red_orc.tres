@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=14 format=3 uid="uid://bjg7i7sge7y0y"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_4h3k3"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_hlcd3"]
+[ext_resource type="Resource" uid="uid://wogswc2i51qs" path="res://resources/abilities/steady_grip.tres" id="1_iry56"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="2_27p3v"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_8kirp"]
+[ext_resource type="Texture2D" uid="uid://casoa36hscrsv" path="res://assets/textures/enemies/red_orc.png" id="4_2rvm8"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="4_q8sjh"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="6_2ln64"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_edwd8"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="9_mj3bp"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="12_8mdfk"]
+
+[sub_resource type="Resource" id="Resource_478fx"]
+script = ExtResource("4_q8sjh")
+boosting_sets = Array[ExtResource("1_4h3k3")]([])
+resource = ExtResource("3_8kirp")
+amount = 13.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_gf6ik"]
+script = ExtResource("4_q8sjh")
+boosting_sets = Array[ExtResource("1_4h3k3")]([])
+resource = ExtResource("6_2ln64")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_27p3v")
+name = "Red Orc"
+texture = ExtResource("4_2rvm8")
+floor_number = 5
+flying = false
+starting_status_effects = Array[ExtResource("9_mj3bp")]([])
+active_item_sets = Array[ExtResource("1_4h3k3")]([])
+stats_per_level = Array[ExtResource("12_8mdfk")]([])
+base_stats = Array[ExtResource("4_q8sjh")]([SubResource("Resource_478fx"), SubResource("Resource_gf6ik")])
+abilities = Array[ExtResource("1_hlcd3")]([ExtResource("1_iry56")])
+passives = Array[ExtResource("8_edwd8")]([])
+hide_stats = false

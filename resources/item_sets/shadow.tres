@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=5 format=3 uid="uid://dohcycjncpa4h"]
+
+[ext_resource type="Texture2D" uid="uid://l17a1oewjfpy" path="res://assets/textures/icons/item_sets/shadow_icon.png" id="1_jmwoy"]
+[ext_resource type="Script" uid="uid://c60fnitb48vmo" path="res://resources/bb_scripts/shadow.gd" id="1_pc0kp"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_nidgm"]
+[ext_resource type="Script" uid="uid://blr3lwo1vm3k7" path="res://resources/item_set_scripts/shadow.gd" id="2_om07j"]
+
+[resource]
+script = ExtResource("2_nidgm")
+name = "Shadow"
+icon = ExtResource("1_jmwoy")
+color = Color(0.282353, 0.278431, 0.278431, 1)
+value = 0
+game_logic_script = ExtResource("2_om07j")
+bb_script = ExtResource("1_pc0kp")

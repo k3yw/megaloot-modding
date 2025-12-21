@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=16 format=3 uid="uid://bjvwgsvg4p7jw"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_duyd0"]
+[ext_resource type="Resource" uid="uid://dxswwj26srpko" path="res://resources/abilities/drop_of_chaos.tres" id="1_tkb03"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_vn8ld"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_xt0fg"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_7pr76"]
+[ext_resource type="Texture2D" uid="uid://f3fd4ja0o83d" path="res://assets/textures/enemies/pinto.png" id="2_fn20j"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_qpicc"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="2_xpujy"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="6_y3hns"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_ov8ai"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_v11pr"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_wgmyw"]
+
+[sub_resource type="Resource" id="Resource_ycniy"]
+script = ExtResource("2_qpicc")
+boosting_sets = Array[ExtResource("2_7pr76")]([])
+resource = ExtResource("2_xpujy")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_dd3ls"]
+script = ExtResource("2_qpicc")
+boosting_sets = Array[ExtResource("2_7pr76")]([])
+resource = ExtResource("1_vn8ld")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_7bt4y"]
+script = ExtResource("2_qpicc")
+boosting_sets = Array[ExtResource("2_7pr76")]([])
+resource = ExtResource("6_y3hns")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_duyd0")
+name = "Pinto"
+texture = ExtResource("2_fn20j")
+floor_number = 12
+flying = false
+starting_status_effects = Array[ExtResource("8_v11pr")]([])
+active_item_sets = Array[ExtResource("2_7pr76")]([])
+stats_per_level = Array[ExtResource("11_wgmyw")]([])
+base_stats = Array[ExtResource("2_qpicc")]([SubResource("Resource_ycniy"), SubResource("Resource_dd3ls"), SubResource("Resource_7bt4y")])
+abilities = Array[ExtResource("1_xt0fg")]([ExtResource("1_tkb03")])
+passives = Array[ExtResource("7_ov8ai")]([])
+hide_stats = false

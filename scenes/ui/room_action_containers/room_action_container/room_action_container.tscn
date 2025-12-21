@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://obobaix27gfy"]
+
+[ext_resource type="Script" uid="uid://do18ydgblu73v" path="res://scenes/ui/room_action_containers/room_action_container/room_action_container.gd" id="1_fqjr8"]
+
+[node name="RoomActionContainer" type="MarginContainer"]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -65.0
+offset_right = 332.0
+grow_vertical = 0
+script = ExtResource("1_fqjr8")

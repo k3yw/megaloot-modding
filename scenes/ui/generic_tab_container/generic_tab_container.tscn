@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4aawipxq5brq"]
+
+[ext_resource type="Script" uid="uid://bbdcnke8w6ir8" path="res://scenes/ui/generic_tab_container/generic_tab_container.gd" id="1_2o0in"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_sdxwg"]
+
+[node name="GenericTabContainer" type="TabContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_styles/panel = SubResource("StyleBoxEmpty_sdxwg")
+tabs_visible = false
+script = ExtResource("1_2o0in")

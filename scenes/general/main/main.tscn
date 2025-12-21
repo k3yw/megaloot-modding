@@ -1,0 +1,193 @@
+[gd_scene load_steps=15 format=3 uid="uid://cx72jh4h28wwh"]
+
+[ext_resource type="Script" uid="uid://ixxmikmlr3pn" path="res://scenes/general/main/main.gd" id="1_kpetr"]
+[ext_resource type="Shader" uid="uid://rehiedekc4ww" path="res://resources/shaders/chromatic_aberration.gdshader" id="2_7ixv7"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_amgqi"]
+[ext_resource type="PackedScene" uid="uid://bf2ooujbu4umo" path="res://scenes/canvas_layers/main_canvas_layer/main_canvas_layer.tscn" id="2_q18y4"]
+[ext_resource type="PackedScene" uid="uid://qmidqoujttab" path="res://scenes/managers/popup_manager/popup_manager.tscn" id="3_l31pa"]
+[ext_resource type="PackedScene" uid="uid://6cyk5riamcr2" path="res://scenes/canvas_layers/debug_canvas_layer/debug_canvas_layer.tscn" id="5_abdb3"]
+[ext_resource type="Texture2D" uid="uid://hif6ck14kxwv" path="res://assets/textures/ui/scan_lines.png" id="9_4p66h"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="9_j7klq"]
+[ext_resource type="Shader" uid="uid://cdpcr1fo1j2cp" path="res://resources/shaders/vignette.gdshader" id="11_2t4f7"]
+
+[sub_resource type="Environment" id="Environment_7wn4r"]
+background_mode = 3
+glow_enabled = true
+glow_normalized = true
+glow_intensity = 4.5
+glow_strength = 0.25
+glow_bloom = 0.75
+glow_blend_mode = 1
+glow_hdr_threshold = 0.0
+adjustment_enabled = true
+adjustment_saturation = 1.15
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m3gei"]
+shader = ExtResource("2_7ixv7")
+shader_parameter/r_displacement = Vector2(0, 0)
+shader_parameter/g_displacement = Vector2(0, 0)
+shader_parameter/b_displacement = Vector2(0, -1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_slsbu"]
+resource_local_to_scene = true
+shader = ExtResource("2_amgqi")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 1.49012e-08
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kwj6f"]
+shader = ExtResource("11_2t4f7")
+shader_parameter/inner_radius = 0.15
+shader_parameter/outer_radius = 2.0
+shader_parameter/vignette_strength = 1.0
+shader_parameter/dither_strength = 0.03
+shader_parameter/vignette_color = Color(0, 0, 0, 1)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e2iif"]
+resource_local_to_scene = true
+shader = ExtResource("2_amgqi")
+shader_parameter/type = 8
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="Main" type="Node" node_paths=PackedStringArray("debug_canvas_layer", "main_canvas_layer", "viewport_container", "sub_viewport", "scan_lines_texture_rect", "world_environment", "fps_label")]
+process_mode = 3
+script = ExtResource("1_kpetr")
+debug_canvas_layer = NodePath("SubViewportContainer/SubViewport/DebugCanvasLayer")
+main_canvas_layer = NodePath("SubViewportContainer/SubViewport/MainCanvasLayer")
+viewport_container = NodePath("SubViewportContainer")
+sub_viewport = NodePath("SubViewportContainer/SubViewport")
+scan_lines_texture_rect = NodePath("SubViewportContainer/SubViewport/CanvasLayer/ScanLinesTextureRect")
+world_environment = NodePath("WorldEnvironment")
+fps_label = NodePath("SubViewportContainer/SubViewport/CanvasLayer/FPSLabel")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_7wn4r")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="."]
+material = SubResource("ShaderMaterial_m3gei")
+custom_minimum_size = Vector2(640, 360)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -320.0
+offset_top = -180.0
+offset_right = 320.0
+offset_bottom = 180.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="SubViewportContainer"]
+handle_input_locally = false
+snap_2d_transforms_to_pixel = true
+snap_2d_vertices_to_pixel = true
+canvas_item_default_texture_filter = 3
+physics_object_picking = true
+size = Vector2i(640, 360)
+render_target_update_mode = 4
+
+[node name="BackgroundCanvasLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
+layer = 0
+
+[node name="BackgroundColor" type="ColorRect" parent="SubViewportContainer/SubViewport/BackgroundCanvasLayer"]
+material = SubResource("ShaderMaterial_slsbu")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MainCanvasLayer" parent="SubViewportContainer/SubViewport" instance=ExtResource("2_q18y4")]
+
+[node name="PopupCanvasLayer" parent="SubViewportContainer/SubViewport" instance=ExtResource("3_l31pa")]
+
+[node name="DebugCanvasLayer" parent="SubViewportContainer/SubViewport" instance=ExtResource("5_abdb3")]
+visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="SubViewportContainer/SubViewport"]
+layer = 128
+
+[node name="ScanLinesTextureRect" type="TextureRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
+modulate = Color(0, 0, 0, 0.0392157)
+z_index = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("9_4p66h")
+stretch_mode = 1
+
+[node name="Vignette" type="ColorRect" parent="SubViewportContainer/SubViewport/CanvasLayer"]
+material = SubResource("ShaderMaterial_kwj6f")
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FPSLabel" parent="SubViewportContainer/SubViewport/CanvasLayer" instance=ExtResource("9_j7klq")]
+visible = false
+material = SubResource("ShaderMaterial_e2iif")
+offset_left = 8.0
+offset_top = 8.0
+offset_right = 72.0
+offset_bottom = 21.0
+text = "60"
+translate = false
+
+[connection signal="visibility_changed" from="SubViewportContainer/SubViewport/DebugCanvasLayer" to="." method="_on_debug_canvas_layer_visibility_changed"]

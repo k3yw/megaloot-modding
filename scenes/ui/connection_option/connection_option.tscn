@@ -1,0 +1,117 @@
+[gd_scene load_steps=10 format=3 uid="uid://cye01k54as5mo"]
+
+[ext_resource type="Script" uid="uid://bm85duvabvoti" path="res://scenes/ui/connection_option/connection_option.gd" id="1_evbuq"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="1_lt2d6"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_evbuq"]
+[ext_resource type="PackedScene" uid="uid://ibsed7a42sou" path="res://scenes/ui/generic_line_edit/generic_line_edit.tscn" id="3_40p5p"]
+[ext_resource type="PackedScene" uid="uid://bemoevikwn4l6" path="res://scenes/ui/loading_animation/loading_animation.tscn" id="4_tj8jy"]
+[ext_resource type="Texture2D" uid="uid://f1owrc4c6t2c" path="res://assets/textures/ui/connection_status.png" id="5_r2x28"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rakig"]
+resource_local_to_scene = true
+shader = ExtResource("2_evbuq")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hxvkm"]
+resource_local_to_scene = true
+shader = ExtResource("2_evbuq")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vj5ai"]
+resource_local_to_scene = true
+atlas = ExtResource("5_r2x28")
+region = Rect2(0, 0, 9, 9)
+
+[node name="ConnectionOption" type="HBoxContainer" node_paths=PackedStringArray("status_texture_tect", "line_edit", "loading_animation")]
+theme_override_constants/separation = 10
+script = ExtResource("1_evbuq")
+status_texture_tect = NodePath("StatusTextureRect")
+line_edit = NodePath("SpeedrunLineEdit")
+loading_animation = NodePath("LoadingAnimation")
+
+[node name="SpeedrunLabel" parent="." instance=ExtResource("1_lt2d6")]
+material = SubResource("ShaderMaterial_rakig")
+layout_mode = 2
+text = "SPEEDRUN.COM API KEY:"
+
+[node name="SpeedrunLineEdit" parent="." instance=ExtResource("3_40p5p")]
+custom_minimum_size = Vector2(250, 0)
+layout_mode = 2
+
+[node name="GenericPanel" parent="SpeedrunLineEdit" index="0"]
+material = SubResource("ShaderMaterial_hxvkm")
+
+[node name="LineEdit" parent="SpeedrunLineEdit/MarginContainer" index="0"]
+placeholder_text = "secret"
+secret = true
+secret_character = "*"
+
+[node name="LoadingAnimation" parent="." instance=ExtResource("4_tj8jy")]
+visible = false
+layout_mode = 2
+
+[node name="AnimatedSprite2D" parent="LoadingAnimation" index="0"]
+position = Vector2(3, 11)
+
+[node name="StatusTextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(9, 9)
+layout_mode = 2
+texture = SubResource("AtlasTexture_vj5ai")
+stretch_mode = 5
+
+[editable path="SpeedrunLineEdit"]
+[editable path="LoadingAnimation"]

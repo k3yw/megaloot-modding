@@ -1,0 +1,139 @@
+[gd_scene load_steps=9 format=3 uid="uid://baeupmv1418ug"]
+
+[ext_resource type="Script" uid="uid://3438e3c83chr" path="res://singletons/cursor_manager/cursor_manager.gd" id="1_dg6bj"]
+[ext_resource type="Texture2D" uid="uid://5mxuxmpwi8eu" path="res://assets/textures/items/bloodedge.png" id="2_1exn8"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_h1asw"]
+[ext_resource type="Texture2D" uid="uid://501tkps35653" path="res://assets/textures/ui/cursor_normal.png" id="3_lm8d5"]
+[ext_resource type="Texture2D" uid="uid://cfkus2o3fl4o" path="res://assets/textures/ui/cursor_hover.png" id="4_cegb5"]
+[ext_resource type="PackedScene" uid="uid://uau331o2mjlu" path="res://scenes/ui/fake_cursor_texture_rect/fake_cursor_texture_rect.tscn" id="7_1heyl"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_l22c2"]
+shader = ExtResource("2_h1asw")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_xtpbc"]
+shader = ExtResource("2_h1asw")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="CursorManager" type="Node" node_paths=PackedStringArray("fake_cursor_texture_rect", "main_sub_viewport", "hover_sub_viewport", "main_cursor_texture_rect", "hover_cursor_texture_rect", "main_item_texture_rect", "hover_item_texture_rect")]
+script = ExtResource("1_dg6bj")
+fake_cursor_texture_rect = NodePath("CanvasLayer/FakeCursorTextureRect")
+main_sub_viewport = NodePath("MainSubViewport")
+hover_sub_viewport = NodePath("HoverSubViewport")
+main_cursor_texture_rect = NodePath("MainSubViewport/CursorTextureRect")
+hover_cursor_texture_rect = NodePath("HoverSubViewport/CursorTextureRect")
+main_item_texture_rect = NodePath("MainSubViewport/ItemTextureRect")
+hover_item_texture_rect = NodePath("HoverSubViewport/ItemTextureRect")
+
+[node name="MainSubViewport" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+transparent_bg = true
+canvas_item_default_texture_filter = 0
+size = Vector2i(48, 48)
+render_target_update_mode = 4
+
+[node name="ItemTextureRect" type="TextureRect" parent="MainSubViewport"]
+material = SubResource("ShaderMaterial_l22c2")
+offset_left = 21.0
+offset_top = 23.0
+offset_right = 42.0
+offset_bottom = 43.0
+texture = ExtResource("2_1exn8")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="CursorTextureRect" type="TextureRect" parent="MainSubViewport"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 32.0
+offset_bottom = 32.0
+texture = ExtResource("3_lm8d5")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="HoverSubViewport" type="SubViewport" parent="."]
+disable_3d = true
+own_world_3d = true
+transparent_bg = true
+canvas_item_default_texture_filter = 0
+size = Vector2i(48, 48)
+render_target_update_mode = 4
+
+[node name="ItemTextureRect" type="TextureRect" parent="HoverSubViewport"]
+material = SubResource("ShaderMaterial_xtpbc")
+offset_left = 21.0
+offset_top = 23.0
+offset_right = 42.0
+offset_bottom = 43.0
+texture = ExtResource("2_1exn8")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="CursorTextureRect" type="TextureRect" parent="HoverSubViewport"]
+offset_left = 16.0
+offset_top = 16.0
+offset_right = 32.0
+offset_bottom = 32.0
+texture = ExtResource("4_cegb5")
+expand_mode = 1
+stretch_mode = 3
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="FakeCursorTextureRect" parent="CanvasLayer" instance=ExtResource("7_1heyl")]

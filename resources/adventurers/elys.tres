@@ -1,0 +1,73 @@
+[gd_resource type="Resource" script_class="Adventurer" load_steps=31 format=3 uid="uid://20dfp1irtvit"]
+
+[ext_resource type="Resource" uid="uid://u62386bcnlld" path="res://resources/abilities/bloodlust_aura.tres" id="1_8buju"]
+[ext_resource type="Texture2D" uid="uid://bcqq0jd2elvtk" path="res://assets/textures/portraits/elys_blink.png" id="2_ln6h2"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_o60s2"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_t1xvp"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="4_g0v1g"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_sixxr"]
+[ext_resource type="Texture2D" uid="uid://u6xus5tcj311" path="res://assets/textures/portraits/elys.png" id="5_txehy"]
+[ext_resource type="Script" uid="uid://b5ygq7ouoi3a1" path="res://classes/resource/adventurer.gd" id="6_n2umi"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="6_vlyob"]
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="7_2g4ky"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="7_jh3xq"]
+[ext_resource type="Resource" path="res://resources/specializations/vampiercer.tres" id="9_ohxc8"]
+[ext_resource type="Resource" uid="uid://db1qsnv6kxjqn" path="res://resources/specializations/bloodcaster.tres" id="9_q4vdq"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="9_r3bqm"]
+[ext_resource type="Resource" uid="uid://be3lmusfh4wna" path="res://resources/item_sets/vampiric.tres" id="11_ci6a1"]
+[ext_resource type="Resource" uid="uid://w75m5uxa75gv" path="res://resources/specializations/venomire.tres" id="11_ffo1u"]
+[ext_resource type="Script" uid="uid://bf4xfjaqogirm" path="res://classes/resource/socket_type.gd" id="11_kj63s"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="12_r3bqm"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="13_ci6a1"]
+[ext_resource type="Resource" uid="uid://blp3d63eis1x3" path="res://resources/passives/crimson_pact.tres" id="13_fxbh2"]
+[ext_resource type="Resource" uid="uid://cmw0nuwmn0iiu" path="res://resources/socket_types/leggings.tres" id="14_8buju"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="15_1c25x"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="15_fxbh2"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="16_crvve"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="17_cks6d"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="18_ioviv"]
+
+[sub_resource type="Resource" id="Resource_mk4eh"]
+script = ExtResource("4_g0v1g")
+boosting_sets = Array[ExtResource("3_o60s2")]([])
+resource = ExtResource("3_t1xvp")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_vhyuc"]
+script = ExtResource("4_g0v1g")
+boosting_sets = Array[ExtResource("3_o60s2")]([])
+resource = ExtResource("5_sixxr")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_vij23"]
+script = ExtResource("4_g0v1g")
+boosting_sets = Array[ExtResource("3_o60s2")]([])
+resource = ExtResource("6_vlyob")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0xaeg"]
+script = ExtResource("4_g0v1g")
+boosting_sets = Array[ExtResource("3_o60s2")]([])
+resource = ExtResource("7_jh3xq")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("6_n2umi")
+name = &"Elys"
+portrait = ExtResource("5_txehy")
+blink = ExtResource("2_ln6h2")
+specializations = Array[Object]([ExtResource("9_ohxc8"), ExtResource("9_q4vdq"), ExtResource("11_ffo1u")])
+starting_inventory_items = Array[ExtResource("15_1c25x")]([])
+challenge_market_items = Array[ExtResource("15_1c25x")]([])
+starting_market_items = Array[ExtResource("15_1c25x")]([])
+doubled_stat = ExtResource("9_r3bqm")
+main_set = ExtResource("11_ci6a1")
+ability = ExtResource("1_8buju")
+passive = ExtResource("13_fxbh2")
+chapters = Array[ExtResource("7_2g4ky")]([])
+bonus_stats = Array[ExtResource("4_g0v1g")]([SubResource("Resource_mk4eh"), SubResource("Resource_vhyuc"), SubResource("Resource_vij23"), SubResource("Resource_0xaeg")])
+sockets = Array[ExtResource("11_kj63s")]([ExtResource("12_r3bqm"), ExtResource("13_ci6a1"), ExtResource("14_8buju"), ExtResource("15_fxbh2"), ExtResource("16_crvve"), ExtResource("17_cks6d"), ExtResource("18_ioviv"), ExtResource("18_ioviv")])

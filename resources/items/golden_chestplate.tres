@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://yypbl0ql7cqa"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_3gbi5"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_gj2wy"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_vo1rv"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="6_02muf"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_7c6r6"]
+[ext_resource type="Resource" uid="uid://dmvibnyb3mslv" path="res://resources/item_sets/golden.tres" id="7_57bre"]
+[ext_resource type="Texture2D" uid="uid://cxif8n3hmnvil" path="res://assets/textures/items/golden_chestplate.png" id="8_eshy4"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_kpleq"]
+
+[sub_resource type="Resource" id="Resource_843mw"]
+script = ExtResource("1_3gbi5")
+boosting_sets = Array[ExtResource("6_7c6r6")]([])
+resource = ExtResource("2_gj2wy")
+amount = 8.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_vo1rv")
+name = &"Golden Chestplate"
+texture = ExtResource("8_eshy4")
+socket_type = ExtResource("6_02muf")
+set_resources = Array[ExtResource("6_7c6r6")]([ExtResource("7_57bre")])
+bonus_stats = Array[ExtResource("1_3gbi5")]([SubResource("Resource_843mw")])
+unlock_requirements = Array[ExtResource("8_kpleq")]([])
+extra_price = 13.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

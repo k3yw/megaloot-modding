@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://cnmf8b242qr64"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_trhom"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="2_x7yiv"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_rsh8k"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_h68gk"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="6_cpirq"]
+[ext_resource type="Resource" uid="uid://barfiwkq2fcrm" path="res://resources/item_sets/zephyron.tres" id="6_h7i0n"]
+[ext_resource type="Texture2D" uid="uid://b17snmfhay6e0" path="res://assets/textures/items/zephyrons_magical_cloak.png" id="7_ekw2j"]
+
+[sub_resource type="Resource" id="Resource_4ss2u"]
+script = ExtResource("1_trhom")
+boosting_sets = Array[ExtResource("5_h68gk")]([])
+resource = ExtResource("2_x7yiv")
+amount = 17.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_rsh8k")
+name = &"Zephyron\'s Magical Cloak"
+texture = ExtResource("7_ekw2j")
+description = ""
+socket_type = ExtResource("6_cpirq")
+set_resources = Array[ExtResource("5_h68gk")]([ExtResource("6_h7i0n")])
+bonus_stats = Array[ExtResource("1_trhom")]([SubResource("Resource_4ss2u")])
+extra_price = 13.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,228 @@
+[gd_scene load_steps=15 format=3 uid="uid://c5yug5w84ylij"]
+
+[ext_resource type="Script" uid="uid://cvl7n8i5xena0" path="res://scenes/ui/memory_slot_container/memory_slot_adventurer_container/memory_slot_adventurer_container.gd" id="1_37lg4"]
+[ext_resource type="PackedScene" uid="uid://c5xbfhdhlrk5i" path="res://scenes/ui/adventurer_portrait/adventurer_portrait.tscn" id="2_ciutg"]
+[ext_resource type="PackedScene" uid="uid://btsi4wcq6nij6" path="res://scenes/ui/item_texture_rect/item_texture_rect.tscn" id="3_i0ssj"]
+[ext_resource type="Texture2D" uid="uid://kn2yuvhn4fw5" path="res://resources/hues/divine_hue.tres" id="4_f8gt3"]
+[ext_resource type="Texture2D" uid="uid://b2n1lhfopw4yq" path="res://assets/textures/icons/gold_coins_icon.png" id="5_4xjtd"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="6_w0n1b"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="7_8nk2j"]
+
+[sub_resource type="Shader" id="Shader_q5g83"]
+code = "shader_type canvas_item;
+
+uniform float saturation: hint_range(0.0, 1.0, 0.1) = 1.0;
+uniform float alpha: hint_range(0.0, 1.0) = 1.0;
+uniform vec3 modulate: source_color = vec3(1.0);
+uniform float strength: hint_range(0., 1.0) = 0.5;
+uniform float speed: hint_range(0.0, 10.) = 0.5;
+uniform float ratio: hint_range(0.0, 1.0, 0.1);
+uniform float wobble: hint_range(0.0, 10.0, 0.1);
+
+uniform sampler2D hue_tex: repeat_enable;
+
+
+
+
+vec2 rotateUV(vec2 uv, vec2 pivot, float rotation) {
+	float sine = sin(rotation * (PI / 180.0));
+	float cosine = cos(rotation * (PI / 180.0));
+
+	uv -= pivot;
+	uv.x = uv.x * cosine - uv.y * sine;
+	uv.y = uv.x * sine + uv.y * cosine;
+	uv += pivot;
+
+	return uv;
+}
+
+vec3 color_dodge(vec4 base, vec4 blend){
+	return base.rgb / (1.0 - (blend.rgb * blend.a));
+}
+
+
+void fragment() {
+	vec2 original_uv = UV;
+	vec2 uv = UV;
+	vec2 final_uv = UV;
+
+
+	if (wobble > 0.0){
+
+			uv = (uv - 0.5) + 0.5;
+
+			uv.x += sin((uv.y * 35.0) + (TIME * 5.0)) * 0.01;
+
+			final_uv = mix(original_uv, uv, wobble);
+
+	}
+
+	vec2 hue_uv = rotateUV(UV, vec2(0.5), 45.0);
+	vec4 hue = texture(hue_tex, hue_uv + (speed * TIME));
+
+	vec4 color = texture(TEXTURE, final_uv);
+
+	color.rgb = mix(vec3(dot(color.rgb, vec3(0.299, 0.587, 0.114))), color.rgb, saturation);
+
+	COLOR.rgb = mix(color.rgb, color_dodge(color, hue), strength * ratio);
+	COLOR.rgb *= modulate;
+	COLOR.a *= alpha;
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0aw6t"]
+resource_local_to_scene = true
+shader = SubResource("Shader_q5g83")
+shader_parameter/saturation = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 0.25
+shader_parameter/speed = 0.5
+shader_parameter/ratio = 1.0
+shader_parameter/wobble = 0.0
+shader_parameter/hue_tex = ExtResource("4_f8gt3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ehk0i"]
+resource_local_to_scene = true
+shader = SubResource("Shader_q5g83")
+shader_parameter/saturation = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 0.25
+shader_parameter/speed = 0.5
+shader_parameter/ratio = 1.0
+shader_parameter/wobble = 0.0
+shader_parameter/hue_tex = ExtResource("4_f8gt3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w4sfj"]
+resource_local_to_scene = true
+shader = SubResource("Shader_q5g83")
+shader_parameter/saturation = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 0.25
+shader_parameter/speed = 0.5
+shader_parameter/ratio = 1.0
+shader_parameter/wobble = 0.0
+shader_parameter/hue_tex = ExtResource("4_f8gt3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0djt6"]
+resource_local_to_scene = true
+shader = SubResource("Shader_q5g83")
+shader_parameter/saturation = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 0.25
+shader_parameter/speed = 0.5
+shader_parameter/ratio = 1.0
+shader_parameter/wobble = 0.0
+shader_parameter/hue_tex = ExtResource("4_f8gt3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_u4wek"]
+resource_local_to_scene = true
+shader = SubResource("Shader_q5g83")
+shader_parameter/saturation = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 0.25
+shader_parameter/speed = 0.5
+shader_parameter/ratio = 1.0
+shader_parameter/wobble = 0.0
+shader_parameter/hue_tex = ExtResource("4_f8gt3")
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_udelw"]
+resource_local_to_scene = true
+shader = ExtResource("7_8nk2j")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(0.976471, 0.639216, 0.105882, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="MemorySlotAdventurerContainer" type="MarginContainer" node_paths=PackedStringArray("adventurer_portrait", "item_container", "gold_coins_label")]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_37lg4")
+adventurer_portrait = NodePath("VBoxContainer/HBoxContainer/AdventurerPortrait")
+item_container = NodePath("VBoxContainer/HBoxContainer/ItemContainer")
+gold_coins_label = NodePath("VBoxContainer/MarginContainer/GoldContainer/GoldCoinsLabel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="AdventurerPortrait" parent="VBoxContainer/HBoxContainer" instance=ExtResource("2_ciutg")]
+layout_mode = 2
+
+[node name="ItemContainer" type="HBoxContainer" parent="VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="ItemTextureRect" parent="VBoxContainer/HBoxContainer/ItemContainer" instance=ExtResource("3_i0ssj")]
+material = SubResource("ShaderMaterial_0aw6t")
+layout_mode = 2
+
+[node name="ItemTextureRect2" parent="VBoxContainer/HBoxContainer/ItemContainer" instance=ExtResource("3_i0ssj")]
+material = SubResource("ShaderMaterial_ehk0i")
+layout_mode = 2
+
+[node name="ItemTextureRect3" parent="VBoxContainer/HBoxContainer/ItemContainer" instance=ExtResource("3_i0ssj")]
+material = SubResource("ShaderMaterial_w4sfj")
+layout_mode = 2
+
+[node name="ItemTextureRect4" parent="VBoxContainer/HBoxContainer/ItemContainer" instance=ExtResource("3_i0ssj")]
+material = SubResource("ShaderMaterial_0djt6")
+layout_mode = 2
+
+[node name="ItemTextureRect5" parent="VBoxContainer/HBoxContainer/ItemContainer" instance=ExtResource("3_i0ssj")]
+material = SubResource("ShaderMaterial_u4wek")
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+
+[node name="GoldContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_constants/separation = 0
+alignment = 2
+
+[node name="GoldCoinsIcon" type="TextureRect" parent="VBoxContainer/MarginContainer/GoldContainer"]
+self_modulate = Color(0.976471, 0.639216, 0.105882, 1)
+texture_filter = 1
+layout_mode = 2
+texture = ExtResource("5_4xjtd")
+stretch_mode = 5
+
+[node name="GoldCoinsLabel" parent="VBoxContainer/MarginContainer/GoldContainer" instance=ExtResource("6_w0n1b")]
+material = SubResource("ShaderMaterial_udelw")
+layout_mode = 2
+text = "0"
+use_suffix = true
+is_value = true

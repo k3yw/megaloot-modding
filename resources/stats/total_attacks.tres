@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://brv4rxnfre8qx"]
+
+[ext_resource type="Script" uid="uid://doy6ifouayxb1" path="res://resources/bb_scripts/total_attacks.gd" id="1_4yeuh"]
+[ext_resource type="Texture2D" uid="uid://dfhofwms3u8vh" path="res://assets/textures/icons/extra_attack_icon.png" id="2_1ogsx"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="3_65pfk"]
+[ext_resource type="Script" uid="uid://bflln45fvcsv5" path="res://resources/stat_scripts/total_attacks.gd" id="4_07aea"]
+
+[resource]
+script = ExtResource("3_65pfk")
+name = "Total Attacks"
+icon = ExtResource("2_1ogsx")
+color = Color(0.858824, 0.643137, 0.388235, 1)
+is_attack_type = false
+is_percentage = false
+max_amount = 25
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_07aea")
+bb_script = ExtResource("1_4yeuh")

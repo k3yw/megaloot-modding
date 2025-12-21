@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=6 format=3 uid="uid://h8sy5ia4uu1g"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_hkwux"]
+[ext_resource type="Script" uid="uid://d25b5sxcu4u0a" path="res://resources/ability_scripts/mind_control.gd" id="1_nlv6k"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_wb1mv"]
+[ext_resource type="Texture2D" uid="uid://c1djvl8h6okh0" path="res://assets/textures/icons/abilities/mind_control.png" id="2_pal5o"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_pal5o"]
+
+[resource]
+script = ExtResource("1_wb1mv")
+name = "Mind Control"
+icon = ExtResource("2_pal5o")
+mana_cost = 2
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_pal5o")]([])
+bonus_stats_while_active = Array[ExtResource("1_hkwux")]([])
+quick_cast = false
+non_target = true
+to_attack = false
+ability_script = ExtResource("1_nlv6k")

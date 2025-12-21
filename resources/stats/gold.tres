@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://dghdbsulcou6q"]
+
+[ext_resource type="Texture2D" uid="uid://b2n1lhfopw4yq" path="res://assets/textures/icons/gold_coins_icon.png" id="1_6a5ps"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_a1bct"]
+
+[resource]
+script = ExtResource("2_a1bct")
+name = "Gold"
+icon = ExtResource("1_6a5ps")
+color = Color(0.976471, 0.639216, 0.105882, 1)
+is_percentage = false
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0

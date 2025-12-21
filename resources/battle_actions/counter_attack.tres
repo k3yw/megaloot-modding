@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=4 format=3 uid="uid://cq0m3kam2crlx"]
+
+[ext_resource type="Texture2D" uid="uid://chw1po2v5eee3" path="res://assets/textures/icons/counter_attack_icon.png" id="1_bl4gs"]
+[ext_resource type="Script" uid="uid://btpnf3x7q482" path="res://resources/bb_scripts/counter_attack.gd" id="1_esnde"]
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_jory3"]
+
+[resource]
+script = ExtResource("1_jory3")
+name = "Counter Attack"
+icon = ExtResource("1_bl4gs")
+color = Color(0.972549, 0.635294, 0.105882, 1)
+use_limit = 0
+popup_color = Color(0.972549, 0.635294, 0.105882, 1)
+popup_text = "Counter Attack!"
+popup_delay = 0.0
+screen_shake = true
+is_hit = true
+bb_script = ExtResource("1_esnde")

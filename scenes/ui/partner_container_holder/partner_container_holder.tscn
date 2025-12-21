@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://tmder7ydep00"]
+
+[ext_resource type="Script" uid="uid://y3hh3dow2chp" path="res://scenes/ui/partner_container_holder/partner_container_holder.gd" id="1_jgvjc"]
+
+[node name="PartnerContainerHolder" type="HBoxContainer"]
+theme_override_constants/separation = 4
+script = ExtResource("1_jgvjc")

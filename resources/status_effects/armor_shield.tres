@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://bohmbus0djkn1"]
+
+[ext_resource type="Texture2D" uid="uid://5g5y0w1ii0l" path="res://assets/textures/icons/stats/armor_shield.png" id="1_5qbir"]
+[ext_resource type="Script" uid="uid://cdc4v6qef00qh" path="res://resources/bb_scripts/armor_shield.gd" id="1_ikbeb"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="2_m6i45"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_sg68a"]
+
+[resource]
+script = ExtResource("2_m6i45")
+name = "Armor Shield"
+icon = ExtResource("1_5qbir")
+color = Color(0.4446, 0.60112, 0.78, 1)
+type = ExtResource("3_sg68a")
+is_temporary = false
+is_percent = false
+limit = -1
+application_message = ""
+bb_script = ExtResource("1_ikbeb")

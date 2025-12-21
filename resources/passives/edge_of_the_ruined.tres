@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://chvd4xbiyu1h3"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_85xe3"]
+[ext_resource type="Script" uid="uid://by2s2wtq0v23m" path="res://resources/bb_scripts/edge_of_the_ruined.gd" id="1_dvu7t"]
+[ext_resource type="Script" uid="uid://dgh1nf7ago6ln" path="res://resources/passive_scripts/edge_of_the_ruined.gd" id="3_vcnvm"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_4sbwv"]
+
+[resource]
+script = ExtResource("4_4sbwv")
+name = "Edge of the Ruined"
+bonus_stats = Array[ExtResource("1_85xe3")]([])
+game_logic_script = ExtResource("3_vcnvm")
+bb_script = ExtResource("1_dvu7t")

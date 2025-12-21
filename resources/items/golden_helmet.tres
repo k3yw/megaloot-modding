@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://tjdsboywiq3o"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_7on02"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_eb6ti"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_85rg6"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_782xp"]
+[ext_resource type="Resource" uid="uid://dmvibnyb3mslv" path="res://resources/item_sets/golden.tres" id="4_eb6ti"]
+[ext_resource type="Texture2D" uid="uid://btdd354irq6mu" path="res://assets/textures/items/golden_helmet.png" id="5_85rg6"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="5_mbw6v"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="6_782xp"]
+
+[sub_resource type="Resource" id="Resource_mbw6v"]
+script = ExtResource("1_7on02")
+boosting_sets = Array[ExtResource("3_85rg6")]([])
+resource = ExtResource("3_782xp")
+amount = 6.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_eb6ti")
+name = &"Golden Helmet"
+texture = ExtResource("5_85rg6")
+socket_type = ExtResource("6_782xp")
+set_resources = Array[ExtResource("3_85rg6")]([ExtResource("4_eb6ti")])
+bonus_stats = Array[ExtResource("1_7on02")]([SubResource("Resource_mbw6v")])
+unlock_requirements = Array[ExtResource("5_mbw6v")]([])
+extra_price = 8.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

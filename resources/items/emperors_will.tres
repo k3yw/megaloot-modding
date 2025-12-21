@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=20 format=3 uid="uid://kkgsgo4h3gsh"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_r4rcx"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_gaebc"]
+[ext_resource type="Resource" uid="uid://bt25703gmwpyf" path="res://resources/passives/all_is_mine.tres" id="4_fgakx"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_2wkau"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="7_abh04"]
+[ext_resource type="Resource" uid="uid://dmvibnyb3mslv" path="res://resources/item_sets/golden.tres" id="8_50loe"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="9_ofyfp"]
+[ext_resource type="Resource" uid="uid://cmgidfwgdx7no" path="res://resources/item_sets/arcanum.tres" id="10_ggxdh"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="10_s3gch"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="11_vwbad"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="12_4v3c2"]
+[ext_resource type="Texture2D" uid="uid://p2i7jt7phnw2" path="res://assets/textures/items/emperors_will.png" id="12_gjlyq"]
+[ext_resource type="Resource" uid="uid://tjdsboywiq3o" path="res://resources/items/golden_helmet.tres" id="13_ranu8"]
+[ext_resource type="Resource" uid="uid://cg02d2dkyos2l" path="res://resources/items/arcanum_hood.tres" id="14_h37io"]
+
+[sub_resource type="Resource" id="Resource_im12l"]
+script = ExtResource("1_r4rcx")
+boosting_sets = Array[ExtResource("11_vwbad")]([ExtResource("8_50loe")])
+resource = ExtResource("7_abh04")
+amount = 15.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_lq8eq"]
+script = ExtResource("1_r4rcx")
+boosting_sets = Array[ExtResource("11_vwbad")]([ExtResource("10_ggxdh")])
+resource = ExtResource("9_ofyfp")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_5fcm8"]
+script = ExtResource("1_r4rcx")
+boosting_sets = Array[ExtResource("11_vwbad")]([])
+resource = ExtResource("2_gaebc")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_pt84k"]
+script = ExtResource("12_4v3c2")
+item_resource = ExtResource("13_ranu8")
+completed_battles = 12
+metadata/_custom_type_script = "uid://cfu5hrmkdm6q"
+
+[sub_resource type="Resource" id="Resource_r2v6d"]
+script = ExtResource("12_4v3c2")
+item_resource = ExtResource("14_h37io")
+completed_battles = 12
+metadata/_custom_type_script = "uid://cfu5hrmkdm6q"
+
+[resource]
+script = ExtResource("5_2wkau")
+name = &"Emperor\'s Will"
+texture = ExtResource("12_gjlyq")
+socket_type = ExtResource("10_s3gch")
+set_resources = Array[ExtResource("11_vwbad")]([ExtResource("8_50loe"), ExtResource("10_ggxdh")])
+passive = ExtResource("4_fgakx")
+bonus_stats = Array[ExtResource("1_r4rcx")]([SubResource("Resource_im12l"), SubResource("Resource_lq8eq"), SubResource("Resource_5fcm8")])
+unlock_requirements = Array[ExtResource("12_4v3c2")]([SubResource("Resource_pt84k"), SubResource("Resource_r2v6d")])
+extra_price = 275.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

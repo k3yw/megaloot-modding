@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://co88cy7ntrcs5"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_mv417"]
+[ext_resource type="Script" uid="uid://dclvyx7bh2a6e" path="res://resources/bb_scripts/crystal_hardening.gd" id="1_yc1u7"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_5c442"]
+
+[resource]
+script = ExtResource("3_5c442")
+name = "Crystal Hardening"
+bonus_stats = Array[ExtResource("1_mv417")]([])
+bb_script = ExtResource("1_yc1u7")

@@ -1,0 +1,72 @@
+[gd_resource type="Resource" script_class="Adventurer" load_steps=29 format=3 uid="uid://deyb2wkgo4muk"]
+
+[ext_resource type="Resource" uid="uid://cuuq2whbd7d6x" path="res://resources/abilities/prowlers_strike.tres" id="1_f4t1u"]
+[ext_resource type="Texture2D" uid="uid://dlw72b3x6r7bq" path="res://assets/textures/portraits/fren_blink.png" id="2_wxo3e"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_3dxv7"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_aavhk"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="4_o0h0o"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="4_tp6yo"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="6_qrsy1"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="7_isw10"]
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="7_wa3q2"]
+[ext_resource type="Resource" uid="uid://bf2y3uc38gwy2" path="res://resources/item_sets/scout.tres" id="10_qibwu"]
+[ext_resource type="Texture2D" uid="uid://ce5bl52ijn3sb" path="res://assets/textures/portraits/fren.png" id="10_tim0r"]
+[ext_resource type="Resource" path="res://resources/specializations/windwalker.tres" id="11_ijvyy"]
+[ext_resource type="Script" uid="uid://bf4xfjaqogirm" path="res://classes/resource/socket_type.gd" id="11_nnbc7"]
+[ext_resource type="Script" uid="uid://b5ygq7ouoi3a1" path="res://classes/resource/adventurer.gd" id="11_vrx1q"]
+[ext_resource type="Resource" uid="uid://05op1c4hmibb" path="res://resources/specializations/striker.tres" id="12_3ayqj"]
+[ext_resource type="Resource" uid="uid://cctddoaoyof0p" path="res://resources/specializations/pursuer.tres" id="12_7pc8r"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="12_qibwu"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="13_f4t1u"]
+[ext_resource type="Resource" uid="uid://cmw0nuwmn0iiu" path="res://resources/socket_types/leggings.tres" id="14_7glw8"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="15_34rqi"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="15_f1sb3"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="16_67syb"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="17_yf0py"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="18_m368m"]
+
+[sub_resource type="Resource" id="Resource_audjg"]
+script = ExtResource("4_o0h0o")
+boosting_sets = Array[ExtResource("3_3dxv7")]([])
+resource = ExtResource("3_aavhk")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_prhjm"]
+script = ExtResource("4_o0h0o")
+boosting_sets = Array[ExtResource("3_3dxv7")]([])
+resource = ExtResource("4_tp6yo")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_18c8u"]
+script = ExtResource("4_o0h0o")
+boosting_sets = Array[ExtResource("3_3dxv7")]([])
+resource = ExtResource("7_isw10")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_utkd1"]
+script = ExtResource("4_o0h0o")
+boosting_sets = Array[ExtResource("3_3dxv7")]([])
+resource = ExtResource("6_qrsy1")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("11_vrx1q")
+name = &"Fren"
+portrait = ExtResource("10_tim0r")
+blink = ExtResource("2_wxo3e")
+specializations = Array[Object]([ExtResource("12_3ayqj"), ExtResource("11_ijvyy"), ExtResource("12_7pc8r")])
+starting_inventory_items = Array[ExtResource("15_34rqi")]([])
+challenge_market_items = Array[ExtResource("15_34rqi")]([])
+starting_market_items = Array[ExtResource("15_34rqi")]([])
+main_socket = ExtResource("12_qibwu")
+doubled_stat = ExtResource("4_tp6yo")
+main_set = ExtResource("10_qibwu")
+ability = ExtResource("1_f4t1u")
+base_flow = 100
+chapters = Array[ExtResource("7_wa3q2")]([])
+bonus_stats = Array[ExtResource("4_o0h0o")]([SubResource("Resource_audjg"), SubResource("Resource_prhjm"), SubResource("Resource_18c8u"), SubResource("Resource_utkd1")])
+sockets = Array[ExtResource("11_nnbc7")]([ExtResource("12_qibwu"), ExtResource("13_f4t1u"), ExtResource("14_7glw8"), ExtResource("15_f1sb3"), ExtResource("16_67syb"), ExtResource("17_yf0py"), ExtResource("18_m368m"), ExtResource("18_m368m")])

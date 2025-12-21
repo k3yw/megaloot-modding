@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://b1fwkh1y8kkl"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_gky3m"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_mnsdn"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="4_e8vc5"]
+[ext_resource type="Resource" uid="uid://svvuieiqjue" path="res://resources/item_sets/orion.tres" id="5_m24pk"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="6_l01uf"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_y6qrp"]
+[ext_resource type="Texture2D" uid="uid://wnlp1j10a1f0" path="res://assets/textures/items/orions_path.png" id="7_pfxoj"]
+
+[sub_resource type="Resource" id="Resource_qagof"]
+script = ExtResource("1_gky3m")
+boosting_sets = Array[ExtResource("6_y6qrp")]([ExtResource("5_m24pk")])
+resource = ExtResource("4_e8vc5")
+amount = 6.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_mnsdn")
+name = &"Orion\'s Path"
+texture = ExtResource("7_pfxoj")
+description = ""
+socket_type = ExtResource("6_l01uf")
+set_resources = Array[ExtResource("6_y6qrp")]([ExtResource("5_m24pk")])
+bonus_stats = Array[ExtResource("1_gky3m")]([SubResource("Resource_qagof")])
+extra_price = 65.0
+spawn_floor = 6
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://ba00m8tp4hqhk"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_5mty3"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_agmlt"]
+[ext_resource type="Resource" uid="uid://d2csws3ba6vr8" path="res://resources/stats/adaptive_attack.tres" id="3_4se8o"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_k654d"]
+[ext_resource type="Resource" uid="uid://c3ycoy8l3w81l" path="res://resources/passives/liberation.tres" id="4_4se8o"]
+[ext_resource type="Resource" uid="uid://di3fmmr8t635h" path="res://resources/item_sets/unchained.tres" id="4_agmlt"]
+[ext_resource type="Texture2D" uid="uid://dk72aoydt070a" path="res://assets/textures/items/unchained_ring.png" id="5_k654d"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="7_cg8u1"]
+
+[sub_resource type="Resource" id="Resource_cg8u1"]
+script = ExtResource("1_5mty3")
+boosting_sets = Array[ExtResource("3_k654d")]([])
+resource = ExtResource("3_4se8o")
+amount = 6.0
+is_modifier = true
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_agmlt")
+name = &"Unchained Ring"
+texture = ExtResource("5_k654d")
+description = ""
+socket_type = ExtResource("7_cg8u1")
+set_resources = Array[ExtResource("3_k654d")]([ExtResource("4_agmlt")])
+passive = ExtResource("4_4se8o")
+bonus_stats = Array[ExtResource("1_5mty3")]([SubResource("Resource_cg8u1")])
+extra_price = 38.0
+spawn_floor = 5
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

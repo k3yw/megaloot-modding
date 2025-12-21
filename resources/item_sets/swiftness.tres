@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=5 format=3 uid="uid://yafmbyqx3xa6"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_ach0m"]
+[ext_resource type="Texture2D" uid="uid://hbvcyi73uv86" path="res://assets/textures/icons/item_sets/swiftness_icon.png" id="1_cv7cr"]
+[ext_resource type="Script" uid="uid://cahdbvmrvjofk" path="res://resources/bb_scripts/swiftness.gd" id="1_mqfs4"]
+[ext_resource type="Script" uid="uid://8rl7nmghnsw1" path="res://resources/item_set_scripts/swiftness.gd" id="2_wvh4u"]
+
+[resource]
+script = ExtResource("1_ach0m")
+name = "Swiftness"
+icon = ExtResource("1_cv7cr")
+color = Color(0.752941, 0.941176, 1, 1)
+value = 0
+game_logic_script = ExtResource("2_wvh4u")
+bb_script = ExtResource("1_mqfs4")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://m0ht7iswavoj"]
+
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="1_ctyrn"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_qo5wx"]
+[ext_resource type="Script" uid="uid://bcqx7eutkat2a" path="res://resources/bb_scripts/thunderstrike.gd" id="1_ui664"]
+
+[resource]
+script = ExtResource("1_ctyrn")
+name = "Thunderstrike"
+bonus_stats = Array[ExtResource("1_qo5wx")]([])
+bb_script = ExtResource("1_ui664")

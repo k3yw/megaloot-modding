@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="GameMode" load_steps=3 format=3 uid="uid://cinl7ehpliofs"]
+
+[ext_resource type="Script" uid="uid://dryrkbd524233" path="res://classes/resource/game_mode.gd" id="1_nspx4"]
+[ext_resource type="Script" uid="uid://bf2yi3f4luutp" path="res://resources/game_mode_scripts/practice.gd" id="1_up45p"]
+
+[resource]
+script = ExtResource("1_nspx4")
+name = &"Practice"
+has_achievements = false
+team_based = false
+total_battles = 6
+last_floor = -1
+game_mode_script = ExtResource("1_up45p")
+metadata/_custom_type_script = "uid://dryrkbd524233"

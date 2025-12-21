@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://baqgwftea6med"]
+
+[ext_resource type="Script" uid="uid://c8rq0larawjle" path="res://scenes/vfx/shard_emitter/shard_emitter.gd" id="1_7fqeu"]
+[ext_resource type="PackedScene" uid="uid://biwnosnofc3oc" path="res://scenes/vfx/shard/shard.tscn" id="2_ogboj"]
+
+[node name="ShardEmitter" type="Node2D"]
+script = ExtResource("1_7fqeu")
+threshold = 10.0
+shard_scene = ExtResource("2_ogboj")

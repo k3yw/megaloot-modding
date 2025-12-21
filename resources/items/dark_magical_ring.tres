@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://bpuimww25ap4h"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_4rc47"]
+[ext_resource type="Resource" uid="uid://dhtx0qdflmixn" path="res://resources/item_sets/darkness.tres" id="2_q2e5p"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="4_4ow7a"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="4_huyn1"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_7fvsc"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_722om"]
+[ext_resource type="Resource" uid="uid://barfiwkq2fcrm" path="res://resources/item_sets/zephyron.tres" id="7_1o0nw"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="8_4ow7a"]
+[ext_resource type="Texture2D" uid="uid://c45yxlvgs1sks" path="res://assets/textures/items/dark_magical_ring.png" id="8_258aj"]
+
+[sub_resource type="Resource" id="Resource_soiqt"]
+script = ExtResource("1_4rc47")
+boosting_sets = Array[ExtResource("6_722om")]([ExtResource("2_q2e5p")])
+resource = ExtResource("4_4ow7a")
+amount = 25.0
+is_modifier = true
+
+[sub_resource type="Resource" id="Resource_m8a8c"]
+script = ExtResource("1_4rc47")
+boosting_sets = Array[ExtResource("6_722om")]([])
+resource = ExtResource("4_huyn1")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_7fvsc")
+name = &"Dark Magical Ring"
+texture = ExtResource("8_258aj")
+description = ""
+socket_type = ExtResource("8_4ow7a")
+set_resources = Array[ExtResource("6_722om")]([ExtResource("2_q2e5p"), ExtResource("7_1o0nw")])
+bonus_stats = Array[ExtResource("1_4rc47")]([SubResource("Resource_soiqt"), SubResource("Resource_m8a8c")])
+extra_price = 24.0
+spawn_floor = 9
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

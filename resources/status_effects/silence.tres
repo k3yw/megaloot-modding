@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=6 format=3 uid="uid://coe3s8ffp4hm8"]
+
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_fevfa"]
+[ext_resource type="AudioStream" uid="uid://cd8tsu1tm3xif" path="res://assets/sfx/silence.wav" id="1_rv01l"]
+[ext_resource type="Script" uid="uid://fmleciwf8ccu" path="res://resources/bb_scripts/silence.gd" id="2_nc68j"]
+[ext_resource type="Texture2D" uid="uid://ylv6r41gfoms" path="res://assets/textures/icons/silence_icon.png" id="2_v4jvr"]
+[ext_resource type="Resource" uid="uid://ptn3j1afs6g2" path="res://resources/status_effect_types/debuff.tres" id="4_wom7j"]
+
+[resource]
+script = ExtResource("1_fevfa")
+name = "Silence"
+icon = ExtResource("2_v4jvr")
+color = Color(0.301961, 0.337255, 0.619608, 1)
+type = ExtResource("4_wom7j")
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = "SILENCED"
+application_sound = ExtResource("1_rv01l")
+bb_script = ExtResource("2_nc68j")

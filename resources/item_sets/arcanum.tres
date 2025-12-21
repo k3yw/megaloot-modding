@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=6 format=3 uid="uid://cmgidfwgdx7no"]
+
+[ext_resource type="Texture2D" uid="uid://21urgfiuy41w" path="res://assets/textures/icons/item_sets/arcanum_icon.png" id="1_8iicl"]
+[ext_resource type="Script" uid="uid://c3vsy86y2oa7" path="res://resources/bb_scripts/arcanum.gd" id="1_u5nyl"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_kqe6k"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_wdx3f"]
+[ext_resource type="Script" uid="uid://gktd75g3i4qa" path="res://resources/item_set_scripts/arcanum.gd" id="3_yo63o"]
+
+[resource]
+script = ExtResource("2_wdx3f")
+name = "Arcanum"
+icon = ExtResource("1_8iicl")
+color = Color(0.14902, 0.682353, 0.835294, 1)
+game_logic_script = ExtResource("3_yo63o")
+bb_script = ExtResource("1_u5nyl")
+bonus_stats = Array[ExtResource("2_kqe6k")]([])

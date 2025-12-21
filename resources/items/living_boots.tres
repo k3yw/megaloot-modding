@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://d0aomg2ig4aui"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_846rk"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="2_ydrpa"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_jx4ba"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_lxh7m"]
+[ext_resource type="Resource" uid="uid://cyctakuu2fani" path="res://resources/item_sets/flesh.tres" id="6_3hf03"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_6qgaf"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="7_pmwa6"]
+[ext_resource type="Texture2D" uid="uid://d4ljncwgqjr3t" path="res://assets/textures/items/living_boots.png" id="8_8xywg"]
+
+[sub_resource type="Resource" id="Resource_0tb3k"]
+script = ExtResource("1_846rk")
+boosting_sets = Array[ExtResource("7_6qgaf")]([ExtResource("6_3hf03")])
+resource = ExtResource("5_lxh7m")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_iy4y1"]
+script = ExtResource("1_846rk")
+boosting_sets = Array[ExtResource("7_6qgaf")]([])
+resource = ExtResource("2_ydrpa")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_jx4ba")
+name = &"Living Boots"
+texture = ExtResource("8_8xywg")
+description = ""
+socket_type = ExtResource("7_pmwa6")
+set_resources = Array[ExtResource("7_6qgaf")]([ExtResource("6_3hf03")])
+bonus_stats = Array[ExtResource("1_846rk")]([SubResource("Resource_0tb3k"), SubResource("Resource_iy4y1")])
+extra_price = 2.0
+spawn_floor = 7
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

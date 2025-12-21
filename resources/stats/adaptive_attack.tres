@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://d2csws3ba6vr8"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_d0tyq"]
+[ext_resource type="Texture2D" uid="uid://oyx7q0yccsh4" path="res://assets/textures/icons/stats/adaptive_attack_icon.png" id="1_ks6ic"]
+[ext_resource type="Script" uid="uid://dceg4j5rvbm0g" path="res://resources/bb_scripts/adaptive_attack.gd" id="1_xk4vj"]
+[ext_resource type="Script" uid="uid://co7oq41336twe" path="res://resources/stat_scripts/adaptive_attack.gd" id="4_id0u2"]
+
+[resource]
+script = ExtResource("1_d0tyq")
+name = "Adaptive Attack"
+icon = ExtResource("1_ks6ic")
+color = Color(0.584314, 0.815686, 1, 1)
+is_attack_type = true
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_id0u2")
+bb_script = ExtResource("1_xk4vj")

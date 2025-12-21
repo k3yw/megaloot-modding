@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=6 format=3 uid="uid://dtedu6wftg7o5"]
+
+[ext_resource type="Texture2D" uid="uid://cllwbdclj2o2n" path="res://assets/textures/icons/item_sets/mercenary_icon.png" id="1_10bop"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_2576y"]
+[ext_resource type="Script" uid="uid://6pdmtpd4b4uu" path="res://resources/bb_scripts/mercenary.gd" id="1_lqmed"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_eeb47"]
+[ext_resource type="Script" uid="uid://cb6hqu10s7ek8" path="res://resources/item_set_scripts/mercenary.gd" id="3_goe15"]
+
+[resource]
+script = ExtResource("1_2576y")
+name = "Mercenary"
+icon = ExtResource("1_10bop")
+color = Color(0.427451, 0.298039, 0.254902, 1)
+game_logic_script = ExtResource("3_goe15")
+bb_script = ExtResource("1_lqmed")
+bonus_stats = Array[ExtResource("2_eeb47")]([])

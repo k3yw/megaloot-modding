@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://b6h7h5ygij3sr"]
+
+[ext_resource type="Texture2D" uid="uid://ccflwmxkvrmuf" path="res://assets/textures/icons/stats/physical_damage_icon.png" id="1_61pha"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_qbato"]
+
+[resource]
+script = ExtResource("2_qbato")
+name = "Physical Damage"
+icon = ExtResource("1_61pha")
+color = Color(0.980392, 0.223529, 0.290196, 1)
+is_percentage = false
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0

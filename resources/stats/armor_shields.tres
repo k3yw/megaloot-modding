@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://7y1jfr5ymbee"]
+
+[ext_resource type="Script" uid="uid://io2fhskoob4y" path="res://resources/bb_scripts/armor_shields.gd" id="1_3g6lk"]
+[ext_resource type="Texture2D" uid="uid://5g5y0w1ii0l" path="res://assets/textures/icons/stats/armor_shield.png" id="1_uagjk"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_wxol5"]
+[ext_resource type="Script" uid="uid://c83lxjxjm0f24" path="res://resources/stat_scripts/armor_shields.gd" id="4_qtuyp"]
+
+[resource]
+script = ExtResource("1_wxol5")
+name = "Armor Shields"
+icon = ExtResource("1_uagjk")
+color = Color(0.443137, 0.6, 0.780392, 1)
+is_percentage = false
+max_amount = 25
+ignore_minimum_amount = false
+minimum_amount = 0.0
+upgradeable = false
+stat_script = ExtResource("4_qtuyp")
+bb_script = ExtResource("1_3g6lk")
+metadata/_custom_type_script = "uid://ctq5askfk0kre"

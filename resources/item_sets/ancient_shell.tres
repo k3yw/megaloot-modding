@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=6 format=3 uid="uid://cq6tpc5j7tr2h"]
+
+[ext_resource type="Script" uid="uid://dpk02286yslo" path="res://resources/bb_scripts/ancient_shell.gd" id="1_hlnq2"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_mrog5"]
+[ext_resource type="Texture2D" uid="uid://bq7v2tfm6v5yr" path="res://assets/textures/icons/item_sets/ancient_shell.png" id="1_xyyi6"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_620lj"]
+[ext_resource type="Script" uid="uid://dqx67oo1cakb4" path="res://resources/item_set_scripts/ancient_shell.gd" id="3_i70kq"]
+
+[resource]
+script = ExtResource("1_mrog5")
+name = "Ancient Shell"
+icon = ExtResource("1_xyyi6")
+color = Color(0.351563, 0.304688, 0.265625, 1)
+game_logic_script = ExtResource("3_i70kq")
+bb_script = ExtResource("1_hlnq2")
+bonus_stats = Array[ExtResource("2_620lj")]([])

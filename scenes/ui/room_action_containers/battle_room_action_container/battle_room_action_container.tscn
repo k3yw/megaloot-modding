@@ -1,0 +1,597 @@
+[gd_scene load_steps=31 format=3 uid="uid://bhkytdfrwt4r5"]
+
+[ext_resource type="PackedScene" uid="uid://kavdt22tj6ee" path="res://scenes/stat_containers/attack_container/attack_container.tscn" id="1_2u3te"]
+[ext_resource type="Script" uid="uid://brypui8gbgiel" path="res://scenes/ui/room_action_containers/battle_room_action_container/battle_room_action_container.gd" id="1_rytt1"]
+[ext_resource type="PackedScene" uid="uid://bxoncw32voayn" path="res://scenes/ui/generic_button/generic_button.tscn" id="2_rytt1"]
+[ext_resource type="PackedScene" uid="uid://c44wlrtoiy84r" path="res://scenes/modules/hover_info_module/hover_info_module.tscn" id="3_d68uh"]
+[ext_resource type="Script" uid="uid://doeyse1kwc7l5" path="res://resources/bb_scripts/attack_screen_interact_button.gd" id="3_fffte"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="4_3mwia"]
+[ext_resource type="Script" uid="uid://d2y51f3xgrunl" path="res://resources/bb_scripts/attack_stat_container.gd" id="4_wmddq"]
+[ext_resource type="Texture2D" uid="uid://dh8c8bbhq77hs" path="res://assets/textures/ui/flat_generic_button.png" id="5_d68uh"]
+[ext_resource type="Texture2D" uid="uid://cx5hk6dsnmtol" path="res://assets/textures/icons/attack_icon.png" id="6_kp2l1"]
+[ext_resource type="Texture2D" uid="uid://dkf02nw0cvrps" path="res://assets/textures/icons/guard_icon.png" id="6_wmddq"]
+[ext_resource type="Script" uid="uid://dfafkrx5uptle" path="res://resources/bb_scripts/stance.gd" id="7_cu5j4"]
+[ext_resource type="Texture2D" uid="uid://kogth1ypxse2" path="res://assets/textures/icons/timeout_icon.png" id="9_fffte"]
+[ext_resource type="PackedScene" uid="uid://bf4bdtuq87lv7" path="res://scenes/ui/icon_generic_button/icon_generic_button.tscn" id="12_cu5j4"]
+[ext_resource type="Texture2D" uid="uid://cx26t42klyc6s" path="res://assets/textures/icons/abilities/unlearned_ability_icon.png" id="13_kp2l1"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3mwia"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_d68uh"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_wmddq"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6qnhl"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_2pw1l"]
+load_path = "res://.godot/imported/flat_generic_button.png-ef397adadf4d1d50367a883a9cb3470e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_wiiaj"]
+load_path = "res://.godot/imported/flat_generic_button.png-ef397adadf4d1d50367a883a9cb3470e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_t2b0o"]
+load_path = "res://.godot/imported/flat_generic_button.png-ef397adadf4d1d50367a883a9cb3470e.ctex"
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iwiok"]
+load_path = "res://.godot/imported/flat_generic_button.png-ef397adadf4d1d50367a883a9cb3470e.ctex"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_yp6c5"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_61kha"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 5
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_kp2l1"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_4hgvs"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_5nwme"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_s8bte"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3kc2q"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0tww0"]
+resource_local_to_scene = true
+shader = ExtResource("4_3mwia")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="BattleRoomActionContainer" type="MarginContainer" node_paths=PackedStringArray("attack_stat_hover_info_module", "attack_stat_container", "attack_button", "ability_button", "stance_button", "learned_ability_buttons")]
+offset_right = 293.0
+offset_bottom = 29.0
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_right = 15
+script = ExtResource("1_rytt1")
+attack_stat_hover_info_module = NodePath("ChoiceContainer/AttackStatContainer/HoverInfoModule")
+attack_stat_container = NodePath("ChoiceContainer/AttackStatContainer")
+attack_button = NodePath("ChoiceContainer/HBoxContainer/HBoxContainer/AttackButton")
+ability_button = NodePath("ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton")
+stance_button = NodePath("ChoiceContainer/HBoxContainer/HBoxContainer/StanceButton")
+learned_ability_buttons = [NodePath("ChoiceContainer/HBoxContainer/HBoxContainer2/LearnedAbilityButton"), NodePath("ChoiceContainer/HBoxContainer/HBoxContainer2/LearnedAbilityButton2")]
+
+[node name="ChoiceContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_constants/separation = 12
+
+[node name="AttackStatContainer" parent="ChoiceContainer" instance=ExtResource("1_2u3te")]
+custom_minimum_size = Vector2(51, 0)
+layout_mode = 2
+
+[node name="HoverInfoModule" parent="ChoiceContainer/AttackStatContainer" instance=ExtResource("3_d68uh")]
+translate = false
+bb_script = ExtResource("4_wmddq")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ChoiceContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 16
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ChoiceContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+
+[node name="StanceButton" parent="ChoiceContainer/HBoxContainer/HBoxContainer" groups=["main_joypad_selection"] instance=ExtResource("2_rytt1")]
+custom_minimum_size = Vector2(32, 0)
+layout_mode = 2
+text = ""
+disabled_texture = ExtResource("5_d68uh")
+pressed_texture = ExtResource("5_d68uh")
+default_texture = ExtResource("5_d68uh")
+hover_texture = ExtResource("5_d68uh")
+icon_texture = ExtResource("9_fffte")
+
+[node name="HoverInfoModule" parent="ChoiceContainer/HBoxContainer/HBoxContainer/StanceButton" index="0"]
+hover_info_name = "Stance"
+is_dynamic = true
+bb_script = ExtResource("7_cu5j4")
+
+[node name="OutlineNinePatchRect" parent="ChoiceContainer/HBoxContainer/HBoxContainer/StanceButton/OutlineMarginContainer" index="0"]
+material = SubResource("ShaderMaterial_3mwia")
+
+[node name="NinePatchRect" parent="ChoiceContainer/HBoxContainer/HBoxContainer/StanceButton" index="2"]
+material = SubResource("ShaderMaterial_d68uh")
+texture = ExtResource("5_d68uh")
+patch_margin_left = 6
+patch_margin_right = 6
+
+[node name="IconTextureRect" parent="ChoiceContainer/HBoxContainer/HBoxContainer/StanceButton/NinePatchRect" index="0"]
+material = SubResource("ShaderMaterial_wmddq")
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+texture = ExtResource("9_fffte")
+stretch_mode = 3
+
+[node name="MarginContainer" parent="ChoiceContainer/HBoxContainer/HBoxContainer/StanceButton" index="3"]
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="NameLabel" parent="ChoiceContainer/HBoxContainer/HBoxContainer/StanceButton/MarginContainer/HBoxContainer" index="1"]
+material = SubResource("ShaderMaterial_6qnhl")
+text = ""
+
+[node name="AttackButton" parent="ChoiceContainer/HBoxContainer/HBoxContainer" groups=["main_joypad_selection"] instance=ExtResource("2_rytt1")]
+custom_minimum_size = Vector2(75, 0)
+layout_mode = 2
+size_flags_horizontal = 3
+text = " "
+disabled_texture = SubResource("CompressedTexture2D_2pw1l")
+pressed_texture = SubResource("CompressedTexture2D_wiiaj")
+default_texture = SubResource("CompressedTexture2D_t2b0o")
+hover_texture = SubResource("CompressedTexture2D_iwiok")
+icon_texture = ExtResource("6_kp2l1")
+button_color = 5
+
+[node name="HoverInfoModule" parent="ChoiceContainer/HBoxContainer/HBoxContainer/AttackButton" index="0"]
+bb_script = ExtResource("3_fffte")
+
+[node name="OutlineNinePatchRect" parent="ChoiceContainer/HBoxContainer/HBoxContainer/AttackButton/OutlineMarginContainer" index="0"]
+material = SubResource("ShaderMaterial_yp6c5")
+
+[node name="NinePatchRect" parent="ChoiceContainer/HBoxContainer/HBoxContainer/AttackButton" index="2"]
+material = SubResource("ShaderMaterial_61kha")
+texture = SubResource("CompressedTexture2D_t2b0o")
+
+[node name="IconTextureRect" parent="ChoiceContainer/HBoxContainer/HBoxContainer/AttackButton/NinePatchRect" index="0"]
+material = SubResource("ShaderMaterial_kp2l1")
+custom_minimum_size = Vector2(16, 16)
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+rotation = -0.00187165
+texture = ExtResource("6_kp2l1")
+expand_mode = 0
+
+[node name="MarginContainer" parent="ChoiceContainer/HBoxContainer/HBoxContainer/AttackButton" index="3"]
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_right = 15
+
+[node name="NameLabel" parent="ChoiceContainer/HBoxContainer/HBoxContainer/AttackButton/MarginContainer/HBoxContainer" index="1"]
+material = SubResource("ShaderMaterial_4hgvs")
+text = " "
+is_whole = false
+translate = false
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="ChoiceContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="AbilityButton" parent="ChoiceContainer/HBoxContainer/HBoxContainer2" groups=["main_joypad_selection"] instance=ExtResource("2_rytt1")]
+layout_mode = 2
+text = ""
+disabled_texture = ExtResource("5_d68uh")
+pressed_texture = ExtResource("5_d68uh")
+default_texture = ExtResource("5_d68uh")
+hover_texture = ExtResource("5_d68uh")
+icon_texture = ExtResource("6_wmddq")
+
+[node name="HoverInfoModule" parent="ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton" index="0"]
+is_dynamic = true
+
+[node name="OutlineNinePatchRect" parent="ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton/OutlineMarginContainer" index="0"]
+material = SubResource("ShaderMaterial_5nwme")
+
+[node name="NinePatchRect" parent="ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton" index="2"]
+material = SubResource("ShaderMaterial_s8bte")
+custom_minimum_size = Vector2(0, 29)
+texture = ExtResource("5_d68uh")
+patch_margin_left = 16
+patch_margin_right = 16
+
+[node name="IconTextureRect" parent="ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton/NinePatchRect" index="0"]
+material = SubResource("ShaderMaterial_3kc2q")
+custom_minimum_size = Vector2(16, 16)
+offset_left = -8.0
+offset_top = -7.5
+offset_right = 8.0
+offset_bottom = 8.5
+texture = ExtResource("6_wmddq")
+
+[node name="MarginContainer" parent="ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton" index="3"]
+visible = false
+
+[node name="HBoxContainer" parent="ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton/MarginContainer" index="0"]
+visible = false
+
+[node name="HoldProgressBar" parent="ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton/MarginContainer/HBoxContainer/MarginContainer" index="0"]
+max_value = 0.0
+value = 0.0
+
+[node name="NameLabel" parent="ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton/MarginContainer/HBoxContainer" index="1"]
+visible = false
+material = SubResource("ShaderMaterial_0tww0")
+text = ""
+is_whole = false
+
+[node name="LearnedAbilityButton" parent="ChoiceContainer/HBoxContainer/HBoxContainer2" instance=ExtResource("12_cu5j4")]
+layout_mode = 2
+icon_texture = ExtResource("13_kp2l1")
+disabled = true
+
+[node name="LearnedAbilityButton2" parent="ChoiceContainer/HBoxContainer/HBoxContainer2" instance=ExtResource("12_cu5j4")]
+layout_mode = 2
+icon_texture = ExtResource("13_kp2l1")
+disabled = true
+
+[editable path="ChoiceContainer/HBoxContainer/HBoxContainer/StanceButton"]
+[editable path="ChoiceContainer/HBoxContainer/HBoxContainer/AttackButton"]
+[editable path="ChoiceContainer/HBoxContainer/HBoxContainer2/AbilityButton"]

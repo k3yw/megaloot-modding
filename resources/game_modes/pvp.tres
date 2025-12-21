@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="GameMode" load_steps=3 format=3 uid="uid://um8l4e3yyrim"]
+
+[ext_resource type="Script" uid="uid://dryrkbd524233" path="res://classes/resource/game_mode.gd" id="1_2ycnx"]
+[ext_resource type="Script" uid="uid://bnse3m4frmoh1" path="res://resources/game_mode_scripts/pvp.gd" id="1_dx0m7"]
+
+[resource]
+script = ExtResource("1_2ycnx")
+name = &"PvP"
+has_achievements = false
+team_based = true
+base_room_count = 8
+last_floor = -1
+game_mode_script = ExtResource("1_dx0m7")
+metadata/_custom_type_script = "uid://dryrkbd524233"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://biue2aymyitju"]
+
+[ext_resource type="Texture2D" uid="uid://r0qc708fbbdh" path="res://assets/textures/icons/magic_shield_icon.png" id="1_6li00"]
+[ext_resource type="Script" uid="uid://dfwk35j2m0ktj" path="res://resources/bb_scripts/magic_shield.gd" id="1_8236c"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_vxel4"]
+[ext_resource type="Resource" uid="uid://dkpwt31f2uxai" path="res://resources/status_effect_types/blessing.tres" id="4_7pa0t"]
+
+[resource]
+script = ExtResource("1_vxel4")
+name = "Magic Shield"
+icon = ExtResource("1_6li00")
+color = Color(0.541176, 0.694118, 1, 1)
+type = ExtResource("4_7pa0t")
+is_temporary = true
+is_percent = false
+limit = 3
+application_message = ""
+bb_script = ExtResource("1_8236c")

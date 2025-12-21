@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://cpg2ipx6be0m3"]
+
+[ext_resource type="Texture2D" uid="uid://hxo2j0eakdw6" path="res://assets/textures/icons/luck_icon.png" id="1_4pkmv"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_bwiat"]
+[ext_resource type="Script" uid="uid://clbn4xjsc3ws4" path="res://resources/bb_scripts/luck.gd" id="1_y8g4h"]
+[ext_resource type="Script" uid="uid://cixermtilwjyw" path="res://resources/stat_scripts/luck.gd" id="4_qe2lg"]
+
+[resource]
+script = ExtResource("1_bwiat")
+name = "Luck"
+icon = ExtResource("1_4pkmv")
+color = Color(7.21961e-07, 0.805206, 0.344767, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = 100
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_qe2lg")
+bb_script = ExtResource("1_y8g4h")
+metadata/_custom_type_script = "uid://ctq5askfk0kre"

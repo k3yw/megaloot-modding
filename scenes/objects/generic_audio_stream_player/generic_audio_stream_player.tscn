@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy4u2nykb3q18"]
+
+[ext_resource type="Script" uid="uid://b14tat75ufvs4" path="res://scenes/objects/generic_audio_stream_player/generic_audio_stream_player.gd" id="1_l7foy"]
+
+[node name="GenericAudioStreamPlayer" type="AudioStreamPlayer2D"]
+process_mode = 3
+autoplay = true
+script = ExtResource("1_l7foy")

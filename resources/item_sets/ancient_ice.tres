@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://g3um3f8ovjwk"]
+
+[ext_resource type="Script" uid="uid://cnnmqkvtylcf0" path="res://resources/bb_scripts/ancient_ice.gd" id="1_0b60a"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_e0ici"]
+[ext_resource type="Texture2D" uid="uid://cosewrxc4rc4o" path="res://assets/textures/icons/item_sets/ancient_ice.png" id="1_yfj5v"]
+
+[resource]
+script = ExtResource("1_e0ici")
+name = "Ancient Ice"
+icon = ExtResource("1_yfj5v")
+color = Color(0.494118, 0.827451, 1, 1)
+value = 0
+flow_cost = 25
+bb_script = ExtResource("1_0b60a")

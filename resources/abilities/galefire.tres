@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=4 format=3 uid="uid://mcibk6dgh7hj"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_lir5d"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_rnnvu"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_37ieu"]
+
+[resource]
+script = ExtResource("1_rnnvu")
+name = "Galefire"
+mana_cost = 1
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_37ieu")]([])
+bonus_stats_while_active = Array[ExtResource("1_lir5d")]([])
+quick_cast = false
+non_target = false
+value = 0

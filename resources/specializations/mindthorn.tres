@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/blackthorn_icon.png" id="2_72mgv"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_stj3s"]
+[ext_resource type="Resource" path="res://resources/item_sets/blackthorn.tres" id="3_b1y6k"]
+[ext_resource type="Resource" path="res://resources/stats/wisdom.tres" id="6_ma13f"]
+[ext_resource type="Resource" path="res://resources/stats/armor.tres" id="7_5beh8"]
+[ext_resource type="Resource" path="res://resources/stats/total_attacks.tres" id="8_er4d0"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_gwo5m"]
+
+[resource]
+script = ExtResource("2_stj3s")
+name = "Mindthorn"
+color = Color(0.4851, 0.527835, 0.77, 1)
+icon = ExtResource("2_72mgv")
+original_item_set = ExtResource("3_b1y6k")
+completed_floor_to_unlock = 3
+stats = Array[ExtResource("9_gwo5m")]([ExtResource("6_ma13f"), ExtResource("7_5beh8"), ExtResource("8_er4d0")])
+stats_new = Array[ExtResource("9_gwo5m")]([ExtResource("6_ma13f"), ExtResource("7_5beh8"), ExtResource("8_er4d0")])

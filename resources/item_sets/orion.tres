@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=6 format=3 uid="uid://svvuieiqjue"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_7uu7c"]
+[ext_resource type="Texture2D" uid="uid://bw7ek8xalhv8f" path="res://assets/textures/icons/item_sets/orion_icon.png" id="1_66qsk"]
+[ext_resource type="Script" uid="uid://c0urhpoumi66n" path="res://resources/bb_scripts/orion.gd" id="1_slkwd"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_nmpuy"]
+[ext_resource type="Script" uid="uid://bcnlh6kj61iqo" path="res://resources/item_set_scripts/orion.gd" id="3_y2d8o"]
+
+[resource]
+script = ExtResource("1_7uu7c")
+name = "Orion"
+icon = ExtResource("1_66qsk")
+color = Color(0.726563, 0.457031, 0.414063, 1)
+game_logic_script = ExtResource("3_y2d8o")
+bb_script = ExtResource("1_slkwd")
+bonus_stats = Array[ExtResource("2_nmpuy")]([])

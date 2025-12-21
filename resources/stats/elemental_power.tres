@@ -1,0 +1,63 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://t41a6nfn5j50"]
+
+[ext_resource type="Texture2D" uid="uid://dni8tqkaj0q4p" path="res://assets/textures/icons/stats/elemental_power.png" id="1_q1ah0"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_cjxfr"]
+[ext_resource type="Script" uid="uid://c8vdrkoo7t7no" path="res://resources/stat_scripts/elemental_power.gd" id="3_kknji"]
+
+[sub_resource type="GDScript" id="GDScript_1veme"]
+script/source = "extends BBScript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+func get_bb_container_data(_args: Array = []) -> Array[BBContainerData]:
+	var bb_container_data: Array[BBContainerData] = []
+	
+	
+	bb_container_data.push_back(BBContainerData.new(\"Multiplies the following: \", Color.DARK_GRAY))
+	bb_container_data.push_back(BBContainerData.new(\"\\n\"))
+	bb_container_data.push_back(BBContainerData.new(\"<.>\", Color.DARK_GRAY))
+	bb_container_data.push_back(BBContainerData.new(\" \", Color.DARK_GRAY))
+	bb_container_data.push_back(Stats.get_bb_container_data(Stats.FREEZE_ATTACK))
+	bb_container_data.push_back(BBContainerData.new(\"\\n\"))
+	bb_container_data.push_back(BBContainerData.new(\"<.>\", Color.DARK_GRAY))
+	bb_container_data.push_back(BBContainerData.new(\" \", Color.DARK_GRAY))
+	bb_container_data.push_back(Stats.get_bb_container_data(Stats.CINDER_DAMAGE))
+	bb_container_data.push_back(BBContainerData.new(\"\\n\"))
+	bb_container_data.push_back(BBContainerData.new(\"<.>\", Color.DARK_GRAY))
+	bb_container_data.push_back(BBContainerData.new(\" \", Color.DARK_GRAY))
+	bb_container_data.push_back(Stats.get_bb_container_data(Stats.ELECTRICITY))
+	bb_container_data.push_back(BBContainerData.new(\"\\n\"))
+	bb_container_data.push_back(BBContainerData.new(\"<.>\", Color.DARK_GRAY))
+	bb_container_data.push_back(BBContainerData.new(\" \", Color.DARK_GRAY))
+	bb_container_data.push_back(Stats.get_bb_container_data(Stats.TOXICITY))
+	
+	
+	return bb_container_data
+"
+
+[resource]
+script = ExtResource("2_cjxfr")
+name = "Elemental Power"
+icon = ExtResource("1_q1ah0")
+color = Color(0.52549, 0.270588, 0.501961, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_kknji")
+bb_script = SubResource("GDScript_1veme")

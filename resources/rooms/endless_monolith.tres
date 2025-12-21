@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RoomResource" load_steps=5 format=3 uid="uid://by7behh5iuxfx"]
+
+[ext_resource type="PackedScene" uid="uid://c8aw4wq46ffuu" path="res://scenes/rooms/monolith_room.tscn" id="1_5byec"]
+[ext_resource type="PackedScene" uid="uid://ggbun08ooydw" path="res://scenes/ui/room_action_containers/endless_monolith_action_container/endless_monolith_action_container.tscn" id="1_a7q48"]
+[ext_resource type="Script" uid="uid://dercbl3566y8y" path="res://classes/resource/room_resource.gd" id="2_a7q48"]
+[ext_resource type="Script" uid="uid://d07cmt7cu1dos" path="res://resources/room_scripts/endless_monolith.gd" id="2_v31yf"]
+
+[resource]
+script = ExtResource("2_a7q48")
+restless = false
+scene = ExtResource("1_5byec")
+action_container_scene = ExtResource("1_a7q48")
+processor_script = ExtResource("2_v31yf")
+metadata/_custom_type_script = "uid://dercbl3566y8y"

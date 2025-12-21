@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Trial" load_steps=5 format=3 uid="uid://cs8lqig4ggmu"]
+
+[ext_resource type="Script" uid="uid://kxbvhomm07eq" path="res://resources/bb_scripts/swarm.gd" id="1_05vvy"]
+[ext_resource type="Script" uid="uid://dc7u05eyry0nl" path="res://classes/resource/trial.gd" id="2_frukk"]
+[ext_resource type="Texture2D" uid="uid://b2xkvkubuw3ve" path="res://assets/textures/icons/swarm_trial.png" id="3_3sgf1"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="4_uuu3f"]
+
+[resource]
+script = ExtResource("2_frukk")
+name = "Swarm"
+icon = ExtResource("3_3sgf1")
+stats = Array[ExtResource("4_uuu3f")]([])
+bb_script = ExtResource("1_05vvy")

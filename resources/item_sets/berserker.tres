@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=6 format=3 uid="uid://iwcwdts18a43"]
+
+[ext_resource type="Texture2D" uid="uid://2tftrrcepwgh" path="res://assets/textures/icons/item_sets/berserker_icon.png" id="1_8em5g"]
+[ext_resource type="Script" uid="uid://cuq05xweoactt" path="res://resources/bb_scripts/berserker.gd" id="1_jg6er"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_l85m0"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_vb430"]
+[ext_resource type="Script" uid="uid://bjbdf5nqo2a6w" path="res://resources/item_set_scripts/berserker.gd" id="3_vb430"]
+
+[resource]
+script = ExtResource("1_l85m0")
+name = "Berserker"
+icon = ExtResource("1_8em5g")
+color = Color(0.309804, 0.305882, 0.290196, 1)
+game_logic_script = ExtResource("3_vb430")
+bb_script = ExtResource("1_jg6er")
+bonus_stats = Array[ExtResource("2_vb430")]([])

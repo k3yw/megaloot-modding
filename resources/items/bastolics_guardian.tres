@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://yx7af36oa5rm"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_cc0cg"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_ndwmq"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="4_dycer"]
+[ext_resource type="Resource" uid="uid://b3vtyfu6kkeou" path="res://resources/item_sets/bastolic.tres" id="5_1opet"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="6_h8l81"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_ydvn2"]
+[ext_resource type="Texture2D" uid="uid://bngg1fm8hry3o" path="res://assets/textures/items/bastolics_chestplate.png" id="7_fbxfo"]
+
+[sub_resource type="Resource" id="Resource_4vnv8"]
+script = ExtResource("1_cc0cg")
+boosting_sets = Array[ExtResource("6_ydvn2")]([ExtResource("5_1opet")])
+resource = ExtResource("4_dycer")
+amount = 6.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_ndwmq")
+name = &"Bastolic\'s Guardian"
+texture = ExtResource("7_fbxfo")
+description = ""
+socket_type = ExtResource("6_h8l81")
+set_resources = Array[ExtResource("6_ydvn2")]([ExtResource("5_1opet")])
+bonus_stats = Array[ExtResource("1_cc0cg")]([SubResource("Resource_4vnv8")])
+extra_price = 12.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

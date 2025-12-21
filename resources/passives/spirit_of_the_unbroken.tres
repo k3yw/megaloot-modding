@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=3 format=3 uid="uid://cc4cj57jsucjh"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_m7heq"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="1_oktp2"]
+
+[resource]
+script = ExtResource("1_oktp2")
+name = "Spirit of the Unbroken"
+bonus_stats = Array[ExtResource("1_m7heq")]([])

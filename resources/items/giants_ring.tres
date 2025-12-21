@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://8eeryyixg080"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_rf0tm"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_lhl7a"]
+[ext_resource type="Resource" uid="uid://clysfjs400lm7" path="res://resources/stats/toughness.tres" id="3_xvp3d"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_tl7a4"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_wkjaj"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="6_sqipq"]
+[ext_resource type="Texture2D" uid="uid://c78y6gs33shu5" path="res://assets/textures/items/giants_ring.png" id="7_2c3fp"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="7_t7fa0"]
+
+[sub_resource type="Resource" id="Resource_tmsy8"]
+script = ExtResource("1_rf0tm")
+boosting_sets = Array[ExtResource("5_wkjaj")]([])
+resource = ExtResource("2_lhl7a")
+amount = 42.0
+is_modifier = true
+
+[sub_resource type="Resource" id="Resource_8ni5s"]
+script = ExtResource("1_rf0tm")
+boosting_sets = Array[ExtResource("5_wkjaj")]([null])
+resource = ExtResource("3_xvp3d")
+amount = 8.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_tl7a4")
+name = &"Giants Ring"
+texture = ExtResource("7_2c3fp")
+description = ""
+socket_type = ExtResource("7_t7fa0")
+set_resources = Array[ExtResource("5_wkjaj")]([ExtResource("6_sqipq")])
+bonus_stats = Array[ExtResource("1_rf0tm")]([SubResource("Resource_tmsy8"), SubResource("Resource_8ni5s")])
+extra_price = 284.0
+spawn_floor = 12
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

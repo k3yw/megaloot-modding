@@ -1,0 +1,33 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://rqnni6rwc2jl"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_d6klu"]
+[ext_resource type="Resource" uid="uid://uxwdne2hyfvl" path="res://resources/stats/critical_damage.tres" id="2_w8urk"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_tqvgv"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_l0dx1"]
+[ext_resource type="Resource" uid="uid://vgmhf2tlhfmn" path="res://resources/item_sets/hunter.tres" id="6_dnjji"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="6_vdnp5"]
+[ext_resource type="Texture2D" uid="uid://b5k17cogev8f" path="res://assets/textures/items/hunters_boots.png" id="7_1hnb6"]
+
+[sub_resource type="Resource" id="Resource_nji7g"]
+script = ExtResource("1_d6klu")
+boosting_sets = Array[ExtResource("5_l0dx1")]([])
+resource = ExtResource("2_w8urk")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_tqvgv")
+name = &"Hunter\'s Boots"
+texture = ExtResource("7_1hnb6")
+socket_type = ExtResource("6_vdnp5")
+set_resources = Array[ExtResource("5_l0dx1")]([ExtResource("6_dnjji")])
+bonus_stats = Array[ExtResource("1_d6klu")]([SubResource("Resource_nji7g")])
+extra_price = 2.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

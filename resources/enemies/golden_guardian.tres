@@ -1,0 +1,68 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=22 format=3 uid="uid://q615rfg4l5na"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_d4h45"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_aakfl"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_ous7g"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="4_dpksf"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_v20v8"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_2l2r6"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_gosj0"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_8vj4j"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="6_dr72s"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="7_5xh86"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="7_chomq"]
+[ext_resource type="Resource" uid="uid://dd0k0rtlnd1gw" path="res://resources/passives/golden_altruism.tres" id="9_2k2uo"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="11_mvqws"]
+[ext_resource type="Resource" uid="uid://iysajyljgjab" path="res://resources/status_effects/golden_heart.tres" id="12_w6m3r"]
+[ext_resource type="Texture2D" uid="uid://dp37na4k8db0y" path="res://assets/textures/enemies/golden_guardian.png" id="14_8jg1s"]
+
+[sub_resource type="Resource" id="Resource_lwkuc"]
+script = ExtResource("3_ous7g")
+boosting_sets = Array[ExtResource("2_aakfl")]([])
+resource = ExtResource("4_dpksf")
+amount = 24.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_6rgwl"]
+script = ExtResource("3_ous7g")
+boosting_sets = Array[ExtResource("2_aakfl")]([])
+resource = ExtResource("5_2l2r6")
+amount = 48.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_hauvg"]
+script = ExtResource("3_ous7g")
+boosting_sets = Array[ExtResource("2_aakfl")]([])
+resource = ExtResource("6_dr72s")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ln3ui"]
+script = ExtResource("3_ous7g")
+boosting_sets = Array[ExtResource("2_aakfl")]([])
+resource = ExtResource("7_5xh86")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_jyuta"]
+script = ExtResource("11_mvqws")
+resource = ExtResource("12_w6m3r")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_3sn7s"]
+script = ExtResource("6_8vj4j")
+status_effects = Array[ExtResource("11_mvqws")]([SubResource("Resource_jyuta")])
+
+[resource]
+script = ExtResource("5_gosj0")
+name = "Golden Guardian"
+texture = ExtResource("14_8jg1s")
+floor_number = 13
+flying = false
+starting_status_effects = Array[ExtResource("6_8vj4j")]([SubResource("Resource_3sn7s")])
+active_item_sets = Array[ExtResource("2_aakfl")]([])
+stats_per_level = Array[ExtResource("7_chomq")]([])
+base_stats = Array[ExtResource("3_ous7g")]([SubResource("Resource_lwkuc"), SubResource("Resource_6rgwl"), SubResource("Resource_hauvg"), SubResource("Resource_ln3ui")])
+abilities = Array[ExtResource("1_d4h45")]([])
+passives = Array[ExtResource("4_v20v8")]([ExtResource("9_2k2uo")])
+hide_stats = false

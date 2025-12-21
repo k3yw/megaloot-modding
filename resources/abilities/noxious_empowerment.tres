@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=4 format=3 uid="uid://cpkeeitxtmyo7"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_gtkao"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_kt3sq"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_bw5x1"]
+
+[resource]
+script = ExtResource("1_kt3sq")
+name = "Noxious Empowerment"
+mana_cost = 1
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_bw5x1")]([])
+bonus_stats_while_active = Array[ExtResource("1_gtkao")]([])
+quick_cast = false
+non_target = true
+value = 0

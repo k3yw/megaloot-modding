@@ -1,0 +1,194 @@
+[gd_scene load_steps=13 format=3 uid="uid://cprvnww7d61ax"]
+
+[ext_resource type="Script" uid="uid://dw5egx6hq7f56" path="res://scenes/ui/partner_container/partner_container.gd" id="1_mm6sw"]
+[ext_resource type="Texture2D" uid="uid://cdyj6xng2m53r" path="res://assets/textures/ui/partner_border.png" id="2_l51dq"]
+[ext_resource type="PackedScene" uid="uid://c5xbfhdhlrk5i" path="res://scenes/ui/adventurer_portrait/adventurer_portrait.tscn" id="3_kct2s"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="4_0inen"]
+[ext_resource type="Texture2D" uid="uid://chi2dbgn1rrrs" path="res://assets/textures/icons/dismantle_icon.png" id="5_ffj4p"]
+[ext_resource type="Texture2D" uid="uid://73arh1ada6cq" path="res://assets/textures/ui/lock_icon.png" id="6_bs0td"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2lmv2"]
+resource_local_to_scene = true
+atlas = ExtResource("2_l51dq")
+region = Rect2(0, 0, 38, 38)
+
+[sub_resource type="Shader" id="Shader_nfh3g"]
+code = "shader_type canvas_item;
+
+uniform float alpha: hint_range(0.0, 1.0) = 1.0;
+uniform vec3 modulate: source_color = vec3(1.0);
+uniform float ratio: hint_range(0.0, 1.0, 0.1);
+
+uniform float wobble: hint_range(0.0, 10.0, 0.1);
+
+uniform sampler2D SCREEN_TEXTURE: hint_screen_texture;
+
+void fragment() {
+	vec2 original_uv = SCREEN_UV;
+	vec2 uv = SCREEN_UV;
+	vec2 final_uv = SCREEN_UV;
+
+
+	if (wobble > 0.0){
+
+			uv = (uv - 0.5) + 0.5;
+
+			uv.x += sin((uv.y * 35.0) + (TIME * 5.0)) * 0.01;
+
+			final_uv = mix(original_uv, uv, wobble);
+
+	}
+
+	vec4 color = texture(SCREEN_TEXTURE, final_uv);
+
+	COLOR.rgb = color.rgb * modulate;
+	COLOR.a = color.a * alpha;
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_o4r88"]
+resource_local_to_scene = true
+shader = SubResource("Shader_nfh3g")
+shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/ratio = 0.0
+shader_parameter/wobble = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lgcwu"]
+resource_local_to_scene = true
+shader = ExtResource("4_0inen")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 45.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_28k2c"]
+shader = ExtResource("4_0inen")
+shader_parameter/type = 3
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 1.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 1
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ym7mr"]
+shader = ExtResource("4_0inen")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="PartnerContainer" type="MarginContainer" node_paths=PackedStringArray("adventurer_portrait", "border_texture_rect", "action_texture_rect", "lock_texture_rect")]
+offset_right = 32.0
+offset_bottom = 32.0
+script = ExtResource("1_mm6sw")
+adventurer_portrait = NodePath("AdventurerPortrait")
+border_texture_rect = NodePath("BorderTextureRect")
+action_texture_rect = NodePath("ActionTextureRect")
+lock_texture_rect = NodePath("MarginContainer/LockTextureRect")
+
+[node name="BorderTextureRect" type="TextureRect" parent="."]
+layout_mode = 2
+texture = SubResource("AtlasTexture_2lmv2")
+
+[node name="AdventurerPortrait" parent="." instance=ExtResource("3_kct2s")]
+layout_mode = 2
+
+[node name="CanvasGroup" parent="AdventurerPortrait/CenterContainer/Control" index="0"]
+material = SubResource("ShaderMaterial_o4r88")
+
+[node name="BorderTextureRect" parent="AdventurerPortrait/CenterContainer" index="1"]
+visible = false
+
+[node name="SetTextureRect" parent="AdventurerPortrait/CenterContainer/BorderTextureRect" index="1"]
+material = SubResource("ShaderMaterial_lgcwu")
+
+[node name="ActionTextureRect" type="TextureRect" parent="."]
+material = SubResource("ShaderMaterial_28k2c")
+layout_mode = 2
+texture = ExtResource("5_ffj4p")
+stretch_mode = 3
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_bottom = -34
+
+[node name="LockTextureRect" type="TextureRect" parent="MarginContainer"]
+visible = false
+material = SubResource("ShaderMaterial_ym7mr")
+layout_mode = 2
+texture = ExtResource("6_bs0td")
+stretch_mode = 3
+
+[connection signal="visibility_changed" from="MarginContainer/LockTextureRect" to="." method="_on_lock_texture_rect_visibility_changed"]
+
+[editable path="AdventurerPortrait"]

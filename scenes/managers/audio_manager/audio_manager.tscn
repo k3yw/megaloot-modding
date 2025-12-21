@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://o5b1ucva05e8"]
+
+[ext_resource type="Script" uid="uid://bn7rdllcpfsm2" path="res://scenes/managers/audio_manager/audio_manager.gd" id="1_jecb8"]
+
+[node name="AudioManager" type="Node2D" node_paths=PackedStringArray("music_player_priority")]
+process_mode = 3
+script = ExtResource("1_jecb8")
+music_player_priority = [NodePath("MusicStreamPlayer"), NodePath("MusicStreamPlayer2")]
+
+[node name="MusicStreamPlayer" type="AudioStreamPlayer" parent="."]
+bus = &"Music"
+
+[node name="MusicStreamPlayer2" type="AudioStreamPlayer" parent="."]
+bus = &"Music"

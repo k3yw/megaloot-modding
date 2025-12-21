@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://cmqtbjx5274b4"]
+
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="1_0505s"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="1_rffim"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_t6td1"]
+[ext_resource type="Texture2D" uid="uid://cv5477qt57rcc" path="res://assets/textures/items/poor_mans_helmet.png" id="3_3ixao"]
+[ext_resource type="Resource" uid="uid://bbqeh37dmoqi4" path="res://resources/passives/edge_of_death.tres" id="3_fmgbg"]
+[ext_resource type="Resource" uid="uid://cyku26uwvyikp" path="res://resources/item_sets/poverty.tres" id="6_f6ay6"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_4dftf"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_ruiox"]
+
+[sub_resource type="Resource" id="Resource_4ejw5"]
+script = ExtResource("2_t6td1")
+boosting_sets = Array[ExtResource("7_ruiox")]([])
+resource = ExtResource("1_0505s")
+amount = 2.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_rffim")
+name = &"Poor Man\'s Helmet"
+texture = ExtResource("3_3ixao")
+description = ""
+socket_type = ExtResource("7_4dftf")
+set_resources = Array[ExtResource("7_ruiox")]([ExtResource("6_f6ay6")])
+passive = ExtResource("3_fmgbg")
+bonus_stats = Array[ExtResource("2_t6td1")]([SubResource("Resource_4ejw5")])
+extra_price = 5.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

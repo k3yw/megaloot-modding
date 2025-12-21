@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=16 format=3 uid="uid://d3olwlre8xv81"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_jclid"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_n06v8"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_xicn3"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_f5ilp"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_gp3u3"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="3_4uhby"]
+[ext_resource type="Texture2D" uid="uid://b3emamqjssqq5" path="res://assets/textures/enemies/morizon.png" id="4_4h3tx"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="5_gtv4l"]
+[ext_resource type="Resource" uid="uid://etuw3wsnm16k" path="res://resources/abilities/multi_magic_shield.tres" id="6_txl2e"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_ru78j"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_aon7w"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_2rocy"]
+
+[sub_resource type="Resource" id="Resource_t7qpb"]
+script = ExtResource("2_gp3u3")
+boosting_sets = Array[ExtResource("2_f5ilp")]([])
+resource = ExtResource("1_n06v8")
+amount = 8.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_pkmsc"]
+script = ExtResource("2_gp3u3")
+boosting_sets = Array[ExtResource("2_f5ilp")]([])
+resource = ExtResource("3_4uhby")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_mwydv"]
+script = ExtResource("2_gp3u3")
+boosting_sets = Array[ExtResource("2_f5ilp")]([])
+resource = ExtResource("5_gtv4l")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_xicn3")
+name = "Morizon"
+texture = ExtResource("4_4h3tx")
+floor_number = 10
+flying = false
+starting_status_effects = Array[ExtResource("8_aon7w")]([])
+active_item_sets = Array[ExtResource("2_f5ilp")]([])
+stats_per_level = Array[ExtResource("11_2rocy")]([])
+base_stats = Array[ExtResource("2_gp3u3")]([SubResource("Resource_t7qpb"), SubResource("Resource_pkmsc"), SubResource("Resource_mwydv")])
+abilities = Array[ExtResource("1_jclid")]([ExtResource("6_txl2e")])
+passives = Array[ExtResource("7_ru78j")]([])
+hide_stats = false

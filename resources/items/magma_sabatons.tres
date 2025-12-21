@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://bfoyj6nmd3xdn"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_fhqf7"]
+[ext_resource type="Resource" uid="uid://1n584t8hda8s" path="res://resources/item_sets/magma.tres" id="2_wx2dg"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_uhhml"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="4_npu3q"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_ilduw"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_pla70"]
+[ext_resource type="Texture2D" uid="uid://dowut7jl0uqbf" path="res://assets/textures/items/magma_sabatons.png" id="7_ulf75"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="7_w26or"]
+
+[sub_resource type="Resource" id="Resource_avlem"]
+script = ExtResource("1_fhqf7")
+boosting_sets = Array[ExtResource("6_pla70")]([ExtResource("2_wx2dg")])
+resource = ExtResource("3_uhhml")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0coyr"]
+script = ExtResource("1_fhqf7")
+boosting_sets = Array[ExtResource("6_pla70")]([])
+resource = ExtResource("4_npu3q")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_ilduw")
+name = &"Magma Sabatons"
+texture = ExtResource("7_ulf75")
+description = ""
+socket_type = ExtResource("7_w26or")
+set_resources = Array[ExtResource("6_pla70")]([ExtResource("2_wx2dg")])
+bonus_stats = Array[ExtResource("1_fhqf7")]([SubResource("Resource_avlem"), SubResource("Resource_0coyr")])
+extra_price = 57.0
+spawn_floor = 15
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

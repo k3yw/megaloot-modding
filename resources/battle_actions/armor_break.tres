@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=2 format=3 uid="uid://cpwd26v5al7gl"]
+
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_fbohn"]
+
+[resource]
+script = ExtResource("1_fbohn")
+name = "Armor Break"
+color = Color(0, 0, 0, 1)
+use_limit = 0
+popup_color = Color(0.45098, 0.4, 0.498039, 1)
+popup_text = "Armor Break!"
+popup_delay = 0.0
+screen_shake = true
+is_hit = true

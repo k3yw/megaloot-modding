@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://ikgq5lx5b8ua"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_0kuan"]
+[ext_resource type="Script" uid="uid://cabcyjdqdao0f" path="res://resources/bb_scripts/power.gd" id="1_ht3mh"]
+[ext_resource type="Texture2D" uid="uid://c5k8khhbktqm8" path="res://assets/textures/icons/power_icon.png" id="1_w31s1"]
+[ext_resource type="Script" uid="uid://ds6kecw3qqn04" path="res://resources/stat_scripts/power.gd" id="3_u4ar0"]
+
+[resource]
+script = ExtResource("1_0kuan")
+name = "Power"
+icon = ExtResource("1_w31s1")
+color = Color(0.721569, 0.321569, 0.517647, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_u4ar0")
+bb_script = ExtResource("1_ht3mh")

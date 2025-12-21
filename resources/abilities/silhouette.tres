@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=9 format=3 uid="uid://cohyqygssyj5q"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_3lpas"]
+[ext_resource type="Script" uid="uid://rs7em5jjlm66" path="res://resources/ability_scripts/silhouette.gd" id="1_7imb2"]
+[ext_resource type="Script" uid="uid://db4jf51b4ce8p" path="res://resources/bb_scripts/silhouette.gd" id="2_1xg55"]
+[ext_resource type="Texture2D" uid="uid://cxryow66g4btw" path="res://assets/textures/icons/elusive_icon.png" id="2_dnr54"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_wnkjb"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_dnr54"]
+[ext_resource type="Resource" uid="uid://c5prqtrk30rd2" path="res://resources/status_effects/elusive.tres" id="7_1xg55"]
+
+[sub_resource type="Resource" id="Resource_me2bf"]
+script = ExtResource("3_dnr54")
+resource = ExtResource("7_1xg55")
+amount = 1
+metadata/_custom_type_script = "uid://b3b5vhhh7jge1"
+
+[resource]
+script = ExtResource("2_wnkjb")
+name = "Silhouette"
+icon = ExtResource("2_dnr54")
+mana_cost = 0
+use_limit = 1
+status_effects_on_activation = Array[ExtResource("3_dnr54")]([SubResource("Resource_me2bf")])
+bonus_stats_while_active = Array[ExtResource("1_3lpas")]([])
+quick_cast = false
+non_target = true
+to_attack = true
+value = 0
+ability_script = ExtResource("1_7imb2")
+bb_script = ExtResource("2_1xg55")
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

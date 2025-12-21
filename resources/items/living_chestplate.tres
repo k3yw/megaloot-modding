@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://cdek3s6dn1j2b"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_i66fg"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="2_3vr3i"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_m4ai0"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_4dib1"]
+[ext_resource type="Resource" uid="uid://cyctakuu2fani" path="res://resources/item_sets/flesh.tres" id="6_slb4e"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="7_k5o47"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_l3yut"]
+[ext_resource type="Texture2D" uid="uid://cfjbueo1u65jq" path="res://assets/textures/items/living_chestplate.png" id="8_q4pir"]
+
+[sub_resource type="Resource" id="Resource_e7sk5"]
+script = ExtResource("1_i66fg")
+boosting_sets = Array[ExtResource("7_l3yut")]([ExtResource("6_slb4e")])
+resource = ExtResource("5_4dib1")
+amount = 24.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_xmg0n"]
+script = ExtResource("1_i66fg")
+boosting_sets = Array[ExtResource("7_l3yut")]([])
+resource = ExtResource("2_3vr3i")
+amount = 8.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_m4ai0")
+name = &"Living Chestplate"
+texture = ExtResource("8_q4pir")
+description = ""
+socket_type = ExtResource("7_k5o47")
+set_resources = Array[ExtResource("7_l3yut")]([ExtResource("6_slb4e")])
+bonus_stats = Array[ExtResource("1_i66fg")]([SubResource("Resource_e7sk5"), SubResource("Resource_xmg0n")])
+extra_price = 8.0
+spawn_floor = 7
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

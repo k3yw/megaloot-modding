@@ -1,0 +1,130 @@
+[gd_scene load_steps=9 format=3 uid="uid://d2xul4u0iajpd"]
+
+[ext_resource type="PackedScene" uid="uid://ogbgex3ctstg" path="res://scenes/ui/square_button/square_button.tscn" id="1_pwq6x"]
+[ext_resource type="Script" uid="uid://c0umwmplebvf5" path="res://scenes/ui/market_refresh_button/market_refresh_button.gd" id="2_26yqx"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_dktkb"]
+[ext_resource type="Script" uid="uid://euwn4xvd3dh0" path="res://resources/bb_scripts/market_refresh_button.gd" id="3_3pbwl"]
+[ext_resource type="Texture2D" uid="uid://br6j8xbwx0x4i" path="res://assets/textures/icons/refresh_icon.png" id="3_ebtev"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gmkrv"]
+resource_local_to_scene = true
+shader = ExtResource("2_dktkb")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lrve7"]
+resource_local_to_scene = true
+shader = ExtResource("2_dktkb")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m7uit"]
+resource_local_to_scene = true
+shader = ExtResource("2_dktkb")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="MarketRefreshButton" instance=ExtResource("1_pwq6x")]
+script = ExtResource("2_26yqx")
+icon_texture = ExtResource("3_ebtev")
+button_color = 6
+debounce_time = 0.5
+
+[node name="HoverInfoModule" parent="." index="1"]
+hover_info_name = "REFRESH MARKET"
+hover_info_name_color = Color(0.662745, 0.662745, 0.662745, 1)
+is_dynamic = true
+bb_script = ExtResource("3_3pbwl")
+
+[node name="OutlineNinePatchRect" parent="OutlineMarginContainer" index="0"]
+material = SubResource("ShaderMaterial_gmkrv")
+
+[node name="IconTextureRect" parent="NinePatchRect" index="0"]
+material = SubResource("ShaderMaterial_lrve7")
+pivot_offset = Vector2(10, 10)
+texture = ExtResource("3_ebtev")
+
+[node name="HoldProgressBar" parent="MarginContainer/HBoxContainer/MarginContainer" index="0"]
+max_value = 0.0
+value = 0.0
+
+[node name="NameLabel" parent="MarginContainer/HBoxContainer" index="1"]
+material = SubResource("ShaderMaterial_m7uit")

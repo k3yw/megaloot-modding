@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://covee1qmh0lc1"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_25xse"]
+[ext_resource type="Resource" uid="uid://i7el4x0fmvyc" path="res://resources/stats/crit_chance.tres" id="2_7kru1"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="3_hbr0n"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_m0u67"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_lqs63"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="7_2vgbk"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="7_n0c0b"]
+[ext_resource type="Texture2D" uid="uid://cowjenvyj40dx" path="res://assets/textures/items/shadow_cloak.png" id="8_bl5t8"]
+
+[sub_resource type="Resource" id="Resource_f753u"]
+script = ExtResource("1_25xse")
+boosting_sets = Array[ExtResource("6_lqs63")]([])
+resource = ExtResource("3_hbr0n")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_l6oeg"]
+script = ExtResource("1_25xse")
+boosting_sets = Array[ExtResource("6_lqs63")]([null])
+resource = ExtResource("2_7kru1")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_m0u67")
+name = &"Shadow Cloak"
+texture = ExtResource("8_bl5t8")
+description = ""
+socket_type = ExtResource("7_n0c0b")
+set_resources = Array[ExtResource("6_lqs63")]([ExtResource("7_2vgbk")])
+bonus_stats = Array[ExtResource("1_25xse")]([SubResource("Resource_f753u"), SubResource("Resource_l6oeg")])
+extra_price = 17.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

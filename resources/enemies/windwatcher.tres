@@ -1,0 +1,64 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=19 format=3 uid="uid://xkx43jlryxbo"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_cq68l"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_reb45"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_ejj5k"]
+[ext_resource type="Resource" uid="uid://yafmbyqx3xa6" path="res://resources/item_sets/swiftness.tres" id="3_uredl"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_y8pps"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_cxp0i"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_m5f6q"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_amoos"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="6_sclw8"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="7_uredl"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="7_xpirj"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="8_puvnl"]
+[ext_resource type="Texture2D" uid="uid://d4fcfpnovycjf" path="res://assets/textures/enemies/windwatcher.png" id="8_reb45"]
+[ext_resource type="Resource" uid="uid://gklqo0ag42mv" path="res://resources/passives/winds_grace.tres" id="10_cxp0i"]
+
+[sub_resource type="Resource" id="Resource_xln06"]
+script = ExtResource("3_ejj5k")
+boosting_sets = Array[ExtResource("2_reb45")]([])
+resource = ExtResource("5_cxp0i")
+amount = 25.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_p75xp"]
+script = ExtResource("3_ejj5k")
+boosting_sets = Array[ExtResource("2_reb45")]([])
+resource = ExtResource("6_sclw8")
+amount = 9.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_i5m13"]
+script = ExtResource("3_ejj5k")
+boosting_sets = Array[ExtResource("2_reb45")]([])
+resource = ExtResource("7_xpirj")
+amount = 10.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_yv2mn"]
+script = ExtResource("3_ejj5k")
+boosting_sets = Array[ExtResource("2_reb45")]([])
+resource = ExtResource("8_puvnl")
+amount = 125.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("5_m5f6q")
+name = "Windwatcher"
+texture = ExtResource("8_reb45")
+floor_number = 26
+flying = false
+starting_status_effects = Array[ExtResource("6_amoos")]([])
+active_item_sets = Array[ExtResource("2_reb45")]([ExtResource("3_uredl")])
+stats_per_level = Array[ExtResource("7_uredl")]([])
+base_stats = Array[ExtResource("3_ejj5k")]([SubResource("Resource_xln06"), SubResource("Resource_p75xp"), SubResource("Resource_i5m13"), SubResource("Resource_yv2mn")])
+abilities = Array[ExtResource("1_cq68l")]([])
+passives = Array[ExtResource("4_y8pps")]([ExtResource("10_cxp0i")])
+is_unique = false
+hide_stats = false
+metadata/_custom_type_script = "uid://p2rd2m1ktgi5"

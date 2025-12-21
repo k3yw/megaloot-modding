@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://nw6grvajnhns"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_2yr7p"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_rwr6c"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_x6li7"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="6_5aemk"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_cp3jp"]
+[ext_resource type="Resource" uid="uid://dtedu6wftg7o5" path="res://resources/item_sets/mercenary.tres" id="7_hmhjg"]
+[ext_resource type="Texture2D" uid="uid://dpr0v3qmyl8i0" path="res://assets/textures/items/leather_chestplate.png" id="8_83bc6"]
+
+[sub_resource type="Resource" id="Resource_vg34q"]
+script = ExtResource("1_2yr7p")
+boosting_sets = Array[ExtResource("6_cp3jp")]([])
+resource = ExtResource("3_rwr6c")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_x6li7")
+name = &"Leather Chestplate"
+texture = ExtResource("8_83bc6")
+description = ""
+socket_type = ExtResource("6_5aemk")
+set_resources = Array[ExtResource("6_cp3jp")]([ExtResource("7_hmhjg")])
+bonus_stats = Array[ExtResource("1_2yr7p")]([SubResource("Resource_vg34q")])
+extra_price = 12.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://3xisj57kjnmy"]
+
+[ext_resource type="Script" uid="uid://b167umm2jwhsj" path="res://resources/bb_scripts/mimicry.gd" id="1_1vs2u"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ntcm4"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_1vs2u"]
+[ext_resource type="Script" uid="uid://c848eal5vrguy" path="res://resources/passive_scripts/mimicry.gd" id="3_4cak0"]
+
+[resource]
+script = ExtResource("2_1vs2u")
+name = "Mimicry"
+bonus_stats = Array[ExtResource("1_ntcm4")]([])
+game_logic_script = ExtResource("3_4cak0")
+bb_script = ExtResource("1_1vs2u")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

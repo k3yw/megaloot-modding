@@ -1,0 +1,23 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=7 format=3 uid="uid://cg8i768efhnhn"]
+
+[ext_resource type="Script" uid="uid://dbnw8w2tckrnq" path="res://resources/ability_scripts/arcane_roulette.gd" id="1_080qo"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_bfmfw"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_3nter"]
+[ext_resource type="Script" uid="uid://dqctem42qr0tu" path="res://resources/bb_scripts/arcane_roulette.gd" id="2_rliaw"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_i5un5"]
+[ext_resource type="Texture2D" uid="uid://ceqaip2ntl0n6" path="res://assets/textures/icons/abilities/arcane_roulette_icon.png" id="4_0giel"]
+
+[resource]
+script = ExtResource("2_3nter")
+name = "Arcane Roulette"
+icon = ExtResource("4_0giel")
+mana_cost = 0
+use_limit = 2
+status_effects_on_activation = Array[ExtResource("3_i5un5")]([])
+bonus_stats_while_active = Array[ExtResource("1_bfmfw")]([])
+quick_cast = false
+non_target = true
+to_attack = true
+ability_script = ExtResource("1_080qo")
+bb_script = ExtResource("2_rliaw")
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

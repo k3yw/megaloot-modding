@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://d0cd2i6ttv37w"]
+
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_57exu"]
+[ext_resource type="Script" uid="uid://dus3ttqkbn87" path="res://resources/bb_scripts/ephemeral_armor.gd" id="1_ndfch"]
+[ext_resource type="Texture2D" uid="uid://dbcdgn40vfk22" path="res://assets/textures/icons/stats/armor_icon.png" id="1_pbkdl"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_vc8ch"]
+
+[resource]
+script = ExtResource("1_57exu")
+name = "Ephemeral Armor"
+icon = ExtResource("1_pbkdl")
+color = Color(0.462745, 0.380392, 0.67451, 1)
+type = ExtResource("3_vc8ch")
+affected_by_tenacity = false
+is_temporary = false
+is_percent = false
+limit = -1
+application_message = ""
+bb_script = ExtResource("1_ndfch")

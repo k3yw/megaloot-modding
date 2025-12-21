@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://dec6y0580k7fv"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_q3cue"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="2_lmuud"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_mnwkp"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_06wkn"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="6_3eqds"]
+[ext_resource type="Resource" uid="uid://d07dc442wyx5e" path="res://resources/item_sets/wood.tres" id="6_j5wa0"]
+[ext_resource type="Texture2D" uid="uid://civ46lmj7axb" path="res://assets/textures/items/training_axe.png" id="7_siv0d"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_v3pt3"]
+
+[sub_resource type="Resource" id="Resource_wbofu"]
+script = ExtResource("1_q3cue")
+boosting_sets = Array[ExtResource("5_06wkn")]([])
+resource = ExtResource("2_lmuud")
+amount = 2.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_mnwkp")
+name = &"Training Axe"
+texture = ExtResource("7_siv0d")
+socket_type = ExtResource("6_3eqds")
+set_resources = Array[ExtResource("5_06wkn")]([ExtResource("6_j5wa0")])
+bonus_stats = Array[ExtResource("1_q3cue")]([SubResource("Resource_wbofu")])
+unlock_requirements = Array[ExtResource("8_v3pt3")]([])
+extra_price = 5.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

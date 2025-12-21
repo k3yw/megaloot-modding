@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://b0bjkgfhjbjb1"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_5pgn8"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="2_dqnys"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_4kxal"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_onv1d"]
+[ext_resource type="Resource" uid="uid://dmvibnyb3mslv" path="res://resources/item_sets/golden.tres" id="7_4wf8d"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_h6n3h"]
+[ext_resource type="Resource" uid="uid://yafmbyqx3xa6" path="res://resources/item_sets/swiftness.tres" id="8_aug4o"]
+[ext_resource type="Texture2D" uid="uid://cg3jw11rx8o0e" path="res://assets/textures/items/golden_dagger.png" id="9_01f6t"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="9_ly8pp"]
+
+[sub_resource type="Resource" id="Resource_da3la"]
+script = ExtResource("1_5pgn8")
+boosting_sets = Array[ExtResource("6_onv1d")]([ExtResource("7_4wf8d")])
+resource = ExtResource("2_dqnys")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_4kxal")
+name = &"Golden Dagger"
+texture = ExtResource("9_01f6t")
+socket_type = ExtResource("7_h6n3h")
+set_resources = Array[ExtResource("6_onv1d")]([ExtResource("7_4wf8d"), ExtResource("8_aug4o")])
+bonus_stats = Array[ExtResource("1_5pgn8")]([SubResource("Resource_da3la")])
+unlock_requirements = Array[ExtResource("9_ly8pp")]([])
+extra_price = 6.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,101 @@
+[gd_scene load_steps=7 format=3 uid="uid://cwnj2sp0x6k27"]
+
+[ext_resource type="Script" uid="uid://d0nfii6hqnt0o" path="res://scenes/ui/slider_option/slider_option.gd" id="1_8eqk1"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="2_ysnog"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="3_fp682"]
+[ext_resource type="PackedScene" uid="uid://1np5hpdj2ls0" path="res://scenes/ui/generic_h_slider/generic_h_slider.tscn" id="4_eps8b"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cv8ub"]
+resource_local_to_scene = true
+shader = ExtResource("3_fp682")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ehahy"]
+resource_local_to_scene = true
+shader = ExtResource("3_fp682")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="SliderOption" type="HBoxContainer" node_paths=PackedStringArray("value_label", "name_label", "h_slider")]
+offset_right = 623.0
+offset_bottom = 26.0
+size_flags_vertical = 4
+theme_override_constants/separation = 35
+script = ExtResource("1_8eqk1")
+value_label = NodePath("HBoxContainer/ValueLabel")
+name_label = NodePath("HBoxContainer/NameLabel")
+h_slider = NodePath("GenericHSlider")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="NameLabel" parent="HBoxContainer" instance=ExtResource("2_ysnog")]
+material = SubResource("ShaderMaterial_cv8ub")
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ValueLabel" parent="HBoxContainer" instance=ExtResource("2_ysnog")]
+material = SubResource("ShaderMaterial_ehahy")
+layout_mode = 2
+size_flags_horizontal = 10
+text = "1.0"
+translate = false
+
+[node name="GenericHSlider" parent="." instance=ExtResource("4_eps8b")]
+layout_mode = 2
+size_flags_horizontal = 3

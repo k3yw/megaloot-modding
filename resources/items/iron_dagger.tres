@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://dou0lg3cxhw6h"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_kjrt2"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="2_7mfr6"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_fc1pb"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="5_pxjq6"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_wsho2"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="6_ket8b"]
+[ext_resource type="Resource" uid="uid://yafmbyqx3xa6" path="res://resources/item_sets/swiftness.tres" id="6_r3oo8"]
+[ext_resource type="Texture2D" uid="uid://d032gbgyx1ft8" path="res://assets/textures/items/iron_dagger.png" id="7_py2wx"]
+
+[sub_resource type="Resource" id="Resource_ijxd2"]
+script = ExtResource("1_kjrt2")
+boosting_sets = Array[ExtResource("5_wsho2")]([])
+resource = ExtResource("2_7mfr6")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_fc1pb")
+name = &"Iron Dagger"
+texture = ExtResource("7_py2wx")
+description = ""
+socket_type = ExtResource("6_ket8b")
+set_resources = Array[ExtResource("5_wsho2")]([ExtResource("5_pxjq6"), ExtResource("6_r3oo8")])
+bonus_stats = Array[ExtResource("1_kjrt2")]([SubResource("Resource_ijxd2")])
+extra_price = 2.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

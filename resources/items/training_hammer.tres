@@ -1,0 +1,37 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://6sh4n8xtwdde"]
+
+[ext_resource type="Resource" uid="uid://d07dc442wyx5e" path="res://resources/item_sets/wood.tres" id="1_evq8h"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_xivt2"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_41b6j"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="3_48gl5"]
+[ext_resource type="Resource" uid="uid://b25ask0o4y2jw" path="res://resources/passives/faultbreaker.tres" id="3_rjvqp"]
+[ext_resource type="Texture2D" uid="uid://d3eqgmh00yw0m" path="res://assets/textures/items/training_hammer.png" id="4_u3hvg"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_yn2l6"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_2ynhh"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="9_fyt1p"]
+
+[sub_resource type="Resource" id="Resource_s80oc"]
+script = ExtResource("2_xivt2")
+boosting_sets = Array[ExtResource("6_yn2l6")]([])
+resource = ExtResource("3_48gl5")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_41b6j")
+name = &"Training Hammer"
+texture = ExtResource("4_u3hvg")
+socket_type = ExtResource("7_2ynhh")
+set_resources = Array[ExtResource("6_yn2l6")]([ExtResource("1_evq8h")])
+passive = ExtResource("3_rjvqp")
+bonus_stats = Array[ExtResource("2_xivt2")]([SubResource("Resource_s80oc")])
+unlock_requirements = Array[ExtResource("9_fyt1p")]([])
+extra_price = 4.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

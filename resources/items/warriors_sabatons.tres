@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://cfnrsgic5h2fj"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_5w7tq"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_snhf5"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_hde8f"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_blmmt"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="6_kj2y0"]
+[ext_resource type="Resource" uid="uid://ctpy2mw635lru" path="res://resources/item_sets/warrior.tres" id="6_u2618"]
+[ext_resource type="Texture2D" uid="uid://cwi7155dr4vqx" path="res://assets/textures/items/warriors_sabatons.png" id="7_dgujl"]
+
+[sub_resource type="Resource" id="Resource_txu8y"]
+script = ExtResource("1_5w7tq")
+boosting_sets = Array[ExtResource("5_blmmt")]([])
+resource = ExtResource("2_snhf5")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_hde8f")
+name = &"Warrior\'s Sabatons"
+texture = ExtResource("7_dgujl")
+description = ""
+socket_type = ExtResource("6_kj2y0")
+set_resources = Array[ExtResource("5_blmmt")]([ExtResource("6_u2618")])
+bonus_stats = Array[ExtResource("1_5w7tq")]([SubResource("Resource_txu8y")])
+extra_price = 5.0
+spawn_floor = 5
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

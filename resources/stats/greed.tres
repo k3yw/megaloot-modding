@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://m5yptv2biari"]
+
+[ext_resource type="Script" uid="uid://b4ge8jmrhhk1d" path="res://resources/bb_scripts/greed.gd" id="1_g67oo"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_22d7j"]
+[ext_resource type="Texture2D" uid="uid://breivv87bgmre" path="res://assets/textures/icons/greed_icon.png" id="2_rjcnf"]
+[ext_resource type="Script" uid="uid://ch6npkqxsl4x8" path="res://resources/stat_scripts/greed.gd" id="4_ws7j3"]
+
+[resource]
+script = ExtResource("2_22d7j")
+name = "Greed"
+icon = ExtResource("2_rjcnf")
+color = Color(0.976471, 0.639216, 0.105882, 1)
+is_percentage = true
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_ws7j3")
+bb_script = ExtResource("1_g67oo")

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://cyctakuu2fani"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_1xuu4"]
+[ext_resource type="Script" uid="uid://drlonf2fqarwl" path="res://resources/bb_scripts/flesh.gd" id="1_2w1od"]
+[ext_resource type="Texture2D" uid="uid://b4jvmelwsrblh" path="res://assets/textures/icons/item_sets/flesh_icon.png" id="1_gir1o"]
+
+[resource]
+script = ExtResource("1_1xuu4")
+name = "Flesh"
+icon = ExtResource("1_gir1o")
+color = Color(0.726563, 0.457031, 0.414063, 1)
+value = 0
+flow_cost = 25
+bb_script = ExtResource("1_2w1od")

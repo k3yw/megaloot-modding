@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://c0fl4emw02wpo"]
+
+[ext_resource type="Texture2D" uid="uid://ch5ukhcv2qtuh" path="res://assets/textures/icons/stats/electricity_icon.png" id="1_6yax6"]
+[ext_resource type="Script" uid="uid://cb5gpa6jsynpm" path="res://resources/bb_scripts/electricity.gd" id="1_m3lge"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_vlggq"]
+[ext_resource type="Script" uid="uid://5w56q2128k3d" path="res://resources/stat_scripts/electricity.gd" id="4_hb3ny"]
+
+[resource]
+script = ExtResource("2_vlggq")
+name = "Electricity"
+icon = ExtResource("1_6yax6")
+color = Color(0.988235, 0.792157, 0, 1)
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_hb3ny")
+bb_script = ExtResource("1_m3lge")

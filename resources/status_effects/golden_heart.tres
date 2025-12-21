@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://iysajyljgjab"]
+
+[ext_resource type="Script" uid="uid://bvhtgsvflqo0g" path="res://resources/bb_scripts/golden_heart.gd" id="1_f3j84"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_jqng2"]
+[ext_resource type="Texture2D" uid="uid://clvjx7nb4qx22" path="res://assets/textures/icons/max_health_icon.png" id="1_siwkc"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_r4yhi"]
+
+[resource]
+script = ExtResource("1_jqng2")
+name = "Golden Heart"
+icon = ExtResource("1_siwkc")
+color = Color(0.972549, 0.635294, 0.105882, 1)
+type = ExtResource("3_r4yhi")
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_f3j84")

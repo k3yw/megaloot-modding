@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://b7w22h5rowxoo"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_06f7s"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_b7lhc"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_vvoib"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_ha2nb"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_j6n07"]
+[ext_resource type="Texture2D" uid="uid://dre8btfgv65nb" path="res://assets/textures/enemies/venus.png" id="4_wwmk3"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="5_7m8pq"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="6_51016"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="7_hxe2l"]
+[ext_resource type="Resource" uid="uid://cspkuvq56fsrq" path="res://resources/abilities/multi_heal.tres" id="7_pfp3d"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_cotkr"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="9_m3qdb"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="12_6sbvb"]
+
+[sub_resource type="Resource" id="Resource_aplic"]
+script = ExtResource("2_ha2nb")
+boosting_sets = Array[ExtResource("2_j6n07")]([])
+resource = ExtResource("1_vvoib")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_uf8a7"]
+script = ExtResource("2_ha2nb")
+boosting_sets = Array[ExtResource("2_j6n07")]([])
+resource = ExtResource("5_7m8pq")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_wh0vb"]
+script = ExtResource("2_ha2nb")
+boosting_sets = Array[ExtResource("2_j6n07")]([])
+resource = ExtResource("6_51016")
+amount = 15.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_klmoy"]
+script = ExtResource("2_ha2nb")
+boosting_sets = Array[ExtResource("2_j6n07")]([])
+resource = ExtResource("7_hxe2l")
+amount = 45.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_06f7s")
+name = "Venus"
+texture = ExtResource("4_wwmk3")
+floor_number = 16
+flying = false
+starting_status_effects = Array[ExtResource("9_m3qdb")]([])
+active_item_sets = Array[ExtResource("2_j6n07")]([])
+stats_per_level = Array[ExtResource("12_6sbvb")]([])
+base_stats = Array[ExtResource("2_ha2nb")]([SubResource("Resource_aplic"), SubResource("Resource_uf8a7"), SubResource("Resource_wh0vb"), SubResource("Resource_klmoy")])
+abilities = Array[ExtResource("1_b7lhc")]([ExtResource("7_pfp3d")])
+passives = Array[ExtResource("8_cotkr")]([])
+hide_stats = false

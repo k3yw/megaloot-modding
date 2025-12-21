@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=17 format=3 uid="uid://dify1bc2nu8xu"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_6e660"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_vliip"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_xqpcg"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_w0ptr"]
+[ext_resource type="Texture2D" uid="uid://b2ldyonock441" path="res://assets/textures/enemies/armored_spirit.png" id="2_xego8"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_7p0fa"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="3_ox3xi"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_1gijc"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="6_j2u4a"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_55wm0"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_ael2b"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_mwn8i"]
+
+[sub_resource type="Resource" id="Resource_7ln8n"]
+script = ExtResource("3_7p0fa")
+boosting_sets = Array[ExtResource("1_xqpcg")]([])
+resource = ExtResource("2_w0ptr")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_7a725"]
+script = ExtResource("3_7p0fa")
+boosting_sets = Array[ExtResource("1_xqpcg")]([])
+resource = ExtResource("3_ox3xi")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_e7hxu"]
+script = ExtResource("3_7p0fa")
+boosting_sets = Array[ExtResource("1_xqpcg")]([])
+resource = ExtResource("5_1gijc")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_m5ips"]
+script = ExtResource("3_7p0fa")
+boosting_sets = Array[ExtResource("1_xqpcg")]([])
+resource = ExtResource("6_j2u4a")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_6e660")
+name = "Armored Spirit"
+texture = ExtResource("2_xego8")
+floor_number = 4
+flying = true
+starting_status_effects = Array[ExtResource("8_ael2b")]([])
+active_item_sets = Array[ExtResource("1_xqpcg")]([])
+stats_per_level = Array[ExtResource("11_mwn8i")]([])
+base_stats = Array[ExtResource("3_7p0fa")]([SubResource("Resource_7ln8n"), SubResource("Resource_7a725"), SubResource("Resource_e7hxu"), SubResource("Resource_m5ips")])
+abilities = Array[ExtResource("1_vliip")]([])
+passives = Array[ExtResource("7_55wm0")]([])
+hide_stats = false

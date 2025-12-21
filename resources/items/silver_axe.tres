@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://bvlbnbxmtpohg"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_6nku0"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_txbjt"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_0xvee"]
+[ext_resource type="Resource" uid="uid://m25hhepu4mn4" path="res://resources/item_sets/silver.tres" id="5_tbwey"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_5nxea"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_5ajiq"]
+[ext_resource type="Resource" uid="uid://yafmbyqx3xa6" path="res://resources/item_sets/swiftness.tres" id="7_itevy"]
+[ext_resource type="Texture2D" uid="uid://bpyc23w7miksa" path="res://assets/textures/items/silver_axe.png" id="8_byw81"]
+
+[sub_resource type="Resource" id="Resource_r68ao"]
+script = ExtResource("1_6nku0")
+boosting_sets = Array[ExtResource("6_5nxea")]([ExtResource("5_tbwey")])
+resource = ExtResource("4_0xvee")
+amount = 8.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_txbjt")
+name = &"Silver Axe"
+texture = ExtResource("8_byw81")
+description = ""
+socket_type = ExtResource("7_5ajiq")
+set_resources = Array[ExtResource("6_5nxea")]([ExtResource("5_tbwey"), ExtResource("7_itevy")])
+bonus_stats = Array[ExtResource("1_6nku0")]([SubResource("Resource_r68ao")])
+extra_price = 175.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=3 format=3 uid="uid://cao6xhnrcn7co"]
+
+[ext_resource type="Script" uid="uid://3rst4hc0dfm8" path="res://resources/bb_scripts/miss.gd" id="1_khag0"]
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_lhr55"]
+
+[resource]
+script = ExtResource("1_lhr55")
+name = "Miss"
+color = Color(0, 0, 0, 1)
+use_limit = 0
+popup_color = Color(0.729412, 0.458824, 0.415686, 1)
+popup_text = "MISSED"
+popup_delay = 0.0
+screen_shake = false
+is_hit = false
+bb_script = ExtResource("1_khag0")

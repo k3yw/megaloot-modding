@@ -1,0 +1,101 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsv1i4g07qhyg"]
+
+[ext_resource type="Script" uid="uid://vpw0dy1d2l0o" path="res://scenes/ui/image_selection_container/image_selection_container.gd" id="1_eey6i"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="1_fcc4g"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_eey6i"]
+[ext_resource type="Texture2D" uid="uid://cks6672sbdjf3" path="res://assets/textures/ui/flat_panel_porder.png" id="3_freun"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ued8b"]
+resource_local_to_scene = true
+shader = ExtResource("2_eey6i")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="ImageSelectionContainer" type="MarginContainer" node_paths=PackedStringArray("selection_border", "image_texture_rect", "misc_label", "file_dialog") groups=["pressable"]]
+size_flags_vertical = 0
+script = ExtResource("1_eey6i")
+selection_border = NodePath("MarginContainer/SelectionBorder")
+image_texture_rect = NodePath("MarginContainer2/TextureRect")
+misc_label = NodePath("MiscLabel")
+file_dialog = NodePath("FileDialog")
+
+[node name="MiscLabel" parent="." instance=ExtResource("1_fcc4g")]
+material = SubResource("ShaderMaterial_ued8b")
+layout_mode = 2
+text = "Select Image"
+horizontal_alignment = 1
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+modulate = Color(0.196078, 0.2, 0.239216, 1)
+custom_minimum_size = Vector2(116, 116)
+layout_mode = 2
+texture = ExtResource("3_freun")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+theme_override_constants/margin_right = 2
+theme_override_constants/margin_bottom = 2
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer2"]
+layout_mode = 2
+expand_mode = 4
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = -2
+theme_override_constants/margin_top = -2
+theme_override_constants/margin_right = -2
+theme_override_constants/margin_bottom = -2
+
+[node name="SelectionBorder" type="NinePatchRect" parent="MarginContainer"]
+modulate = Color(0.321569, 0.360784, 0.419608, 1)
+custom_minimum_size = Vector2(116, 116)
+layout_mode = 2
+texture = ExtResource("3_freun")
+patch_margin_left = 5
+patch_margin_top = 5
+patch_margin_right = 5
+patch_margin_bottom = 5
+
+[node name="FileDialog" type="FileDialog" parent="."]
+title = "Open a File"
+ok_button_text = "Open"
+file_mode = 0
+access = 2
+filters = PackedStringArray("*.png", "*.jpg", "*.gif")
+use_native_dialog = true
+
+[connection signal="file_selected" from="FileDialog" to="." method="_on_file_dialog_file_selected"]

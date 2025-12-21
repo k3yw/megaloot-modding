@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://d061jaw1ok5dr"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_gv7ht"]
+[ext_resource type="Script" uid="uid://bg2kao0ubyqab" path="res://resources/bb_scripts/spell_block.gd" id="1_qykkr"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_qykkr"]
+[ext_resource type="Script" uid="uid://8enj8lmk8gi3" path="res://resources/passive_scripts/spell_block.gd" id="3_2c8qq"]
+
+[resource]
+script = ExtResource("2_qykkr")
+name = "Spell Block"
+bonus_stats = Array[ExtResource("1_gv7ht")]([])
+game_logic_script = ExtResource("3_2c8qq")
+bb_script = ExtResource("1_qykkr")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

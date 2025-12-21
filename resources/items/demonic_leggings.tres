@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://2d3rxp8ndamk"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_w45a8"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_lo88g"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_lb364"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_jxjr7"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_h2ij1"]
+[ext_resource type="Resource" uid="uid://cmw0nuwmn0iiu" path="res://resources/socket_types/leggings.tres" id="7_1tuul"]
+[ext_resource type="Resource" uid="uid://co4r8myt4rmnk" path="res://resources/item_sets/demonic.tres" id="7_md6bw"]
+[ext_resource type="Texture2D" uid="uid://cxiv52kljwd7e" path="res://assets/textures/items/demonic_leggings.png" id="8_4xrst"]
+
+[sub_resource type="Resource" id="Resource_twdc6"]
+script = ExtResource("1_w45a8")
+boosting_sets = Array[ExtResource("6_h2ij1")]([])
+resource = ExtResource("2_lo88g")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_t6pds"]
+script = ExtResource("1_w45a8")
+boosting_sets = Array[ExtResource("6_h2ij1")]([null])
+resource = ExtResource("3_lb364")
+amount = 6.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_jxjr7")
+name = &"Demonic Leggings"
+texture = ExtResource("8_4xrst")
+description = ""
+socket_type = ExtResource("7_1tuul")
+set_resources = Array[ExtResource("6_h2ij1")]([ExtResource("7_md6bw")])
+bonus_stats = Array[ExtResource("1_w45a8")]([SubResource("Resource_twdc6"), SubResource("Resource_t6pds")])
+extra_price = 35.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

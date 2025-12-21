@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=4 format=3 uid="uid://cunxwp6wjx8n1"]
+
+[ext_resource type="Texture2D" uid="uid://3rcfg76xf1t2" path="res://assets/textures/icons/status_effects/team_icon.png" id="1_5sxru"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_201fx"]
+[ext_resource type="Resource" uid="uid://bnafey8yic5rn" path="res://resources/status_effect_types/rule.tres" id="3_5sxru"]
+
+[resource]
+script = ExtResource("1_201fx")
+name = "Blue Team"
+icon = ExtResource("1_5sxru")
+color = Color(0.278431, 0.509804, 0.901961, 1)
+type = ExtResource("3_5sxru")
+affected_by_tenacity = false
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = ""
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

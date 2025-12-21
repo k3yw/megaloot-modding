@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=15 format=3 uid="uid://d2wja58j8swws"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_06iw3"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_b7xg4"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_ckmmc"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_xrrls"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_oyjje"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_4h54w"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="6_o0gmr"]
+[ext_resource type="Texture2D" uid="uid://dopbxjdtfodu7" path="res://assets/textures/enemies/harpy.png" id="7_hp1as"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_1uddo"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="9_netl2"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_yhj15"]
+
+[sub_resource type="Resource" id="Resource_8cxjy"]
+script = ExtResource("2_oyjje")
+boosting_sets = Array[ExtResource("1_06iw3")]([])
+resource = ExtResource("1_ckmmc")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ywx4l"]
+script = ExtResource("2_oyjje")
+boosting_sets = Array[ExtResource("1_06iw3")]([])
+resource = ExtResource("5_4h54w")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_eb33v"]
+script = ExtResource("2_oyjje")
+boosting_sets = Array[ExtResource("1_06iw3")]([])
+resource = ExtResource("6_o0gmr")
+amount = 25.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_b7xg4")
+name = "Harpy"
+texture = ExtResource("7_hp1as")
+floor_number = 5
+flying = true
+starting_status_effects = Array[ExtResource("9_netl2")]([])
+active_item_sets = Array[ExtResource("1_06iw3")]([])
+stats_per_level = Array[ExtResource("11_yhj15")]([])
+base_stats = Array[ExtResource("2_oyjje")]([SubResource("Resource_8cxjy"), SubResource("Resource_ywx4l"), SubResource("Resource_eb33v")])
+abilities = Array[ExtResource("1_xrrls")]([])
+passives = Array[ExtResource("8_1uddo")]([])
+hide_stats = false

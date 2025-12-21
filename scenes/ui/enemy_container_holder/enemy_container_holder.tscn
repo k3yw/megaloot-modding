@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dmyiry4e7pt1y"]
+
+[ext_resource type="Script" uid="uid://ce1vpkrvdyli7" path="res://scenes/ui/enemy_container_holder/enemy_container_holder.gd" id="1_iyks5"]
+
+[node name="EnemyContainerHolder" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 332.0
+offset_bottom = 360.0
+script = ExtResource("1_iyks5")

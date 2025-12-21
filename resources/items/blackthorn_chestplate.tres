@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://cnl3dghwwj31x"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_aae7u"]
+[ext_resource type="Resource" uid="uid://tyft4f1n0dwx" path="res://resources/item_sets/blackthorn.tres" id="2_w0peb"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_rktqs"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_my10s"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_7yit7"]
+[ext_resource type="Texture2D" uid="uid://bj1lxm8abyh8j" path="res://assets/textures/items/blackthorn_chestplate.png" id="6_81xlo"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="6_flscj"]
+
+[sub_resource type="Resource" id="Resource_3w3vh"]
+script = ExtResource("1_aae7u")
+boosting_sets = Array[ExtResource("5_7yit7")]([ExtResource("2_w0peb")])
+resource = ExtResource("3_rktqs")
+amount = 15.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_my10s")
+name = &"Blackthorn Chestplate"
+texture = ExtResource("6_81xlo")
+description = ""
+socket_type = ExtResource("6_flscj")
+set_resources = Array[ExtResource("5_7yit7")]([ExtResource("2_w0peb")])
+bonus_stats = Array[ExtResource("1_aae7u")]([SubResource("Resource_3w3vh")])
+extra_price = 25.0
+spawn_floor = 5
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

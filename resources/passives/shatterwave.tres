@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://c7ynygpcsamv"]
+
+[ext_resource type="Script" uid="uid://bac2qbtw3o7ns" path="res://resources/bb_scripts/shatterwave.gd" id="1_ip6dw"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_mqlh6"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_ocm2w"]
+
+[resource]
+script = ExtResource("3_ocm2w")
+name = "Shatterwave"
+bonus_stats = Array[ExtResource("1_mqlh6")]([])
+bb_script = ExtResource("1_ip6dw")

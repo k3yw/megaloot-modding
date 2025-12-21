@@ -1,0 +1,58 @@
+[gd_scene load_steps=5 format=3 uid="uid://bi1ds1p2c6wy5"]
+
+[ext_resource type="Script" uid="uid://18830l4vnlhb" path="res://scenes/managers/state_manager/state_manager.gd" id="1_eguui"]
+[ext_resource type="PackedScene" uid="uid://c85smw2tjuipv" path="res://scenes/general/screen_transition/screen_transition.tscn" id="2_wf0wf"]
+
+[sub_resource type="Shader" id="Shader_w6i64"]
+code = "shader_type canvas_item;
+
+global uniform vec4 background_color: source_color;
+// Ranges from 0 to 1 over the course of the transition.
+// We use this to actually animate the shader.
+uniform float progress : hint_range(0, 2);
+
+
+// Size of each diamond, in pixels.
+uniform float diamondPixelSize = 10.0;
+
+
+float when_lt(float x, float y) {
+  return max(sign(y - x), 0.0);
+}
+
+void fragment() {
+	float xFraction = fract(FRAGCOORD.x / diamondPixelSize);
+	float yFraction = fract(FRAGCOORD.y / diamondPixelSize);
+	float xDistance = abs(xFraction - 0.5);
+	float yDistance = abs(yFraction - 0.5);
+	
+	COLOR.rgb = background_color.rgb;
+	
+	if (progress > 1.0){
+		COLOR.a *= 1.0 - when_lt(xDistance + yDistance + UV.x + UV.y, (progress - 1.0) * 4.0);
+	}else{
+		COLOR.a *= when_lt(xDistance + yDistance + UV.x + UV.y, progress * 4.0);
+	}
+	
+	
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_e2naj"]
+resource_local_to_scene = true
+shader = SubResource("Shader_w6i64")
+shader_parameter/progress = 0.0
+shader_parameter/diamondPixelSize = 10.0
+
+[node name="StateManager" type="Node" node_paths=PackedStringArray("screen_transition")]
+script = ExtResource("1_eguui")
+screen_transition = NodePath("CanvasLayer/ScreenTransition")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+layer = 128
+
+[node name="ScreenTransition" parent="CanvasLayer" instance=ExtResource("2_wf0wf")]
+
+[node name="GenericPanel" parent="CanvasLayer/ScreenTransition" index="0"]
+material = SubResource("ShaderMaterial_e2naj")
+
+[editable path="CanvasLayer/ScreenTransition"]

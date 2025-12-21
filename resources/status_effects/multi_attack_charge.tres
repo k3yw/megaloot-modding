@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://bbf28ixdsplh6"]
+
+[ext_resource type="Script" uid="uid://dkiusc2tx16wx" path="res://resources/bb_scripts/multi_attack_charge.gd" id="1_audhr"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_jxc87"]
+[ext_resource type="Texture2D" uid="uid://6fagjrdhuf2i" path="res://assets/textures/icons/multi_attack_charge_icon.png" id="1_odj0p"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_c3gy8"]
+
+[resource]
+script = ExtResource("1_jxc87")
+name = "Multi Attack Charge"
+icon = ExtResource("1_odj0p")
+color = Color(0.627451, 0.87451, 1, 1)
+type = ExtResource("3_c3gy8")
+is_temporary = true
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_audhr")

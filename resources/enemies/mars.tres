@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://bctmq5wpdx3f1"]
+
+[ext_resource type="Resource" uid="uid://dt4hqajiq131f" path="res://resources/abilities/triple_attack.tres" id="1_0a8og"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_8c465"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_iucde"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_b1nyg"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_ously"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_eygs5"]
+[ext_resource type="Texture2D" uid="uid://c5xy6hekcqthi" path="res://assets/textures/enemies/mars.png" id="3_oq25x"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="4_kp6ru"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_dlocn"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="6_caivd"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="9_y6yip"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="10_fejf6"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="13_ptmja"]
+
+[sub_resource type="Resource" id="Resource_anaci"]
+script = ExtResource("3_eygs5")
+boosting_sets = Array[ExtResource("2_ously")]([])
+resource = ExtResource("2_b1nyg")
+amount = 15.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_yhboe"]
+script = ExtResource("3_eygs5")
+boosting_sets = Array[ExtResource("2_ously")]([])
+resource = ExtResource("4_kp6ru")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_lxcfe"]
+script = ExtResource("3_eygs5")
+boosting_sets = Array[ExtResource("2_ously")]([])
+resource = ExtResource("5_dlocn")
+amount = 17.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_o2hvy"]
+script = ExtResource("3_eygs5")
+boosting_sets = Array[ExtResource("2_ously")]([])
+resource = ExtResource("6_caivd")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_8c465")
+name = "Mars"
+texture = ExtResource("3_oq25x")
+floor_number = 11
+flying = false
+starting_status_effects = Array[ExtResource("10_fejf6")]([])
+active_item_sets = Array[ExtResource("2_ously")]([])
+stats_per_level = Array[ExtResource("13_ptmja")]([])
+base_stats = Array[ExtResource("3_eygs5")]([SubResource("Resource_anaci"), SubResource("Resource_yhboe"), SubResource("Resource_lxcfe"), SubResource("Resource_o2hvy")])
+abilities = Array[ExtResource("1_iucde")]([ExtResource("1_0a8og")])
+passives = Array[ExtResource("9_y6yip")]([])
+hide_stats = false

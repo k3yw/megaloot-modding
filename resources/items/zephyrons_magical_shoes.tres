@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://dwa3pw7hs5xpq"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_p2j1d"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="2_ggo4c"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_w8cio"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_umk74"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="6_imu1c"]
+[ext_resource type="Resource" uid="uid://barfiwkq2fcrm" path="res://resources/item_sets/zephyron.tres" id="6_ir245"]
+[ext_resource type="Texture2D" uid="uid://dj02j3fs0y4a" path="res://assets/textures/items/zephyrons_magical_shoes.png" id="7_ffsyi"]
+
+[sub_resource type="Resource" id="Resource_cvfp6"]
+script = ExtResource("1_p2j1d")
+boosting_sets = Array[ExtResource("5_umk74")]([])
+resource = ExtResource("2_ggo4c")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_w8cio")
+name = &"Zephyron\'s Magical Shoes"
+texture = ExtResource("7_ffsyi")
+description = ""
+socket_type = ExtResource("6_imu1c")
+set_resources = Array[ExtResource("5_umk74")]([ExtResource("6_ir245")])
+bonus_stats = Array[ExtResource("1_p2j1d")]([SubResource("Resource_cvfp6")])
+extra_price = 9.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

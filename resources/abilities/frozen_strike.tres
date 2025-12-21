@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=7 format=3 uid="uid://cjibj6rc1xq28"]
+
+[ext_resource type="Script" uid="uid://comiuerqqa510" path="res://resources/bb_scripts/frozen_strike.gd" id="1_67lrx"]
+[ext_resource type="Script" uid="uid://bcmvodfgg4d1f" path="res://resources/ability_scripts/frozen_strike.gd" id="1_igi7y"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_qivng"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_5xdaa"]
+[ext_resource type="Texture2D" uid="uid://dttu6157w8u4e" path="res://assets/textures/icons/abilities/frozen_strike.png" id="3_wxwrj"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="4_e7e0j"]
+
+[resource]
+script = ExtResource("1_qivng")
+name = "Frozen Strike"
+icon = ExtResource("3_wxwrj")
+mana_cost = 1
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("4_e7e0j")]([])
+bonus_stats_while_active = Array[ExtResource("2_5xdaa")]([])
+quick_cast = false
+non_target = true
+to_attack = true
+ability_script = ExtResource("1_igi7y")
+bb_script = ExtResource("1_67lrx")

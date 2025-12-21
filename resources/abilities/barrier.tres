@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=6 format=3 uid="uid://dpqrja1q07sye"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_14axb"]
+[ext_resource type="Script" uid="uid://m4hjspecsu5s" path="res://resources/ability_scripts/barrier.gd" id="1_rvj0d"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_x4vne"]
+[ext_resource type="Texture2D" uid="uid://r0qc708fbbdh" path="res://assets/textures/icons/magic_shield_icon.png" id="2_s3hx0"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_s3hx0"]
+
+[resource]
+script = ExtResource("1_14axb")
+name = "Barrier"
+icon = ExtResource("2_s3hx0")
+mana_cost = 1
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_s3hx0")]([])
+bonus_stats_while_active = Array[ExtResource("1_x4vne")]([])
+quick_cast = false
+non_target = true
+to_attack = true
+ability_script = ExtResource("1_rvj0d")

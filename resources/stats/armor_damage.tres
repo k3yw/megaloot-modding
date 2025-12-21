@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://dpjrcruj5pneu"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_5fwg4"]
+[ext_resource type="Texture2D" uid="uid://ddjwffxcxqg06" path="res://assets/textures/icons/stats/armored_attack.png" id="1_oex4l"]
+
+[resource]
+script = ExtResource("1_5fwg4")
+name = "Armor Damage"
+icon = ExtResource("1_oex4l")
+color = Color(0.427451, 0.458824, 0.552941, 1)
+is_percentage = false
+max_amount = -1.0
+ignore_minimum_amount = false
+minimum_amount = 0.0

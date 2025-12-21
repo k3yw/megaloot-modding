@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=4 format=3 uid="uid://cyty75m0w3y7p"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_rhc5v"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_0tyst"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_cc5cx"]
+
+[resource]
+script = ExtResource("2_0tyst")
+name = "Headbutt"
+mana_cost = 0
+use_limit = 1
+status_effects_on_activation = Array[ExtResource("3_cc5cx")]([])
+bonus_stats_while_active = Array[ExtResource("1_rhc5v")]([])
+quick_cast = true
+non_target = true
+to_attack = false
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="RoomResource" load_steps=5 format=3 uid="uid://bqfh5hj8eimq1"]
+
+[ext_resource type="PackedScene" uid="uid://srfsuoci3vtn" path="res://scenes/rooms/altar_room.tscn" id="1_5bb4w"]
+[ext_resource type="Script" uid="uid://csllv7wegskye" path="res://resources/room_scripts/dismantle_room.gd" id="1_602pm"]
+[ext_resource type="PackedScene" uid="uid://qbw5ridku1ld" path="res://scenes/ui/room_action_containers/dismantle_action_container/dismantle_action_container.tscn" id="1_abh0u"]
+[ext_resource type="Script" uid="uid://dercbl3566y8y" path="res://classes/resource/room_resource.gd" id="1_k7f1j"]
+
+[resource]
+script = ExtResource("1_k7f1j")
+restless = false
+scene = ExtResource("1_5bb4w")
+action_container_scene = ExtResource("1_abh0u")
+processor_script = ExtResource("1_602pm")
+metadata/_custom_type_script = "uid://dercbl3566y8y"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SocketType" load_steps=3 format=3 uid="uid://bk224nl7hnf0w"]
+
+[ext_resource type="Script" uid="uid://bf4xfjaqogirm" path="res://classes/resource/socket_type.gd" id="1_1hldi"]
+[ext_resource type="Texture2D" uid="uid://u5giil3aehfx" path="res://resources/atlas_textures/chestplate_icon.tres" id="2_t3w2a"]
+
+[resource]
+script = ExtResource("1_1hldi")
+name = &"Chestplate"
+texture = ExtResource("2_t3w2a")
+metadata/_custom_type_script = "uid://bf4xfjaqogirm"

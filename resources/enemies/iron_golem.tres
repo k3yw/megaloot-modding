@@ -1,0 +1,93 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=27 format=3 uid="uid://btfrtg0wve2ee"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_6klo1"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_eqajs"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_2ar3g"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_wkhgx"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="3_x1e0l"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="4_qy450"]
+[ext_resource type="Resource" uid="uid://b64ap6hlsvruc" path="res://resources/stats/armored_attack.tres" id="5_k8lst"]
+[ext_resource type="Resource" uid="uid://by8q5xck7gg5" path="res://resources/stats/armor_steal.tres" id="6_t1jcg"]
+[ext_resource type="Resource" uid="uid://clysfjs400lm7" path="res://resources/stats/toughness.tres" id="8_7bc3e"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_r7uas"]
+[ext_resource type="Texture2D" uid="uid://cbx7axq26p53q" path="res://assets/textures/enemies/iron_golem.png" id="9_vjnn5"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="10_7m0b4"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="10_hhpo0"]
+[ext_resource type="Resource" uid="uid://bohmbus0djkn1" path="res://resources/status_effects/armor_shield.tres" id="11_tg5wm"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="14_riykt"]
+
+[sub_resource type="Resource" id="Resource_mvuvq"]
+script = ExtResource("2_2ar3g")
+boosting_sets = Array[ExtResource("1_6klo1")]([])
+resource = ExtResource("3_wkhgx")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_fmlvu"]
+script = ExtResource("2_2ar3g")
+boosting_sets = Array[ExtResource("1_6klo1")]([])
+resource = ExtResource("4_qy450")
+amount = 75.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_4tsm7"]
+script = ExtResource("2_2ar3g")
+boosting_sets = Array[ExtResource("1_6klo1")]([])
+resource = ExtResource("5_k8lst")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_alys7"]
+script = ExtResource("2_2ar3g")
+boosting_sets = Array[ExtResource("1_6klo1")]([])
+resource = ExtResource("6_t1jcg")
+amount = 45.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_3h5qw"]
+script = ExtResource("2_2ar3g")
+boosting_sets = Array[ExtResource("1_6klo1")]([])
+resource = ExtResource("8_7bc3e")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ycejc"]
+script = ExtResource("10_7m0b4")
+resource = ExtResource("11_tg5wm")
+amount = 2
+
+[sub_resource type="Resource" id="Resource_nmoxr"]
+script = ExtResource("10_hhpo0")
+status_effects = Array[ExtResource("10_7m0b4")]([SubResource("Resource_ycejc")])
+
+[sub_resource type="Resource" id="Resource_q3s6n"]
+script = ExtResource("10_7m0b4")
+resource = ExtResource("11_tg5wm")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_ve1ro"]
+script = ExtResource("10_hhpo0")
+status_effects = Array[ExtResource("10_7m0b4")]([SubResource("Resource_q3s6n")])
+
+[sub_resource type="Resource" id="Resource_5ypq6"]
+script = ExtResource("10_7m0b4")
+resource = ExtResource("11_tg5wm")
+amount = 1
+
+[sub_resource type="Resource" id="Resource_gpw4v"]
+script = ExtResource("10_hhpo0")
+status_effects = Array[ExtResource("10_7m0b4")]([SubResource("Resource_5ypq6")])
+
+[resource]
+script = ExtResource("3_x1e0l")
+name = "Iron Golem"
+texture = ExtResource("9_vjnn5")
+floor_number = 25
+flying = false
+starting_status_effects = Array[ExtResource("10_hhpo0")]([SubResource("Resource_nmoxr"), SubResource("Resource_ve1ro"), SubResource("Resource_gpw4v")])
+active_item_sets = Array[ExtResource("1_6klo1")]([])
+stats_per_level = Array[ExtResource("14_riykt")]([])
+base_stats = Array[ExtResource("2_2ar3g")]([SubResource("Resource_mvuvq"), SubResource("Resource_fmlvu"), SubResource("Resource_4tsm7"), SubResource("Resource_alys7"), SubResource("Resource_3h5qw")])
+abilities = Array[ExtResource("1_eqajs")]([])
+passives = Array[ExtResource("8_r7uas")]([])
+hide_stats = false

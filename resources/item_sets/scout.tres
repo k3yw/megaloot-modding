@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://bf2y3uc38gwy2"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_g5e14"]
+[ext_resource type="Script" uid="uid://b23exuarbapef" path="res://resources/bb_scripts/scout.gd" id="1_nevxj"]
+[ext_resource type="Texture2D" uid="uid://d8e52ogpvr7y" path="res://assets/textures/icons/item_sets/scout.png" id="1_sxk1e"]
+
+[resource]
+script = ExtResource("1_g5e14")
+name = "Scout"
+icon = ExtResource("1_sxk1e")
+color = Color(0.733333, 0.458824, 0.278431, 1)
+value = 0
+flow_cost = 25
+bb_script = ExtResource("1_nevxj")

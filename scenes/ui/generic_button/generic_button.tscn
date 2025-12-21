@@ -1,0 +1,275 @@
+[gd_scene load_steps=17 format=3 uid="uid://bxoncw32voayn"]
+
+[ext_resource type="Texture2D" uid="uid://b05vnol52axy1" path="res://assets/textures/ui/normal_generic_button.png" id="2_qr5go"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="5_ca6x3"]
+[ext_resource type="PackedScene" uid="uid://c44wlrtoiy84r" path="res://scenes/modules/hover_info_module/hover_info_module.tscn" id="5_o7pkd"]
+[ext_resource type="Texture2D" uid="uid://cl1kwu2s1bijg" path="res://assets/textures/ui/normal_generic_button_outline.png" id="5_ri25a"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="6_7mggs"]
+[ext_resource type="Texture2D" uid="uid://bd4o4odand663" path="res://assets/textures/ui/hover_info_hold_progress.png" id="6_f16yi"]
+[ext_resource type="Script" uid="uid://c2hudtosauvas" path="res://scenes/ui/generic_button/generic_button.gd" id="6_vcn1a"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lghal"]
+atlas = ExtResource("2_qr5go")
+region = Rect2(122, 0, 61, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p4k1q"]
+atlas = ExtResource("2_qr5go")
+region = Rect2(0, 0, 61, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7gjbk"]
+atlas = ExtResource("2_qr5go")
+region = Rect2(0, 0, 61, 29)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3w76p"]
+atlas = ExtResource("2_qr5go")
+region = Rect2(61, 0, 61, 29)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bhl75"]
+resource_local_to_scene = true
+shader = ExtResource("5_ca6x3")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_f47ta"]
+resource_local_to_scene = true
+shader = ExtResource("5_ca6x3")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hlj02"]
+resource_local_to_scene = true
+shader = ExtResource("5_ca6x3")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_j453b"]
+shader = ExtResource("5_ca6x3")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6qnhl"]
+resource_local_to_scene = true
+shader = ExtResource("5_ca6x3")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="GenericButton" type="MarginContainer" node_paths=PackedStringArray("hold_progress_bar")]
+offset_right = 76.0
+offset_bottom = 29.0
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+script = ExtResource("6_vcn1a")
+hold_progress_bar = NodePath("MarginContainer/HBoxContainer/MarginContainer/HoldProgressBar")
+disabled_texture = SubResource("AtlasTexture_lghal")
+pressed_texture = SubResource("AtlasTexture_p4k1q")
+default_texture = SubResource("AtlasTexture_7gjbk")
+hover_texture = SubResource("AtlasTexture_3w76p")
+button_color = 4
+icon_color = 1
+metadata/_edit_horizontal_guides_ = [18.0, 11.0]
+
+[node name="HoverInfoModule" parent="." instance=ExtResource("5_o7pkd")]
+
+[node name="OutlineMarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = -1
+theme_override_constants/margin_top = -1
+theme_override_constants/margin_right = -1
+theme_override_constants/margin_bottom = -1
+
+[node name="OutlineNinePatchRect" type="NinePatchRect" parent="OutlineMarginContainer"]
+visible = false
+material = SubResource("ShaderMaterial_bhl75")
+layout_mode = 2
+texture = ExtResource("5_ri25a")
+patch_margin_left = 23
+patch_margin_right = 22
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+material = SubResource("ShaderMaterial_f47ta")
+custom_minimum_size = Vector2(29, 29)
+layout_mode = 2
+size_flags_vertical = 8
+texture = SubResource("AtlasTexture_7gjbk")
+patch_margin_left = 23
+patch_margin_right = 22
+
+[node name="IconTextureRect" type="TextureRect" parent="NinePatchRect"]
+material = SubResource("ShaderMaterial_hlj02")
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -43.0
+offset_top = -14.5
+offset_right = 43.0
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 1
+stretch_mode = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_right = 25
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = -13
+
+[node name="HoldProgressBar" type="TextureProgressBar" parent="MarginContainer/HBoxContainer/MarginContainer"]
+visible = false
+material = SubResource("ShaderMaterial_j453b")
+layout_mode = 2
+size_flags_vertical = 4
+step = 0.01
+value = 100.0
+fill_mode = 4
+texture_progress = ExtResource("6_f16yi")
+
+[node name="NameLabel" parent="MarginContainer/HBoxContainer" instance=ExtResource("6_7mggs")]
+material = SubResource("ShaderMaterial_6qnhl")
+custom_minimum_size = Vector2(0, 15)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "BUTTON"
+horizontal_alignment = 1

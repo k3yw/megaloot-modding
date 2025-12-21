@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Keyword" load_steps=3 format=3 uid="uid://s5ndfttln41r"]
+
+[ext_resource type="Texture2D" uid="uid://bu64fo42vljsu" path="res://assets/textures/icons/execution_icon.png" id="1_iw8dw"]
+[ext_resource type="Script" uid="uid://3d38osm0yilr" path="res://classes/resource/keyword.gd" id="1_jc1jt"]
+
+[resource]
+script = ExtResource("1_jc1jt")
+name = &"Execute"
+icon = ExtResource("1_iw8dw")
+color = Color(0.701961, 0.72549, 0.819608, 1)

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=16 format=3 uid="uid://cwftsvaa5w4da"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_83dh1"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_o1w8y"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_vgav7"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_448mc"]
+[ext_resource type="Resource" uid="uid://ctpy2mw635lru" path="res://resources/item_sets/warrior.tres" id="2_f6cfn"]
+[ext_resource type="Texture2D" uid="uid://cuh2bm36jt2g3" path="res://assets/textures/enemies/skeleton_warrior.png" id="2_xvhxb"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_vhu57"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="4_e5vya"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_vs1on"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_o6bup"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_illfk"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_t0jjk"]
+
+[sub_resource type="Resource" id="Resource_q7k2c"]
+script = ExtResource("3_vhu57")
+boosting_sets = Array[ExtResource("1_83dh1")]([])
+resource = ExtResource("2_448mc")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_u850g"]
+script = ExtResource("3_vhu57")
+boosting_sets = Array[ExtResource("1_83dh1")]([])
+resource = ExtResource("4_e5vya")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_no83v"]
+script = ExtResource("3_vhu57")
+boosting_sets = Array[ExtResource("1_83dh1")]([])
+resource = ExtResource("4_vs1on")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_o1w8y")
+name = "Skeleton Warrior"
+texture = ExtResource("2_xvhxb")
+floor_number = 1
+flying = false
+starting_status_effects = Array[ExtResource("8_illfk")]([])
+active_item_sets = Array[ExtResource("1_83dh1")]([ExtResource("2_f6cfn")])
+stats_per_level = Array[ExtResource("11_t0jjk")]([])
+base_stats = Array[ExtResource("3_vhu57")]([SubResource("Resource_q7k2c"), SubResource("Resource_u850g"), SubResource("Resource_no83v")])
+abilities = Array[ExtResource("1_vgav7")]([])
+passives = Array[ExtResource("7_o6bup")]([])
+hide_stats = false

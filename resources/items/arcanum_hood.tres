@@ -1,0 +1,46 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://cg02d2dkyos2l"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_cgiy8"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_nnbsm"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="3_imovk"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_wvb2w"]
+[ext_resource type="Resource" uid="uid://cmgidfwgdx7no" path="res://resources/item_sets/arcanum.tres" id="4_nnbsm"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="4_rt218"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="5_ao0jj"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="5_imovk"]
+[ext_resource type="Texture2D" uid="uid://cjabhi27bkdkp" path="res://assets/textures/items/arcanum_hood.png" id="5_wvb2w"]
+
+[sub_resource type="Resource" id="Resource_tyvrm"]
+script = ExtResource("1_cgiy8")
+boosting_sets = Array[ExtResource("3_wvb2w")]([])
+resource = ExtResource("3_imovk")
+amount = 7.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_c8bqq"]
+script = ExtResource("1_cgiy8")
+boosting_sets = Array[ExtResource("3_wvb2w")]([])
+resource = ExtResource("4_rt218")
+amount = 5.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_nnbsm")
+name = &"Arcanum Hood"
+texture = ExtResource("5_wvb2w")
+socket_type = ExtResource("5_ao0jj")
+set_resources = Array[ExtResource("3_wvb2w")]([ExtResource("4_nnbsm")])
+bonus_stats = Array[ExtResource("1_cgiy8")]([SubResource("Resource_tyvrm"), SubResource("Resource_c8bqq")])
+unlock_requirements = Array[ExtResource("5_imovk")]([])
+extra_price = 5.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

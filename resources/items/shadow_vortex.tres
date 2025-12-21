@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://bf0hee8p6qln8"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_bmwhi"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_ookku"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="4_64t1o"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="5_piedt"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="6_5s025"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_paia5"]
+[ext_resource type="Texture2D" uid="uid://c4e72blur7bst" path="res://assets/textures/items/shadow_vortex.png" id="7_1rr1y"]
+
+[sub_resource type="Resource" id="Resource_qgp3u"]
+script = ExtResource("1_bmwhi")
+boosting_sets = Array[ExtResource("6_paia5")]([ExtResource("5_piedt")])
+resource = ExtResource("4_64t1o")
+amount = 7.0
+is_modifier = true
+
+[resource]
+script = ExtResource("2_ookku")
+name = &"Shadow Vortex"
+texture = ExtResource("7_1rr1y")
+description = ""
+socket_type = ExtResource("6_5s025")
+set_resources = Array[ExtResource("6_paia5")]([ExtResource("5_piedt")])
+bonus_stats = Array[ExtResource("1_bmwhi")]([SubResource("Resource_qgp3u")])
+extra_price = 27.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

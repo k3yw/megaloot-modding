@@ -1,0 +1,61 @@
+[gd_scene load_steps=6 format=3 uid="uid://pl21ipnw5u2c"]
+
+[ext_resource type="Script" uid="uid://blt2ynuapr37v" path="res://scenes/ui/toggle_option/toggle_option.gd" id="1_k2w7q"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="1_kda8p"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_whx1p"]
+[ext_resource type="PackedScene" uid="uid://bc7o81qso8lxc" path="res://scenes/ui/generic_toggle_button/generic_toggle_button.tscn" id="3_dl7rw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_gttk2"]
+resource_local_to_scene = true
+shader = ExtResource("2_whx1p")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="ToggleOption" type="HBoxContainer" node_paths=PackedStringArray("toggle_button", "name_label")]
+offset_right = 110.0
+offset_bottom = 12.0
+size_flags_vertical = 4
+theme_override_constants/separation = 25
+script = ExtResource("1_k2w7q")
+toggle_button = NodePath("GenericToggleButton")
+name_label = NodePath("MarginContainer/NameLabel")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_top = -1
+theme_override_constants/margin_bottom = 0
+
+[node name="NameLabel" parent="MarginContainer" instance=ExtResource("1_kda8p")]
+material = SubResource("ShaderMaterial_gttk2")
+layout_mode = 2
+text = "Option Name "
+
+[node name="GenericToggleButton" parent="." instance=ExtResource("3_dl7rw")]
+layout_mode = 2
+size_flags_vertical = 8

@@ -1,0 +1,191 @@
+[gd_scene load_steps=11 format=3 uid="uid://1kve52qitpw7"]
+
+[ext_resource type="Script" uid="uid://65q75nvqc0f0" path="res://scenes/ui/adventurer_overview_container/adventurer_overview_container.gd" id="1_i41cq"]
+[ext_resource type="PackedScene" uid="uid://cc8ol1m3hep2h" path="res://scenes/ui/drop_down_option/drop_down_option.tscn" id="2_8s1vu"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="2_8yjuq"]
+[ext_resource type="Texture2D" uid="uid://debj5gpvcxwc2" path="res://assets/textures/icons/difficulty_icon.png" id="3_5gn3w"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="3_iele7"]
+[ext_resource type="PackedScene" uid="uid://1khl3yfa0sy" path="res://scenes/ui/reward_container/reward_container.tscn" id="4_g53jx"]
+[ext_resource type="PackedScene" uid="uid://bp7f4v6xso0q0" path="res://scenes/ui/clip_container/clip_container.tscn" id="4_qupnr"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_3lk5t"]
+resource_local_to_scene = true
+shader = ExtResource("3_iele7")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_8s1vu"]
+shader = ExtResource("3_iele7")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qupnr"]
+resource_local_to_scene = true
+shader = ExtResource("3_iele7")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="AdventurerOverviewContainer" type="MarginContainer" node_paths=PackedStringArray("reward_container_holder", "floor_record_label", "version_drop_down")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+script = ExtResource("1_i41cq")
+reward_container_holder = NodePath("VBoxContainer/ClipContainer/RewardContainerHolder")
+floor_record_label = NodePath("VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer/FloorRecordLabel")
+version_drop_down = NodePath("VBoxContainer/MarginContainer/VBoxContainer/VersionDownOption")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="VBoxContainer" type="VBoxContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="VersionDownOption" parent="VBoxContainer/MarginContainer/VBoxContainer" instance=ExtResource("2_8s1vu")]
+layout_mode = 2
+
+[node name="NameLabel" parent="VBoxContainer/MarginContainer/VBoxContainer/VersionDownOption" index="0"]
+material = SubResource("ShaderMaterial_3lk5t")
+text = "Version:"
+
+[node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TextureRect2" type="TextureRect" parent="VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer"]
+texture_filter = 1
+material = SubResource("ShaderMaterial_8s1vu")
+layout_mode = 2
+texture = ExtResource("3_5gn3w")
+stretch_mode = 5
+
+[node name="FloorRecordLabel" parent="VBoxContainer/MarginContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_8yjuq")]
+material = SubResource("ShaderMaterial_qupnr")
+layout_mode = 2
+text = "Highest Floor: 10"
+
+[node name="ClipContainer" parent="VBoxContainer" instance=ExtResource("4_qupnr")]
+custom_minimum_size = Vector2(0, 98)
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="RewardContainerHolder" type="HBoxContainer" parent="VBoxContainer/ClipContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+
+[node name="RewardContainer" parent="VBoxContainer/ClipContainer/RewardContainerHolder" instance=ExtResource("4_g53jx")]
+layout_mode = 2
+
+[node name="RewardContainer2" parent="VBoxContainer/ClipContainer/RewardContainerHolder" instance=ExtResource("4_g53jx")]
+layout_mode = 2
+
+[node name="RewardContainer3" parent="VBoxContainer/ClipContainer/RewardContainerHolder" instance=ExtResource("4_g53jx")]
+layout_mode = 2
+
+[node name="RewardContainer4" parent="VBoxContainer/ClipContainer/RewardContainerHolder" instance=ExtResource("4_g53jx")]
+layout_mode = 2
+
+[node name="RewardContainer5" parent="VBoxContainer/ClipContainer/RewardContainerHolder" instance=ExtResource("4_g53jx")]
+layout_mode = 2
+
+[node name="RewardContainer6" parent="VBoxContainer/ClipContainer/RewardContainerHolder" instance=ExtResource("4_g53jx")]
+layout_mode = 2
+
+[node name="RewardContainer7" parent="VBoxContainer/ClipContainer/RewardContainerHolder" instance=ExtResource("4_g53jx")]
+layout_mode = 2
+
+[node name="RewardContainer8" parent="VBoxContainer/ClipContainer/RewardContainerHolder" instance=ExtResource("4_g53jx")]
+layout_mode = 2
+
+[node name="RewardContainer9" parent="VBoxContainer/ClipContainer/RewardContainerHolder" instance=ExtResource("4_g53jx")]
+layout_mode = 2
+
+[editable path="VBoxContainer/MarginContainer/VBoxContainer/VersionDownOption"]

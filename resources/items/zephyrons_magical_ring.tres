@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://dlbu5j5akbfv3"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_h23s6"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_5jfjq"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="4_4oqkn"]
+[ext_resource type="Resource" uid="uid://barfiwkq2fcrm" path="res://resources/item_sets/zephyron.tres" id="5_n8k31"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="6_86lt2"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_k6wx5"]
+[ext_resource type="Texture2D" uid="uid://pod1l6pkfwtk" path="res://assets/textures/items/zephyrons_magical_ring.png" id="7_kt7k6"]
+
+[sub_resource type="Resource" id="Resource_vmefa"]
+script = ExtResource("1_h23s6")
+boosting_sets = Array[ExtResource("6_k6wx5")]([ExtResource("5_n8k31")])
+resource = ExtResource("4_4oqkn")
+amount = 14.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_5jfjq")
+name = &"Zephyron\'s Magical Ring"
+texture = ExtResource("7_kt7k6")
+description = ""
+socket_type = ExtResource("6_86lt2")
+set_resources = Array[ExtResource("6_k6wx5")]([ExtResource("5_n8k31")])
+bonus_stats = Array[ExtResource("1_h23s6")]([SubResource("Resource_vmefa")])
+extra_price = 12.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

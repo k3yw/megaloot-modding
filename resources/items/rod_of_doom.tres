@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://cln22v8u4p8pn"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_uhqoa"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="2_tnp28"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_fkpqg"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="4_abvs6"]
+[ext_resource type="Resource" uid="uid://dhtx0qdflmixn" path="res://resources/item_sets/darkness.tres" id="5_4yjbp"]
+[ext_resource type="Resource" uid="uid://d07dc442wyx5e" path="res://resources/item_sets/wood.tres" id="6_xih35"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_c4t5l"]
+[ext_resource type="Texture2D" uid="uid://bdg3hm0otprmk" path="res://assets/textures/items/rod_of_doom.png" id="7_f2gwy"]
+
+[sub_resource type="Resource" id="Resource_jft2y"]
+script = ExtResource("1_uhqoa")
+boosting_sets = Array[ExtResource("4_abvs6")]([])
+resource = ExtResource("2_tnp28")
+amount = 1000.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_fkpqg")
+name = &"Rod of Doom"
+texture = ExtResource("7_f2gwy")
+description = ""
+socket_type = ExtResource("7_c4t5l")
+set_resources = Array[ExtResource("4_abvs6")]([ExtResource("5_4yjbp"), ExtResource("6_xih35")])
+bonus_stats = Array[ExtResource("1_uhqoa")]([SubResource("Resource_jft2y")])
+extra_price = 7456.0
+spawn_floor = 14
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

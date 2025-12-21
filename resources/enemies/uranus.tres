@@ -1,0 +1,57 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://c1lc72omhsj5m"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_tu7ic"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_8tp1w"]
+[ext_resource type="Resource" uid="uid://dndeblvcpcyh3" path="res://resources/abilities/astral_dissolution.tres" id="2_hw6um"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_dsiti"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_uri4h"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_da622"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_njpo5"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_m8ep0"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="6_vn2fb"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="7_en32v"]
+[ext_resource type="Resource" uid="uid://cx3yom37ddk2n" path="res://resources/stats/freeze_attack.tres" id="7_qmyvc"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="8_lx0xd"]
+[ext_resource type="Texture2D" uid="uid://dhar50xq47o2i" path="res://assets/textures/enemies/uranus.png" id="13_vb02c"]
+
+[sub_resource type="Resource" id="Resource_a4gv3"]
+script = ExtResource("3_dsiti")
+boosting_sets = Array[ExtResource("2_8tp1w")]([])
+resource = ExtResource("5_njpo5")
+amount = 76.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_5l018"]
+script = ExtResource("3_dsiti")
+boosting_sets = Array[ExtResource("2_8tp1w")]([])
+resource = ExtResource("6_vn2fb")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_7tjam"]
+script = ExtResource("3_dsiti")
+boosting_sets = Array[ExtResource("2_8tp1w")]([])
+resource = ExtResource("7_qmyvc")
+amount = 20.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_pkun6"]
+script = ExtResource("3_dsiti")
+boosting_sets = Array[ExtResource("2_8tp1w")]([])
+resource = ExtResource("8_lx0xd")
+amount = 45.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_da622")
+name = "Uranus"
+texture = ExtResource("13_vb02c")
+floor_number = 22
+flying = false
+starting_status_effects = Array[ExtResource("6_m8ep0")]([])
+active_item_sets = Array[ExtResource("2_8tp1w")]([])
+stats_per_level = Array[ExtResource("7_en32v")]([])
+base_stats = Array[ExtResource("3_dsiti")]([SubResource("Resource_a4gv3"), SubResource("Resource_5l018"), SubResource("Resource_7tjam"), SubResource("Resource_pkun6")])
+abilities = Array[ExtResource("1_tu7ic")]([ExtResource("2_hw6um")])
+passives = Array[ExtResource("4_uri4h")]([])
+hide_stats = false

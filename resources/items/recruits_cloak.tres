@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://cuc5bhf5gulsw"]
+
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="1_e0mjy"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_fy8wu"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="2_r0xau"]
+[ext_resource type="Resource" uid="uid://bf2y3uc38gwy2" path="res://resources/item_sets/scout.tres" id="4_gm1ei"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_0jo3s"]
+[ext_resource type="Texture2D" uid="uid://dr1rw28riq7h1" path="res://assets/textures/items/recruits_cloak.png" id="5_7jy3y"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="6_u8nyr"]
+
+[sub_resource type="Resource" id="Resource_c2o74"]
+script = ExtResource("2_fy8wu")
+boosting_sets = Array[ExtResource("5_0jo3s")]([])
+resource = ExtResource("2_r0xau")
+amount = 20.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_e0mjy")
+name = &"Recruit\'s Cloak"
+texture = ExtResource("5_7jy3y")
+description = ""
+socket_type = ExtResource("6_u8nyr")
+set_resources = Array[ExtResource("5_0jo3s")]([ExtResource("4_gm1ei")])
+bonus_stats = Array[ExtResource("2_fy8wu")]([SubResource("Resource_c2o74")])
+extra_price = 4.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

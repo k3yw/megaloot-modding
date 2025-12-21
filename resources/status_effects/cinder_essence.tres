@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://dqok64uhv78l7"]
+
+[ext_resource type="Script" uid="uid://byupw2popfbrs" path="res://resources/bb_scripts/cinder_essence.gd" id="1_l531t"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="2_5dpyo"]
+[ext_resource type="Texture2D" uid="uid://dfcukspaovtyw" path="res://assets/textures/icons/cinder_essence_icon.png" id="2_w72kp"]
+[ext_resource type="Resource" uid="uid://dkpwt31f2uxai" path="res://resources/status_effect_types/blessing.tres" id="4_n7fte"]
+
+[resource]
+script = ExtResource("2_5dpyo")
+name = "Cinder Essence"
+icon = ExtResource("2_w72kp")
+color = Color(0.976471, 0.6, 0.105882, 1)
+type = ExtResource("4_n7fte")
+is_temporary = false
+is_percent = false
+limit = -1
+application_message = ""
+bb_script = ExtResource("1_l531t")

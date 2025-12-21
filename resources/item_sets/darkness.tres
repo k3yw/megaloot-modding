@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=6 format=3 uid="uid://dhtx0qdflmixn"]
+
+[ext_resource type="Script" uid="uid://du3cofu40e23v" path="res://resources/bb_scripts/darkness.gd" id="1_fxa4j"]
+[ext_resource type="Texture2D" uid="uid://bjdm5prhx6aoc" path="res://assets/textures/icons/item_sets/darkness_icon.png" id="1_tcxeg"]
+[ext_resource type="Script" uid="uid://cv3focesb5i0n" path="res://resources/item_set_scripts/darkness.gd" id="2_gdj8v"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_jjmin"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="2_qcj1g"]
+
+[resource]
+script = ExtResource("2_jjmin")
+name = "Darkness"
+icon = ExtResource("1_tcxeg")
+color = Color(0.277344, 0.277344, 0.378906, 1)
+game_logic_script = ExtResource("2_gdj8v")
+bb_script = ExtResource("1_fxa4j")
+bonus_stats = Array[ExtResource("2_qcj1g")]([])

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://nycki171npu8"]
+
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_erb5w"]
+[ext_resource type="Script" uid="uid://dsjpsq302ln17" path="res://resources/bb_scripts/debuff_immunity.gd" id="1_kb2ix"]
+[ext_resource type="Texture2D" uid="uid://c5t4ku7yci4a5" path="res://assets/textures/icons/status_effects/debuff_immunity.png" id="1_ok0w7"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_hkgkb"]
+
+[resource]
+script = ExtResource("1_erb5w")
+name = "Debuff Immunity"
+icon = ExtResource("1_ok0w7")
+color = Color(0.996078, 0.952941, 0.752941, 1)
+type = ExtResource("3_hkgkb")
+is_temporary = true
+is_percent = false
+limit = 10
+application_message = ""
+bb_script = ExtResource("1_kb2ix")

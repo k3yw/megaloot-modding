@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=5 format=3 uid="uid://dginnho56yd4j"]
+
+[ext_resource type="Script" uid="uid://l4dvta1yxx3q" path="res://resources/bb_scripts/toxic_attack.gd" id="1_ceqcy"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_lapx2"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="3_tvuug"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="4_y3ejc"]
+
+[resource]
+script = ExtResource("3_tvuug")
+name = "Toxic Attack"
+mana_cost = 0
+use_limit = 1
+status_effects_on_activation = Array[ExtResource("4_y3ejc")]([])
+bonus_stats_while_active = Array[ExtResource("2_lapx2")]([])
+quick_cast = true
+non_target = true
+value = 0
+bb_script = ExtResource("1_ceqcy")

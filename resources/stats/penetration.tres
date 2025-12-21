@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://pvbac0njnmpw"]
+
+[ext_resource type="Script" uid="uid://cob6xq3crn33s" path="res://resources/bb_scripts/penetration.gd" id="1_4oqj7"]
+[ext_resource type="Texture2D" uid="uid://dd7qrfkv7pwk7" path="res://assets/textures/icons/stats/penetration_icon.png" id="1_45vin"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_50dbf"]
+[ext_resource type="Script" uid="uid://bwkvdmatwgtu7" path="res://resources/stat_scripts/penetration.gd" id="4_ylffy"]
+
+[resource]
+script = ExtResource("2_50dbf")
+name = "Penetration"
+icon = ExtResource("1_45vin")
+color = Color(0.45098, 0.4, 0.498039, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = 100.0
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_ylffy")
+bb_script = ExtResource("1_4oqj7")

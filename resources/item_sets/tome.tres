@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://xaq63f6ruqde"]
+
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="1_cjysh"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_b7rl3"]
+[ext_resource type="Texture2D" uid="uid://0r1n6lukvgfu" path="res://assets/textures/icons/item_sets/tome.png" id="2_uyv82"]
+
+[resource]
+script = ExtResource("2_b7rl3")
+name = "Tome"
+icon = ExtResource("2_uyv82")
+color = Color(0.4466, 0.482173, 0.58, 1)
+bonus_stats = Array[ExtResource("1_cjysh")]([])
+metadata/_custom_type_script = "uid://beywyjfa48wkv"

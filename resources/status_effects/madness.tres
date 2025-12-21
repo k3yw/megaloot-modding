@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://dpl11xox565iw"]
+
+[ext_resource type="Script" uid="uid://dki2qtt3m07t2" path="res://resources/bb_scripts/madness.gd" id="1_8vmby"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_f47yp"]
+[ext_resource type="Texture2D" uid="uid://duswbr6ia2if4" path="res://assets/textures/icons/madness_icon.png" id="1_ntxq4"]
+[ext_resource type="Resource" uid="uid://ptn3j1afs6g2" path="res://resources/status_effect_types/debuff.tres" id="2_aq20m"]
+
+[resource]
+script = ExtResource("1_f47yp")
+name = "Madness"
+icon = ExtResource("1_ntxq4")
+color = Color(0.407, 0.411767, 0.55, 1)
+type = ExtResource("2_aq20m")
+affected_by_tenacity = false
+is_temporary = true
+is_percent = false
+limit = 2
+application_message = ""
+bb_script = ExtResource("1_8vmby")

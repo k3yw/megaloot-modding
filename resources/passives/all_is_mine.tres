@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://bt25703gmwpyf"]
+
+[ext_resource type="Script" uid="uid://gligcvxho781" path="res://resources/bb_scripts/all_is_mine.gd" id="1_8j0g6"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_e80sp"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_d0dt8"]
+
+[resource]
+script = ExtResource("3_d0dt8")
+name = "All Is Mine"
+bonus_stats = Array[ExtResource("1_e80sp")]([])
+bb_script = ExtResource("1_8j0g6")

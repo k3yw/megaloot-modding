@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://dm8qecfk0t1g5"]
+
+[ext_resource type="Script" uid="uid://dgjdg3g8w7iwd" path="res://resources/bb_scripts/flow.gd" id="1_arno5"]
+[ext_resource type="Texture2D" uid="uid://shtq7472atvy" path="res://assets/textures/icons/stats/flow_icon.png" id="2_1m4c1"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="3_8vxtm"]
+[ext_resource type="Script" uid="uid://c7ksp0skvit8f" path="res://resources/stat_scripts/flow.gd" id="4_04xt1"]
+
+[resource]
+script = ExtResource("3_8vxtm")
+name = "Flow"
+icon = ExtResource("2_1m4c1")
+color = Color(0.84, 0.930667, 1, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = 175
+ignore_minimum_amount = true
+minimum_amount = 0.0
+stat_script = ExtResource("4_04xt1")
+bb_script = ExtResource("1_arno5")

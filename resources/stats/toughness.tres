@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://clysfjs400lm7"]
+
+[ext_resource type="Texture2D" uid="uid://qbdk5nvbsi27" path="res://assets/textures/icons/toughness_icon.png" id="1_5s5wg"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_o5u3p"]
+[ext_resource type="Script" uid="uid://e0dmxktfbegg" path="res://resources/bb_scripts/toughness.gd" id="1_vdd66"]
+[ext_resource type="Script" uid="uid://dv5qddtxa4jif" path="res://resources/stat_scripts/toughness.gd" id="4_j7typ"]
+
+[resource]
+script = ExtResource("1_o5u3p")
+name = "Toughness"
+icon = ExtResource("1_5s5wg")
+color = Color(0.521569, 0.619608, 0.643137, 1)
+is_percentage = true
+max_amount = 95.0
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_j7typ")
+bb_script = ExtResource("1_vdd66")

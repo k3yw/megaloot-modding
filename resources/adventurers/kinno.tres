@@ -1,0 +1,85 @@
+[gd_resource type="Resource" script_class="Adventurer" load_steps=32 format=3 uid="uid://bt8ln5vqn58y1"]
+
+[ext_resource type="Texture2D" uid="uid://btofpb3iid85g" path="res://assets/textures/portraits/kinno.png" id="1_4ye71"]
+[ext_resource type="Resource" uid="uid://cg8i768efhnhn" path="res://resources/abilities/arcane_roulette.tres" id="1_tgaor"]
+[ext_resource type="Script" uid="uid://b5ygq7ouoi3a1" path="res://classes/resource/adventurer.gd" id="1_whw78"]
+[ext_resource type="Texture2D" uid="uid://pruq1kt8uq0a" path="res://assets/textures/portraits/kinno_blink.png" id="2_yxwfy"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="3_axp7u"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_xp6nb"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="4_tods3"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="5_s37v8"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_x8exf"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="6_id6dp"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="7_vjugp"]
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="8_81k1b"]
+[ext_resource type="Resource" uid="uid://dn1yn63lnrs1t" path="res://resources/specializations/invulnerium.tres" id="9_u5scp"]
+[ext_resource type="Resource" path="res://resources/specializations/evadium.tres" id="10_j0ndr"]
+[ext_resource type="Resource" path="res://resources/specializations/stunium.tres" id="11_84tfx"]
+[ext_resource type="Script" uid="uid://bf4xfjaqogirm" path="res://classes/resource/socket_type.gd" id="12_khxwl"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="13_gccs1"]
+[ext_resource type="Resource" uid="uid://do3dgjfvqv0pr" path="res://resources/passives/arcane_control.tres" id="14_7bnj5"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="14_tgaor"]
+[ext_resource type="Resource" uid="uid://cmw0nuwmn0iiu" path="res://resources/socket_types/leggings.tres" id="15_7bnj5"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="15_ubcac"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="16_2s7dt"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="17_4dlfe"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="18_8c87i"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="19_nkq6w"]
+
+[sub_resource type="Resource" id="Resource_121pf"]
+script = ExtResource("4_tods3")
+boosting_sets = Array[ExtResource("3_xp6nb")]([])
+resource = ExtResource("5_x8exf")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_jku72"]
+script = ExtResource("4_tods3")
+boosting_sets = Array[ExtResource("3_xp6nb")]([])
+resource = ExtResource("6_id6dp")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_6oufh"]
+script = ExtResource("4_tods3")
+boosting_sets = Array[ExtResource("3_xp6nb")]([])
+resource = ExtResource("5_s37v8")
+amount = 15.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_tfwgw"]
+script = ExtResource("4_tods3")
+boosting_sets = Array[ExtResource("3_xp6nb")]([])
+resource = ExtResource("3_axp7u")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_7h1lt"]
+script = ExtResource("4_tods3")
+boosting_sets = Array[ExtResource("3_xp6nb")]([])
+resource = ExtResource("7_vjugp")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_lwg44"]
+script = ExtResource("4_tods3")
+boosting_sets = Array[ExtResource("3_xp6nb")]([])
+resource = ExtResource("3_axp7u")
+amount = 25.0
+is_modifier = true
+
+[resource]
+script = ExtResource("1_whw78")
+name = &"Kinno"
+portrait = ExtResource("1_4ye71")
+blink = ExtResource("2_yxwfy")
+specializations = Array[Object]([ExtResource("9_u5scp"), ExtResource("10_j0ndr"), ExtResource("11_84tfx")])
+starting_inventory_items = Array[ExtResource("15_ubcac")]([])
+challenge_market_items = Array[ExtResource("15_ubcac")]([])
+starting_market_items = Array[ExtResource("15_ubcac")]([])
+ability = ExtResource("1_tgaor")
+abilities_to_learn_size = 2
+passive = ExtResource("14_7bnj5")
+chapters = Array[ExtResource("8_81k1b")]([])
+bonus_stats = Array[ExtResource("4_tods3")]([SubResource("Resource_121pf"), SubResource("Resource_jku72"), SubResource("Resource_6oufh"), SubResource("Resource_tfwgw"), SubResource("Resource_7h1lt"), SubResource("Resource_lwg44")])
+sockets = Array[ExtResource("12_khxwl")]([ExtResource("13_gccs1"), ExtResource("14_tgaor"), ExtResource("15_7bnj5"), ExtResource("16_2s7dt"), ExtResource("17_4dlfe"), ExtResource("18_8c87i"), ExtResource("19_nkq6w"), ExtResource("19_nkq6w")])

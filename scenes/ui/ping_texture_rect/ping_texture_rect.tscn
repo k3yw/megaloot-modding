@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://brnfyu8albuv0"]
+
+[ext_resource type="Texture2D" uid="uid://cgciyy7famcfe" path="res://assets/textures/ui/ping.png" id="1_jg2uh"]
+[ext_resource type="Script" uid="uid://cp5kjjb845fxd" path="res://scenes/ui/ping_texture_rect/ping_texture_rect.gd" id="2_r1eiu"]
+[ext_resource type="PackedScene" uid="uid://c44wlrtoiy84r" path="res://scenes/modules/hover_info_module/hover_info_module.tscn" id="3_mxkem"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qx5nh"]
+atlas = ExtResource("1_jg2uh")
+region = Rect2(0, 0, 8, 8)
+
+[sub_resource type="GDScript" id="GDScript_vdfhv"]
+script/source = "extends BBScript
+
+
+
+
+
+
+
+
+
+func get_bb_container_data(args: Array = []) -> Array[BBContainerData]:
+	var bb_container_data: Array[BBContainerData] = []
+	var ping: String = \"0\"
+	
+	if args.size() > 1:
+		ping = str(args[1])
+	
+	bb_container_data.push_back(BBContainerData.new(ping))
+	bb_container_data.push_back(BBContainerData.new(\" ms\"))
+	
+	return bb_container_data
+"
+
+[node name="PingTextureRect" type="TextureRect" node_paths=PackedStringArray("hover_info_module")]
+offset_right = 8.0
+offset_bottom = 8.0
+texture = SubResource("AtlasTexture_qx5nh")
+script = ExtResource("2_r1eiu")
+hover_info_module = NodePath("HoverInfoModule")
+
+[node name="HoverInfoModule" parent="." instance=ExtResource("3_mxkem")]
+hover_info_name = "Ping"
+translate = false
+is_dynamic = true
+bb_script = SubResource("GDScript_vdfhv")

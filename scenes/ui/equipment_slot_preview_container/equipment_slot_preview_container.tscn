@@ -1,0 +1,48 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4c1ig7yxy6li"]
+
+[ext_resource type="Script" uid="uid://c23jepitjgkt7" path="res://scenes/ui/equipment_slot_preview_container/equipment_slot_preview_container.gd" id="1_0n6es"]
+[ext_resource type="PackedScene" uid="uid://nc3w7aqw3oct" path="res://scenes/ui/equipment_slot_preview/equipment_slot_preview.tscn" id="1_10ciu"]
+
+[node name="EquipmentSlotPreviewContainer" type="MarginContainer" node_paths=PackedStringArray("equipment_slot_preview_container_0", "equipment_slot_preview_container_1")]
+offset_right = 73.0
+theme_override_constants/margin_left = 2
+theme_override_constants/margin_top = 2
+script = ExtResource("1_0n6es")
+equipment_slot_preview_container_0 = NodePath("HBoxContainer/VBoxContainer")
+equipment_slot_preview_container_1 = NodePath("HBoxContainer/VBoxContainer2")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="EquipmentSlotPreview" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_10ciu")]
+layout_mode = 2
+
+[node name="EquipmentSlotPreview2" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_10ciu")]
+layout_mode = 2
+
+[node name="EquipmentSlotPreview3" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_10ciu")]
+layout_mode = 2
+
+[node name="EquipmentSlotPreview4" parent="HBoxContainer/VBoxContainer" instance=ExtResource("1_10ciu")]
+layout_mode = 2
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+theme_override_constants/separation = 7
+
+[node name="EquipmentSlotPreview" parent="HBoxContainer/VBoxContainer2" instance=ExtResource("1_10ciu")]
+layout_mode = 2
+
+[node name="EquipmentSlotPreview2" parent="HBoxContainer/VBoxContainer2" instance=ExtResource("1_10ciu")]
+layout_mode = 2
+
+[node name="EquipmentSlotPreview3" parent="HBoxContainer/VBoxContainer2" instance=ExtResource("1_10ciu")]
+layout_mode = 2
+
+[node name="EquipmentSlotPreview4" parent="HBoxContainer/VBoxContainer2" instance=ExtResource("1_10ciu")]
+layout_mode = 2

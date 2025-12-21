@@ -1,0 +1,107 @@
+[gd_scene load_steps=9 format=3 uid="uid://dkyelo5cqldd1"]
+
+[ext_resource type="Texture2D" uid="uid://dr6jkdb3c0i1x" path="res://assets/textures/icons/unknown_set_icon.png" id="1_6ixh8"]
+[ext_resource type="Shader" uid="uid://beyoatj8ncnlh" path="res://resources/shaders/set_texture_rect.gdshader" id="1_ybfxl"]
+[ext_resource type="Script" uid="uid://dw65kjj8h1s62" path="res://scenes/ui/set_texture_rect/set_texture_rect.gd" id="2_ntdd0"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_p7t7l"]
+resource_local_to_scene = true
+shader = ExtResource("1_ybfxl")
+shader_parameter/main_col = Color(0.698039, 0.721569, 0.815686, 1)
+shader_parameter/new_col = Color(1, 0, 0.286275, 1)
+shader_parameter/scale = 1.0
+shader_parameter/col_mix = 0.0
+shader_parameter/brightness = 0.0
+
+[sub_resource type="Animation" id="Animation_bkhuj"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/col_mix")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_6btaa"]
+resource_name = "pop"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 1.5, 0.75, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_ss4v4"]
+resource_name = "pop_error"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [1.0, 1.5, 0.75, 1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:material:shader_parameter/col_mix")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [0.0, 1.0, 1.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_lt6h7"]
+_data = {
+&"RESET": SubResource("Animation_bkhuj"),
+&"pop": SubResource("Animation_6btaa"),
+&"pop_error": SubResource("Animation_ss4v4")
+}
+
+[node name="SetTextureRect" type="TextureRect"]
+material = SubResource("ShaderMaterial_p7t7l")
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_6ixh8")
+stretch_mode = 3
+script = ExtResource("2_ntdd0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_lt6h7")
+}

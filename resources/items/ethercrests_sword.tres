@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://gnxwp3w0l272"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_3j4yb"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_dgp6h"]
+[ext_resource type="Resource" uid="uid://cx3yom37ddk2n" path="res://resources/stats/freeze_attack.tres" id="4_sts35"]
+[ext_resource type="Resource" uid="uid://g3um3f8ovjwk" path="res://resources/item_sets/ancient_ice.tres" id="5_d4aa7"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="6_j0fau"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_wr1tq"]
+[ext_resource type="Texture2D" uid="uid://illqtom1wov2" path="res://assets/textures/items/ethercrests_sword.png" id="7_dp4vy"]
+
+[sub_resource type="Resource" id="Resource_ix1vd"]
+script = ExtResource("1_3j4yb")
+boosting_sets = Array[ExtResource("6_wr1tq")]([ExtResource("5_d4aa7")])
+resource = ExtResource("4_sts35")
+amount = 28.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_dgp6h")
+name = &"Ethercrest\'s Sword"
+texture = ExtResource("7_dp4vy")
+description = ""
+socket_type = ExtResource("6_j0fau")
+set_resources = Array[ExtResource("6_wr1tq")]([ExtResource("5_d4aa7")])
+bonus_stats = Array[ExtResource("1_3j4yb")]([SubResource("Resource_ix1vd")])
+extra_price = 18.0
+spawn_floor = 14
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

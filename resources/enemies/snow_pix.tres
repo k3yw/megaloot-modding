@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=16 format=3 uid="uid://buujvct6pcl8l"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_lh4np"]
+[ext_resource type="Resource" uid="uid://cjibj6rc1xq28" path="res://resources/abilities/frozen_strike.tres" id="1_m6qy2"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_xkuyu"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_mrn42"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_v6bjq"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_83qxq"]
+[ext_resource type="Texture2D" uid="uid://dl7ffrevbin6c" path="res://assets/textures/enemies/snow_pix.png" id="4_03s4c"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="4_c5m2t"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="4_vbm4y"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_acook"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_dpwt0"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_c8ja4"]
+
+[sub_resource type="Resource" id="Resource_hn6av"]
+script = ExtResource("3_83qxq")
+boosting_sets = Array[ExtResource("2_v6bjq")]([])
+resource = ExtResource("2_mrn42")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_uk73g"]
+script = ExtResource("3_83qxq")
+boosting_sets = Array[ExtResource("2_v6bjq")]([])
+resource = ExtResource("4_vbm4y")
+amount = 1.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_kp3ua"]
+script = ExtResource("3_83qxq")
+boosting_sets = Array[ExtResource("2_v6bjq")]([])
+resource = ExtResource("4_c5m2t")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_lh4np")
+name = "Snow Pix"
+texture = ExtResource("4_03s4c")
+floor_number = 0
+flying = true
+starting_status_effects = Array[ExtResource("8_dpwt0")]([])
+active_item_sets = Array[ExtResource("2_v6bjq")]([])
+stats_per_level = Array[ExtResource("11_c8ja4")]([])
+base_stats = Array[ExtResource("3_83qxq")]([SubResource("Resource_hn6av"), SubResource("Resource_uk73g"), SubResource("Resource_kp3ua")])
+abilities = Array[ExtResource("1_xkuyu")]([ExtResource("1_m6qy2")])
+passives = Array[ExtResource("7_acook")]([])
+hide_stats = false

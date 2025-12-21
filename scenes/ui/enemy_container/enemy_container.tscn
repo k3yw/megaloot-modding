@@ -1,0 +1,1267 @@
+[gd_scene load_steps=64 format=3 uid="uid://byy5tudhut7qr"]
+
+[ext_resource type="Script" uid="uid://clpogcb8w8a1x" path="res://scenes/ui/enemy_container/enemy_container.gd" id="1_2xq2y"]
+[ext_resource type="PackedScene" uid="uid://brd6cjsadpkn5" path="res://scenes/ui/health_bar/health_bar.tscn" id="2_jjjy3"]
+[ext_resource type="Texture2D" uid="uid://rgryofd715lm" path="res://assets/textures/ui/enemy_selection.png" id="2_rm8as"]
+[ext_resource type="Texture2D" uid="uid://nf8j07din755" path="res://assets/textures/ui/minimal_bar.png" id="3_a5yq0"]
+[ext_resource type="PackedScene" uid="uid://cosfjf6vdhp3l" path="res://scenes/ui/armor_bar/armor_bar.tscn" id="3_nm10k"]
+[ext_resource type="Script" uid="uid://8p1m5wixkjkr" path="res://scenes/ui/effect_container_holder/effect_container_holder.gd" id="6_nrgrr"]
+[ext_resource type="Shader" uid="uid://1uctvtok7mmi" path="res://resources/shaders/enemy_container.gdshader" id="7_n3e1t"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="7_thdoo"]
+[ext_resource type="Texture2D" uid="uid://dg0aglp5ny4da" path="res://assets/textures/particles/star.png" id="8_dk4nj"]
+[ext_resource type="PackedScene" uid="uid://pgkct3tb88du" path="res://scenes/ui/mana_bar/mana_bar.tscn" id="8_ioefh"]
+[ext_resource type="Texture2D" uid="uid://dyfc57kd8pf5v" path="res://assets/textures/particles/beam.png" id="10_34kf1"]
+[ext_resource type="Shader" uid="uid://c8806nrjrpobn" path="res://scenes/ui/enemy_container/shadow.gdshader" id="10_rc568"]
+[ext_resource type="Texture2D" uid="uid://d0s7ic60s1r1r" path="res://resources/hues/elite_lvl_3.tres" id="10_xqg5m"]
+[ext_resource type="Texture2D" uid="uid://br0rramfmtiuu" path="res://assets/textures/enemies/bat.png" id="10_y81pn"]
+[ext_resource type="Shader" uid="uid://cxnda6q1u7w7f" path="res://scenes/ui/enemy_container/enemy_container.gdshader" id="12_mnkj1"]
+[ext_resource type="Texture2D" uid="uid://ensh6anvirkr" path="res://assets/textures/misc/blank.png" id="13_mkndv"]
+[ext_resource type="Texture2D" uid="uid://bhx5xpn4hh0jc" path="res://assets/textures/particles/flame_0.png" id="15_71ppm"]
+[ext_resource type="Texture2D" uid="uid://ccms3jyll2rhj" path="res://assets/textures/enemies/mystic_trader.png" id="16_1bdu1"]
+[ext_resource type="Texture2D" uid="uid://db7eqpafl725r" path="res://resources/hues/elite_lvl_7.tres" id="16_b5hw1"]
+[ext_resource type="Texture2D" uid="uid://cqkje7qyslypb" path="res://assets/textures/particles/heart_0.png" id="19_1bdu1"]
+[ext_resource type="Texture2D" uid="uid://dbcdgn40vfk22" path="res://assets/textures/icons/stats/armor_icon.png" id="21_8r4oy"]
+
+[sub_resource type="Animation" id="Animation_wlpsx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/alpha")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("EnemyVisuals/Control/Layer1:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("EnemyVisuals/Control/Layer1:material:shader_parameter/dir")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/start_frame")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/damage_flicker")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [false]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/texture_offset")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_p65mn"]
+resource_name = "enemy_attack"
+length = 0.2
+step = 0.025
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyVisuals/Control/Layer1:material:shader_parameter/dir")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.025, 0.075, 0.125, 0.15, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0.01), Vector2(0, 0.025), Vector2(0, 0), Vector2(0, 0.01), Vector2(0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/texture_offset")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.025, 0.075, 0.125, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -15), Vector2(0, 10), Vector2(0, 10), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ribsd"]
+resource_name = "enemy_dodge"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyVisuals/Control/Layer1:material:shader_parameter/dir")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0.05, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_flp6x"]
+resource_name = "enemy_flying_idle"
+length = 1.2
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/texture_offset")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -5), Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_xlw1b"]
+resource_name = "fade_in"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/alpha")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_o4v2h"]
+resource_name = "player_attack"
+length = 0.25
+step = 0.01
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.04, 0.08, 0.11, 0.13, 0.25),
+"transitions": PackedFloat32Array(1, 0.5, 0.5, 0.5, 0.5, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.25, 0.75), Vector2(0.75, 1.25), Vector2(0.75, 1.25), Vector2(1.25, 0.75), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/start_frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.04, 0.09, 0.14, 0.19, 0.23, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/damage_flicker")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.25),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [true, false]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect:material:shader_parameter/alpha")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.13, 0.16, 0.18, 0.2, 0.23, 0.25),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, 0), Vector2(10, 0), Vector2(-10, 0), Vector2(10, 0), Vector2(0, 0), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_h56j3"]
+_data = {
+&"RESET": SubResource("Animation_wlpsx"),
+&"enemy_attack": SubResource("Animation_p65mn"),
+&"enemy_dodge": SubResource("Animation_ribsd"),
+&"enemy_flying_idle": SubResource("Animation_flp6x"),
+&"fade_in": SubResource("Animation_xlw1b"),
+&"player_attack": SubResource("Animation_o4v2h")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sjfl0"]
+shader = ExtResource("7_thdoo")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_aowvu"]
+texture = ExtResource("3_a5yq0")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+expand_margin_left = 6.0
+expand_margin_top = 4.0
+expand_margin_right = 6.0
+expand_margin_bottom = 6.0
+region_rect = Rect2(0, 0, 11, 11)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6xraa"]
+shader = ExtResource("7_thdoo")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_6rfl5"]
+resource_local_to_scene = true
+shader = ExtResource("7_thdoo")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iu7ra"]
+resource_local_to_scene = true
+shader = ExtResource("7_thdoo")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rdh10"]
+resource_local_to_scene = true
+shader = ExtResource("7_thdoo")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(0.6, 0.0627451, 0.203922, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_17xyu"]
+resource_local_to_scene = true
+shader = ExtResource("7_thdoo")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(0.6, 0.0627451, 0.203922, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_jyme7"]
+resource_local_to_scene = true
+shader = ExtResource("7_thdoo")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = true
+shader_parameter/fill = true
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="Animation" id="Animation_o5clx"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/alpha")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_wtxg7"]
+resource_name = "fade_out"
+length = 0.3
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/alpha")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [1.0, 0.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k2tdl"]
+_data = {
+&"RESET": SubResource("Animation_o5clx"),
+&"fade_out": SubResource("Animation_wtxg7")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cdu86"]
+resource_local_to_scene = true
+shader = ExtResource("7_n3e1t")
+shader_parameter/damage_flicker = false
+shader_parameter/start_frame = 0
+shader_parameter/current_frame = 0
+shader_parameter/mix_ratio = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/colors = PackedColorArray(1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0.917647, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1)
+shader_parameter/line_color = Color(0, 0.796078, 0.870588, 1)
+shader_parameter/line_scale = 1.0
+shader_parameter/angle = 270.0
+shader_parameter/strength = 0.15
+shader_parameter/speed = 0.25
+shader_parameter/enabled = false
+shader_parameter/hue_tex = ExtResource("10_xqg5m")
+shader_parameter/ice_alpha = 1.0
+shader_parameter/ice_height = 1.0
+shader_parameter/ice_color = Color(0, 0, 0, 1)
+shader_parameter/ice_offset = Vector2(0, 0)
+
+[sub_resource type="Animation" id="Animation_b552q"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/texture_offset")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_w4yv1"]
+resource_name = "flying_idle"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/texture_offset")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.4, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, 0), Vector2(0, -5), Vector2(0, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ixi3u"]
+_data = {
+&"RESET": SubResource("Animation_b552q"),
+&"flying_idle": SubResource("Animation_w4yv1")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_auk8b"]
+resource_local_to_scene = true
+shader = ExtResource("10_rc568")
+shader_parameter/height = 0.3
+shader_parameter/width = 0.7
+shader_parameter/modulate = Color(0.0432, 0.0588, 0.09, 0.980392)
+
+[sub_resource type="Curve" id="Curve_h65mk"]
+_data = [Vector2(0, 0), 0.0, 5.89474, 0, 0, Vector2(0.265306, 1), -0.0937808, -0.0937808, 0, 0, Vector2(0.875, 0), -4.98597, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Curve" id="Curve_8e2dw"]
+_limits = [0.0, 1.75, 0.0, 1.0]
+_data = [Vector2(0.0382653, 0.178947), 0.0, 4.95158, 0, 0, Vector2(0.543367, 1.75), 1.41474, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_3advj"]
+offsets = PackedFloat32Array(0, 0.32687, 0.626039, 0.825485, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0.67451, 1, 1, 1, 0.670588, 1, 1, 1, 0)
+
+[sub_resource type="Curve" id="Curve_wa6m3"]
+_limits = [-1.0, 1.0, 0.0, 1.0]
+_data = [Vector2(0, -1), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Gradient" id="Gradient_v4kmb"]
+offsets = PackedFloat32Array(0, 0.265896, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="Curve" id="Curve_ry2qi"]
+_data = [Vector2(0, 0), 0.0, 24.9146, 0, 0, Vector2(0.124542, 1), 0.0376945, 0.0376945, 0, 0, Vector2(1, 0), -3.93617, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_hykmy"]
+offsets = PackedFloat32Array(0, 0.127413, 0.6139, 1)
+colors = PackedColorArray(1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0)
+
+[sub_resource type="Shader" id="Shader_11n7q"]
+code = "shader_type canvas_item;
+uniform vec2 dir = vec2(0,0);
+uniform int quality = 4;
+
+uniform sampler2D SCREEN_TEXTURE: hint_screen_texture;
+
+void vertex(){
+	vec2 blurSize = abs(dir) * 2.0;
+	VERTEX *= blurSize + 1.0;
+	UV = (UV - 0.5) * (blurSize + 1.0) + 0.5;
+}
+
+float insideUnitSquare(vec2 v) {
+    vec2 s = step(vec2(0.0), v) - step(vec2(1.0), v);
+    return s.x * s.y;   
+}
+
+void fragment(){
+	float inSquare = insideUnitSquare(SCREEN_UV);
+	float numSamples = inSquare;
+	COLOR = texture(SCREEN_TEXTURE, SCREEN_UV) * inSquare;
+	vec2 stepSize = dir/(float(quality));
+	vec2 uv;
+	for(int i = 1; i <= quality; i++){
+		uv = SCREEN_UV + stepSize * float(i);
+		inSquare = insideUnitSquare(uv);
+		numSamples += inSquare;
+		COLOR += texture(SCREEN_TEXTURE, uv) * inSquare;
+		
+		uv = SCREEN_UV - stepSize * float(i);
+		inSquare = insideUnitSquare(uv);
+		numSamples += inSquare;
+		COLOR += texture(SCREEN_TEXTURE, uv) * inSquare;
+	}
+	COLOR.rgb /= numSamples;
+	COLOR.a /= float(quality)*2.0 + 1.0;
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_ey1ve"]
+resource_local_to_scene = true
+shader = SubResource("Shader_11n7q")
+shader_parameter/dir = Vector2(0, 0)
+shader_parameter/quality = 4
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_h8r6t"]
+resource_local_to_scene = true
+shader = ExtResource("7_n3e1t")
+shader_parameter/damage_flicker = false
+shader_parameter/start_frame = 0
+shader_parameter/current_frame = 0
+shader_parameter/mix_ratio = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/brightness = 1.49012e-08
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/colors = PackedColorArray(1, 0, 1, 1, 0, 0, 1, 1, 1, 0, 0, 1, 0.917647, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1)
+shader_parameter/line_color = Color(0.202994, 0, 0.0573525, 1)
+shader_parameter/line_scale = 1.0
+shader_parameter/angle = 270.0
+shader_parameter/strength = 0.25
+shader_parameter/speed = 0.25
+shader_parameter/enabled = true
+shader_parameter/hue_tex = ExtResource("16_b5hw1")
+shader_parameter/ice_alpha = 1.0
+shader_parameter/ice_height = 1.0
+shader_parameter/ice_color = Color(0.636718, 0.800779, 0.911622, 1)
+shader_parameter/ice_offset = Vector2(0, 0)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1bdu1"]
+resource_local_to_scene = true
+atlas = ExtResource("16_1bdu1")
+region = Rect2(-64, 0, 192, 64)
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_bjhxe"]
+resource_local_to_scene = true
+shader = ExtResource("12_mnkj1")
+shader_parameter/color = Color(0.541176, 0.694118, 1, 1)
+shader_parameter/texture_offset = Vector2(0, 0)
+
+[sub_resource type="Curve" id="Curve_1bdu1"]
+_limits = [-0.25, 0.0, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(1, -0.25), -0.889752, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_1iirv"]
+shader = ExtResource("7_thdoo")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7n55i"]
+atlas = ExtResource("2_rm8as")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="Animation" id="Animation_rpieh"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture:region")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 16, 16)]
+}
+
+[sub_resource type="Animation" id="Animation_5c2ru"]
+resource_name = "bounce"
+length = 0.4
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:texture:region")
+tracks/0/interp = 0
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Rect2(0, 0, 16, 16), Rect2(16, 0, 16, 16), Rect2(32, 0, 16, 16), Rect2(16, 0, 16, 16)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_hxmac"]
+_data = {
+&"RESET": SubResource("Animation_rpieh"),
+&"bounce": SubResource("Animation_5c2ru")
+}
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vxhxc"]
+resource_local_to_scene = true
+shader = ExtResource("7_thdoo")
+shader_parameter/type = 3
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="EnemyContainer" type="VBoxContainer" node_paths=PackedStringArray("animation_player", "selection_texture_rect", "immunity_texture_rect", "effect_container_holder", "stats_container", "enemy_mana_bar", "enemy_health_bar", "enemy_armor_bar", "ability_preview_particles", "ability_particles", "cinder_particles", "heart_particles", "enemy_texture_rect", "selection_rect", "shadow", "nodes_to_hide_on_death", "enemy_visuals", "next_enemy_fade_animation_player", "next_enemy_animation_player", "next_enemy_texture_rect", "next_enemy_layer", "shield_sprite")]
+custom_minimum_size = Vector2(76, 146)
+offset_left = 1.0
+offset_right = 77.0
+offset_bottom = 146.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+script = ExtResource("1_2xq2y")
+animation_player = NodePath("AnimationPlayer")
+selection_texture_rect = NodePath("HBoxContainer/SelectionTextureRect")
+immunity_texture_rect = NodePath("HBoxContainer/ImmunityTextureRect")
+effect_container_holder = NodePath("StatsContainer/VBoxContainer/MarginContainer3/EffectContainerHolder")
+stats_container = NodePath("StatsContainer")
+enemy_mana_bar = NodePath("StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/HealthBar/HBoxContainer/ManaBar")
+enemy_health_bar = NodePath("StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/HealthBar")
+enemy_armor_bar = NodePath("StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/ArmorBar")
+ability_preview_particles = [NodePath("EnemyVisuals/Control/AbilityPreviewParticlesBack"), NodePath("EnemyVisuals/Control/AbilityPreviewParticlesFront")]
+ability_particles = [NodePath("EnemyVisuals/Control/AbilityParticlesBack"), NodePath("EnemyVisuals/Control/AbilityParticlesFront")]
+cinder_particles = [NodePath("EnemyVisuals/Control/CinderParticlesBack"), NodePath("EnemyVisuals/Control/CinderParticlesFront")]
+heart_particles = NodePath("EnemyVisuals/Control/HeartParticles")
+enemy_texture_rect = NodePath("EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect")
+selection_rect = NodePath("EnemyVisuals/Control/SelectionRect")
+shadow = NodePath("EnemyVisuals/Control/Shadow")
+nodes_to_hide_on_death = [NodePath("StatsContainer/VBoxContainer/MarginContainer2"), NodePath("StatsContainer/VBoxContainer/MarginContainer2/MarginContainer"), NodePath("StatsContainer/VBoxContainer/MarginContainer3/EffectContainerHolder")]
+enemy_visuals = NodePath("EnemyVisuals")
+next_enemy_fade_animation_player = NodePath("CenterContainer2/MarginContainer2/Control/NextEnemyLayer/AnimationPlayer")
+next_enemy_animation_player = NodePath("CenterContainer2/MarginContainer2/Control/NextEnemyLayer/NextEnemyTextureRect/AnimationPlayer")
+next_enemy_texture_rect = NodePath("CenterContainer2/MarginContainer2/Control/NextEnemyLayer/NextEnemyTextureRect")
+next_enemy_layer = NodePath("CenterContainer2/MarginContainer2/Control/NextEnemyLayer")
+shield_sprite = NodePath("EnemyVisuals/Control/ShieldSprite")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_h56j3")
+}
+
+[node name="StatsContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_top = -62
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatsContainer"]
+layout_mode = 2
+theme_override_constants/separation = 7
+alignment = 2
+
+[node name="MarginContainer3" type="MarginContainer" parent="StatsContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = -1000
+
+[node name="EffectContainerHolder" type="FlowContainer" parent="StatsContainer/VBoxContainer/MarginContainer3"]
+layout_mode = 2
+size_flags_vertical = 8
+script = ExtResource("6_nrgrr")
+
+[node name="MarginContainer2" type="MarginContainer" parent="StatsContainer/VBoxContainer"]
+z_index = 1
+layout_mode = 2
+
+[node name="Panel" type="Panel" parent="StatsContainer/VBoxContainer/MarginContainer2"]
+material = SubResource("ShaderMaterial_sjfl0")
+layout_mode = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_aowvu")
+
+[node name="ColorRect" type="ColorRect" parent="StatsContainer/VBoxContainer/MarginContainer2/Panel"]
+show_behind_parent = true
+material = SubResource("ShaderMaterial_6xraa")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -5.0
+offset_top = -3.0
+offset_right = 5.0
+offset_bottom = 5.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="StatsContainer/VBoxContainer/MarginContainer2"]
+layout_mode = 2
+theme_override_constants/margin_top = 6
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 8
+alignment = 1
+
+[node name="ArmorBar" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer" instance=ExtResource("3_nm10k")]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_stretch_ratio = 1.5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+layout_mode = 2
+
+[node name="HealthBar" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer" instance=ExtResource("2_jjjy3")]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="LabelPanel" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/HealthBar/HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/DebuffsContainer/MarginContainer" index="0"]
+material = SubResource("ShaderMaterial_6rfl5")
+
+[node name="GenericPanel" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/HealthBar/HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/MarginContainer/MarginContainer" index="0"]
+material = SubResource("ShaderMaterial_iu7ra")
+
+[node name="AmountLabel" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/HealthBar/HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/MarginContainer/HBoxContainer" index="0"]
+material = SubResource("ShaderMaterial_rdh10")
+translate = true
+
+[node name="MiscLabel" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/HealthBar/HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/MarginContainer/HBoxContainer" index="1"]
+material = SubResource("ShaderMaterial_17xyu")
+translate = true
+
+[node name="MaxAmountLabel" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/HealthBar/HBoxContainer/MarginContainer/Container/LabelMarginContainer/LabelContainer/MarginContainer/HBoxContainer" index="2"]
+material = SubResource("ShaderMaterial_17xyu")
+translate = true
+
+[node name="ManaBar" parent="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/HealthBar/HBoxContainer" index="1" instance=ExtResource("8_ioefh")]
+layout_mode = 2
+
+[node name="CenterContainer2" type="CenterContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
+
+[node name="MarginContainer2" type="MarginContainer" parent="CenterContainer2"]
+layout_mode = 2
+theme_override_constants/margin_top = -25
+
+[node name="Control" type="Control" parent="CenterContainer2/MarginContainer2"]
+layout_mode = 2
+
+[node name="NextEnemyLayer" type="CanvasGroup" parent="CenterContainer2/MarginContainer2/Control"]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_jyme7")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer2/MarginContainer2/Control/NextEnemyLayer"]
+root_node = NodePath("../NextEnemyTextureRect")
+libraries = {
+&"": SubResource("AnimationLibrary_k2tdl")
+}
+
+[node name="NextEnemyTextureRect" type="TextureRect" parent="CenterContainer2/MarginContainer2/Control/NextEnemyLayer"]
+self_modulate = Color(1, 1, 1, 0)
+material = SubResource("ShaderMaterial_cdu86")
+custom_minimum_size = Vector2(64, 64)
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = 20.0
+offset_right = 32.0
+offset_bottom = 84.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(32, 32)
+texture = ExtResource("10_y81pn")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CenterContainer2/MarginContainer2/Control/NextEnemyLayer/NextEnemyTextureRect"]
+libraries = {
+&"": SubResource("AnimationLibrary_ixi3u")
+}
+
+[node name="EnemyVisuals" type="CenterContainer" parent="."]
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 2
+
+[node name="Control" type="Control" parent="EnemyVisuals"]
+layout_mode = 2
+
+[node name="Shadow" type="ColorRect" parent="EnemyVisuals/Control"]
+material = SubResource("ShaderMaterial_auk8b")
+custom_minimum_size = Vector2(64, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -32.0
+offset_top = -1.0
+offset_right = 32.0
+offset_bottom = 63.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(64, 64)
+mouse_filter = 1
+
+[node name="AbilityParticlesBack" type="CPUParticles2D" parent="EnemyVisuals/Control"]
+position = Vector2(0, 16)
+emitting = false
+amount = 10
+texture = ExtResource("10_34kf1")
+lifetime = 0.45
+one_shot = true
+explosiveness = 0.45
+lifetime_randomness = 0.1
+draw_order = 1
+emission_shape = 3
+emission_rect_extents = Vector2(30, 0)
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 75.0
+initial_velocity_max = 75.0
+damping_min = 0.5
+damping_max = 0.5
+split_scale = true
+scale_curve_x = SubResource("Curve_h65mk")
+scale_curve_y = SubResource("Curve_8e2dw")
+color = Color(0, 0.462745, 1, 1)
+color_ramp = SubResource("Gradient_3advj")
+hue_variation_max = 0.1
+hue_variation_curve = SubResource("Curve_wa6m3")
+
+[node name="AbilityPreviewParticlesBack" type="CPUParticles2D" parent="EnemyVisuals/Control"]
+position = Vector2(0, 8)
+emitting = false
+amount = 4
+texture = ExtResource("8_dk4nj")
+lifetime = 1.75
+explosiveness = 0.5
+emission_shape = 3
+emission_rect_extents = Vector2(20, 20)
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 15.0
+initial_velocity_max = 15.0
+color = Color(0.352941, 0.556863, 0.945098, 1)
+color_ramp = SubResource("Gradient_v4kmb")
+
+[node name="CinderParticlesBack" type="CPUParticles2D" parent="EnemyVisuals/Control"]
+position = Vector2(0, 8)
+emitting = false
+amount = 20
+texture = ExtResource("15_71ppm")
+one_shot = true
+speed_scale = 2.0
+explosiveness = 1.0
+emission_shape = 1
+emission_sphere_radius = 25.0
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 15.0
+initial_velocity_max = 45.0
+damping_min = 15.0
+damping_max = 25.0
+scale_amount_min = 0.5
+scale_amount_max = 1.5
+scale_amount_curve = SubResource("Curve_ry2qi")
+color_ramp = SubResource("Gradient_hykmy")
+
+[node name="Layer1" type="CanvasGroup" parent="EnemyVisuals/Control"]
+material = SubResource("ShaderMaterial_ey1ve")
+fit_margin = 100.0
+
+[node name="EnemyOffset" type="Control" parent="EnemyVisuals/Control/Layer1"]
+layout_mode = 3
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="EnemyTextureRect" type="TextureRect" parent="EnemyVisuals/Control/Layer1/EnemyOffset"]
+material = SubResource("ShaderMaterial_h8r6t")
+custom_minimum_size = Vector2(207, 64)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -103.5
+offset_top = -32.0
+offset_right = 103.5
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+pivot_offset = Vector2(103.5, 32)
+texture = SubResource("AtlasTexture_1bdu1")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimatedTextureTimer" type="Timer" parent="EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect"]
+wait_time = 0.2
+autostart = true
+
+[node name="ShieldSprite" type="Sprite2D" parent="EnemyVisuals/Control"]
+visible = false
+material = SubResource("ShaderMaterial_bjhxe")
+scale = Vector2(1.9375, 1.9375)
+texture = ExtResource("13_mkndv")
+
+[node name="AbilityParticlesFront" type="CPUParticles2D" parent="EnemyVisuals/Control"]
+position = Vector2(0, 16)
+emitting = false
+amount = 10
+texture = ExtResource("10_34kf1")
+lifetime = 0.45
+one_shot = true
+explosiveness = 0.45
+lifetime_randomness = 0.1
+draw_order = 1
+emission_shape = 3
+emission_rect_extents = Vector2(30, 0)
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 75.0
+initial_velocity_max = 75.0
+damping_min = 0.5
+damping_max = 0.5
+split_scale = true
+scale_curve_x = SubResource("Curve_h65mk")
+scale_curve_y = SubResource("Curve_8e2dw")
+color = Color(0, 0.462745, 1, 1)
+color_ramp = SubResource("Gradient_3advj")
+hue_variation_max = 0.1
+hue_variation_curve = SubResource("Curve_wa6m3")
+
+[node name="AbilityPreviewParticlesFront" type="CPUParticles2D" parent="EnemyVisuals/Control"]
+position = Vector2(0, 8)
+emitting = false
+amount = 4
+texture = ExtResource("8_dk4nj")
+lifetime = 1.75
+explosiveness = 0.5
+emission_shape = 3
+emission_rect_extents = Vector2(20, 20)
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 15.0
+initial_velocity_max = 15.0
+color = Color(0.352064, 0.555792, 0.947052, 1)
+color_ramp = SubResource("Gradient_v4kmb")
+
+[node name="CinderParticlesFront" type="CPUParticles2D" parent="EnemyVisuals/Control"]
+position = Vector2(0, 8)
+emitting = false
+amount = 20
+texture = ExtResource("15_71ppm")
+one_shot = true
+speed_scale = 2.0
+explosiveness = 1.0
+emission_shape = 1
+emission_sphere_radius = 25.0
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 15.0
+initial_velocity_max = 45.0
+damping_min = 15.0
+damping_max = 25.0
+scale_amount_min = 0.5
+scale_amount_max = 1.5
+scale_amount_curve = SubResource("Curve_ry2qi")
+color_ramp = SubResource("Gradient_hykmy")
+
+[node name="HeartParticles" type="CPUParticles2D" parent="EnemyVisuals/Control"]
+position = Vector2(0, -8)
+emitting = false
+amount = 7
+texture = ExtResource("19_1bdu1")
+one_shot = true
+speed_scale = 1.75
+explosiveness = 1.0
+emission_shape = 3
+emission_rect_extents = Vector2(35, 15)
+direction = Vector2(0, -1)
+spread = 0.0
+gravity = Vector2(0, 0)
+initial_velocity_min = 15.0
+initial_velocity_max = 45.0
+damping_min = 15.0
+damping_max = 25.0
+scale_amount_max = 2.0
+scale_amount_curve = SubResource("Curve_ry2qi")
+color_ramp = SubResource("Gradient_hykmy")
+hue_variation_max = 0.5
+hue_variation_curve = SubResource("Curve_1bdu1")
+
+[node name="SelectionRect" type="ColorRect" parent="EnemyVisuals/Control"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -39.0
+offset_top = -46.0
+offset_right = 40.0
+offset_bottom = 39.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 1, 0)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+alignment = 1
+
+[node name="SelectionTextureRect" type="TextureRect" parent="HBoxContainer"]
+material = SubResource("ShaderMaterial_1iirv")
+custom_minimum_size = Vector2(16, 16)
+layout_mode = 2
+texture = SubResource("AtlasTexture_7n55i")
+expand_mode = 1
+stretch_mode = 5
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HBoxContainer/SelectionTextureRect"]
+libraries = {
+&"": SubResource("AnimationLibrary_hxmac")
+}
+autoplay = "bounce"
+
+[node name="ImmunityTextureRect" type="TextureRect" parent="HBoxContainer"]
+modulate = Color(0.427451, 0.458824, 0.552941, 1)
+material = SubResource("ShaderMaterial_vxhxc")
+layout_mode = 2
+texture = ExtResource("21_8r4oy")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+
+[connection signal="timeout" from="EnemyVisuals/Control/Layer1/EnemyOffset/EnemyTextureRect/AnimatedTextureTimer" to="." method="_on_animated_texture_timer_timeout"]
+
+[editable path="StatsContainer/VBoxContainer/MarginContainer2/MarginContainer/VBoxContainer/HBoxContainer/VBoxContainer/HBoxContainer/HealthBar"]

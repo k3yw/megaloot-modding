@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=5 format=3 uid="uid://ctpy2mw635lru"]
+
+[ext_resource type="Texture2D" uid="uid://bb5uv6qgmv2al" path="res://assets/textures/icons/item_sets/warrior.png" id="1_2oaac"]
+[ext_resource type="Script" uid="uid://bke0y174e4tq8" path="res://resources/bb_scripts/warrior.gd" id="1_4l1oa"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_e15a2"]
+[ext_resource type="Script" uid="uid://bfmuy7cw1dwls" path="res://resources/item_set_scripts/warrior.gd" id="2_up5ok"]
+
+[resource]
+script = ExtResource("2_e15a2")
+name = "Warrior"
+icon = ExtResource("1_2oaac")
+color = Color(0.5, 0.480469, 0.476563, 1)
+value = 0
+flow_cost = 25
+game_logic_script = ExtResource("2_up5ok")
+bb_script = ExtResource("1_4l1oa")

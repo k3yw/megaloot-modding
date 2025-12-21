@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/unchained_icon.png" id="2_lq66g"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_m3lrn"]
+[ext_resource type="Resource" path="res://resources/item_sets/unchained.tres" id="3_2r1lq"]
+[ext_resource type="Resource" path="res://resources/stats/electricity.tres" id="6_6pi1p"]
+[ext_resource type="Resource" path="res://resources/stats/toxicity.tres" id="7_6cydd"]
+[ext_resource type="Resource" path="res://resources/stats/dazzle.tres" id="8_3tsee"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_ea06m"]
+
+[resource]
+script = ExtResource("2_m3lrn")
+name = "Echomancer"
+color = Color(0.603922, 1, 0.827451, 1)
+icon = ExtResource("2_lq66g")
+original_item_set = ExtResource("3_2r1lq")
+completed_floor_to_unlock = 3
+stats = Array[ExtResource("9_ea06m")]([ExtResource("6_6pi1p"), ExtResource("7_6cydd"), ExtResource("8_3tsee")])
+stats_new = Array[ExtResource("9_ea06m")]([ExtResource("6_6pi1p"), ExtResource("7_6cydd"), ExtResource("8_3tsee")])

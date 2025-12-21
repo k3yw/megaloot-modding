@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://5xyc8pb8ef75"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_xw7jy"]
+[ext_resource type="Resource" uid="uid://i7el4x0fmvyc" path="res://resources/stats/crit_chance.tres" id="2_dof1v"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_sjrt7"]
+[ext_resource type="Resource" uid="uid://c13gw4gotf587" path="res://resources/passives/growing_anger.tres" id="4_qbq8b"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_5mm5o"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="6_qrxce"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="6_ujbvl"]
+[ext_resource type="Texture2D" uid="uid://rrq1r85ky20c" path="res://assets/textures/items/ring_of_anger.png" id="7_81ko7"]
+
+[sub_resource type="Resource" id="Resource_hvy3x"]
+script = ExtResource("1_xw7jy")
+boosting_sets = Array[ExtResource("5_5mm5o")]([])
+resource = ExtResource("2_dof1v")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_sjrt7")
+name = &"Ring of Anger"
+texture = ExtResource("7_81ko7")
+description = ""
+socket_type = ExtResource("6_qrxce")
+set_resources = Array[ExtResource("5_5mm5o")]([ExtResource("6_ujbvl")])
+passive = ExtResource("4_qbq8b")
+bonus_stats = Array[ExtResource("1_xw7jy")]([SubResource("Resource_hvy3x")])
+extra_price = 42.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

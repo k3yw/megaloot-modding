@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://b7wbhsur4sgug"]
+
+[ext_resource type="Script" uid="uid://b4qtihnwrnpsy" path="res://scenes/objects/battle_camera/battle_camera.gd" id="1_r51p0"]
+
+[node name="BattleCamera" type="Camera2D"]
+position = Vector2(166, 138)
+script = ExtResource("1_r51p0")

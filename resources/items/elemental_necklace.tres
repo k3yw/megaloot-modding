@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://b3htgirirto6f"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_m0xdl"]
+[ext_resource type="Resource" uid="uid://dpl8agabg0hnp" path="res://resources/stats/elemental_resistance.tres" id="2_wdnh2"]
+[ext_resource type="Resource" uid="uid://t41a6nfn5j50" path="res://resources/stats/elemental_power.tres" id="3_5iy13"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_latdl"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_4l2s6"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="6_5m122"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="7_b8p0o"]
+[ext_resource type="Texture2D" uid="uid://bxufasncrkea0" path="res://assets/textures/items/elemental_necklace.png" id="7_vwxvv"]
+
+[sub_resource type="Resource" id="Resource_4wvxq"]
+script = ExtResource("1_m0xdl")
+boosting_sets = Array[ExtResource("5_4l2s6")]([])
+resource = ExtResource("3_5iy13")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_i2cnp"]
+script = ExtResource("1_m0xdl")
+boosting_sets = Array[ExtResource("5_4l2s6")]([null])
+resource = ExtResource("2_wdnh2")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_latdl")
+name = &"Elemental Necklace"
+texture = ExtResource("7_vwxvv")
+description = ""
+socket_type = ExtResource("7_b8p0o")
+set_resources = Array[ExtResource("5_4l2s6")]([ExtResource("6_5m122")])
+bonus_stats = Array[ExtResource("1_m0xdl")]([SubResource("Resource_4wvxq"), SubResource("Resource_i2cnp")])
+extra_price = 87.0
+spawn_floor = 12
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

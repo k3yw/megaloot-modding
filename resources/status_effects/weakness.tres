@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=6 format=3 uid="uid://bx8xjx2krh51a"]
+
+[ext_resource type="Texture2D" uid="uid://cm1hckou227ra" path="res://assets/textures/icons/weakness_icon.png" id="1_k3e1g"]
+[ext_resource type="AudioStream" uid="uid://cotad71h6atcx" path="res://assets/sfx/apply_weakness.wav" id="1_kf7fe"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_y1f6q"]
+[ext_resource type="Script" uid="uid://b5a70ser7kl05" path="res://resources/bb_scripts/weakness.gd" id="2_271v0"]
+[ext_resource type="Resource" uid="uid://ptn3j1afs6g2" path="res://resources/status_effect_types/debuff.tres" id="4_0uyu0"]
+
+[resource]
+script = ExtResource("1_y1f6q")
+name = "Weakness"
+icon = ExtResource("1_k3e1g")
+color = Color(0.352941, 0.533333, 1, 1)
+type = ExtResource("4_0uyu0")
+is_temporary = true
+is_percent = false
+limit = 10
+application_message = "WEAKENED"
+application_sound = ExtResource("1_kf7fe")
+bb_script = ExtResource("2_271v0")

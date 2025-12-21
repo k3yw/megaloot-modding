@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://bl3esg827au7i"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_s1o7p"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="2_5qsps"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_0b82j"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_lnk5c"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="6_r70jc"]
+[ext_resource type="Resource" uid="uid://barfiwkq2fcrm" path="res://resources/item_sets/zephyron.tres" id="6_vjchk"]
+[ext_resource type="Texture2D" uid="uid://k7x0g32ikdfs" path="res://assets/textures/items/zephyrons_magical_cap.png" id="7_nxr1i"]
+
+[sub_resource type="Resource" id="Resource_pyi6n"]
+script = ExtResource("1_s1o7p")
+boosting_sets = Array[ExtResource("5_lnk5c")]([])
+resource = ExtResource("2_5qsps")
+amount = 12.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_0b82j")
+name = &"Zephyron\'s Magical Cap"
+texture = ExtResource("7_nxr1i")
+description = ""
+socket_type = ExtResource("6_r70jc")
+set_resources = Array[ExtResource("5_lnk5c")]([ExtResource("6_vjchk")])
+bonus_stats = Array[ExtResource("1_s1o7p")]([SubResource("Resource_pyi6n")])
+extra_price = 14.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

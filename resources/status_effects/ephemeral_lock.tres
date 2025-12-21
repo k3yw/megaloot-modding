@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://xtxohcp3qw1l"]
+
+[ext_resource type="Texture2D" uid="uid://ylv6r41gfoms" path="res://assets/textures/icons/silence_icon.png" id="1_1617j"]
+[ext_resource type="Script" uid="uid://kqj352s2c8ci" path="res://resources/bb_scripts/ephemeral_lock.gd" id="1_sfkp2"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="2_avlft"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="4_j3a15"]
+
+[resource]
+script = ExtResource("2_avlft")
+name = "Ephemeral Lock"
+icon = ExtResource("1_1617j")
+color = Color(0.462745, 0.380392, 0.67451, 1)
+type = ExtResource("4_j3a15")
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_sfkp2")

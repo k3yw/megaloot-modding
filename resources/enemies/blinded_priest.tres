@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=16 format=3 uid="uid://devv2n8j20e2x"]
+
+[ext_resource type="Resource" uid="uid://dnm5csypphl54" path="res://resources/abilities/multi_cleanse.tres" id="1_br2t5"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_mdoe2"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_vbqnk"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_wk3tl"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_x2i4o"]
+[ext_resource type="Texture2D" uid="uid://cyxia2c8gcncr" path="res://assets/textures/enemies/blinded_priest.png" id="2_x3w8h"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_o1osl"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="4_kyhtj"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="6_wky56"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_yv8e2"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_vcmmh"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_pk5mp"]
+
+[sub_resource type="Resource" id="Resource_w2eiv"]
+script = ExtResource("3_o1osl")
+boosting_sets = Array[ExtResource("1_wk3tl")]([])
+resource = ExtResource("2_x2i4o")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_gwnw4"]
+script = ExtResource("3_o1osl")
+boosting_sets = Array[ExtResource("1_wk3tl")]([])
+resource = ExtResource("4_kyhtj")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ua51q"]
+script = ExtResource("3_o1osl")
+boosting_sets = Array[ExtResource("1_wk3tl")]([])
+resource = ExtResource("6_wky56")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_mdoe2")
+name = "Blinded Priest"
+texture = ExtResource("2_x3w8h")
+floor_number = 10
+flying = false
+starting_status_effects = Array[ExtResource("8_vcmmh")]([])
+active_item_sets = Array[ExtResource("1_wk3tl")]([])
+stats_per_level = Array[ExtResource("11_pk5mp")]([])
+base_stats = Array[ExtResource("3_o1osl")]([SubResource("Resource_w2eiv"), SubResource("Resource_gwnw4"), SubResource("Resource_ua51q")])
+abilities = Array[ExtResource("1_vbqnk")]([ExtResource("1_br2t5")])
+passives = Array[ExtResource("7_yv8e2")]([])
+hide_stats = false

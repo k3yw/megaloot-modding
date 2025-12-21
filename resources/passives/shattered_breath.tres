@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://wjriih54g7b7"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_184lo"]
+[ext_resource type="Script" uid="uid://cyxbkgv74n2nt" path="res://resources/bb_scripts/shattered_breath.gd" id="1_qnl7k"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_qnl7k"]
+[ext_resource type="Script" uid="uid://5oarof2kc6tb" path="res://resources/passive_scripts/shattered_breath.gd" id="3_1uhrb"]
+
+[resource]
+script = ExtResource("2_qnl7k")
+name = "Shattered Breath"
+bonus_stats = Array[ExtResource("1_184lo")]([])
+game_logic_script = ExtResource("3_1uhrb")
+bb_script = ExtResource("1_qnl7k")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

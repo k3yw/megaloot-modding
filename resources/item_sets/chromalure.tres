@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=5 format=3 uid="uid://b0reailgui4vy"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_s58bx"]
+[ext_resource type="Texture2D" uid="uid://sbqc2a8yasjh" path="res://assets/textures/icons/item_sets/chromalure_icon.png" id="1_ut4ls"]
+[ext_resource type="Script" uid="uid://f8ao6kev01k8" path="res://resources/bb_scripts/chromalure.gd" id="1_y13gs"]
+[ext_resource type="Script" uid="uid://cdd8l31le3vu1" path="res://resources/item_set_scripts/chromalure.gd" id="2_ijbgi"]
+
+[resource]
+script = ExtResource("1_s58bx")
+name = "Chromalure"
+icon = ExtResource("1_ut4ls")
+color = Color(0.257813, 0.640625, 0.347656, 1)
+value = 0
+game_logic_script = ExtResource("2_ijbgi")
+bb_script = ExtResource("1_y13gs")

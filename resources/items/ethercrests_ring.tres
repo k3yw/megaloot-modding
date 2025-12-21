@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://btx3e5aflws31"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ajc6y"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_dyeie"]
+[ext_resource type="Resource" uid="uid://cx3yom37ddk2n" path="res://resources/stats/freeze_attack.tres" id="4_th77d"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_6g0iq"]
+[ext_resource type="Resource" uid="uid://g3um3f8ovjwk" path="res://resources/item_sets/ancient_ice.tres" id="6_quhmv"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="7_dk1pe"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_uk2is"]
+[ext_resource type="Texture2D" uid="uid://iqacsmdccq1x" path="res://assets/textures/items/ethercrests_ring.png" id="8_yhklm"]
+
+[sub_resource type="Resource" id="Resource_wvft5"]
+script = ExtResource("1_ajc6y")
+boosting_sets = Array[ExtResource("7_uk2is")]([ExtResource("6_quhmv")])
+resource = ExtResource("4_th77d")
+amount = 6.0
+is_modifier = true
+
+[sub_resource type="Resource" id="Resource_r35iy"]
+script = ExtResource("1_ajc6y")
+boosting_sets = Array[ExtResource("7_uk2is")]([ExtResource("6_quhmv")])
+resource = ExtResource("5_6g0iq")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_dyeie")
+name = &"Ethercrest\'s Ring"
+texture = ExtResource("8_yhklm")
+description = ""
+socket_type = ExtResource("7_dk1pe")
+set_resources = Array[ExtResource("7_uk2is")]([ExtResource("6_quhmv")])
+bonus_stats = Array[ExtResource("1_ajc6y")]([SubResource("Resource_wvft5"), SubResource("Resource_r35iy")])
+extra_price = 36.0
+spawn_floor = 14
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://b32koolwxfaox"]
+
+[ext_resource type="Script" uid="uid://c7vugp0j6f7ji" path="res://resources/bb_scripts/fear.gd" id="1_6xi1l"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_214kt"]
+[ext_resource type="Texture2D" uid="uid://b4vd76ful678q" path="res://assets/textures/icons/fear_icon.png" id="1_eg0vi"]
+[ext_resource type="Resource" uid="uid://ptn3j1afs6g2" path="res://resources/status_effect_types/debuff.tres" id="2_35n30"]
+
+[resource]
+script = ExtResource("1_214kt")
+name = "Fear"
+icon = ExtResource("1_eg0vi")
+color = Color(0.211765, 0.662745, 0.658824, 1)
+type = ExtResource("2_35n30")
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_6xi1l")

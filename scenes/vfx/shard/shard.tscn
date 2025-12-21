@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://biwnosnofc3oc"]
+
+[ext_resource type="Script" uid="uid://dtwaj15tyh08a" path="res://scenes/vfx/shard/shard.gd" id="1_718nf"]
+
+[node name="Shard" type="RigidBody2D" node_paths=PackedStringArray("polygon", "collision")]
+collision_layer = 0
+collision_mask = 0
+sleeping = true
+script = ExtResource("1_718nf")
+polygon = NodePath("Polygon2D")
+collision = NodePath("CollisionPolygon2D")
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+disabled = true

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://blp3d63eis1x3"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ekr28"]
+[ext_resource type="Script" uid="uid://6hn01l1v2p6j" path="res://resources/bb_scripts/crimson_pact.gd" id="1_gicsb"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_gicsb"]
+[ext_resource type="Script" uid="uid://moo4xeh2xwpp" path="res://resources/passive_scripts/crimson_pact.gd" id="3_chox0"]
+
+[resource]
+script = ExtResource("2_gicsb")
+name = "Crimson Pact"
+bonus_stats = Array[ExtResource("1_ekr28")]([])
+game_logic_script = ExtResource("3_chox0")
+bb_script = ExtResource("1_gicsb")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

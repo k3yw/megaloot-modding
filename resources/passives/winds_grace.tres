@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://gklqo0ag42mv"]
+
+[ext_resource type="Script" uid="uid://b0pe8dkxnt7x4" path="res://resources/bb_scripts/winds_grace.gd" id="1_kelwx"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_rmv3b"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_kelwx"]
+
+[resource]
+script = ExtResource("2_kelwx")
+name = "Wind’s Grace"
+bonus_stats = Array[ExtResource("1_rmv3b")]([])
+bb_script = ExtResource("1_kelwx")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

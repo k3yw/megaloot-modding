@@ -1,0 +1,113 @@
+// NOTE: Shader automatically converted from Godot Engine 4.2.2.stable's StandardMaterial3D.
+
+shader_type spatial;
+render_mode blend_mix,depth_draw_opaque,cull_back;
+
+uniform sampler2D texture_albedo : source_color,filter_linear_mipmap,repeat_enable;
+varying vec3 uv1_triplanar_pos;
+uniform float uv1_blend_sharpness;
+varying vec3 uv1_power_normal;
+uniform vec3 uv1_scale;
+uniform vec3 uv1_offset;
+
+
+global uniform vec4 background_color: source_color;
+global uniform vec4 border_color: source_color;
+global uniform vec4 darker_border_color: source_color;
+
+
+uniform bool custom_colors = false;
+
+uniform vec3 color_0 : source_color;
+uniform vec3 color_1 : source_color;
+uniform vec3 color_2: source_color;
+
+uniform float dim: hint_range(0.0, 1.0, 0.01) = 1.0;
+
+
+void vertex() {
+	vec3 normal = MODEL_NORMAL_MATRIX * NORMAL;
+	uv1_power_normal=pow(abs(normal),vec3(uv1_blend_sharpness));
+	uv1_triplanar_pos = (MODEL_MATRIX * vec4(VERTEX, 1.0f)).xyz * uv1_scale + uv1_offset;
+	uv1_power_normal/=dot(uv1_power_normal,vec3(1.0));
+	uv1_triplanar_pos *= vec3(1.0,-1.0, 1.0);
+}
+
+
+
+vec4 triplanar_texture(sampler2D p_sampler,vec3 p_weights,vec3 p_triplanar_pos) {
+	vec4 samp=vec4(0.0);
+	samp+= texture(p_sampler,p_triplanar_pos.xy) * p_weights.z;
+	samp+= texture(p_sampler,p_triplanar_pos.xz) * p_weights.y;
+	samp+= texture(p_sampler,p_triplanar_pos.zy * vec2(-1.0,1.0)) * p_weights.x;
+	return samp;
+}
+
+
+vec3 fix_colors(vec3 col){
+	return mix(pow((col + vec3(0.055)) * (1.0 / (1.0 + 0.055)), vec3(2.4)), col * (1.0 / 12.92), lessThan(col, vec3(0.04045)));
+}
+
+
+vec3 get_new_tex(vec3 tex){
+	if (distance(tex, vec3(0.066)) < 0.001){
+		return fix_colors(background_color.rgb);
+	}
+
+	if (distance(tex, vec3(0.219)) < 0.001){
+		return fix_colors(border_color.rgb);
+	}
+
+	if (distance(tex, vec3(0.168)) < 0.001){
+		return fix_colors(darker_border_color.rgb);
+	}
+
+	return tex;
+}
+
+
+
+
+
+
+void fragment() {
+	vec4 albedo_tex = triplanar_texture(texture_albedo,uv1_power_normal,uv1_triplanar_pos);
+	albedo_tex.rgb = get_new_tex(albedo_tex.rgb);
+
+	ALBEDO.rgb = albedo_tex.rgb;
+}
+
+
+
+void light() {
+	float lig = pow(ATTENUATION, 2.0);
+	//lig = round(lig * 3.0) / 3.0;
+	vec3 albe = mix(vec3(0.0), ALBEDO.rgb + vec3(lig * 0.03), lig * 0.9);
+	albe *= dim;
+
+	vec3 new_albedo_tex;
+
+	vec3 palette[] = {
+		fix_colors(background_color.rgb),
+		fix_colors(border_color.rgb),
+		fix_colors(darker_border_color.rgb)
+		}; // Can be any list of RGB colors, but there must be at least one.
+
+	if (custom_colors){
+		palette = {
+			color_0,
+			color_1,
+			color_2
+		};
+		}
+
+	vec3 new_color = palette[0];
+	for (int i = 0; i<palette.length(); i++){
+		if (distance(palette[i],albe) < distance(new_color, albe)){
+			new_color = palette[i];
+		}
+		new_albedo_tex = new_color;
+	}
+
+	SPECULAR_LIGHT += vec3(new_albedo_tex) * ATTENUATION;
+}

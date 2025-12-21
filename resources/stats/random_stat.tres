@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=3 format=3 uid="uid://dna2806h7f0ca"]
+
+[ext_resource type="Texture2D" uid="uid://dr6jkdb3c0i1x" path="res://assets/textures/icons/unknown_set_icon.png" id="1_bc7uv"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_fia6b"]
+
+[resource]
+script = ExtResource("1_fia6b")
+name = "Random Stat"
+icon = ExtResource("1_bc7uv")
+color = Color(0.698039, 0.721569, 0.815686, 1)
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+upgradeable = true
+metadata/_custom_type_script = "uid://ctq5askfk0kre"

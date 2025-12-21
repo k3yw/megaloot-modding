@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://wey5geqot3o5"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_rt8px"]
+[ext_resource type="Resource" uid="uid://clysfjs400lm7" path="res://resources/stats/toughness.tres" id="2_wlm20"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_4pq5y"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_cweho"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_fkm8u"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="7_ni7yk"]
+[ext_resource type="Resource" uid="uid://cq6tpc5j7tr2h" path="res://resources/item_sets/ancient_shell.tres" id="7_ymfke"]
+[ext_resource type="Texture2D" uid="uid://d2kyka71d34p0" path="res://assets/textures/items/turtle_sabatons.png" id="8_q8hhh"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="10_p6sbe"]
+
+[sub_resource type="Resource" id="Resource_hj6th"]
+script = ExtResource("1_rt8px")
+boosting_sets = Array[ExtResource("7_fkm8u")]([ExtResource("7_ymfke")])
+resource = ExtResource("5_cweho")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_iqwob"]
+script = ExtResource("1_rt8px")
+boosting_sets = Array[ExtResource("7_fkm8u")]([])
+resource = ExtResource("2_wlm20")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_4pq5y")
+name = &"Turtle Sabatons"
+texture = ExtResource("8_q8hhh")
+socket_type = ExtResource("7_ni7yk")
+set_resources = Array[ExtResource("7_fkm8u")]([ExtResource("7_ymfke")])
+bonus_stats = Array[ExtResource("1_rt8px")]([SubResource("Resource_hj6th"), SubResource("Resource_iqwob")])
+unlock_requirements = Array[ExtResource("10_p6sbe")]([])
+extra_price = 45.0
+spawn_floor = 12
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

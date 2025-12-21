@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="StatusEffectType" load_steps=2 format=3 uid="uid://bnafey8yic5rn"]
+
+[ext_resource type="Script" uid="uid://l1k7ou0hn56b" path="res://classes/resource/status_effect_type.gd" id="1_es2ib"]
+
+[resource]
+script = ExtResource("1_es2ib")
+name = "Rule"
+metadata/_custom_type_script = "uid://l1k7ou0hn56b"

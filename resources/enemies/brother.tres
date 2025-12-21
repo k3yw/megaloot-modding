@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=14 format=3 uid="uid://tfcn3dvj0v40"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_utbej"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_maik3"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_awv5l"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_c452o"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_oyneu"]
+[ext_resource type="Resource" uid="uid://cj27s7eo8q1fk" path="res://resources/passives/beyond_the_grave.tres" id="5_awv5l"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_bywp6"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_oyneu"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_bywp6"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="7_1n8fd"]
+[ext_resource type="Texture2D" uid="uid://4jrds85frb3c" path="res://assets/textures/enemies/brother.png" id="8_maik3"]
+
+[sub_resource type="Resource" id="Resource_bywp6"]
+script = ExtResource("3_awv5l")
+boosting_sets = Array[ExtResource("2_maik3")]([])
+resource = ExtResource("4_oyneu")
+amount = 34.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_1n8fd"]
+script = ExtResource("3_awv5l")
+boosting_sets = Array[ExtResource("2_maik3")]([])
+resource = ExtResource("5_bywp6")
+amount = 18.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("5_oyneu")
+name = "Brother"
+texture = ExtResource("8_maik3")
+floor_number = 7
+flying = false
+starting_status_effects = Array[ExtResource("6_bywp6")]([])
+active_item_sets = Array[ExtResource("2_maik3")]([])
+stats_per_level = Array[ExtResource("7_1n8fd")]([])
+base_stats = Array[ExtResource("3_awv5l")]([SubResource("Resource_bywp6"), SubResource("Resource_1n8fd")])
+abilities = Array[ExtResource("1_utbej")]([])
+passives = Array[ExtResource("4_c452o")]([ExtResource("5_awv5l")])
+is_unique = false
+hide_stats = false
+metadata/_custom_type_script = "uid://p2rd2m1ktgi5"

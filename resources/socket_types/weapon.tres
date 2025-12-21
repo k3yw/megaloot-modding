@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SocketType" load_steps=3 format=3 uid="uid://vyy020poypm0"]
+
+[ext_resource type="Script" uid="uid://bf4xfjaqogirm" path="res://classes/resource/socket_type.gd" id="1_y2b8t"]
+[ext_resource type="Texture2D" uid="uid://dc1jjoa6531a0" path="res://resources/atlas_textures/weapon_icon.tres" id="2_e8gua"]
+
+[resource]
+script = ExtResource("1_y2b8t")
+name = &"Weapon"
+texture = ExtResource("2_e8gua")
+metadata/_custom_type_script = "uid://bf4xfjaqogirm"

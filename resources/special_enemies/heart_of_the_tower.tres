@@ -1,0 +1,25 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=9 format=3 uid="uid://b0jvqxqca3ssb"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_fow1w"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_4wjye"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_vdwdk"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_e3bcm"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_0mvgi"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_wfrb6"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="7_xemw0"]
+[ext_resource type="Texture2D" uid="uid://c23dw5ucdylw2" path="res://assets/textures/enemies/heart_of_the_tower.png" id="8_4wjye"]
+
+[resource]
+script = ExtResource("5_0mvgi")
+name = "Heart of the Tower"
+texture = ExtResource("8_4wjye")
+floor_number = 0
+flying = true
+starting_status_effects = Array[ExtResource("6_wfrb6")]([])
+active_item_sets = Array[ExtResource("2_4wjye")]([])
+stats_per_level = Array[ExtResource("7_xemw0")]([])
+base_stats = Array[ExtResource("3_vdwdk")]([])
+abilities = Array[ExtResource("1_fow1w")]([])
+passives = Array[ExtResource("4_e3bcm")]([])
+hide_stats = true
+metadata/_custom_type_script = "uid://p2rd2m1ktgi5"

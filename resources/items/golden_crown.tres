@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://bv8s3s5j3mn6h"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_lgmx4"]
+[ext_resource type="Resource" uid="uid://ikgq5lx5b8ua" path="res://resources/stats/power.tres" id="3_6vbrg"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_yudvx"]
+[ext_resource type="Resource" uid="uid://dmvibnyb3mslv" path="res://resources/item_sets/golden.tres" id="5_f52hw"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="6_ecmly"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_rycja"]
+[ext_resource type="Texture2D" uid="uid://cas7ankglx1rl" path="res://assets/textures/items/golden_crown.png" id="7_qwwj8"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_kjqse"]
+
+[sub_resource type="Resource" id="Resource_wkpxp"]
+script = ExtResource("1_lgmx4")
+boosting_sets = Array[ExtResource("6_rycja")]([ExtResource("5_f52hw")])
+resource = ExtResource("3_6vbrg")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_yudvx")
+name = &"Golden Crown"
+texture = ExtResource("7_qwwj8")
+socket_type = ExtResource("6_ecmly")
+set_resources = Array[ExtResource("6_rycja")]([ExtResource("5_f52hw")])
+bonus_stats = Array[ExtResource("1_lgmx4")]([SubResource("Resource_wkpxp")])
+unlock_requirements = Array[ExtResource("8_kjqse")]([])
+extra_price = 15.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

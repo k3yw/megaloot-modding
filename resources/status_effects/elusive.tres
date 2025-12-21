@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://c5prqtrk30rd2"]
+
+[ext_resource type="Texture2D" uid="uid://cxryow66g4btw" path="res://assets/textures/icons/elusive_icon.png" id="1_oq6ys"]
+[ext_resource type="Script" uid="uid://1rj0bpfut72r" path="res://resources/bb_scripts/elusive.gd" id="1_tuj50"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="2_tuj50"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_c8ci6"]
+
+[resource]
+script = ExtResource("2_tuj50")
+name = "Elusive"
+icon = ExtResource("1_oq6ys")
+color = Color(0.616418, 0.630935, 0.83496, 1)
+type = ExtResource("3_c8ci6")
+is_temporary = true
+is_percent = false
+limit = 1
+application_message = ""
+bb_script = ExtResource("1_tuj50")
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

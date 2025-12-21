@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=7 format=3 uid="uid://cuuq2whbd7d6x"]
+
+[ext_resource type="Script" uid="uid://c2l46220ug7fb" path="res://resources/ability_scripts/prowlers_strike.gd" id="1_smakr"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_vipdv"]
+[ext_resource type="Script" uid="uid://dt3bs17tb77l6" path="res://resources/bb_scripts/prowlers_strike.gd" id="2_1iblh"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_jmck0"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_k6who"]
+[ext_resource type="Texture2D" uid="uid://bm26bfig653xd" path="res://assets/textures/icons/prowlers_strike_icon.png" id="4_cr75k"]
+
+[resource]
+script = ExtResource("2_jmck0")
+name = "Prowler's Strike"
+icon = ExtResource("4_cr75k")
+mana_cost = 0
+use_limit = 3
+status_effects_on_activation = Array[ExtResource("3_k6who")]([])
+bonus_stats_while_active = Array[ExtResource("1_vipdv")]([])
+quick_cast = false
+non_target = true
+to_attack = true
+value = 0
+ability_script = ExtResource("1_smakr")
+bb_script = ExtResource("2_1iblh")
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=8 format=3 uid="uid://dylagwyatcvne"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_b5m7y"]
+[ext_resource type="Resource" uid="uid://b4u1opahvsfgk" path="res://resources/abilities/spell_bind.tres" id="1_y1xmj"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_ncyla"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_y1xmj"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="4_8n1hy"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="5_r0edt"]
+[ext_resource type="Texture2D" uid="uid://cpkkelu8dgt5s" path="res://assets/textures/items/zephyrons_tome.png" id="6_8n1hy"]
+
+[resource]
+script = ExtResource("2_ncyla")
+name = &"Zephyron\'s Tome"
+texture = ExtResource("6_8n1hy")
+set_resources = Array[ExtResource("3_y1xmj")]([ExtResource("4_8n1hy")])
+ability_to_learn = ExtResource("1_y1xmj")
+bonus_stats = Array[ExtResource("1_b5m7y")]([])
+unlock_requirements = Array[ExtResource("5_r0edt")]([])
+extra_price = 0.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = true
+custom_rarity = 0
+reforgable = false
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

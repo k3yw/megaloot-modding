@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_07q21"]
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/darkness_icon.png" id="2_8ykdg"]
+[ext_resource type="Resource" path="res://resources/item_sets/darkness.tres" id="3_h7xy6"]
+[ext_resource type="Resource" path="res://resources/stats/max_mana.tres" id="6_igoey"]
+[ext_resource type="Resource" path="res://resources/stats/wisdom.tres" id="7_x5vxi"]
+[ext_resource type="Resource" path="res://resources/stats/power.tres" id="8_27pue"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_bqhht"]
+
+[resource]
+script = ExtResource("2_07q21")
+name = "Debilitator"
+color = Color(0.38, 0.2774, 0.33554, 1)
+icon = ExtResource("2_8ykdg")
+original_item_set = ExtResource("3_h7xy6")
+completed_floor_to_unlock = 10
+stats = Array[ExtResource("9_bqhht")]([ExtResource("6_igoey"), ExtResource("7_x5vxi"), ExtResource("8_27pue")])
+stats_new = Array[ExtResource("9_bqhht")]([ExtResource("6_igoey"), ExtResource("7_x5vxi"), ExtResource("8_27pue")])

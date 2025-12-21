@@ -1,0 +1,60 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=16 format=3 uid="uid://gudt6m61v1s3"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_0ancx"]
+[ext_resource type="Resource" uid="uid://t41a6nfn5j50" path="res://resources/stats/elemental_power.tres" id="2_d2f2s"]
+[ext_resource type="Resource" uid="uid://c7o4swfv7phdu" path="res://resources/stats/malice.tres" id="3_7iylq"]
+[ext_resource type="Resource" uid="uid://chq1wtqg02dw4" path="res://resources/stats/combat.tres" id="4_l8dws"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="5_cr60g"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="6_8r835"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_bvhrt"]
+[ext_resource type="Resource" uid="uid://bbf1oybkk0no4" path="res://resources/passives/folly_of_kings.tres" id="7_dmofp"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="8_3q2vj"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="9_2wvxf"]
+[ext_resource type="Texture2D" uid="uid://3eaped1mcoil" path="res://assets/textures/items/jesters_bone_mask.png" id="9_i5pgi"]
+
+[sub_resource type="Resource" id="Resource_0d4t0"]
+script = ExtResource("1_0ancx")
+boosting_sets = Array[ExtResource("7_bvhrt")]([])
+resource = ExtResource("2_d2f2s")
+amount = 75.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_jcfg1"]
+script = ExtResource("1_0ancx")
+boosting_sets = Array[ExtResource("7_bvhrt")]([null])
+resource = ExtResource("3_7iylq")
+amount = 45.0
+is_modifier = true
+
+[sub_resource type="Resource" id="Resource_yr0gg"]
+script = ExtResource("1_0ancx")
+boosting_sets = Array[ExtResource("7_bvhrt")]([null])
+resource = ExtResource("4_l8dws")
+amount = 25.0
+is_modifier = true
+
+[sub_resource type="Resource" id="Resource_uhwmi"]
+script = ExtResource("1_0ancx")
+boosting_sets = Array[ExtResource("7_bvhrt")]([null])
+resource = ExtResource("5_cr60g")
+amount = 25.0
+is_modifier = true
+
+[resource]
+script = ExtResource("6_8r835")
+name = &"Jester\'s Bone Mask"
+texture = ExtResource("9_i5pgi")
+description = ""
+socket_type = ExtResource("9_2wvxf")
+set_resources = Array[ExtResource("7_bvhrt")]([ExtResource("8_3q2vj")])
+passive = ExtResource("7_dmofp")
+bonus_stats = Array[ExtResource("1_0ancx")]([SubResource("Resource_0d4t0"), SubResource("Resource_jcfg1"), SubResource("Resource_yr0gg"), SubResource("Resource_uhwmi")])
+extra_price = 475.0
+spawn_floor = 17
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

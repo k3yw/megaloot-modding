@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=4 format=3 uid="uid://8h1il4xr1brf"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_egtnr"]
+[ext_resource type="Texture2D" uid="uid://dbcdgn40vfk22" path="res://assets/textures/icons/stats/armor_icon.png" id="1_o8wk2"]
+[ext_resource type="Script" uid="uid://igaopptunf65" path="res://resources/bb_scripts/active_armor.gd" id="1_vsj3d"]
+
+[resource]
+script = ExtResource("1_egtnr")
+name = "Active Armor"
+icon = ExtResource("1_o8wk2")
+color = Color(0.4224, 0.4768, 0.64, 1)
+is_attack_type = false
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+bb_script = ExtResource("1_vsj3d")

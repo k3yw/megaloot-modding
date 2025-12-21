@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://vs7kclilstv0"]
+
+[ext_resource type="Texture2D" uid="uid://crwnuc8frqsqu" path="res://assets/textures/icons/freeze_icon.png" id="1_bv43j"]
+[ext_resource type="Script" uid="uid://db5cvssnjeesl" path="res://resources/bb_scripts/freeze.gd" id="1_k1vsn"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="2_tdl6j"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="4_k43no"]
+
+[resource]
+script = ExtResource("2_tdl6j")
+name = "Freeze"
+icon = ExtResource("1_bv43j")
+color = Color(0.352941, 0.533333, 1, 1)
+type = ExtResource("4_k43no")
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = "FROZEN"
+bb_script = ExtResource("1_k1vsn")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b63gwpgbhisc2"]
+
+[ext_resource type="Script" uid="uid://bl3l8v00t7hi" path="res://scenes/modules/item_container_module/item_container_module.gd" id="1_a0kcg"]
+
+[node name="ItemContainerModule" type="Node" groups=["item_container_module"]]
+script = ExtResource("1_a0kcg")

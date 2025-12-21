@@ -1,0 +1,62 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=18 format=3 uid="uid://bga1yaflmtycy"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_vlgr4"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_utxvf"]
+[ext_resource type="Resource" uid="uid://b3f48bv52mfyp" path="res://resources/item_sets/thunder.tres" id="3_lf4cx"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="4_cigvs"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_8k44d"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="6_b0unq"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="7_uy7my"]
+[ext_resource type="Resource" uid="uid://c0fl4emw02wpo" path="res://resources/stats/electricity.tres" id="8_nsvtw"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="9_l8la8"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="10_yx601"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="11_p7m0f"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="12_f8abw"]
+[ext_resource type="Texture2D" uid="uid://c0v8pvghl87f4" path="res://assets/textures/enemies/thunder_dragon.png" id="13_vo73t"]
+
+[sub_resource type="Resource" id="Resource_57mlh"]
+script = ExtResource("4_cigvs")
+boosting_sets = Array[ExtResource("2_utxvf")]([])
+resource = ExtResource("5_8k44d")
+amount = 12.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_vpnun"]
+script = ExtResource("4_cigvs")
+boosting_sets = Array[ExtResource("2_utxvf")]([])
+resource = ExtResource("6_b0unq")
+amount = 8.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_1bpkr"]
+script = ExtResource("4_cigvs")
+boosting_sets = Array[ExtResource("2_utxvf")]([])
+resource = ExtResource("7_uy7my")
+amount = 10.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_0ey2g"]
+script = ExtResource("4_cigvs")
+boosting_sets = Array[ExtResource("2_utxvf")]([])
+resource = ExtResource("8_nsvtw")
+amount = 15.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("10_yx601")
+name = "Thunder Dragon"
+texture = ExtResource("13_vo73t")
+floor_number = 12
+flying = false
+starting_status_effects = Array[ExtResource("11_p7m0f")]([])
+active_item_sets = Array[ExtResource("2_utxvf")]([ExtResource("3_lf4cx")])
+stats_per_level = Array[ExtResource("12_f8abw")]([])
+base_stats = Array[ExtResource("4_cigvs")]([SubResource("Resource_57mlh"), SubResource("Resource_vpnun"), SubResource("Resource_1bpkr"), SubResource("Resource_0ey2g")])
+abilities = Array[ExtResource("1_vlgr4")]([])
+passives = Array[ExtResource("9_l8la8")]([])
+hide_stats = false
+metadata/_custom_type_script = "uid://p2rd2m1ktgi5"

@@ -1,0 +1,123 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=31 format=3 uid="uid://crgawpjwm77nd"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_wdl26"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_liygt"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_ouvo4"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_0tfx7"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="4_i7d0k"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_300e3"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_h658u"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_72ykk"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="6_njaog"]
+[ext_resource type="Resource" uid="uid://dpl8agabg0hnp" path="res://resources/stats/elemental_resistance.tres" id="7_urmkn"]
+[ext_resource type="Resource" uid="uid://chvd4xbiyu1h3" path="res://resources/passives/edge_of_the_ruined.tres" id="9_pq774"]
+[ext_resource type="Texture2D" uid="uid://umjtsnfr8dkb" path="res://assets/textures/enemies/ruined_king.png" id="11_nbt8c"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="12_8cfwo"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="12_44yms"]
+[ext_resource type="Resource" uid="uid://ddkdhssj8bkx4" path="res://resources/status_effects/black_curse.tres" id="13_vv4cx"]
+
+[sub_resource type="Resource" id="Resource_ydmn7"]
+script = ExtResource("3_ouvo4")
+boosting_sets = Array[ExtResource("2_liygt")]([])
+resource = ExtResource("4_i7d0k")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_cb0ha"]
+script = ExtResource("3_ouvo4")
+boosting_sets = Array[ExtResource("2_liygt")]([])
+resource = ExtResource("5_h658u")
+amount = 18.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_stbsr"]
+script = ExtResource("3_ouvo4")
+boosting_sets = Array[ExtResource("2_liygt")]([])
+resource = ExtResource("6_njaog")
+amount = 8.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_3qtox"]
+script = ExtResource("3_ouvo4")
+boosting_sets = Array[ExtResource("2_liygt")]([])
+resource = ExtResource("7_urmkn")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_sf8yg"]
+script = ExtResource("12_44yms")
+resource = ExtResource("13_vv4cx")
+amount = 1
+metadata/_custom_type_script = "uid://b3b5vhhh7jge1"
+
+[sub_resource type="Resource" id="Resource_ch301"]
+script = ExtResource("6_72ykk")
+status_effects = Array[ExtResource("12_44yms")]([SubResource("Resource_sf8yg")])
+metadata/_custom_type_script = "uid://d4ckr8m0bhx1t"
+
+[sub_resource type="Resource" id="Resource_ahpnk"]
+script = ExtResource("3_ouvo4")
+boosting_sets = Array[ExtResource("2_liygt")]([])
+resource = ExtResource("7_urmkn")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_75v7w"]
+script = ExtResource("3_ouvo4")
+boosting_sets = Array[ExtResource("2_liygt")]([])
+resource = ExtResource("4_i7d0k")
+amount = 1.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_5u40s"]
+script = ExtResource("12_8cfwo")
+bonus_stats = Array[ExtResource("3_ouvo4")]([SubResource("Resource_ahpnk"), SubResource("Resource_75v7w")])
+
+[sub_resource type="Resource" id="Resource_n01np"]
+script = ExtResource("3_ouvo4")
+boosting_sets = Array[ExtResource("2_liygt")]([])
+resource = ExtResource("7_urmkn")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_hc71e"]
+script = ExtResource("12_8cfwo")
+bonus_stats = Array[ExtResource("3_ouvo4")]([SubResource("Resource_n01np")])
+
+[sub_resource type="Resource" id="Resource_k7cyv"]
+script = ExtResource("3_ouvo4")
+boosting_sets = Array[ExtResource("2_liygt")]([])
+resource = ExtResource("7_urmkn")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_wp45b"]
+script = ExtResource("12_8cfwo")
+bonus_stats = Array[ExtResource("3_ouvo4")]([SubResource("Resource_k7cyv")])
+
+[sub_resource type="Resource" id="Resource_8d8uh"]
+script = ExtResource("3_ouvo4")
+boosting_sets = Array[ExtResource("2_liygt")]([])
+resource = ExtResource("7_urmkn")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_wwrb6"]
+script = ExtResource("12_8cfwo")
+bonus_stats = Array[ExtResource("3_ouvo4")]([SubResource("Resource_8d8uh")])
+
+[resource]
+script = ExtResource("5_300e3")
+name = "Ruined King"
+texture = ExtResource("11_nbt8c")
+floor_number = 9
+flying = false
+starting_status_effects = Array[ExtResource("6_72ykk")]([SubResource("Resource_ch301")])
+active_item_sets = Array[ExtResource("2_liygt")]([])
+stats_per_level = Array[ExtResource("12_8cfwo")]([SubResource("Resource_5u40s"), SubResource("Resource_hc71e"), SubResource("Resource_wp45b"), SubResource("Resource_wwrb6")])
+base_stats = Array[ExtResource("3_ouvo4")]([SubResource("Resource_ydmn7"), SubResource("Resource_cb0ha"), SubResource("Resource_stbsr"), SubResource("Resource_3qtox")])
+abilities = Array[ExtResource("1_wdl26")]([])
+passives = Array[ExtResource("4_0tfx7")]([ExtResource("9_pq774")])
+is_unique = false
+hide_stats = false

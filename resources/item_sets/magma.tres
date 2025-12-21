@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://1n584t8hda8s"]
+
+[ext_resource type="Texture2D" uid="uid://c1qpitj8gfh55" path="res://assets/textures/icons/magma_icon.png" id="1_4kw26"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_f5x5r"]
+[ext_resource type="Script" uid="uid://c1yj0agergfmm" path="res://resources/bb_scripts/magma.gd" id="1_filh2"]
+
+[resource]
+script = ExtResource("1_f5x5r")
+name = "Magma"
+icon = ExtResource("1_4kw26")
+color = Color(0.980392, 0.415686, 0.0392157, 1)
+value = 0
+flow_cost = 25
+bb_script = ExtResource("1_filh2")

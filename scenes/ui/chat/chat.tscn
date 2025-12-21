@@ -1,0 +1,220 @@
+[gd_scene load_steps=13 format=3 uid="uid://btf2iwd267ecy"]
+
+[ext_resource type="Script" uid="uid://dr0hl1x6sdqyl" path="res://scenes/ui/chat/chat.gd" id="1_4rx28"]
+[ext_resource type="PackedScene" uid="uid://duwxqia2hvbth" path="res://scenes/ui/generic_panel/generic_panel.tscn" id="2_tyg4n"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="3_gbita"]
+[ext_resource type="Texture2D" uid="uid://nf8j07din755" path="res://assets/textures/ui/minimal_bar.png" id="4_sr3wc"]
+[ext_resource type="PackedScene" uid="uid://b1ua27d8xdy1w" path="res://scenes/ui/generic_scroll_container/generic_scroll_container.tscn" id="5_8qlfp"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="6_prrlx"]
+[ext_resource type="PackedScene" uid="uid://ibsed7a42sou" path="res://scenes/ui/generic_line_edit/generic_line_edit.tscn" id="7_p0sh8"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_m2doj"]
+resource_local_to_scene = true
+shader = ExtResource("3_gbita")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_feuq6"]
+resource_local_to_scene = true
+shader = ExtResource("3_gbita")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7mx4n"]
+resource_local_to_scene = true
+shader = ExtResource("3_gbita")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="LabelSettings" id="LabelSettings_x64od"]
+paragraph_spacing = 8.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hxvkm"]
+resource_local_to_scene = true
+shader = ExtResource("3_gbita")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="Chat" type="MarginContainer" node_paths=PackedStringArray("scroll_container", "input_line_edit", "chat_label")]
+offset_right = 173.0
+offset_bottom = 213.0
+script = ExtResource("1_4rx28")
+scroll_container = NodePath("VBoxContainer/MarginContainer/MarginContainer/GenericScrollContainer")
+input_line_edit = NodePath("VBoxContainer/InputLineEdit")
+chat_label = NodePath("VBoxContainer/MarginContainer/MarginContainer/GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer/ChatLabel")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GenericPanel2" parent="VBoxContainer/MarginContainer" instance=ExtResource("2_tyg4n")]
+z_index = 1
+material = SubResource("ShaderMaterial_m2doj")
+layout_mode = 2
+texture = ExtResource("4_sr3wc")
+region_rect = Rect2(0, 0, 11, 9)
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="GenericScrollContainer" parent="VBoxContainer/MarginContainer/MarginContainer" instance=ExtResource("5_8qlfp")]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+fillped = true
+
+[node name="GenericVScrollBar" parent="VBoxContainer/MarginContainer/MarginContainer/GenericScrollContainer" index="0"]
+z_index = 2
+theme_override_constants/margin_left = 5
+
+[node name="GenericPanel" parent="VBoxContainer/MarginContainer/MarginContainer/GenericScrollContainer/MarginContainer" index="0"]
+visible = false
+z_index = 1
+material = SubResource("ShaderMaterial_feuq6")
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer/MarginContainer/MarginContainer/GenericScrollContainer/MarginContainer/ScrollContainer" index="0"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = 10
+metadata/child_of_scroll_container = true
+
+[node name="ChatLabel" parent="VBoxContainer/MarginContainer/MarginContainer/GenericScrollContainer/MarginContainer/ScrollContainer/MarginContainer" instance=ExtResource("6_prrlx")]
+z_index = 1
+material = SubResource("ShaderMaterial_7mx4n")
+layout_mode = 2
+size_flags_vertical = 1
+text = ""
+label_settings = SubResource("LabelSettings_x64od")
+vertical_alignment = 0
+autowrap_mode = 3
+metadata/child_of_scroll_container = true
+
+[node name="InputLineEdit" parent="VBoxContainer" instance=ExtResource("7_p0sh8")]
+layout_mode = 2
+
+[node name="GenericPanel" parent="VBoxContainer/InputLineEdit" index="0"]
+material = SubResource("ShaderMaterial_hxvkm")
+region_rect = Rect2(0, 1, 5, 4)
+patch_margin_left = 2
+patch_margin_top = 2
+patch_margin_right = 2
+
+[node name="LineEdit" parent="VBoxContainer/InputLineEdit/MarginContainer" index="0"]
+placeholder_text = ""
+
+[connection signal="text_submitted" from="VBoxContainer/InputLineEdit/MarginContainer/LineEdit" to="." method="_on_line_edit_text_submitted"]
+
+[editable path="VBoxContainer/MarginContainer/MarginContainer/GenericScrollContainer"]
+[editable path="VBoxContainer/InputLineEdit"]

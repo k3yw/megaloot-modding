@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://jcye68q8k8ja"]
+
+[ext_resource type="Script" uid="uid://bv5buj7u38w56" path="res://resources/bb_scripts/faith.gd" id="1_lfmoy"]
+[ext_resource type="Texture2D" uid="uid://bn8aekmt4sgnb" path="res://assets/textures/icons/faith.png" id="1_ss0yp"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_wa4bp"]
+[ext_resource type="Script" uid="uid://7rd8ybateir3" path="res://resources/stat_scripts/faith.gd" id="4_dwflr"]
+
+[resource]
+script = ExtResource("1_wa4bp")
+name = "Faith"
+icon = ExtResource("1_ss0yp")
+color = Color(0.960784, 0.819608, 0.529412, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = 860
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_dwflr")
+bb_script = ExtResource("1_lfmoy")

@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuxo4026dbuku"]
+
+[ext_resource type="Script" uid="uid://d14tmu7de5af3" path="res://scenes/managers/market_manager/market_manager.gd" id="1_82auo"]
+
+[node name="MarketManager" type="Node"]
+script = ExtResource("1_82auo")

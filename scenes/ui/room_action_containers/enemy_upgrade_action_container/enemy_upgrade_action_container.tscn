@@ -1,0 +1,137 @@
+[gd_scene load_steps=11 format=3 uid="uid://dkiwic7jo6sbv"]
+
+[ext_resource type="Script" uid="uid://duwp76x6tg5ci" path="res://scenes/ui/room_action_containers/enemy_upgrade_action_container/enemy_upgrade_action_container.gd" id="1_ark6w"]
+[ext_resource type="PackedScene" uid="uid://bf4bdtuq87lv7" path="res://scenes/ui/icon_generic_button/icon_generic_button.tscn" id="1_mum7q"]
+[ext_resource type="Texture2D" uid="uid://dwayksbxirchc" path="res://assets/textures/ui/leave_icon.png" id="2_ark6w"]
+[ext_resource type="PackedScene" uid="uid://1l3k0jtjf51s" path="res://scenes/ui/item_slot/item_slot.tscn" id="3_wdm0e"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="4_o6bi5"]
+[ext_resource type="Texture2D" uid="uid://chi2dbgn1rrrs" path="res://assets/textures/icons/dismantle_icon.png" id="5_gacc4"]
+[ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="6_bgiyx"]
+[ext_resource type="Resource" uid="uid://1u4lybkgojce" path="res://resources/item_containers/enemy_upgrade.tres" id="6_wdm0e"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_rt1bc"]
+resource_local_to_scene = true
+shader = ExtResource("4_o6bi5")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_lte6l"]
+resource_local_to_scene = true
+shader = ExtResource("4_o6bi5")
+shader_parameter/type = 4
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = true
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(0.054902, 0.0823529, 0.113725, 1)
+shader_parameter/outline_pattern = 2
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="EnemyUpgradeActionContainer" type="MarginContainer" node_paths=PackedStringArray("leave_button", "upgrade_limit_label", "upgrade_enemy_button", "enemy_upgrade_item_slot")]
+script = ExtResource("1_ark6w")
+leave_button = NodePath("EnemyUpgradeButtonHolder/LeaveEnemyUpgradeButton")
+upgrade_limit_label = NodePath("EnemyUpgradeButtonHolder/HBoxContainer/MarginContainer/EnemyUpgradeLimitLabel")
+upgrade_enemy_button = NodePath("EnemyUpgradeButtonHolder/HBoxContainer/UpgradeEnemyButton")
+enemy_upgrade_item_slot = NodePath("EnemyUpgradeButtonHolder/EnemyUpgradeSlot")
+
+[node name="EnemyUpgradeButtonHolder" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="LeaveEnemyUpgradeButton" parent="EnemyUpgradeButtonHolder" instance=ExtResource("1_mum7q")]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+icon_texture = ExtResource("2_ark6w")
+
+[node name="EnemyUpgradeSlot" parent="EnemyUpgradeButtonHolder" instance=ExtResource("3_wdm0e")]
+material = SubResource("ShaderMaterial_rt1bc")
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+item_container_resource = ExtResource("6_wdm0e")
+
+[node name="TextureRect" type="TextureRect" parent="EnemyUpgradeButtonHolder/EnemyUpgradeSlot"]
+modulate = Color(0.196078, 0.2, 0.239216, 1)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("5_gacc4")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="EnemyUpgradeButtonHolder"]
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="UpgradeEnemyButton" parent="EnemyUpgradeButtonHolder/HBoxContainer" instance=ExtResource("1_mum7q")]
+layout_mode = 2
+size_flags_vertical = 4
+icon_texture = ExtResource("5_gacc4")
+
+[node name="MarginContainer" type="MarginContainer" parent="EnemyUpgradeButtonHolder/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_right = -355
+
+[node name="EnemyUpgradeLimitLabel" parent="EnemyUpgradeButtonHolder/HBoxContainer/MarginContainer" instance=ExtResource("6_bgiyx")]
+material = SubResource("ShaderMaterial_lte6l")
+layout_mode = 2
+text = "0/3"

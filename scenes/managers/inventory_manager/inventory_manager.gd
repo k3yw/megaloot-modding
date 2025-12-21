@@ -1,0 +1,1 @@
+class_name InventoryManager extends Node

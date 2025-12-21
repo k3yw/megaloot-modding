@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://bv1whndmfdqck"]
+
+[ext_resource type="Script" uid="uid://c4s5dn640xp3e" path="res://resources/bb_scripts/grace.gd" id="1_khmf0"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="2_6vtmy"]
+[ext_resource type="Texture2D" uid="uid://dabh8r10bf8sq" path="res://assets/textures/icons/grace.png" id="2_vlphr"]
+[ext_resource type="Resource" uid="uid://dkpwt31f2uxai" path="res://resources/status_effect_types/blessing.tres" id="4_wdukn"]
+
+[resource]
+script = ExtResource("2_6vtmy")
+name = "Grace"
+icon = ExtResource("2_vlphr")
+color = Color(0.96, 0.86256, 0.6816, 1)
+type = ExtResource("4_wdukn")
+is_temporary = false
+is_percent = true
+limit = -1
+application_message = ""
+bb_script = ExtResource("1_khmf0")

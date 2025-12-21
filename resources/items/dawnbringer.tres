@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=14 format=3 uid="uid://dntodrc1jvduo"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_y8lue"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_i0tg4"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="3_k5sbo"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_m2vfw"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="4_a4hpf"]
+[ext_resource type="Resource" uid="uid://jcye68q8k8ja" path="res://resources/stats/faith.tres" id="4_x4obn"]
+[ext_resource type="Resource" uid="uid://pvbac0njnmpw" path="res://resources/stats/penetration.tres" id="5_ne3at"]
+[ext_resource type="Resource" uid="uid://bu6r883k5x2o4" path="res://resources/passives/luminous_trial.tres" id="6_rup3f"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="9_uxn6b"]
+[ext_resource type="Texture2D" uid="uid://dvx1a036ilgut" path="res://assets/textures/items/dawnbringer.png" id="10_6x317"]
+
+[sub_resource type="Resource" id="Resource_6v5bg"]
+script = ExtResource("1_y8lue")
+boosting_sets = Array[ExtResource("3_m2vfw")]([])
+resource = ExtResource("3_k5sbo")
+amount = 2450.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_15jt0"]
+script = ExtResource("1_y8lue")
+boosting_sets = Array[ExtResource("3_m2vfw")]([])
+resource = ExtResource("4_x4obn")
+amount = 245.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_n08l2"]
+script = ExtResource("1_y8lue")
+boosting_sets = Array[ExtResource("3_m2vfw")]([])
+resource = ExtResource("5_ne3at")
+amount = 7.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_i0tg4")
+name = &"Dawnbringer"
+texture = ExtResource("10_6x317")
+description = ""
+socket_type = ExtResource("9_uxn6b")
+set_resources = Array[ExtResource("3_m2vfw")]([ExtResource("4_a4hpf")])
+passive = ExtResource("6_rup3f")
+bonus_stats = Array[ExtResource("1_y8lue")]([SubResource("Resource_6v5bg"), SubResource("Resource_15jt0"), SubResource("Resource_n08l2")])
+extra_price = 24750.0
+spawn_floor = 45
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

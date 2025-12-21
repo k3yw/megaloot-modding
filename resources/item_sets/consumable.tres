@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=3 format=3 uid="uid://w7s85ltijcid"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_8t331"]
+[ext_resource type="Texture2D" uid="uid://cyrmqrkfq7d6x" path="res://assets/textures/icons/item_sets/consumable.png" id="1_j70iq"]
+
+[resource]
+script = ExtResource("1_8t331")
+name = "Consumable"
+icon = ExtResource("1_j70iq")
+color = Color(0.349144, 0.349176, 0.409201, 1)
+value = 0
+flow_cost = 0

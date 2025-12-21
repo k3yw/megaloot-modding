@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://dqdhw5ljib4hc"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_wq0nj"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="2_sitmb"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_qqp3k"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_wcpn8"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_05l25"]
+[ext_resource type="Resource" uid="uid://co4r8myt4rmnk" path="res://resources/item_sets/demonic.tres" id="7_nnbyc"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="7_teim0"]
+[ext_resource type="Texture2D" uid="uid://cmf773xk42qiy" path="res://assets/textures/items/demonic_sabatons.png" id="8_hnsa8"]
+
+[sub_resource type="Resource" id="Resource_u70fa"]
+script = ExtResource("1_wq0nj")
+boosting_sets = Array[ExtResource("6_05l25")]([])
+resource = ExtResource("2_sitmb")
+amount = 8.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_adjds"]
+script = ExtResource("1_wq0nj")
+boosting_sets = Array[ExtResource("6_05l25")]([null])
+resource = ExtResource("3_qqp3k")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_wcpn8")
+name = &"Demonic Sabatons"
+texture = ExtResource("8_hnsa8")
+description = ""
+socket_type = ExtResource("7_teim0")
+set_resources = Array[ExtResource("6_05l25")]([ExtResource("7_nnbyc")])
+bonus_stats = Array[ExtResource("1_wq0nj")]([SubResource("Resource_u70fa"), SubResource("Resource_adjds")])
+extra_price = 15.0
+spawn_floor = 10
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

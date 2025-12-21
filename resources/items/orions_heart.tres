@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=13 format=3 uid="uid://drtdhru6vlsbi"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_impxq"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_nfhbc"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="4_r8u76"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_k627d"]
+[ext_resource type="Resource" uid="uid://svvuieiqjue" path="res://resources/item_sets/orion.tres" id="6_7ww0v"]
+[ext_resource type="Resource" uid="uid://bwlpsd4c46d6m" path="res://resources/passives/battleforged_heart.tres" id="6_r3fq8"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="7_fndj3"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_wfc0g"]
+[ext_resource type="Texture2D" uid="uid://btmrcwlb2d7qk" path="res://assets/textures/items/orions_heart.png" id="8_p185s"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="10_poit4"]
+
+[sub_resource type="Resource" id="Resource_eg00p"]
+script = ExtResource("1_impxq")
+boosting_sets = Array[ExtResource("7_wfc0g")]([ExtResource("6_7ww0v")])
+resource = ExtResource("4_r8u76")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ynrfs"]
+script = ExtResource("1_impxq")
+boosting_sets = Array[ExtResource("7_wfc0g")]([ExtResource("6_7ww0v")])
+resource = ExtResource("5_k627d")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("2_nfhbc")
+name = &"Orion\'s Heart"
+texture = ExtResource("8_p185s")
+socket_type = ExtResource("7_fndj3")
+set_resources = Array[ExtResource("7_wfc0g")]([ExtResource("6_7ww0v")])
+passive = ExtResource("6_r3fq8")
+bonus_stats = Array[ExtResource("1_impxq")]([SubResource("Resource_eg00p"), SubResource("Resource_ynrfs")])
+unlock_requirements = Array[ExtResource("10_poit4")]([])
+extra_price = 90.0
+spawn_floor = 6
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

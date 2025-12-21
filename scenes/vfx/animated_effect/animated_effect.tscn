@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://c7xfqtj8cm32a"]
+
+[ext_resource type="Script" uid="uid://bttyd87o23spq" path="res://scenes/vfx/animated_effect/animated_effect.gd" id="1_6srud"]
+
+[node name="AnimatedEffect" type="Node2D" node_paths=PackedStringArray("animation_player")]
+script = ExtResource("1_6srud")
+animation_player = NodePath("AnimationPlayer")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

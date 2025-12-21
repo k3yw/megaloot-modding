@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://b15jhmqwg061p"]
+
+[ext_resource type="Script" uid="uid://dek1r7naar1di" path="res://resources/bb_scripts/life_steal.gd" id="1_0g7el"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_dcamg"]
+[ext_resource type="Texture2D" uid="uid://drf04cdpvv23t" path="res://assets/textures/icons/omni_vamp.png" id="1_wdvwn"]
+[ext_resource type="Resource" uid="uid://nmolc84dhefq" path="res://resources/stats/life_steal.tres" id="3_0n4dm"]
+
+[resource]
+script = ExtResource("1_dcamg")
+name = "Omni Vamp"
+icon = ExtResource("1_wdvwn")
+color = Color(0.764706, 0.2, 0.45098, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = -1
+origin_stat = ExtResource("3_0n4dm")
+ignore_minimum_amount = false
+minimum_amount = 0.0
+bb_script = ExtResource("1_0g7el")

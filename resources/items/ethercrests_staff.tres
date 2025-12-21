@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://ch5wffrb60xb6"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_gowtp"]
+[ext_resource type="Resource" uid="uid://cpo1y0yt832le" path="res://resources/passives/magical_frostflare.tres" id="2_i1j5q"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_fieuv"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="5_qlcpe"]
+[ext_resource type="Resource" uid="uid://g3um3f8ovjwk" path="res://resources/item_sets/ancient_ice.tres" id="6_xmikl"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_1afny"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_qki5f"]
+[ext_resource type="Texture2D" uid="uid://bcb0hnw50eewh" path="res://assets/textures/items/ethercrests_staff.png" id="8_2wj8n"]
+
+[sub_resource type="Resource" id="Resource_j7knb"]
+script = ExtResource("1_gowtp")
+boosting_sets = Array[ExtResource("7_qki5f")]([ExtResource("6_xmikl")])
+resource = ExtResource("5_qlcpe")
+amount = 14.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_fieuv")
+name = &"Ethercrest\'s Staff"
+texture = ExtResource("8_2wj8n")
+description = ""
+socket_type = ExtResource("7_1afny")
+set_resources = Array[ExtResource("7_qki5f")]([ExtResource("6_xmikl")])
+passive = ExtResource("2_i1j5q")
+bonus_stats = Array[ExtResource("1_gowtp")]([SubResource("Resource_j7knb")])
+extra_price = 17.0
+spawn_floor = 14
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=5 format=3 uid="uid://b3f48bv52mfyp"]
+
+[ext_resource type="Script" uid="uid://b2xx2v401104j" path="res://resources/bb_scripts/thunder.gd" id="1_8vf28"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_hoeeq"]
+[ext_resource type="Texture2D" uid="uid://dohmtikrinjra" path="res://assets/textures/icons/item_sets/thunder.png" id="1_r64uw"]
+[ext_resource type="Script" uid="uid://dntf52aasmevk" path="res://resources/item_set_scripts/thunder.gd" id="3_l6htb"]
+
+[resource]
+script = ExtResource("1_hoeeq")
+name = "Thunder"
+icon = ExtResource("1_r64uw")
+color = Color(0.96875, 0.769531, 0.226563, 1)
+value = 0
+flow_cost = 25
+game_logic_script = ExtResource("3_l6htb")
+bb_script = ExtResource("1_8vf28")

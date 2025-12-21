@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=6 format=3 uid="uid://jf6ctsb8eh7m"]
+
+[ext_resource type="AudioStream" uid="uid://c423r36jgujdk" path="res://assets/sfx/stun.wav" id="1_5wm7r"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_tk6hv"]
+[ext_resource type="Texture2D" uid="uid://cduv8ed4db70f" path="res://assets/textures/icons/stun_icon.png" id="2_ei5it"]
+[ext_resource type="Script" uid="uid://p7hr85r1yct1" path="res://resources/bb_scripts/stun.gd" id="2_nhqhj"]
+[ext_resource type="Resource" uid="uid://bqojc2fhvr383" path="res://resources/status_effect_types/penalty.tres" id="4_72kwf"]
+
+[resource]
+script = ExtResource("1_tk6hv")
+name = "Stun"
+icon = ExtResource("2_ei5it")
+color = Color(0.568627, 0.435294, 0.572549, 1)
+type = ExtResource("4_72kwf")
+affected_by_tenacity = true
+is_temporary = true
+is_percent = false
+limit = 1
+application_message = "STUNNED"
+application_sound = ExtResource("1_5wm7r")
+bb_script = ExtResource("2_nhqhj")

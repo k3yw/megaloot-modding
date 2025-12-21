@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://bgyicl3tkkhlc"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_l5urk"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="2_diak1"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_lp166"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_gwx0b"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="6_jbfe8"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="6_ncg4x"]
+[ext_resource type="Texture2D" uid="uid://cnnxar3qgnjnw" path="res://assets/textures/items/starborn_ring.png" id="7_3eclc"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="8_xiv3m"]
+
+[sub_resource type="Resource" id="Resource_g0uao"]
+script = ExtResource("1_l5urk")
+boosting_sets = Array[ExtResource("5_gwx0b")]([])
+resource = ExtResource("2_diak1")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_lp166")
+name = &"Starborn Ring"
+texture = ExtResource("7_3eclc")
+socket_type = ExtResource("6_jbfe8")
+set_resources = Array[ExtResource("5_gwx0b")]([ExtResource("6_ncg4x")])
+bonus_stats = Array[ExtResource("1_l5urk")]([SubResource("Resource_g0uao")])
+unlock_requirements = Array[ExtResource("8_xiv3m")]([])
+extra_price = 1.0
+spawn_floor = 2
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,49 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=16 format=3 uid="uid://dx7dad45gp6rt"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_3gmvg"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_fo8w6"]
+[ext_resource type="Resource" uid="uid://cjibj6rc1xq28" path="res://resources/abilities/frozen_strike.tres" id="1_xfcty"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_e1pj1"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_mitd1"]
+[ext_resource type="Texture2D" uid="uid://y1oujw5n15ip" path="res://assets/textures/enemies/snow_wraith.png" id="3_2us12"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_b3qyq"]
+[ext_resource type="Resource" uid="uid://cqixugqy6inii" path="res://resources/stats/max_mana.tres" id="4_olqnc"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_tgnba"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_2ma7m"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_8q3ta"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_5wdn3"]
+
+[sub_resource type="Resource" id="Resource_eqg1k"]
+script = ExtResource("3_b3qyq")
+boosting_sets = Array[ExtResource("2_e1pj1")]([])
+resource = ExtResource("2_mitd1")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_c8u33"]
+script = ExtResource("3_b3qyq")
+boosting_sets = Array[ExtResource("2_e1pj1")]([])
+resource = ExtResource("4_olqnc")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_qdn3v"]
+script = ExtResource("3_b3qyq")
+boosting_sets = Array[ExtResource("2_e1pj1")]([])
+resource = ExtResource("5_tgnba")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_3gmvg")
+name = "Snow Wraith"
+texture = ExtResource("3_2us12")
+floor_number = 5
+flying = false
+starting_status_effects = Array[ExtResource("8_8q3ta")]([])
+active_item_sets = Array[ExtResource("2_e1pj1")]([])
+stats_per_level = Array[ExtResource("11_5wdn3")]([])
+base_stats = Array[ExtResource("3_b3qyq")]([SubResource("Resource_eqg1k"), SubResource("Resource_c8u33"), SubResource("Resource_qdn3v")])
+abilities = Array[ExtResource("1_fo8w6")]([ExtResource("1_xfcty")])
+passives = Array[ExtResource("7_2ma7m")]([])
+hide_stats = false

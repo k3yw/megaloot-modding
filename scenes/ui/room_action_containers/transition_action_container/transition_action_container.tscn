@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://j0mhdsfpgy3u"]
+
+[ext_resource type="PackedScene" uid="uid://obobaix27gfy" path="res://scenes/ui/room_action_containers/room_action_container/room_action_container.tscn" id="1_ptltp"]
+[ext_resource type="Script" uid="uid://bpcsd6osinwum" path="res://scenes/ui/room_action_containers/transition_action_container/transition_action_container.gd" id="2_0yd6s"]
+[ext_resource type="PackedScene" uid="uid://bxoncw32voayn" path="res://scenes/ui/generic_button/generic_button.tscn" id="3_k5opt"]
+[ext_resource type="Texture2D" uid="uid://dh8c8bbhq77hs" path="res://assets/textures/ui/flat_generic_button.png" id="4_0ag0k"]
+[ext_resource type="PackedScene" uid="uid://kbdjf0pijq82" path="res://scenes/ui/icon_button/icon_button.tscn" id="5_0ag0k"]
+
+[node name="TransitionActionContainer" node_paths=PackedStringArray("leave_button") instance=ExtResource("1_ptltp")]
+script = ExtResource("2_0yd6s")
+leave_button = NodePath("LeaveButton")
+
+[node name="LeaveButton" parent="." index="0" instance=ExtResource("3_k5opt")]
+custom_minimum_size = Vector2(125, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "LEAVE"
+disabled_texture = ExtResource("4_0ag0k")
+pressed_texture = ExtResource("4_0ag0k")
+default_texture = ExtResource("4_0ag0k")
+hover_texture = ExtResource("4_0ag0k")
+
+[node name="MarginContainer" type="MarginContainer" parent="." index="1"]
+layout_mode = 2
+theme_override_constants/margin_top = -380
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer" index="0"]
+layout_mode = 2
+size_flags_vertical = 4
+alignment = 1
+
+[node name="IconButton" parent="MarginContainer/HBoxContainer" index="0" instance=ExtResource("5_0ag0k")]
+layout_mode = 2
+
+[node name="IconButton2" parent="MarginContainer/HBoxContainer" index="1" instance=ExtResource("5_0ag0k")]
+layout_mode = 2
+
+[node name="IconButton3" parent="MarginContainer/HBoxContainer" index="2" instance=ExtResource("5_0ag0k")]
+layout_mode = 2

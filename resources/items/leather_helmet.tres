@@ -1,0 +1,34 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://dm7wwbu2wrw12"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_wcbos"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_66mti"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_8puky"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_2hkvo"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="6_rnknj"]
+[ext_resource type="Resource" uid="uid://dtedu6wftg7o5" path="res://resources/item_sets/mercenary.tres" id="7_ki1p1"]
+[ext_resource type="Texture2D" uid="uid://cs4sp8ycuwvlf" path="res://assets/textures/items/leather_helmet.png" id="8_opaq4"]
+
+[sub_resource type="Resource" id="Resource_fxkbv"]
+script = ExtResource("1_wcbos")
+boosting_sets = Array[ExtResource("6_2hkvo")]([])
+resource = ExtResource("3_66mti")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_8puky")
+name = &"Leather Helmet"
+texture = ExtResource("8_opaq4")
+description = ""
+socket_type = ExtResource("6_rnknj")
+set_resources = Array[ExtResource("6_2hkvo")]([ExtResource("7_ki1p1")])
+bonus_stats = Array[ExtResource("1_wcbos")]([SubResource("Resource_fxkbv")])
+extra_price = 8.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

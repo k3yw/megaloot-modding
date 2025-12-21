@@ -1,0 +1,54 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=16 format=3 uid="uid://7xi1jgssi3d6"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_lgl4s"]
+[ext_resource type="Resource" uid="uid://clysfjs400lm7" path="res://resources/stats/toughness.tres" id="2_jq5xb"]
+[ext_resource type="Script" uid="uid://dpk02286yslo" path="res://resources/bb_scripts/ancient_shell.gd" id="3_1ybgi"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_rlmmf"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="4_7nx2j"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="5_8lufr"]
+[ext_resource type="Texture2D" uid="uid://bq7v2tfm6v5yr" path="res://assets/textures/icons/item_sets/ancient_shell.png" id="5_txg3o"]
+[ext_resource type="Resource" uid="uid://cq6tpc5j7tr2h" path="res://resources/item_sets/ancient_shell.tres" id="6_u7x8t"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="7_8l4la"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_nihrp"]
+[ext_resource type="Texture2D" uid="uid://y5fkhdax0k2b" path="res://assets/textures/items/turtle_chestplate.png" id="8_hk06l"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="9_uqgr6"]
+
+[sub_resource type="Resource" id="Resource_oeg16"]
+script = ExtResource("7_nihrp")
+name = "AncientShell"
+icon = ExtResource("5_txg3o")
+color = Color(0.351563, 0.304688, 0.265625, 1)
+bb_script = ExtResource("3_1ybgi")
+bonus_stats = Array[ExtResource("4_7nx2j")]([])
+
+[sub_resource type="Resource" id="Resource_m2ski"]
+script = ExtResource("1_lgl4s")
+boosting_sets = Array[ExtResource("7_nihrp")]([SubResource("Resource_oeg16")])
+resource = ExtResource("5_8lufr")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_do63v"]
+script = ExtResource("1_lgl4s")
+boosting_sets = Array[ExtResource("7_nihrp")]([])
+resource = ExtResource("2_jq5xb")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_rlmmf")
+name = &"Turtle Chestplate"
+texture = ExtResource("8_hk06l")
+socket_type = ExtResource("7_8l4la")
+set_resources = Array[ExtResource("7_nihrp")]([ExtResource("6_u7x8t")])
+bonus_stats = Array[ExtResource("1_lgl4s")]([SubResource("Resource_m2ski"), SubResource("Resource_do63v")])
+unlock_requirements = Array[ExtResource("9_uqgr6")]([])
+extra_price = 85.0
+spawn_floor = 12
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

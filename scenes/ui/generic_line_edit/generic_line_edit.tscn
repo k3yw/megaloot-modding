@@ -1,0 +1,108 @@
+[gd_scene load_steps=10 format=3 uid="uid://ibsed7a42sou"]
+
+[ext_resource type="PackedScene" uid="uid://duwxqia2hvbth" path="res://scenes/ui/generic_panel/generic_panel.tscn" id="1_j85y8"]
+[ext_resource type="Script" uid="uid://c6ibhk0g8fndu" path="res://scenes/ui/generic_line_edit/generic_line_edit.gd" id="1_o1wr6"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_7c53t"]
+[ext_resource type="Texture2D" uid="uid://cain1lwf4wicd" path="res://assets/textures/ui/small_panel_background.png" id="3_rdl34"]
+[ext_resource type="FontFile" uid="uid://dkd2htlwntf20" path="res://assets/fonts/monogram-extended.ttf" id="4_hcogo"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hxvkm"]
+resource_local_to_scene = true
+shader = ExtResource("2_7c53t")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iqkdd"]
+shader = ExtResource("2_7c53t")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mtjx6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8weh1"]
+
+[node name="GenericLineEdit" type="MarginContainer" node_paths=PackedStringArray("panel", "line_edit")]
+offset_right = 334.0
+offset_bottom = 14.0
+script = ExtResource("1_o1wr6")
+panel = NodePath("GenericPanel")
+line_edit = NodePath("MarginContainer/LineEdit")
+
+[node name="GenericPanel" parent="." instance=ExtResource("1_j85y8")]
+material = SubResource("ShaderMaterial_hxvkm")
+layout_mode = 2
+texture = ExtResource("3_rdl34")
+region_rect = Rect2(0, 0, 5, 5)
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = -1
+theme_override_constants/margin_bottom = 2
+
+[node name="LineEdit" type="LineEdit" parent="MarginContainer"]
+material = SubResource("ShaderMaterial_iqkdd")
+layout_mode = 2
+theme_override_fonts/font = ExtResource("4_hcogo")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mtjx6")
+theme_override_styles/normal = SubResource("StyleBoxEmpty_8weh1")
+placeholder_text = "placeholder..."
+max_length = 193
+keep_editing_on_text_submit = true
+caret_blink = true
+secret_character = "*"
+
+[connection signal="editing_toggled" from="MarginContainer/LineEdit" to="." method="_on_line_edit_editing_toggled"]
+[connection signal="text_changed" from="MarginContainer/LineEdit" to="." method="_on_line_edit_text_changed"]

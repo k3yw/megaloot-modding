@@ -1,0 +1,44 @@
+[gd_scene load_steps=4 format=3 uid="uid://cthdnyyuwakbc"]
+
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="1_54x7x"]
+[ext_resource type="Texture2D" uid="uid://blawqpsgl5nvj" path="res://assets/textures/deprecated/battle.png" id="1_gynja"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_higme"]
+shader = ExtResource("1_54x7x")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="BattleBackground" type="TextureRect"]
+material = SubResource("ShaderMaterial_higme")
+custom_minimum_size = Vector2(332, 278)
+offset_right = 332.0
+offset_bottom = 278.0
+mouse_filter = 2
+texture = ExtResource("1_gynja")
+expand_mode = 1

@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=3 format=3 uid="uid://dfsckj3nke6y1"]
+
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_bf3ys"]
+[ext_resource type="Script" uid="uid://dm5pw7jjdgpxf" path="res://resources/bb_scripts/cleanse.gd" id="1_kg7jb"]
+
+[resource]
+script = ExtResource("1_bf3ys")
+name = "Cleanse"
+color = Color(0, 0, 0, 1)
+use_limit = 0
+popup_color = Color(0, 0, 0, 1)
+popup_text = ""
+popup_delay = 0.0
+screen_shake = false
+is_hit = false
+bb_script = ExtResource("1_kg7jb")

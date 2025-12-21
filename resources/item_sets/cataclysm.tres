@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=3 format=3 uid="uid://bwpnncbi5hrbg"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_7roft"]
+[ext_resource type="Texture2D" uid="uid://cmfhyhb2su3l7" path="res://assets/textures/icons/item_sets/cataclysm_icon.png" id="1_44sve"]
+
+[resource]
+script = ExtResource("1_7roft")
+name = "Cataclysm"
+icon = ExtResource("1_44sve")
+color = Color(0.576471, 0.498039, 0.431373, 1)
+value = 0
+flow_cost = 25

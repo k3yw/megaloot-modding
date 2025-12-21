@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://1s0ascskqrif"]
+
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="1_2ukuq"]
+[ext_resource type="Texture2D" uid="uid://chi2dbgn1rrrs" path="res://assets/textures/icons/dismantle_icon.png" id="1_m0h8v"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_2ukuq"]
+
+[resource]
+script = ExtResource("2_2ukuq")
+name = "Reforge"
+icon = ExtResource("1_m0h8v")
+color = Color(0.367565, 0.367865, 0.462613, 1)
+bonus_stats = Array[ExtResource("1_2ukuq")]([])

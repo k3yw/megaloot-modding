@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://deujwv1263fq4"]
+
+[ext_resource type="Script" uid="uid://v231q74axi12" path="res://scenes/ui/dynamic_slot_container/dynamic_slot_container.gd" id="1_pkpwr"]
+
+[node name="DynamicSlotContainer" type="GridContainer"]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_pkpwr")

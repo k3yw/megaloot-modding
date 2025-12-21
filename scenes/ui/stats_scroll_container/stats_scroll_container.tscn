@@ -1,0 +1,117 @@
+[gd_scene load_steps=8 format=3 uid="uid://ctip13k6jlydu"]
+
+[ext_resource type="Script" uid="uid://crrq40lqxdykl" path="res://scenes/ui/stats_scroll_container/stats_scroll_container.gd" id="1_vmi6w"]
+[ext_resource type="PackedScene" uid="uid://ibsed7a42sou" path="res://scenes/ui/generic_line_edit/generic_line_edit.tscn" id="2_4errp"]
+[ext_resource type="PackedScene" uid="uid://b1ua27d8xdy1w" path="res://scenes/ui/generic_scroll_container/generic_scroll_container.tscn" id="2_rey0i"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="3_eh7sa"]
+[ext_resource type="PackedScene" uid="uid://dfy4x71hymcn2" path="res://scenes/ui/animated_box_container/animated_box_container.tscn" id="5_chc1o"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hxvkm"]
+resource_local_to_scene = true
+shader = ExtResource("3_eh7sa")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_sel8a"]
+resource_local_to_scene = true
+shader = ExtResource("3_eh7sa")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="StatsScrollContainer" type="MarginContainer" node_paths=PackedStringArray("scroll_container", "search_line_edit", "stats_holder")]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 17
+theme_override_constants/margin_top = 15
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 25
+script = ExtResource("1_vmi6w")
+scroll_container = NodePath("VBoxContainer/GenericScrollContainer")
+search_line_edit = NodePath("VBoxContainer/GenericLineEdit")
+stats_holder = NodePath("VBoxContainer/GenericScrollContainer/MarginContainer/ScrollContainer/AnimatedBoxContainer")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+theme_override_constants/separation = 15
+
+[node name="GenericLineEdit" parent="VBoxContainer" instance=ExtResource("2_4errp")]
+layout_mode = 2
+
+[node name="GenericPanel" parent="VBoxContainer/GenericLineEdit" index="0"]
+material = SubResource("ShaderMaterial_hxvkm")
+
+[node name="LineEdit" parent="VBoxContainer/GenericLineEdit/MarginContainer" index="0"]
+placeholder_text = "search..."
+
+[node name="GenericScrollContainer" parent="VBoxContainer" instance=ExtResource("2_rey0i")]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="GenericPanel" parent="VBoxContainer/GenericScrollContainer/MarginContainer" index="0"]
+material = SubResource("ShaderMaterial_sel8a")
+region_rect = Rect2(2, 2, 3, 3)
+
+[node name="AnimatedBoxContainer" parent="VBoxContainer/GenericScrollContainer/MarginContainer/ScrollContainer" index="0" instance=ExtResource("5_chc1o")]
+custom_minimum_size = Vector2(0, -12)
+layout_mode = 2
+size_flags_horizontal = 3
+seperation = 12
+type = 1
+
+[editable path="VBoxContainer/GenericLineEdit"]
+[editable path="VBoxContainer/GenericScrollContainer"]

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=3 format=3 uid="uid://bn78s4qdapmc4"]
+
+[ext_resource type="Script" uid="uid://c567vqc52tcdx" path="res://classes/resource/specialization.gd" id="1_0nw2k"]
+[ext_resource type="Resource" uid="uid://dohcycjncpa4h" path="res://resources/item_sets/shadow.tres" id="1_eb0jg"]
+
+[resource]
+script = ExtResource("1_0nw2k")
+name = "Bloodmoon"
+color = Color(0.658824, 0.180392, 0.309804, 1)
+original_item_set = ExtResource("1_eb0jg")
+metadata/_custom_type_script = "uid://c567vqc52tcdx"

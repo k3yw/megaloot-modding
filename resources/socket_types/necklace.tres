@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="SocketType" load_steps=3 format=3 uid="uid://cd4tcybobx50g"]
+
+[ext_resource type="Script" uid="uid://bf4xfjaqogirm" path="res://classes/resource/socket_type.gd" id="1_0pmmp"]
+[ext_resource type="Texture2D" uid="uid://cg87mmoftd0dn" path="res://resources/atlas_textures/necklace_icon.tres" id="2_3gfpu"]
+
+[resource]
+script = ExtResource("1_0pmmp")
+name = &"Necklace"
+texture = ExtResource("2_3gfpu")
+metadata/_custom_type_script = "uid://bf4xfjaqogirm"

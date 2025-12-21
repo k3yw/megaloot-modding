@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://7y0w2enfo0o1"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_de21x"]
+[ext_resource type="Script" uid="uid://bx6huccn5i042" path="res://resources/bb_scripts/spelldom.gd" id="1_iqub8"]
+[ext_resource type="Texture2D" uid="uid://cc3a4d8y6hinw" path="res://assets/textures/icons/spelldom_icon.png" id="1_o8pcj"]
+[ext_resource type="Script" uid="uid://dnbs241guc4mr" path="res://resources/stat_scripts/insight.gd" id="4_xw4xp"]
+
+[resource]
+script = ExtResource("1_de21x")
+name = "Spelldom"
+icon = ExtResource("1_o8pcj")
+color = Color(0.721569, 0.666667, 0.913725, 1)
+is_attack_type = false
+is_percentage = false
+max_amount = 75
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_xw4xp")
+bb_script = ExtResource("1_iqub8")

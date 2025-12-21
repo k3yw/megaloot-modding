@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://buk7kc35d15wl"]
+
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_7lorc"]
+[ext_resource type="Texture2D" uid="uid://dd4pwi24lrbi3" path="res://assets/textures/icons/vimblow_icon.png" id="1_8bi8e"]
+[ext_resource type="Script" uid="uid://do83tttks4tre" path="res://resources/bb_scripts/vimblow.gd" id="1_yyv0t"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_k4pvy"]
+
+[resource]
+script = ExtResource("1_7lorc")
+name = "Vimblow"
+icon = ExtResource("1_8bi8e")
+color = Color(0.0784314, 0.627451, 0.180392, 1)
+type = ExtResource("3_k4pvy")
+is_temporary = false
+is_percent = false
+limit = 99
+application_message = ""
+bb_script = ExtResource("1_yyv0t")

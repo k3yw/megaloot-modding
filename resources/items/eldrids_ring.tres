@@ -1,0 +1,44 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://cqrur7d2pypit"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ub7ov"]
+[ext_resource type="Resource" uid="uid://dgsspprucwp2r" path="res://resources/passives/eldrids_fury.tres" id="2_7lefj"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_oc1cx"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_wnbyt"]
+[ext_resource type="Resource" uid="uid://nmolc84dhefq" path="res://resources/stats/life_steal.tres" id="5_riynw"]
+[ext_resource type="Resource" uid="uid://cyctakuu2fani" path="res://resources/item_sets/flesh.tres" id="7_6e1fe"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="8_dt2mu"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="8_jh7xm"]
+[ext_resource type="Texture2D" uid="uid://4wit1td3y6k2" path="res://assets/textures/items/eldrids_ring.png" id="9_kqm7g"]
+
+[sub_resource type="Resource" id="Resource_ki40c"]
+script = ExtResource("1_ub7ov")
+boosting_sets = Array[ExtResource("8_dt2mu")]([ExtResource("7_6e1fe")])
+resource = ExtResource("3_oc1cx")
+amount = 15.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_bsy87"]
+script = ExtResource("1_ub7ov")
+boosting_sets = Array[ExtResource("8_dt2mu")]([])
+resource = ExtResource("5_riynw")
+amount = 7.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_wnbyt")
+name = &"Eldrid\'s Ring"
+texture = ExtResource("9_kqm7g")
+description = ""
+socket_type = ExtResource("8_jh7xm")
+set_resources = Array[ExtResource("8_dt2mu")]([ExtResource("7_6e1fe")])
+passive = ExtResource("2_7lefj")
+bonus_stats = Array[ExtResource("1_ub7ov")]([SubResource("Resource_ki40c"), SubResource("Resource_bsy87")])
+extra_price = 25.0
+spawn_floor = 7
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=13 format=3 uid="uid://dqgsmx7ox72ua"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_5e2w4"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_hskud"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_k8g0f"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_x5yr1"]
+[ext_resource type="Resource" uid="uid://c7o4swfv7phdu" path="res://resources/stats/malice.tres" id="4_2dyi5"]
+[ext_resource type="Resource" uid="uid://dhy8qq2aomo6c" path="res://resources/item_sets/cursed.tres" id="4_rr60g"]
+[ext_resource type="Resource" uid="uid://wjriih54g7b7" path="res://resources/passives/shattered_breath.tres" id="5_3774s"]
+[ext_resource type="Resource" uid="uid://ctpy2mw635lru" path="res://resources/item_sets/warrior.tres" id="5_vodbn"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="6_ng7fe"]
+[ext_resource type="Texture2D" uid="uid://cujowxt015ove" path="res://assets/textures/items/black_oath.png" id="7_x5yr1"]
+
+[sub_resource type="Resource" id="Resource_elbew"]
+script = ExtResource("1_5e2w4")
+boosting_sets = Array[ExtResource("3_k8g0f")]([ExtResource("5_vodbn")])
+resource = ExtResource("3_x5yr1")
+amount = 17.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_bv42y"]
+script = ExtResource("1_5e2w4")
+boosting_sets = Array[ExtResource("3_k8g0f")]([])
+resource = ExtResource("4_2dyi5")
+amount = 12.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_hskud")
+name = &"Black Oath"
+texture = ExtResource("7_x5yr1")
+description = ""
+socket_type = ExtResource("6_ng7fe")
+set_resources = Array[ExtResource("3_k8g0f")]([ExtResource("4_rr60g"), ExtResource("5_vodbn")])
+passive = ExtResource("5_3774s")
+bonus_stats = Array[ExtResource("1_5e2w4")]([SubResource("Resource_elbew"), SubResource("Resource_bv42y")])
+extra_price = 325.0
+spawn_floor = 12
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

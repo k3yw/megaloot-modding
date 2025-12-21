@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://bhvvn5fwnttf4"]
+
+[ext_resource type="Script" uid="uid://dkr4cbjevdw85" path="res://resources/bb_scripts/critical_focus.gd" id="1_6edsu"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_sqd8d"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_6edsu"]
+[ext_resource type="Script" uid="uid://3xvbphbelnci" path="res://resources/passive_scripts/critical_focus.gd" id="3_j70ag"]
+
+[resource]
+script = ExtResource("2_6edsu")
+name = "Critical Focus"
+bonus_stats = Array[ExtResource("1_sqd8d")]([])
+game_logic_script = ExtResource("3_j70ag")
+bb_script = ExtResource("1_6edsu")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

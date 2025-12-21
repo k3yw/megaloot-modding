@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=14 format=3 uid="uid://v73i1ls681yv"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_p37rg"]
+[ext_resource type="Resource" uid="uid://6humi44d3jf7" path="res://resources/item_sets/royal.tres" id="2_y031g"]
+[ext_resource type="Resource" uid="uid://chq1wtqg02dw4" path="res://resources/stats/combat.tres" id="3_cnhut"]
+[ext_resource type="Resource" uid="uid://m25hhepu4mn4" path="res://resources/item_sets/silver.tres" id="4_w1rfu"]
+[ext_resource type="Resource" uid="uid://jcye68q8k8ja" path="res://resources/stats/faith.tres" id="5_wbgtt"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="6_h2m32"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="7_gem0y"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="8_sxgdw"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="9_4evbh"]
+[ext_resource type="Texture2D" uid="uid://piu5631uuiji" path="res://assets/textures/items/royal_helmet.png" id="9_gtunn"]
+
+[sub_resource type="Resource" id="Resource_u08aq"]
+script = ExtResource("1_p37rg")
+boosting_sets = Array[ExtResource("8_sxgdw")]([ExtResource("2_y031g")])
+resource = ExtResource("3_cnhut")
+amount = 10.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_5f5y7"]
+script = ExtResource("1_p37rg")
+boosting_sets = Array[ExtResource("8_sxgdw")]([ExtResource("4_w1rfu")])
+resource = ExtResource("5_wbgtt")
+amount = 8.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_h58b5"]
+script = ExtResource("1_p37rg")
+boosting_sets = Array[ExtResource("8_sxgdw")]([])
+resource = ExtResource("6_h2m32")
+amount = 6.0
+is_modifier = false
+
+[resource]
+script = ExtResource("7_gem0y")
+name = &"Royal Helmet"
+texture = ExtResource("9_gtunn")
+description = ""
+socket_type = ExtResource("9_4evbh")
+set_resources = Array[ExtResource("8_sxgdw")]([ExtResource("2_y031g")])
+bonus_stats = Array[ExtResource("1_p37rg")]([SubResource("Resource_u08aq"), SubResource("Resource_5f5y7"), SubResource("Resource_h58b5")])
+extra_price = 38.0
+spawn_floor = 8
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

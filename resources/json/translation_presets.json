@@ -1,0 +1,228 @@
+{
+	"language-name": "English",
+	
+	"leaderboard-progress": "You surpassed {player-percentage-amount} of players by reaching floor {floor-record}",
+	"leaderboard-progress-connection-failed": "Failed connecting to leaderboards, Reached floor {floor-record}",
+	
+	"final-floor-reached": "Final Floor Reached",
+	"ascension-level": "Ascension {level}",
+	"final-floor": "Final Floor",
+	
+	"new-journey": "New Journey",
+	"select-save-slot": "Select",
+	"delete-save-slot": "Delete",
+	
+	"update": "Update",
+	"upload": "Upload",
+	
+	"death-message-title": "Death Message by {player-name}",
+	"player-floor-record": "{player-name}'s Floor Record",
+	"view-steam-profile": "View Steam Profile",
+	"no-achievements": "No Achievements",
+	"loading-file": "Loading",
+	"saving-file": "Saving",
+	"proceed": "Proceed",
+	"join-lobby": "Join",
+	"enter-password": "enter password",
+	"enter-ip": "enter ip",
+	
+	"specialization-floor": "Activates On Floor {floor-number}",
+	"convert-to-battle-stats": "Convert to Battle Stats",
+	"stat-per-kill": "{stat} Per Kill",
+	"item-found": "{item-name} found",
+	"doubles-own-stat": "Doubles own |{stat}",
+	
+	"victory": "Victory",
+	"defeat": "Defeat",
+	"ascend": "Ascend",
+	
+	"negative-flow": "Negative |{flow}|, unequip item sets",
+	"cannot-be-dismantled": "Cannot Be Dismantled",
+	"waiting-for-dismantle": "Waiting for Dismantle",
+	"request-to-dismantle": "Request to Dismantle",
+	"battles-remaining": "Battles Remaining",
+	"current-battle": "Current Battle",
+	"last-battle": "Last Battle",
+	"gold-per-battle": "Gold Per Battle",
+	"gold-per-kill": "Gold Per Kill",
+	
+	"enemy-player-immunity": "Takes {amount}% Less Damage On|\n|{player-name}'s Turn",
+	"enemy-player-immunity-misc": "Reduced by {amount}% every turn",
+	"player-sent-an-item": "{player-name} Sent You {item-name}",
+	"send-item-to-player": "Send Item",
+	
+	"burnout-description": "Burnout: effects are inactive",
+	
+	"infuse-description": "Grants item's stats and effects|\n|for this floor",
+	"infused-flow-info": "infused, doesn't cost |{flow-stat}",
+	"infuse": "Infuse",
+	
+	"to-open-battle-log": "To Open Battle Log",
+	"to-unlock-stats": "To Unlock Stats",
+	"to-lock-stats": "To Lock Stats",
+	"to-deselect": "To Deselect",
+	"to-convert": "To Convert",
+	"to-select": "To Select",
+	"to-toggle": "To Toggle",
+	"to-unlock": "To Unlock",
+	"to-learn": "To Learn",
+	"to-lock": "To Lock",
+	"to-consume": "To Consume",
+	"to-activate": "To Activate",
+	"to-restore": "To Restore",
+	"to-remove": "To Remove",
+	"to-banish": "To Banish",
+	"to-equip": "To Equip",
+	"to-swap": "To Swap",
+	"to-take": "To Take",
+	"to-buy": "To Buy",
+	"silenced": "Silenced",
+	"highest": "Highest",
+	"cost": "Cost",
+	
+	"diamond-reward": "Get an extra {diamond} every {floor} floors",
+	"gold-start": "Start with +{amount} {gold}",
+	
+	"reforge-token-description": "+{amount}% chance for |{stat}| to be|\n|applied on a reforged item",
+	"item-multiplier": "Multiply this stat by total |{item-set}| items equipped",
+	"specialization-info": "Transforms |{item-set}| into |{specialization}",
+	"required-item-sets": "Required |{item-set}| item to be equipped",
+	"required-stat": "Required |{stat}",
+	"cant-move-during-battle": "Can't Move During Battle",
+	"missing-item-socket": "Missing {socket-name} Socket",
+	"item-set-no-flow": "{item-set}| costs 0% |{flow}",
+	"item-set-limit-reached": "Item Set Limit Reached",
+	"cant-equip-duplicates": "Can't Equip Duplicates",
+	"cannot-be-upgraded": "Cannot be upgraded",
+	"unlearned-ability": "Unlearned Ability",
+	"learn-ability": "Learn {ability}",
+	
+	"skip-stance": "Skip: don't attack this turn",
+	"guard-stance": "Guard: recieve {amount}% less damage this turn",
+	
+	"attack-on-activation-ability": "attack on activation",
+	"reforged-item-stats": "Reforged Item Stats",
+	"favorite-item-sets": "Favorite Item Sets",
+	"market-item-sets": "Market Item Sets",
+	"tinker-kit-item-name": "Tinker Kit",
+	
+	"battle-information": "Battle Information",
+	
+	"current-turn": "Turn {turn-number}",
+	"local-player-name": "You",
+	"dead": "Dead",
+	
+	"battle-log-applied-status-effect": "{character-1} applied status effect on {character-2}",
+	"battle-log-applied-status-on-self": "{character} applied status effect on self",
+	"battle-log-received-damage-from-source": "{character} received damage from {source}",
+	"battle-log-received-damage": "{character} received damage",
+	"battle-log-hit-with": "{character-1} hit {character-2} with {source}",
+	"battle-log-activated-effect": "{character} activated effect",
+	"battle-log-parry": "{character-1} parried {character-2}",
+	"battle-log-block": "{character-1} blocked {character-2}",
+	"battle-log-killed": "{character-1} killed {character-2}",
+	"battle-log-steal": "{character} stole from {source}",
+	"battle-log-hit": "{character-1} hit {character-2}",
+	"battle-log-cleanse": "{character} cleansed",
+	"battle-log-dodged": "{character} dodged",
+	"battle-log-healed": "{character} healed",
+	
+	
+	
+	"overhealed": "Overhealed",
+	"overheal": "Overheal",
+	
+	"executed": "Executed",
+	"blocked": "Blocked",
+	"debuff-immune": "Debuff Immune",
+	"failed-steal": "Failed Steal",
+	"steal": "Steal",
+	"escaped": "Escaped",
+	"cleanse": "Cleanse",
+	"inventory-full": "Inventory Full",
+	"armor-break": "Armor Break!",
+	"counter-attack-break": "Counter Attack!",
+	"missing-mana": "Missing Mana",
+	"cleansed": "Cleansed",
+	"heal": "Heal",
+	
+	"attack": "Attack",
+	"enter": "Enter",
+	"skip": "Skip",
+	"open": "Open",
+	
+	
+	"sell-all": "Sell All",
+	"close": "Close",
+	
+	"demo-tower-completed": "Demo Tower Completed",
+	
+	
+	"grants-stat-consumable": "Grants |{amount}| |{stat}| this battle",
+	
+	"temp-stat-to-add-potion-description": "Grants |{stat}| for this battle",
+	"status-effect-potion-description-multiple": "Grants {amount} Stacks of |{status-effect}",
+	"status-effect-potion-description-single": "Grants a Stack of |{status-effect}",
+	
+	"potion-restores": "Restores {amount} |{stat}",
+	"potion-regenerates": "Regenerates {amount} |{stat}",
+	"potion-repairs": "Repairs {amount}% of Your |{stat}",
+	
+	"refills-every-battle-potion": "Refills Every Battle",
+	
+	"stat-transform": "Transforms |{stat-1}| into |{stat-2}",
+	
+	"banished-item": "Banished {item-name}",
+	"reforged-item": "Reforged {item-name}",
+	"item-reforge": "{item-name} Reforge",
+	"banish-description": "Permanently removes {item-name}\nfrom the tower",
+	"unlock-requirements-description": "Required completed battles to unlock:",
+	
+	"unlimited-amount": "Unlimited",
+	"max-amount": "Max: {amount}",
+	
+	"corrupted-fragment": "Corrupted Fragment",
+	"specialization": "Specialization",
+	"unknown-enemy": "Unknown Enemy",
+	"unknown-item": "Unknown Item",
+	"passive-set": "Passive Set",
+	"empty-set": "Empty Set",
+	"sell-for": "Sell For",
+	"level-up": "Level Up",
+	"chapter": "Chapter",
+	
+	"abilities": "Abilities",
+	"ability": "Ability",
+	"passives": "Passives",
+	"passive": "Passive",
+	
+	"rewards": "Rewards",
+	"convert": "Convert",
+	"upgrade": "Upgrade",
+	
+	
+	"command-list": "commands",
+	"help-command-info": "write \"{command}\" for help",
+	"kick-command-info": "{command} [player index]\nkicks the player form the lobby\nexample: {command} 1 (kicks the first player after you)",
+	
+	
+	"end-game-text": "Forged within the tower, your soul was proven worthy.",
+	"highest-floor-result-screen": "Highest Floor: {floor-number}",
+	"died-on-floor": "Died on floor {floor-number}",
+	"merchant-exclusive": "Merchant Exclusive",
+	"upgrades-into": "Upgrades Into:",
+	"highest-floor": "Highest Floor",
+	"floor-number": "Floor {number}",
+	"not-refinable": "Not Refinable",
+	"top-player": "Top Player",
+	"refinable": "Refinable",
+	"deforge": "Deforge",
+	"active": "Active",
+	"floor": "Floor",
+	"split": "Split",
+	"elite": "Elite",
+	"gold": "Gold",
+	"level": "Lv",
+	"set": "Set",
+	"xp": "Xp",
+}

@@ -1,0 +1,43 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=12 format=3 uid="uid://dd6843wfhjgjt"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_nygan"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="2_q5af0"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_qax3r"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_ht7j7"]
+[ext_resource type="Resource" uid="uid://m25hhepu4mn4" path="res://resources/item_sets/silver.tres" id="6_6j1a8"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="7_0n773"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_xjs1e"]
+[ext_resource type="Texture2D" uid="uid://bvbx761mj4ldt" path="res://assets/textures/items/life_seeker.png" id="8_kovd1"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="9_34735"]
+
+[sub_resource type="Resource" id="Resource_xewgn"]
+script = ExtResource("1_nygan")
+boosting_sets = Array[ExtResource("7_xjs1e")]([ExtResource("6_6j1a8")])
+resource = ExtResource("5_ht7j7")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_60p7q"]
+script = ExtResource("1_nygan")
+boosting_sets = Array[ExtResource("7_xjs1e")]([])
+resource = ExtResource("2_q5af0")
+amount = 3.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_qax3r")
+name = &"Life Seeker"
+texture = ExtResource("8_kovd1")
+socket_type = ExtResource("7_0n773")
+set_resources = Array[ExtResource("7_xjs1e")]([ExtResource("6_6j1a8")])
+bonus_stats = Array[ExtResource("1_nygan")]([SubResource("Resource_xewgn"), SubResource("Resource_60p7q")])
+unlock_requirements = Array[ExtResource("9_34735")]([])
+extra_price = 8.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

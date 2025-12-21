@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://ca0l3rciyjwvv"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_bj3ok"]
+[ext_resource type="Resource" uid="uid://orugsb1sodim" path="res://resources/item_sets/celestial.tres" id="2_h2qmd"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_ixaxl"]
+[ext_resource type="Resource" uid="uid://dpl8agabg0hnp" path="res://resources/stats/elemental_resistance.tres" id="4_w6kx1"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_sdpxx"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_p1qxj"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="7_fwa2j"]
+[ext_resource type="Texture2D" uid="uid://bx4jc0ynunj23" path="res://assets/textures/items/celestial_chestplate.png" id="7_l7iuj"]
+
+[sub_resource type="Resource" id="Resource_7ha7i"]
+script = ExtResource("1_bj3ok")
+boosting_sets = Array[ExtResource("6_p1qxj")]([ExtResource("2_h2qmd")])
+resource = ExtResource("3_ixaxl")
+amount = 145.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_yioq3"]
+script = ExtResource("1_bj3ok")
+boosting_sets = Array[ExtResource("6_p1qxj")]([])
+resource = ExtResource("4_w6kx1")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_sdpxx")
+name = &"Celestial Chestplate"
+texture = ExtResource("7_l7iuj")
+description = ""
+socket_type = ExtResource("7_fwa2j")
+set_resources = Array[ExtResource("6_p1qxj")]([ExtResource("2_h2qmd")])
+bonus_stats = Array[ExtResource("1_bj3ok")]([SubResource("Resource_7ha7i"), SubResource("Resource_yioq3")])
+extra_price = 248.0
+spawn_floor = 20
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

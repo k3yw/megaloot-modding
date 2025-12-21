@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=10 format=3 uid="uid://c272pib4mv7l0"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ia40t"]
+[ext_resource type="Resource" uid="uid://b0reailgui4vy" path="res://resources/item_sets/chromalure.tres" id="2_afbc7"]
+[ext_resource type="Resource" uid="uid://xnovuq7jfivb" path="res://resources/stats/toxicity.tres" id="3_pc1ay"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_wqqvv"]
+[ext_resource type="Resource" uid="uid://cqo8lsev0nnwu" path="res://resources/passives/toxic_redemption.tres" id="5_a62xt"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_rxy4l"]
+[ext_resource type="Texture2D" uid="uid://bdntijwq6pud4" path="res://assets/textures/items/nighthorn.png" id="6_sqdr2"]
+[ext_resource type="Resource" uid="uid://dbs0nlalf5fiw" path="res://resources/socket_types/ring.tres" id="7_rmd4g"]
+
+[sub_resource type="Resource" id="Resource_gujjr"]
+script = ExtResource("1_ia40t")
+boosting_sets = Array[ExtResource("5_rxy4l")]([ExtResource("2_afbc7")])
+resource = ExtResource("3_pc1ay")
+amount = 25.0
+is_modifier = true
+
+[resource]
+script = ExtResource("4_wqqvv")
+name = &"Nighthorn"
+texture = ExtResource("6_sqdr2")
+description = ""
+socket_type = ExtResource("7_rmd4g")
+set_resources = Array[ExtResource("5_rxy4l")]([ExtResource("2_afbc7")])
+passive = ExtResource("5_a62xt")
+bonus_stats = Array[ExtResource("1_ia40t")]([SubResource("Resource_gujjr")])
+extra_price = 24.0
+spawn_floor = 9
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

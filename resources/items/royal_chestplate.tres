@@ -1,0 +1,51 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=14 format=3 uid="uid://s7h0hifgxm0v"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_fdxff"]
+[ext_resource type="Resource" uid="uid://6humi44d3jf7" path="res://resources/item_sets/royal.tres" id="2_37stv"]
+[ext_resource type="Resource" uid="uid://chq1wtqg02dw4" path="res://resources/stats/combat.tres" id="3_knn2y"]
+[ext_resource type="Resource" uid="uid://m25hhepu4mn4" path="res://resources/item_sets/silver.tres" id="4_haplm"]
+[ext_resource type="Resource" uid="uid://jcye68q8k8ja" path="res://resources/stats/faith.tres" id="5_c7xu1"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="6_4fwsv"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="7_upftf"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="8_eo71u"]
+[ext_resource type="Resource" uid="uid://bk224nl7hnf0w" path="res://resources/socket_types/chestplate.tres" id="9_4twon"]
+[ext_resource type="Texture2D" uid="uid://bdeh6tc5plqus" path="res://assets/textures/items/royal_chestplate.png" id="9_8haaw"]
+
+[sub_resource type="Resource" id="Resource_kepfr"]
+script = ExtResource("1_fdxff")
+boosting_sets = Array[ExtResource("8_eo71u")]([ExtResource("2_37stv")])
+resource = ExtResource("3_knn2y")
+amount = 14.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_mff4y"]
+script = ExtResource("1_fdxff")
+boosting_sets = Array[ExtResource("8_eo71u")]([ExtResource("4_haplm")])
+resource = ExtResource("5_c7xu1")
+amount = 12.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_h72tn"]
+script = ExtResource("1_fdxff")
+boosting_sets = Array[ExtResource("8_eo71u")]([])
+resource = ExtResource("6_4fwsv")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("7_upftf")
+name = &"Royal Chestplate"
+texture = ExtResource("9_8haaw")
+description = ""
+socket_type = ExtResource("9_4twon")
+set_resources = Array[ExtResource("8_eo71u")]([ExtResource("2_37stv")])
+bonus_stats = Array[ExtResource("1_fdxff")]([SubResource("Resource_kepfr"), SubResource("Resource_mff4y"), SubResource("Resource_h72tn")])
+extra_price = 48.0
+spawn_floor = 8
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,26 @@
+[gd_resource type="Resource" script_class="Chapter" load_steps=2 format=3 uid="uid://d01apffcw1rfx"]
+
+[ext_resource type="Script" uid="uid://csh2n50horih2" path="res://classes/resource/chapter.gd" id="1_xmfl2"]
+
+[resource]
+script = ExtResource("1_xmfl2")
+name = "Viran"
+text = "Finally... it works!
+She's regenerating...
+
+Look at yourself Viran, your wounds are closing.
+Now  I must know how far I can push the damages to the body...
+
+But dad... I feel sick... said Viran
+
+Gogen casted a spell to analyze her body, that's strange, she should not feel any pain...
+Not after that amount pain killers
+
+But after noticing the flaw of his experiment
+Dreadfully he said, it not perfect... not yet
+
+
+The body produces poison as a byproduct of regeneration and since the poison is technically a part of the body, it ignores it...
+She's still not immortal like me..
+
+"

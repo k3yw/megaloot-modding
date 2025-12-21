@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://cj27s7eo8q1fk"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_2uu6n"]
+[ext_resource type="Script" uid="uid://hp7yg2lmlp0c" path="res://resources/bb_scripts/beyond_the_grave.gd" id="1_k7r0q"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_k7r0q"]
+[ext_resource type="Script" uid="uid://dqcvql3vdykg1" path="res://resources/passive_scripts/beyond_the_grave.gd" id="3_ycid6"]
+
+[resource]
+script = ExtResource("2_k7r0q")
+name = "Beyond the Grave"
+bonus_stats = Array[ExtResource("1_2uu6n")]([])
+game_logic_script = ExtResource("3_ycid6")
+bb_script = ExtResource("1_k7r0q")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

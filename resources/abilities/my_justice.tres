@@ -1,0 +1,38 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=11 format=3 uid="uid://d2gqf0hjxuiyv"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_poom2"]
+[ext_resource type="Script" uid="uid://biwfwsh246myc" path="res://resources/ability_scripts/my_justice.gd" id="1_rwjob"]
+[ext_resource type="Texture2D" uid="uid://dcoukfgrt5xjt" path="res://assets/textures/icons/my_justice_icon.png" id="2_dyo88"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="2_qpncs"]
+[ext_resource type="Script" uid="uid://cerhv5guut1qj" path="res://resources/bb_scripts/my_justice.gd" id="2_tgucq"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_dyo88"]
+[ext_resource type="Resource" uid="uid://bxv6028ci4lyk" path="res://resources/status_effects/counter_attack_charge.tres" id="7_tgucq"]
+[ext_resource type="Resource" uid="uid://bn023o3l0kypu" path="res://resources/status_effects/invulnerability.tres" id="8_oero6"]
+
+[sub_resource type="Resource" id="Resource_oero6"]
+script = ExtResource("3_dyo88")
+resource = ExtResource("7_tgucq")
+amount = 1
+metadata/_custom_type_script = "uid://b3b5vhhh7jge1"
+
+[sub_resource type="Resource" id="Resource_xuwbe"]
+script = ExtResource("3_dyo88")
+resource = ExtResource("8_oero6")
+amount = 1
+metadata/_custom_type_script = "uid://b3b5vhhh7jge1"
+
+[resource]
+script = ExtResource("2_qpncs")
+name = "My Justice"
+icon = ExtResource("2_dyo88")
+mana_cost = 0
+use_limit = 1
+status_effects_on_activation = Array[ExtResource("3_dyo88")]([SubResource("Resource_oero6"), SubResource("Resource_xuwbe")])
+bonus_stats_while_active = Array[ExtResource("1_poom2")]([])
+quick_cast = false
+non_target = true
+to_attack = false
+value = 0
+ability_script = ExtResource("1_rwjob")
+bb_script = ExtResource("2_tgucq")
+metadata/_custom_type_script = "uid://cyjqugj4n237n"

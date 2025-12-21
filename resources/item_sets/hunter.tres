@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://vgmhf2tlhfmn"]
+
+[ext_resource type="Script" uid="uid://c7utbfb75qjxq" path="res://resources/bb_scripts/hunter.gd" id="1_e1gyw"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_lchdl"]
+[ext_resource type="Texture2D" uid="uid://m8rlk60j1n1d" path="res://assets/textures/icons/item_sets/hunter_icon.png" id="1_qk1m1"]
+
+[resource]
+script = ExtResource("1_lchdl")
+name = "Hunter"
+icon = ExtResource("1_qk1m1")
+color = Color(0.496094, 0.554688, 0.265625, 1)
+value = 0
+flow_cost = 10
+bb_script = ExtResource("1_e1gyw")

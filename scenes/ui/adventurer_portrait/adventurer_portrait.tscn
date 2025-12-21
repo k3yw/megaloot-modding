@@ -1,0 +1,163 @@
+[gd_scene load_steps=11 format=3 uid="uid://c5xbfhdhlrk5i"]
+
+[ext_resource type="Script" uid="uid://ghv23fs0b5xl" path="res://scenes/ui/adventurer_portrait/adventurer_portrait.gd" id="1_lqtyj"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_4j0bj"]
+[ext_resource type="Texture2D" uid="uid://ce5bl52ijn3sb" path="res://assets/textures/portraits/fren.png" id="2_p02ho"]
+[ext_resource type="Texture2D" uid="uid://dlw72b3x6r7bq" path="res://assets/textures/portraits/fren_blink.png" id="3_fipkx"]
+[ext_resource type="Texture2D" uid="uid://csehdyrwf7mjk" path="res://assets/textures/portrait_borders/wooden_border.png" id="4_tqttb"]
+[ext_resource type="PackedScene" uid="uid://c44wlrtoiy84r" path="res://scenes/modules/hover_info_module/hover_info_module.tscn" id="7_20p0k"]
+[ext_resource type="Texture2D" uid="uid://21urgfiuy41w" path="res://assets/textures/icons/item_sets/arcanum_icon.png" id="8_32vx7"]
+
+[sub_resource type="Shader" id="Shader_nfh3g"]
+code = "shader_type canvas_item;
+
+uniform float alpha: hint_range(0.0, 1.0) = 1.0;
+uniform vec3 modulate: source_color = vec3(1.0);
+uniform float ratio: hint_range(0.0, 1.0, 0.1);
+
+uniform float wobble: hint_range(0.0, 10.0, 0.1);
+
+uniform sampler2D SCREEN_TEXTURE: hint_screen_texture;
+
+void fragment() {
+	vec2 original_uv = SCREEN_UV;
+	vec2 uv = SCREEN_UV;
+	vec2 final_uv = SCREEN_UV;
+
+
+	if (wobble > 0.0){
+
+			uv = (uv - 0.5) + 0.5;
+
+			uv.x += sin((uv.y * 35.0) + (TIME * 5.0)) * 0.01;
+
+			final_uv = mix(original_uv, uv, wobble);
+
+	}
+
+	vec4 color = texture(SCREEN_TEXTURE, final_uv);
+
+	COLOR.rgb = color.rgb * modulate;
+	COLOR.a = color.a * alpha;
+}"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qfs8g"]
+resource_local_to_scene = true
+shader = SubResource("Shader_nfh3g")
+shader_parameter/alpha = 1.0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/ratio = 0.0
+shader_parameter/wobble = 0.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c501a"]
+resource_local_to_scene = true
+shader = ExtResource("2_4j0bj")
+shader_parameter/type = 0
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 1
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 1.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 45.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="AdventurerPortrait" type="MarginContainer" node_paths=PackedStringArray("set_texture_hover_info_module", "border_texture_rect", "portrait_canvas_group", "portrait_texture_rect", "set_texture_rect", "blink_texture")]
+offset_right = 38.0
+offset_bottom = 38.0
+script = ExtResource("1_lqtyj")
+set_texture_hover_info_module = NodePath("CenterContainer/BorderTextureRect/SetTextureRect/HoverInfoModule")
+border_texture_rect = NodePath("CenterContainer/BorderTextureRect")
+portrait_canvas_group = NodePath("CenterContainer/Control/CanvasGroup")
+portrait_texture_rect = NodePath("CenterContainer/Control/CanvasGroup/PortraitTextureRect")
+set_texture_rect = NodePath("CenterContainer/BorderTextureRect/SetTextureRect")
+blink_texture = NodePath("CenterContainer/Control/CanvasGroup/PortraitTextureRect/BlinkTextureRect")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+layout_mode = 2
+
+[node name="Control" type="Control" parent="CenterContainer"]
+layout_mode = 2
+
+[node name="CanvasGroup" type="CanvasGroup" parent="CenterContainer/Control"]
+material = SubResource("ShaderMaterial_qfs8g")
+position = Vector2(-16, -16)
+use_mipmaps = true
+
+[node name="PortraitTextureRect" type="TextureRect" parent="CenterContainer/Control/CanvasGroup"]
+texture_filter = 1
+custom_minimum_size = Vector2(32, 32)
+offset_right = 32.0
+offset_bottom = 32.0
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_p02ho")
+stretch_mode = 5
+
+[node name="BlinkTextureRect" type="TextureRect" parent="CenterContainer/Control/CanvasGroup/PortraitTextureRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("3_fipkx")
+
+[node name="BorderTextureRect" type="TextureRect" parent="CenterContainer"]
+layout_mode = 2
+texture = ExtResource("4_tqttb")
+stretch_mode = 3
+
+[node name="CenterContainer" type="CenterContainer" parent="CenterContainer/BorderTextureRect"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SetTextureRect" type="TextureRect" parent="CenterContainer/BorderTextureRect"]
+visible = false
+material = SubResource("ShaderMaterial_c501a")
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -21.0
+offset_top = 10.0
+offset_right = -5.0
+offset_bottom = 26.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_32vx7")
+stretch_mode = 5
+
+[node name="HoverInfoModule" parent="CenterContainer/BorderTextureRect/SetTextureRect" instance=ExtResource("7_20p0k")]

@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://f4qhbl7fwulq"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_apae7"]
+[ext_resource type="Resource" uid="uid://tyft4f1n0dwx" path="res://resources/item_sets/blackthorn.tres" id="2_cs6qq"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="3_e3maa"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="4_5ifw0"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_5ntoo"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_yhnlf"]
+[ext_resource type="Texture2D" uid="uid://bd7bltimywq34" path="res://assets/textures/items/blackthorn_crown.png" id="6_cfsd2"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_w3qrr"]
+
+[sub_resource type="Resource" id="Resource_pwx3t"]
+script = ExtResource("1_apae7")
+boosting_sets = Array[ExtResource("5_yhnlf")]([ExtResource("2_cs6qq")])
+resource = ExtResource("3_e3maa")
+amount = 25.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_l2byp"]
+script = ExtResource("1_apae7")
+boosting_sets = Array[ExtResource("5_yhnlf")]([ExtResource("2_cs6qq")])
+resource = ExtResource("4_5ifw0")
+amount = 17.0
+is_modifier = true
+
+[resource]
+script = ExtResource("4_5ntoo")
+name = &"Blackthorn Crown"
+texture = ExtResource("6_cfsd2")
+description = ""
+socket_type = ExtResource("7_w3qrr")
+set_resources = Array[ExtResource("5_yhnlf")]([ExtResource("2_cs6qq")])
+bonus_stats = Array[ExtResource("1_apae7")]([SubResource("Resource_pwx3t"), SubResource("Resource_l2byp")])
+extra_price = 147.0
+spawn_floor = 5
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

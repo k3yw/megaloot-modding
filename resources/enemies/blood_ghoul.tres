@@ -1,0 +1,56 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=17 format=3 uid="uid://b84ygkknbntt4"]
+
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_8vu5t"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_gq2y7"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_iujj7"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_v5cwo"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_6gpr4"]
+[ext_resource type="Resource" uid="uid://nmolc84dhefq" path="res://resources/stats/life_steal.tres" id="3_n5r5q"]
+[ext_resource type="Texture2D" uid="uid://cld0ery8ar6jm" path="res://assets/textures/enemies/blood_ghoul.png" id="4_3kao3"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_xvp4u"]
+[ext_resource type="Resource" uid="uid://pvbac0njnmpw" path="res://resources/stats/penetration.tres" id="5_mmyf1"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_h7t2e"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_jxsa5"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_p00gr"]
+
+[sub_resource type="Resource" id="Resource_b0unk"]
+script = ExtResource("2_6gpr4")
+boosting_sets = Array[ExtResource("1_v5cwo")]([])
+resource = ExtResource("1_gq2y7")
+amount = 11.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_vk5kw"]
+script = ExtResource("2_6gpr4")
+boosting_sets = Array[ExtResource("1_v5cwo")]([])
+resource = ExtResource("3_n5r5q")
+amount = 7.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_la7r1"]
+script = ExtResource("2_6gpr4")
+boosting_sets = Array[ExtResource("1_v5cwo")]([])
+resource = ExtResource("4_xvp4u")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_amfay"]
+script = ExtResource("2_6gpr4")
+boosting_sets = Array[ExtResource("1_v5cwo")]([])
+resource = ExtResource("5_mmyf1")
+amount = 25.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_8vu5t")
+name = "Blood Ghoul"
+texture = ExtResource("4_3kao3")
+floor_number = 3
+flying = false
+starting_status_effects = Array[ExtResource("8_jxsa5")]([])
+active_item_sets = Array[ExtResource("1_v5cwo")]([])
+stats_per_level = Array[ExtResource("11_p00gr")]([])
+base_stats = Array[ExtResource("2_6gpr4")]([SubResource("Resource_b0unk"), SubResource("Resource_vk5kw"), SubResource("Resource_la7r1"), SubResource("Resource_amfay")])
+abilities = Array[ExtResource("1_iujj7")]([])
+passives = Array[ExtResource("7_h7t2e")]([])
+hide_stats = false

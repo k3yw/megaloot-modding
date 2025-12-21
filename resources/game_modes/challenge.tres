@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="GameMode" load_steps=3 format=3 uid="uid://ceiur4o5q7xmt"]
+
+[ext_resource type="Script" uid="uid://cqtujlaldoxmo" path="res://resources/game_mode_scripts/challenge.gd" id="1_ftyd7"]
+[ext_resource type="Script" uid="uid://dryrkbd524233" path="res://classes/resource/game_mode.gd" id="1_v2ko8"]
+
+[resource]
+script = ExtResource("1_v2ko8")
+name = &"Challenge"
+has_achievements = false
+team_based = false
+total_battles = 6
+last_floor = 100
+game_mode_script = ExtResource("1_ftyd7")
+metadata/_custom_type_script = "uid://dryrkbd524233"

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://blnhfxep3oblv"]
+
+[ext_resource type="Texture2D" uid="uid://caih4cfp5ocw2" path="res://assets/textures/icons/malice_shield.png" id="1_cpxnv"]
+[ext_resource type="Script" uid="uid://bgbjvdj45mkq4" path="res://resources/bb_scripts/malice_shield.gd" id="1_palv6"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_y4eed"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_oxcox"]
+
+[resource]
+script = ExtResource("1_y4eed")
+name = "Malice Shield"
+icon = ExtResource("1_cpxnv")
+color = Color(0.301961, 0.266667, 0.360784, 1)
+type = ExtResource("3_oxcox")
+is_temporary = false
+is_percent = false
+limit = 99
+application_message = ""
+bb_script = ExtResource("1_palv6")

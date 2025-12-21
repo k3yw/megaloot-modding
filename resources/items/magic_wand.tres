@@ -1,0 +1,45 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=13 format=3 uid="uid://b7g0by5igm2m6"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_qxodu"]
+[ext_resource type="Resource" uid="uid://dhtx0qdflmixn" path="res://resources/item_sets/darkness.tres" id="2_4trti"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="3_ndlby"]
+[ext_resource type="Resource" uid="uid://7y0w2enfo0o1" path="res://resources/stats/spelldom.tres" id="4_3kpoe"]
+[ext_resource type="Resource" uid="uid://2jpon0m64ptw" path="res://resources/passives/mana_steal.tres" id="5_0otve"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="6_81vam"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_yc51r"]
+[ext_resource type="Resource" uid="uid://d07dc442wyx5e" path="res://resources/item_sets/wood.tres" id="8_gycrj"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="9_7dfgf"]
+[ext_resource type="Texture2D" uid="uid://dwqa2rdplartd" path="res://assets/textures/items/magic_wand.png" id="9_b2gw5"]
+
+[sub_resource type="Resource" id="Resource_iwyel"]
+script = ExtResource("1_qxodu")
+boosting_sets = Array[ExtResource("7_yc51r")]([ExtResource("2_4trti")])
+resource = ExtResource("3_ndlby")
+amount = 14.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_jhvol"]
+script = ExtResource("1_qxodu")
+boosting_sets = Array[ExtResource("7_yc51r")]([])
+resource = ExtResource("4_3kpoe")
+amount = 2.0
+is_modifier = false
+
+[resource]
+script = ExtResource("6_81vam")
+name = &"Magic Wand"
+texture = ExtResource("9_b2gw5")
+description = ""
+socket_type = ExtResource("9_7dfgf")
+set_resources = Array[ExtResource("7_yc51r")]([ExtResource("2_4trti"), ExtResource("8_gycrj")])
+passive = ExtResource("5_0otve")
+bonus_stats = Array[ExtResource("1_qxodu")]([SubResource("Resource_iwyel"), SubResource("Resource_jhvol")])
+extra_price = 14.0
+spawn_floor = 4
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_80w4m"]
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/warrior.png" id="2_qbwy7"]
+[ext_resource type="Resource" path="res://resources/item_sets/warrior.tres" id="3_1asnj"]
+[ext_resource type="Resource" path="res://resources/stats/combat.tres" id="6_3l7jj"]
+[ext_resource type="Resource" path="res://resources/stats/total_attacks.tres" id="7_a26p8"]
+[ext_resource type="Resource" path="res://resources/stats/physical_attack.tres" id="7_n3wne"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_2xvru"]
+
+[resource]
+script = ExtResource("2_80w4m")
+name = "Dauntless"
+color = Color(0.401647, 0.488853, 0.648452, 1)
+icon = ExtResource("2_qbwy7")
+original_item_set = ExtResource("3_1asnj")
+completed_floor_to_unlock = 2
+stats = Array[ExtResource("9_2xvru")]([ExtResource("6_3l7jj"), ExtResource("7_a26p8"), ExtResource("7_n3wne")])
+stats_new = Array[ExtResource("9_2xvru")]([ExtResource("6_3l7jj"), ExtResource("7_a26p8"), ExtResource("7_n3wne")])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://chq1wtqg02dw4"]
+
+[ext_resource type="Script" uid="uid://8yipcfug3nxo" path="res://resources/bb_scripts/combat.gd" id="1_5w03g"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_cfrue"]
+[ext_resource type="Texture2D" uid="uid://c5c8i1q1dm7uj" path="res://assets/textures/icons/stats/combat_icon.png" id="1_yay33"]
+[ext_resource type="Script" uid="uid://opid31s44jhr" path="res://resources/stat_scripts/combat.gd" id="3_ueprx"]
+
+[resource]
+script = ExtResource("1_cfrue")
+name = "Combat"
+icon = ExtResource("1_yay33")
+color = Color(0.839216, 0.486275, 0.372549, 1)
+is_attack_type = false
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_ueprx")
+bb_script = ExtResource("1_5w03g")

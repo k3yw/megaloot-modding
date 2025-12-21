@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="ItemContainerResource" load_steps=2 format=3 uid="uid://8edkojl2p48p"]
+
+[ext_resource type="Script" uid="uid://deuwqg8d86c1h" path="res://classes/resource/item_container_resource.gd" id="1_0q4g2"]
+
+[resource]
+script = ExtResource("1_0q4g2")
+move_to_inventory_on_alt_press = false
+size = 35

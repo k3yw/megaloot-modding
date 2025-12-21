@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://di3fmmr8t635h"]
+
+[ext_resource type="Texture2D" uid="uid://h8wmhf3qnowp" path="res://assets/textures/icons/item_sets/unchained_icon.png" id="1_go2u7"]
+[ext_resource type="Script" uid="uid://f31diuk1f5ex" path="res://resources/bb_scripts/unchained.gd" id="1_ln32l"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_pakqu"]
+
+[resource]
+script = ExtResource("1_pakqu")
+name = "Unchained"
+icon = ExtResource("1_go2u7")
+color = Color(0.701961, 0.72549, 0.819608, 1)
+value = 0
+flow_cost = 25
+bb_script = ExtResource("1_ln32l")

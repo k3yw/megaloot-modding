@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/arcanum_icon.png" id="2_4i8su"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_hwnpa"]
+[ext_resource type="Resource" path="res://resources/item_sets/arcanum.tres" id="3_cge2j"]
+[ext_resource type="Resource" path="res://resources/stats/penetration.tres" id="6_0oe40"]
+[ext_resource type="Resource" path="res://resources/stats/max_mana.tres" id="7_ads3k"]
+[ext_resource type="Resource" path="res://resources/stats/total_attacks.tres" id="8_nh5pn"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_4irvf"]
+
+[resource]
+script = ExtResource("2_hwnpa")
+name = "Stunium"
+color = Color(0.568627, 0.435294, 0.572549, 1)
+icon = ExtResource("2_4i8su")
+original_item_set = ExtResource("3_cge2j")
+completed_floor_to_unlock = 6
+stats = Array[ExtResource("9_4irvf")]([ExtResource("6_0oe40"), ExtResource("7_ads3k"), ExtResource("8_nh5pn")])
+stats_new = Array[ExtResource("9_4irvf")]([ExtResource("6_0oe40"), ExtResource("7_ads3k"), ExtResource("8_nh5pn")])

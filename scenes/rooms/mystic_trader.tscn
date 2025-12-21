@@ -1,0 +1,286 @@
+[gd_scene load_steps=12 format=3 uid="uid://vrhsi7tw1k4r"]
+
+[ext_resource type="PackedScene" uid="uid://i6qromh3258a" path="res://scenes/objects/animated_light/animated_light.tscn" id="1_vwcne"]
+[ext_resource type="Shader" uid="uid://b44et88d68510" path="res://resources/shaders/pixel_toon.gdshader" id="2_d2n6s"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_pefem"]
+load_path = "res://.godot/imported/dungeon_wall.png-b3b24cfb1e5fac94606ccee95d2d6b8c.ctex"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_qo3e5"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("2_d2n6s")
+shader_parameter/texture_albedo = SubResource("CompressedTexture2D_pefem")
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(1.75, 1.75, 1.75)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/custom_colors = false
+shader_parameter/color_0 = Color(0, 0, 0, 1)
+shader_parameter/color_1 = Color(0, 0, 0, 1)
+shader_parameter/color_2 = Color(0, 0, 0, 1)
+shader_parameter/dim = 0.8
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_w2ira"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("2_d2n6s")
+shader_parameter/texture_albedo = SubResource("CompressedTexture2D_pefem")
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(1.75, 1.75, 1.75)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/custom_colors = false
+shader_parameter/color_0 = Color(0, 0, 0, 1)
+shader_parameter/color_1 = Color(0, 0, 0, 1)
+shader_parameter/color_2 = Color(0, 0, 0, 1)
+shader_parameter/dim = 0.7
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_7q36e"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("2_d2n6s")
+shader_parameter/texture_albedo = SubResource("CompressedTexture2D_pefem")
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(1.75, 1.75, 1.75)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/custom_colors = false
+shader_parameter/color_0 = Color(0, 0, 0, 1)
+shader_parameter/color_1 = Color(0, 0, 0, 1)
+shader_parameter/color_2 = Color(0, 0, 0, 1)
+shader_parameter/dim = 1.0
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hs5bd"]
+render_priority = 0
+shader = ExtResource("2_d2n6s")
+shader_parameter/texture_albedo = SubResource("CompressedTexture2D_pefem")
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(1.75, 1.75, 1.75)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/custom_colors = false
+shader_parameter/color_0 = Color(0, 0, 0, 1)
+shader_parameter/color_1 = Color(0, 0, 0, 1)
+shader_parameter/color_2 = Color(0, 0, 0, 1)
+shader_parameter/dim = 0.5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_23ccy"]
+render_priority = 0
+shader = ExtResource("2_d2n6s")
+shader_parameter/texture_albedo = SubResource("CompressedTexture2D_pefem")
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(1.75, 1.75, 1.75)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/custom_colors = false
+shader_parameter/color_0 = Color(0, 0, 0, 1)
+shader_parameter/color_1 = Color(0, 0, 0, 1)
+shader_parameter/color_2 = Color(0, 0, 0, 1)
+shader_parameter/dim = 0.5
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_di74n"]
+render_priority = 0
+shader = ExtResource("2_d2n6s")
+shader_parameter/texture_albedo = SubResource("CompressedTexture2D_pefem")
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(1.75, 1.75, 1.75)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/custom_colors = false
+shader_parameter/color_0 = Color(0, 0, 0, 1)
+shader_parameter/color_1 = Color(0, 0, 0, 1)
+shader_parameter/color_2 = Color(0, 0, 0, 1)
+shader_parameter/dim = 0.8
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_627vj"]
+render_priority = 0
+shader = ExtResource("2_d2n6s")
+shader_parameter/texture_albedo = SubResource("CompressedTexture2D_pefem")
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(1.75, 1.75, 1.75)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/custom_colors = false
+shader_parameter/color_0 = Color(0, 0, 0, 1)
+shader_parameter/color_1 = Color(0, 0, 0, 1)
+shader_parameter/color_2 = Color(0, 0, 0, 1)
+shader_parameter/dim = 0.75
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_i5vjn"]
+resource_local_to_scene = true
+render_priority = 0
+shader = ExtResource("2_d2n6s")
+shader_parameter/texture_albedo = SubResource("CompressedTexture2D_pefem")
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(1.75, 1.75, 1.75)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/custom_colors = false
+shader_parameter/color_0 = Color(0, 0, 0, 1)
+shader_parameter/color_1 = Color(0, 0, 0, 1)
+shader_parameter/color_2 = Color(0, 0, 0, 1)
+shader_parameter/dim = 0.9
+
+[node name="MysticTrader" type="Node3D"]
+
+[node name="AnimatedLight" parent="." instance=ExtResource("1_vwcne")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.49012e-08, 0, -1.49012e-08, 1, 0, -0.432945, -2.73553)
+omni_range = 12.268
+omni_attenuation = 0.095
+
+[node name="AnimatedLight2" parent="." instance=ExtResource("1_vwcne")]
+transform = Transform3D(1, 0, 0, 0, 1, 1.49012e-08, 0, -1.49012e-08, 1, -0.19876, 1.42747, -12.5858)
+omni_range = 25.304
+omni_attenuation = 0.476
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0381445, -1.4995, -5)
+size = Vector3(6.55638, 0.001, 12)
+material = SubResource("ShaderMaterial_qo3e5")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00349149, 3.02171, -5)
+size = Vector3(7.48478, 0.001, 12)
+material = SubResource("ShaderMaterial_w2ira")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.31519, -0.167606, -9.44448)
+size = Vector3(1, 2.6866, 1.6571)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D7" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.315, -0.168, -9.44475)
+size = Vector3(1, 2.6866, 1.6571)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="Stairs" type="Node3D" parent="."]
+transform = Transform3D(0.906205, 0, 0.42284, 0, 1, 0, -0.42284, 0, 0.906205, -0.957427, -2.2678, -13.8298)
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="Stairs"]
+size = Vector3(3.20703, 2.6866, 1.43649)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="Stairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.359721, 0.869502)
+size = Vector3(3.20703, 2.6866, 1.43649)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="Stairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.449858, -0.7096)
+size = Vector3(3.20703, 2.5518, 1.43649)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="Stairs"]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, -1.44854, 1.60555, 0.0375471)
+size = Vector3(0.827698, 6.38047, 1.63621)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="Stairs"]
+transform = Transform3D(1, 0, 0, 0, 0.5, 0.866025, 0, -0.866025, 0.5, 1.074, 1.60555, 0.0375471)
+size = Vector3(0.827698, 6.38047, 1.63621)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="Stairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.911031, -1.5378)
+size = Vector3(3.20703, 2.39652, 1.43649)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="Stairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.41237, -2.3658)
+size = Vector3(3.20703, 2.30338, 1.43649)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="Stairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.81922, -3.1298)
+size = Vector3(3.20703, 2.17875, 1.43649)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="Stairs"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.08458, -3.7677)
+size = Vector3(3.20703, 2.17875, 1.43649)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D8" type="CSGBox3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 0.00642234, 1.58725, -9.44351)
+size = Vector3(1, 1.76291, 1.6571)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="."]
+transform = Transform3D(-0.707107, -0.707107, 0, 0.707107, -0.707107, 0, 0, 0, 1, -0.993504, 1.26673, -9.44351)
+size = Vector3(1, 1.31293, 1.6571)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="."]
+transform = Transform3D(-0.707107, 0.707107, 0, -0.707107, -0.707107, 0, 0, 0, 1, 0.998339, 1.27496, -9.44351)
+size = Vector3(1, 1.31293, 1.6571)
+material = SubResource("ShaderMaterial_7q36e")
+
+[node name="CSGBox3D6" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.18556, 1.47394, -6.54517)
+size = Vector3(1.61377, 5.94769, 6.72687)
+material = SubResource("ShaderMaterial_hs5bd")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.10775, 1.46979, -6.43469)
+size = Vector3(1.61377, 5.95599, 6.94781)
+material = SubResource("ShaderMaterial_23ccy")
+
+[node name="CSGBox3D16" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.42136, 1.58432, -8.84988)
+size = Vector3(1.61377, 5.94769, 1.6571)
+material = SubResource("ShaderMaterial_di74n")
+
+[node name="CSGBox3D18" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.42136, 1.3887, -5.09446)
+size = Vector3(1.61377, 5.94769, 0.702)
+material = SubResource("ShaderMaterial_627vj")
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.421, 1.38838, -5.09414)
+size = Vector3(1.61377, 5.94769, 0.702)
+material = SubResource("ShaderMaterial_627vj")
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.42136, 1.45177, -2.72832)
+size = Vector3(1.61377, 5.94769, 0.702)
+material = SubResource("ShaderMaterial_di74n")
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.421, 1.45145, -2.728)
+size = Vector3(1.61377, 5.94769, 0.702)
+material = SubResource("ShaderMaterial_di74n")
+
+[node name="CSGBox3D17" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.43522, 1.58438, -8.85)
+size = Vector3(1.61377, 5.94769, 1.6571)
+material = SubResource("ShaderMaterial_di74n")
+
+[node name="BackWall" type="Node3D" parent="."]
+
+[node name="CSGBox3D9" type="CSGBox3D" parent="BackWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.13215, 1.004, -9.75877)
+size = Vector3(3, 6.88757, 0.973203)
+material = SubResource("ShaderMaterial_i5vjn")
+
+[node name="CSGBox3D10" type="CSGBox3D" parent="BackWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.86785, 1.004, -9.75877)
+size = Vector3(3, 6.88757, 0.973203)
+material = SubResource("ShaderMaterial_i5vjn")
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="BackWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.207819, 2.93297, -9.75877)
+size = Vector3(4.70514, 3.02965, 0.973203)
+material = SubResource("ShaderMaterial_i5vjn")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="BackWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1801, 1.44033, -9.75877)
+size = Vector3(1.32087, 2.01988, 0.973203)
+material = SubResource("ShaderMaterial_i5vjn")
+
+[node name="CSGBox3D15" type="CSGBox3D" parent="BackWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.15348, 1.44033, -9.75877)
+size = Vector3(1.32087, 2.01988, 0.973203)
+material = SubResource("ShaderMaterial_i5vjn")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="BackWall"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.99154, 1.00407, -9.84549)
+size = Vector3(3, 6.88757, 1)
+material = SubResource("ShaderMaterial_i5vjn")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="BackWall"]
+transform = Transform3D(1, 0.000680678, 0, -0.000680678, 1, 0, 0, 0, 1, 3.29972, 1.00407, -9.84549)
+size = Vector3(3.18994, 6.88757, 1)
+material = SubResource("ShaderMaterial_i5vjn")

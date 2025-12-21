@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://3353yf68vc8r"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_efsc6"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="1_femor"]
+[ext_resource type="Script" uid="uid://dxwpibco13by3" path="res://resources/bb_scripts/undead_blessing.gd" id="1_kksgr"]
+
+[resource]
+script = ExtResource("1_femor")
+name = "Undead Blessing"
+bonus_stats = Array[ExtResource("1_efsc6")]([])
+bb_script = ExtResource("1_kksgr")

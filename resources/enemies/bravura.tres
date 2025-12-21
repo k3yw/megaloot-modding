@@ -1,0 +1,77 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=21 format=3 uid="uid://hgolen4u1a54"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_iw384"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="1_krqm1"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_xw2c8"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_67xi4"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="3_24r1t"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="4_ti3ok"]
+[ext_resource type="Resource" uid="uid://pvbac0njnmpw" path="res://resources/stats/penetration.tres" id="5_llmii"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="6_ccjvu"]
+[ext_resource type="Resource" uid="uid://yf08dtkn7sh5" path="res://resources/stats/recovery.tres" id="6_ts0op"]
+[ext_resource type="Texture2D" uid="uid://b0rcaa1pc82i1" path="res://assets/textures/enemies/bravura.png" id="7_ut8e0"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="8_mo6r7"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="9_3xlbv"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="12_h3hxm"]
+
+[sub_resource type="Resource" id="Resource_lwxie"]
+script = ExtResource("2_67xi4")
+boosting_sets = Array[ExtResource("1_iw384")]([])
+resource = ExtResource("1_krqm1")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_da1pt"]
+script = ExtResource("2_67xi4")
+boosting_sets = Array[ExtResource("1_iw384")]([])
+resource = ExtResource("5_llmii")
+amount = 45.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_yfcpw"]
+script = ExtResource("2_67xi4")
+boosting_sets = Array[ExtResource("1_iw384")]([])
+resource = ExtResource("3_24r1t")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_0llj4"]
+script = ExtResource("2_67xi4")
+boosting_sets = Array[ExtResource("1_iw384")]([])
+resource = ExtResource("4_ti3ok")
+amount = 3.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_7p5ib"]
+script = ExtResource("2_67xi4")
+boosting_sets = Array[ExtResource("1_iw384")]([])
+resource = ExtResource("6_ts0op")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_j5uyr"]
+script = ExtResource("2_67xi4")
+boosting_sets = Array[ExtResource("1_iw384")]([])
+resource = ExtResource("3_24r1t")
+amount = 1.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[sub_resource type="Resource" id="Resource_0m6fr"]
+script = ExtResource("12_h3hxm")
+bonus_stats = Array[ExtResource("2_67xi4")]([SubResource("Resource_j5uyr")])
+metadata/_custom_type_script = "uid://btdg3cwxl3qjf"
+
+[resource]
+script = ExtResource("6_ccjvu")
+name = "Bravura"
+texture = ExtResource("7_ut8e0")
+floor_number = 6
+flying = false
+starting_status_effects = Array[ExtResource("9_3xlbv")]([])
+active_item_sets = Array[ExtResource("1_iw384")]([])
+stats_per_level = Array[ExtResource("12_h3hxm")]([SubResource("Resource_0m6fr")])
+base_stats = Array[ExtResource("2_67xi4")]([SubResource("Resource_lwxie"), SubResource("Resource_da1pt"), SubResource("Resource_yfcpw"), SubResource("Resource_0llj4"), SubResource("Resource_7p5ib")])
+abilities = Array[ExtResource("1_xw2c8")]([])
+passives = Array[ExtResource("8_mo6r7")]([])
+hide_stats = false

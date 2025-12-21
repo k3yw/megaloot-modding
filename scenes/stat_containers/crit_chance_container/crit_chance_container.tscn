@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://dbrvds1d1m4n8"]
+
+[ext_resource type="PackedScene" uid="uid://cnbj83ewdsqam" path="res://scenes/stat_containers/stat_container/stat_container.tscn" id="1_v7i6g"]
+[ext_resource type="Texture2D" uid="uid://bu64fo42vljsu" path="res://assets/textures/icons/execution_icon.png" id="2_pfycx"]
+
+[node name="CritChanceContainer" instance=ExtResource("1_v7i6g")]
+
+[node name="TextureRect" parent="." index="0"]
+texture = ExtResource("2_pfycx")

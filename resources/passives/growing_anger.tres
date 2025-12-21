@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://c13gw4gotf587"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_367vm"]
+[ext_resource type="Script" uid="uid://bes4kcyjmhrbq" path="res://resources/bb_scripts/growing_anger.gd" id="1_xjgte"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_xjgte"]
+[ext_resource type="Script" uid="uid://opfeh0ya4fkv" path="res://resources/passive_scripts/growing_anger.gd" id="3_y6h3w"]
+
+[resource]
+script = ExtResource("2_xjgte")
+name = "Growing Anger"
+bonus_stats = Array[ExtResource("1_367vm")]([])
+game_logic_script = ExtResource("3_y6h3w")
+bb_script = ExtResource("1_xjgte")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

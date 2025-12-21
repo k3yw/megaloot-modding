@@ -1,0 +1,50 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=13 format=3 uid="uid://b5p71jwkd6ob1"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_jgpqa"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="2_8cjij"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="3_qf8vi"]
+[ext_resource type="Resource" uid="uid://uxwdne2hyfvl" path="res://resources/stats/critical_damage.tres" id="4_k4pxa"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_f5tdr"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_niq73"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="7_h7tlv"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="8_4ke1g"]
+[ext_resource type="Texture2D" uid="uid://snmviw20dp8o" path="res://assets/textures/items/throngler.png" id="8_cvv0i"]
+
+[sub_resource type="Resource" id="Resource_106sw"]
+script = ExtResource("1_jgpqa")
+boosting_sets = Array[ExtResource("6_niq73")]([])
+resource = ExtResource("2_8cjij")
+amount = 1750.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_86kdw"]
+script = ExtResource("1_jgpqa")
+boosting_sets = Array[ExtResource("6_niq73")]([null])
+resource = ExtResource("3_qf8vi")
+amount = 150.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_y0qc2"]
+script = ExtResource("1_jgpqa")
+boosting_sets = Array[ExtResource("6_niq73")]([null])
+resource = ExtResource("4_k4pxa")
+amount = 75.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_f5tdr")
+name = &"Throngler"
+texture = ExtResource("8_cvv0i")
+description = ""
+socket_type = ExtResource("8_4ke1g")
+set_resources = Array[ExtResource("6_niq73")]([ExtResource("7_h7tlv")])
+bonus_stats = Array[ExtResource("1_jgpqa")]([SubResource("Resource_106sw"), SubResource("Resource_86kdw"), SubResource("Resource_y0qc2")])
+extra_price = 12750.0
+spawn_floor = 30
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

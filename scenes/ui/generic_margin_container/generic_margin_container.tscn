@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://87foots4r2wd"]
+
+[ext_resource type="Script" uid="uid://bpi4ifaafbrbv" path="res://scenes/ui/generic_margin_container/generic_margin_container.gd" id="1_1dxw0"]
+[ext_resource type="PackedScene" uid="uid://c44wlrtoiy84r" path="res://scenes/modules/hover_info_module/hover_info_module.tscn" id="2_33wdl"]
+
+[node name="GenericMarginContainer" type="MarginContainer" node_paths=PackedStringArray("hover_info_module")]
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_1dxw0")
+hover_info_module = NodePath("HoverInfoModule")
+
+[node name="HoverInfoModule" parent="." instance=ExtResource("2_33wdl")]

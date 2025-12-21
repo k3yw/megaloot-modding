@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://ciyi6ap6hf02m"]
+
+[ext_resource type="Texture2D" uid="uid://d1h3ibxah16jk" path="res://assets/textures/icons/slowness_icon.png" id="1_i13gr"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_kgv8c"]
+[ext_resource type="Script" uid="uid://bsdc0111vrpk0" path="res://resources/bb_scripts/slowness.gd" id="1_pvcbf"]
+[ext_resource type="Resource" uid="uid://ptn3j1afs6g2" path="res://resources/status_effect_types/debuff.tres" id="3_7a6vt"]
+
+[resource]
+script = ExtResource("1_kgv8c")
+name = "Slowness"
+icon = ExtResource("1_i13gr")
+color = Color(0.627451, 0.87451, 1, 1)
+type = ExtResource("3_7a6vt")
+affected_by_tenacity = true
+is_temporary = false
+is_percent = false
+limit = 2
+application_message = "SLOWED"
+bb_script = ExtResource("1_pvcbf")

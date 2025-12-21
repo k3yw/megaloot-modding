@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://bptdlyx6nbrw3"]
+
+[ext_resource type="Script" uid="uid://bldhp8acys4fe" path="res://resources/bb_scripts/strike_of_destiny.gd" id="1_el1ca"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_xnt8g"]
+[ext_resource type="Script" uid="uid://bj8t4kn47ktne" path="res://resources/passive_scripts/strike_of_destiny.gd" id="3_oqngi"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_rp6ib"]
+
+[resource]
+script = ExtResource("3_rp6ib")
+name = "Strike of Destiny"
+bonus_stats = Array[ExtResource("1_xnt8g")]([])
+game_logic_script = ExtResource("3_oqngi")
+bb_script = ExtResource("1_el1ca")

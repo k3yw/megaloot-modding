@@ -1,0 +1,134 @@
+[gd_scene load_steps=12 format=3 uid="uid://qbw5ridku1ld"]
+
+[ext_resource type="PackedScene" uid="uid://obobaix27gfy" path="res://scenes/ui/room_action_containers/room_action_container/room_action_container.tscn" id="1_aktym"]
+[ext_resource type="Script" uid="uid://d1u6er3dhvkk3" path="res://scenes/ui/room_action_containers/dismantle_action_container/dismantle_action_container.gd" id="2_fuoom"]
+[ext_resource type="PackedScene" uid="uid://bxoncw32voayn" path="res://scenes/ui/generic_button/generic_button.tscn" id="3_kcnpj"]
+[ext_resource type="Texture2D" uid="uid://dh8c8bbhq77hs" path="res://assets/textures/ui/flat_generic_button.png" id="4_bd7tj"]
+[ext_resource type="PackedScene" uid="uid://1l3k0jtjf51s" path="res://scenes/ui/item_slot/item_slot.tscn" id="5_8w6gu"]
+[ext_resource type="PackedScene" uid="uid://bf4bdtuq87lv7" path="res://scenes/ui/icon_generic_button/icon_generic_button.tscn" id="5_bd7tj"]
+[ext_resource type="Texture2D" uid="uid://dwayksbxirchc" path="res://assets/textures/ui/leave_icon.png" id="6_8w6gu"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="6_ivlk4"]
+[ext_resource type="Resource" uid="uid://d2xthvy7jkwhy" path="res://resources/item_containers/dismantle.tres" id="7_bmiqr"]
+[ext_resource type="Texture2D" uid="uid://chi2dbgn1rrrs" path="res://assets/textures/icons/dismantle_icon.png" id="8_nhf4c"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_nxbkd"]
+resource_local_to_scene = true
+shader = ExtResource("6_ivlk4")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[node name="DismantleActionContainer" node_paths=PackedStringArray("dismantle_action_container", "request_to_dismantle_button", "dismantle_button", "dismantle_item_slot", "leave_button") instance=ExtResource("1_aktym")]
+script = ExtResource("2_fuoom")
+dismantle_action_container = NodePath("DismantleActionContainer")
+request_to_dismantle_button = NodePath("RequestToDismantleButton")
+dismantle_button = NodePath("DismantleActionContainer/DismantleButton")
+dismantle_item_slot = NodePath("MarginContainer/CenterContainer/ItemSlot")
+leave_button = NodePath("DismantleActionContainer/LeaveButton")
+
+[node name="RequestToDismantleButton" parent="." index="0" instance=ExtResource("3_kcnpj")]
+visible = false
+custom_minimum_size = Vector2(175, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "REQUEST TO DISMANTLE"
+disabled_texture = ExtResource("4_bd7tj")
+pressed_texture = ExtResource("4_bd7tj")
+default_texture = ExtResource("4_bd7tj")
+hover_texture = ExtResource("4_bd7tj")
+
+[node name="DismantleActionContainer" type="HBoxContainer" parent="." index="1"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="LeaveButton" parent="DismantleActionContainer" index="0" instance=ExtResource("5_bd7tj")]
+layout_mode = 2
+icon_texture = ExtResource("6_8w6gu")
+
+[node name="DismantleButton" parent="DismantleActionContainer" index="1" instance=ExtResource("3_kcnpj")]
+custom_minimum_size = Vector2(145, 0)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "DISMANTLE"
+disabled_texture = ExtResource("4_bd7tj")
+pressed_texture = ExtResource("4_bd7tj")
+default_texture = ExtResource("4_bd7tj")
+hover_texture = ExtResource("4_bd7tj")
+button_color = 5
+
+[node name="MarginContainer" type="MarginContainer" parent="." index="2"]
+layout_mode = 2
+theme_override_constants/margin_top = -297
+metadata/_edit_lock_ = true
+
+[node name="CenterContainer" type="CenterContainer" parent="MarginContainer" index="0"]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="ItemSlot" parent="MarginContainer/CenterContainer" index="0" groups=["main_joypad_selection"] instance=ExtResource("5_8w6gu")]
+material = SubResource("ShaderMaterial_nxbkd")
+layout_mode = 2
+item_container_resource = ExtResource("7_bmiqr")
+
+[node name="ColorRect" type="ColorRect" parent="MarginContainer/CenterContainer/ItemSlot" index="1"]
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.0431373, 0.0588235, 0.0901961, 1)
+
+[node name="TextureRect" type="TextureRect" parent="MarginContainer/CenterContainer/ItemSlot" index="2"]
+modulate = Color(0.196078, 0.2, 0.239216, 1)
+show_behind_parent = true
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("8_nhf4c")

@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://csi12abe4ke1u"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_pxhcg"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_m2d1n"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_msvh5"]
+[ext_resource type="Resource" uid="uid://dhy8qq2aomo6c" path="res://resources/item_sets/cursed.tres" id="4_m2d1n"]
+[ext_resource type="Resource" uid="uid://c7o4swfv7phdu" path="res://resources/stats/malice.tres" id="4_msvh5"]
+[ext_resource type="Texture2D" uid="uid://gvl3lyibqp6a" path="res://assets/textures/items/witchcraft_leggings.png" id="5_msvh5"]
+[ext_resource type="Resource" uid="uid://27c6dgsddoxq" path="res://resources/socket_types/boots.tres" id="6_qab35"]
+
+[sub_resource type="Resource" id="Resource_qab35"]
+script = ExtResource("1_pxhcg")
+boosting_sets = Array[ExtResource("3_msvh5")]([ExtResource("4_m2d1n")])
+resource = ExtResource("4_msvh5")
+amount = 25.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_m2d1n")
+name = &"Witchcraft Leggings"
+texture = ExtResource("5_msvh5")
+description = ""
+socket_type = ExtResource("6_qab35")
+set_resources = Array[ExtResource("3_msvh5")]([ExtResource("4_m2d1n")])
+bonus_stats = Array[ExtResource("1_pxhcg")]([SubResource("Resource_qab35")])
+extra_price = 25.0
+spawn_floor = 11
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

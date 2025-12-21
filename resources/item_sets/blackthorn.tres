@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="ItemSetResource" load_steps=4 format=3 uid="uid://tyft4f1n0dwx"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_3u4cw"]
+[ext_resource type="Texture2D" uid="uid://db6k5ok1j47ej" path="res://assets/textures/icons/item_sets/blackthorn_icon.png" id="1_7ro23"]
+[ext_resource type="Script" uid="uid://nyqra4h5pdv6" path="res://resources/bb_scripts/blackthorn.gd" id="1_fndxu"]
+
+[resource]
+script = ExtResource("1_3u4cw")
+name = "Blackthorn"
+icon = ExtResource("1_7ro23")
+color = Color(0.328125, 0.238281, 0.269531, 1)
+value = 0
+flow_cost = 25
+bb_script = ExtResource("1_fndxu")

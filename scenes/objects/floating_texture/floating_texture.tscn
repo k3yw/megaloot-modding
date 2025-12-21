@@ -1,0 +1,103 @@
+[gd_scene load_steps=9 format=3 uid="uid://cjh07rkd6q5em"]
+
+[ext_resource type="Texture2D" uid="uid://5mxuxmpwi8eu" path="res://assets/textures/items/bloodedge.png" id="1_57u2h"]
+[ext_resource type="Script" uid="uid://f615b4m5wekl" path="res://scenes/objects/floating_texture/floating_texture.gd" id="1_ddwfy"]
+[ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="1_k38gq"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_cl3gp"]
+resource_local_to_scene = true
+shader = ExtResource("1_k38gq")
+shader_parameter/type = 1
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 1
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = true
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = true
+shader_parameter/dither_colors = PackedInt32Array(1, 2, 8)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
+[sub_resource type="Animation" id="Animation_ido0d"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [1.0]
+}
+
+[sub_resource type="Animation" id="Animation_icxv5"]
+resource_name = "pop_off"
+length = 0.15
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.15),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.35, 0.75, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_xn6wk"]
+resource_name = "pop_on"
+length = 0.1
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:material:shader_parameter/scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.05, 0.1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [1.0, 1.75, 1.35]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_y13lv"]
+_data = {
+&"RESET": SubResource("Animation_ido0d"),
+&"pop_off": SubResource("Animation_icxv5"),
+&"pop_on": SubResource("Animation_xn6wk")
+}
+
+[node name="FloatingTexture" type="Sprite2D"]
+material = SubResource("ShaderMaterial_cl3gp")
+texture = ExtResource("1_57u2h")
+script = ExtResource("1_ddwfy")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_y13lv")
+}

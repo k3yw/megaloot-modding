@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://nmolc84dhefq"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_13kyd"]
+[ext_resource type="Script" uid="uid://dek1r7naar1di" path="res://resources/bb_scripts/life_steal.gd" id="1_ckulp"]
+[ext_resource type="Texture2D" uid="uid://b0uc4n7cxwplj" path="res://assets/textures/icons/stats/life_steal_icon.png" id="1_nf8sb"]
+[ext_resource type="Script" uid="uid://dne1bue4ad2oc" path="res://resources/stat_scripts/life_steal.gd" id="3_wcfpl"]
+
+[resource]
+script = ExtResource("1_13kyd")
+name = "Life Steal"
+icon = ExtResource("1_nf8sb")
+color = Color(0.694118, 0.286275, 0.380392, 1)
+is_percentage = true
+max_amount = 75.0
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_wcfpl")
+bb_script = ExtResource("1_ckulp")

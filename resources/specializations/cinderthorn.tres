@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3 uid="uid://b1fc0mt5kwxqq"]
+
+[ext_resource type="Resource" uid="uid://tyft4f1n0dwx" path="res://resources/item_sets/blackthorn.tres" id="3_g6mqw"]
+[ext_resource type="Script" uid="uid://c567vqc52tcdx" path="res://classes/resource/specialization.gd" id="4_qb40c"]
+[ext_resource type="Resource" uid="uid://dyp2exxtbv3wx" path="res://resources/stats/cinder_damage.tres" id="6_1j147"]
+[ext_resource type="Resource" uid="uid://1n584t8hda8s" path="res://resources/item_sets/magma.tres" id="7_4lad6"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="7_gewob"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="8_3xd2o"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="9_002w1"]
+
+[resource]
+script = ExtResource("4_qb40c")
+name = "Cinderthorn"
+color = Color(0.980392, 0.415686, 0.0392157, 1)
+original_item_set = ExtResource("3_g6mqw")
+synergy_item_set = ExtResource("7_4lad6")
+stats = Array[ExtResource("9_002w1")]([ExtResource("6_1j147"), ExtResource("7_gewob"), ExtResource("8_3xd2o")])

@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/arcanum_icon.png" id="2_cvh73"]
+[ext_resource type="Resource" path="res://resources/item_sets/arcanum.tres" id="3_q7igx"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="4_a41lr"]
+[ext_resource type="Resource" path="res://resources/stats/wisdom.tres" id="6_lie5y"]
+[ext_resource type="Resource" path="res://resources/stats/agility.tres" id="7_eaq8h"]
+[ext_resource type="Resource" path="res://resources/stats/magic_attack.tres" id="8_ytaem"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_s524p"]
+
+[resource]
+script = ExtResource("4_a41lr")
+name = "Evadium"
+color = Color(1, 0.37, 0.5695, 1)
+icon = ExtResource("2_cvh73")
+original_item_set = ExtResource("3_q7igx")
+completed_floor_to_unlock = 4
+stats = Array[ExtResource("9_s524p")]([ExtResource("6_lie5y"), ExtResource("7_eaq8h"), ExtResource("8_ytaem")])
+stats_new = Array[ExtResource("9_s524p")]([ExtResource("6_lie5y"), ExtResource("7_eaq8h"), ExtResource("8_ytaem")])

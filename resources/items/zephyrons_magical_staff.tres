@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=9 format=3 uid="uid://cdq6h42xu2jgb"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_1qcol"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="2_lcj0m"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="3_ev4m7"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="3_t1jwm"]
+[ext_resource type="Resource" uid="uid://barfiwkq2fcrm" path="res://resources/item_sets/zephyron.tres" id="5_jcqnf"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="6_yx5sv"]
+[ext_resource type="Texture2D" uid="uid://w64debi77min" path="res://assets/textures/items/zephyrons_magical_staff.png" id="7_3g835"]
+
+[sub_resource type="Resource" id="Resource_ffcod"]
+script = ExtResource("1_1qcol")
+boosting_sets = Array[ExtResource("3_ev4m7")]([])
+resource = ExtResource("3_t1jwm")
+amount = 7.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_lcj0m")
+name = &"Zephyron\'s Magical Staff"
+texture = ExtResource("7_3g835")
+description = ""
+socket_type = ExtResource("6_yx5sv")
+set_resources = Array[ExtResource("3_ev4m7")]([ExtResource("5_jcqnf")])
+bonus_stats = Array[ExtResource("1_1qcol")]([SubResource("Resource_ffcod")])
+extra_price = 14.0
+spawn_floor = 3
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false
+metadata/_custom_type_script = "uid://bp3opkohcamor"

@@ -1,0 +1,36 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://77un6ov6ycco"]
+
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="1_bgage"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="1_juxyi"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_u3ys1"]
+[ext_resource type="Resource" uid="uid://d07dc442wyx5e" path="res://resources/item_sets/wood.tres" id="3_gw24n"]
+[ext_resource type="Texture2D" uid="uid://sp1r3od58q0s" path="res://assets/textures/items/training_sword.png" id="4_2j330"]
+[ext_resource type="Resource" uid="uid://yafmbyqx3xa6" path="res://resources/item_sets/swiftness.tres" id="4_wm17p"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_m70vx"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_vlswt"]
+[ext_resource type="Script" uid="uid://cfu5hrmkdm6q" path="res://classes/resource/item_unlock_requirement.gd" id="9_5abjw"]
+
+[sub_resource type="Resource" id="Resource_bpfwt"]
+script = ExtResource("2_u3ys1")
+boosting_sets = Array[ExtResource("5_m70vx")]([])
+resource = ExtResource("1_bgage")
+amount = 1.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_juxyi")
+name = &"Training Sword"
+texture = ExtResource("4_2j330")
+socket_type = ExtResource("7_vlswt")
+set_resources = Array[ExtResource("5_m70vx")]([ExtResource("3_gw24n"), ExtResource("4_wm17p")])
+bonus_stats = Array[ExtResource("2_u3ys1")]([SubResource("Resource_bpfwt")])
+unlock_requirements = Array[ExtResource("9_5abjw")]([])
+extra_price = 17.0
+spawn_floor = 1
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

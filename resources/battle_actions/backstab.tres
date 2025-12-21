@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=4 format=3 uid="uid://4a4pbppl5kqr"]
+
+[ext_resource type="Script" uid="uid://ljswnd0o6v7k" path="res://resources/bb_scripts/backstab.gd" id="1_m2jxh"]
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_ts46v"]
+[ext_resource type="Texture2D" uid="uid://ckc6sa1cv8vyp" path="res://assets/textures/icons/backstab_icon.png" id="2_ron8w"]
+
+[resource]
+script = ExtResource("1_ts46v")
+name = "Backstab"
+icon = ExtResource("2_ron8w")
+color = Color(0.282353, 0.278431, 0.278431, 1)
+use_limit = 0
+popup_color = Color(0.282353, 0.278431, 0.278431, 1)
+popup_text = "BACKSTABBED"
+popup_delay = 0.0
+screen_shake = true
+is_hit = true
+bb_script = ExtResource("1_m2jxh")
+metadata/_custom_type_script = "uid://clfulygwnbxy1"

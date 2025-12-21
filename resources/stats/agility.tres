@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://db42mfw4pda11"]
+
+[ext_resource type="Texture2D" uid="uid://bcdbai8m4lnfy" path="res://assets/textures/icons/stats/agility_icon.png" id="1_jga6j"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_rntxs"]
+[ext_resource type="Script" uid="uid://exvd8cfwv4ea" path="res://resources/bb_scripts/agility.gd" id="1_w8lmh"]
+[ext_resource type="Script" uid="uid://bkdop3rm7qaxs" path="res://resources/stat_scripts/agility.gd" id="4_cp3pl"]
+
+[resource]
+script = ExtResource("1_rntxs")
+name = "Agility"
+icon = ExtResource("1_jga6j")
+color = Color(0.780392, 0.690196, 0.545098, 1)
+is_attack_type = false
+is_percentage = true
+max_amount = 750.0
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("4_cp3pl")
+bb_script = ExtResource("1_w8lmh")

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://csugqpm6rf23w"]
+
+[ext_resource type="Script" uid="uid://cpldmdardtuy2" path="res://resources/bb_scripts/manaflow.gd" id="1_ciinm"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_ne22c"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="3_lbeqd"]
+
+[resource]
+script = ExtResource("3_lbeqd")
+name = "Manaflow"
+bonus_stats = Array[ExtResource("1_ne22c")]([])
+bb_script = ExtResource("1_ciinm")

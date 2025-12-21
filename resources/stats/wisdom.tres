@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://26n0ap6yq2t0"]
+
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_7svs2"]
+[ext_resource type="Script" uid="uid://bxs6dyjm6jkyy" path="res://resources/bb_scripts/wisdom.gd" id="1_hf2jc"]
+[ext_resource type="Texture2D" uid="uid://binxn2d3ctntb" path="res://assets/textures/icons/wisdom_icon.png" id="1_pyov0"]
+[ext_resource type="Script" uid="uid://cxnru1iqrtnuy" path="res://resources/stat_scripts/wisdom.gd" id="3_6fths"]
+
+[resource]
+script = ExtResource("1_7svs2")
+name = "Wisdom"
+icon = ExtResource("1_pyov0")
+color = Color(0.541176, 0.694118, 1, 1)
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_6fths")
+bb_script = ExtResource("1_hf2jc")

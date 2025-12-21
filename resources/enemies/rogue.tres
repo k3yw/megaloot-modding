@@ -1,0 +1,48 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=15 format=3 uid="uid://dr1gowrkr25mf"]
+
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="1_ke1vn"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="1_pwh64"]
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_vyac5"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="2_eqnq8"]
+[ext_resource type="Texture2D" uid="uid://dufw4eu8meowm" path="res://assets/textures/enemies/rogue.png" id="2_ynxbm"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_k4kbv"]
+[ext_resource type="Resource" uid="uid://drby1maonyd6i" path="res://resources/stats/physical_attack.tres" id="5_krv66"]
+[ext_resource type="Resource" uid="uid://db42mfw4pda11" path="res://resources/stats/agility.tres" id="7_6bqic"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="7_hradf"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="8_f5xbx"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="11_ofvb7"]
+
+[sub_resource type="Resource" id="Resource_6krnq"]
+script = ExtResource("3_k4kbv")
+boosting_sets = Array[ExtResource("1_ke1vn")]([])
+resource = ExtResource("2_eqnq8")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_3w5do"]
+script = ExtResource("3_k4kbv")
+boosting_sets = Array[ExtResource("1_ke1vn")]([])
+resource = ExtResource("5_krv66")
+amount = 2.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_oqlyv"]
+script = ExtResource("3_k4kbv")
+boosting_sets = Array[ExtResource("1_ke1vn")]([])
+resource = ExtResource("7_6bqic")
+amount = 25.0
+is_modifier = false
+
+[resource]
+script = ExtResource("1_pwh64")
+name = "Rogue"
+texture = ExtResource("2_ynxbm")
+floor_number = 2
+flying = false
+starting_status_effects = Array[ExtResource("8_f5xbx")]([])
+active_item_sets = Array[ExtResource("1_ke1vn")]([])
+stats_per_level = Array[ExtResource("11_ofvb7")]([])
+base_stats = Array[ExtResource("3_k4kbv")]([SubResource("Resource_6krnq"), SubResource("Resource_3w5do"), SubResource("Resource_oqlyv")])
+abilities = Array[ExtResource("1_vyac5")]([])
+passives = Array[ExtResource("7_hradf")]([])
+hide_stats = false

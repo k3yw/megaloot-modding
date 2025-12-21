@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://dqab42qfcmmsg"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_1crgj"]
+[ext_resource type="Resource" uid="uid://btbwgp2pj3e8a" path="res://resources/stats/magic_attack.tres" id="2_wtw71"]
+[ext_resource type="Resource" uid="uid://7y0w2enfo0o1" path="res://resources/stats/spelldom.tres" id="3_d53gq"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="4_jknpb"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="5_0aylq"]
+[ext_resource type="Resource" uid="uid://daaofmbjl5buh" path="res://resources/item_sets/generic.tres" id="6_amncq"]
+[ext_resource type="Texture2D" uid="uid://nlg0b430twn" path="res://assets/textures/items/soul_collector.png" id="7_bj07k"]
+[ext_resource type="Resource" uid="uid://vyy020poypm0" path="res://resources/socket_types/weapon.tres" id="7_y7rm7"]
+
+[sub_resource type="Resource" id="Resource_gyq81"]
+script = ExtResource("1_1crgj")
+boosting_sets = Array[ExtResource("5_0aylq")]([])
+resource = ExtResource("2_wtw71")
+amount = 24.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_tyg7x"]
+script = ExtResource("1_1crgj")
+boosting_sets = Array[ExtResource("5_0aylq")]([null])
+resource = ExtResource("3_d53gq")
+amount = 17.0
+is_modifier = false
+
+[resource]
+script = ExtResource("4_jknpb")
+name = &"Soul Collector"
+texture = ExtResource("7_bj07k")
+description = ""
+socket_type = ExtResource("7_y7rm7")
+set_resources = Array[ExtResource("5_0aylq")]([ExtResource("6_amncq")])
+bonus_stats = Array[ExtResource("1_1crgj")]([SubResource("Resource_gyq81"), SubResource("Resource_tyg7x")])
+extra_price = 78.0
+spawn_floor = 12
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

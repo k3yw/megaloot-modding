@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/darkness_icon.png" id="2_ppcy6"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="2_unhbw"]
+[ext_resource type="Resource" path="res://resources/item_sets/darkness.tres" id="3_ypex0"]
+[ext_resource type="Resource" path="res://resources/stats/max_mana.tres" id="6_yvyrf"]
+[ext_resource type="Resource" path="res://resources/stats/wisdom.tres" id="7_7r22n"]
+[ext_resource type="Resource" path="res://resources/stats/toughness.tres" id="8_sl7am"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_1si87"]
+
+[resource]
+script = ExtResource("2_unhbw")
+name = "Mindbreaker"
+color = Color(0.36, 0.444, 0.6, 1)
+icon = ExtResource("2_ppcy6")
+original_item_set = ExtResource("3_ypex0")
+completed_floor_to_unlock = 5
+stats = Array[ExtResource("9_1si87")]([ExtResource("6_yvyrf"), ExtResource("7_7r22n"), ExtResource("8_sl7am")])
+stats_new = Array[ExtResource("9_1si87")]([ExtResource("6_yvyrf"), ExtResource("7_7r22n"), ExtResource("8_sl7am")])

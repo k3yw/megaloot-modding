@@ -1,0 +1,20 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=5 format=3 uid="uid://10utdbrifna8"]
+
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="1_agkpt"]
+[ext_resource type="Texture2D" uid="uid://bq7v2tfm6v5yr" path="res://assets/textures/icons/item_sets/ancient_shell.png" id="1_g6pg0"]
+[ext_resource type="Script" uid="uid://bnbe2silw8383" path="res://resources/bb_scripts/ephemeral_shell.gd" id="1_n8piv"]
+[ext_resource type="Resource" uid="uid://db4hyx8xc6wmf" path="res://resources/status_effect_types/buff.tres" id="3_n8piv"]
+
+[resource]
+script = ExtResource("1_agkpt")
+name = "Ephemeral Shell"
+icon = ExtResource("1_g6pg0")
+color = Color(0.462745, 0.380392, 0.67451, 1)
+type = ExtResource("3_n8piv")
+affected_by_tenacity = false
+is_temporary = false
+is_percent = false
+limit = 8
+application_message = ""
+bb_script = ExtResource("1_n8piv")
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

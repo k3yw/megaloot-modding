@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://t6m454c7b6u5"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_t67ql"]
+[ext_resource type="Resource" uid="uid://clysfjs400lm7" path="res://resources/stats/toughness.tres" id="2_bi41v"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="3_08n72"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="5_o28t5"]
+[ext_resource type="Resource" uid="uid://svvuieiqjue" path="res://resources/item_sets/orion.tres" id="6_0lrro"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="7_tvqgu"]
+[ext_resource type="Resource" uid="uid://cd4tcybobx50g" path="res://resources/socket_types/necklace.tres" id="7_uvbev"]
+[ext_resource type="Texture2D" uid="uid://nr0v4q4wlbp" path="res://assets/textures/items/orions_core.png" id="8_orqkb"]
+
+[sub_resource type="Resource" id="Resource_i0mmk"]
+script = ExtResource("1_t67ql")
+boosting_sets = Array[ExtResource("7_tvqgu")]([ExtResource("6_0lrro")])
+resource = ExtResource("5_o28t5")
+amount = 15.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_dfnae"]
+script = ExtResource("1_t67ql")
+boosting_sets = Array[ExtResource("7_tvqgu")]([])
+resource = ExtResource("2_bi41v")
+amount = 5.0
+is_modifier = false
+
+[resource]
+script = ExtResource("3_08n72")
+name = &"Orion\'s Core"
+texture = ExtResource("8_orqkb")
+description = ""
+socket_type = ExtResource("7_uvbev")
+set_resources = Array[ExtResource("7_tvqgu")]([ExtResource("6_0lrro")])
+bonus_stats = Array[ExtResource("1_t67ql")]([SubResource("Resource_i0mmk"), SubResource("Resource_dfnae")])
+extra_price = 55.0
+spawn_floor = 6
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

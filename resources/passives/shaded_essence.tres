@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=3 format=3 uid="uid://dfrt4mu3adiqq"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_0aefy"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="1_5vipl"]
+
+[resource]
+script = ExtResource("1_5vipl")
+name = "Shaded Essence"
+bonus_stats = Array[ExtResource("1_0aefy")]([])

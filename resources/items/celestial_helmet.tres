@@ -1,0 +1,42 @@
+[gd_resource type="Resource" script_class="ItemResource" load_steps=11 format=3 uid="uid://4c1ygqxcayru"]
+
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_hwu7i"]
+[ext_resource type="Resource" uid="uid://orugsb1sodim" path="res://resources/item_sets/celestial.tres" id="2_3gdck"]
+[ext_resource type="Resource" uid="uid://vk7rss3u2g7m" path="res://resources/stats/armor.tres" id="3_008i1"]
+[ext_resource type="Resource" uid="uid://dpl8agabg0hnp" path="res://resources/stats/elemental_resistance.tres" id="4_pilsv"]
+[ext_resource type="Script" uid="uid://bp3opkohcamor" path="res://classes/resource/item_resource.gd" id="5_qn3xl"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="6_t66sq"]
+[ext_resource type="Resource" uid="uid://cxr6mcjfxvcdx" path="res://resources/socket_types/helmet.tres" id="7_jhr2n"]
+[ext_resource type="Texture2D" uid="uid://crvy1kbxbps48" path="res://assets/textures/items/celestial_helmet.png" id="7_y1k3l"]
+
+[sub_resource type="Resource" id="Resource_u2tv0"]
+script = ExtResource("1_hwu7i")
+boosting_sets = Array[ExtResource("6_t66sq")]([ExtResource("2_3gdck")])
+resource = ExtResource("3_008i1")
+amount = 127.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ek0lh"]
+script = ExtResource("1_hwu7i")
+boosting_sets = Array[ExtResource("6_t66sq")]([])
+resource = ExtResource("4_pilsv")
+amount = 10.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_qn3xl")
+name = &"Celestial Helmet"
+texture = ExtResource("7_y1k3l")
+description = ""
+socket_type = ExtResource("7_jhr2n")
+set_resources = Array[ExtResource("6_t66sq")]([ExtResource("2_3gdck")])
+bonus_stats = Array[ExtResource("1_hwu7i")]([SubResource("Resource_u2tv0"), SubResource("Resource_ek0lh")])
+extra_price = 186.0
+spawn_floor = 20
+hide_level = false
+buy_limit = -1
+use_custom_rarity = false
+custom_rarity = 0
+reforgable = true
+is_artifact = false
+is_special = false

@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatusEffectResource" load_steps=4 format=3 uid="uid://fxhfh2hreno8"]
+
+[ext_resource type="Texture2D" uid="uid://3rcfg76xf1t2" path="res://assets/textures/icons/status_effects/team_icon.png" id="1_7ydej"]
+[ext_resource type="Script" uid="uid://sfpei1xlnmq1" path="res://classes/resource/status_effect_resource.gd" id="2_4cbuv"]
+[ext_resource type="Resource" uid="uid://bnafey8yic5rn" path="res://resources/status_effect_types/rule.tres" id="3_7ydej"]
+
+[resource]
+script = ExtResource("2_4cbuv")
+name = "Red Team"
+icon = ExtResource("1_7ydej")
+color = Color(0.929412, 0.227451, 0.333333, 1)
+type = ExtResource("3_7ydej")
+affected_by_tenacity = false
+is_temporary = false
+is_percent = false
+limit = 1
+application_message = ""
+metadata/_custom_type_script = "uid://sfpei1xlnmq1"

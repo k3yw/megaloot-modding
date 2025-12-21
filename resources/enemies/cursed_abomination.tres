@@ -1,0 +1,41 @@
+[gd_resource type="Resource" script_class="EnemyResource" load_steps=14 format=3 uid="uid://cfswjbldwaf4b"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_bfo6y"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_3ex3w"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="3_e0as5"]
+[ext_resource type="Resource" uid="uid://djgssw6jn8ae" path="res://resources/stats/max_health.tres" id="4_ir58d"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_wv1h2"]
+[ext_resource type="Script" uid="uid://p2rd2m1ktgi5" path="res://classes/resource/enemy_resource.gd" id="5_18e27"]
+[ext_resource type="Resource" uid="uid://c7o4swfv7phdu" path="res://resources/stats/malice.tres" id="5_kf6xc"]
+[ext_resource type="Script" uid="uid://d4ckr8m0bhx1t" path="res://classes/resource/starting_status_effects.gd" id="6_sv5cj"]
+[ext_resource type="Script" uid="uid://btdg3cwxl3qjf" path="res://classes/resource/bonus_stats_array.gd" id="7_1rodb"]
+[ext_resource type="Resource" uid="uid://csq17ymr17d55" path="res://resources/passives/undying_curse.tres" id="7_q83nl"]
+[ext_resource type="Texture2D" uid="uid://3xhe6qbyrecs" path="res://assets/textures/enemies/cursed_abomination.png" id="8_wqk3d"]
+
+[sub_resource type="Resource" id="Resource_g1btr"]
+script = ExtResource("3_e0as5")
+boosting_sets = Array[ExtResource("2_3ex3w")]([])
+resource = ExtResource("4_ir58d")
+amount = 5.0
+is_modifier = false
+
+[sub_resource type="Resource" id="Resource_ou2x0"]
+script = ExtResource("3_e0as5")
+boosting_sets = Array[ExtResource("2_3ex3w")]([])
+resource = ExtResource("5_kf6xc")
+amount = 4.0
+is_modifier = false
+
+[resource]
+script = ExtResource("5_18e27")
+name = "Cursed Abomination"
+texture = ExtResource("8_wqk3d")
+floor_number = 11
+flying = true
+starting_status_effects = Array[ExtResource("6_sv5cj")]([])
+active_item_sets = Array[ExtResource("2_3ex3w")]([])
+stats_per_level = Array[ExtResource("7_1rodb")]([])
+base_stats = Array[ExtResource("3_e0as5")]([SubResource("Resource_g1btr"), SubResource("Resource_ou2x0")])
+abilities = Array[ExtResource("1_bfo6y")]([])
+passives = Array[ExtResource("4_wv1h2")]([ExtResource("7_q83nl")])
+hide_stats = false

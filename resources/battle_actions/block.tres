@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=2 format=3 uid="uid://bb7g54bfhdewy"]
+
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_j0d51"]
+
+[resource]
+script = ExtResource("1_j0d51")
+name = "Block"
+color = Color(0, 0, 0, 1)
+use_limit = 0
+popup_color = Color(0.745098, 0.745098, 0.745098, 1)
+popup_text = "BLOCKED"
+popup_delay = 0.0
+screen_shake = true
+is_hit = true

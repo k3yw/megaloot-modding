@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Keyword" load_steps=4 format=3 uid="uid://cmwtqlm54lrdl"]
+
+[ext_resource type="Script" uid="uid://dmwkn03g2sehp" path="res://resources/bb_scripts/tinker.gd" id="1_o1vx7"]
+[ext_resource type="Script" uid="uid://3d38osm0yilr" path="res://classes/resource/keyword.gd" id="1_yv425"]
+[ext_resource type="Texture2D" uid="uid://chi2dbgn1rrrs" path="res://assets/textures/icons/dismantle_icon.png" id="2_cj0b6"]
+
+[resource]
+script = ExtResource("1_yv425")
+name = &"Tinker"
+icon = ExtResource("2_cj0b6")
+color = Color(0.368627, 0.368627, 0.462745, 1)
+bb_script = ExtResource("1_o1vx7")
+metadata/_custom_type_script = "uid://3d38osm0yilr"

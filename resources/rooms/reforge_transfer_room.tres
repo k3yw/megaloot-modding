@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="RoomResource" load_steps=3 format=3 uid="uid://camknai1rmovd"]
+
+[ext_resource type="PackedScene" uid="uid://srfsuoci3vtn" path="res://scenes/rooms/altar_room.tscn" id="1_aoknt"]
+[ext_resource type="Script" uid="uid://dercbl3566y8y" path="res://classes/resource/room_resource.gd" id="2_e0177"]
+
+[resource]
+script = ExtResource("2_e0177")
+restless = false
+scene = ExtResource("1_aoknt")
+metadata/_custom_type_script = "uid://dercbl3566y8y"

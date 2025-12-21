@@ -1,0 +1,192 @@
+[gd_scene load_steps=3 format=3 uid="uid://cdp3obdkuo8gu"]
+
+[ext_resource type="Script" uid="uid://cw1k0iy7jg8do" path="res://scenes/ui/adventurer_tree/adventurer_tree.gd" id="1_1pbcj"]
+[ext_resource type="PackedScene" uid="uid://bs3g31t2boaru" path="res://scenes/ui/adventurer_tree_node/adventurer_tree_node.tscn" id="2_ijdvb"]
+
+[node name="AdventurerTree" type="Control" node_paths=PackedStringArray("specialization_node_containers", "adventurer_card_container", "stat_nodes_a", "stat_nodes_b", "stat_nodes_c", "adventurer_lines", "specialization_lines", "stat_a_misc_lines", "stat_b_misc_lines", "stat_a_line", "stat_b_line")]
+layout_mode = 3
+anchors_preset = 0
+size_flags_vertical = 6
+size_flags_stretch_ratio = 2.0
+script = ExtResource("1_1pbcj")
+specialization_node_containers = [NodePath("SpecializationNode"), NodePath("SpecializationNode2"), NodePath("SpecializationNode3")]
+adventurer_card_container = NodePath("AdventurerNode")
+stat_nodes_a = [NodePath("StatNodeA"), NodePath("StatNodeA2"), NodePath("StatNodeA3")]
+stat_nodes_b = [NodePath("StatNodeB"), NodePath("StatNodeB2"), NodePath("StatNodeB3")]
+stat_nodes_c = [NodePath("StatNodeC"), NodePath("StatNodeC2"), NodePath("StatNodeC3")]
+adventurer_lines = [NodePath("AdventurerLine"), NodePath("AdventurerLine2"), NodePath("AdventurerLine3")]
+specialization_lines = [NodePath("SpecializationLine"), NodePath("SpecializationLine2"), NodePath("SpecializationLine3")]
+stat_a_misc_lines = [NodePath("StatAMiscLine"), NodePath("StatAMiscLine2")]
+stat_b_misc_lines = [NodePath("StatBMiscLine"), NodePath("StatBMiscLine2")]
+stat_a_line = NodePath("StatALine")
+stat_b_line = NodePath("StatBLine")
+
+[node name="AdventurerLine" type="Line2D" parent="."]
+visible = false
+points = PackedVector2Array(139, -12, 159, -12, 159, -75, 207, -75)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="AdventurerLine2" type="Line2D" parent="."]
+visible = false
+points = PackedVector2Array(139, 0, 159, 0, 159, 0, 207, 0)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="AdventurerLine3" type="Line2D" parent="."]
+visible = false
+points = PackedVector2Array(139, 12, 159, 12, 159, 75, 205, 75)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="SpecializationLine" type="Line2D" parent="."]
+points = PackedVector2Array(255, 63, 275, 63, 275, 40, 301, 40)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="SpecializationLine2" type="Line2D" parent="."]
+points = PackedVector2Array(255, 75, 275, 75, 275, 75, 301, 75)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="SpecializationLine3" type="Line2D" parent="."]
+points = PackedVector2Array(255, 87, 275, 87, 275, 110, 301, 110)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="StatALine" type="Line2D" parent="."]
+points = PackedVector2Array(325, 75, 372, 75)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="StatBLine" type="Line2D" parent="."]
+points = PackedVector2Array(396, 110, 443, 110)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="StatAMiscLine" type="Line2D" parent="."]
+points = PackedVector2Array(384, 52, 384, 63)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="StatAMiscLine2" type="Line2D" parent="."]
+points = PackedVector2Array(384, 87, 384, 98)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="StatBMiscLine" type="Line2D" parent="."]
+points = PackedVector2Array(455, 52, 455, 63)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="StatBMiscLine2" type="Line2D" parent="."]
+points = PackedVector2Array(455, 87, 455, 98)
+width = 2.0
+default_color = Color(0.196078, 0.2, 0.239216, 1)
+
+[node name="AdventurerNode" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 2
+offset_left = 96.0
+offset_top = -25.0
+offset_right = 146.0
+offset_bottom = 25.0
+size_flags_vertical = 4
+
+[node name="SpecializationNode" parent="." instance=ExtResource("2_ijdvb")]
+visible = false
+layout_mode = 2
+offset_left = 207.0
+offset_top = -100.0
+offset_right = 257.0
+offset_bottom = -50.0
+type = 1
+
+[node name="SpecializationNode2" parent="." instance=ExtResource("2_ijdvb")]
+visible = false
+layout_mode = 2
+offset_left = 207.0
+offset_top = -25.0
+offset_right = 257.0
+offset_bottom = 25.0
+type = 1
+
+[node name="SpecializationNode3" parent="." instance=ExtResource("2_ijdvb")]
+visible = false
+layout_mode = 2
+offset_left = 205.0
+offset_top = 50.0
+offset_right = 255.0
+offset_bottom = 100.0
+type = 1
+
+[node name="StatNodeA" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 27.0
+offset_right = 326.0
+offset_bottom = 53.0
+type = 2
+
+[node name="StatNodeA2" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 62.0
+offset_right = 326.0
+offset_bottom = 88.0
+type = 2
+
+[node name="StatNodeA3" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 0
+offset_left = 300.0
+offset_top = 97.0
+offset_right = 326.0
+offset_bottom = 123.0
+type = 2
+
+[node name="StatNodeB" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 27.0
+offset_right = 397.0
+offset_bottom = 53.0
+type = 2
+
+[node name="StatNodeB2" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 62.0
+offset_right = 397.0
+offset_bottom = 88.0
+type = 2
+
+[node name="StatNodeB3" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 0
+offset_left = 371.0
+offset_top = 97.0
+offset_right = 397.0
+offset_bottom = 123.0
+type = 2
+
+[node name="StatNodeC" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 27.0
+offset_right = 468.0
+offset_bottom = 53.0
+type = 2
+
+[node name="StatNodeC2" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 62.0
+offset_right = 468.0
+offset_bottom = 88.0
+type = 2
+
+[node name="StatNodeC3" parent="." instance=ExtResource("2_ijdvb")]
+layout_mode = 0
+offset_left = 442.0
+offset_top = 97.0
+offset_right = 468.0
+offset_bottom = 123.0
+type = 2

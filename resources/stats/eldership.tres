@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=6 format=3 uid="uid://3e11b386rt6m"]
+
+[ext_resource type="Texture2D" uid="uid://binxn2d3ctntb" path="res://assets/textures/icons/wisdom_icon.png" id="1_lvuiw"]
+[ext_resource type="Script" uid="uid://bxs6dyjm6jkyy" path="res://resources/bb_scripts/wisdom.gd" id="1_ol75y"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="2_ol75y"]
+[ext_resource type="Resource" uid="uid://26n0ap6yq2t0" path="res://resources/stats/wisdom.tres" id="3_0sdwp"]
+[ext_resource type="Script" uid="uid://cxnru1iqrtnuy" path="res://resources/stat_scripts/wisdom.gd" id="3_ktabl"]
+
+[resource]
+script = ExtResource("2_ol75y")
+name = "Eldership"
+icon = ExtResource("1_lvuiw")
+color = Color(0.5112, 0.62952, 0.72, 1)
+is_attack_type = false
+is_percentage = false
+max_amount = -1
+origin_stat = ExtResource("3_0sdwp")
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_ktabl")
+bb_script = ExtResource("1_ol75y")

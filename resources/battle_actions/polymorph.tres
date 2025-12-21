@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="BattleAction" load_steps=3 format=3 uid="uid://boy7qakklkaho"]
+
+[ext_resource type="Script" uid="uid://bxwr1q21sl5sm" path="res://resources/bb_scripts/polymorph.gd" id="1_8sx4w"]
+[ext_resource type="Script" uid="uid://clfulygwnbxy1" path="res://classes/resource/battle_action.gd" id="1_ta5n1"]
+
+[resource]
+script = ExtResource("1_ta5n1")
+name = "Polymorph"
+color = Color(0, 0, 0, 1)
+use_limit = 0
+popup_color = Color(0, 0, 0, 1)
+popup_text = ""
+popup_delay = 0.0
+screen_shake = true
+is_hit = true
+bb_script = ExtResource("1_8sx4w")
+metadata/_custom_type_script = "uid://clfulygwnbxy1"

@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=4 format=3 uid="uid://dxhb0xj4iysge"]
+
+[ext_resource type="Script" uid="uid://4bqiimxy2f7u" path="res://resources/bb_scripts/cinder_touch.gd" id="1_7pncr"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_wfk3c"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_8os28"]
+
+[resource]
+script = ExtResource("2_8os28")
+name = "Cinder Touch"
+bonus_stats = Array[ExtResource("1_wfk3c")]([])
+bb_script = ExtResource("1_7pncr")

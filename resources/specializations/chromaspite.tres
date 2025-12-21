@@ -1,0 +1,19 @@
+[gd_resource type="Resource" script_class="Specialization" load_steps=8 format=3]
+
+[ext_resource type="Texture2D" path="res://assets/textures/icons/item_sets/chromalure_icon.png" id="2_qm0lv"]
+[ext_resource type="Resource" path="res://resources/item_sets/chromalure.tres" id="3_pgi0q"]
+[ext_resource type="Script" path="res://classes/resource/specialization.gd" id="4_3u88n"]
+[ext_resource type="Resource" path="res://resources/stats/toxicity.tres" id="6_2etnf"]
+[ext_resource type="Resource" path="res://resources/stats/recovery.tres" id="7_omoqh"]
+[ext_resource type="Resource" path="res://resources/stats/toughness.tres" id="8_vljjq"]
+[ext_resource type="Script" path="res://classes/resource/stat_resource.gd" id="9_p286a"]
+
+[resource]
+script = ExtResource("4_3u88n")
+name = "Chromaspite"
+color = Color(0.607843, 0.262745, 0.301961, 1)
+icon = ExtResource("2_qm0lv")
+original_item_set = ExtResource("3_pgi0q")
+completed_floor_to_unlock = 10
+stats = Array[ExtResource("9_p286a")]([ExtResource("6_2etnf"), ExtResource("7_omoqh"), ExtResource("8_vljjq")])
+stats_new = Array[ExtResource("9_p286a")]([ExtResource("6_2etnf"), ExtResource("7_omoqh"), ExtResource("8_vljjq")])

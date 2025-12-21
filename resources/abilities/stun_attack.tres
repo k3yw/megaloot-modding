@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="AbilityResource" load_steps=4 format=3 uid="uid://blbmjs1pfmbu6"]
+
+[ext_resource type="Script" uid="uid://cyjqugj4n237n" path="res://classes/resource/ability_resource.gd" id="1_7txdm"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_o3ymu"]
+[ext_resource type="Script" uid="uid://b3b5vhhh7jge1" path="res://classes/resource/bonus_status_effect.gd" id="3_g6nba"]
+
+[resource]
+script = ExtResource("1_7txdm")
+name = "Stun Attack"
+mana_cost = 1
+use_limit = 0
+status_effects_on_activation = Array[ExtResource("3_g6nba")]([])
+bonus_stats_while_active = Array[ExtResource("1_o3ymu")]([])
+quick_cast = false
+non_target = true
+to_attack = false

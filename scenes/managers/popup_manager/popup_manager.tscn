@@ -1,0 +1,113 @@
+[gd_scene load_steps=12 format=3 uid="uid://qmidqoujttab"]
+
+[ext_resource type="Script" uid="uid://vj1r6eilgjsl" path="res://scenes/managers/popup_manager/popup_manager.gd" id="1_hln23"]
+[ext_resource type="PackedScene" uid="uid://bf22vri7paym" path="res://scenes/popup_containers/adventurer_selection_popup_container/adventurer_selection_popup_container.tscn" id="3_av7yx"]
+[ext_resource type="PackedScene" uid="uid://fapwogoslqlm" path="res://scenes/popup_containers/credits_popup/credits_popup.tscn" id="3_undnh"]
+[ext_resource type="PackedScene" uid="uid://2qybns6bgkvb" path="res://scenes/popup_containers/adventurer_profile_popup/adventurer_profile_popup.tscn" id="4_n07lu"]
+[ext_resource type="PackedScene" uid="uid://b7dpbi2el6b2t" path="res://scenes/popup_containers/lobby_join_popup/lobby_join_popup.tscn" id="4_pihrv"]
+[ext_resource type="PackedScene" uid="uid://bsmmjqwwqsavu" path="res://scenes/popup_containers/lobby_menu_popup/lobby_menu_popup.tscn" id="4_r8tr4"]
+[ext_resource type="PackedScene" uid="uid://bsvhma5mb6sbe" path="res://scenes/popup_containers/battle_log_popup_container/battle_log_popup_container.tscn" id="7_tqerm"]
+[ext_resource type="PackedScene" uid="uid://b8vshfc7eqksp" path="res://scenes/popup_containers/no_tutorial_popup/no_tutorial_popup.tscn" id="8_bagny"]
+
+[sub_resource type="Animation" id="Animation_a4w6s"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(0.160784, 0.160784, 0.160784, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="Animation" id="Animation_qvdyx"]
+resource_name = "dim"
+length = 0.2
+step = 0.05
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("ColorRect:color")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(0, 0, 0, 0), Color(0, 0, 0, 0.490196)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("ColorRect:visible")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_n7cnp"]
+_data = {
+&"RESET": SubResource("Animation_a4w6s"),
+&"dim": SubResource("Animation_qvdyx")
+}
+
+[node name="PopupCanvasLayer" type="CanvasLayer" node_paths=PackedStringArray("adventurer_selection_popup", "battle_log_popup_container", "adventurer_profile_popup", "no_tutorial_popup", "lobby_join_popup", "lobby_menu_popup", "credits_popup", "animation_player", "dim_color_rect")]
+layer = 126
+script = ExtResource("1_hln23")
+adventurer_selection_popup = NodePath("AdventurerSelectionPopupContainer")
+battle_log_popup_container = NodePath("BattleLogPopupContainer")
+adventurer_profile_popup = NodePath("AdventurerProfilePopupContainer")
+no_tutorial_popup = NodePath("NoTutorialPopup")
+lobby_join_popup = NodePath("LobbyJoinPopup")
+lobby_menu_popup = NodePath("LobbyMenuPopup")
+credits_popup = NodePath("CreditsPopup")
+animation_player = NodePath("AnimationPlayer")
+dim_color_rect = NodePath("ColorRect")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_n7cnp")
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.160784, 0.160784, 0.160784, 0)
+
+[node name="AdventurerProfilePopupContainer" parent="." instance=ExtResource("4_n07lu")]
+
+[node name="AdventurerSelectionPopupContainer" parent="." instance=ExtResource("3_av7yx")]
+
+[node name="LobbyJoinPopup" parent="." instance=ExtResource("4_pihrv")]
+
+[node name="LobbyMenuPopup" parent="." instance=ExtResource("4_r8tr4")]
+
+[node name="CreditsPopup" parent="." instance=ExtResource("3_undnh")]
+
+[node name="BattleLogPopupContainer" parent="." instance=ExtResource("7_tqerm")]
+
+[node name="NoTutorialPopup" parent="." instance=ExtResource("8_bagny")]

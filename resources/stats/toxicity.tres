@@ -1,0 +1,18 @@
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://xnovuq7jfivb"]
+
+[ext_resource type="Script" uid="uid://8x5ewxpdmg44" path="res://resources/bb_scripts/toxicity.gd" id="1_hbv4g"]
+[ext_resource type="Texture2D" uid="uid://d34nyoleasqx7" path="res://assets/textures/icons/toxicity_icon.png" id="1_sdbdu"]
+[ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_ydwou"]
+[ext_resource type="Script" uid="uid://dquoi3r872irf" path="res://resources/stat_scripts/toxicity.gd" id="3_fddo2"]
+
+[resource]
+script = ExtResource("1_ydwou")
+name = "Toxicity"
+icon = ExtResource("1_sdbdu")
+color = Color(0.360784, 0.537255, 0.388235, 1)
+is_percentage = false
+max_amount = -1
+ignore_minimum_amount = false
+minimum_amount = 0.0
+stat_script = ExtResource("3_fddo2")
+bb_script = ExtResource("1_hbv4g")

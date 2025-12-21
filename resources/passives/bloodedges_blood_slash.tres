@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=5 format=3 uid="uid://b8y1cmop7x7n7"]
+
+[ext_resource type="Script" uid="uid://dycrejrqitm2k" path="res://resources/bb_scripts/bloodedges_blood_slash.gd" id="1_m4q6w"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="2_hfiv0"]
+[ext_resource type="Script" uid="uid://8mt20cdh6x4k" path="res://resources/passive_scripts/bloodedges_blood_slash.gd" id="3_g8r7c"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="4_8ocoe"]
+
+[resource]
+script = ExtResource("4_8ocoe")
+name = "Bloodedge's Blood Slash"
+bonus_stats = Array[ExtResource("2_hfiv0")]([])
+game_logic_script = ExtResource("3_g8r7c")
+bb_script = ExtResource("1_m4q6w")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"

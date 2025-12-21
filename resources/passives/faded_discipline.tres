@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="Passive" load_steps=8 format=3 uid="uid://bosxf4agc61jc"]
+
+[ext_resource type="Script" uid="uid://ckqlke1jklf10" path="res://resources/bb_scripts/faded_discipline.gd" id="1_d6nu5"]
+[ext_resource type="Script" uid="uid://ncrf14skmajt" path="res://classes/resource/bonus_stat.gd" id="1_hcl1a"]
+[ext_resource type="Script" uid="uid://dosaepci2madi" path="res://resources/passive_scripts/faded_discipline.gd" id="2_53foj"]
+[ext_resource type="Script" uid="uid://beywyjfa48wkv" path="res://classes/item_related/item_set_resource.gd" id="2_jbbfw"]
+[ext_resource type="Script" uid="uid://2n3u6awp8n55" path="res://classes/resource/passive.gd" id="2_uppeu"]
+[ext_resource type="Resource" uid="uid://brv4rxnfre8qx" path="res://resources/stats/total_attacks.tres" id="3_d6nu5"]
+
+[sub_resource type="Resource" id="Resource_tptt6"]
+script = ExtResource("1_hcl1a")
+boosting_sets = Array[ExtResource("2_jbbfw")]([])
+resource = ExtResource("3_d6nu5")
+amount = 5.0
+is_modifier = false
+metadata/_custom_type_script = "uid://ncrf14skmajt"
+
+[resource]
+script = ExtResource("2_uppeu")
+name = "Faded Discipline"
+bonus_stats = Array[ExtResource("1_hcl1a")]([SubResource("Resource_tptt6")])
+game_logic_script = ExtResource("2_53foj")
+bb_script = ExtResource("1_d6nu5")
+metadata/_custom_type_script = "uid://2n3u6awp8n55"
