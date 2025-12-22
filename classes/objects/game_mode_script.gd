@@ -24,7 +24,7 @@ func get_room_type(floor_number: int, room_idx: int) -> RoomResource:
             return Rooms.FINAL
 
     if is_last_room(floor_number, room_idx):
-        return get_last_room(floor_number, room_idx)
+        return get_last_room(floor_number)
 
     if has_chest_room() and is_chest_floor(floor_number):
         if is_chest_room_idx(floor_number, room_idx):
@@ -44,7 +44,7 @@ func get_room_type_override(floor_number: int, room_idx: int) -> RoomResource:
 
 
 
-func get_last_room(floor_number: int, _room_idx: int) -> RoomResource:
+func get_last_room(floor_number: int) -> RoomResource:
     if str(floor_number + 1).contains("7"):
         return Rooms.MYSTIC_TRADER
 
