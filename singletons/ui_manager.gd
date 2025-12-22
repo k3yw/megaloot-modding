@@ -279,12 +279,16 @@ func update_effect_containers(effect_container_holder: EffectContainerHolder, ch
 
 
 
-var rooms_upcoming = {
-	"MERCHANT": -1,
-	"DISMANTLE": -1,
-	"MYSTIC_TRADER": -1,
-	"CHEST": -1
-}
+var rooms_upcoming: Dictionary[String, int]
+
+func invalidate_upcoming_rooms_cache () -> void :
+	rooms_upcoming = {
+		"MERCHANT": -1,
+		"DISMANTLE": -1,
+		"MYSTIC_TRADER": -1,
+		"CHEST": -1
+	}
+
 var latest_cached_floor = -1
 
 
@@ -303,6 +307,7 @@ func update_difficulity_progress_bar() -> void :
 	
 	if latest_cached_floor == -1 or latest_cached_floor != next_floor_id:
 		latest_cached_floor = next_floor_id
+		invalidate_upcoming_rooms_cache()
 		var gamemode = curr_state.memory._gamemode_script
 		
 		for floor_idx in range(next_floor_id, next_floor_id + 30):
