@@ -269,6 +269,40 @@ func _process(delta: float) -> void :
 	market_manager.process_market_refresh_button()
 	market_manager.process_hub_action_panel()
 	market_manager.process_market_slots()
+	
+	var selected_player: Player = market_manager.gameplay_state.get_selected_player()
+
+	if not is_instance_valid(selected_player):
+		return
+
+	var market_slots: Array[Slot] = []
+	for idx in selected_player.market.items.size():
+		market_slots.push_back(Slot.new(selected_player.market, idx))
+
+	for idx in selected_player.merchant.items.size():
+		market_slots.push_back(Slot.new(selected_player.merchant, idx))
+
+	for idx in selected_player.mystic_trader.items.size():
+		market_slots.push_back(Slot.new(selected_player.mystic_trader, idx))
+	
+	for slot in market_slots:
+		var market_item: Item = slot.get_item()
+
+		if not is_instance_valid(market_item):
+			continue
+
+		var item_texture_rect: ItemTextureRect = canvas_layer.get_item_texture_rect(slot)
+
+		if not is_instance_valid(item_texture_rect):
+			continue
+			
+		item_texture_rect.build_planner_match_texture_rect.hide()
+
+		for item in UserData.profile.get_selected_build().get_items():
+			if not item.resource == market_item.resource:
+				continue
+
+			item_texture_rect.build_planner_match_texture_rect.show()
 
 	process_partner_press()
 

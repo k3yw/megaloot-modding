@@ -66,7 +66,6 @@ func process_market_slots():
 			continue
 
 		item_texture_rect.highlight_texture_rect.hide()
-		item_texture_rect.build_planner_match_texture_rect.hide()
 
 		for item in selected_player.get_owned_items():
 			if not item.resource == market_item.resource:
@@ -82,7 +81,6 @@ func process_market_slots():
 
 			item_texture_rect.highlight_texture_rect.modulate = Color("#f5c182")
 			item_texture_rect.highlight_texture_rect.show()
-			item_texture_rect.build_planner_match_texture_rect.show()
 
 
 
