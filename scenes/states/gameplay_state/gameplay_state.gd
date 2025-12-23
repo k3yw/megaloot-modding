@@ -1778,7 +1778,17 @@ func banish_item(player: Player, slot: Slot) -> void :
 	if selected_player == player:
 		update_item_slots()
 
+func buyout_item(player: Player, slot: Slot) -> void :
+	var selected_player: Player = get_selected_player()
+	var item: Item = slot.get_item()
 
+	player.buyout_item(slot)
+	play_item_ascend(player, slot)
+	
+	slot.remove_item(ItemContainer.ItemRemoveCause.BUYOUT)
+
+	if selected_player == player:
+		update_item_slots()
 
 func upgrade_merchant(player: Player, slot: Slot) -> void :
 	var selected_player: Player = get_selected_player()
@@ -1804,7 +1814,16 @@ func play_item_dissolve(character: Character, slot: Slot) -> void :
 		if selected_player == memory.local_player or slot.item_container.resource == ItemContainerResources.INVENTORY:
 			canvas_layer.vfx_manager.create_banish_effect(item.resource.texture, item_slot)
 
+func play_item_ascend(character: Character, slot: Slot) -> void :
+	var item_slot: ItemSlot = canvas_layer.get_item_slot(slot)
+	var pos: Vector2 = UI.get_rect(item_slot).get_center()
+	var selected_player: Player = get_selected_player()
+	var item: Item = slot.get_item()
 
+	if selected_player == character:
+		AudioManager.play_sfx_at(preload("res://assets/sfx/cleanse.wav"), pos, 0.0, randf_range(1.0, 1.1))
+		if selected_player == memory.local_player or slot.item_container.resource == ItemContainerResources.INVENTORY:
+			canvas_layer.vfx_manager.create_banish_effect(item.resource.texture, item_slot)
 
 
 
