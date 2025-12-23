@@ -173,9 +173,11 @@
 	"stat-transform": "Transforms |{stat-1}| into |{stat-2}",
 	
 	"banished-item": "Banished {item-name}",
+	"ascended-item": "Ascended {item-name}",
 	"reforged-item": "Reforged {item-name}",
 	"item-reforge": "{item-name} Reforge",
 	"banish-description": "Permanently removes {item-name}\nfrom the tower",
+	"ascend-item-description": "Returns {item-name} to the\nmarket pool",
 	"unlock-requirements-description": "Required completed battles to unlock:",
 	
 	"unlimited-amount": "Unlimited",
