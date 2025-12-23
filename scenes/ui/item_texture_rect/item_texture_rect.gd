@@ -17,6 +17,7 @@ class_name ItemTextureRect extends Control
 @onready var icon_texture_rect: TextureRect = $CanvasGroup / IconTextureRect
 @onready var debug_label: Label = $CanvasGroup / DebugLabel
 @onready var canvas_group: CanvasGroup = $CanvasGroup
+@onready var build_planner_match_texture_rect: TextureRect = $BuildPlannerMatchRect
 
 
 var enable_glow_this_frame: bool
