@@ -706,7 +706,7 @@ static func from_item(hover_info_data: HoverInfoData, item: Item, character: Cha
 				hover_info_data.bb_container_data_arr.push_back(BBContainerData.new("\n"))
 	
 	if item.is_buyout:
-		var text: String = T.get_translated_string("ascended-item-description")
+		var text: String = T.get_translated_string("ascend-item-description")
 		text = text.replace("{item-name}", item.resource.get_translated_name())
 		var text_arr: PackedStringArray = text.split("\n")
 

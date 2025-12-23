@@ -5,7 +5,7 @@ enum ItemType{
 	BANISHED, 
 	STAT_ADAPTER, 
 	TOME, 
-	BUYOUT
+	ASCENDED
 	}
 
 
@@ -534,7 +534,7 @@ func refresh_local_market(market_item_idx_arr: Array, clear_sell_stack: bool) ->
 		elif rolled_buyout == false and local_player.banned_items.size() > 0 and Math.rand_success(buyout_chance, RNGManager.market_rand):
 			rolled_buyout = true
 			item_resource = local_player.banned_items[randi_range(0, local_player.banned_items.size() - 1)]
-			item_type = ItemType.BUYOUT
+			item_type = ItemType.ASCENDED
 		
 		match item_type:
 			ItemType.NORMAL:
@@ -551,7 +551,7 @@ func refresh_local_market(market_item_idx_arr: Array, clear_sell_stack: bool) ->
 				new_market_item = ItemManager.create_item(item_resource)
 				new_market_item.is_banish = true
 				
-			ItemType.BUYOUT:
+			ItemType.ASCENDED:
 				new_market_item = ItemManager.create_item(item_resource)
 				new_market_item.is_buyout = true
 				new_market_item.rarity = ItemRarity.Type.DIVINE
