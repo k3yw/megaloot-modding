@@ -16,3 +16,5 @@ export_credentials.cfg
 .mono/
 data_*/
 mono_crash.*.json
+addons/godotsteam_server/win64/~libgodotsteam_server.windows.template_debug.x86_64.dll~RF18b058e9.TMP
+addons/godotsteam/win64/~libgodotsteam.windows.template_debug.x86_64.dll~RF18b058e9.TMP
