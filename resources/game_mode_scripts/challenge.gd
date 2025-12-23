@@ -3,7 +3,7 @@ extends GameModeScript
 
 
 
-func get_last_room(floor_number: int, room_idx: int) -> RoomResource:
+func get_last_room(floor_number: int) -> RoomResource:
     if floor_number + 1 == 100:
         return Rooms.BATTLE
 
@@ -48,7 +48,7 @@ func get_room_count(floor_number: int) -> int:
     if floor_number >= 59:
         base_room_count = 1
 
-    if is_chest_floor(floor_number):
+    if not get_last_room(floor_number) == Rooms.BATTLE:
         base_room_count += 1
 
     return base_room_count

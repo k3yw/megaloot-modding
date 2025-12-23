@@ -12,7 +12,7 @@ No plugin download url found for plugin godotsteam, hashes: 35c5504bfbdded741fec
 
 Exporting scenes...
 Forcing single-threaded scene export...
-*** Exporting 16 scenes took 0.23s
+*** Exporting 16 scenes took 0.22s
 
 Saved project config.
 
@@ -36,12 +36,12 @@ Failed conversions:                     0
 The following files were converted and saved to a non-original path, but did not have their import data rewritten.
 These files will not be re-imported when loading the project.
 res://.godot/imported/stone_01.fbx-68ab1889ba78c945890f982b7a4d7471.scn to res://.assets/assets/models/stone_01.glb
-res://.godot/imported/stone_02.fbx-cf0bafccf4edef76d85699c6c8b6e20d.scn to res://.assets/assets/models/stone_02.glb
 res://.godot/imported/stone_03.fbx-480bdf7799ea4b3d7fbb0ad79ec74ab6.scn to res://.assets/assets/models/stone_03.glb
-res://.godot/imported/stone_04.fbx-447543c497dac8206d0e3c9c6edd5420.scn to res://.assets/assets/models/stone_04.glb
 res://.godot/imported/tree_01.fbx-99b0a1b4083acaa73a309d325be2f0c8.scn to res://.assets/assets/models/tree_01.glb
 res://.godot/imported/tree_02.fbx-b11d4fc76de7b9914a7fb68914fb4974.scn to res://.assets/assets/models/tree_02.glb
 res://.godot/imported/tree_03.fbx-4a950e05cc774286a282b17c605b0bc6.scn to res://.assets/assets/models/tree_03.glb
+res://.godot/imported/stone_02.fbx-cf0bafccf4edef76d85699c6c8b6e20d.scn to res://.assets/assets/models/stone_02.glb
+res://.godot/imported/stone_04.fbx-447543c497dac8206d0e3c9c6edd5420.scn to res://.assets/assets/models/stone_04.glb
 res://.godot/imported/tree_04.fbx-fdea806e79afb876f8244b5637d861e4.scn to res://.assets/assets/models/tree_04.glb
 res://.godot/imported/tree_05.fbx-952b6583f62a170b8c164c8df04251b9.scn to res://.assets/assets/models/tree_05.glb
 res://.godot/imported/tree_06.fbx-858a2eeb97f37ff8ead6d64b83f8ff6f.scn to res://.assets/assets/models/tree_06.glb
