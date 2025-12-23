@@ -269,6 +269,7 @@ func _process(delta: float) -> void :
 	market_manager.process_market_refresh_button()
 	market_manager.process_hub_action_panel()
 	market_manager.process_market_slots()
+<<<<<<< HEAD
 	
 	var selected_player: Player = market_manager.gameplay_state.get_selected_player()
 
@@ -309,6 +310,14 @@ func _process(delta: float) -> void :
 	process_loot_stash()
 	process_chat()
 
+=======
+
+	process_partner_press()
+
+	process_loot_stash()
+	process_chat()
+
+>>>>>>> ascension_banned_items_buyout
 	process_changes()
 
 
@@ -664,6 +673,7 @@ func process_special_item_visuals(character: Character, slot: Slot) -> void :
 		saturation = 0.0
 		if remaining_uses or is_instance_valid(item.resource.activation_effect.ability):
 			saturation = 1.0
+<<<<<<< HEAD
 
 	if item.resource.is_tome():
 		if character is Player:
@@ -693,6 +703,34 @@ func process_special_item_visuals(character: Character, slot: Slot) -> void :
 			curr_progress = 0.5
 
 
+=======
+
+
+	if item.resource.is_tome():
+		if character is Player:
+			if not character.can_learn_ability(item.resource.ability_to_learn):
+				curr_progress = 0.5
+
+
+
+	if item.resource.is_consumable():
+		if is_instance_valid(memory.battle) and memory.battle.turn_in_progress:
+			curr_progress = 0.5
+
+	if item.drag_locked:
+		curr_progress = 0.5
+
+	if item.resource.is_essential():
+		item_texture_rect.rarity_texture_rect.texture = preload("res://assets/textures/rarity_borders/toggle_off_border.png")
+
+		if item.toggled:
+			item_texture_rect.rarity_texture_rect.texture = preload("res://assets/textures/rarity_borders/toggle_on_border.png")
+
+		if not MultiplayerManager.can_activate_item(character, item, BattleTurn.Type.ATTACK):
+			curr_progress = 0.5
+
+
+>>>>>>> ascension_banned_items_buyout
 	item_texture_rect.set_saturation(saturation)
 	item_texture_rect.activation_texture_bar.hide()
 	item_texture_rect.max_progress = 1.0
@@ -746,13 +784,32 @@ func process_equipment_preview_visuals(character: Character) -> void :
 
 		if not is_instance_valid(item_texture_rect):
 			continue
+<<<<<<< HEAD
 		
 		item_texture_rect.build_planner_match_texture_rect.hide()
 		for build_item in UserData.profile.get_selected_build().get_items():
 			if not equipped_item.resource == build_item.resource:
 				continue
 			item_texture_rect.build_planner_match_texture_rect.show()
+=======
+>>>>>>> ascension_banned_items_buyout
 
+		var modulate: Color = Color.WHITE
+		equipment_slot_preview.slot_texture_rect.hide()
+
+<<<<<<< HEAD
+		item_texture_rect.activation_texture_bar.hide()
+		item_texture_rect.max_progress = 1.0
+		item_texture_rect.curr_progress = 0.0
+
+		if not character_manager.can_swap_equipment(character) == ItemPressResult.Type.SWAP:
+			item_texture_rect.curr_progress += 0.5
+
+		if character.equipment.sockets[index] == SocketTypes.REPLICATED_WEAPON:
+			item_texture_rect.curr_progress += 0.25
+			modulate = Color.CYAN
+
+=======
 		var modulate: Color = Color.WHITE
 		equipment_slot_preview.slot_texture_rect.hide()
 
@@ -767,6 +824,7 @@ func process_equipment_preview_visuals(character: Character) -> void :
 			item_texture_rect.curr_progress += 0.25
 			modulate = Color.CYAN
 
+>>>>>>> ascension_banned_items_buyout
 		item_texture_rect.set_item_texture_rect_modulate(modulate)
 
 
@@ -892,6 +950,13 @@ func process_item_texture_rects() -> void :
 		var slot = Slot.new(selected_player.inventory, index)
 		process_special_item_visuals(selected_player, slot)
 
+<<<<<<< HEAD
+=======
+	for index in selected_player.inventory.items.size():
+		var slot = Slot.new(selected_player.inventory, index)
+		process_special_item_visuals(selected_player, slot)
+
+>>>>>>> ascension_banned_items_buyout
 	for index in selected_player.merchant.items.size():
 		var slot = Slot.new(selected_player.merchant, index)
 		process_item_discount_visuals(slot)
@@ -1784,7 +1849,10 @@ func buyout_item(player: Player, slot: Slot) -> void :
 
 	player.buyout_item(slot)
 	play_item_ascend(player, slot)
+<<<<<<< HEAD
 	
+=======
+>>>>>>> ascension_banned_items_buyout
 	slot.remove_item(ItemContainer.ItemRemoveCause.BUYOUT)
 
 	if selected_player == player:

@@ -22,6 +22,7 @@ var transform_stat: StatResource = StatResource.new()
 var is_tinker_kit: bool = false
 var is_reforge: bool = false
 var is_banish: bool = false
+var is_buyout: bool = false
 
 var drag_locked: bool = false
 var toggled: bool = false
@@ -178,6 +179,9 @@ func get_buy_price(include_discount: bool = true) -> Price:
 
 	if is_banish:
 		return Price.new(Stats.GOLD, maxf(1, floorf(buy_price * 2.0)))
+		
+	if is_buyout:
+		return Price.new(Stats.DIAMOND, 4.0)
 
 	buy_price = buy_price * pow(2, rarity)
 	if is_tinker_kit:
@@ -341,6 +345,9 @@ static func is_compatible(item_a: Item, removed_item: Item) -> bool:
 			return false
 
 		if item.is_banish:
+			return false
+			
+		if item.is_buyout:
 			return false
 
 	if item_a.is_tinker_kit:

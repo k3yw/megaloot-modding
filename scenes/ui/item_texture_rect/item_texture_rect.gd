@@ -53,6 +53,7 @@ var disabled: bool = false
 
 var item_resource: ItemResource = null
 var is_banish: bool = false
+var is_buyout: bool = false
 
 func _ready():
 	set_rarity_texture_rect_modulate(default_rarity_color)
@@ -109,6 +110,10 @@ func apply_data(item_texture_rect_data: ItemTextureRectData):
 
 	item_resource = item.resource
 	is_banish = item.is_banish
+<<<<<<< HEAD
+=======
+	is_buyout = item.is_buyout
+>>>>>>> ascension_banned_items_buyout
 
 	if is_instance_valid(item_texture_rect_data.slot_reference):
 		slot_reference = item_texture_rect_data.slot_reference
@@ -127,6 +132,7 @@ func apply_data(item_texture_rect_data: ItemTextureRectData):
 			if item.toggled:
 				rarity_texture = preload("res://assets/textures/rarity_borders/toggle_on_border.png")
 
+<<<<<<< HEAD
 		if item.resource.is_consumable() or item.resource.is_tome() or item.resource.is_special or item.is_banish:
 			rarity_texture = preload("res://assets/textures/rarity_borders/toggle_off_border.png")
 
@@ -148,12 +154,73 @@ func apply_data(item_texture_rect_data: ItemTextureRectData):
 
 
 	shine_alpha = ItemRarity.get_shine_alpha(item.rarity)
+=======
+		if item.resource.is_consumable() or item.resource.is_tome() or item.resource.is_special or item.is_banish or item.is_buyout:
+			rarity_texture = preload("res://assets/textures/rarity_borders/toggle_off_border.png")
+		
+		if item.is_buyout:
+			rarity_texture = preload("res://assets/textures/rarity_borders/toggle_on_border.png")
+			
+	icon_texture_rect.texture = item_texture
+
+	reforged_border_texture.region.position.x = min(reforged_border_texture.atlas.get_size().x - 34, (item.reforge_level - 1) * 34)
+	reforged_texture_rect.modulate.a = int(item.reforge_level > 0)
+	if is_banish:
+		reforged_texture_rect.modulate.a = 0.0
+	#if is_buyout:
+	#	reforged_texture_rect.modulate.a = 0.5
+
+	rarity_texture_rect.texture = rarity_texture
+
+	default_rarity_color = Color.WHITE
+
+	hue_texture = ItemRarity.get_hue_texture(item.rarity)
+	hue_strength = ItemRarity.get_hue_strength(item.rarity)
+
+
+	shine_alpha = ItemRarity.get_shine_alpha(item.rarity)
 
 
 	if item.has_transformer_stat():
 		set_item_texture_rect_gray_scale_overlay(item.transform_stat.color)
 
 
+	set_item_texture_rect_modulate(Color.WHITE)
+	set_item_texture_rect_wobble(0.0)
+	base_saturation = 1.0
+	default_alpha = 1.0
+>>>>>>> ascension_banned_items_buyout
+
+	if item.is_phantom:
+		set_item_texture_rect_modulate(Color.CYAN)
+		set_item_texture_rect_wobble(1.7)
+		default_alpha = 0.75
+
+<<<<<<< HEAD
+	if item.has_transformer_stat():
+		set_item_texture_rect_gray_scale_overlay(item.transform_stat.color)
+=======
+	if item.is_reforge:
+		set_item_texture_rect_modulate(Color.LIGHT_BLUE)
+		set_item_texture_rect_wobble(1.7)
+		base_saturation = 0.25
+		default_alpha = 0.75
+>>>>>>> ascension_banned_items_buyout
+
+	if is_banish:
+		set_item_texture_rect_modulate(Color.PALE_VIOLET_RED)
+		set_item_texture_rect_wobble(1.7)
+		base_saturation = 0.25
+		default_alpha = 0.75
+		
+	if is_buyout:
+		set_item_texture_rect_modulate(Color.DARK_SEA_GREEN)
+		set_rarity_texture_rect_modulate(Color.DARK_SEA_GREEN)
+		set_item_texture_rect_wobble(2)
+		base_saturation = 0.25
+		default_alpha = 0.75
+
+<<<<<<< HEAD
 	set_item_texture_rect_modulate(Color.WHITE)
 	set_item_texture_rect_wobble(0.0)
 	base_saturation = 1.0
@@ -176,6 +243,8 @@ func apply_data(item_texture_rect_data: ItemTextureRectData):
 		base_saturation = 0.25
 		default_alpha = 0.75
 
+=======
+>>>>>>> ascension_banned_items_buyout
 	update_visibility()
 
 
