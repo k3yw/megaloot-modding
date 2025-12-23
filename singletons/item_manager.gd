@@ -101,11 +101,12 @@ func process_press() -> void :
 		if not hovered_slot == Empty.slot:
 			drag_item(hovered_slot)
 			return
-
+	
 	if is_instance_valid(dragged_item_slot):
+		var dragged_res = dragged_item_slot.item_container.resource
 		if hovered_slot.item_container.resource != ItemContainerResources.BUILD:
 			try_to_swap_items(hovered_slot, dragged_item_slot)
-		elif dragged_item_slot.item_container.resource == ItemContainerResources.LIBRARY:
+		elif dragged_res == ItemContainerResources.LIBRARY or dragged_res == ItemContainerResources.BUILD:
 			try_to_swap_items(hovered_slot, dragged_item_slot)
 
 	discard_dragged_item()
