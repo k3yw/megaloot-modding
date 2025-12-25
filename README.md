@@ -1,0 +1,1 @@
+This is the example of a working boilerplate which you can export as .zip, upload to workshop and see it's working on game startup
