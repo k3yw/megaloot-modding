@@ -14,6 +14,13 @@ var local_player: Player = null
 
 
 
+func _init() -> void :
+    if Engine.is_editor_hint():
+        return
+
+    self_modulate.a = 0.0
+    visible = false
+
 
 func _ready() -> void :
     tree_exiting.connect( func():

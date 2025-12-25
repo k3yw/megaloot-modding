@@ -1,18 +1,18 @@
 GDRE Tools v2.3.2
 Windows 10.0.26200, NVIDIA GeForce RTX 5090, vulkan
 Opening file: G:\SteamLibrary\steamapps\common\Megaloot\Megaloot.pck
-Loaded 1587 imported files
+Loaded 1620 imported files
 Detected Engine Version: 4.4.1
 Detected Bytecode Revision: 4.3.0-stable (77af6ca)
-Verified 4060 files, no errors detected!
-Extracted 4060 files, no errors detected!
+Verified 4134 files, no errors detected!
+Extracted 4134 files, no errors detected!
 Recreating plugin configs...
 No plugin download url found for plugin godotsteam_server, hashes: f695f6d19574b63eca171d18c6b9fc6f
 No plugin download url found for plugin godotsteam, hashes: 35c5504bfbdded741feca0fb040bbf92
 
 Exporting scenes...
 Forcing single-threaded scene export...
-*** Exporting 16 scenes took 0.22s
+*** Exporting 16 scenes took 0.23s
 
 Saved project config.
 
@@ -20,10 +20,10 @@ Saved project config.
 ********************************EXPORT REPORT********************************
 
 Totals:                                 
-Decompiled scripts:                     641
+Decompiled scripts:                     674
 Failed scripts:                         0
-Imported resources for export session:  1587
-Successfully converted:                 1587
+Imported resources for export session:  1620
+Successfully converted:                 1620
 Lossy:                                  12
 Rewrote metadata:                       928
 Non-importable conversions:             16
@@ -37,13 +37,13 @@ The following files were converted and saved to a non-original path, but did not
 These files will not be re-imported when loading the project.
 res://.godot/imported/stone_01.fbx-68ab1889ba78c945890f982b7a4d7471.scn to res://.assets/assets/models/stone_01.glb
 res://.godot/imported/stone_03.fbx-480bdf7799ea4b3d7fbb0ad79ec74ab6.scn to res://.assets/assets/models/stone_03.glb
+res://.godot/imported/stone_04.fbx-447543c497dac8206d0e3c9c6edd5420.scn to res://.assets/assets/models/stone_04.glb
 res://.godot/imported/tree_01.fbx-99b0a1b4083acaa73a309d325be2f0c8.scn to res://.assets/assets/models/tree_01.glb
 res://.godot/imported/tree_02.fbx-b11d4fc76de7b9914a7fb68914fb4974.scn to res://.assets/assets/models/tree_02.glb
 res://.godot/imported/tree_03.fbx-4a950e05cc774286a282b17c605b0bc6.scn to res://.assets/assets/models/tree_03.glb
-res://.godot/imported/stone_02.fbx-cf0bafccf4edef76d85699c6c8b6e20d.scn to res://.assets/assets/models/stone_02.glb
-res://.godot/imported/stone_04.fbx-447543c497dac8206d0e3c9c6edd5420.scn to res://.assets/assets/models/stone_04.glb
-res://.godot/imported/tree_04.fbx-fdea806e79afb876f8244b5637d861e4.scn to res://.assets/assets/models/tree_04.glb
 res://.godot/imported/tree_05.fbx-952b6583f62a170b8c164c8df04251b9.scn to res://.assets/assets/models/tree_05.glb
+res://.godot/imported/stone_02.fbx-cf0bafccf4edef76d85699c6c8b6e20d.scn to res://.assets/assets/models/stone_02.glb
+res://.godot/imported/tree_04.fbx-fdea806e79afb876f8244b5637d861e4.scn to res://.assets/assets/models/tree_04.glb
 res://.godot/imported/tree_06.fbx-858a2eeb97f37ff8ead6d64b83f8ff6f.scn to res://.assets/assets/models/tree_06.glb
 res://.godot/imported/tree_07.fbx-3f1571075cded6f5f83dab215eebbbde.scn to res://.assets/assets/models/tree_07.glb
 res://.godot/imported/vegetation_01.fbx-d33ea410b652352a436dc6708b6575ca.scn to res://.assets/assets/models/vegetation_01.glb

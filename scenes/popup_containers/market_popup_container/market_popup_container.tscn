@@ -175,9 +175,8 @@ close_button = NodePath("MarginContainer/MarginContainer2/CloseButton")
 
 [node name="MarginContainer" parent="." index="0"]
 offset_left = 147.0
-offset_top = 57.0
 offset_right = 492.0
-offset_bottom = 302.0
+offset_bottom = 329.0
 
 [node name="GenericPanel" parent="MarginContainer" index="0"]
 material = SubResource("ShaderMaterial_d54yk")

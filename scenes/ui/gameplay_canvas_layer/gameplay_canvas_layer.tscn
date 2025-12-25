@@ -1825,12 +1825,18 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="MarketPopupContainer" parent="." instance=ExtResource("35_yq6d1")]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
 position = Vector2(0, -40)
 
 [node name="LootStashPopupContainer" parent="." instance=ExtResource("37_edoip")]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
 position = Vector2(478, -17)
 
 [node name="ChatPopupContainer" parent="." instance=ExtResource("38_fql8v")]
+visible = false
+self_modulate = Color(1, 1, 1, 0)
 position = Vector2(478, -17)
 
 [node name="WaitForConnectionContainer" type="MarginContainer" parent="."]

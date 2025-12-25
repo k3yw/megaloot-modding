@@ -31,6 +31,8 @@ config/icon="res://assets/application/icon_64.png"
 
 ISteam="*res://singletons/i_steam.gd"
 Workshop="*res://singletons/workshop.gd"
+ModLoaderStore="*res://addons/mod_loader/mod_loader_store.gd"
+ModLoader="*res://addons/mod_loader/mod_loader.gd"
 States="*res://singletons/states.gd"
 GDSync="*res://addons/GD-Sync/MultiplayerClient.gd"
 NodeManager="*res://scenes/managers/node_manager/node_manager.tscn"
@@ -102,6 +104,8 @@ folder_colors={
 "res://addons/": "gray",
 "res://assets/": "purple",
 "res://classes/": "green",
+"res://mods-unpacked/": "pink",
+"res://mods/": "pink",
 "res://resources/": "orange",
 "res://scenes/": "blue",
 "res://singletons/": "yellow"
