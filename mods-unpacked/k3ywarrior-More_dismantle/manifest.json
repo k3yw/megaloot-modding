@@ -1,0 +1,30 @@
+{
+	"dependencies": [],
+	"description": "Makes dismantle floor more often to appear, starts by default at 10th floor and repeats every 5th floor instead of every 25th\n\n...Also makes you accumulate +1 diamonds from chests (multiplicative)",
+	"extra": {
+		"godot": {
+			"authors": [
+				"k3ywarrior"
+			],
+			"compatible_game_version": [
+				"0.0.1"
+			],
+			"compatible_mod_loader_version": [
+				"7.0.0"
+			],
+			"config_schema": {
+
+			},
+			"description_rich": "",
+			"image": null,
+			"incompatibilities": [],
+			"load_before": [],
+			"optional_dependencies": [],
+			"tags": []
+		}
+	},
+	"name": "More_dismantle",
+	"namespace": "k3ywarrior",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/k3yw/megaloot-modding/tree/modloader_more_dismantle"
+}
