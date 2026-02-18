@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://c63trsdc50227"
+
+[deps]
+
+files=["res://assets/translations/tchinese/main.中文 (繁體).translation"]
+
+source_file="res://assets/translations/tchinese/main.csv"
+dest_files=["res://assets/translations/tchinese/main.中文 (繁體).translation"]
+
+[params]
+
+compress=true
+delimiter=0
