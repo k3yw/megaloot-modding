@@ -24,7 +24,7 @@ func _ready() -> void :
             update()
         )
 
-    connection_type_container.visible = ISteam.is_active()
+    connection_type_container.visible = Platform.is_active()
 
 
 func _process(_delta: float) -> void :

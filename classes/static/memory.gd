@@ -720,34 +720,34 @@ func get_music_loop_track() -> Music:
         music.stream = preload("res://assets/music/gameplay/floors_61_to_x_loop.ogg")
         return music
 
-    if range(31, 61).has(floor_number + 1):
+    if range(41, 61).has(floor_number + 1):
         music.stream = preload("res://assets/music/gameplay/floors_31_to_60_loop.ogg")
         return music
 
-    if range(21, 31).has(floor_number + 1):
+    if range(31, 41).has(floor_number + 1):
         music.stream = preload("res://assets/music/gameplay/floors_21_to_30_loop.ogg")
         return music
 
-    if range(16, 21).has(floor_number + 1):
+    if range(26, 31).has(floor_number + 1):
         music.stream = preload("res://assets/music/gameplay/floors_16_to_20_loop.ogg")
         return music
 
-    if range(11, 16).has(floor_number + 1):
+    if range(19, 26).has(floor_number + 1):
         music.stream = preload("res://assets/music/gameplay/floors_11_to_15_loop.ogg")
         return music
 
 
     match floor_number + 1:
-        1: music.stream = preload("res://assets/music/gameplay/floor_1_loop.ogg")
-        2: music.stream = preload("res://assets/music/gameplay/floor_2_loop.ogg")
-        3: music.stream = preload("res://assets/music/gameplay/floor_3_loop.ogg")
-        4: music.stream = preload("res://assets/music/gameplay/floor_4_loop.ogg")
-        5: music.stream = preload("res://assets/music/gameplay/floor_5_loop.ogg")
-        6: music.stream = preload("res://assets/music/gameplay/floor_6_loop.ogg")
-        7: music.stream = preload("res://assets/music/gameplay/floor_7_loop.ogg")
-        8: music.stream = preload("res://assets/music/gameplay/floor_8_loop.ogg")
-        9: music.stream = preload("res://assets/music/gameplay/floor_9_loop.ogg")
-        10: music.stream = preload("res://assets/music/gameplay/floor_10_loop.ogg")
+        1, 2: music.stream = preload("res://assets/music/gameplay/floor_1_loop.ogg")
+        3, 4: music.stream = preload("res://assets/music/gameplay/floor_2_loop.ogg")
+        5, 6: music.stream = preload("res://assets/music/gameplay/floor_3_loop.ogg")
+        7, 8: music.stream = preload("res://assets/music/gameplay/floor_4_loop.ogg")
+        9, 10: music.stream = preload("res://assets/music/gameplay/floor_5_loop.ogg")
+        11, 12: music.stream = preload("res://assets/music/gameplay/floor_6_loop.ogg")
+        12, 13: music.stream = preload("res://assets/music/gameplay/floor_7_loop.ogg")
+        13, 14: music.stream = preload("res://assets/music/gameplay/floor_8_loop.ogg")
+        15, 16: music.stream = preload("res://assets/music/gameplay/floor_9_loop.ogg")
+        17, 18: music.stream = preload("res://assets/music/gameplay/floor_10_loop.ogg")
 
 
     return music

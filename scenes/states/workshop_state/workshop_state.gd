@@ -36,7 +36,7 @@ func _ready() -> void :
             update_workshop_item(int(workshop_id_line_edit.text), false)
             return
 
-        Steam.createItem(ISteam.get_app_id(), Steam.WORKSHOP_FILE_TYPE_COMMUNITY)
+        Steam.createItem(Platform.get_app_id(), Steam.WORKSHOP_FILE_TYPE_COMMUNITY)
         )
 
     for active_mod in Workshop.active_mods:
@@ -79,7 +79,7 @@ func _on_item_updated(result: int, need_to_accept_tos: bool) -> void :
 
 func update_workshop_item(file_id: int, new: bool) -> void :
     print("Uploading workshop item with ID %s..." % file_id)
-    var update_handle = Steam.startItemUpdate(ISteam.get_app_id(), file_id)
+    var update_handle = Steam.startItemUpdate(Platform.get_app_id(), file_id)
     var file_name: String = name_line_edit.text
 
     if file_name.is_empty() and new:

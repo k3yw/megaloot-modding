@@ -44,11 +44,11 @@ func _ready() -> void :
     PopupManager.lobby_join_popup.join_button.pressed.connect(_on_lobby_join_button_pressed)
     tree_exiting.connect( func(): leave_lobby())
 
-    if ISteam.is_active():
-        ISteam.steam.lobby_chat_update.connect(_on_lobby_chat_update)
-        ISteam.steam.lobby_data_update.connect(_on_lobby_data_update)
-        ISteam.steam.lobby_match_list.connect(_on_lobby_match_list)
-        ISteam.steam.lobby_joined.connect(_on_steam_lobby_joined)
+    if Platform.is_active():
+        Platform.steam.lobby_chat_update.connect(_on_lobby_chat_update)
+        Platform.steam.lobby_data_update.connect(_on_lobby_data_update)
+        Platform.steam.lobby_match_list.connect(_on_lobby_match_list)
+        Platform.steam.lobby_joined.connect(_on_steam_lobby_joined)
 
 
     StateManager.state_changed.connect(_on_state_changed)
@@ -128,12 +128,12 @@ func _on_lobby_chat_update(lobby_id: int, changed_id: int, making_change_id: int
         return
 
     match chat_state:
-        ISteam.steam.CHAT_MEMBER_STATE_CHANGE_ENTERED: process_client_joined(changed_id)
+        Platform.steam.CHAT_MEMBER_STATE_CHANGE_ENTERED: process_client_joined(changed_id)
 
 
 
 func _on_lobby_data_update(_lobby: int, _member: int, _success: bool) -> void :
-    var game_mode: String = ISteam.steam.getLobbyData(data.steam_lobby_id, "game_mode")
+    var game_mode: String = Platform.steam.getLobbyData(data.steam_lobby_id, "game_mode")
     if game_mode.is_empty():
         return
     data.game_mode = game_mode
@@ -186,7 +186,7 @@ func _on_state_changed() -> void :
                     print("Joining Steam Lobby...")
                     Lobby.data.steam_lobby_id = selected_lobby["SteamID"]
                     Lobby.data.type = Lobby.Type.STEAM
-                    ISteam.steam.joinLobby(selected_lobby["SteamID"])
+                    Platform.steam.joinLobby(selected_lobby["SteamID"])
                     return
 
                 if selected_lobby["Name"].is_empty():
@@ -251,20 +251,20 @@ func _on_lobby_tag_changed(key: String, value) -> void :
 func _on_lobby_match_list(lobbies: Array) -> void :
     steam_lobbies.clear()
     for lobby in lobbies:
-        ISteam.steam.requestLobbyData(lobby)
+        Platform.steam.requestLobbyData(lobby)
 
         var lobby_data: Dictionary = {
-            "SteamID": int(ISteam.steam.getLobbyData(lobby, "steam_id")), 
-            "PlayerLimit": ISteam.steam.getLobbyMemberLimit(lobby), 
-            "PlayerCount": ISteam.steam.getNumLobbyMembers(lobby), 
+            "SteamID": int(Platform.steam.getLobbyData(lobby, "steam_id")), 
+            "PlayerLimit": Platform.steam.getLobbyMemberLimit(lobby), 
+            "PlayerCount": Platform.steam.getNumLobbyMembers(lobby), 
             "HasPassword": false, 
             "Name": str(lobby), 
 
             "Tags": {
-                "partner_ids": PackedStringArray(JSON.parse_string(ISteam.steam.getLobbyData(lobby, "partner_ids"))), 
-                "version": ISteam.steam.getLobbyData(lobby, "version"), 
-                "game_mode": ISteam.steam.getLobbyData(lobby, "game_mode"), 
-                "name": ISteam.steam.getLobbyData(lobby, "name"), 
+                "partner_ids": PackedStringArray(JSON.parse_string(Platform.steam.getLobbyData(lobby, "partner_ids"))), 
+                "version": Platform.steam.getLobbyData(lobby, "version"), 
+                "game_mode": Platform.steam.getLobbyData(lobby, "game_mode"), 
+                "name": Platform.steam.getLobbyData(lobby, "name"), 
             }
         }
 
@@ -298,18 +298,18 @@ func _on_steam_lobby_joined(lobby: int, permissions: int, locked: bool, response
 
     print("Succesfully joined steam lobby: ", lobby, ", ", permissions, ", ", locked, ", ", response)
 
-    for idx in ISteam.steam.getNumLobbyMembers(Lobby.data.steam_lobby_id):
-        var memeber: int = ISteam.steam.getLobbyMemberByIndex(Lobby.data.steam_lobby_id, idx)
+    for idx in Platform.steam.getNumLobbyMembers(Lobby.data.steam_lobby_id):
+        var memeber: int = Platform.steam.getLobbyMemberByIndex(Lobby.data.steam_lobby_id, idx)
         print("Accepting P2P session with: ", memeber)
-        ISteam.steam.acceptP2PSessionWithUser(memeber)
+        Platform.steam.acceptP2PSessionWithUser(memeber)
 
         Net.call_func(
             receive_player_data, 
             [
-            ISteam.steam.getSteamID(), 
+            Platform.steam.getSteamID(), 
             SaveSystem.get_data(create_own_player_data())
             ], 
-            [ISteam.steam.getLobbyOwner(lobby)]
+            [Platform.steam.getLobbyOwner(lobby)]
         )
 
     joined.emit(str(lobby))
@@ -404,7 +404,7 @@ func process_client_joined(client_id: int) -> void :
     if is_lobby_owner():
         if kick_cooldowns.has(client_id):
             match data.type:
-                Type.STEAM: ISteam.steam.setLobbyMemberData(client_id, "kicked", "1")
+                Type.STEAM: Platform.steam.setLobbyMemberData(client_id, "kicked", "1")
                 Type.GD_SYNC: GDSync.lobby_kick_client(client_id)
             return
 
@@ -449,8 +449,8 @@ func init_lobby_refresh_process() -> void :
     while true:
         GDSync.get_public_lobbies()
 
-        ISteam.steam.addRequestLobbyListDistanceFilter(ISteam.steam.LOBBY_DISTANCE_FILTER_WORLDWIDE)
-        ISteam.steam.requestLobbyList()
+        Platform.steam.addRequestLobbyListDistanceFilter(Platform.steam.LOBBY_DISTANCE_FILTER_WORLDWIDE)
+        Platform.steam.requestLobbyList()
 
         await get_tree().create_timer(5.0).timeout
 
@@ -527,20 +527,20 @@ func create_lobby(forced: bool = false, type: Type = Type.GD_SYNC) -> void :
 
         Type.STEAM:
             print("Creating Steam lobby, max players: ", max_players, " : ", partner_ids)
-            var lobby_type = ISteam.steam.LOBBY_TYPE_FRIENDS_ONLY
+            var lobby_type = Platform.steam.LOBBY_TYPE_FRIENDS_ONLY
             if is_public:
-                lobby_type = ISteam.steam.LOBBY_TYPE_PUBLIC
-            ISteam.steam.createLobby(lobby_type, max_players)
+                lobby_type = Platform.steam.LOBBY_TYPE_PUBLIC
+            Platform.steam.createLobby(lobby_type, max_players)
 
-            ISteam.steam.lobby_created.connect( func(connect: int, lobby_id: int):
+            Platform.steam.lobby_created.connect( func(connect: int, lobby_id: int):
                 if not data.type == Type.STEAM:
                     return
-                ISteam.steam.setLobbyData(lobby_id, "version", System.get_version())
-                ISteam.steam.setLobbyData(lobby_id, "game_mode", data.game_mode)
-                ISteam.steam.setLobbyData(lobby_id, "partner_ids", str(partner_ids))
+                Platform.steam.setLobbyData(lobby_id, "version", System.get_version())
+                Platform.steam.setLobbyData(lobby_id, "game_mode", data.game_mode)
+                Platform.steam.setLobbyData(lobby_id, "partner_ids", str(partner_ids))
 
-                ISteam.steam.setLobbyData(lobby_id, "steam_id", str(lobby_id))
-                ISteam.steam.setLobbyData(lobby_id, "name", lobby_name)
+                Platform.steam.setLobbyData(lobby_id, "steam_id", str(lobby_id))
+                Platform.steam.setLobbyData(lobby_id, "name", lobby_name)
                 data.steam_lobby_id = lobby_id
 
                 _on_lobby_created(lobby_name)
@@ -782,7 +782,7 @@ func remove_player(client_id: int) -> void :
 func get_client_id() -> int:
     match data.type:
         Type.GD_SYNC: return GDSync.get_client_id()
-        Type.STEAM: return ISteam.steam.getSteamID()
+        Type.STEAM: return Platform.steam.getSteamID()
         Type.MANUAL: return multiplayer.get_unique_id()
 
     return -1
@@ -792,7 +792,7 @@ func get_client_id() -> int:
 func get_host() -> int:
     match data.type:
         Type.GD_SYNC: return GDSync.get_host()
-        Type.STEAM: return ISteam.steam.getLobbyOwner(data.steam_lobby_id)
+        Type.STEAM: return Platform.steam.getLobbyOwner(data.steam_lobby_id)
         Type.MANUAL: return 1
 
     return 0
@@ -810,7 +810,7 @@ func is_lobby_owner() -> bool:
             return GDSync.is_host()
 
         Type.STEAM:
-            return ISteam.steam.getLobbyOwner(data.steam_lobby_id) == ISteam.steam.getSteamID()
+            return Platform.steam.getLobbyOwner(data.steam_lobby_id) == Platform.steam.getSteamID()
 
         Type.MANUAL:
             return multiplayer.is_server()
@@ -822,7 +822,7 @@ func is_lobby_owner() -> bool:
 func get_lobby_player_count() -> int:
     match data.type:
         Type.GD_SYNC: return maxi(1, GDSync.lobby_get_player_count())
-        Type.STEAM: return maxi(1, ISteam.steam.getNumLobbyMembers(data.steam_lobby_id))
+        Type.STEAM: return maxi(1, Platform.steam.getNumLobbyMembers(data.steam_lobby_id))
         Type.MANUAL: return multiplayer.get_peers().size() + 1
 
     return -1
@@ -831,7 +831,7 @@ func get_lobby_player_count() -> int:
 func get_max_players() -> int:
     match data.type:
         Type.GD_SYNC: return maxi(1, GDSync.lobby_get_player_limit())
-        Type.STEAM: return maxi(1, ISteam.steam.getLobbyMemberLimit(data.steam_lobby_id))
+        Type.STEAM: return maxi(1, Platform.steam.getLobbyMemberLimit(data.steam_lobby_id))
         Type.MANUAL: return data.max_players
 
     return -1
@@ -869,7 +869,7 @@ func leave_lobby() -> void :
 
     match data.type:
         Type.GD_SYNC: GDSync.lobby_leave()
-        Type.STEAM: ISteam.steam.leaveLobby(data.steam_lobby_id)
+        Type.STEAM: Platform.steam.leaveLobby(data.steam_lobby_id)
         Type.MANUAL:
             multiplayer.multiplayer_peer = OfflineMultiplayerPeer.new()
             multiplayer.multiplayer_peer.close()

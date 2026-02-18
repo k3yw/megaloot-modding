@@ -1,5 +1,7 @@
 extends Node
 
+const TO_LOAD_DIR: String = "res://to_load/"
+
 var published_items: Array
 
 var page_number: int = 1
@@ -39,6 +41,39 @@ func _init() -> void :
                 file_name = dir.get_next()
 
 
+    for file_name in File.get_file_paths(TO_LOAD_DIR):
+        if try_to_load_file(TO_LOAD_DIR + file_name):
+            print("loaded: " + file_name)
+            continue
+
+        print("failed to load: " + file_name)
+
+
+
+
+func try_to_load_file(file_path: String) -> bool:
+    var file = null
+
+    match file_path.get_extension():
+        ".gd":
+            file = (load(file_path) as GDScript).new()
+            if is_instance_valid(file):
+                return true
+
+        ".tscn":
+            file = (load(file_path) as PackedScene).instantiate()
+            if is_instance_valid(file):
+                return true
+
+
+    file = load(file_path)
+
+    if is_instance_valid(file):
+        return true
+
+    return false
+
+
 
 
 func _on_item_downloaded(result: int, file_id: int, app_id: int) -> void :
@@ -59,7 +94,7 @@ func _on_query_completed(_p_query_handler: int, p_result: int, p_results_returne
 
 func get_published_items(p_page: int = 1, p_only_ids: bool = false) -> void :
     var user_id: int = Steam.getSteamID()
-    var app_id: int = ISteam.get_app_id()
+    var app_id: int = Platform.get_app_id()
     var list: int = Steam.USER_UGC_LIST_PUBLISHED
     var type: int = Steam.WORKSHOP_FILE_TYPE_COMMUNITY
     var sort: int = Steam.USER_UGC_LIST_SORT_ORDER_CREATION_ORDER_DESC

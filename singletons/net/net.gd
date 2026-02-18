@@ -33,9 +33,9 @@ class SpeedrunAuth extends Object:
 func _ready() -> void :
     process_mode = ProcessMode.PROCESS_MODE_ALWAYS
 
-    if ISteam.is_active():
-        ISteam.steam.p2p_session_connect_fail.connect(_on_p2p_session_connect_fail)
-        ISteam.steam.p2p_session_request.connect(_on_p2p_session_request)
+    if Platform.is_active():
+        Platform.steam.p2p_session_connect_fail.connect(_on_p2p_session_connect_fail)
+        Platform.steam.p2p_session_request.connect(_on_p2p_session_request)
 
     GDSync.connection_failed.connect(_on_gd_sync_connection_failed)
     GDSync.disconnected.connect(_on_gd_sync_disconnected)
@@ -61,10 +61,10 @@ func _on_p2p_session_request(remote_steam_id: int) -> void :
     if Lobby.data.steam_lobby_id == -1:
         return
 
-    for idx in ISteam.steam.getNumLobbyMembers(Lobby.data.steam_lobby_id):
-        var memeber: int = ISteam.steam.getLobbyMemberByIndex(Lobby.data.steam_lobby_id, idx)
+    for idx in Platform.steam.getNumLobbyMembers(Lobby.data.steam_lobby_id):
+        var memeber: int = Platform.steam.getLobbyMemberByIndex(Lobby.data.steam_lobby_id, idx)
         if memeber == remote_steam_id:
-            ISteam.steam.acceptP2PSessionWithUser(remote_steam_id)
+            Platform.steam.acceptP2PSessionWithUser(remote_steam_id)
             print("Accepting P2P session with: ", memeber)
 
 
@@ -171,12 +171,12 @@ func call_func(callable: Callable, data: Array, peers: PackedInt64Array = []) ->
 
             Lobby.Type.STEAM:
                 if peers.is_empty():
-                    for peer_idx in ISteam.steam.getNumLobbyMembers(Lobby.data.steam_lobby_id):
-                        var memeber: int = ISteam.steam.getLobbyMemberByIndex(Lobby.data.steam_lobby_id, peer_idx)
-                        ISteam.steam.sendP2PPacket(memeber, packet_bytes, ISteam.steam.P2P_SEND_RELIABLE)
+                    for peer_idx in Platform.steam.getNumLobbyMembers(Lobby.data.steam_lobby_id):
+                        var memeber: int = Platform.steam.getLobbyMemberByIndex(Lobby.data.steam_lobby_id, peer_idx)
+                        Platform.steam.sendP2PPacket(memeber, packet_bytes, Platform.steam.P2P_SEND_RELIABLE)
 
                 for peer in peers:
-                    ISteam.steam.sendP2PPacket(peer, packet_bytes, ISteam.steam.P2P_SEND_RELIABLE)
+                    Platform.steam.sendP2PPacket(peer, packet_bytes, Platform.steam.P2P_SEND_RELIABLE)
 
 
             Lobby.Type.MANUAL:
@@ -273,13 +273,13 @@ func _on_ping_request_timer_timeout() -> void :
 
 
 func _process(_delta: float) -> void :
-    if not ISteam.is_active():
+    if not Platform.is_active():
         return
 
-    if not ISteam.steam.loggedOn():
+    if not Platform.steam.loggedOn():
         return
 
-    ISteam.steam.run_callbacks()
+    Platform.steam.run_callbacks()
 
     if not Lobby.data.steam_lobby_id == -1:
         read_all_p2p_packets()
@@ -287,20 +287,20 @@ func _process(_delta: float) -> void :
 
 
 func read_all_p2p_packets() -> void :
-    var packet_size: int = ISteam.steam.getAvailableP2PPacketSize(0)
+    var packet_size: int = Platform.steam.getAvailableP2PPacketSize(0)
 
     while packet_size > 0:
-        var packet: Dictionary = ISteam.steam.readP2PPacket(packet_size, 0)
+        var packet: Dictionary = Platform.steam.readP2PPacket(packet_size, 0)
 
         if packet.is_empty() or packet == null:
             continue
 
         var packet_sender: int = packet["remote_steam_id"]
-        if packet_sender == ISteam.steam.getSteamID():
-            packet_size = ISteam.steam.getAvailableP2PPacketSize(0)
+        if packet_sender == Platform.steam.getSteamID():
+            packet_size = Platform.steam.getAvailableP2PPacketSize(0)
             continue
 
         var packet_code: PackedByteArray = packet["data"]
         receive_func(packet_code)
 
-        packet_size = ISteam.steam.getAvailableP2PPacketSize(0)
+        packet_size = Platform.steam.getAvailableP2PPacketSize(0)

@@ -29,8 +29,10 @@ config/icon="res://assets/application/icon_64.png"
 
 [autoload]
 
-ISteam="*res://singletons/i_steam.gd"
+Platform="*res://singletons/platform.gd"
 Workshop="*res://singletons/workshop.gd"
+ModLoaderStore="*res://addons/mod_loader/mod_loader_store.gd"
+ModLoader="*res://addons/mod_loader/mod_loader.gd"
 States="*res://singletons/states.gd"
 GDSync="*res://addons/GD-Sync/MultiplayerClient.gd"
 NodeManager="*res://scenes/managers/node_manager/node_manager.tscn"
@@ -71,6 +73,16 @@ RNGManager="*res://singletons/rng_manager.gd"
 Leaderboards="*res://singletons/leaderboards.gd"
 HTTP="*res://singletons/http.gd"
 Lobby="*res://singletons/lobby.gd"
+EOSGRuntime="*res://addons/epic-online-services-godot/runtime.gd"
+HPlatform="*res://addons/epic-online-services-godot/heos/hplatform.gd"
+HAuth="*res://addons/epic-online-services-godot/heos/hauth.gd"
+HAchievements="*res://addons/epic-online-services-godot/heos/hachievements.gd"
+HFriends="*res://addons/epic-online-services-godot/heos/hfriends.gd"
+HStats="*res://addons/epic-online-services-godot/heos/hstats.gd"
+HLeaderboards="*res://addons/epic-online-services-godot/heos/hleaderboards.gd"
+HLobbies="*res://addons/epic-online-services-godot/heos/hlobbies.gd"
+HP2P="*res://addons/epic-online-services-godot/heos/hp2p.gd"
+HSessions="*res://addons/epic-online-services-godot/heos/hsessions.gd"
 
 [debug]
 
@@ -94,7 +106,7 @@ export/convert_text_resources_to_binary=false
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/GD-Sync/plugin.cfg")
+enabled=PackedStringArray("res://addons/GD-Sync/plugin.cfg", "res://addons/epic-online-services-godot/plugin.cfg", "res://addons/mod_loader/_export_plugin/plugin.cfg")
 
 [file_customization]
 
@@ -102,9 +114,12 @@ folder_colors={
 "res://addons/": "gray",
 "res://assets/": "purple",
 "res://classes/": "green",
+"res://mods-unpacked/": "pink",
+"res://mods/": "pink",
 "res://resources/": "orange",
 "res://scenes/": "blue",
-"res://singletons/": "yellow"
+"res://singletons/": "yellow",
+"res://to_load/": "gray"
 }
 
 [filesystem]

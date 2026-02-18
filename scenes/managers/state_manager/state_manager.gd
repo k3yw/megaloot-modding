@@ -120,7 +120,7 @@ func create_library_state() -> LibraryState:
 
 
 func change_to_main_menu_state(sync_music: bool) -> void :
-    var main_menu_state: MainMenuState = preload("res://scenes/states/main_menu_state/main_menu_state.tscn").instantiate()
+    var main_menu_state: MainMenuState = States.MAIN_MENU_STATE.instantiate()
     main_menu_state.menu_item_emitter.item_content = Items.LIST.duplicate()
 
     main_menu_state.enter_the_tower_button.pressed.connect( func():
@@ -147,8 +147,8 @@ func change_to_main_menu_state(sync_music: bool) -> void :
 
     AudioManager.play_music(music)
 
-    ISteam.set_rich_presence("steam_display", "#StatusWithoutScore")
-    ISteam.set_rich_presence("gamestatus", "AtMainMenu")
+    Platform.set_rich_presence("steam_display", "#StatusWithoutScore")
+    Platform.set_rich_presence("gamestatus", "AtMainMenu")
 
 
 
@@ -454,9 +454,9 @@ func _change_to_gameplay_state(game_mode: String = Lobby.data.game_mode, id: Str
     screen_transition.animation_player.play("transition_end")
 
 
-    ISteam.set_rich_presence("steam_display", "#StatusWithScore")
-    ISteam.set_rich_presence("gamestatus", "Gameplay")
-    ISteam.update_rich_presence_floor(gameplay_state.memory.floor_number)
+    Platform.set_rich_presence("steam_display", "#StatusWithScore")
+    Platform.set_rich_presence("gamestatus", "Gameplay")
+    Platform.update_rich_presence_floor(gameplay_state.memory.floor_number)
 
 
 

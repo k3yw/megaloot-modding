@@ -1,0 +1,1231 @@
+language-name-text,Français
+leaderboard-progress-text,Vous avez surpassé {player-percentage-amount} des joueurs en atteignant l'étage {floor-record}
+leaderboard-progress-connection-failed-text,La connexion au classement a échoué. Vous avez atteint l'étage n° {floor-record}
+final-floor-reached-text,Dernier étage atteint
+ascension-level-text,Ascension {level}
+final-floor-text,Dernier étage
+new-journey-text,Nouvelle aventure
+select-save-slot-text,Sélectionner
+delete-save-slot-text,Supprimer
+update-text,Mettre à jour
+upload-text,Mettre en ligne
+death-message-title-text,Message de mort par {player-name}
+player-floor-record-text,Record d'étage de {player-name}
+view-steam-profile-text,Voir le profil Steam
+no-achievements-text,Aucun succès
+loading-file-text,Chargement
+saving-file-text,Sauvegarde
+proceed-text,Continuer
+join-lobby-text,Rejoindre
+enter-password-text,entrer le mot de passe
+enter-ip-text,entrer l'IP
+specialization-floor-text,S'active à l'étage {floor-number}
+convert-to-battle-stats-text,Convertir en stats de combat
+stat-per-kill-text,{stat} par élimination
+item-found-text,{item-name} trouvé
+doubles-own-stat-text,Double sa |{stat}
+victory-text,Victoire
+defeat-text,Défaite
+ascend-text,Ascension
+negative-flow-text,|{flow}| négatif; enlevez des ensembles d'objets
+cannot-be-dismantled-text,Démantèlement impossible
+waiting-for-dismantle-text,En attente de démantèlement
+request-to-dismantle-text,Demande de démantèlement
+battles-remaining-text,Combats restants
+current-battle-text,Bataille en cours
+last-battle-text,Dernière bataille
+gold-per-battle-text,Or par combat
+gold-per-kill-text,Or par élimination
+enemy-player-immunity-text,Subit {amount} % de dégâts en moins||\n||pendant le tour de {player-name}
+enemy-player-immunity-misc-text,Réduit de {amount} % par tour
+player-sent-an-item-text,{player-name} vous a envoyé {item-name}
+send-item-to-player-text,Envoyer l'objet
+burnout-description-text,Burnout : effets inactifs
+infuse-description-text,Confère les stats et les effets de l'objet||\n||pour cet étage
+infused-flow-info-text,imprégné ; ne coûte pas de |{flow-stat}
+infuse-text,Imprégner
+to-open-battle-log-text,Pour ouvrir le journal de combat
+to-unlock-stats-text,Pour débloquer les stats
+to-lock-stats-text,Pour bloquer les stats
+to-deselect-text,Pour désélectionner
+to-convert-text,Pour convertir
+to-select-text,Pour sélectionner
+to-toggle-text,Pour basculer
+to-unlock-text,Pour débloquer
+to-learn-text,Pour apprendre
+to-lock-text,Pour verrouiller
+to-consume-text,Pour consommer
+to-activate-text,Pour activer
+to-restore-text,Pour restaurer
+to-remove-text,Pour enlever
+to-banish-text,Pour bannir
+to-equip-text,Pour s'équiper
+to-swap-text,Pour échanger
+to-take-text,Pour prendre
+to-buy-text,Pour acheter
+silenced-text,Réduit au silence
+highest-text,Plus élevé
+cost-text,Coût
+diamond-reward-text,Obtenez un {diamond} supplémentaire tous les {floor} étages
+gold-start-text,Commencez avec +{amount} {gold}
+reforge-token-description-text,+{amount}% de chance que |{stat}| soit||\n||appliqué sur un objet reforgé
+item-multiplier-text,Multiplie cette stat par le nombre total d'objets |{item-set}| équipés
+specialization-info-text,Transforme |{item-set}| en |{specialization}|
+required-item-sets-text,Nécessite d'être équipé d'un objet de |{item-set}|
+required-stat-text,Requis |{stat}
+cant-move-during-battle-text,Déplacement impossible pendant le combat
+missing-item-socket-text,Manque de socket {socket-name}
+item-set-no-flow-text,|{item-set}| coûte 0 % |{flow}|
+item-set-limit-reached-text,Limite d'ensembles d'objets atteinte
+cant-equip-duplicates-text,Impossible d'équiper des doublons
+cannot-be-upgraded-text,Ne peut pas être amélioré
+unlearned-ability-text,Capacité non apprise
+learn-ability-text,Apprendre {ability}
+skip-stance-text,Passer : n'attaquez pas ce tour
+guard-stance-text,Garde : recevez {amount}% de dégâts en moins ce tour
+attack-on-activation-ability-text,attaque à l’activation
+reforged-item-stats-text,Statistiques de l'objet reforgé
+favorite-item-sets-text,Ensembles d'objets favoris
+market-item-sets-text,Ensembles d'objets du marché
+tinker-kit-item-name-text,Kit de bricolage
+battle-information-text,Informations de combat
+current-turn-text,Tour {turn-number}
+local-player-name-text,Vous
+dead-text,Mort
+battle-log-applied-status-effect-text,{character-1} a appliqué un effet à {character-2}
+battle-log-applied-status-on-self-text,{character} s'est appliqué un effet
+battle-log-received-damage-from-source-text,{character} a subi des dégâts de {source}
+battle-log-received-damage-text,{character} a subi des dégâts
+battle-log-hit-with-text,{character-1} a touché {character-2} avec {source}
+battle-log-activated-effect-text,{character} a activé un effet
+battle-log-parry-text,{character-1} a paré {character-2}
+battle-log-block-text,{character-1} a bloqué {character-2}
+battle-log-killed-text,{character-1} a éliminé {character-2}
+battle-log-steal-text,{character} a volé {source}
+battle-log-hit-text,{character-1} a touché {character-2}
+battle-log-cleanse-text,{character} s'est purifié
+battle-log-dodged-text,{character} a esquivé
+battle-log-healed-text,{character} s'est soigné
+overhealed-text,Soigné excessivement
+overheal-text,Soin excessif
+executed-text,Exécuté
+blocked-text,Bloqué
+debuff-immune-text,Immunisé aux effets négatifs
+failed-steal-text,Vol échoué
+steal-text,Vol
+escaped-text,A fui
+cleanse-text,Purifier
+inventory-full-text,Inventaire plein
+armor-break-text,Armure brisée !
+counter-attack-break-text,Contre-attaque !
+missing-mana-text,Mana manquant
+cleansed-text,Purifié
+heal-text,Soigner
+attack-text,Attaque
+enter-text,Entrer
+skip-text,Passer
+open-text,Ouvrir
+sell-all-text,Tout vendre
+close-text,Fermer
+demo-tower-completed-text,Tour de démo terminée
+grants-stat-consumable-text,Confère |{amount}| |{stat}| pour ce combat
+temp-stat-to-add-potion-description-text,Confère |{stat}| pour ce combat
+status-effect-potion-description-multiple-text,Confère {amount} charges de |{status-effect}
+status-effect-potion-description-single-text,Confère une charge de |{status-effect}
+potion-restores-text,Rend {amount} |{stat}
+potion-regenerates-text,Régénère {amount} |{stat}
+potion-repairs-text,Répare {amount}% de votre |{stat}
+refills-every-battle-potion-text,Se recharge à chaque combat
+stat-transform-text,Transforme |{stat-1}| en |{stat-2}
+banished-item-text,{item-name} banni
+reforged-item-text,{item-name} reforgé
+item-reforge-text,Reforge de {item-name}
+banish-description-text,Retire définitivement {item-name}|\n|de la tour
+unlock-requirements-description-text,Batailles requises pour débloquer :
+unlimited-amount-text,Illimité
+max-amount-text,Max : {amount}
+corrupted-fragment-text,Fragment corrompu
+specialization-text,Spécialisation
+unknown-enemy-text,Ennemi Inconnu
+unknown-item-text,Objet Inconnu
+passive-set-text,Ensemble passif
+empty-set-text,Ensemble Vide
+sell-for-text,Vendre pour
+level-up-text,Gain de niveau
+chapter-text,Chapitre
+abilities-text,Capacités
+ability-text,Capacité
+passives-text,Passifs
+passive-text,Passif
+rewards-text,Récompenses
+convert-text,Convertir
+upgrade-text,Améliorer
+command-list-text,commandes
+help-command-info-text,écrivez « {command} » pour obtenir de l'aide
+kick-command-info-text,{command} [player index]|\n|expulse le joueur du lobby|\n|exemple: {command} 1 (expulse le premier joueur après vous)
+end-game-text-text,Forgé dans la tour; votre âme s'est montrée digne.
+highest-floor-result-screen-text,Étage atteint : {floor-number}
+died-on-floor-text,A perdu à l'étage {floor-number}
+merchant-exclusive-text,Exclusivité du marchand
+upgrades-into-text,Améliore en :
+highest-floor-text,Étage atteint
+floor-number-text,Étage {number}
+not-refinable-text,Ne peut pas être perfectionné
+top-player-text,Meilleur joueur
+refinable-text,Peut être perfectionné
+deforge-text,Désassembler
+active-text,Actif
+floor-text,Étage
+split-text,Diviser
+elite-text,Élite
+gold-text,Or
+level-text,Niv
+set-text,Ensemble
+xp-text,Xp
+memories-button,souvenirs
+name-label,Nom
+lobbies-button,salons
+game-mode-label,Mode de jeu
+locked-label,Verrouillé
+players-label,Joueurs
+select-button,SÉLECTIONNER
+select-label,SÉLECTIONNER
+back-button,RETOUR
+button-label,BOUTON
+wishlist-on-steam!-label,Ajoutez le jeu à votre liste de souhaits Steam !
+enter-the-tower-button,ENTRER DANS LA TOUR
+library-button,BIBLIOTHÈQUE
+library-label,BIBLIOTHÈQUE
+workshop-button,ATELIER
+quit-button,QUITTER
+market-hover-name,Marché
+market-hover-description,<696969>de nouveaux objets sont ajoutés à chaque étage
+market-hover-bottom-hint,afficher les objets
+refresh-market-hover-name,RAFRAÎCHIR LE MARCHÉ
+refresh-market-hover-description,<696969>le prix est réinitialisé après chaque bataille
+sell-label,VENDRE
+split-label,DIVISER
+search-line-edit,Rechercher...
+current-battle-label,BATAILLE EN COURS
+turn-1-label,TOUR 1
+normal-battle-label,COMBAT NORMAL
+ping-hover-name,Latence
+ping-hover-description,
+10-label,
+open-button,OUVRIR
+loot-stash-hover-name,Coffre à butin
+loot-stash-hover-description,<696969>le butin excédentaire va ici
+button-button,BOUTON
+market-items-label,Objets du marché
+close-button,FERMER
+waiting-for-all-players-to-connect-label,Attente de connexion de tous les joueurs...
+floor-record-x-label,Record d'étage : x
+battle-log-button,JOURNAL DE COMBAT
+battle-log-label,JOURNAL DE COMBAT
+feedback-button,AVIS
+feedback-label,AVIS
+confirm-button,CONFIRMER
+overview-button,aperçu
+speedruns-button,speedruns
+submit-run-button,envoyer la partie
+version-label,Version :
+selection-label,sélection
+highest-floor-10-label,Étage atteint : 10
+top-player-label,MEILLEUR JOUEUR
+time-label,Chrono
+enter-password-line-edit,entrer le mot de passe...
+join-button,REJOINDRE
+password-label,Mot de passe
+connection-type-label,Type de connexion
+challenge-drop-down-selection,Défi
+pvp-no-achievements-drop-down-selection,PvP [Aucun succès]
+practice-no-achievements-drop-down-selection,Entraînement [Aucun succès]
+public-label,PUBLIC
+--credits--label,- Crédits -
+thanks-button,MERCI
+no-tutorial-label,Pas de tutoriel
+no-tutorial-info-label-label,Ce jeu considère que l’apprentissage doit se faire par|\n|l’expérimentation et la découverte; pas par l’instruction.
+proceed-button,CONTINUER
+items-button,objets
+bestiary-button,bestiaire
+synergies-button,synergies
+passives-button,passifs
+build-planner-label,Planificateur
+delete-label,SUPPRIMER
+build-1-label,BUILD 1
+blue-team-label,ÉQUIPE BLEUE
++-join-label,[+] REJOINDRE
+player-name-label,Nom du joueur
+select-adventurer-label,SÉLECTIONNER AVENTURIER
+red-team-label,ÉQUIPE ROUGE
+trials-label,ÉPREUVES
+configure-button,CONFIGURER
+0/4-label,0/4
+begin-button,COMMENCER
+begin-label,DÉMARRER
+restart-button,REDÉMARRER
+restart-label,REDÉMARRER
+resume-button,REPRENDRE
+resume-label,REPRENDRE
+options-button,OPTIONS
+save-&-exit-button,SAUVER ET QUITTER
+text-label,Texte
+controls-button,commandes
+video-button,vidéo
+audio-button,audio
+misc-button,divers
+primary-action-button,action principale
+key-label,clé
+?-label,
+listening-for-input-label,Appuyez sur une touche…
+ability-button,capacité
+skip-button,passer
+refresh-market-button,Actualiser le marché
+brightness-label,Luminosité
+contrast-label,Contraste
+window-mode-label,Mode Fenêtré :
+resolution-label,Résolution :
+v-sync-label,
+music-label,Musique
+sfx-label,Effets
+tooltip-lock-time-label,Durée d'affichage des infobulles
+language-label,Langue :
+chromatic-aberration-label,Aberration chromatique
+display-run-time-label,Afficher le chronomètre
+screen-shake-label,Secousse d'Écran
+scan-lines-label,Effet tube cathodique
+reset-to-defaults-button,PARAMÈTRES PAR DÉFAUT
+->-label,
+end-button,TERMINER
+enter-endless-button,ENTRER DANS LE MODE SANS FIN
+refresh-merchant-hover-name,ACTUALISER MARCHAND
+refresh-merchant-hover-description,<696969>propose de nouveaux objets
+upgrade-label,AMÉLIORER
+-button,
+stance-hover-name,Posture
+activate-endless-button,ACTIVER LE MODE SANS FIN
+refresh-mystic-trader-hover-name,ACTUALISER MARCHAND MYSTIQUE
+refresh-mystic-trader-hover-description,<696969>fait apparaître de nouveaux objets
+0/3-label,
+request-to-dismantle-button,DEMANDE DE DÉMANTÈLEMENT
+dismantle-button,DÉMANTÈLEMENT
+windowed-window-mode-name,Fenêtré
+borderless-window-mode-name,Sans bordure
+fullscreen-window-mode-name,Plein écran
+challenge-game-mode-name,Défi
+pvp-game-mode-name,PvP
+practice-game-mode-name,Entraînement
+-popup,
+counter-attack!-popup,Contre-attaque !
+lucky-attack-popup,Attaque chanceuse
+armor-break!-popup,Armure brisée !
+backstabbed-popup,Poignardé dans le dos
+dodged-popup,Esquivé
+parried-popup,Paré
+blocked-popup,Bloqué
+missed-popup,Raté
+helmet-socket-name,Casque
+chestplate-socket-name,Plastron
+leggings-socket-name,Jambières
+boots-socket-name,Bottes
+necklace-socket-name,Collier
+weapon-socket-name,Arme
+ring-socket-name,Anneau
+zefrot-item-name,Zefrot
+totem-of-greed-item-name,Totem de l'avarice
+steak-item-name,Steak
+ribbon-of-fortune-item-name,Ruban de la fortune
+poor-mans-path-item-name,Chemin du pauvre
+pallac-item-name,Pallac
+merchant-upgrade-item-name,Amélioration du marchand
+frokt-item-name,Frokt
+poor-mans-blade-item-name,Épée du pauvre
+wooden-shoes-item-name,Sabots en bois
+natures-gift-item-name,Don de la nature
+magical-stick-item-name,Bâton magique
+training-hammer-item-name,Marteau d'entraînement
+natures-collar-item-name,Torque de la nature
+poor-mans-helmet-item-name,Casque du pauvre
+training-axe-item-name,Hache d'entraînement
+wooden-plates-item-name,Armure en bois
+leather-boots-item-name,Bottes en cuir
+leather-helmet-item-name,Casque en cuir
+leather-pants-item-name,Pantalon en cuir
+leather-chestplate-item-name,Plastron en cuir
+training-sword-item-name,Épée d'entraînement
+insightus-item-name,Insightus
+amulet-of-life-item-name,Amulette de vie
+starborn-ring-item-name,Anneau météorique
+recruits-boots-item-name,Bottes de recrue
+keepsake-item-name,Souvenir
+recruits-hood-item-name,Capuche de recrue
+iron-dagger-item-name,Dague en fer
+hunters-boots-item-name,Bottes de chasseur
+hunters-hood-item-name,Capuche de chasseur
+recruits-pants-item-name,Pantalon de recrue
+chainmail-item-name,Cotte de mailles
+hunters-necklace-item-name,Collier de chasseur
+hunters-pants-item-name,Pantalon de chasseur
+recruits-cloak-item-name,Cape de recrue
+hunters-ring-item-name,Anneau de chasseur
+hunters-jerkin-item-name,Pourpoint de chasseur
+crystal-staff-item-name,Bâton de cristal
+vitality-ring-item-name,Anneau de vitalité
+ring-of-anger-item-name,Anneau de la colère
+zephyrons-tome-item-name,Tome de Zéphyron
+silver-ring-item-name,Anneau en argent
+marauders-helmet-item-name,Casque du maraudeur
+silver-sabatons-item-name,Solerets en argent
+silver-helmet-item-name,Casque en argent
+life-seeker-item-name,Cherche-vie
+silver-leggings-item-name,Jambières en argent
+zephyrons-magical-shoes-item-name,Chaussures magiques de Zéphyron
+silver-chestplate-item-name,Plastron en argent
+zephyrons-eye-item-name,Œil de Zéphyron
+bastolics-guardian-item-name,Gardien de Bastolic
+silver-sword-item-name,Épée en argent
+zephyrons-magical-ring-item-name,Anneau magique de Zéphyron
+bastolics-gauntlet-item-name,Gantelet de Bastolic
+zephyrons-magical-cloak-item-name,Cape magique de Zéphyron
+zephyrons-magical-cap-item-name,Chapeau magique de Zéphyron
+zephyrons-magical-staff-item-name,Bâton magique de Zéphyron
+believers-locket-item-name,Médaillon des croyants
+silver-axe-item-name,Hache en argent
+tome-of-arcanum-item-name,Tome d'Arcanum
+arcanum-hood-item-name,Capuche des Arcanes
+golden-dagger-item-name,Dague en or
+golden-sabatons-item-name,Solerets en or
+golden-helmet-item-name,Casque en or
+arcanum-shoes-item-name,Chaussures d'Arcanum
+golden-leggings-item-name,Jambières en or
+arcanum-robe-item-name,Robe d'Arcanum
+golden-chestplate-item-name,Plastron en or
+precious-ring-item-name,Anneau précieux
+magic-wand-item-name,Baguette magique
+golden-crown-item-name,Couronne en or
+golden-warden-item-name,Gardien en or
+greeds-grasp-item-name,Poigne de l'avarice
+golden-sword-item-name,Épée en or
+omni-ring-item-name,Omnibague
+darkwood-plates-item-name,Armure en bois sombre
+tome-of-attacks-item-name,Tome des Attaques
+warriors-sabatons-item-name,Solerets de guerrier
+hunger-blade-item-name,Lame de la faim
+warriors-helmet-item-name,Casque de guerrier
+famished-blade-item-name,Lame de famine
+unchained-gauntlet-item-name,Gantelet déchaîné
+blackthorn-sabatons-item-name,Solerets de Roncenoire
+warriors-leggings-item-name,Jambières de guerrier
+blackthorn-leggings-item-name,Jambières de Roncenoire
+warriors-chestplate-item-name,Plastron de guerrier
+warriors-war-hammer-item-name,Marteau de guerre de guerrier
+blackthorn-chestplate-item-name,Plastron de Roncenoire
+unchained-ring-item-name,Anneau déchaîné
+hy-sword-item-name,ÉpéeHy
+pantaloons-of-greatness-item-name,Pantalon de magnificence
+warriors-ring-item-name,Anneau de guerrier
+blackthorn-crown-item-name,Couronne de Roncenoire
+orions-core-item-name,Essence d'Orion
+orions-path-item-name,Traces d'Orion
+orions-destiny-item-name,Destin d'Orion
+orions-leggings-item-name,Jambières d'Orion
+orions-sanguine-salvation-item-name,Salut sanguin d'Orion
+orions-heart-item-name,Cœur d'Orion
+orions-rage-item-name,Rage d'Orion
+living-boots-item-name,Bottes vivantes
+living-helmet-item-name,Casque vivant
+living-leggings-item-name,Jambières vivantes
+living-chestplate-item-name,Plastron vivant
+berserkers-axe-item-name,Hache de berserker
+berserkers-helmet-item-name,Casque de Berserker
+eldrids-ring-item-name,Anneau d'Eldrid
+ring-of-power-item-name,Anneau de pouvoir
+silver-heart-item-name,Cœur d'Argent
+thunderiders-item-name,Bottes du tonnerre
+thunderhelm-item-name,Heaume du tonnerre
+royal-sabatons-item-name,Solerets royaux
+royal-helmet-item-name,Casque royal
+royal-leggings-item-name,Jambières royales
+thunderstriders-item-name,Jambières du tonnerre
+royal-chestplate-item-name,Plastron royal
+thundergrace-item-name,Grâce du tonnerre
+thunderblade-item-name,Lame du tonnerre
+thundervow-item-name,Vœu du tonnerre
+iron-eater-item-name,Mangefer
+tome-of-darkness-item-name,Tome des ténèbres
+witherscar-item-name,Flétrissure
+dark-magical-ring-item-name,Anneau de magie noire
+nighthorn-item-name,Roncenuit
+ashcrow-item-name,Cendrecorbeau
+dark-harness-item-name,Harnais noir
+alchemists-wisdom-item-name,Sagesse de l'alchimiste
+shadow-wisdom-item-name,Sagesse de l'ombre
+shadow-ring-item-name,Anneau de l'ombre
+shadow-piercer-item-name,Pointe de l'ombre
+demonic-sabatons-item-name,Solerets démoniaques
+shadow-cloak-item-name,Cape d'ombre
+shadow-echo-item-name,Écho de l'ombre
+demonic-helmet-item-name,Casque démoniaque
+demonic-axe-item-name,Hache démoniaque
+shadow-sentence-item-name,Sentence de l'ombre
+shadow-vortex-item-name,Vortex de l'ombre
+demonic-leggings-item-name,Jambières démoniaques
+demonic-claymore-item-name,Claymore démoniaque
+demonic-chestplate-item-name,Plastron démoniaque
+demonic-ring-item-name,Anneau démoniaque
+shard-of-power-item-name,Éclat de Pouvoir
+emperors-will-item-name,Volonté de l'Empereur
+wooden-crown-item-name,Couronne en bois
+witchcraft-leggings-item-name,Jambières de sorcellerie
+cursed-ring-item-name,Anneau maudit
+cursed-necklace-item-name,Collier Maudit
+mask-of-the-cursed-item-name,Masque des maudits
+blade-of-the-ruined-item-name,Lame des dévastés
+lightning-boots-item-name,Bottes de Foudre
+shamans-robe-item-name,Robe de chaman
+turtle-sabatons-item-name,Solerets de tortue
+turtle-leggings-item-name,Jambières de tortue
+cowards-ring-item-name,Anneau de Lâche
+soul-collector-item-name,Collecteur d’âmes
+heart-of-gold-item-name,Cœur d’or
+turtle-chestplate-item-name,Plastron de tortue
+elemental-necklace-item-name,Collier élémentaire
+giants-ring-item-name,Anneau des géants
+black-oath-item-name,Serment noir
+turtle-gauntlet-item-name,Gantelet de Tortue
+gloom-item-name,Obscure
+qolk-item-name,Qolk
+blake-item-name,Blake
+vampiric-helmet-item-name,Casque vampirique
+vampiric-chestplate-item-name,Plastron vampirique
+glimmer-item-name,Lueur
+vurk-item-name,Vurk
+bloodedge-item-name,Sanglante
+ethercrests-tome-item-name,Tome de Haut-éther
+ethercrests-sabatons-item-name,Solerets de Haut-éther
+ethercrests-blade-item-name,Lame de Haut-éther
+ethercrests-helmet-item-name,Casque de Haut-éther
+ethercrests-staff-item-name,Bâton de Haut-éther
+ethercrests-sword-item-name,Épée de Haut-éther
+ethercrests-leggings-item-name,Jambières de Haut-éther
+ethercrests-chestplate-item-name,Plastron de Haut-éther
+ethercrests-ring-item-name,Anneau de Haut-éther
+mask-of-cataclysm-item-name,Masque du cataclysme
+ring-of-interest-item-name,Anneau d'intérêt
+rod-of-doom-item-name,Sceptre de la damnation
+shadow-whisper-item-name,Murmure de l'ombre
+magma-sabatons-item-name,Solerets du magma
+magma-helmet-item-name,Casque du magma
+magma-leggings-item-name,Jambières du magma
+magma-chestplate-item-name,Plastron du magma
+magma-necklace-item-name,Collier de magma
+magma-poleaxe-item-name,Hache d’armes de magma
+ring-of-ice-item-name,Anneau de glace
+jesters-bone-mask-item-name,Masque en os du bouffon
+celestial-sabatons-item-name,Solerets célestes
+celestial-helmet-item-name,Casque céleste
+celestial-leggings-item-name,Jambières célestes
+celestial-chestplate-item-name,Plastron céleste
+throngler-item-name,Throngler
+dawnbringer-item-name,Porte-aube
+ring-of-unity-item-name,Anneau d’Unité
+excalibur-item-name,Excalibur
+ribbon-of-fortune-item-description,<696969>+25% de chances d'obtenir un objet supplémentaire en|\n|<696969>ouvrant un coffre
+merchant-upgrade-item-description,Débloque |[tinker]|
+bloodedge-item-description,<696969>devenait plus fort à chaque élimination
+excalibur-item-description,<696969>un cadeau du lac
+bat-enemy-name,Chauve-souris
+leafing-enemy-name,Feuillu
+fronk-enemy-name,Fronk
+boar-enemy-name,Sanglier
+snow-pix-enemy-name,Pix des neiges
+pebbling-enemy-name,Gravillon
+slime-enemy-name,Gelée
+rat-enemy-name,Rat
+goblin-enemy-name,Gobelin
+skeleton-warrior-enemy-name,Guerrier squelette
+shadow-wizard-enemy-name,Magicien de l'ombre
+jellyrak-enemy-name,Méduse
+efis-enemy-name,Efis
+rogue-enemy-name,Voleur
+slorn-enemy-name,Slorn
+armored-goblin-enemy-name,Gobelin en armure
+stone-golem-enemy-name,Golem de pierre
+witch-enemy-name,Sorcière
+wizard-skeleton-enemy-name,Mage squelette
+giant-spider-enemy-name,Araignée géante
+blood-ghoul-enemy-name,Goule de sang
+armored-spirit-enemy-name,Esprit en armure
+red-orc-enemy-name,Orc rouge
+snow-wraith-enemy-name,Spectre des neiges
+venomous-spider-enemy-name,Araignée venimeuse
+harpy-enemy-name,Harpie
+bravura-enemy-name,Bravura
+fire-dragon-enemy-name,Dragon de feu
+void-squid-enemy-name,Calmar du vide
+brother-enemy-name,Frère
+shadow-ghost-enemy-name,Fantôme d'ombre
+kotya-enemy-name,Kotya
+magma-golem-enemy-name,Golem de magma
+overseer-enemy-name,Contremaître
+braskap-enemy-name,Braskap
+cloud-dragon-enemy-name,Dragon des nuages
+ruined-king-enemy-name,Roi déchu
+blinded-priest-enemy-name,Prêtre aveugle
+morizon-enemy-name,Morizon
+moon-enemy-name,Lune
+cursed-abomination-enemy-name,Abomination maudite
+mars-enemy-name,Mars
+pinto-enemy-name,Pinto
+neptune-enemy-name,Neptune
+thunder-dragon-enemy-name,Dragon du tonnerre
+eldrids-flesh-enemy-name,Chair d'Eldrid
+golden-guardian-enemy-name,Gardien doré
+venus-enemy-name,Vénus
+jupiter-enemy-name,Jupiter
+saturn-enemy-name,Saturne
+uranus-enemy-name,Uranus
+sun-enemy-name,Soleil
+iron-golem-enemy-name,Golem de fer
+windwatcher-enemy-name,Veilleur du vent
+graven-enemy-name,Graven
+death-enemy-name,Mort
+perfect-slave-enemy-name,Esclave parfait
+common-chest-enemy-name,Coffre commun
+golden-chest-enemy-name,Coffre doré
+heart-of-the-tower-enemy-name,Cœur de la tour
+merchant-enemy-name,Marchand
+mystic-bison-enemy-name,Bison mystique
+mystic-trader-enemy-name,Marchand mystique
+training-dummy-enemy-name,Mannequin d'entraînement
+ancient-ice-item-set-name,Glace ancienne
+ancient-shell-item-set-name,Carapace ancienne
+arcanum-item-set-name,Arcanum
+bastolic-item-set-name,Bastolic
+berserker-item-set-name,Berserker
+blackthorn-item-set-name,Roncenoire
+cataclysm-item-set-name,Cataclysme
+celestial-item-set-name,Céleste
+chromalure-item-set-name,Chromalure
+consumable-item-set-name,Consommable
+cursed-item-set-name,Maudit
+darkness-item-set-name,Ténèbres
+demonic-item-set-name,Démoniaque
+essential-item-set-name,Essentiel
+flesh-item-set-name,Chair
+generic-item-set-name,Basique
+golden-item-set-name,Doré
+hunter-item-set-name,Chasseur
+jade-item-set-name,Jade
+legacy-item-set-name,Héritage
+magma-item-set-name,Magma
+mercenary-item-set-name,Mercenaire
+orion-item-set-name,Orion
+phantom-item-set-name,Fantôme
+poverty-item-set-name,Misère
+reforge-item-set-name,Reforger
+royal-item-set-name,Royal
+scout-item-set-name,Éclaireur
+shadow-item-set-name,Ombre
+silver-item-set-name,Argent
+swiftness-item-set-name,Vivacité
+thunder-item-set-name,Tonnerre
+tome-item-set-name,Tome
+unchained-item-set-name,Déchaîné
+vampiric-item-set-name,Vampirique
+warrior-item-set-name,Guerrier
+wood-item-set-name,Bois
+zephyron-item-set-name,Zéphyron
+beastbound-specialization-name,Bestial
+bloodcaster-specialization-name,Mage sanguin
+vampiercer-specialization-name,Vampiriste
+venomire-specialization-name,Venin vampirique
+bloodmoon-specialization-name,Lune sanglante
+moonlighter-specialization-name,Veilleur lunaire
+nighthrust-specialization-name,Frappe-nocturne
+challenger-specialization-name,Challenger
+chromaguard-specialization-name,Défense chromatique
+chromaspite-specialization-name,Attaque chromatique
+chromathorn-specialization-name,Chromaronce
+cinderthorn-specialization-name,Cendrépine
+mindthorn-specialization-name,Riposte mentale
+thornfrost-specialization-name,Ronceglace
+dauntless-specialization-name,Intrépide
+quickblade-specialization-name,Vivelame
+rampager-specialization-name,Destructeur
+thunderborn-specialization-name,Fils-du-tonnerre
+debilitator-specialization-name,Affaiblisseur
+mindbreaker-specialization-name,Brise-esprit
+deserter-specialization-name,Déserteur
+faithbound-specialization-name,Gardien de la foi
+echomancer-specialization-name,Échomancien
+evadium-specialization-name,Évitium
+invulnerium-specialization-name,Invulnerium
+stunium-specialization-name,Étourdissium
+harbinger-specialization-name,Précurseur
+lionheart-specialization-name,Cœur-de-lion
+pursuer-specialization-name,Traqueur
+striker-specialization-name,Attaquant
+windwalker-specialization-name,Marchevent
+accuracy-stat-name,Précision
+active-armor-stat-name,Armure active
+adaptive-attack-stat-name,Attaque adaptative
+agility-stat-name,Agilité
+armor-stat-name,Armure
+armor-damage-stat-name,Dégâts d’Armure
+armor-shields-stat-name,Boucliers d’armure
+armor-steal-stat-name,Vol d'armure
+armored-attack-stat-name,Attaque Blindée
+blackrot-damage-stat-name,Dégâts de pourriture
+bleed-damage-stat-name,Dégâts de Saignement
+cinder-damage-stat-name,Dégâts de braises
+combat-stat-name,Combat
+crit-chance-stat-name,Chance de critique
+critical-damage-stat-name,Dégâts critiques
+dazzle-stat-name,Éblouissement
+dazzle-damage-stat-name,Dégâts d'éblouissement
+diamond-stat-name,Diamant
+eldership-stat-name,Ancienneté
+electric-damage-stat-name,Dégâts électriques
+electricity-stat-name,Électricité
+elemental-power-stat-name,Puissance élémentaire
+elemental-resistance-stat-name,Résistance élémentaire
+energy-stat-name,Énergie
+faith-stat-name,Foi
+flow-stat-name,Flux
+freeze-attack-stat-name,Attaque de gel
+freeze-damage-stat-name,Dégâts de gel
+gold-stat-name,Or
+gold-on-kill-stat-name,Or lors d'une élimination
+greed-stat-name,Avarice
+health-stat-name,Santé
+lethality-stat-name,Létalité
+life-steal-stat-name,Vol de vie
+luck-stat-name,Chance
+magic-attack-stat-name,Attaque magique
+magic-damage-stat-name,Dégâts magiques
+malice-stat-name,Maléfice
+malice-damage-stat-name,Dégâts de maléfice
+mana-stat-name,Mana
+max-health-stat-name,Santé max
+max-mana-stat-name,Mana max
+omni-crit-chance-stat-name,Chance d'omnicritique
+omni-vamp-stat-name,Omnivampirisme
+penetration-stat-name,Pénétration
+physical-attack-stat-name,Attaque physique
+physical-damage-stat-name,Dégâts physiques
+poison-damage-stat-name,Dégâts de poison
+power-stat-name,Puissance
+random-stat-stat-name,Stat aléatoire
+recovery-stat-name,Récupération
+spelldom-stat-name,Magidominance
+tenacity-stat-name,Ténacité
+total-attacks-stat-name,Nombre d'attaques
+toughness-stat-name,Robustesse
+toxicity-stat-name,Toxicité
+true-damage-stat-name,Dégâts bruts
+wisdom-stat-name,Sagesse
+enervation-status-effect-name,Éreintement
+enervated-status-effect-application-message,Épuisé
+weakness-status-effect-name,Faiblesse
+weakened-status-effect-application-message,Affaibli
+black-curse-status-effect-name,Malédiction noire
+cursed-status-effect-application-message,Maudit
+curse-status-effect-name,Malédiction
+stun-status-effect-name,Étourdissement
+stunned-status-effect-application-message,Étourdi
+slowness-status-effect-name,Lenteur
+slowed-status-effect-application-message,Ralenti
+confusion-status-effect-name,Confusion
+confused-status-effect-application-message,Confus
+silence-status-effect-name,Silence
+silenced-status-effect-application-message,Réduit au silence
+toxic-transmute-status-effect-name,Transmutation toxique
+poison-status-effect-name,Poison
+poisoned-status-effect-application-message,Empoisonné
+bleed-status-effect-name,Saignement
+sparkle-status-effect-name,Étincelle
+sparkle-status-effect-application-message,Étincelle
+magic-shield-status-effect-name,Bouclier magique
+ephemeral-armor-status-effect-name,Armure éphémère
+ephemeral-shell-status-effect-name,Carapace éphémère
+electro-charge-status-effect-name,Charge électrique
+ephemeral-lock-status-effect-name,Verrou éphémère
+exhaustion-status-effect-name,Épuisement
+malice-shield-status-effect-name,Bouclier de maléfice
+armor-shield-status-effect-name,Bouclier renforcé
+freeze-status-effect-name,Gel
+frozen-status-effect-application-message,Gelé
+fear-status-effect-name,Peur
+invulnerability-status-effect-name,Invulnérabilité
+inherited-sin-status-effect-name,Péché héréditaire
+arthurs-mark-status-effect-name,Marque d'Arthur
+timeout-status-effect-name,Temps mort
+cinder-essence-status-effect-name,Essence de braises
+combat-insight-status-effect-name,Intuition martiale
+magic-blitz-status-effect-name,Blitz magique
+magic-blitz-status-effect-application-message,Blitz magique
+omni-blitz-status-effect-name,Omniblitz
+omni-blitz-status-effect-application-message,Omniblitz
+vimblow-status-effect-name,Coup ardent
+dread-status-effect-name,Effroi
+fury-status-effect-name,Fureur
+fury-status-effect-application-message,Fureur
+counter-attack-charge-status-effect-name,Charge de contre-attaque
+multi-attack-charge-status-effect-name,Charge de multi attaque
+stun-attack-charge-status-effect-name,Charge d'attaque étourdissante
+debuff-immunity-status-effect-name,Immunité aux effets négatifs
+golden-heart-status-effect-name,Cœur d'or
+golden-lock-status-effect-name,Verrou d'or
+lethality-status-effect-name,Létalité
+madness-status-effect-name,Folie
+focused-status-effect-name,Concentré
+blindness-status-effect-name,Cécité
+clarity-status-effect-name,Clarté
+elusive-status-effect-name,Insaisissable
+purification-status-effect-name,Purification
+grace-status-effect-name,Grâce
+curse-of-the-tower-status-effect-name,Malédiction de la tour
+blue-team-status-effect-name,Équipe bleue
+red-team-status-effect-name,Équipe rouge
+unavoidable-keyword-name,Inévitable
+anti-steal-keyword-name,Antivol
+attack-damage-keyword-name,Dégâts d'attaque
+execute-keyword-name,Exécution
+ascend-keyword-name,Ascension
+tinker-keyword-name,Bricoler
+heal-keyword-name,Soigner
+tier-i-reward-keyword-name,Récompense de rang I
+critical-strike-battle-action-name,Coup critique
+counter-attack-battle-action-name,Contre-attaque
+multi-attack-battle-action-name,Multi attaque
+lucky-attack-battle-action-name,Attaque chanceuse
+armor-break-battle-action-name,Brise-armure
+omni-crit-battle-action-name,Omnicritique
+polymorph-battle-action-name,Polymorphe
+immolate-battle-action-name,Immoler
+backstab-battle-action-name,Attaque sournoise
+cleanse-battle-action-name,Purifier
+dodge-battle-action-name,Esquiver
+parry-battle-action-name,Parade
+block-battle-action-name,Bloquer
+guard-battle-action-name,Garder
+miss-battle-action-name,Rater
+hit-battle-action-name,Touché
+arcane-roulette-ability-name,Roulette arcanique
+astral-dissolution-ability-name,Dissolution astrale
+barrier-ability-name,Barrière
+bloodlust-aura-ability-name,Aura de soif de sang
+burden-of-power-ability-name,Fardeau du pouvoir
+confusion-strike-ability-name,Frappe de confusion
+death-strike-ability-name,Coup mortel
+drain-react-ability-name,Drain Réact
+drop-of-chaos-ability-name,Goutte de chaos
+enchanted-attack-ability-name,Attaque enchantée
+fear-of-faith-ability-name,Peur de la foi
+frozen-strike-ability-name,Coup de glace
+frozen-wind-ability-name,Vent de glace
+galefire-ability-name,Tempête de feu
+harness-ability-name,Dompter
+headbutt-ability-name,Coup de Tête
+heart-of-iron-ability-name,Cœur de Fer
+iron-will-ability-name,Volonté de Fer
+mana-regen-ability-name,Régen. de mana
+mind-control-ability-name,Contrôle mental
+multi-cleanse-ability-name,Purifications multiples
+multi-heal-ability-name,Soins multiples
+multi-magic-shield-ability-name,Boucliers magiques multiples
+multi-shield-ability-name,Boucliers multiples
+multi-stun-ability-name,Étourdissement Multiple
+my-justice-ability-name,Ma Justice
+my-way-ability-name,Ma Voie
+normal-attack-ability-name,Attaque Normale
+noxious-empowerment-ability-name,Puissance toxique
+persistent-payback-ability-name,Vengeance acharnée
+prowlers-strike-ability-name,Frappe du Rôdeur
+purify-ability-name,Purifier
+replay-ability-name,Rejouer
+repulse-ability-name,Répulsion
+safeguard-ability-name,Préservation
+shatter-strike-ability-name,Coup fracassant
+silhouette-ability-name,Silhouette
+spell-bind-ability-name,Désenvoûtement
+steady-grip-ability-name,Prise ferme
+steal-ability-name,Vol
+stun-attack-ability-name,Attaque étourdissante
+stun-strike-ability-name,Frappe étourdissante
+toxic-attack-ability-name,Attaque toxique
+triple-attack-ability-name,Triple attaque
+venom-spit-ability-name,Crachat venimeux
+absolution-passive-name,Absolution
+all-is-mine-passive-name,Tout m'appartient
+arcane-control-passive-name,Contrôle Arcanique
+arcane-equilibrium-passive-name,Équilibre Arcanique
+battleborn-passive-name,Né pour le combat
+battleforged-heart-passive-name,Cœur forgé au combat
+beyond-the-grave-passive-name,D'outre-tombe
+bloodedges-blood-slash-passive-name,Frappe sanguinolente de Sanglante
+cinder-touch-passive-name,Toucher de braise
+combat-instinct-passive-name,Instinct de combat
+consuming-darkness-passive-name,Ténèbres dévorantes
+crimson-pact-passive-name,Pacte cramoisi
+critical-focus-passive-name,Focalisation critique
+crystal-hardening-passive-name,Durcissement de cristal
+crystal-insight-passive-name,Perception de cristal
+cursed-chain-passive-name,Chaîne maudite
+edens-wish-passive-name,Vœu de l'éden
+edge-of-death-passive-name,Au bord de la mort
+edge-of-the-ruined-passive-name,Lame des dévastés
+eldrids-fury-passive-name,Fureur d'Eldrid
+empty-bastion-passive-name,Bastion vide
+emulator-passive-name,Émulateur
+escape-passive-name,Évasion
+evil-mark-passive-name,Marque maléfique
+exploited-opportunity-passive-name,Saisir l’opportunité
+faded-discipline-passive-name,Discipline estompée
+faultbreaker-passive-name,Cherche-faille
+fear-of-pain-passive-name,Peur de la douleur
+folly-of-kings-passive-name,Folie des rois
+freedom-drive-passive-name,Élan de liberté
+frozen-heart-passive-name,Cœur de glace
+golden-altruism-passive-name,Altruisme d'or
+growing-anger-passive-name,Colère croissante
+iron-pact-passive-name,Pacte de fer
+ironclad-passive-name,Cuirassé
+judgments-call-passive-name,Jugement
+liberation-passive-name,Libération
+litany-of-malice-passive-name,Litanies de malveillance
+luminous-trial-passive-name,Épreuve Lumineuse
+magic-flux-passive-name,Flux Magique
+magical-frostflare-passive-name,Lueur de givre magique
+mana-steal-passive-name,Vol de mana
+manaflow-passive-name,Flux de mana
+mimicry-passive-name,Imitation
+plated-rot-passive-name,Pourriture blindée
+potential-seeker-passive-name,Traqueur de potentiel
+prime-guard-passive-name,Garde principale
+shaded-essence-passive-name,Essence de l'ombre
+shattered-breath-passive-name,Souffle coupé
+shatterwave-passive-name,Vague fracassante
+spell-block-passive-name,Blocage de sort
+spirit-of-the-unbroken-passive-name,Esprit des rebelles
+strike-of-destiny-passive-name,Frappe du destin
+thunderstrike-passive-name,Coup de tonnerre
+toxic-redemption-passive-name,Rédemption toxique
+toxshield-passive-name,Toxibouclier
+undead-blessing-passive-name,Bénédiction de non-vie
+undying-curse-passive-name,Malédiction éternelle
+vengeful-edge-passive-name,Lame Vengeresse
+warriors-resolute-passive-name,Détermination du guerrier
+whispers-of-anger-passive-name,Murmures de Colère
+wind’s-grace-passive-name,Grâce du Vent
+wrath-of-the-broken-flesh-passive-name,Courroux de la chair brisée
+honor-trial-name,Honneur
+resilience-trial-name,Résilience
+swarm-trial-name,Invasion
+confrontation-trial-name,Confrontation
+sagacity-trial-name,Sagacité
+common-rarity-name,ORDINAIRE
+uncommon-rarity-name,PEU COMMUN
+rare-rarity-name,RARE
+legendary-rarity-name,LÉGENDAIRE
+mythic-rarity-name,MYTHIQUE
+eternal-rarity-name,ÉTERNEL
+abyssal-rarity-name,ABYSSAL
+cosmic-rarity-name,COSMIQUE
+divine-rarity-name,DIVIN
+fren-adventurer-name,Fren
+pyry-adventurer-name,Pyry
+sid-adventurer-name,Sid
+elys-adventurer-name,Elys
+fael-adventurer-name,Fael
+tyr-adventurer-name,Tyr
+viran-adventurer-name,Viran
+kinno-adventurer-name,Kinno
+riel-adventurer-name,Riel
+amon-adventurer-name,Amon
+jace-adventurer-name,Jace
+buff-status-effect-type-name,Effet positif
+debuff-status-effect-type-name,Effet négatif
+penalty-status-effect-type-name,Pénalité
+neutral-status-effect-type-name,Neutre
+blessing-status-effect-type-name,Bénédiction
+accuracy-stat-description,Détermine vos chances de toucher une cible
+active-armor-stat-description,L'|[armor]|restante
+adaptive-attack-stat-description,Augmente vos dégâts d'attaque actuels
+agility-stat-description,<.>| Détermine votre chance d'|[dodge]|\n|<.>| Elle est réduite par votre |[active-armor]
+armor-stat-description,Absorbe les dégâts à la place de votre [health]
+armor-shields-stat-description,Le nombre de charges de |[armor-shield]| obtenues au début du combat
+armor-steal-stat-description,La quantité d’ |[armor]| volée à la cible lors d'un coup|\n|<696969>Vous ne pouvez pas voler au delà de votre |[armor]| <696969>manquante
+armored-attack-stat-description,Convertit % de votre |[active-armor]| en |[armor-damage]| infligés sur une attaque réussie
+blackrot-damage-stat-description,Insensible aux effets
+combat-stat-description,Augmente les |[physical-damage]| selon votre score de |[combat]
+crit-chance-stat-description,Chance de |[critical-strike]
+critical-damage-stat-description,Augmente les dégâts de |[critical-strike]| et de |[omni-crit]|.
+dazzle-stat-description,La quantité de cumuls d’ |[sparkle]| à appliquer à la cible sur une attaque réussie.
+eldership-stat-description,<.>| Augmente les |[magic-damage]| totaux de |[eldership]|\n|<.>| Augmente les |[armor]| totaux de |[eldership]
+electricity-stat-description,Sur une attaque réussie; inflige un nombre de cumuls de |[electro-charge]| égal|\n|à votre |[electricity]| à la cible et 25 % de ce nombre aux ennemis adjacents.
+elemental-power-stat-description,Multiplie ce qui suit : |\n|<.>| |[freeze-attack]|\n|<.>| |[cinder-damage]|\n|<.>| |[electricity]|\n|<.>| |[toxicity]
+elemental-resistance-stat-description,Réduit ce qui suit : |\n|<.>| |[freeze-damage]|\n|<.>| |[cinder-damage]|\n|<.>| |[electric-damage]|\n|<.>| |[toxicity]
+energy-stat-description,Vous permet d'effectuer des actions
+faith-stat-description,<.>| Détermine votre chance de |[cleanse]| :|\n|[0@silver]|[*0@silver]| À la fin du tour|\n|[4@silver]|[*4@silver]| Quand vous recevez un malus|\n|\n|<.>| Réduit par votre |[greed]
+flow-stat-description,Impossible de jouer un tour lorsque |[flow]| est en dessous de 0 %
+freeze-attack-stat-description,La quantité de |[freeze-damage]| infligés sur une attaque réussie
+gold-on-kill-stat-description,Augmente l'|[gold]| obtenu par élimination
+greed-stat-description,Multiplie l'or gagné
+health-stat-description,La quantité maximale de dégâts qu'un personnage peut subir avant de mourir
+lethality-stat-description,Infliger des dégâts laissant la cible sous le % de |[max-health]||\n|égal à votre % de |[lethality]| déclenche |[execute]|.
+life-steal-stat-description,Vous permet de |[heal]| % des |[physical-damage]| infligés à la |[health]| des ennemis.
+luck-stat-description,Votre chance d'effectuer ce qui suit :|\n|[lucky-attack]
+magic-attack-stat-description,Les |[magic-damage]| infligés sur une attaque réussie.
+malice-stat-description,Inflige des |[malice-damage]| à l’attaquant égaux|\n|au score de |[malice]|.
+mana-stat-description,Une ressource souvent utilisée pour lancer des capacités
+max-health-stat-description,Le score le plus élevé que peut atteindre votre |[health]|.
+max-mana-stat-description,Le score le plus élevé que peut atteindre votre |[mana]|.
+omni-crit-chance-stat-description,Chance de |[omni-crit]
+omni-vamp-stat-description,Vous permet de |[heal]| % des |dégâts| infligés à votre |[health]|.
+penetration-stat-description,Ignore % d'|[armor]|.
+physical-attack-stat-description,Les |[physical-damage]| infligés sur une attaque réussie.
+power-stat-description,Multiplie tous les |[attack-damage]|
+recovery-stat-description,Permet de |[heal]| une partie de votre |[health]| chaque tour|\n|en fonction de votre |[recovery]
+spelldom-stat-description,Quantité de |[magic-blitz]| obtenue au premier tour
+tenacity-stat-description,Chance de ne pas recevoir les effets suivants: |\n|<.>| |[slowness]|\n|<.>| |[stun]|
+total-attacks-stat-description,Le nombre de fois que vous attaquerez une cible
+toughness-stat-description,Réduit les dégâts d'attaques subies
+toxicity-stat-description,Applique un cumul de |[poison]| par point de |[toxicity]| sur une attaque réussie.
+wisdom-stat-description,<.>| Augmente les |[magic-damage]| selon votre |[wisdom]| totale.
+enervation-status-effect-description,Réduit tous les dégâts d'attaque de 25% par cumul
+weakness-status-effect-description,Réduit tous les dégâts d’attaques de 25 % par cumul
+black-curse-status-effect-description,Réduit tous les soins de 75 %
+curse-status-effect-description,Réduit tous les soins de 75 %
+stun-status-effect-description,Une fois appliqué : empêche toutes les actions pendant ce tour
+slowness-status-effect-description,Réduit l'|[agility]| de 100 %
+confusion-status-effect-description,Réduit la |[accuracy]| de 100%
+silence-status-effect-description,Empêche d'utiliser des capacités
+toxic-transmute-status-effect-description,Chaque fois que votre santé est sur le point de subir des dégâts;|\n|annule ces dégâts; les convertit en |[poison]| et les applique|\n|sur vous-même
+poison-status-effect-description,Attaque directement la santé à la fin du tour
+bleed-status-effect-description,Après chaque attaque; subissez des |[bleed-damage]| à votre |[health]|\n|égaux à % |[bleed]| de vos cumuls multiplié par votre|\n|[max-health]|\n|\n|<696969>chaque tour; perdez 2% de |[bleed]
+sparkle-status-effect-description,Toucher une cible fera éclater tous les cumuls d'|[sparkle]| et aura|\n|les effets suivants pour chaque cumul :|\n|\n|- Confère une |[ephemeral-armor]| à l'attaquant|\n|- Inflige des |[dazzle-damage]| à la cible|\n|\n
+magic-shield-status-effect-description,Tant que le bouclier est activé; il bloque les dégâts;|\n|puis se brise et devient inactif.|\n|\n|<696969>(n'est pas brisé par les |[magic-damage]|<696969>)|\n
+ephemeral-armor-status-effect-description,|[armor]| temporaire qui disparaît à la fin du combat.|\n|\n|Recevez un |[ephemeral-lock]| une fois que vous avez subi des dégâts|\n
+ephemeral-shell-status-effect-description,Les dégâts subis sont réduits de 12 % par cumul
+electro-charge-status-effect-description,Inflige des |[electric-damage]| égaux au nombre de cumuls à la cible à chaque tour.
+ephemeral-lock-status-effect-description,Empêche de bénéficier d'|[ephemeral-armor]
+exhaustion-status-effect-description,Limite le |[total-attacks]| à 1|\n
+malice-shield-status-effect-description,La prochaine fois que vous allez subir un coup; brise un bouclier et|\n|ignore |[malice]*|<483a5d>+1| points de dégâts
+armor-shield-status-effect-description,La prochaine fois que vous allez subir un coup; brise un bouclier et|\n|ignore |[armor]*|<6d758d>+1| points de dégâts.|\n
+freeze-status-effect-description,Reçoit 25 % de dégâts supplémentaires de chaque source
+fear-status-effect-description,Empêche de bénéficier d'effets positifs
+invulnerability-status-effect-description,Ne subit aucun dégât
+arthurs-mark-status-effect-description,Une cible avec cette marque ne peut pas |[block]|; effectuer de |[parry]| ou |[dodge]|\n
+timeout-status-effect-description,Empêche toutes les actions ce tour-ci
+cinder-essence-status-effect-description,Au début du tour; consomme |\n|tous les cumuls d'|[cinder-essence]|\n|et |[immolate]| pour chacun d'entre eux
+combat-insight-status-effect-description,À la prochaine attaque subie;|\n|si vous avez au moins 5 cumuls d'|[combat-insight]|;\n|ils sont consommés et vous effectuez une |[parry]|.\n
+magic-blitz-status-effect-description,Quand vous attaquez; vous utilisez tous les cumuls et gagnez +100 % d'|\n|[magic-attack]| par cumul.|\n
+omni-blitz-status-effect-description,Quand vous attaquez; vous utilisez tous les cumuls et gagnez +100 % d'|\n|[physical-attack]| et d'|[magic-attack]| par cumul.|\n
+vimblow-status-effect-description,Quand vous attaquez; vous utilisez un cumul pour gagner un bonus d'|[physical-attack]|\n|égal à 25 % de votre |[max-health]|.\n
+dread-status-effect-description,Les ennemis avec |[fear]| n'attaqueront pas
+fury-status-effect-description,Augmente votre |[physical-attack]| de 25 % par cumul de |[fury]|.\n|<696969>(réinitialisé à la fin du combat).|\n|\n
+counter-attack-charge-status-effect-description,Attaque l'attaquant
+multi-attack-charge-status-effect-description,[multi-attack]| ce tour
+stun-attack-charge-status-effect-description,Tous vos coups appliquent |[stun]| à la cible
+debuff-immunity-status-effect-description,Empêche les effets négatifs d'être appliqués
+golden-heart-status-effect-description,En tombant à 0 |[health]|:|\n|<.>| ressuscitez et |[heal]| de 25% de votre |[max-health]|\n|[3@golden]|<.>| |[*3@golden]| obtenez |[invulnerability]|
+lethality-status-effect-description,Infliger des dégâts laissant la cible sous le % de |[max-health]||\n|égal à votre % de |[lethality]| déclenche |[execute]|.
+madness-status-effect-description,Ne peut attaquer que lui-même
+blindness-status-effect-description,Réduit votre |[accuracy]| de 100%
+clarity-status-effect-description,La prochaine fois que vous êtes sur le point de recevoir |[stun]|\n|consommez 1 charge de |[clarity]| et annulez-le
+elusive-status-effect-description,Toutes les attaques contre vous perdront 100% de |[accuracy]|
+purification-status-effect-description,À la fin du tour; consomme 1 cumul et lance |[cleanse]
+grace-status-effect-description,Augmente tous les dégâts
+curse-of-the-tower-status-effect-description,Chaque tour; recevez des |[true-damage]| égaux à 1% de votre |[max-health]|\n|<696969>(reçu lorsqu'une bataille dure trop longtemps)
+unavoidable-keyword-description,L'attaque touche toujours
+anti-steal-keyword-description,Vous protège du |[steal]|
+ascend-keyword-description,Commencez une partie ascendante depuis l'étage 1; le |[diamond]|\nque vous gagnez sera multiplié par 2|<696969> (+1 à chaque niveau)|\n|<ff4500>Les objets des étages 2+ utilisés dans les parties précédentes seront|\n|<ff4500>supprimés
+tinker-keyword-description,Le marchand fera ce qui suit aux objets que vous lui donnez :|\n|<.>| Convertir les reforges et les objets en kits de bricolage|\n|<.>| Améliorer les objets reforgés
+heal-keyword-description,Action consistant à reconstituer la |[health]| d'un personnage.
+tier-i-reward-keyword-description,<.>| |Obtenez un |[diamond]| supplémentaire en ouvrant un coffre|\n|<.>| |Commencez avec +{gold} |[gold]
+critical-strike-battle-action-description,Augmente les |[physical-damage]| |de 100 % + le pourcentage des |[critical-damage]
+counter-attack-battle-action-description,Attaque l'attaquant
+multi-attack-battle-action-description,Attaque tous les ennemis en un tour
+lucky-attack-battle-action-description,Inflige 25% de dégâts supplémentaires
+armor-break-battle-action-description,Brise l'armure de la cible en la réduisant à 0.
+omni-crit-battle-action-description,Augmente les |[physical-damage]| |et les |[magic-damage]|\n|de 100 % + le pourcentage des |[critical-damage]
+polymorph-battle-action-description,Transforme l'ennemi le plus fort en un ennemi aléatoire|\n|et réinitialise ses statistiques
+immolate-battle-action-description,Inflige des |[cinder-damage]| équivalant à 25 % de votre |\n|[max-health]| à tous les ennemis du premier rang
+backstab-battle-action-description,Poignardez un ennemi en infligeant des dégâts d'attaque|\n|<.>| |La |[max-health]| de l'ennemi est supérieure à 75 % : les dégâts sont réduits de 45 %|\n|<.>| |La |[max-health]| de l'ennemi est inférieure ou égale à 75 % : l'attaque|\n| sera un |[critical-strike]| et aura +25 % de |[accuracy]
+cleanse-battle-action-description,Supprime un malus aléatoire et réduit votre |[faith]| de 25 %|\n|<696969>se réinitialise à chaque combat
+dodge-battle-action-description,Vous évitez les dégâts|\n|\n|Chaque fois que vous réussissez à |[dodge]| :|\n|réduit l'|[agility]| de 25 %|\n|\n|<696969>réinitialisé à chaque combat
+parry-battle-action-description,Renvoie les dégâts et les effets à l'attaquant|\n|<696969>Votre tour prend fin si vous êtes paré 10 fois
+block-battle-action-description,Réduit les dégâts subis de 100 %.
+guard-battle-action-description,Réduit les dégâts subis de 25 %
+miss-battle-action-description,Une attaque qui ne touche pas sa cible.|\n|<696969>dix coups ratés mettent fin à votre tour.
+arcane-roulette-ability-description,Chaque fois que votre |[magic-shield]| se brise; attaquez une|\n|cible aléatoire\n|<696969>CONDITION D’ACTIVATION: avoir un |[magic-shield]| actif
+astral-dissolution-ability-description,Supprime tous les effets positifs de la cible
+barrier-ability-description,Confère un |[magic-shield]
+bloodlust-aura-ability-description,Appliquez |[madness]| à tous les ennemis|\n|<696969>CONDITION D'ACTIVATION: |[heal]|<696969> 25 % de|\n|<696969>votre |[max-health]|<696969> en un tour
+burden-of-power-ability-description,Volez 75 % des dégâts d'attaque à tous les ennemis avec |[fear]|\n|au début du tour|\n|<696969>CONDITION D'ACTIVATION: |[fear]|<696969> appliqué sur un ennemi
+confusion-strike-ability-description,Inflige 2 cumuls de |[confusion]| sur une attaque réussie
+death-strike-ability-description,Vous gagnez 100 % de |[crit-chance]|\n|ce tour-ci
+drain-react-ability-description,Appliquez 5 charges de |[enervation]| à tous les ennemis|\n|<696969>CONDITION D'ACTIVATION: subir un coup d'un ennemi avec |[poison]|
+drop-of-chaos-ability-description,Inflige un effet négatif aléatoire à votre cible.
+enchanted-attack-ability-description,Gagnez +100 % de dégâts d'attaque ce tour.
+fear-of-faith-ability-description,Donne 2 cumuls d'|[invulnerability] |.
+frozen-strike-ability-description,Inflige 3 cumuls de |[weakness]| à la cible sur une attaque réussie
+frozen-wind-ability-description,Inflige |[weakness]| à la cible; puis l'attaque.
+galefire-ability-description,Inflige |[slowness]| à la cible.
+headbutt-ability-description,Applique |[stun]| à la cible en cas de coup
+heart-of-iron-ability-description,Recevez une |[armor]| égale à votre |[health]|\n|<696969>CONDITION D'ACTIVATION: recevoir 3 coups|\n|<696969>se réinitialise à chaque combat
+mana-regen-ability-description,Régénérez tout votre |[mana]|.
+mind-control-ability-description,Inflige |[confusion]| à toutes les cibles.
+multi-cleanse-ability-description,[cleanse]| vos alliés et vous.
+multi-heal-ability-description,Rend 25 % de santé à vous et vos alliés.
+multi-magic-shield-ability-description,Confère |[magic-shield]| à vos alliés et vous.
+multi-shield-ability-description,Confère |[ephemeral-armor]|\n|à vos alliés et vous égale à votre |[health]|.
+multi-stun-ability-description,Recevez |[multi-attack-charge]| et |[stun-attack-charge]|;|\n|attaquez ensuite|\n|<696969>CONDITION D'ACTIVATION: parer une attaque|\n|<696969>se réinitialise à chaque combat
+my-justice-ability-description,Ce tour; recevez |[invulnerability]| et |[counter-attack-charge]||\n|<696969>CONDITION D'ACTIVATION: recevoir |[invulnerability]|
+my-way-ability-description,Ce tour; recevez |[counter-attack-charge]||\n|<696969>CONDITION D'ACTIVATION: attaquer 3 fois
+noxious-empowerment-ability-description,Multiplie la |[toxicity]| par 2 pendant ce tour.
+persistent-payback-ability-description,[counter-attack]| pendant ce tour.
+prowlers-strike-ability-description,Chaque fois que vous touchez un ennemi ce tour; gagnez {agility-amount}% de |[agility]||\n|<696969>CONDITION D'ACTIVATION: |[dodge]|<696969> au moins une fois
+replay-ability-description,Activez votre dernière capacité imitée|\n|<696969>CONDITION D'ACTIVATION: imiter une capacité
+repulse-ability-description,|[parry]| ce tour-ci
+safeguard-ability-description,Confère à vos alliés et vous une |[armor]||\n|égale à 25 % de votre |[max-health].
+shatter-strike-ability-description,|[armor-break]| sur une attaque réussie
+silhouette-ability-description,Devenez |[elusive]| et attaquez|\n|<696969>CONDITION D'ACTIVATION: |[backstab]|\n|<696969>se réinitialise à chaque combat
+spell-bind-ability-description,Inflige |[silence]| à la cible.
+steady-grip-ability-description,Augmente votre |[total-attacks]| de 1 pour ce combat
+steal-ability-description,Vole 25 % d'|[gold]| à la cible.
+stun-attack-ability-description,Sur une attaque réussie; inflige |[stun]| à la cible.
+stun-strike-ability-description,Sur une attaque réussie; inflige |[stun] |à la cible.
+toxic-attack-ability-description,Lorsque vous touchez une cible; appliquez 1 |[poison]
+venom-spit-ability-description,Applique un nombre de cumuls de |[poison]| à votre cible|\n|égal à la |[toxicity]|.
+absolution-passive-description,À chaque attaque; inflige 5 |[magic-damage]|\n|à un ennemi aléatoire
+all-is-mine-passive-description,Au début du tour; vole tous les|\n|effets positifs de la cible
+arcane-control-passive-description,Chaque fois que vous évitez une attaque; brisez votre|\n|[magic-shield]| et rechargez‑le immédiatement
+arcane-equilibrium-passive-description,À la fin de chaque tour; convertissez l'|[invulnerability]| de chacun|\n|en |[magic-shield]
+battleborn-passive-description,Chaque fois que vous faites une |[parry]|; infligez |[stun]| à la cible
+battleforged-heart-passive-description,Après que votre |[armor]| a subi des dégâts; convertit|\n|ce montant en |[max-health]|\n|<696969>se réinitialise à chaque combat
+beyond-the-grave-passive-description,À la fin du tour; transforme les effets de statut de l'adversaire|\n|<.>| |[weakness]| en |[enervation]|\n|<.>| |[curse]| en |[black-curse]
+bloodedges-blood-slash-passive-description,Chaque fois que vous êtes sur le point d'attaquer; convertissez 10%|\n|de votre |[health]| en |[physical-attack]|\n|<696969>se réinitialise à chaque combat
+cinder-touch-passive-description,|[immolate]| sur une attaque réussie
+combat-instinct-passive-description,Les dégâts de |[parry]| sont doublés
+consuming-darkness-passive-description,Quand un ennemi avec |[fear]| et |[confusion]| est tué;|\n|gagnez toutes ses statistiques de base |<696969>(se réinitialise à chaque combat)
+crimson-pact-passive-description,En dessous de 45% de |[health]|; appliquez|\n|[confusion]| à tous les ennemis
+critical-focus-passive-description,Vos attaques |[critical-strike]| ou |[omni-crit]|\n|auront +25% de |[accuracy]|
+crystal-hardening-passive-description,Vous ne subissez aucun dégât lors du premier tour
+crystal-insight-passive-description,Gagnez +100% de |[magic-attack]| au premier tour
+cursed-chain-passive-description,Vos effets s'appliquent même lorsque votre attaque|\n|échoue
+edens-wish-passive-description,Au début de chaque tour; confère à un allié aléatoire|\n|une bénédiction ou un bonus aléatoire
+edge-of-death-passive-description,Votre |[health]| ne peut pas tomber en dessous de 1 au premier tour
+edge-of-the-ruined-passive-description,Tant que vous avez |[curse]| ou |[black-curse]|:|\n|les attaques infligeront des dégâts supplémentaires égaux|\n|à 11% de la |[health]| des cibles
+eldrids-fury-passive-description,À chaque soin; vous gagnez un cumul de |[vimblow]||\n|<696969>une fois par tour
+empty-bastion-passive-description,Multiplie votre |[armor]| par 8; mais vous commencez|\n|avec 0 |[active-armor]| à chaque combat
+emulator-passive-description,Réapplique les malus à la fin du tour
+escape-passive-description,Quitte le combat après une tentative de vol
+evil-mark-passive-description,Inflige |[curse]| à votre cible|\n|au début du tour
+exploited-opportunity-passive-description,Après avoir réussi à |[dodge]|; vous |[stun]| l'attaquant
+faded-discipline-passive-description,Recevez +5 |[total-attacks]| mais vos 5 premières|\n|attaques infligeront 99% de dégâts en moins
+faultbreaker-passive-description,Si votre attaque laisse votre cible avec 75 %|\n|d'|[active-armor]| ou moins; |[armor-break]|
+fear-of-pain-passive-description,N'attaque pas les cibles ayant reçu des dégâts ce tour
+folly-of-kings-passive-description,Recevez un effet de statut aléatoire à chaque tour|\n|et |[polymorph]| tous les 2 tours
+freedom-drive-passive-description,Recevez +100% de |[tenacity]| tant que vous avez |[invulnerability]
+golden-altruism-passive-description,Confère |[golden-heart]| à tous les alliés
+growing-anger-passive-description,Gagnez 5% de |[crit-chance]| à chaque coup |<696969>(se réinitialise à chaque combat)
+iron-pact-passive-description,Chaque fois que votre |[active-armor]| atteint 0%; consommez 10%|\n|de votre |[health]| et convertissez-la en |[active-armor]
+ironclad-passive-description,[block]
+judgments-call-passive-description,Vos attaques appliqueront les effets négatifs que vous avez supprimés |\n|avec |[cleanse]| (réinitialisé à chaque combat)
+liberation-passive-description,Convertit toute l'|[armor]| en |[adaptive-attack]
+litany-of-malice-passive-description,Pour chaque effet de statut unique sur la cible; |\n|Inflige +25% de |[malice-damage]| en bonus
+luminous-trial-passive-description,<.>| Applique 1 cumul de |[blindness]| en entrant en combat|<|\n||<.>| Les adversaires gagnent +25% de |[accuracy]| pour chaque |[miss]
+magical-frostflare-passive-description,Recevez une |[ephemeral-armor]| égale aux |[magic-damage]|\n|infligés aux ennemis avec |[freeze]
+mana-steal-passive-description,Vole 1 |[mana]| sur une attaque réussie
+manaflow-passive-description,Fixe votre |[max-mana]| à 1
+mimicry-passive-description,Utilise la compétence de la cible
+plated-rot-passive-description,Les dégâts infligés à l'|[armor]|; seront convertis en |[max-health]|
+prime-guard-passive-description,Les autres ennemis subiront 99% de dégâts en moins jusqu'à ce que|\n|le propriétaire du passif soit vaincu
+shaded-essence-passive-description,Inflige +375 % de |[magic-damage]| aux ennemis ayant |[silence].
+shattered-breath-passive-description,Chaque fois que vous |[parry]|; appliquez |[exhaustion]|\n|sur la cible
+shatterwave-passive-description,Après avoir frappé un ennemi; vous infligez 25 % de vos|\n|dégâts d'attaque aux ennemis adjacents
+spell-block-passive-description,Au début du tour; appliquez |[silence]|\n|sur le premier ennemi avec une capacité
+strike-of-destiny-passive-description,Supprime tous les buffs de la cible en cas de coup|\n|si vous avez |[invulnerability]
+thunderstrike-passive-description,Applique |[stun]| sur une attaque réussie si la cible a |[electro-charge]
+toxic-redemption-passive-description,En tuant un ennemi; retire tout |[poison]| sur vous et inflige des |[physical-damage]||\n|à tous les ennemis égaux à la quantité de poison retirée
+toxshield-passive-description,Chaque fois que |[poison-damage]| est infligé pendant votre\n|tour; gagnez |[ephemeral-armor]| égal à\n|ce montant
+undead-blessing-passive-description,Lorsqu'un allié meurt; vous gagnez un cumul|\n|de |[purification]
+undying-curse-passive-description,À la mort; applique |[curse]|\n|sur le tueur
+vengeful-edge-passive-description,Lorsque vous faites une |[counter-attack]|; faites une |[counter-attack]| à nouveau
+warriors-resolute-passive-description,Recevez une |[clarity]| dans les 3 premiers tours
+wind’s-grace-passive-description,Octroie |[swiftness]| à tous les alliés
+wrath-of-the-broken-flesh-passive-description,Chaque fois que votre santé est attaquée; vous gagnez un cumul de |[fury].
+ancient-ice-item-set-description,[1@ancient-ice]|[*1@ancient-ice]|<.>| Recevez une |[ephemeral-armor]| égale aux |[freeze-damage]|\n| infligés aux ennemis avec |[freeze]|\n|\n|<.>| À la fin de votre premier tour; appliquez |[freeze]| à tous|\n| les ennemis
+ancient-shell-item-set-description,Si vous avez utilisé une posture ce tour :|\n|[1@ancient-shell]|[*1@ancient-shell]| |[toughness]| réduira tous les types de dégâts|\n|[3@ancient-shell]|[*3@ancient-shell]| Recevez une |[ephemeral-shell]| à la fin du tour|\n|[5@ancient-shell]|[*5@ancient-shell]| Supprime |[ephemeral-lock]| à la fin du tour
+arcanum-item-set-description,[1@arcanum]|[*1@arcanum]| Tant que |[magic-shield]| est actif; gagnez |<7569f5>+375%|[magic-damage]|\n|[2@arcanum]|[*2@arcanum]| Gagnez un |[magic-shield]| à la fin du tour|\n|[4@arcanum]|[*4@arcanum]| Gagnez un |[magic-shield]| après avoir tué un ennemi
+bastolic-item-set-description,[1@bastolic]|[*1@bastolic]| Lorsque vous infligez des |[magic-damage]|; infligez-en d'autres|\n| |({magic_damage})|<7569f5> 5% de votre santé max| à un ennemi aléatoire|\n|\n|[2@bastolic]|[*2@bastolic]| Les |[magic-damage]| que vous recevez au premier|\n| tour seront convertis en |[max-health]|\n|<696969> se réinitialise à chaque combat
+berserker-item-set-description,[1@berserker]|[*1@berserker]| Gagnez un bonus de |[total-attacks]| en fonction de la |[health]| manquante :|\n| |<.>| 25% -> +1 |[total-attacks]|\n| |<.>| 50% -> +3 |[total-attacks]|\n| |<.>| 75% -> +6 |[total-attacks]|\n|\n|[2@berserker]|[*2@berserker]| En dessous de 25% de |[health]|; gagnez 100% de |[tenacity]
+blackthorn-item-set-description,Après avoir subi une attaque :|\n|<.>| Inflige |[active-armor]*| de |[magic-damage]| à l'attaquant
+cataclysm-item-set-description,Tous les ennemis reçoivent jusqu'à 45 % de |[lethality]
+celestial-item-set-description,Quand vous subissez des dégâts; ils sont transformés en |[elemental-power]|\n|<696969>réinitialisé à chaque combat
+chromalure-item-set-description,[1@chromalure]|[*1@chromalure]| Après avoir appliqué |[poison]|; infligez des |[poison-damage]| qui|\n| sont égaux à ce montant à la cible|\n|\n|[3@chromalure]|[*3@chromalure]| Au début de chaque tour; recevez |[toxic-transmute]|[0@chromalure]
+cursed-item-set-description,[1@cursed]|[*1@cursed]| Au début du combat; recevez |[curse]|\n| et 5 cumuls de |[malice-shield]|\n|\n|[3@cursed]|[*3@cursed]| Les |[malice-damage]| que vous infligez seront répartis|\n| entre tous les ennemis avec |[curse]
+darkness-item-set-description,[1@darkness]|[*1@darkness]| Appliquez |[fear]| à tous les ennemis ayant moins de dégâts d'attaque|\n|  que vous au début du tour|[3@darkness]|\n|[*3@darkness]| Après avoir tué un ennemi; recevez 2 charges de |[dread]|[4@darkness]|\n|[*4@darkness]| Au début du premier tour; recevez |[madness]|[0@darkness]
+demonic-item-set-description,[1@demonic]|[*1@demonic]| Pour chaque 25 |[max-health]| de base;|\n| gagnez 1% de |[physical-attack]|\n|\n|[3@demonic]|[*3@demonic]| Recevez |[multi-attack-charge]|\n| au début du premier tour
+flesh-item-set-description,Permet de |[heal]| au-delà de votre |[max-health]|\n|<696969>le surplus est retiré|\n|<696969>à la fin du tour
+generic-item-set-description,Compte comme +1 pour tous les ensembles d'objets actifs
+golden-item-set-description,Au début de chaque combat; gagnez |[golden-heart]|.
+hunter-item-set-description,[1@hunter]|[*1@hunter]| Chaque 1% de |[crit-chance]| au-dessus de 100% est converti en|\n| 10% de |[critical-damage]|\n|[3@hunter]|[*3@hunter]| Les cibles ne peuvent pas |[dodge]| vos attaques de |[critical-strike]|
+jade-item-set-description,Applique à nouveau tous les cumuls de |[sparkle]| sur la cible après les avoir fait éclater.
+legacy-item-set-description,<.>| Au début du combat; recevez |[invulnerability]|\n|\n|<.>| À la fin de votre premier tour; appliquez une charge|\n| d'|[arthurs-mark]| sur un ennemi aléatoire|\n|\n|<.>| Lorsqu'un ennemi avec |[arthurs-mark]| meurt;|\n| elle sera appliquée à un autre ennemi
+magma-item-set-description,Confère un cumul d'|[cinder-essence]| avant| |\n||le début du tour
+mercenary-item-set-description,Si une cible a plus de 90 % de |[health]|:|\n|[1@mercenary]|[1@mercenary]| Inflige 25 %|<00cd58> +|[luck]| de dégâts d'attaque augmentés|\n|[3@mercenary]|[*3@mercenary]| Gagne +1 |[total-attacks]| ce tour
+orion-item-set-description,[1@orion]|[*1@orion]| Gagnez une résistance aux dégâts accrue à mesure que votre |[health]|\n| diminue; jusqu'à 75% de résistance à 25% de |[health]|\n|\n|[3@orion]|[*3@orion]| À la fin des 3 premiers tours; réparez 25%|\n| de votre |[armor]|\n|\n|[4@orion]|[*4@orion]| Impossible de |[heal]
+phantom-item-set-description,Ne peut être équipé
+poverty-item-set-description,<.>| Tant que votre |[health]| est sous la barre des 25 %; vous gagnez 75 % de |[crit-chance]|\n|<.>| Vous gagnez |[anti-steal]
+royal-item-set-description,Confère |[inherited-sin]| au premier tour.|\n|\n|Si |[cleanse]| a supprimé |[inherited-sin]|; vous gagnez 5|\n|cumuls de |[debuff-immunity]|.
+scout-item-set-description,[1@scout]|\n|<.>| |[*1@scout]|[dodge]| est garanti tant que vous avez de l’ |[agility]|[3@scout]|\n|<.>| |[*3@scout]| Après avoir |[dodge]| 3 fois; devenez |[elusive]|[0@scout]
+shadow-item-set-description,[1@shadow]|[*1@shadow]| À chaque fois que vous évitez une attaque; |[backstab]|\n|[3@shadow]|[*3@shadow]| Les dégâts évités en étant |[elusive]| sont gagnés|\n| comme |[adaptive-attack]|<696969> - se réinitialise à chaque combat
+silver-item-set-description,[1@silver]|[*1@silver]| |[cleanse]| est garanti si vous avez n'importe quelle|\n| quantité de |[faith]|\n|\n|[3@silver]|[3@silver]| Sur |[cleanse]| recevez |[faith]| |[grace]
+swiftness-item-set-description,Double votre |[total-attacks]|; mais après chaque attaque|\n|perdez 5% de |[accuracy]|<696969> se réinitialise à chaque tour
+thunder-item-set-description,[1@thunder]|[*1@thunder]| Les |[electric-damage]| ont 25% + |[luck]*| de chances d’ |[stun]|\n| pendant votre tour|\n|[3@thunder]|[*3@thunder]| Double la durée de |[stun]| appliquée pendant votre tour
+unchained-item-set-description,[1@unchained]|[*1@unchained]| Les effets négatifs sont appliqués à tous les ennemis|\n|[2@unchained]|[*2@unchained]| Double les effets négatifs que vous appliquez
+vampiric-item-set-description,[1@vampiric]|[*1@vampiric]| Lors de votre première attaque sur une nouvelle cible; appliquez 8% de |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| Chaque fois qu'un ennemi subit des |[bleed-damage]|; |[heal]|\n| de ce montant|\n|\n|[5@vampiric]|[*5@vampiric]| Les |[bleed-damage]| seront convertis en |[power]|\n|<696969> se réinitialise à chaque combat
+warrior-item-set-description,[1@warrior]|[*1@warrior]| Chaque fois que vous attaquez; recevez |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Lorsque vous êtes attaqué; recevez |[combat-insight]|[0@warrior]
+wood-item-set-description,[1@wood]|[*1@wood]| +25% |[luck]|\n|[3@wood]|[*3@wood]| +10% |[luck]
+zephyron-item-set-description,[1@zephyron]|<.>| |[*1@zephyron]| Gagnez {amount}% de |[magic-damage]| à chaque tour|<696969> réinitialise à chaque combat|\n|[2@zephyron]|<.>| |[*2@zephyron]| Les |[magic-damage]| infligés seront appliqués aux ennemis avec |[silence]|\n|[4@zephyron]|<.>| |[*4@zephyron]| La première capacité activée ne consommera pas de |[mana]
+beastbound-specialization-description,[1@hunter]|[*1@hunter]| Chaque 1% de |[crit-chance]| au-dessus de 100% est converti en|\n| 10% de |[critical-damage]|\n|[3@hunter]|[*3@hunter]| Les cibles ne peuvent pas |[dodge]| vos attaques de |[critical-strike]|\n|\n|<.>| |[crit-chance]| affecte les attaques de |[parry]|
+bloodcaster-specialization-description,[1@vampiric]|[*1@vampiric]| Lors de votre première attaque sur une nouvelle cible; appliquez 8% de |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| Chaque fois qu'un ennemi subit des |[bleed-damage]|; |[heal]|\n| de ce montant|\n|\n|[5@vampiric]|[*5@vampiric]| Les |[bleed-damage]| seront convertis en |[power]|\n|<696969> se réinitialise à chaque combat|\n|\n|Chaque fois que vous |[heal]|:|\n|<.>| Infligez des |[magic-damage]| égaux au montant que vous|\n|  avez soigné à un ennemi sélectionné
+vampiercer-specialization-description,[1@vampiric]|[*1@vampiric]| Lors de votre première attaque sur une nouvelle cible; appliquez 8% de |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| Chaque fois qu'un ennemi subit des |[bleed-damage]|; |[heal]|\n| de ce montant|\n|\n|[5@vampiric]|[*5@vampiric]| Les |[bleed-damage]| seront convertis en |[power]|\n|<696969> se réinitialise à chaque combat|\n|\n|Chaque fois que vous |[heal]|:|\n|<.>| Infligez des |[physical-damage]| directs égaux au montant que vous|\n|  avez soigné à un ennemi sélectionné; ignorant son |[armor]
+venomire-specialization-description,[1@vampiric]|[*1@vampiric]| Lors de votre première attaque sur une nouvelle cible; appliquez 8% de |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| Chaque fois qu'un ennemi subit des |[bleed-damage]|; |[heal]|\n| de ce montant|\n|\n|[5@vampiric]|[*5@vampiric]| Les |[bleed-damage]| seront convertis en |[power]|\n|<696969> se réinitialise à chaque combat|\n|\n|Chaque fois que vous |[heal]|:|\n|<.>| Appliquez des cumuls de |[poison]| à l'ennemi sélectionné qui|\n|  sont égaux au montant que vous avez soigné
+bloodmoon-specialization-description,<.>| Transforme 200 % de la |[health]| perdue en |[physical-attack]|\n|<696969> se réinitialise à chaque combat|\n|[1@shadow]|[*1@shadow]| À chaque fois que vous évitez une attaque; |[backstab]|\n|[3@shadow]|[*3@shadow]| Les dégâts évités en étant |[elusive]| sont gagnés|\n| comme |[adaptive-attack]|<696969> - se réinitialise à chaque combat
+moonlighter-specialization-description,[1@shadow]|[*1@shadow]| À chaque fois que vous évitez une attaque; |[backstab]|\n|[3@shadow]|[*3@shadow]| Les dégâts évités en étant |[elusive]| sont gagnés|\n| comme |[adaptive-attack]|<696969> - se réinitialise à chaque combat
+nighthrust-specialization-description,[1@shadow]|[*1@shadow]| À chaque fois que vous évitez une attaque; |[backstab]|\n|[3@shadow]|[*3@shadow]| Les dégâts évités en étant |[elusive]| sont gagnés|\n| comme |[adaptive-attack]|<696969> - se réinitialise à chaque combat|\n|<.>| Gagnez des dégâts d'attaque évités avec |[dodge]|\n|<696969> se réinitialise à chaque combat
+challenger-specialization-description,[1@demonic]|[*1@demonic]| Pour chaque 25 |[max-health]| de base|\n| gagnez 1% de |[physical-attack]|\n|\n|[3@demonic]|[*3@demonic]| Recevez |[multi-attack-charge]|\n| au début du premier tour|\n|\n|<.>| 45% des dégâts infligés à un ennemi|\n| avec un |[arthurs-mark]| se|\n| propageront aux ennemis adjacents
+chromaguard-specialization-description,[1@chromalure]|[*1@chromalure]| Après avoir appliqué |[poison]|; infligez des |[poison-damage]| qui|\n| sont égaux à ce montant à la cible|\n|\n|[3@chromalure]|[*3@chromalure]| Au début de chaque tour; recevez |[toxic-transmute]|[0@chromalure]
+chromaspite-specialization-description,[1@chromalure]|[*1@chromalure]| Après avoir appliqué |[poison]|; infligez des |[poison-damage]| qui|\n| sont égaux à ce montant à la cible|\n|\n|[3@chromalure]|[*3@chromalure]| Au début de chaque tour; recevez |[toxic-transmute]|[0@chromalure]|\n|\n|<.>| Convertissez 75% de votre |[physical-attack]| en|\n| |[toxicity]
+chromathorn-specialization-description,Après avoir été touché par une attaque:|\n|<.>| Infligez |[active-armor]| en |[magic-damage]| à l'assaillant|\n|<.>| Chaque fois que vous êtes touché; appliquez |[poison]| sur|\n| l'assaillant qui est égal à votre |[toxicity]
+cinderthorn-specialization-description,Après avoir été touché par une attaque:|\n|<.>| Infligez |[active-armor]*| en |[magic-damage]| à l'assaillant|\n|<.>| |[immolate]
+mindthorn-specialization-description,Après avoir été touché par une attaque:|\n|<.>| Infligez |[active-armor]*| en |[magic-damage]| à l'assaillant|\n|<.>| +25% |[wisdom]|<696969> (se réinitialise à chaque combat)
+thornfrost-specialization-description,Après avoir été touché par une attaque:|\n|<.>| Infligez |[active-armor]*| en |[magic-damage]| à l'assaillant|\n|<.>| Appliquez 2 charges de |[weakness]| sur l'assaillant
+dauntless-specialization-description,[1@warrior]|[*1@warrior]| Chaque fois que vous attaquez; recevez |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Lorsque vous êtes attaqué; recevez |[combat-insight]|[0@warrior]
+quickblade-specialization-description,[1@warrior]|[*1@warrior]| Chaque fois que vous attaquez; recevez |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Lorsque vous êtes attaqué; recevez |[combat-insight]|[0@warrior]|\n|\n|<.>| Chaque fois que vous |[parry]|; recevez +1 |[total-attacks]|\n|<696969> se réinitialise à chaque combat
+rampager-specialization-description,[1@warrior]|[*1@warrior]| Chaque fois que vous attaquez; recevez |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Lorsque vous êtes attaqué; recevez |[combat-insight]|[0@warrior]
+thunderborn-specialization-description,[1@warrior]|[*1@warrior]| Chaque fois que vous attaquez; recevez |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Lorsque vous êtes attaqué; recevez |[combat-insight]|[0@warrior]|\n|\n|<.>| Chaque fois que vous étourdissez un ennemi; attaquez-le
+debilitator-specialization-description,[1@darkness]|[*1@darkness]| Appliquez |[fear]| à tous les ennemis ayant moins de dégâts d'attaque|\n| que vous au début du tour|[3@darkness]|\n|[*3@darkness]| Après avoir tué un ennemi; recevez 2 charges de |[dread]|[4@darkness]|\n|[*4@darkness]| Au début du premier tour; recevez |[madness]|[0@darkness]
+mindbreaker-specialization-description,<.>| Appliquez 2 charges de |[madness]| aux ennemis avec |[confusion]|\n|[1@darkness]|[*1@darkness]| Appliquez |[fear]| à tous les ennemis ayant moins de dégâts d'attaque|\n| que vous au début du tour|[3@darkness]|\n|[*3@darkness]| Après avoir tué un ennemi; recevez 2 charges de |[dread]|[4@darkness]|\n|[*4@darkness]| Au début du premier tour; recevez |[madness]|[0@darkness]
+deserter-specialization-description,Si une cible a plus de 90 % de |[health]|:|\n|[1@mercenary]|[1@mercenary]| Inflige 25 %|<00cd58> +|[luck]| de dégâts d'attaque augmentés|\n|[3@mercenary]|[*3@mercenary]| Gagne +1 |[total-attacks]| ce tour|\n|\n|<.>| gagne +1 à |[total-attacks]| tous les 10 étages
+faithbound-specialization-description,Si une cible a plus de 90 % de |[health]|:|\n|[1@mercenary]|[1@mercenary]| Inflige 25 %|<00cd58> +|[luck]| de dégâts d'attaque augmentés|\n|[3@mercenary]|[*3@mercenary]| Gagne +1 |[total-attacks]| ce tour|\n|\n|<.>| PASSIF : |[judgments-call]
+echomancer-specialization-description,[1@unchained]|[*1@unchained]| Les afflictions se propagent à tous les ennemis|\n|[2@unchained]|[*2@unchained]| Doublez les afflictions que vous appliquez
+evadium-specialization-description,[1@arcanum]|[*1@arcanum]| Tant que |[magic-shield]| est actif; gagnez |<7569f5>+375%|[magic-damage]|\n|[2@arcanum]|[*2@arcanum]| Gagnez un |[magic-shield]| à la fin du tour|\n|[4@arcanum]|[*4@arcanum]| Gagnez un |[magic-shield]| après avoir tué un ennemi|\n|\n|<.> | Chaque fois que vous |[dodge]|; |[counter-attack]
+invulnerium-specialization-description,[1@arcanum]|[*1@arcanum]| Tant que |[magic-shield]| est actif; gagnez |<7569f5>+375%|[magic-damage]|\n|[2@arcanum]|[*2@arcanum]| Gagnez un |[magic-shield]| à la fin du tour|\n|[4@arcanum]|[*4@arcanum]| Gagnez un |[magic-shield]| après avoir tué un ennemi|\n|\n|<.>| La première fois que votre |[magic-shield]| se brise; gagnez |[invulnerability]
+stunium-specialization-description,[1@arcanum]|[*1@arcanum]| Tant que |[magic-shield]| est actif; gagnez |<7569f5>+375%|[magic-damage]|\n|<.>| Quand votre |[magic-shield]| se brise; |[stun]| tous les ennemis|\n|[2@arcanum]|[*2@arcanum]| Gagnez un |[magic-shield]| à la fin du tour|\n|[4@arcanum]|[*4@arcanum]| Gagnez un |[magic-shield]| après avoir tué un ennemi
+harbinger-specialization-description,<.>| Inflige +1000% de dégâts d'attaque aux ennemis avec |[arthurs-mark]|\n|\n|<.>| Au début du combat; recevez |[invulnerability]|\n|\n|<.>| À la fin de votre premier tour; appliquez une charge|\n| d'|[arthurs-mark]| sur un ennemi aléatoire|\n|\n|<.>| Lorsqu'un ennemi avec |[arthurs-mark]| meurt;|\n| elle sera appliquée à un autre ennemi
+lionheart-specialization-description,<.>| Réduit de 1000% les dégâts des ennemis avec |[arthurs-mark]|\n|\n|<.>| Au début du combat; recevez |[invulnerability]|\n|\n|<.>| À la fin de votre premier tour; appliquez une charge|\n| d'|[arthurs-mark]| sur un ennemi aléatoire|\n|\n|<.>| Lorsqu'un ennemi avec |[arthurs-mark]| meurt;|\n| elle sera appliquée à un autre ennemi
+pursuer-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[dodge]| est garanti tant que vous avez de l’ |[agility]|[3@scout]|\n|<.>| |[*3@scout]| Après avoir |[dodge]| 3 fois; devenez |[elusive]|[0@scout]|\n|\n|Chaque fois que vous évitez une attaque:|\n|<.>| Gagnez {lethality-amount}% de |[lethality]|<696969> - se réinitialise à chaque combat
+striker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[dodge]| est garanti tant que vous avez de l’ |[agility]|[3@scout]|\n|<.>| |[*3@scout]| Après avoir |[dodge]| 3 fois; devenez |[elusive]|[0@scout]|\n|\n|Chaque fois que vous évitez une attaque:|\n|<.>| |[counter-attack]
+windwalker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[dodge]| est garanti si vous avez n'importe quelle quantité de |[agility]|[3@scout]|\n|<.>| |[*3@scout]| Après avoir |[dodge]| 3 fois; devenez |[elusive]|[0@scout]|\n|\n|Chaque fois que vous évitez une attaque :
+honor-trial-description,<.>| Tous les ennemis gagnent 1 niveau
+resilience-trial-description,<.>| Tous les ennemis gagneront |[armor]
+swarm-trial-description,<.>| Vous affrontez 6 ennemis à chaque combat
+confrontation-trial-description,<.>| Tous les ennemis gagnent +1 à |[total-attacks]
+sagacity-trial-description,Ajoute un chronomètre à vos actions; si le|\n|chronomètre atteint 0; met fin à la partie
+?-label,

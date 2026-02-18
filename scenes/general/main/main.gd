@@ -238,7 +238,7 @@ func on_window_position_changed() -> void :
 
 
 func load_options() -> void :
-    var language: String = ISteam.get_language()
+    var language: String = Platform.get_language()
     OptionsManager.load_options()
 
     if not OptionsManager.options.window_mode == WindowMode.Type.FULLSCREEN:

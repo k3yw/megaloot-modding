@@ -7,7 +7,8 @@ func get_last_room(floor_number: int) -> RoomResource:
     if floor_number + 1 == 100:
         return Rooms.BATTLE
 
-    if floor_number >= 9 and (floor_number - 9) % 25 == 0:
+
+    if (floor_number + 1) % 10 == 0:
         return Rooms.DISMANTLE
 
     if [7, 17, 27, 37].has(floor_number + 1) or floor_number >= 39 and (floor_number - 37) % 20 == 0:

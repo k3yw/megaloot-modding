@@ -9,7 +9,7 @@ enum VersionType{FULL, PLAYTEST, DEMO}
 
 
 static func get_version_type() -> VersionType:
-    if ISteam.get_app_id() == 2461710:
+    if Platform.get_app_id() == 2461710:
         return VersionType.DEMO
 
     if OS.has_feature("demo"):
@@ -23,4 +23,4 @@ static func is_demo() -> bool:
 
 
 static func get_version() -> String:
-    return "1.23"
+    return "1.23.1"

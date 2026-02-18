@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://bqj2ahbx57yv1"]
+[gd_scene load_steps=9 format=3 uid="uid://bqj2ahbx57yv1"]
 
 [ext_resource type="Script" uid="uid://cw0lpkyhooyvp" path="res://scenes/popup_containers/popup_container/popup_container.gd" id="1_p2lnx"]
 [ext_resource type="PackedScene" uid="uid://duwxqia2hvbth" path="res://scenes/ui/generic_panel/generic_panel.tscn" id="2_8mpxc"]
@@ -69,33 +69,6 @@ shader_parameter/gradient_size = 1.0
 shader_parameter/gradient_animated = false
 shader_parameter/gradient_time = 0.0
 
-[sub_resource type="Animation" id="Animation_oqj8y"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("..:self_modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("..:visible")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [false]
-}
-
 [sub_resource type="Animation" id="Animation_ms4hy"]
 resource_name = "show"
 tracks/0/type = "value"
@@ -137,13 +110,10 @@ tracks/2/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_3sq13"]
 _data = {
-&"RESET": SubResource("Animation_oqj8y"),
 &"show": SubResource("Animation_ms4hy")
 }
 
 [node name="PopupContainer" type="CanvasGroup" node_paths=PackedStringArray("animation_player", "container")]
-visible = false
-self_modulate = Color(1, 1, 1, 0)
 script = ExtResource("1_p2lnx")
 animation_player = NodePath("AnimationPlayer")
 container = NodePath("MarginContainer")

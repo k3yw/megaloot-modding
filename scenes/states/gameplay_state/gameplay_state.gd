@@ -310,14 +310,6 @@ func _process(delta: float) -> void :
 	process_loot_stash()
 	process_chat()
 
-=======
-
-	process_partner_press()
-
-	process_loot_stash()
-	process_chat()
-
->>>>>>> ascension_banned_items_buyout
 	process_changes()
 
 
@@ -703,34 +695,6 @@ func process_special_item_visuals(character: Character, slot: Slot) -> void :
 			curr_progress = 0.5
 
 
-=======
-
-
-	if item.resource.is_tome():
-		if character is Player:
-			if not character.can_learn_ability(item.resource.ability_to_learn):
-				curr_progress = 0.5
-
-
-
-	if item.resource.is_consumable():
-		if is_instance_valid(memory.battle) and memory.battle.turn_in_progress:
-			curr_progress = 0.5
-
-	if item.drag_locked:
-		curr_progress = 0.5
-
-	if item.resource.is_essential():
-		item_texture_rect.rarity_texture_rect.texture = preload("res://assets/textures/rarity_borders/toggle_off_border.png")
-
-		if item.toggled:
-			item_texture_rect.rarity_texture_rect.texture = preload("res://assets/textures/rarity_borders/toggle_on_border.png")
-
-		if not MultiplayerManager.can_activate_item(character, item, BattleTurn.Type.ATTACK):
-			curr_progress = 0.5
-
-
->>>>>>> ascension_banned_items_buyout
 	item_texture_rect.set_saturation(saturation)
 	item_texture_rect.activation_texture_bar.hide()
 	item_texture_rect.max_progress = 1.0
@@ -784,32 +748,16 @@ func process_equipment_preview_visuals(character: Character) -> void :
 
 		if not is_instance_valid(item_texture_rect):
 			continue
-<<<<<<< HEAD
-		
+
 		item_texture_rect.build_planner_match_texture_rect.hide()
 		for build_item in UserData.profile.get_selected_build().get_items():
 			if not equipped_item.resource == build_item.resource:
 				continue
 			item_texture_rect.build_planner_match_texture_rect.show()
-=======
->>>>>>> ascension_banned_items_buyout
 
 		var modulate: Color = Color.WHITE
 		equipment_slot_preview.slot_texture_rect.hide()
 
-<<<<<<< HEAD
-		item_texture_rect.activation_texture_bar.hide()
-		item_texture_rect.max_progress = 1.0
-		item_texture_rect.curr_progress = 0.0
-
-		if not character_manager.can_swap_equipment(character) == ItemPressResult.Type.SWAP:
-			item_texture_rect.curr_progress += 0.5
-
-		if character.equipment.sockets[index] == SocketTypes.REPLICATED_WEAPON:
-			item_texture_rect.curr_progress += 0.25
-			modulate = Color.CYAN
-
-=======
 		var modulate: Color = Color.WHITE
 		equipment_slot_preview.slot_texture_rect.hide()
 
@@ -824,7 +772,6 @@ func process_equipment_preview_visuals(character: Character) -> void :
 			item_texture_rect.curr_progress += 0.25
 			modulate = Color.CYAN
 
->>>>>>> ascension_banned_items_buyout
 		item_texture_rect.set_item_texture_rect_modulate(modulate)
 
 
@@ -950,13 +897,6 @@ func process_item_texture_rects() -> void :
 		var slot = Slot.new(selected_player.inventory, index)
 		process_special_item_visuals(selected_player, slot)
 
-<<<<<<< HEAD
-=======
-	for index in selected_player.inventory.items.size():
-		var slot = Slot.new(selected_player.inventory, index)
-		process_special_item_visuals(selected_player, slot)
-
->>>>>>> ascension_banned_items_buyout
 	for index in selected_player.merchant.items.size():
 		var slot = Slot.new(selected_player.merchant, index)
 		process_item_discount_visuals(slot)
@@ -2408,12 +2348,12 @@ func change_floor_number(amount: int, silent: bool):
 	memory.room_idx = 0
 
 
-	if memory.game_mode == GameModes.CHALLENGE:
-		for floor_number in memory.floor_number:
-			var achievement_name: String = local_player.adventurer.name.to_upper() + "_" + (AdventurerBorder.Type.keys()[AdventurerBorder.get_type(local_player.adventurer, floor_number)] as String).to_upper()
-			ISteam.get_achievement(achievement_name)
+    if memory.game_mode == GameModes.CHALLENGE:
+        for floor_number in memory.floor_number:
+            var achievement_name: String = local_player.adventurer.name.to_upper() + "_" + (AdventurerBorder.Type.keys()[AdventurerBorder.get_type(local_player.adventurer, floor_number)] as String).to_upper()
+            Platform.get_achievement(achievement_name)
 
-	ISteam.update_rich_presence_floor(memory.local_player.floor_number)
+    Platform.update_rich_presence_floor(memory.local_player.floor_number)
 
 
 	if not memory.game_mode == GameModes.PRACTICE:

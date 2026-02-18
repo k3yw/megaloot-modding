@@ -49,9 +49,9 @@ func process_press() -> void :
         line_edit.grab_focus()
         line_edit.caret_column = line_edit.text.length()
 
-        if ISteam.is_active():
-            var result = ISteam.steam.showFloatingGamepadTextInput(
-                ISteam.steam.FLOATING_GAMEPAD_TEXT_INPUT_MODE_SINGLE_LINE, 
+        if Platform.is_active():
+            var result = Platform.steam.showFloatingGamepadTextInput(
+                Platform.steam.FLOATING_GAMEPAD_TEXT_INPUT_MODE_SINGLE_LINE, 
                 rect.position.x, 
                 rect.position.y, 
                 rect.size.x, 
