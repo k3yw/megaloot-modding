@@ -1,0 +1,17 @@
+[remap]
+
+importer="csv_translation"
+type="Translation"
+uid="uid://hm7ekb2of8fy"
+
+[deps]
+
+files=["res://assets/translations/koreana/main.한국어.translation"]
+
+source_file="res://assets/translations/koreana/main.csv"
+dest_files=["res://assets/translations/koreana/main.한국어.translation"]
+
+[params]
+
+compress=true
+delimiter=0
