@@ -1789,10 +1789,6 @@ func buyout_item(player: Player, slot: Slot) -> void :
 
 	player.buyout_item(slot)
 	play_item_ascend(player, slot)
-<<<<<<< HEAD
-	
-=======
->>>>>>> ascension_banned_items_buyout
 	slot.remove_item(ItemContainer.ItemRemoveCause.BUYOUT)
 
 	if selected_player == player:

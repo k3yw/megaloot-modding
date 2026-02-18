@@ -5,10 +5,7 @@ enum ItemType{
 	BANISHED, 
 	STAT_ADAPTER, 
 	TOME, 
-<<<<<<< HEAD
-=======
 	ASCENDED
->>>>>>> ascension_banned_items_buyout
 	}
 
 
@@ -68,12 +65,9 @@ func process_market_slots():
 
 		if market_item.is_banish:
 			continue
-<<<<<<< HEAD
-=======
 			
 		if market_item.is_buyout:
 			continue
->>>>>>> ascension_banned_items_buyout
 
 		item_texture_rect.highlight_texture_rect.hide()
 
@@ -259,11 +253,7 @@ func can_buy_item(item_container: ItemContainer, idx: int) -> bool:
 		return false
 
 	if local_player.inventory.is_full():
-<<<<<<< HEAD
-		if not market_item.is_banish:
-=======
 		if not market_item.is_banish or not market_item.is_buyout:
->>>>>>> ascension_banned_items_buyout
 			var slots_to_merge: Array[Slot] = ItemManager.get_slots_to_merge(local_player, slot, ItemManager.MergeSource.MARKET)
 			if not slots_to_merge.size():
 				return false
@@ -308,8 +298,6 @@ func try_to_buy_item(item_container: ItemContainer, idx: int) -> bool:
 		await get_tree().create_timer(0.45).timeout
 		refresh_market(ItemContainerResources.MARKET, [market_index], false)
 		return true
-<<<<<<< HEAD
-=======
 		
 	if item.is_buyout:
 		var market_index: int = market_slot.index
@@ -317,7 +305,6 @@ func try_to_buy_item(item_container: ItemContainer, idx: int) -> bool:
 		await get_tree().create_timer(0.45).timeout
 		refresh_market(ItemContainerResources.MARKET, [market_index], false)
 		return true
->>>>>>> ascension_banned_items_buyout
 
 	if item.resource == Items.MERCHANT_UPGRADE:
 		var market_index: int = market_slot.index
@@ -514,57 +501,6 @@ func refresh_local_market(market_item_idx_arr: Array, clear_sell_stack: bool) ->
 
 
 	var normal_market_pool: Array[ItemResource] = local_player.get_normal_item_pool()
-<<<<<<< HEAD
-
-
-	for idx in market_item_idx_arr.size():
-		var arr_idx: int = market_item_idx_arr[idx]
-		var market_item: Item = local_player.market.items[arr_idx]
-		if is_instance_valid(market_item):
-			continue
-
-		var base_banish_chance: int = ceili(float(curr_floor_market_size - local_player.banished_items.size()) * 0.045)
-		var banish_chance_multiplier: int = 1.0 + (floorf(float(memory.floor_number)) * 0.1)
-		var banished_chance: int = mini(45, base_banish_chance * banish_chance_multiplier)
-
-		var item_resource: ItemResource = normal_market_pool[idx]
-		var item_type: ItemType = ItemType.NORMAL
-		var new_market_item: Item = null
-
-
-
-		if local_player.get_owned_item_resources().has(item_resource):
-			banished_chance *= 0.25
-
-		if curr_floor_market_size - local_player.banished_items.size() < 5:
-			banished_chance = 0.0
-
-		if local_player.get_owned_items().size() == 0:
-			banished_chance = 0.0
-
-
-
-		if Math.rand_success(banished_chance, RNGManager.market_rand):
-			item_type = ItemType.BANISHED
-
-
-		match item_type:
-			ItemType.NORMAL:
-				new_market_item = ItemManager.create_item(item_resource, memory.floor_number)
-				new_market_item.rarity = Balance.get_market_rarity(item_resource, memory.floor_number)
-
-				if RNGManager.market_rand.randf() < reforge_chance:
-					new_market_item.roll_reforge(memory.floor_number, 1)
-
-				local_player.add_to_recent_market_items(new_market_item.resource)
-
-
-			ItemType.BANISHED:
-				new_market_item = ItemManager.create_item(item_resource)
-				new_market_item.is_banish = true
-
-
-=======
 
 	var rolled_buyout = false
 	for idx in market_item_idx_arr.size():
@@ -621,7 +557,6 @@ func refresh_local_market(market_item_idx_arr: Array, clear_sell_stack: bool) ->
 				new_market_item.rarity = ItemRarity.Type.DIVINE
 
 
->>>>>>> ascension_banned_items_buyout
 		local_player.market.add_item_at(arr_idx, new_market_item)
 
 
