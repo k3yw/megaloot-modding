@@ -756,9 +756,6 @@ func process_equipment_preview_visuals(character: Character) -> void :
 		var modulate: Color = Color.WHITE
 		equipment_slot_preview.slot_texture_rect.hide()
 
-		var modulate: Color = Color.WHITE
-		equipment_slot_preview.slot_texture_rect.hide()
-
 		item_texture_rect.activation_texture_bar.hide()
 		item_texture_rect.max_progress = 1.0
 		item_texture_rect.curr_progress = 0.0
@@ -2342,12 +2339,12 @@ func change_floor_number(amount: int, silent: bool):
 	memory.room_idx = 0
 
 
-    if memory.game_mode == GameModes.CHALLENGE:
-        for floor_number in memory.floor_number:
-            var achievement_name: String = local_player.adventurer.name.to_upper() + "_" + (AdventurerBorder.Type.keys()[AdventurerBorder.get_type(local_player.adventurer, floor_number)] as String).to_upper()
-            Platform.get_achievement(achievement_name)
+	if memory.game_mode == GameModes.CHALLENGE:
+		for floor_number in memory.floor_number:
+			var achievement_name: String = local_player.adventurer.name.to_upper() + "_" + (AdventurerBorder.Type.keys()[AdventurerBorder.get_type(local_player.adventurer, floor_number)] as String).to_upper()
+			Platform.get_achievement(achievement_name)
 
-    Platform.update_rich_presence_floor(memory.local_player.floor_number)
+	Platform.update_rich_presence_floor(memory.local_player.floor_number)
 
 
 	if not memory.game_mode == GameModes.PRACTICE:

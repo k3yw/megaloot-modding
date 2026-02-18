@@ -117,10 +117,10 @@ func get_floor_record(adventurer: Adventurer, version: String = System.get_versi
 
 
 func get_name() -> String:
-    if Platform.is_active():
-        if not temp_id.is_empty():
-            return "[ALT] " + Platform.get_own_name()
-        return Platform.get_own_name()
+	if Platform.is_active():
+		if not temp_id.is_empty():
+			return "[ALT] " + Platform.get_own_name()
+		return Platform.get_own_name()
 
 	return "Player"
 

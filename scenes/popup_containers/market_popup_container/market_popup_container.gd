@@ -17,11 +17,11 @@ var last_frame_search: String = ""
 
 
 func _init() -> void :
-    if Engine.is_editor_hint():
-        return
+	if Engine.is_editor_hint():
+		return
 
-    self_modulate.a = 0.0
-    visible = false
+	self_modulate.a = 0.0
+	visible = false
 
 
 func _ready() -> void :
@@ -43,14 +43,14 @@ func _process(_delta: float) -> void :
 	if Input.is_action_just_pressed("press"):
 		process_item_press()
 
-    process_search()
+	process_search()
 
 
 func process_search() -> void :
-    if not last_frame_search == search_line_edit.line_edit.text:
-        Items.update_search(item_cache, search_line_edit.line_edit.text, item_holder)
+	if not last_frame_search == search_line_edit.line_edit.text:
+		Items.update_search(item_cache, search_line_edit.line_edit.text, item_holder)
 
-    last_frame_search = search_line_edit.line_edit.text
+	last_frame_search = search_line_edit.line_edit.text
 
 
 
