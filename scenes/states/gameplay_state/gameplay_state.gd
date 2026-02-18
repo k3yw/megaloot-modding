@@ -269,7 +269,6 @@ func _process(delta: float) -> void :
 	market_manager.process_market_refresh_button()
 	market_manager.process_hub_action_panel()
 	market_manager.process_market_slots()
-<<<<<<< HEAD
 	
 	var selected_player: Player = market_manager.gameplay_state.get_selected_player()
 
@@ -665,7 +664,6 @@ func process_special_item_visuals(character: Character, slot: Slot) -> void :
 		saturation = 0.0
 		if remaining_uses or is_instance_valid(item.resource.activation_effect.ability):
 			saturation = 1.0
-<<<<<<< HEAD
 
 	if item.resource.is_tome():
 		if character is Player:
