@@ -185,6 +185,51 @@ func get_resources(item_content: Array[ItemResource], floor_number: int = -1) ->
 
 
 
+
+
+func update_search(items: Array[Item], search_text: String, item_container: GridContainer) -> void :
+    var items_indexes_to_hide: Array[int] = []
+
+    if search_text.length():
+        for idx in items.size():
+            var hover_info_data = HoverInfoData.new()
+            var bb_container_data_arr: Array[BBContainerData] = []
+            var item: Item = items[idx]
+            var to_hide: bool = true
+
+            hover_info_data = Info.from_item(hover_info_data, item, null)
+
+            if not is_instance_valid(item.resource):
+                items_indexes_to_hide.push_back(idx)
+                continue
+
+            var item_name: String = T.get_translated_string(item.resource.name, "Item Name").to_lower()
+            if item_name.contains(search_text.to_lower()):
+                to_hide = false
+
+            bb_container_data_arr += hover_info_data.bb_container_data_arr
+
+            for bb_container_data in bb_container_data_arr:
+                if bb_container_data.text.to_lower().contains(search_text.to_lower()):
+                    to_hide = false
+
+            for set_resource in item.get_set_resources():
+                if set_resource.name.to_lower().contains(search_text.to_lower()):
+                    to_hide = false
+
+            if to_hide:
+                items_indexes_to_hide.push_back(idx)
+
+    for idx in item_container.get_child_count():
+        var item_texture_rect: ItemTextureRect = item_container.get_child(idx)
+        item_texture_rect.show()
+        if items_indexes_to_hide.has(idx):
+            item_texture_rect.hide()
+
+
+
+
+
 func get_bb_container_data(item: Item) -> BBContainerData:
     var bb_container_data = BBContainerData.new()
     bb_container_data.text = T.get_translated_string(item.resource.name, "item-name")

@@ -1,0 +1,1231 @@
+language-name-text,한국어
+leaderboard-progress-text,{floor-record} 층에 도달하여 {player-percentage-amount}의 플레이어를 능가했습니다
+leaderboard-progress-connection-failed-text,순위표에 연결하지 못했습니다. {floor-record}층에 도달했습니다
+final-floor-reached-text,마지막 층 도달
+ascension-level-text,승천 {level}
+final-floor-text,마지막 층
+new-journey-text,새 여정
+select-save-slot-text,선택
+delete-save-slot-text,삭제
+update-text,업데이트
+upload-text,업로드
+death-message-title-text,{player-name} 의 사망 메시지
+player-floor-record-text,{player-name}의 층 기록
+view-steam-profile-text,Steam 프로필 보기
+no-achievements-text,업적 없음
+loading-file-text,불러오는 중
+saving-file-text,저장하는 중
+proceed-text,진행
+join-lobby-text,참가
+enter-password-text,비밀번호 입력
+enter-ip-text,IP 입력
+specialization-floor-text,{floor-number}층에서 활성화
+convert-to-battle-stats-text,배틀 스탯으로 전환
+stat-per-kill-text,{stat}/킬
+item-found-text,{item-name} 발견
+doubles-own-stat-text,|{stat} 을 두 배로 늘림
+victory-text,승리
+defeat-text,패배
+ascend-text,승천
+negative-flow-text,부정적 |{flow}|; 아이템 세트 장비 해제
+cannot-be-dismantled-text,분해할 수 없습니다
+waiting-for-dismantle-text,분해 대기 중
+request-to-dismantle-text,분해 요청
+battles-remaining-text,남은 배틀
+current-battle-text,현재 전투
+last-battle-text,마지막 전투
+gold-per-battle-text,골드/배틀
+gold-per-kill-text,골드/처치
+enemy-player-immunity-text,{player-name}의 턴에||\n||받는 피해 -{amount}%
+enemy-player-immunity-misc-text,턴마다 -{amount}%
+player-sent-an-item-text,{player-name} 님이 {item-name}을(를) 보냈습니다
+send-item-to-player-text,아이템 보내기
+burnout-description-text,번아웃: 효과 비활성
+infuse-description-text,이 층에 아이템||\n||능력치와 효과 부여
+infused-flow-info-text,주입됨. |{flow-stat} 비용 없음
+infuse-text,주입
+to-open-battle-log-text,배틀 로그 열기
+to-unlock-stats-text,스탯 잠금 해제
+to-lock-stats-text,스탯 잠금
+to-deselect-text,선택 해제
+to-convert-text,전환
+to-select-text,선택
+to-toggle-text,토글
+to-unlock-text,잠금 해제
+to-learn-text,배우려면
+to-lock-text,잠금
+to-consume-text,소비
+to-activate-text,활성화
+to-restore-text,복구
+to-remove-text,제거
+to-banish-text,소멸시키려면
+to-equip-text,장착
+to-swap-text,교체
+to-take-text,획득
+to-buy-text,구매
+silenced-text,침묵 적용됨
+highest-text,최고
+cost-text,비용
+diamond-reward-text,{floor}층마다 추가 {diamond} 획득
+gold-start-text,`+{amount} {gold}로 시작
+reforge-token-description-text,재제작된 아이템에 |{stat}|이 적용될 확률 +{amount}%
+item-multiplier-text,장착한 총 |{item-set}| 아이템을 이 스탯에 곱합니다
+specialization-info-text,|{item-set}|을 |{specialization}|(으)로 변환
+required-item-sets-text,장착하려면 |{item-set}| 아이템이 필요합니다
+required-stat-text,필요 |{stat}
+cant-move-during-battle-text,전투 중 이동 불가
+missing-item-socket-text,{socket-name} 소켓 누락
+item-set-no-flow-text,|{item-set}|의 비용은 0% |{flow}|
+item-set-limit-reached-text,아이템 세트 제한 도달
+cant-equip-duplicates-text,복제본 장착 불가능
+cannot-be-upgraded-text,업그레이드할 수 없습니다
+unlearned-ability-text,미습득 능력
+learn-ability-text,{ability} 배우기
+skip-stance-text,건너뛰기: 이번 턴 공격 안 함
+guard-stance-text,방어: 이번 턴에 받는 피해 {amount}% 감소
+attack-on-activation-ability-text,발동 시 공격
+reforged-item-stats-text,재제작 아이템 능력치
+favorite-item-sets-text,즐겨찾는 아이템 세트
+market-item-sets-text,시장 아이템 세트
+tinker-kit-item-name-text,땜장이 키트
+battle-information-text,배틀 정보
+current-turn-text,턴 {turn-number}
+local-player-name-text,나
+dead-text,사망
+battle-log-applied-status-effect-text,{character-1}이(가) {character-2}에게 상태 효과를 부여했습니다
+battle-log-applied-status-on-self-text,{character}이(가) 자신에게 상태 효과를 부여했습니다
+battle-log-received-damage-from-source-text,{character}이(가) {source}에 피해를 입었습니다
+battle-log-received-damage-text,{character}이(가) 피해를 입었습니다
+battle-log-hit-with-text,{character-1}이(가) {source}(으)로 {character-2}을(를) 가격했습니다
+battle-log-activated-effect-text,{character}이(가) 효과를 발동했습니다
+battle-log-parry-text,{character-1}이(가) {character-2}의 공격을 모면했습니다
+battle-log-block-text,{character-1}이(가) {character-2}을(를) 차단했습니다
+battle-log-killed-text,{character-1}이(가) {character-2}을(를) 처치했습니다
+battle-log-steal-text,{character}가 {source}에서 훔쳤습니다
+battle-log-hit-text,{character-1}이(가) {character-2}을(를) 가격했습니다
+battle-log-cleanse-text,{character}이(가) 일소됐습니다
+battle-log-dodged-text,{character}이(가) 회피했습니다
+battle-log-healed-text,{character}이(가) 치유했습니다
+overhealed-text,초과 치유함
+overheal-text,초과 치유
+executed-text,처형됨
+blocked-text,차단됨
+debuff-immune-text,면역력 디버프
+failed-steal-text,강탈 실패함
+steal-text,강탈
+escaped-text,탈출함
+cleanse-text,일소
+inventory-full-text,인벤토리 꽉 참
+armor-break-text,갑옷 파괴!
+counter-attack-break-text,역습!
+missing-mana-text,사라진 마나
+cleansed-text,일소됨
+heal-text,치유
+attack-text,공격
+enter-text,입장
+skip-text,건너뛰기
+open-text,열기
+sell-all-text,모두 판매
+close-text,닫다
+demo-tower-completed-text,탑 데모 완료
+grants-stat-consumable-text,이 배틀에 |{amount}| |{stat}|을(를) 부여합니다
+temp-stat-to-add-potion-description-text,이 배틀에 |{stat}|을(를) 부여합니다
+status-effect-potion-description-multiple-text,|{status-effect}| {amount} 스택 부여
+status-effect-potion-description-single-text,|{status-effect}| 스택 1개 부여
+potion-restores-text,{amount} |{stat}|을(를) 복원합니다
+potion-regenerates-text,{stat}| {amount} 재생 |
+potion-repairs-text,{stat}| {amount}% 복구 |
+refills-every-battle-potion-text,매 전투마다 충전됩니다
+stat-transform-text,|{stat-1}|을 |{stat-2}|로 변환
+banished-item-text,소멸된 {item-name}
+reforged-item-text,재제작된 {item-name}
+item-reforge-text,{item-name} 재제작
+banish-description-text,{item-name}을(를) 탑에서|\n|영구적으로 제거합니다
+unlock-requirements-description-text,잠금 해제에 필요한 완료된 배틀:
+unlimited-amount-text,무제한
+max-amount-text,최대: {amount}
+corrupted-fragment-text,손상된 조각
+specialization-text,전문화
+unknown-enemy-text,알 수 없는 적
+unknown-item-text,알 수 없는 아이템
+passive-set-text,패시브 세트
+empty-set-text,빈 세트
+sell-for-text,판매 가격
+level-up-text,레벨 업
+chapter-text,장
+abilities-text,능력
+ability-text,능력
+passives-text,패시브
+passive-text,패시브
+rewards-text,보상
+convert-text,변환
+upgrade-text,업그레이드
+command-list-text,명령
+help-command-info-text,{command}을(를) 작성해 도움 받기
+kick-command-info-text,{command} [player index]|\n|플레이어를 로비에서 추방합니다|\n|예시: {command} 1 (당신 다음의 첫 번째 플레이어를 추방)
+end-game-text-text,탑에서 단련되어; 당신의 영혼은 가치를 증명했습니다.
+highest-floor-result-screen-text,최고층: {floor-number}
+died-on-floor-text,{floor-number}층에서 사망
+merchant-exclusive-text,상인 전용
+upgrades-into-text,업그레이드 결과:
+highest-floor-text,최고층
+floor-number-text,{number}층
+not-refinable-text,정제 불가
+top-player-text,최상위 플레이어
+refinable-text,정제 가능
+deforge-text,디포지
+active-text,활성
+floor-text,층
+split-text,분할
+elite-text,엘리트
+gold-text,골드
+level-text,Lv
+set-text,세트
+xp-text,Xp
+memories-button,기억
+name-label,이름
+lobbies-button,로비
+game-mode-label,게임 모드
+locked-label,잠김
+players-label,플레이어
+select-button,선택
+select-label,선택
+back-button,뒤로
+button-label,버튼
+wishlist-on-steam!-label,Steam 찜 목록에 추가하세요!
+enter-the-tower-button,탑 입장
+library-button,라이브러리
+library-label,라이브러리
+workshop-button,창작마당
+quit-button,종료
+market-hover-name,시장
+market-hover-description,<696969>새 아이템이 매 층마다 추가됩니다
+market-hover-bottom-hint,아이템 표시
+refresh-market-hover-name,시장 새로고침
+refresh-market-hover-description,<696969>가격은 전투마다 초기화됩니다
+sell-label,판매
+split-label,분할하다
+search-line-edit,검색 중...
+current-battle-label,현재 전투
+turn-1-label,턴 1
+normal-battle-label,일반 배틀
+ping-hover-name,핑
+ping-hover-description,
+10-label,
+open-button,열기
+loot-stash-hover-name,전리품 은닉처
+loot-stash-hover-description,<696969>남는 전리품은 여기에 들어갑니다
+button-button,버튼
+market-items-label,상점 아이템
+close-button,닫기
+waiting-for-all-players-to-connect-label,다른 플레이어의 연결을 기다리는 중...
+floor-record-x-label,층 기록: x
+battle-log-button,배틀 로그
+battle-log-label,배틀 로그
+feedback-button,피드백
+feedback-label,피드백
+confirm-button,확인
+overview-button,개요
+speedruns-button,스피드런
+submit-run-button,런 제출
+version-label,버전:
+selection-label,선택
+highest-floor-10-label,최고층: 10
+top-player-label,최상위 플레이어
+time-label,시간
+enter-password-line-edit,비밀번호 입력...
+join-button,참가
+password-label,비밀번호
+connection-type-label,연결 유형
+challenge-drop-down-selection,도전
+pvp-no-achievements-drop-down-selection,PvP [업적 없음]
+practice-no-achievements-drop-down-selection,연습 [업적 없음]
+public-label,공개
+--credits--label,- 크레딧 -
+thanks-button,감사합니다
+no-tutorial-label,튜토리얼 없음
+no-tutorial-info-label-label,이 게임은 학습이|\n|지시가 아니라 실험과 발견을 통해 이루어져야 한다고 믿습니다.
+proceed-button,진행
+items-button,아이템
+bestiary-button,적 목록
+synergies-button,시너지
+passives-button,패시브
+build-planner-label,빌드 플래너
+delete-label,삭제
+build-1-label,빌드 1
+blue-team-label,파란 팀
++-join-label,[+] 참가
+player-name-label,플레이어 이름
+select-adventurer-label,모험가 선택
+red-team-label,빨간 팀
+trials-label,시험
+configure-button,구성
+0/4-label,0/4
+begin-button,시작
+begin-label,시작
+restart-button,재시작
+restart-label,재시작
+resume-button,이어서 하기
+resume-label,이어서 하기
+options-button,옵션
+save-&-exit-button,저장 및 종료
+text-label,텍스트
+controls-button,컨트롤
+video-button,동영상
+audio-button,음성
+misc-button,기타
+primary-action-button,주요 동작
+key-label,열쇠
+?-label,
+listening-for-input-label,의견을 들려주세요...
+ability-button,능력
+skip-button,건너뛰기
+refresh-market-button,상점 새로 고치기
+brightness-label,밝기
+contrast-label,대비
+window-mode-label,창 모드:
+resolution-label,해상도:
+v-sync-label,
+music-label,음악
+sfx-label,SFX
+tooltip-lock-time-label,툴팁 잠금 시간
+language-label,언어:
+chromatic-aberration-label,색수차
+display-run-time-label,런 타임 표시
+screen-shake-label,화면 흔들림
+scan-lines-label,주사선
+reset-to-defaults-button,기본값으로 재설정
+->-label,
+end-button,끝내기
+enter-endless-button,무한 모드 입장
+refresh-merchant-hover-name,상인 새로고침
+refresh-merchant-hover-description,<696969>새 아이템 제공
+upgrade-label,업그레이드
+-button,
+stance-hover-name,자세
+activate-endless-button,무한 모드 활성화
+refresh-mystic-trader-hover-name,신비 상인 새로고침
+refresh-mystic-trader-hover-description,<696969>새 아이템 소환
+0/3-label,
+request-to-dismantle-button,분해 요청
+dismantle-button,분해
+windowed-window-mode-name,창 모드 적용됨
+borderless-window-mode-name,테두리 없는 창
+fullscreen-window-mode-name,전체화면
+challenge-game-mode-name,도전
+pvp-game-mode-name,PvP
+practice-game-mode-name,연습
+-popup,
+counter-attack!-popup,역습!
+lucky-attack-popup,행운의 공격
+armor-break!-popup,갑옷 파괴!
+backstabbed-popup,배신당함
+dodged-popup,회피함
+parried-popup,모면함
+blocked-popup,차단됨
+missed-popup,빗나감
+helmet-socket-name,헬멧
+chestplate-socket-name,흉갑
+leggings-socket-name,각반
+boots-socket-name,부츠
+necklace-socket-name,목걸이
+weapon-socket-name,무기
+ring-socket-name,반지
+zefrot-item-name,제프로트
+totem-of-greed-item-name,탐욕의 토템
+steak-item-name,스테이크
+ribbon-of-fortune-item-name,행운의 리본
+poor-mans-path-item-name,가난한 자의 길
+pallac-item-name,팔락
+merchant-upgrade-item-name,상인 업그레이드
+frokt-item-name,프록트
+poor-mans-blade-item-name,가난한 자의 칼날
+wooden-shoes-item-name,나막신
+natures-gift-item-name,자연의 선물
+magical-stick-item-name,마법의 막대기
+training-hammer-item-name,훈련용 망치
+natures-collar-item-name,자연의 깃
+poor-mans-helmet-item-name,가난한 자의 헬멧
+training-axe-item-name,훈련용 도끼
+wooden-plates-item-name,나무 갑옷
+leather-boots-item-name,가죽 부츠
+leather-helmet-item-name,가죽 헬멧
+leather-pants-item-name,가죽 바지
+leather-chestplate-item-name,가죽 흉갑
+training-sword-item-name,훈련용 검
+insightus-item-name,인사이트스
+amulet-of-life-item-name,생명의 부적
+starborn-ring-item-name,스타본 반지
+recruits-boots-item-name,신병의 부츠
+keepsake-item-name,기념품
+recruits-hood-item-name,신병의 모자
+iron-dagger-item-name,철 단검
+hunters-boots-item-name,헌터의 부츠
+hunters-hood-item-name,헌터의 모자
+recruits-pants-item-name,신병의 바지
+chainmail-item-name,사슬 갑옷
+hunters-necklace-item-name,사냥꾼의 목걸이
+hunters-pants-item-name,헌터의 바지
+recruits-cloak-item-name,신병의 망토
+hunters-ring-item-name,헌터의 반지
+hunters-jerkin-item-name,헌터의 조끼
+crystal-staff-item-name,수정 지팡이
+vitality-ring-item-name,활력 반지
+ring-of-anger-item-name,분노 반지
+zephyrons-tome-item-name,제피론의 마도서
+silver-ring-item-name,실버 반지
+marauders-helmet-item-name,약탈자의 헬멧
+silver-sabatons-item-name,실버 사바톤
+silver-helmet-item-name,실버 헬멧
+life-seeker-item-name,목숨 추종자
+silver-leggings-item-name,실버 각반
+zephyrons-magical-shoes-item-name,제피론의 마법 신발
+silver-chestplate-item-name,실버 흉갑
+zephyrons-eye-item-name,제피론의 눈
+bastolics-guardian-item-name,바스톨릭의 수호자
+silver-sword-item-name,실버 검
+zephyrons-magical-ring-item-name,제피론의 마법 반지
+bastolics-gauntlet-item-name,바스톨릭의 건틀릿
+zephyrons-magical-cloak-item-name,제피론의 마법 망토
+zephyrons-magical-cap-item-name,제피론의 마법 모자
+zephyrons-magical-staff-item-name,제피론의 마법 지팡이
+believers-locket-item-name,신도의 펜던트
+silver-axe-item-name,실버 도끼
+tome-of-arcanum-item-name,아르카누스의 책
+arcanum-hood-item-name,아르카눔 후드
+golden-dagger-item-name,골드 단검
+golden-sabatons-item-name,골드 사바톤
+golden-helmet-item-name,골드 헬멧
+arcanum-shoes-item-name,아르카누스의 신발
+golden-leggings-item-name,골드 각반
+arcanum-robe-item-name,아르카누스의 가운
+golden-chestplate-item-name,골드 흉갑
+precious-ring-item-name,귀한 반지
+magic-wand-item-name,마법의 지팡이
+golden-crown-item-name,골드 왕관
+golden-warden-item-name,골드 워든
+greeds-grasp-item-name,탐욕의 지배
+golden-sword-item-name,골드 검
+omni-ring-item-name,무한 반지
+darkwood-plates-item-name,다크우드 아머
+tome-of-attacks-item-name,공격의 마도서
+warriors-sabatons-item-name,전사의 사바톤
+hunger-blade-item-name,굶주린 칼날
+warriors-helmet-item-name,전사의 헬멧
+famished-blade-item-name,허기진 칼날
+unchained-gauntlet-item-name,비연쇄 장갑
+blackthorn-sabatons-item-name,산사나무 발덮개
+warriors-leggings-item-name,전사의 각반
+blackthorn-leggings-item-name,산사나무 다리갑옷
+warriors-chestplate-item-name,전사의 흉갑
+warriors-war-hammer-item-name,전사의 전투용 도끼
+blackthorn-chestplate-item-name,산사나무 흉갑
+unchained-ring-item-name,속박되지 않은 반지
+hy-sword-item-name,하이소드
+pantaloons-of-greatness-item-name,위인의 판탈롱
+warriors-ring-item-name,전사의 반지
+blackthorn-crown-item-name,산사나무 왕관
+orions-core-item-name,오리온의 중심
+orions-path-item-name,오리온의 길
+orions-destiny-item-name,오리온의 운명
+orions-leggings-item-name,오리온의 각반
+orions-sanguine-salvation-item-name,오리온의 희망찬 구원
+orions-heart-item-name,오리온의 심장
+orions-rage-item-name,오리온의 격노
+living-boots-item-name,살아있는 부츠
+living-helmet-item-name,살아있는 헬멧
+living-leggings-item-name,살아있는 각반
+living-chestplate-item-name,살아있는 흉갑
+berserkers-axe-item-name,광전사의 도끼
+berserkers-helmet-item-name,광전사의 헬멧
+eldrids-ring-item-name,엘드리드의 반지
+ring-of-power-item-name,파워 반지
+silver-heart-item-name,실버 하트
+thunderiders-item-name,천둥의 기수들
+thunderhelm-item-name,천둥의 헬멧
+royal-sabatons-item-name,왕족의 사바톤
+royal-helmet-item-name,왕족의 헬멧
+royal-leggings-item-name,왕족의 각반
+thunderstriders-item-name,천둥의 주자들
+royal-chestplate-item-name,왕족의 흉갑
+thundergrace-item-name,천둥의 품위
+thunderblade-item-name,천둥의 칼날
+thundervow-item-name,천둥의 서약
+iron-eater-item-name,강철 포식자
+tome-of-darkness-item-name,어둠의 책
+witherscar-item-name,오래된 상처
+dark-magical-ring-item-name,어둠의 마법 반지
+nighthorn-item-name,나이트혼
+ashcrow-item-name,잿울
+dark-harness-item-name,어둠의 벨트
+alchemists-wisdom-item-name,연금술사의 지능
+shadow-wisdom-item-name,그림자 지능
+shadow-ring-item-name,그림자 반지
+shadow-piercer-item-name,그림자 귀걸이
+demonic-sabatons-item-name,악령의 사바톤
+shadow-cloak-item-name,그림자 망토
+shadow-echo-item-name,그림자 울림
+demonic-helmet-item-name,악령의 헬멧
+demonic-axe-item-name,악령의 도끼
+shadow-sentence-item-name,그림자 형벌
+shadow-vortex-item-name,그림자 소용돌이
+demonic-leggings-item-name,악령의 각반
+demonic-claymore-item-name,악령의 클레이모어
+demonic-chestplate-item-name,악령의 흉갑
+demonic-ring-item-name,악령의 반지
+shard-of-power-item-name,힘의 조각
+emperors-will-item-name,황제의 의지
+wooden-crown-item-name,나무 왕관
+witchcraft-leggings-item-name,마녀의 레깅스
+cursed-ring-item-name,저주받은 반지
+cursed-necklace-item-name,저주받은 목걸이
+mask-of-the-cursed-item-name,저주받은 자의 가면
+blade-of-the-ruined-item-name,몰락한 자의 칼날
+lightning-boots-item-name,번개 부츠
+shamans-robe-item-name,주술사의 가운
+turtle-sabatons-item-name,거북의 사바톤
+turtle-leggings-item-name,거북이 각반
+cowards-ring-item-name,겁쟁이의 반지
+soul-collector-item-name,영혼 수집가
+heart-of-gold-item-name,골드의 심장
+turtle-chestplate-item-name,거북이 흉갑
+elemental-necklace-item-name,자연력 목걸이
+giants-ring-item-name,거인의 반지
+black-oath-item-name,검은 맹세
+turtle-gauntlet-item-name,거북이 건틀렛
+gloom-item-name,암울
+qolk-item-name,콜크
+blake-item-name,블레이크
+vampiric-helmet-item-name,뱀파이어 헬멧
+vampiric-chestplate-item-name,흡혈귀의 흉갑
+glimmer-item-name,희미한 빛
+vurk-item-name,버크
+bloodedge-item-name,블러드에지
+ethercrests-tome-item-name,에더크레스트의 책
+ethercrests-sabatons-item-name,에더크레스트의 사바톤
+ethercrests-blade-item-name,에더크레스트의 칼날
+ethercrests-helmet-item-name,에더크레스트의 헬멧
+ethercrests-staff-item-name,에더크레스트의 지팡이
+ethercrests-sword-item-name,에더크레스트의 검
+ethercrests-leggings-item-name,에더크레스트의 각반
+ethercrests-chestplate-item-name,에더크레스트의 흉갑
+ethercrests-ring-item-name,에더크레스트의 반지
+mask-of-cataclysm-item-name,대재앙의 가면
+ring-of-interest-item-name,흥미의 반지
+rod-of-doom-item-name,파멸의 회초리
+shadow-whisper-item-name,그림자 속삭임
+magma-sabatons-item-name,마그마 사바톤
+magma-helmet-item-name,마그마 헬멧
+magma-leggings-item-name,마그마 각반
+magma-chestplate-item-name,마그마 흉갑
+magma-necklace-item-name,마그마 목걸이
+magma-poleaxe-item-name,마그마 도끼창
+ring-of-ice-item-name,얼음 반지
+jesters-bone-mask-item-name,광대의 뼈 가면
+celestial-sabatons-item-name,셀레스티얼 사바톤
+celestial-helmet-item-name,별의 투구
+celestial-leggings-item-name,천상의 레깅스
+celestial-chestplate-item-name,천상의 흉갑
+throngler-item-name,트롱글러
+dawnbringer-item-name,던브링어
+ring-of-unity-item-name,통일 반지
+excalibur-item-name,엑스칼리버
+ribbon-of-fortune-item-description,<696969>상자를 열 때 아이템을 추가로|\n|<696969>얻을 확률 +25%
+merchant-upgrade-item-description,|[tinker]| 잠금 해제
+bloodedge-item-description,<696969>처치할 때마다 강해지는 데 사용됨
+excalibur-item-description,<696969>호수로부터의 선물
+bat-enemy-name,박쥐
+leafing-enemy-name,리핑
+fronk-enemy-name,프롱크
+boar-enemy-name,멧돼지
+snow-pix-enemy-name,스노우 픽스
+pebbling-enemy-name,페블링
+slime-enemy-name,슬라임
+rat-enemy-name,쥐
+goblin-enemy-name,고블린
+skeleton-warrior-enemy-name,해골 전사
+shadow-wizard-enemy-name,그림자 마법사
+jellyrak-enemy-name,젤리라크
+efis-enemy-name,에피스
+rogue-enemy-name,불한당
+slorn-enemy-name,슬론
+armored-goblin-enemy-name,무장 고블린
+stone-golem-enemy-name,스톤 골렘
+witch-enemy-name,마녀
+wizard-skeleton-enemy-name,마법사 해골
+giant-spider-enemy-name,거대 거미
+blood-ghoul-enemy-name,블러드 구울
+armored-spirit-enemy-name,무장 스피릿
+red-orc-enemy-name,레드 오크
+snow-wraith-enemy-name,스노우 유령
+venomous-spider-enemy-name,독거미
+harpy-enemy-name,하피
+bravura-enemy-name,브라부라
+fire-dragon-enemy-name,파이어 드래곤
+void-squid-enemy-name,보이드 스퀴드
+brother-enemy-name,형제
+shadow-ghost-enemy-name,그림자 유령
+kotya-enemy-name,코티야
+magma-golem-enemy-name,마그마 골렘
+overseer-enemy-name,감독관
+braskap-enemy-name,브라스캡
+cloud-dragon-enemy-name,클라우드 드래곤
+ruined-king-enemy-name,몰락한 왕
+blinded-priest-enemy-name,맹인 사제
+morizon-enemy-name,모라이존
+moon-enemy-name,달
+cursed-abomination-enemy-name,저주받은 흉물
+mars-enemy-name,화성
+pinto-enemy-name,핀토
+neptune-enemy-name,해왕성
+thunder-dragon-enemy-name,썬더 드래곤
+eldrids-flesh-enemy-name,엘드리드의 육신
+golden-guardian-enemy-name,황금 수호자
+venus-enemy-name,금성
+jupiter-enemy-name,목성
+saturn-enemy-name,토성
+uranus-enemy-name,천왕성
+sun-enemy-name,태양
+iron-golem-enemy-name,아이언 골렘
+windwatcher-enemy-name,바람 감시자
+graven-enemy-name,그레이번
+death-enemy-name,데스
+perfect-slave-enemy-name,퍼펙트 슬레이브
+common-chest-enemy-name,일반 상자
+golden-chest-enemy-name,황금 상자
+heart-of-the-tower-enemy-name,탑의 심장
+merchant-enemy-name,상인
+mystic-bison-enemy-name,신비한 들소
+mystic-trader-enemy-name,신비 상인
+training-dummy-enemy-name,훈련용 허수아비
+ancient-ice-item-set-name,고대의 얼음
+ancient-shell-item-set-name,고대의 껍데기
+arcanum-item-set-name,아르카누스
+bastolic-item-set-name,바스톨릭
+berserker-item-set-name,광전사
+blackthorn-item-set-name,산사나무
+cataclysm-item-set-name,대재앙
+celestial-item-set-name,천상
+chromalure-item-set-name,크롬 효과
+consumable-item-set-name,소모품
+cursed-item-set-name,저주
+darkness-item-set-name,어둠
+demonic-item-set-name,악령
+essential-item-set-name,필수
+flesh-item-set-name,육신
+generic-item-set-name,일반
+golden-item-set-name,골드
+hunter-item-set-name,헌터
+jade-item-set-name,제이드
+legacy-item-set-name,레거시
+magma-item-set-name,마그마
+mercenary-item-set-name,용병
+orion-item-set-name,오리온
+phantom-item-set-name,혼령
+poverty-item-set-name,빈곤
+reforge-item-set-name,재제작
+royal-item-set-name,왕족
+scout-item-set-name,정찰
+shadow-item-set-name,그림자
+silver-item-set-name,실버
+swiftness-item-set-name,날쌘돌이
+thunder-item-set-name,천둥
+tome-item-set-name,마도서
+unchained-item-set-name,비연쇄
+vampiric-item-set-name,흡혈귀
+warrior-item-set-name,전사
+wood-item-set-name,나무
+zephyron-item-set-name,제피론
+beastbound-specialization-name,야수결속
+bloodcaster-specialization-name,블러드캐스터
+vampiercer-specialization-name,뱀파이어서
+venomire-specialization-name,베노마이어
+bloodmoon-specialization-name,피의 달
+moonlighter-specialization-name,문라이터
+nighthrust-specialization-name,밤의 돌진
+challenger-specialization-name,챌린저
+chromaguard-specialization-name,크로마가드
+chromaspite-specialization-name,크로마스파이트
+chromathorn-specialization-name,크로마쏜
+cinderthorn-specialization-name,신더쏜
+mindthorn-specialization-name,마인드쏜
+thornfrost-specialization-name,쏜프로스트
+dauntless-specialization-name,돈트리스
+quickblade-specialization-name,쾌검
+rampager-specialization-name,램페이저
+thunderborn-specialization-name,썬더본
+debilitator-specialization-name,데빌리에이터
+mindbreaker-specialization-name,마인드브레이커
+deserter-specialization-name,데저터
+faithbound-specialization-name,페이스바운드
+echomancer-specialization-name,에코맨서
+evadium-specialization-name,이베이디움
+invulnerium-specialization-name,인블네리움
+stunium-specialization-name,스터니움
+harbinger-specialization-name,하빈저
+lionheart-specialization-name,라이온하트
+pursuer-specialization-name,퍼슈어
+striker-specialization-name,스트라이커
+windwalker-specialization-name,윈드워커
+accuracy-stat-name,명중
+active-armor-stat-name,활성 갑옷
+adaptive-attack-stat-name,적응 공격
+agility-stat-name,민첩성
+armor-stat-name,갑옷
+armor-damage-stat-name,방어 피해
+armor-shields-stat-name,아머 실드
+armor-steal-stat-name,갑옷 강탈
+armored-attack-stat-name,방어 공격
+blackrot-damage-stat-name,블랙롯 피해
+bleed-damage-stat-name,출혈 피해
+cinder-damage-stat-name,소각 피해
+combat-stat-name,전투
+crit-chance-stat-name,치명 기회
+critical-damage-stat-name,치명 피해
+dazzle-stat-name,현혹
+dazzle-damage-stat-name,현혹 피해
+diamond-stat-name,다이아몬드
+eldership-stat-name,장로회
+electric-damage-stat-name,전기 피해
+electricity-stat-name,전기
+elemental-power-stat-name,자연력 힘
+elemental-resistance-stat-name,자연력 저항
+energy-stat-name,에너지
+faith-stat-name,신념
+flow-stat-name,흐름
+freeze-attack-stat-name,냉각 공격
+freeze-damage-stat-name,냉각 피해
+gold-stat-name,골드
+gold-on-kill-stat-name,처치 시 골드
+greed-stat-name,탐욕
+health-stat-name,체력
+lethality-stat-name,치명성
+life-steal-stat-name,목숨 강탈
+luck-stat-name,행운
+magic-attack-stat-name,마법 공격
+magic-damage-stat-name,마법 피해
+malice-stat-name,악의
+malice-damage-stat-name,악의 피해
+mana-stat-name,마나
+max-health-stat-name,최대 체력
+max-mana-stat-name,최대 마나
+omni-crit-chance-stat-name,무한 치명 기회
+omni-vamp-stat-name,무한 흡혈
+penetration-stat-name,관통
+physical-attack-stat-name,물리적 공격
+physical-damage-stat-name,물리적 피해
+poison-damage-stat-name,독약 피해
+power-stat-name,힘
+random-stat-stat-name,랜덤 스탯
+recovery-stat-name,회복
+spelldom-stat-name,마법지배
+tenacity-stat-name,불굴
+total-attacks-stat-name,총 공격
+toughness-stat-name,강철
+toxicity-stat-name,독성
+true-damage-stat-name,순수 피해
+wisdom-stat-name,지능
+enervation-status-effect-name,쇠약
+enervated-status-effect-application-message,쇠약
+weakness-status-effect-name,나약
+weakened-status-effect-application-message,나약해짐
+black-curse-status-effect-name,검은 저주
+cursed-status-effect-application-message,저주받음
+curse-status-effect-name,저주
+stun-status-effect-name,기절
+stunned-status-effect-application-message,기절함
+slowness-status-effect-name,굼벵이
+slowed-status-effect-application-message,굼벵이 적용됨
+confusion-status-effect-name,혼란
+confused-status-effect-application-message,혼란 적용됨
+silence-status-effect-name,침묵
+silenced-status-effect-application-message,침묵 적용됨
+toxic-transmute-status-effect-name,독성 변환
+poison-status-effect-name,독약
+poisoned-status-effect-application-message,독약 적용됨
+bleed-status-effect-name,출혈
+sparkle-status-effect-name,섬광
+sparkle-status-effect-application-message,섬광
+magic-shield-status-effect-name,마법 방패
+ephemeral-armor-status-effect-name,단명 갑옷
+ephemeral-shell-status-effect-name,단명 껍데기
+electro-charge-status-effect-name,전기 습격
+ephemeral-lock-status-effect-name,단명 자물쇠
+exhaustion-status-effect-name,탈진
+malice-shield-status-effect-name,악의의 방패
+armor-shield-status-effect-name,갑옷 방패
+freeze-status-effect-name,냉각
+frozen-status-effect-application-message,냉각됨
+fear-status-effect-name,공포
+invulnerability-status-effect-name,불사신
+inherited-sin-status-effect-name,상속된 죄악
+arthurs-mark-status-effect-name,아서의 흔적
+timeout-status-effect-name,타임아웃
+cinder-essence-status-effect-name,소각의 정수
+combat-insight-status-effect-name,전투 통찰력
+magic-blitz-status-effect-name,마법 공세
+magic-blitz-status-effect-application-message,마법 공세
+omni-blitz-status-effect-name,무한 공세
+omni-blitz-status-effect-application-message,무한 공세
+vimblow-status-effect-name,원기 강타
+dread-status-effect-name,공포
+fury-status-effect-name,격분
+fury-status-effect-application-message,격분
+counter-attack-charge-status-effect-name,반격 충전
+multi-attack-charge-status-effect-name,다중 습격
+stun-attack-charge-status-effect-name,기절 공격 충전
+debuff-immunity-status-effect-name,면역력 디버프
+golden-heart-status-effect-name,골드 심장
+golden-lock-status-effect-name,골드 자물쇠
+lethality-status-effect-name,치사
+madness-status-effect-name,광기
+focused-status-effect-name,집중
+blindness-status-effect-name,실명
+clarity-status-effect-name,선명
+elusive-status-effect-name,포착불가
+purification-status-effect-name,정화
+grace-status-effect-name,은총
+curse-of-the-tower-status-effect-name,탑의 저주
+blue-team-status-effect-name,파란 팀
+red-team-status-effect-name,빨간 팀
+unavoidable-keyword-name,회피 불가
+anti-steal-keyword-name,강탈 방지
+attack-damage-keyword-name,공격 피해
+execute-keyword-name,처형
+ascend-keyword-name,승천
+tinker-keyword-name,땜질
+heal-keyword-name,치유
+tier-i-reward-keyword-name,티어 I 보상
+critical-strike-battle-action-name,치명 공습
+counter-attack-battle-action-name,역습
+multi-attack-battle-action-name,다중 공격
+lucky-attack-battle-action-name,행운의 공격
+armor-break-battle-action-name,갑옷 파괴
+omni-crit-battle-action-name,무한 치명
+polymorph-battle-action-name,변이
+immolate-battle-action-name,불태우기
+backstab-battle-action-name,백스탭
+cleanse-battle-action-name,일소
+dodge-battle-action-name,회피
+parry-battle-action-name,모면
+block-battle-action-name,차단
+guard-battle-action-name,방어
+miss-battle-action-name,빗나감
+hit-battle-action-name,타격
+arcane-roulette-ability-name,비전 룰렛
+astral-dissolution-ability-name,영적 소멸
+barrier-ability-name,장벽
+bloodlust-aura-ability-name,피의 갈망 오라
+burden-of-power-ability-name,권력의 짐
+confusion-strike-ability-name,혼란 강타
+death-strike-ability-name,죽음의 강타
+drain-react-ability-name,드레인 리액트
+drop-of-chaos-ability-name,혼돈의 방울
+enchanted-attack-ability-name,황홀한 공격
+fear-of-faith-ability-name,두려운 신념
+frozen-strike-ability-name,냉각 강타
+frozen-wind-ability-name,냉각 바람
+galefire-ability-name,화염풍
+harness-ability-name,벨트
+headbutt-ability-name,박치기
+heart-of-iron-ability-name,철의 심장
+iron-will-ability-name,강철의 의지
+mana-regen-ability-name,마나 재생
+mind-control-ability-name,마인드 컨트롤
+multi-cleanse-ability-name,다중 일소
+multi-heal-ability-name,다중 치유
+multi-magic-shield-ability-name,다중 마법 방패
+multi-shield-ability-name,다중 방패
+multi-stun-ability-name,다중 기절
+my-justice-ability-name,나의 정의
+my-way-ability-name,나의 길
+normal-attack-ability-name,일반 공격
+noxious-empowerment-ability-name,유해한 권한
+persistent-payback-ability-name,집요한 보복
+prowlers-strike-ability-name,배회자의 일격
+purify-ability-name,정화
+replay-ability-name,다시 재생
+repulse-ability-name,격퇴
+safeguard-ability-name,보호 장치
+shatter-strike-ability-name,제거 강타
+silhouette-ability-name,실루엣
+spell-bind-ability-name,주문 시전
+steady-grip-ability-name,안정된 손잡이
+steal-ability-name,강탈
+stun-attack-ability-name,기절 공격
+stun-strike-ability-name,기절 강타
+toxic-attack-ability-name,독 공격
+triple-attack-ability-name,트리플 공격
+venom-spit-ability-name,독침
+absolution-passive-name,면죄
+all-is-mine-passive-name,독식
+arcane-control-passive-name,비전 제어
+arcane-equilibrium-passive-name,비전 평형
+battleborn-passive-name,전투태생
+battleforged-heart-passive-name,전투 단련 심장
+beyond-the-grave-passive-name,무덤 너머
+bloodedges-blood-slash-passive-name,블러드에지의 피의 베기
+cinder-touch-passive-name,소각의 손길
+combat-instinct-passive-name,전투 본능
+consuming-darkness-passive-name,어둠 소모
+crimson-pact-passive-name,진홍의 서약
+critical-focus-passive-name,치명적 집중
+crystal-hardening-passive-name,수정 경화
+crystal-insight-passive-name,수정의 통찰력
+cursed-chain-passive-name,저주받은 사슬
+edens-wish-passive-name,에덴의 소원
+edge-of-death-passive-name,죽음의 끝
+edge-of-the-ruined-passive-name,폐허의 가장자리
+eldrids-fury-passive-name,엘드리드의 격분
+empty-bastion-passive-name,빈 보루
+emulator-passive-name,에뮬레이터
+escape-passive-name,탈출
+evil-mark-passive-name,악의 흔적
+exploited-opportunity-passive-name,기회 착취
+faded-discipline-passive-name,퇴색된 규율
+faultbreaker-passive-name,결함 차단
+fear-of-pain-passive-name,고통의 공포
+folly-of-kings-passive-name,왕의 어리석음
+freedom-drive-passive-name,자유의 원동력
+frozen-heart-passive-name,냉각 심장
+golden-altruism-passive-name,황금 같은 이타심
+growing-anger-passive-name,증가하는 분노
+iron-pact-passive-name,철의 맹약
+ironclad-passive-name,철갑
+judgments-call-passive-name,심판의 부름
+liberation-passive-name,해방
+litany-of-malice-passive-name,악의의 기도
+luminous-trial-passive-name,빛의 시련
+magic-flux-passive-name,마력의 흐름
+magical-frostflare-passive-name,마법의 서리불꽃
+mana-steal-passive-name,마나 강탈
+manaflow-passive-name,마나 흐름
+mimicry-passive-name,모방
+plated-rot-passive-name,무장 블랙롯
+potential-seeker-passive-name,잠재적 추종자
+prime-guard-passive-name,프라임 가드
+shaded-essence-passive-name,그늘진 정수
+shattered-breath-passive-name,산산조각난 숨결
+shatterwave-passive-name,파괴의 파도
+spell-block-passive-name,주문 차단
+spirit-of-the-unbroken-passive-name,온전한 자의 영혼
+strike-of-destiny-passive-name,운명의 일격
+thunderstrike-passive-name,천둥벼락
+toxic-redemption-passive-name,독성 구원
+toxshield-passive-name,독방패
+undead-blessing-passive-name,좀비의 축복
+undying-curse-passive-name,영원한 저주
+vengeful-edge-passive-name,복수심에 찬 칼날
+warriors-resolute-passive-name,전사의 결의
+whispers-of-anger-passive-name,분노의 속삭임
+wind’s-grace-passive-name,바람의 은총
+wrath-of-the-broken-flesh-passive-name,부서진 살의 분노
+honor-trial-name,존경
+resilience-trial-name,회복력
+swarm-trial-name,무리
+confrontation-trial-name,대결
+sagacity-trial-name,현명함
+common-rarity-name,일반
+uncommon-rarity-name,고급
+rare-rarity-name,희귀
+legendary-rarity-name,전설
+mythic-rarity-name,신화
+eternal-rarity-name,영원
+abyssal-rarity-name,심해
+cosmic-rarity-name,우주
+divine-rarity-name,신성
+fren-adventurer-name,프렌
+pyry-adventurer-name,파이리
+sid-adventurer-name,시드
+elys-adventurer-name,엘리스
+fael-adventurer-name,파엘
+tyr-adventurer-name,티르
+viran-adventurer-name,바이란
+kinno-adventurer-name,키노
+riel-adventurer-name,리엘
+amon-adventurer-name,아몬
+jace-adventurer-name,제이스
+buff-status-effect-type-name,버프
+debuff-status-effect-type-name,디버프
+penalty-status-effect-type-name,페널티
+neutral-status-effect-type-name,중립
+blessing-status-effect-type-name,축복
+accuracy-stat-description,목표를 맞출 확률을 결정합니다
+active-armor-stat-description,남은|[armor]
+adaptive-attack-stat-description,플레이어의 현재 공격 피해를 증가합니다
+agility-stat-description,<.>| |[dodge]| 확률을 결정합니다\n|<.>| |[active-armor]를 감소시킵니다
+armor-stat-description,|[health]| 대신 피해 흡수
+armor-shields-stat-description,전투 시작 시 얻게 될 |[armor-shield]| 스택의 양
+armor-steal-stat-description,명중 시 대상에게서 훔치는 |[armor]| 양|\n|<696969>부족한 |[armor]| 이상 훔칠 수 없음
+armored-attack-stat-description,|[active-armor]|의 %를 타격 시 가하는 |[armor-damage]|로 전환합니다
+blackrot-damage-stat-description,아무 효과에도 영향을 받지 않습니다
+combat-stat-description,총|[combat]|에 비례하여|[physical-damage]| 출력을 증가시킵니다
+crit-chance-stat-description,|[critical-strike] 확률
+critical-damage-stat-description,|[critical-strike]| 및 |[omni-crit]| 피해를 증가시킵니다
+dazzle-stat-description,타격 시 대상에게 적용하는 |[sparkle]| 스택의 양
+eldership-stat-description,<.>| |[eldership]| 총합으로 |[magic-damage]| 증가\n|<.>| |[eldership]| 총합으로 |[armor]| 증가
+electricity-stat-description,타격 시 대상에게 총 |[electricity]|에 해당하는 |[electro-charge]| 스택을 적용합니다|\n|인접한 적은 해당 스택의 25%를 받게 됩니다
+elemental-power-stat-description,다음 요소 증대: |\n|<.>| |[freeze-attack]|\n|<.>| |[cinder-damage]|\n|<.>| |[electricity]|\n|<.>| |[toxicity]
+elemental-resistance-stat-description,다음을 감소시킵니다: |\n|<.>| |[freeze-damage]|\n|<.>| |[cinder-damage]|\n|<.>| |[electric-damage]|\n|<.>| |[toxicity]
+energy-stat-description,동작 수행을 허용합니다
+faith-stat-description,<.>| |[cleanse]| 확률 결정:|\n|[0@silver]|[*0@silver]| 턴 종료 시|\n|[4@silver]|[*4@silver]| 디버프를 받을 때|\n|\n|<.>| |[greed]|에 의해 감소
+flow-stat-description,|[flow]|이 0% 이하일 때 턴을 수행할 수 없음
+freeze-attack-stat-description,명중 시 가하는 |[freeze-damage]|의 양
+gold-on-kill-stat-description,처치당 |[gold]| 증가
+greed-stat-description,획득 골드 증폭
+health-stat-description,캐릭터가 죽기 전에 받을 수 있는 최대 피해의 양
+lethality-stat-description,대상에게 피해를 가해 % |[max-health]| 미만이 되게 하고\n|값이 % |[lethality]|이면; |[execute]| 발동.
+life-steal-stat-description,[health]|에 가한 |[physical-damage]| %만큼 |[heal]|하게 합니다
+luck-stat-description,다음을 수행할 확률:|\n|[lucky-attack]
+magic-attack-stat-description,타격 시 가하는 |[magic-damage]|의 양
+malice-stat-description,주인이 공격당할 때마다 공격자에게|\n|총 |[malice]|에 해당하는 |[malice-damage]|를 적용합니다
+mana-stat-description,능력 사용 시 자주 소모되는 자원
+max-health-stat-description,[health]|이 회복될 수 있는 최댓값
+max-mana-stat-description,| [mana]|가 회복될 수 있는 최댓값
+omni-crit-chance-stat-description,|[omni-crit]| 확률
+omni-vamp-stat-description,[health]|에 가한 |피해|의 %만큼 |[heal]|하게 합니다
+penetration-stat-description,[armor]|%를 무시합니다
+physical-attack-stat-description,타격 시 가하는 |[physical-damage]|의 양
+power-stat-description,모든 |[attack-damage]를 증대합니다
+recovery-stat-description,|[recovery]에 비례해; 잃은 |[health]|의 일부를\n|턴마다 [heal]||
+spelldom-stat-description,첫 턴에 얻는 |[magic-blitz]| 수치
+tenacity-stat-description,다음 효과를 받지 않을 확률: |\n|<.>| |[slowness]|\n|<.>| |[stun]|
+total-attacks-stat-description,대상을 공격하는 횟수입니다
+toughness-stat-description,공격으로 받는 피해 감소
+toxicity-stat-description,타격 시|[toxicity]|마다|[poison]|스택을 적용합니다
+wisdom-stat-description,<.>| 총 |[wisdom]|에 비례하여 |[magic-damage]| 출력을 증가시킵니다
+enervation-status-effect-description,모든 공격 피해를 중첩당 25% 감소
+weakness-status-effect-description,모든 공격 피해를 스택당 25% 감소시킵니다
+black-curse-status-effect-description,모든 치유를 75% 감소시킵니다
+curse-status-effect-description,모든 치유를 75% 감소시킵니다
+stun-status-effect-description,적용 시: 이번 턴에 어떤 동작도 수행할 수 없습니다
+slowness-status-effect-description,|[agility]| 100% 감소
+confusion-status-effect-description,|[accuracy]| 100% 감소
+silence-status-effect-description,능력을 사용할 수 없습니다
+toxic-transmute-status-effect-description,체력이 피해를 입을 때마다;|\n|무효화하고 |[poison]|으로 변환하여|\n|자신에게 적용합니다
+poison-status-effect-description,턴 마지막에 체력에 직접 피해를 줍니다
+bleed-status-effect-description,매 공격 후; |[health]|에 |[bleed-damage]|를 받습니다|\n|피해량은 |[bleed]| 스택 % × |[max-health]|와 같습니다|\n|\n|<696969>매 턴 |[bleed]| 2% 잃음
+sparkle-status-effect-description,대상을 타격하면 모든 |[sparkle]| 스택이 터지고|\n|스택마다 다음이 실행됩니다.|\n|\n|- 공격자에게 |[ephemeral-armor]|을 부여합니다|\n|-대상에게 |[dazzle-damage]|를 가합니다|\n|\n
+magic-shield-status-effect-description,활성화 시 피해를 모두 차단하고 파괴한 후|\n|비활성화됩니다|\n|\n|<696969>(|[magic-damage]|로는 파괴되지 않습니다<696969>)|\n
+ephemeral-armor-status-effect-description,배틀이 끝난 후 사라지는 임시 |[armor]||\n|\n|피해를 받은 후 |[ephemeral-lock]|를 얻습니다|\n
+ephemeral-shell-status-effect-description,받는 피해가 중첩당 12% 감소합니다
+electro-charge-status-effect-description,매 턴마다 소유자에게 스택 수에 해당하는 |[electric-damage]| 를 가합니다
+ephemeral-lock-status-effect-description,|[ephemeral-armor]을 받을 수 없습니다
+exhaustion-status-effect-description,|[total-attacks]|을 1로 제한합니다|\n
+malice-shield-status-effect-description,다음에 타격받기 직전 방패 1개를 파괴하고|\n||[malice]*|<483a5d>+1| 피해를 무시합니다
+armor-shield-status-effect-description,다음에 타격받기 직전 방패 1개를 파괴하고|\n|[armor]*|<6d758d>+1| 피해를 무시합니다|\n
+freeze-status-effect-description,모든 출처로부터 받는 피해가 25% 증가합니다
+fear-status-effect-description,버프를 받을 수 없습니다
+invulnerability-status-effect-description,피해를 입을 수 없습니다
+arthurs-mark-status-effect-description,이 표시가 있는 대상은 |[block]| 또는 |[parry]|; |[dodge]| 사용이 불가능합니다|\n
+timeout-status-effect-description,이 턴에서는 아무것도 할 수 없습니다
+cinder-essence-status-effect-description,턴 시작 시|\n|모든 |[cinder-essence]| 스택을 소모하고\n|각 스택마다|[immolate]|
+combat-insight-status-effect-description,다음에 공격받기 직전|\n|[combat-insight]| 5스택 이상이 있을 때|\n|그것을 소모하고 |[parry]|\n
+magic-blitz-status-effect-description,공격 시 모든 스택을 소모하고|\n|스택당 |[magic-attack]|을 +100% 얻습니다|\n
+omni-blitz-status-effect-description,공격 시 모든 스택을 소모하고|\n|스택당 |[physical-attack]| 및 |[magic-attack]|을 +100% 얻습니다|\n
+vimblow-status-effect-description,공격 시 1스택을 소모하고 플레이어 |[max-health]|의 25%에 해당하는|\n|보너스|[physical-attack]|을 얻습니다|\n
+dread-status-effect-description,|[fear]| 상태의 적은 공격하지 않음
+fury-status-effect-description,[fury]| 스택마다 플레이어의 |[physical-attack]|을 25% 증가시킵니다|\n|<696969>(배틀 마지막에 재설정됩니다)|\n|\n
+counter-attack-charge-status-effect-description,공격자에게 반격
+multi-attack-charge-status-effect-description,이번 턴에 [multi-attack]|
+stun-attack-charge-status-effect-description,모든 타격이 대상에게 |[stun]| 적용
+debuff-immunity-status-effect-description,디버프 적용을 모두 막습니다
+golden-heart-status-effect-description,|[health]|가 0이 되면:|\n|<.>| 부활하고 |[max-health]|의 25%만큼 |[heal]|됩니다|\n|[3@golden]|<.>| |[*3@golden]| |[invulnerability]|를 획득합니다
+lethality-status-effect-description,대상에게 % |[lethality]|와 동일한 % |[max-health]| 미만으로|\n|남게 하는 피해를 입히면 대상을 |[execute]|합니다
+madness-status-effect-description,자기 자신만을 공격합니다
+blindness-status-effect-description,|[accuracy]| 100% 감소
+clarity-status-effect-description,다음에 |[stun]|을 받으려고 할 때|\n||[clarity]| 스택 1개를 소모하고 무효화합니다
+elusive-status-effect-description,당신을 향한 모든 공격은 |[accuracy]| 100% 상실
+purification-status-effect-description,턴 마지막에 1 스택을 소모하고 |[cleanse]
+grace-status-effect-description,모든 피해 증가
+curse-of-the-tower-status-effect-description,매 턴 |[max-health]|의 1%에 해당하는 |[true-damage]|를 받음|\n|<696969>(전투가 너무 길어지면 받음)
+unavoidable-keyword-description,해당 공격은 항상 받게 됩니다
+anti-steal-keyword-description,|[steal] 로부터 보호합니다
+ascend-keyword-description,1층부터 승천 달리기를 시작하세요; 획득하는 |[diamond]|\n은 2배가 됩니다|<696969> (레벨당 +1)|\n|<ff4500>이전 달리기에서 사용된 2층 이상의 아이템은|\n|<ff4500>제거됩니다
+tinker-keyword-description,상인은 당신이 준 아이템에 대해 다음을 수행합니다:|\n|<.>| 재제작 및 아이템을 땜장이 키트로 전환|\n|<.>| 재제작된 아이템 업그레이드
+heal-keyword-description,캐릭터의 현재 |[health]|을 보충하는 동작
+tier-i-reward-keyword-description,<.>| |상자를 열면 추가 |[diamond]| 획득|\n|<.>| |+{gold} |[gold]|으로 시작
+critical-strike-battle-action-description,|[physical-damage]| |100% 증가 + % |[critical-damage]
+counter-attack-battle-action-description,공격자를 공격합니다
+multi-attack-battle-action-description,한 턴에 모든 적을 공격합니다
+lucky-attack-battle-action-description,25%의 추가 피해를 줍니다
+armor-break-battle-action-description,대상의 갑옷을 0으로 감소시켜 파괴합니다
+omni-crit-battle-action-description,|[physical-damage]| |및 |[magic-damage]|\n|100% 증가 + % |[critical-damage]
+polymorph-battle-action-description,가장 강한 적을 무작위 적으로 변신시키고|\n|능력치를 초기화합니다
+immolate-battle-action-description,|[max-health]|의 25%와 같은 |[cinder-damage]|를|\n전방의 모든 적에게 줍니다
+backstab-battle-action-description,적을 백스탭하여 공격 피해를 입힙니다|\n|<.>| |적 |[max-health]|가 75% 초과: 피해량 45% 감소|\n|<.>| |적 |[max-health]|가 75% 이하: 공격이|\n| |[critical-strike]|이 되며 |[accuracy]| +25%
+cleanse-battle-action-description,무작위 디버프를 제거하고 |[faith]|를 25% 감소시킵니다|\n|<696969>배틀마다 초기화됩니다
+dodge-battle-action-description,받는 피해를 회피합니다|\n|\n||[dodge]|할 때마다:|\n||[agility]| 25% 감소|\n|\n|<696969>배틀마다 초기화됩니다
+parry-battle-action-description,공격자에게 피해와 상태 효과를 돌려줍니다|\n|<696969>공격이 10번 모면되면 턴이 끝납니다
+block-battle-action-description,받는 피해를 100% 감소시킵니다
+guard-battle-action-description,25% 감소한 피해를 입음
+miss-battle-action-description,공격 시 대상을 타격하지 못하는 것입니다|\n|<696969>10번 빗나가면 플레이어의 턴이 종료됩니다
+arcane-roulette-ability-description,|[magic-shield]| 이 깨질 때마다; 무작위|\n|대상을 공격\n|<696969>발동 조건: 활성 |[magic-shield]| 보유
+astral-dissolution-ability-description,대상으로부터 모든 버프를 제거합니다
+barrier-ability-description,[magic-shield]|를 얻습니다
+bloodlust-aura-ability-description,모든 적에게 |[madness]| 적용|\n|<696969>발동 조건: 한 턴에 |[heal]|<696969> 자신의 |[max-health]|<696969> 25%
+burden-of-power-ability-description,턴 시작 시; |[fear]|이 있는 모든 적에게서 공격 피해의 75%를 훔침|\n||\n|<696969>발동 조건: 적에게 |[fear]|<696969> 적용됨
+confusion-strike-ability-description,명중 시 |[confusion]| 2 스택을 적용합니다
+death-strike-ability-description,이번 턴에 100% |[crit-chance]|\n|획득
+drain-react-ability-description,모든 적에게 |[enervation]| 5중첩 적용|\n|<696969>발동 조건: |[poison]|이 있는 적에게 피격
+drop-of-chaos-ability-description,대상에게 무작위 디버프를 적용합니다
+enchanted-attack-ability-description,이번 턴에 공격 피해를 +100% 얻습니다
+fear-of-faith-ability-description,| [invulnerability]|2스택을 얻습니다
+frozen-strike-ability-description,타격 시 대상에 |[weakness]| 3스택을 적용합니다
+frozen-wind-ability-description,대상에게 |[weakness]| 을 적용하고 나서 공격합니다
+galefire-ability-description,대상에게|[slowness]|를 적용합니다
+headbutt-ability-description,명중 시 대상에게 |[stun]| 적용
+heart-of-iron-ability-description,자신의 |[health]|와 동일한 |[armor]| 획득|\n|<696969>발동 조건: 3회 피격|\n|<696969>전투마다 초기화
+mana-regen-ability-description,상실한 |[mana]|를 모두 재생합니다
+mind-control-ability-description,모든 대상에게|[confusion]|을 적용합니다
+multi-cleanse-ability-description,자신과 모든 협력자|[cleanse]
+multi-heal-ability-description,플레이어와 모든 협력자의 체력을 25% 회복합니다
+multi-magic-shield-ability-description,플레이어와 협력자에게 |[magic-shield]|를 제공합니다
+multi-shield-ability-description,플레이어와 협력자에게 플레이어의 |[health]|에 해당하는|\n|[ephemeral-armor]|을 제공합니다
+multi-stun-ability-description,|[multi-attack-charge]|와 |[stun-attack-charge]| 획득;|\n|이후 공격|\n|<696969>발동 조건: 공격을 패링|\n|<696969>전투마다 초기화
+my-justice-ability-description,이번 턴에 |[invulnerability]| 및 |[counter-attack-charge]| 획득|\n|<696969>발동 조건: |[invulnerability]| 획득
+my-way-ability-description,이번 턴에 |[counter-attack-charge]| 획득|\n|<696969>발동 조건: 3회 공격
+noxious-empowerment-ability-description,이번 턴에 |[toxicity]| 을 2만큼 증대합니다
+persistent-payback-ability-description,이번 턴에 |[counter-attack]
+prowlers-strike-ability-description,이번 턴에 적을 맞출 때마다; |[agility]| {agility-amount}% 획득|\n|<696969>발동 조건: 최소 1회 |[dodge]|<696969>
+replay-ability-description,마지막으로 모방한 능력을 발동|\n|<696969>발동 조건: 능력을 모방
+repulse-ability-description,이번 턴에|[parry]
+safeguard-ability-description,플레이어와 협력자에게 플레이어 |[max-health]|의|\n|25%에 해당하는 |[armor]|을 제공합니다
+shatter-strike-ability-description,타격 시 |[armor-break]
+silhouette-ability-description,|[elusive]| 상태가 되어 공격|\n|<696969>발동 조건: |[backstab]|\n|<696969>전투마다 초기화
+spell-bind-ability-description,대상에게|[silence]|을 적용합니다
+steady-grip-ability-description,이번 전투 동안; |[total-attacks]| 가 1 증가
+steal-ability-description,대상으로부터|[gold]|를 25% 강탈합니다
+stun-attack-ability-description,타격 시 대상에게|[stun]|을 적용합니다
+stun-strike-ability-description,명중 시 대상에게 |[stun]| 적용
+toxic-attack-ability-description,대상을 타격할 때 1 |[poison] 적용
+venom-spit-ability-description,총 |[toxicity]| 에 해당하는 |[poison]|\n|스택을 대상에게 적용합니다
+absolution-passive-description,공격할 때마다 무작위 적에게|\n|5 |[magic-damage]를 줌
+all-is-mine-passive-description,턴 시작 시 대상의|\n|모든 버프를 강탈
+arcane-control-passive-description,공격을 회피할 때마다; |[magic-shield]|가 부서지고 즉시 재충전됨
+arcane-equilibrium-passive-description,매 턴 종료 시 모두의 |[invulnerability]|를|\n|[magic-shield]|로 전환합니다
+battleborn-passive-description,|[parry]| 할 때마다; 대상에게 |[stun]| 부여
+battleforged-heart-passive-description,|[armor]| 가 손상된 후; 해당 양을 |[max-health]| 로 전환|\n|<696969>전투마다 초기화
+beyond-the-grave-passive-description,턴 종료 시; 상대의 상태 효과를 변환|\n|<.>| |[weakness]| 를 |[enervation]| 으로|\n|<.>| |[curse]| 를 |[black-curse]| 으로
+bloodedges-blood-slash-passive-description,공격 직전에 |[health]|의 10%를|\n|[physical-attack]|(으)로 전환합니다|\n|<696969>배틀마다 초기화됩니다
+cinder-touch-passive-description,타격 시 [immolate]|
+combat-instinct-passive-description,|[parry]| 피해가 두 배로 증가합니다
+consuming-darkness-passive-description,|[fear]|와 |[confusion]|이 걸린 적이 처치되면;|\n|그의 기본 능력치를 모두 획득 |<696969>(전투마다 초기화)
+crimson-pact-passive-description,|[health]|가 45% 미만으로 떨어지면; 모든 적에게|\n|[confusion]| 적용
+critical-focus-passive-description,|[critical-strike]| 또는 |[omni-crit]| 공격이\n| |[accuracy]| +25% 획득
+crystal-hardening-passive-description,첫 번째 턴에 받는 피해 0
+crystal-insight-passive-description,첫 턴에 |[magic-attack]| +100% 획득
+cursed-chain-passive-description,플레이어의 공격이 명중하지 않아도|\n|타격 상태 효과 적용
+edens-wish-passive-description,매 턴 시작 시; 무작위 아군에게|\n|무작위 축복 또는 버프 부여
+edge-of-death-passive-description,첫 번째 턴에는 플레이어의 |[health]|이 1 미만으로 내려갈 수 없습니다
+edge-of-the-ruined-passive-description,|[curse]| 또는 |[black-curse]|가 있는 동안:|\n|공격은 대상 |[health]|의 11%와 동일한|\n|추가 피해를 입힙니다
+eldrids-fury-passive-description,<696969>턴마다 한 번씩; 치유할 때마다\n||[vimblow]| 1 스택 획득
+empty-bastion-passive-description,|[armor]|가 8배가 됩니다; 하지만 매 전투를|\n|0 |[active-armor]|로 시작합니다
+emulator-passive-description,턴 종료 시 디버프 재적용
+escape-passive-description,훔치기를 시도한 후 전투 이탈
+evil-mark-passive-description,턴 시작 시 대상에|\n||[curse]| 적용
+exploited-opportunity-passive-description,|[dodge]| 후 공격자 |[stun]|
+faded-discipline-passive-description,|[total-attacks]| +5를 받지만 첫 5번의|\n|공격은 99% 적은 피해를 줍니다
+faultbreaker-passive-description,공격이 대상을 |[active-armor]|75% 미만|\n상태로 만들 경우 |[armor-break]
+fear-of-pain-passive-description,이번 턴에 피해를 입은 대상은 공격하지 않음
+folly-of-kings-passive-description,매 턴마다 무작위 상태 효과를 받고|\n|2턴마다 |[polymorph]|합니다
+freedom-drive-passive-description,|[invulnerability]|를 가지고 있는 동안 |[tenacity]| +100%를 받습니다
+golden-altruism-passive-description,모든 아군에 |[golden-heart]| 부여
+growing-anger-passive-description,적중할 때마다 |[crit-chance]| 5% 획득 |<696969>(전투마다 초기화)
+iron-pact-passive-description,|[active-armor]| 가 0%에 도달할 때마다; |[health]| 의 10%를 소모하여 |[active-armor]| 로 전환
+ironclad-passive-description,[block]
+judgments-call-passive-description,공격하면 당신이 |[cleanse]|를 통해|\n|제거한 디버프를 적용합니다(배틀마다 초기화)
+liberation-passive-description,모든 |[armor]|를 |[adaptive-attack]으로 전환
+litany-of-malice-passive-description,대상의 고유 상태 효과마다; |\n|추가로 +25%의 |[malice-damage]| 를 입힙니다
+luminous-trial-passive-description,<.>| 전투 시작 시 |[blindness]| 1중첩 적용|<|\n||<.>| |[miss]| 당 적의 |[accuracy]| +25%
+magical-frostflare-passive-description,|[freeze]|가 있는 적에게 가한 |[magic-damage]|와|\n|동일한 |[ephemeral-armor]|를 받습니다
+mana-steal-passive-description,타격 시 1 |[mana]|를 강탈합니다
+manaflow-passive-description,|[max-mana]|를 1로 설정
+mimicry-passive-description,대상의 능력을 사용
+plated-rot-passive-description,|[armor]|에 가해진 피해는; |[max-health]|로 전환됩니다
+prime-guard-passive-description,패시브 소유자가 패배할 때까지 다른 적들은 99% 적은 피해를 받습니다
+shaded-essence-passive-description,[silence]|으로 적에게 +375%의 |[magic-damage]|를 가합니다
+shattered-breath-passive-description,|[parry]|할 때마다 대상에게|[exhaustion]|을|\n|적용합니다
+shatterwave-passive-description,적을 타격한 후; 인접한 적에게|\n|공격 피해의 25%를 줌
+spell-block-passive-description,턴 시작 시; 능력을 가진 첫 번째 적에게|[silence]|\n| 적용
+strike-of-destiny-passive-description,|[invulnerability]|가 있는 경우 명중 시 대상의 모든 버프 제거
+thunderstrike-passive-description,대상에 |[electro-charge]가 있으면 타격 시 |[stun]| 을 적용합니다
+toxic-redemption-passive-description,적을 처치하면; 자신의 모든 |[poison]|을 제거하고 제거된 독의 양과|\n|동일한 |[physical-damage]|를 모든 적에게 입힙니다
+toxshield-passive-description,자신의 턴 중 |[poison-damage]| 가 발생할 때마다;\n|동일 수치의 |[ephemeral-armor]| 획득
+undead-blessing-passive-description,아군이 사망하면 |[purification]|\n| 1 스택 획득
+undying-curse-passive-description,사망 시; |[curse]|\n|을(를) 살해자에게 적용
+vengeful-edge-passive-description,|[counter-attack]| 사용 시; |[counter-attack]| 한 번 더
+warriors-resolute-passive-description,처음 3턴 동안 |[clarity]|를 받습니다
+wind’s-grace-passive-description,모든 아군에게 |[swiftness]|를 부여합니다
+wrath-of-the-broken-flesh-passive-description,체력이 손상될 때마다 |[fury]| 중첩을 얻습니다
+ancient-ice-item-set-description,[1@ancient-ice]|[*1@ancient-ice]|<.>| |[freeze]| 상태인 적에게 가한 |[freeze-damage]|와|\n| 동일한 |[ephemeral-armor]| 획득|\n|\n|<.>| 첫 번째 턴 종료 시; 모든 적에게 |[freeze]|\n| 적용
+ancient-shell-item-set-description,이번 턴에 태세를 사용한 경우:|\n|[1@ancient-shell]|[*1@ancient-shell]| |[toughness]|가 모든 유형의 피해를 감소시킵니다|\n|[3@ancient-shell]|[*3@ancient-shell]| 턴 종료 시 |[ephemeral-shell]| 획득|\n|[5@ancient-shell]|[*5@ancient-shell]| 턴 종료 시 |[ephemeral-lock]| 제거
+arcanum-item-set-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]|가 활성화된 동안 |<7569f5>+375%|[magic-damage]| 획득|\n|[2@arcanum]|[*2@arcanum]| 턴 종료 시 |[magic-shield]| 획득|\n|[4@arcanum]|[*4@arcanum]| 적 처치 시 |[magic-shield]| 획득
+bastolic-item-set-description,[1@bastolic]|[*1@bastolic]| |[magic-damage]|를 가할 때; 무작위 적에게|\n| |({magic_damage})|<7569f5> 최대 체력의 5%|를 추가로 가함|\n|\n|[2@bastolic]|[*2@bastolic]| 첫 턴에 받는 |[magic-damage]|는|\n| |[max-health]|로 전환됨|\n|<696969> 전투마다 초기화
+berserker-item-set-description,[1@berserker]|[*1@berserker]| 잃은 |[health]|에 따라 보너스 |[total-attacks]| 획득:|\n| |<.>| 25% -> +1 |[total-attacks]|\n| |<.>| 50% -> +3 |[total-attacks]|\n| |<.>| 75% -> +6 |[total-attacks]|\n|\n|[2@berserker]|[*2@berserker]| |[health]|가 25% 미만일 때 100% |[tenacity]| 획득
+blackthorn-item-set-description,공격에 타격된 후:|\n|<.>| 공격자에게 |[magic-damage]|로 |[active-armor]*|를 입힙니다
+cataclysm-item-set-description,모든 적이 |[lethality]| 의 최대 45%를 받게 됩니다
+celestial-item-set-description,피해를 받으면 피해를 |[elemental-power]|으로 전환합니다\n|<696969>(배틀마다 초기화)
+chromalure-item-set-description,[1@chromalure]|[*1@chromalure]| |[poison]| 적용 후; 대상에게 해당 양과|\n| 동일한 |[poison-damage]|를 입힙니다|\n|\n|[3@chromalure]|[*3@chromalure]| 매 턴 시작 시 |[toxic-transmute]|를 받습니다[0@chromalure]
+cursed-item-set-description,[1@cursed]|[*1@cursed]| 전투 시작 시; |[curse]| 와 |[malice-shield]| 5중첩을 받습니다|\n|\n|[3@cursed]|[*3@cursed]| 가하는 |[malice-damage]| 는 |[curse]|가 있는 모든 적에게 퍼집니다
+darkness-item-set-description,[1@darkness]|[*1@darkness]| 턴 시작 시 자신보다 공격력이 낮은 모든 적에게 |[fear]| 적용|[3@darkness]|\n|[*3@darkness]| 적 처치 후 |[dread]| 2스택 획득|[4@darkness]|\n|[*4@darkness]| 첫 턴 시작 시 |[madness]| 획득[0@darkness]
+demonic-item-set-description,[1@demonic]|[*1@demonic]| 기본 |[max-health]| 25당|\n| |[physical-attack]| 1% 획득|\n|\n|[3@demonic]|[*3@demonic]| 첫 턴 시작 시 |[multi-attack-charge]| 받음
+flesh-item-set-description,|[max-health]| 초과로 |[heal]| 가능\n|<696969>초과분은 제거됨\n|<696969>턴 종료 시
+generic-item-set-description,모든 활성 아이템 세트에 +1로 계산됩니다
+golden-item-set-description,모든 배틀 시작 시 |[golden-heart]|을 얻습니다
+hunter-item-set-description,[1@hunter]|[*1@hunter]| 100%를 초과한 |[crit-chance]| 1%마다|\n| |[critical-damage]| 10%로 전환됨|\n|[3@hunter]|[*3@hunter]| 대상은 당신의 |[critical-strike]| 공격을 |[dodge]|할 수 없음
+jade-item-set-description,모든 |[sparkle]| 스택이 터진 후 대상에게 다시 적용합니다
+legacy-item-set-description,<.>| 전투 시작 시 |[invulnerability]|를 받습니다|\n|\n|<.>| 첫 턴 종료 시 무작위 적에게|[arthurs-mark]| 중첩을 적용합니다|\n|\n|<.>| |[arthurs-mark]|가 있는 적이 죽으면;|\n| 다른 적에게 적용됩니다
+magma-item-set-description,턴 시작 전에| |\n|||[cinder-essence]| 1 스택 획득
+mercenary-item-set-description,대상의 |[health]|가 90%를 초과하는 경우:|\n|[1@mercenary]|[1@mercenary]| 25%|<00cd58> +|[luck]|만큼 증가된 공격 피해를 입힙니다|\n|[3@mercenary]|[*3@mercenary]| 이번 턴에 |[total-attacks]| +1 획득
+orion-item-set-description,[1@orion]|[*1@orion]| |[health]| 가 감소함에 따라 피해 저항력 증가; |[health]| 가 25%일 때 최대 75% 저항력|\n|\n|[3@orion]|[*3@orion]| 처음 3턴 종료 시; |[armor]|의 25%를 수리|\n|\n|[4@orion]|[*4@orion]| |[heal]| 불가
+phantom-item-set-description,장착이 불가능합니다
+poverty-item-set-description,<.>||[health]| 25% 미만인 동안 75% |[crit-chance]| 획득\n|<.>||[anti-steal] 획득
+royal-item-set-description,첫 번째 턴에 |[inherited-sin]|을 받습니다|\n|\n|[cleanse]|가 |[inherited-sin]|을 제거한 경우|\n|[debuff-immunity]| 5스택을 얻습니다
+scout-item-set-description,[1@scout]|\n|<.>| |[*1@scout]|[agility]|가 조금이라도 있으면 |[dodge]|가 보장됨|[3@scout]|\n|<.>| |[*3@scout]| 3번 |[dodge]|한 후 |[elusive]| 상태가 됨[0@scout]
+shadow-item-set-description,[1@shadow]|[*1@shadow]| 공격을 회피할 때마다; |[backstab]|\n|[3@shadow]|[*3@shadow]| |[elusive]| 중에 회피한 피해를|\n| |[adaptive-attack]|로 획득<696969> - 전투마다 재설정
+silver-item-set-description,[1@silver]|[*1@silver]| |[faith]|가 조금이라도 있으면 |[cleanse]|가 보장됩니다|\n|\n|[3@silver]|[3@silver]| |[cleanse]| 시 |[faith]| |[grace]|를 받습니다
+swiftness-item-set-description,|[total-attacks]|를 두 배로 늘리지만; 매 공격 후|\n|5% |[accuracy]|를 잃음<696969> 매 턴 초기화
+thunder-item-set-description,[1@thunder]|[*1@thunder]|[electric-damage]|는 자신의 턴 동안 25% + |[luck]*| 확률로 |[stun]|을 가함|\n|[3@thunder]|[*3@thunder]| 자신의 턴에 적용된 |[stun]| 지속 시간을 두 배로 늘립니다
+unchained-item-set-description,[1@unchained]|[*1@unchained]| 디버프가 모든 적에게 적용됨|\n|[2@unchained]|[*2@unchained]| 네가 거는 디버프를 두 배로 증가
+vampiric-item-set-description,[1@vampiric]|[*1@vampiric]| 새 대상에 대한 첫 공격 시 8% |[bleed]| 적용|\n|\n|[3@vampiric]|[*3@vampiric]| 적이 |[bleed-damage]|를 입을 때마다; 해당 양만큼 |[heal]|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]|가 |[power]|로 전환됨|\n|<696969>전투마다 초기화
+warrior-item-set-description,[1@warrior]|[*1@warrior]| 공격할 때마다 |[combat-insight]| 획득|\n|[4@warrior]|[*4@warrior]| 공격받을 때 |[combat-insight]| 획득[0@warrior]
+wood-item-set-description,[1@wood]|[*1@wood]| +25% |[luck]|\n|[3@wood]|[*3@wood]| +10% |[luck]
+zephyron-item-set-description,[1@zephyron]|<.>| |[*1@zephyron]| 매 턴마다 {amount}% |[magic-damage]| 획득|<696969> 매 전투마다 초기화|\n|[2@zephyron]|<.>| |[*2@zephyron]| 가한 |[magic-damage]|는 |[silence]| 상태의 적에게 적용됨|\n|[4@zephyron]|<.>| |[*4@zephyron]| 첫 번째 발동 능력은 |[mana]|를 소모하지 않음
+beastbound-specialization-description,[1@hunter]|[*1@hunter]| 100%를 초과한 |[crit-chance]| 1%마다|\n| |[critical-damage]| 10%로 전환됨\n|[3@hunter]|[*3@hunter]| 대상은 당신의 |[critical-strike]| 공격을 |[dodge]|할 수 없음\n|\n|<.>| |[crit-chance]|는 |[parry]| 공격에도 적용됨
+bloodcaster-specialization-description,[1@vampiric]|[*1@vampiric]| 새 대상에 대한 첫 공격 시 8% |[bleed]| 적용|\n|\n|[3@vampiric]|[*3@vampiric]| 적이 |[bleed-damage]|를 입을 때마다; 해당 양만큼 |[heal]|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]|가 |[power]|로 전환됨|\n|<696969>전투마다 초기화|\n|\n| |[heal]|할 때마다:|\n|<.>| 자신이 |[heal]|한 양과 동일한 |[magic-damage]|를|\n|  선택한 적에게 가함
+vampiercer-specialization-description,[1@vampiric]|[*1@vampiric]| 새 대상에 대한 첫 공격 시 8% |[bleed]| 적용|\n|\n|[3@vampiric]|[*3@vampiric]| 적이 |[bleed-damage]|를 입을 때마다; 해당 양만큼 |[heal]|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]|가 |[power]|로 전환됨|\n|<696969>전투마다 초기화|\n|\n| |[heal]|할 때마다:|\n|<.>| 자신이 |[heal]|한 양과 동일한 직접 |[physical-damage]|를|\n|  선택한 적에게 가함; 대상의 |[armor]| 무시
+venomire-specialization-description,[1@vampiric]|[*1@vampiric]| 새 대상에 대한 첫 공격 시 8% |[bleed]| 적용|\n|\n|[3@vampiric]|[*3@vampiric]| 적이 |[bleed-damage]|를 입을 때마다; 해당 양만큼 |[heal]|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]|가 |[power]|로 전환됨|\n|<696969>전투마다 초기화|\n|\n| |[heal]|할 때마다:|\n|<.>| 자신이 |[heal]|한 양과 동일한 |[poison]| 스택을|\n|  선택한 적에게 적용
+bloodmoon-specialization-description,<.>| 잃은 |[health]|의 200%를 |[physical-attack]|(으)로 전환합니다|\n|<696969> 배틀마다 초기화됩니다|\n|[1@shadow]|[*1@shadow]| 공격을 회피할 때마다; |[backstab]|\n|[3@shadow]|[*3@shadow]| |[elusive]| 중에 회피한 피해를|\n| |[adaptive-attack]|로 획득<696969> - 전투마다 재설정
+moonlighter-specialization-description,[1@shadow]|[*1@shadow]| 공격을 회피할 때마다; |[backstab]|\n|[3@shadow]|[*3@shadow]| |[elusive]| 중에 회피한 피해를|\n| |[adaptive-attack]|로 획득<696969> - 전투마다 재설정
+nighthrust-specialization-description,[1@shadow]|[*1@shadow]| 공격을 회피할 때마다; |[backstab]|\n|[3@shadow]|[*3@shadow]| |[elusive]| 중에 회피한 피해를|\n| |[adaptive-attack]|로 획득<696969> - 전투마다 재설정|\n|<.>| |[dodge]|로 회피한 공격 피해 획득|\n|<696969> 배틀마다 초기화
+challenger-specialization-description,[1@demonic]|[*1@demonic]| 기본 |[max-health]| 25당|\n| |[physical-attack]| 1% 획득|\n|\n|[3@demonic]|[*3@demonic]| 첫 턴 시작 시 |[multi-attack-charge]| 받음|\n|\n|<.>| |[arthurs-mark]|가 있는 적에게 가한 피해의 45%가|\n| 인접한 적에게 퍼짐
+chromaguard-specialization-description,[1@chromalure]|[*1@chromalure]| |[poison]| 적용 후; 대상에게 해당 양과|\n| 동일한 |[poison-damage]|를 입힙니다|\n|\n|[3@chromalure]|[*3@chromalure]| 매 턴 시작 시 |[toxic-transmute]|를 받습니다[0@chromalure]
+chromaspite-specialization-description,[1@chromalure]|[*1@chromalure]| |[poison]| 적용 후; 대상에게 해당 양과|\n| 동일한 |[poison-damage]|를 입힙니다|\n|\n|[3@chromalure]|[3@chromalure]| 매 턴 시작 시 |[toxic-transmute]|를 받습니다[0@chromalure]|\n|\n|<.>| |[physical-attack]|의 75%를 |[toxicity]|로 전환
+chromathorn-specialization-description,공격에 피격된 후:|\n|<.>| 공격자에게 |[magic-damage]|로 |[active-armor]|을 가한다|\n|<.>| 피격될 때마다 |[toxicity]|와 동일한|[poison]|을|\n| 공격자에게 적용
+cinderthorn-specialization-description,공격에 피격된 후:|\n|<.>| 공격자에게 |[magic-damage]|로 |[active-armor]*|을 가한다|\n|<.>| |[immolate]
+mindthorn-specialization-description,공격에 피격된 후:|\n|<.>| 공격자에게 |[magic-damage]|로 |[active-armor]*|을 가한다|\n|<.>| |[wisdom]| +25% 획득<696969> (전투마다 초기화)
+thornfrost-specialization-description,공격에 피격된 후:|\n|<.>| 공격자에게 |[magic-damage]|로 |[active-armor]*|을 가한다|\n|<.>| 공격자에게 |[weakness]| 2중첩을 적용
+dauntless-specialization-description,[1@warrior]|[*1@warrior]| 공격할 때마다 |[combat-insight]| 획득|\n|[4@warrior]|[*4@warrior]| 공격받을 때 |[combat-insight]| 획득[0@warrior]
+quickblade-specialization-description,[1@warrior]|[*1@warrior]| 공격할 때마다 |[combat-insight]| 획득|\n|[4@warrior]|[*4@warrior]| 공격받을 때 |[combat-insight]| 획득[0@warrior]|\n|\n|<.>| |[parry]|할 때마다 |[total-attacks]| +1 획득|\n|<696969> 배틀마다 초기화
+rampager-specialization-description,[1@warrior]|[*1@warrior]| 공격할 때마다 |[combat-insight]| 획득|\n|[4@warrior]|[*4@warrior]| 공격받을 때 |[combat-insight]| 획득[0@warrior]
+thunderborn-specialization-description,[1@warrior]|[*1@warrior]| 공격할 때마다 |[combat-insight]| 획득|\n|[4@warrior]|[*4@warrior]| 공격받을 때 |[combat-insight]| 획득[0@warrior]|\n|\n|<.>| 적을 기절시킬 때마다 공격합니다
+debilitator-specialization-description,[1@darkness]|[*1@darkness]| 턴 시작 시 자신보다 공격력이 낮은 모든 적에게 |[fear]| 적용|[3@darkness]|\n|[*3@darkness]| 적 처치 후 |[dread]| 2스택 획득|[4@darkness]|\n|[*4@darkness]| 첫 턴 시작 시 |[madness]| 획득[0@darkness]
+mindbreaker-specialization-description,<.>| |[confusion]|이 있는 적에게 |[madness]| 2중첩 적용|\n|[1@darkness]|[*1@darkness]| 턴 시작 시 자신보다 공격력이 낮은 모든 적에게 |[fear]| 적용|[3@darkness]|\n|[*3@darkness]| 적 처치 후 |[dread]| 2스택 획득|[4@darkness]|\n|[*4@darkness]| 첫 턴 시작 시 |[madness]| 획득[0@darkness]
+deserter-specialization-description,대상의 |[health]|가 90%를 초과하는 경우:|\n|[1@mercenary]|[1@mercenary]| 25%|<00cd58> +|[luck]|만큼 증가된 공격 피해를 입힙니다|\n|[3@mercenary]|[*3@mercenary]| 이번 턴에 |[total-attacks]| +1 획득|\n|\n|<.>| 10층마다 |[total-attacks]| +1 획득
+faithbound-specialization-description,대상의 |[health]|가 90%를 초과하는 경우:|\n|[1@mercenary]|[1@mercenary]| 25%|<00cd58> +|[luck]|만큼 증가된 공격 피해를 입힙니다|\n|[3@mercenary]|[*3@mercenary]| 이번 턴에 |[total-attacks]| +1 획득|\n|\n|<.>| 패시브: |[judgments-call]
+echomancer-specialization-description,[1@unchained]|[*1@unchained]| 디버프가 모든 적에게 적용됨|\n|[2@unchained]|[*2@unchained]| 네가 적용하는 디버프가 2배가 됨
+evadium-specialization-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]|가 활성화된 동안 |<7569f5>+375%|[magic-damage]| 획득|\n|[2@arcanum]|[*2@arcanum]| 턴 종료 시 |[magic-shield]| 획득|\n|[4@arcanum]|[*4@arcanum]| 적 처치 시 |[magic-shield]| 획득|\n|\n|<.> | |[dodge]|할 때마다; |[counter-attack]
+invulnerium-specialization-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]|가 활성화된 동안 |<7569f5>+375%|[magic-damage]| 획득|\n|[2@arcanum]|[*2@arcanum]| 턴 종료 시 |[magic-shield]| 획득|\n|[4@arcanum]|[*4@arcanum]| 적 처치 시 |[magic-shield]| 획득|\n|\n|<.>| |[magic-shield]|가 처음 파괴될 때 |[invulnerability]| 획득
+stunium-specialization-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]|가 활성화된 동안 |<7569f5>+375%|[magic-damage]| 획득|\n|<.>| |[magic-shield]|가 파괴되면 모든 적 |[stun]||\n|[2@arcanum]|[*2@arcanum]| 턴 종료 시 |[magic-shield]| 획득|\n|[4@arcanum]|[*4@arcanum]| 적 처치 시 |[magic-shield]| 획득
+harbinger-specialization-description,<.>| |[arthurs-mark]|가 있는 적에게 +1000% 공격 피해를 입힙니다|\n|\n|<.>| 전투 시작 시 |[invulnerability]|를 받습니다|\n|\n|<.>| 첫 턴 종료 시 무작위 적에게|[arthurs-mark]| 중첩을 적용합니다|\n|\n|<.>| |[arthurs-mark]|가 있는 적이 죽으면;|\n| 다른 적에게 적용됩니다
+lionheart-specialization-description,<.>| |[arthurs-mark]|가 있는 적에게 받는 피해를 1000% 감소시킵니다|\n|\n|<.>| 전투 시작 시 |[invulnerability]|를 받습니다|\n|\n|<.>| 첫 턴 종료 시 무작위 적에게|[arthurs-mark]| 중첩을 적용합니다|\n|\n|<.>| |[arthurs-mark]|가 있는 적이 죽으면;|\n| 다른 적에게 적용됩니다
+pursuer-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[agility]|가 조금이라도 있으면 |[dodge]|가 보장됨|[3@scout]|\n|<.>| |[*3@scout]| 3번 |[dodge]|한 후 |[elusive]| 상태가 됨[0@scout]|\n|\n|공격을 피할 때마다:|\n|<.>| {lethality-amount}% |[lethality]| 획득<696969> - 전투마다 초기화
+striker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[agility]|가 조금이라도 있으면 |[dodge]|가 보장됨|[3@scout]|\n|<.>| |[*3@scout]| 3번 |[dodge]|한 후 |[elusive]| 상태가 됨[0@scout]|\n|\n|공격을 피할 때마다:|\n|<.>| |[counter-attack]
+windwalker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[agility]|가 조금이라도 있으면 |[dodge]|가 보장됨|[3@scout]|\n|<.>| |[*3@scout]| 3번 |[dodge]|한 후 |[elusive]| 상태가 됨[0@scout]|\n|\n|공격을 피할 때마다:
+honor-trial-description,<.>| 모든 적 레벨이 1 상승
+resilience-trial-description,<.>| 모든 적이 |[armor]|을 얻습니다
+swarm-trial-description,<.>| 모든 배틀에 적 6명 등장
+confrontation-trial-description,<.>| 모든 적이 |[total-attacks]| +1 획득
+sagacity-trial-description,행동에 타이머를 추가합니다; 타이머가 0에 도달하면 실행이 종료됩니다
+?-label,

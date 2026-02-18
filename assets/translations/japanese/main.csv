@@ -1,0 +1,1231 @@
+language-name-text,日本語
+leaderboard-progress-text,{floor-record} 階に到達して{player-percentage-amount} のプレイヤーを超えました
+leaderboard-progress-connection-failed-text,スコアボードに接続できません：到達フロア{floor-record}
+final-floor-reached-text,最終階到達
+ascension-level-text,昇天 {level}
+final-floor-text,最終階
+new-journey-text,新たな旅
+select-save-slot-text,選択
+delete-save-slot-text,削除
+update-text,更新
+upload-text,アップロード
+death-message-title-text,{player-name}による死亡メッセージ
+player-floor-record-text,{player-name}のフロア記録
+view-steam-profile-text,Steamプロフィールを表示
+no-achievements-text,実績なし
+loading-file-text,ロード中
+saving-file-text,セーブ中
+proceed-text,続行
+join-lobby-text,参加
+enter-password-text,パスワードを入力
+enter-ip-text,IPを入力
+specialization-floor-text,フロア{floor-number}で発動
+convert-to-battle-stats-text,バトルステータスに変換
+stat-per-kill-text,キル毎に{stat}
+item-found-text,{item-name} が見つかりました
+doubles-own-stat-text,|{stat} を 2 倍にする
+victory-text,勝利
+defeat-text,敗北
+ascend-text,昇天
+negative-flow-text,{flow}|不可。アイテムセットの装備を外してください
+cannot-be-dismantled-text,分解不可
+waiting-for-dismantle-text,分解待ち
+request-to-dismantle-text,分解の要求
+battles-remaining-text,残りバトル
+current-battle-text,現在の戦闘
+last-battle-text,最後の戦闘
+gold-per-battle-text,1バトルあたりのゴールド
+gold-per-kill-text,1キルあたりのゴールド
+enemy-player-immunity-text,{player-name}のターン時||\n||被ダメージが{amount}%軽減する
+enemy-player-immunity-misc-text,ターン毎に{amount}%軽減
+player-sent-an-item-text,{player-name}があなたに{item-name}を送った
+send-item-to-player-text,アイテムを送る
+burnout-description-text,バーンアウト：効果は無効
+infuse-description-text,このフロアでアイテムのステータスと効果を||\n||付与する
+infused-flow-info-text,注入。コストなし|{flow-stat}
+infuse-text,注入
+to-open-battle-log-text,バトル記録を開く
+to-unlock-stats-text,ステータスをアンロック
+to-lock-stats-text,ステータスをロック
+to-deselect-text,選択解除
+to-convert-text,変換
+to-select-text,選択
+to-toggle-text,切り替え
+to-unlock-text,アンロック
+to-learn-text,習得するには
+to-lock-text,ロック
+to-consume-text,消費
+to-activate-text,有効化する
+to-restore-text,回復する
+to-remove-text,削除
+to-banish-text,除外する
+to-equip-text,装備
+to-swap-text,交換
+to-take-text,取る
+to-buy-text,購入
+silenced-text,沈黙
+highest-text,最高
+cost-text,コスト
+diamond-reward-text,{floor}階ごとに{diamond}を追加で入手
+gold-start-text,#ERROR!
+reforge-token-description-text,鍛え直したアイテムに |{stat}| が適用される確率 +{amount}%
+item-multiplier-text,装備した合計|{item-set}|アイテム掛けるステータス分倍増する
+specialization-info-text,|{item-set}| を |{specialization}| に変換
+required-item-sets-text,{item-set}|アイテムの装備が必要
+required-stat-text,必要 |{stat}
+cant-move-during-battle-text,戦闘中は移動不可
+missing-item-socket-text,{socket-name} ソケットがありません
+item-set-no-flow-text,|{item-set}| のコストは 0% |{flow}|
+item-set-limit-reached-text,アイテムセット制限に到達
+cant-equip-duplicates-text,同じアイテムは装備できない
+cannot-be-upgraded-text,強化できません
+unlearned-ability-text,未習得のアビリティ
+learn-ability-text,{ability} を習得
+skip-stance-text,スキップ：このターンは攻撃しない
+guard-stance-text,ガード：このターン; 受けるダメージが{amount}%減少
+attack-on-activation-ability-text,発動時に攻撃
+reforged-item-stats-text,鍛え直したアイテムのステータス
+favorite-item-sets-text,お気に入りのアイテムセット
+market-item-sets-text,マーケットのアイテムセット
+tinker-kit-item-name-text,工作キット
+battle-information-text,バトル情報
+current-turn-text,ターン{turn-number}
+local-player-name-text,あなた
+dead-text,死亡
+battle-log-applied-status-effect-text,{character-1}は{character-2}にステータス効果を付与した
+battle-log-applied-status-on-self-text,{character}は自らにステータス効果を付与した
+battle-log-received-damage-from-source-text,{character}は{source}からダメージを受けた
+battle-log-received-damage-text,{character}はダメージを受けた
+battle-log-hit-with-text,{character-1}は{source}で{character-2}をヒットした
+battle-log-activated-effect-text,{character}は効果を発動した
+battle-log-parry-text,{character-1}は{character-2}をかわした
+battle-log-block-text,{character-1}は{character-2}をブロックした
+battle-log-killed-text,{character-1}は{character-2}をキルした
+battle-log-steal-text,{character} が {source} から盗んだ
+battle-log-hit-text,{character-1}は{character-2}をヒットした
+battle-log-cleanse-text,{character}は浄化した
+battle-log-dodged-text,{character}は回避した
+battle-log-healed-text,{character}は治癒した
+overhealed-text,異常治癒
+overheal-text,異常治癒
+executed-text,処刑
+blocked-text,ブロック
+debuff-immune-text,デバフ免除
+failed-steal-text,スティール失敗
+steal-text,スティール
+escaped-text,逃亡
+cleanse-text,浄化
+inventory-full-text,インベントリに空きなし
+armor-break-text,鎧破壊！
+counter-attack-break-text,反撃！
+missing-mana-text,失われたマナ
+cleansed-text,浄化
+heal-text,治癒
+attack-text,攻撃
+enter-text,入る
+skip-text,スキップ
+open-text,開く
+sell-all-text,すべて売る
+close-text,閉じる
+demo-tower-completed-text,デモ塔クリア
+grants-stat-consumable-text,現バトルで|{amount}|{stat}|を付与
+temp-stat-to-add-potion-description-text,現バトルの間、|{stat}|を付与
+status-effect-potion-description-multiple-text,|{status-effect}|のスタックを{amount}付与
+status-effect-potion-description-single-text,|{status-effect}|のスタックを1つ付与
+potion-restores-text,{amount} |{stat}|を回復
+potion-regenerates-text,{stat}| を {amount} 再生します |
+potion-repairs-text,{stat}| の {amount}% を修復します |
+refills-every-battle-potion-text,戦闘ごとにリチャージされます
+stat-transform-text,|{stat-1}| を |{stat-2}| に変換
+banished-item-text,{item-name}を除外した
+reforged-item-text,鍛え直した {item-name}
+item-reforge-text,{item-name} 鍛え直し
+banish-description-text,{item-name}を塔から|\n|永久に削除します
+unlock-requirements-description-text,アンロックに必要な完了バトル数：
+unlimited-amount-text,無制限
+max-amount-text,最大：{amount}
+corrupted-fragment-text,腐敗した断片
+specialization-text,専門化
+unknown-enemy-text,不明な敵
+unknown-item-text,不明なアイテム
+passive-set-text,パッシブセット
+empty-set-text,空のセット
+sell-for-text,販売価格
+level-up-text,レベルアップ
+chapter-text,章
+abilities-text,アビリティ
+ability-text,能力
+passives-text,パッシブ
+passive-text,パッシブ
+rewards-text,報酬
+convert-text,変換
+upgrade-text,アップグレード
+command-list-text,コマンド
+help-command-info-text,「{command}」を入力してヘルプを表示
+kick-command-info-text,{command} [player index]|\n|プレイヤーをロビーから追放します|\n|例: {command} 1 (あなたの次の最初のプレイヤーを追放)
+end-game-text-text,塔の中で鍛えられ; あなたの魂はふさわしいと証明されました。
+highest-floor-result-screen-text,最高フロア：{floor-number}
+died-on-floor-text,フロア{floor-number}で死亡
+merchant-exclusive-text,商人専用
+upgrades-into-text,アップグレード後:
+highest-floor-text,最高フロア
+floor-number-text,フロア{number}
+not-refinable-text,改良不可
+top-player-text,トッププレイヤー
+refinable-text,改良可
+deforge-text,解鍛（デフォージ）
+active-text,アクティブ
+floor-text,フロア
+split-text,分割
+elite-text,エリート
+gold-text,ゴールド
+level-text,レベル
+set-text,セット
+xp-text,XP
+memories-button,メモリー
+name-label,名前
+lobbies-button,ロビー
+game-mode-label,ゲームモード
+locked-label,ロック済み
+players-label,プレイヤー
+select-button,選択
+select-label,選択
+back-button,戻る
+button-label,ボタン
+wishlist-on-steam!-label,Steamでウィッシュリストに追加！
+enter-the-tower-button,塔に入る
+library-button,ライブラリ
+library-label,ライブラリ
+workshop-button,ワークショップ
+quit-button,閉じる
+market-hover-name,マーケット
+market-hover-description,<696969>各階ごとに新しいアイテムが追加されます
+market-hover-bottom-hint,アイテムを表示
+refresh-market-hover-name,マーケットを更新
+refresh-market-hover-description,<696969>価格は戦闘ごとにリセットされます
+sell-label,売る
+split-label,分割する
+search-line-edit,検索...
+current-battle-label,現在の戦闘
+turn-1-label,ターン1
+normal-battle-label,通常バトル
+ping-hover-name,ピング
+ping-hover-description,
+10-label,
+open-button,開く
+loot-stash-hover-name,戦利品の隠し場所
+loot-stash-hover-description,<696969>余分な戦利品はここに入ります
+button-button,ボタン
+market-items-label,マーケットアイテム
+close-button,閉じる
+waiting-for-all-players-to-connect-label,すべてのプレイヤーの接続待ち...
+floor-record-x-label,フロア記録: x
+battle-log-button,バトルログ
+battle-log-label,バトルログ
+feedback-button,フィードバック
+feedback-label,フィードバック
+confirm-button,決定
+overview-button,概要
+speedruns-button,スピードラン
+submit-run-button,ランを提出
+version-label,バージョン：
+selection-label,選択肢
+highest-floor-10-label,最高フロア：10
+top-player-label,トッププレイヤー
+time-label,タイム
+enter-password-line-edit,パスワードを入力...
+join-button,参加する
+password-label,パスワード
+connection-type-label,接続タイプ
+challenge-drop-down-selection,チャレンジ
+pvp-no-achievements-drop-down-selection,PvP［実績なし］
+practice-no-achievements-drop-down-selection,練習［実績なし］
+public-label,公開
+--credits--label,- クレジット -
+thanks-button,ありがとうございます
+no-tutorial-label,チュートリアルなし
+no-tutorial-info-label-label,本作は 学習は|\n|実験と発見によって行うべきであり; 指示ではないと考えます.
+proceed-button,続行
+items-button,アイテム
+bestiary-button,モンスター
+synergies-button,シナジー
+passives-button,パッシブ
+build-planner-label,ビルドプランナー
+delete-label,削除
+build-1-label,ビルド1
+blue-team-label,青チーム
++-join-label,[+] 参加
+player-name-label,プレイヤー名
+select-adventurer-label,冒険者を選択
+red-team-label,赤チーム
+trials-label,試練
+configure-button,設定
+0/4-label,0/4
+begin-button,開始
+begin-label,スタート
+restart-button,やり直し
+restart-label,やり直し
+resume-button,再開
+resume-label,再開
+options-button,オプション
+save-&-exit-button,保存＆やめる
+text-label,テキスト
+controls-button,操作
+video-button,動画
+audio-button,音声
+misc-button,その他
+primary-action-button,メインアクション
+key-label,キー
+?-label,
+listening-for-input-label,インプット待ち...
+ability-button,アビリティ
+skip-button,スキップ
+refresh-market-button,マーケットを更新
+brightness-label,明るさ
+contrast-label,コントラスト
+window-mode-label,ウィンドウモード：
+resolution-label,解像度：
+v-sync-label,
+music-label,音楽
+sfx-label,SFX
+tooltip-lock-time-label,ツールチップロック時間
+language-label,言語：
+chromatic-aberration-label,色収差
+display-run-time-label,ランタイム表示
+screen-shake-label,画面の揺れ
+scan-lines-label,走査線
+reset-to-defaults-button,デフォルトにリセット
+->-label,
+end-button,終了する
+enter-endless-button,エンドレスに入る
+refresh-merchant-hover-name,商人を更新
+refresh-merchant-hover-description,<696969>新しいアイテムを提供
+upgrade-label,アップグレード
+-button,
+stance-hover-name,スタンス
+activate-endless-button,エンドレスを有効化
+refresh-mystic-trader-hover-name,ミスティックトレーダー更新
+refresh-mystic-trader-hover-description,<696969>新しいアイテムを召喚
+0/3-label,
+request-to-dismantle-button,分解の要求
+dismantle-button,分解
+windowed-window-mode-name,ウィンドウ
+borderless-window-mode-name,ボーダーレス
+fullscreen-window-mode-name,フルスクリーン
+challenge-game-mode-name,チャレンジ
+pvp-game-mode-name,PvP
+practice-game-mode-name,練習
+-popup,
+counter-attack!-popup,反撃！
+lucky-attack-popup,ラッキー攻撃
+armor-break!-popup,鎧破壊！
+backstabbed-popup,背後から攻撃された
+dodged-popup,回避
+parried-popup,身かわし
+blocked-popup,ブロック
+missed-popup,失敗
+helmet-socket-name,兜
+chestplate-socket-name,チェストプレート
+leggings-socket-name,レギンス
+boots-socket-name,ブーツ
+necklace-socket-name,ネックレス
+weapon-socket-name,武器
+ring-socket-name,指輪
+zefrot-item-name,ゼフロット
+totem-of-greed-item-name,強欲のトーテム
+steak-item-name,ステーキ
+ribbon-of-fortune-item-name,幸運のリボン
+poor-mans-path-item-name,貧乏人の道
+pallac-item-name,パラック
+merchant-upgrade-item-name,商人アップグレード
+frokt-item-name,フロクト
+poor-mans-blade-item-name,劣化ブレード
+wooden-shoes-item-name,木靴
+natures-gift-item-name,自然の贈り物
+magical-stick-item-name,魔法の棒
+training-hammer-item-name,訓練用ハンマー
+natures-collar-item-name,自然の首飾り
+poor-mans-helmet-item-name,劣化兜
+training-axe-item-name,訓練用斧
+wooden-plates-item-name,木のプレート
+leather-boots-item-name,革ブーツ
+leather-helmet-item-name,革兜
+leather-pants-item-name,革パンツ
+leather-chestplate-item-name,革チェストプレート
+training-sword-item-name,訓練用剣
+insightus-item-name,インサイトス
+amulet-of-life-item-name,命のアミュレット
+starborn-ring-item-name,スターボーン指輪
+recruits-boots-item-name,新兵のブーツ
+keepsake-item-name,記念品
+recruits-hood-item-name,新兵の頭巾
+iron-dagger-item-name,鉄の短剣
+hunters-boots-item-name,ハンターのブーツ
+hunters-hood-item-name,ハンターの頭巾
+recruits-pants-item-name,新兵のパンツ
+chainmail-item-name,鎖帷子
+hunters-necklace-item-name,ハンターのネックレス
+hunters-pants-item-name,ハンターのパンツ
+recruits-cloak-item-name,新兵のマント
+hunters-ring-item-name,ハンターの指輪
+hunters-jerkin-item-name,ハンターのジャーキン
+crystal-staff-item-name,水晶ステッキ
+vitality-ring-item-name,生気の指輪
+ring-of-anger-item-name,怒りの指輪
+zephyrons-tome-item-name,ゼフィロンの書
+silver-ring-item-name,銀の指輪
+marauders-helmet-item-name,略奪者の兜
+silver-sabatons-item-name,銀のサバトン
+silver-helmet-item-name,銀兜
+life-seeker-item-name,ライフシーカー
+silver-leggings-item-name,銀のレギンス
+zephyrons-magical-shoes-item-name,ゼフィロンの魔法靴
+silver-chestplate-item-name,銀のチェストプレート
+zephyrons-eye-item-name,ゼフィロンの眼
+bastolics-guardian-item-name,バストリックの守護者
+silver-sword-item-name,銀の剣
+zephyrons-magical-ring-item-name,ゼフィロンの魔法の指輪
+bastolics-gauntlet-item-name,バストリックのガントレット
+zephyrons-magical-cloak-item-name,ゼフィロンの魔法のマント
+zephyrons-magical-cap-item-name,ゼフィロンの魔法帽
+zephyrons-magical-staff-item-name,ゼフィロンの魔法の杖
+believers-locket-item-name,信者のロケット
+silver-axe-item-name,銀の斧
+tome-of-arcanum-item-name,アルカナムの書物
+arcanum-hood-item-name,アルカナムフード
+golden-dagger-item-name,金の短剣
+golden-sabatons-item-name,金のサバトン
+golden-helmet-item-name,金の兜
+arcanum-shoes-item-name,アルカナムの靴
+golden-leggings-item-name,金のレギンス
+arcanum-robe-item-name,アルカナムのローブ
+golden-chestplate-item-name,金のチェストプレート
+precious-ring-item-name,貴重な指輪
+magic-wand-item-name,魔法の杖
+golden-crown-item-name,金の冠
+golden-warden-item-name,金のウォーデン
+greeds-grasp-item-name,グリードの掌握
+golden-sword-item-name,金の剣
+omni-ring-item-name,オムニ指輪
+darkwood-plates-item-name,ダークウッドアーマー
+tome-of-attacks-item-name,攻撃の書
+warriors-sabatons-item-name,戦士のサバトン
+hunger-blade-item-name,ハンガーブレード
+warriors-helmet-item-name,戦士の兜
+famished-blade-item-name,飢えたブレード
+unchained-gauntlet-item-name,解放のガントレット
+blackthorn-sabatons-item-name,ブラックソーンのサバトン
+warriors-leggings-item-name,戦士のレギンス
+blackthorn-leggings-item-name,ブラックソーンのレギンス
+warriors-chestplate-item-name,戦士のチェストプレート
+warriors-war-hammer-item-name,戦士のハンマー
+blackthorn-chestplate-item-name,ブラックソーンのチェストプレート
+unchained-ring-item-name,解放の指輪
+hy-sword-item-name,ハイソード
+pantaloons-of-greatness-item-name,偉大なるパンタロン
+warriors-ring-item-name,戦士の指輪
+blackthorn-crown-item-name,ブラックソーンの冠
+orions-core-item-name,オリオンのコア
+orions-path-item-name,オリオンの道
+orions-destiny-item-name,オリオンの運命
+orions-leggings-item-name,オリオンのレギンス
+orions-sanguine-salvation-item-name,オリオンの血滾る救済
+orions-heart-item-name,オリオンの心臓
+orions-rage-item-name,オリオンの憤怒
+living-boots-item-name,生けるブーツ
+living-helmet-item-name,生ける兜
+living-leggings-item-name,生けるレギンス
+living-chestplate-item-name,生けるチェストプレート
+berserkers-axe-item-name,ベルセルクの斧
+berserkers-helmet-item-name,バーサーカーヘルメット
+eldrids-ring-item-name,エルドリドの指輪
+ring-of-power-item-name,パワーの指輪
+silver-heart-item-name,シルバーハート
+thunderiders-item-name,サンダーライダー
+thunderhelm-item-name,サンダーヘルム
+royal-sabatons-item-name,王家のサバトン
+royal-helmet-item-name,王家の兜
+royal-leggings-item-name,王家のレギンス
+thunderstriders-item-name,サンダーストライダー
+royal-chestplate-item-name,王家のチェストプレート
+thundergrace-item-name,サンダーグレース
+thunderblade-item-name,サンダーブレード
+thundervow-item-name,サンダーバウ
+iron-eater-item-name,鉄喰い
+tome-of-darkness-item-name,闇の書物
+witherscar-item-name,腐毒
+dark-magical-ring-item-name,闇の魔法の指輪
+nighthorn-item-name,ナイトソーン
+ashcrow-item-name,灰鴉
+dark-harness-item-name,闇のハーネス
+alchemists-wisdom-item-name,錬金術師の知恵
+shadow-wisdom-item-name,影の知恵
+shadow-ring-item-name,影の指輪
+shadow-piercer-item-name,影の槍
+demonic-sabatons-item-name,悪魔のサバトン
+shadow-cloak-item-name,影のマント
+shadow-echo-item-name,影のエコー
+demonic-helmet-item-name,悪魔の兜
+demonic-axe-item-name,悪魔の斧
+shadow-sentence-item-name,影の宣告
+shadow-vortex-item-name,影の渦
+demonic-leggings-item-name,悪魔のレギンス
+demonic-claymore-item-name,悪魔のクレイモア
+demonic-chestplate-item-name,悪魔のチェストプレート
+demonic-ring-item-name,悪魔の指輪
+shard-of-power-item-name,力の欠片
+emperors-will-item-name,皇帝の意志
+wooden-crown-item-name,木の冠
+witchcraft-leggings-item-name,魔女術のレギンス
+cursed-ring-item-name,呪いの指輪
+cursed-necklace-item-name,呪いのネックレス
+mask-of-the-cursed-item-name,呪いの覆面
+blade-of-the-ruined-item-name,壊滅のブレード
+lightning-boots-item-name,ライトニングブーツ
+shamans-robe-item-name,シャーマンのローブ
+turtle-sabatons-item-name,亀のサバトン
+turtle-leggings-item-name,亀のレギンス
+cowards-ring-item-name,臆病者の指輪
+soul-collector-item-name,魂の蒐集家
+heart-of-gold-item-name,ゴールドの心臓
+turtle-chestplate-item-name,亀のチェストプレート
+elemental-necklace-item-name,元素ネックレス
+giants-ring-item-name,巨人の指輪
+black-oath-item-name,黒の誓い
+turtle-gauntlet-item-name,タートルガントレット
+gloom-item-name,グローン
+qolk-item-name,クォルク
+blake-item-name,ブレイク
+vampiric-helmet-item-name,吸血鬼の兜
+vampiric-chestplate-item-name,吸血鬼のチェストプレート
+glimmer-item-name,グリマー
+vurk-item-name,ヴァーク
+bloodedge-item-name,ブラッドエッジ
+ethercrests-tome-item-name,エーテルクレストの書物
+ethercrests-sabatons-item-name,エーテルクレストのサバトン
+ethercrests-blade-item-name,エーテルクレストのブレード
+ethercrests-helmet-item-name,エーテルクレストの兜
+ethercrests-staff-item-name,エーテルクレストのステッキ
+ethercrests-sword-item-name,エーテルクレストの剣
+ethercrests-leggings-item-name,エーテルクレストのレギンス
+ethercrests-chestplate-item-name,エーテルクレストのチェストプレート
+ethercrests-ring-item-name,エーテルクレストの指輪
+mask-of-cataclysm-item-name,大変動の覆面
+ring-of-interest-item-name,好奇心の指輪
+rod-of-doom-item-name,破滅のロッド
+shadow-whisper-item-name,影の囁き
+magma-sabatons-item-name,マグマのサバトン
+magma-helmet-item-name,マグマの兜
+magma-leggings-item-name,マグマのレギンス
+magma-chestplate-item-name,マグマのチェストプレート
+magma-necklace-item-name,マグマのネックレス
+magma-poleaxe-item-name,マグマの斧
+ring-of-ice-item-name,氷の指輪
+jesters-bone-mask-item-name,道化師の骨格覆面
+celestial-sabatons-item-name,セレスティアルサバトン
+celestial-helmet-item-name,天空の兜
+celestial-leggings-item-name,天界のレギンス
+celestial-chestplate-item-name,天上のチェストプレート
+throngler-item-name,ソロンレール
+dawnbringer-item-name,ドーンブリンガー
+ring-of-unity-item-name,結束の指輪
+excalibur-item-name,エクスカリバー
+ribbon-of-fortune-item-description,<696969>宝箱を開ける時に|\n|<696969>25%の確率で追加アイテムをゲット
+merchant-upgrade-item-description,|[tinker]| のアンロック
+bloodedge-item-description,<696969>キル毎に強くなっていた
+excalibur-item-description,<696969>湖からの贈り物
+bat-enemy-name,コウモリ
+leafing-enemy-name,リーフィン
+fronk-enemy-name,フロンク
+boar-enemy-name,イノシシ
+snow-pix-enemy-name,雪ピクシー
+pebbling-enemy-name,コイシ
+slime-enemy-name,スライム
+rat-enemy-name,ネズミ
+goblin-enemy-name,ゴブリン
+skeleton-warrior-enemy-name,骸骨戦士
+shadow-wizard-enemy-name,影の魔術師
+jellyrak-enemy-name,クラック
+efis-enemy-name,エフィス
+rogue-enemy-name,ローグ
+slorn-enemy-name,スローン
+armored-goblin-enemy-name,鎧ゴブリン
+stone-golem-enemy-name,石ゴーレム
+witch-enemy-name,魔女
+wizard-skeleton-enemy-name,魔術師骸骨
+giant-spider-enemy-name,巨大蜘蛛
+blood-ghoul-enemy-name,ブラッドグール
+armored-spirit-enemy-name,鎧精霊
+red-orc-enemy-name,赤オーク
+snow-wraith-enemy-name,雪の死霊
+venomous-spider-enemy-name,毒蜘蛛
+harpy-enemy-name,ハルピュイア
+bravura-enemy-name,ブラヴーラ
+fire-dragon-enemy-name,炎ドラゴン
+void-squid-enemy-name,虚ろイカ
+brother-enemy-name,兄弟
+shadow-ghost-enemy-name,影の幽霊
+kotya-enemy-name,コチャ
+magma-golem-enemy-name,マグマゴーレム
+overseer-enemy-name,オーバーシーアー
+braskap-enemy-name,ブラスカップ
+cloud-dragon-enemy-name,雲ドラゴン
+ruined-king-enemy-name,破滅の王
+blinded-priest-enemy-name,盲僧
+morizon-enemy-name,モリゾン
+moon-enemy-name,ムーン
+cursed-abomination-enemy-name,呪われし異形
+mars-enemy-name,マーズ
+pinto-enemy-name,ピント
+neptune-enemy-name,ネプチューン
+thunder-dragon-enemy-name,サンダードラゴン
+eldrids-flesh-enemy-name,エルドリッドの肉
+golden-guardian-enemy-name,金のガーディアン
+venus-enemy-name,ヴィーナス
+jupiter-enemy-name,ジュピター
+saturn-enemy-name,サターン
+uranus-enemy-name,ウラヌス
+sun-enemy-name,太陽
+iron-golem-enemy-name,鉄ゴーレム
+windwatcher-enemy-name,風の観察者
+graven-enemy-name,グレイヴン
+death-enemy-name,死神
+perfect-slave-enemy-name,完全奴隷
+common-chest-enemy-name,一般的な胸部
+golden-chest-enemy-name,黄金の胸部
+heart-of-the-tower-enemy-name,塔の中心
+merchant-enemy-name,商人
+mystic-bison-enemy-name,ミスティックバイソン
+mystic-trader-enemy-name,ミスティックトレーダー
+training-dummy-enemy-name,訓練用ダミー
+ancient-ice-item-set-name,古代氷
+ancient-shell-item-set-name,古代貝
+arcanum-item-set-name,アルカナム
+bastolic-item-set-name,バストリック
+berserker-item-set-name,ベルセルク
+blackthorn-item-set-name,ブラックソーン
+cataclysm-item-set-name,大変動
+celestial-item-set-name,天上界
+chromalure-item-set-name,クロマルア
+consumable-item-set-name,消耗品
+cursed-item-set-name,呪い
+darkness-item-set-name,闇
+demonic-item-set-name,悪魔
+essential-item-set-name,必需品
+flesh-item-set-name,肉
+generic-item-set-name,ベーシック
+golden-item-set-name,金
+hunter-item-set-name,ハンター
+jade-item-set-name,翡翠
+legacy-item-set-name,伝説
+magma-item-set-name,マグマ
+mercenary-item-set-name,傭兵
+orion-item-set-name,オリオン
+phantom-item-set-name,亡霊
+poverty-item-set-name,貧民
+reforge-item-set-name,リフォージ
+royal-item-set-name,王家
+scout-item-set-name,スカウト
+shadow-item-set-name,影
+silver-item-set-name,銀
+swiftness-item-set-name,スピード
+thunder-item-set-name,サンダー
+tome-item-set-name,書
+unchained-item-set-name,解放
+vampiric-item-set-name,吸血鬼
+warrior-item-set-name,戦士
+wood-item-set-name,木材
+zephyron-item-set-name,ゼフィロン
+beastbound-specialization-name,ビーストバウンド
+bloodcaster-specialization-name,ブラッドキャスター
+vampiercer-specialization-name,ヴァンピアサー
+venomire-specialization-name,ヴェノマイア
+bloodmoon-specialization-name,血の月
+moonlighter-specialization-name,月影使い
+nighthrust-specialization-name,夜の突き
+challenger-specialization-name,チャレンジャー
+chromaguard-specialization-name,クロマガード
+chromaspite-specialization-name,クロマスパイト
+chromathorn-specialization-name,クロマソーン
+cinderthorn-specialization-name,シンダソーン
+mindthorn-specialization-name,マインドソーン
+thornfrost-specialization-name,ソーンフロスト
+dauntless-specialization-name,ドーントレス
+quickblade-specialization-name,クイックブレード
+rampager-specialization-name,ランページャー
+thunderborn-specialization-name,サンダーボーン
+debilitator-specialization-name,デビリテーター
+mindbreaker-specialization-name,マインドブレーカー
+deserter-specialization-name,デザーター
+faithbound-specialization-name,フェイスバウンド
+echomancer-specialization-name,エコーマンサー
+evadium-specialization-name,イヴェイディウム
+invulnerium-specialization-name,インバルネリウム
+stunium-specialization-name,スタニウム
+harbinger-specialization-name,ハービンジャー
+lionheart-specialization-name,ライオンハート
+pursuer-specialization-name,パスーワー
+striker-specialization-name,ストライカー
+windwalker-specialization-name,ウィンドウォーカー
+accuracy-stat-name,命中
+active-armor-stat-name,アクティブ鎧
+adaptive-attack-stat-name,適応攻撃
+agility-stat-name,敏捷性
+armor-stat-name,鎧
+armor-damage-stat-name,アーマーダメージ
+armor-shields-stat-name,アーマーシールド
+armor-steal-stat-name,鎧スティール
+armored-attack-stat-name,アーマードアタック
+blackrot-damage-stat-name,黒斑ダメージ
+bleed-damage-stat-name,出血ダメージ
+cinder-damage-stat-name,灰ダメージ
+combat-stat-name,戦闘
+crit-chance-stat-name,クリティカル確率
+critical-damage-stat-name,クリティカルダメージ
+dazzle-stat-name,目眩
+dazzle-damage-stat-name,目眩ダメージ
+diamond-stat-name,ダイヤモンド
+eldership-stat-name,長老会
+electric-damage-stat-name,電気ダメージ
+electricity-stat-name,電気
+elemental-power-stat-name,元素パワー
+elemental-resistance-stat-name,元素耐性
+energy-stat-name,エネルギー
+faith-stat-name,信念
+flow-stat-name,流れ
+freeze-attack-stat-name,凍結攻撃
+freeze-damage-stat-name,凍結ダメージ
+gold-stat-name,ゴールド
+gold-on-kill-stat-name,キル時のゴールド
+greed-stat-name,グリード
+health-stat-name,HP
+lethality-stat-name,致命性
+life-steal-stat-name,ライフスティール
+luck-stat-name,運
+magic-attack-stat-name,魔法攻撃
+magic-damage-stat-name,魔法ダメージ
+malice-stat-name,邪性
+malice-damage-stat-name,邪性ダメージ
+mana-stat-name,マナ
+max-health-stat-name,最大HP
+max-mana-stat-name,最大マナ
+omni-crit-chance-stat-name,オムニクリティカル確率
+omni-vamp-stat-name,オムニヴァンプ
+penetration-stat-name,貫通
+physical-attack-stat-name,物理攻撃
+physical-damage-stat-name,物理ダメージ
+poison-damage-stat-name,毒ダメージ
+power-stat-name,パワー
+random-stat-stat-name,ランダムステータス
+recovery-stat-name,回復力
+spelldom-stat-name,魔法支配
+tenacity-stat-name,不屈
+total-attacks-stat-name,攻撃回数
+toughness-stat-name,耐性
+toxicity-stat-name,毒性
+true-damage-stat-name,確定ダメージ
+wisdom-stat-name,知恵
+enervation-status-effect-name,衰弱
+enervated-status-effect-application-message,衰弱
+weakness-status-effect-name,衰弱
+weakened-status-effect-application-message,弱体化
+black-curse-status-effect-name,黒い呪い
+cursed-status-effect-application-message,呪い
+curse-status-effect-name,呪い
+stun-status-effect-name,スタン
+stunned-status-effect-application-message,スタン
+slowness-status-effect-name,速度低下
+slowed-status-effect-application-message,速度低下
+confusion-status-effect-name,錯乱
+confused-status-effect-application-message,錯乱
+silence-status-effect-name,沈黙
+silenced-status-effect-application-message,沈黙
+toxic-transmute-status-effect-name,毒の変換
+poison-status-effect-name,毒
+poisoned-status-effect-application-message,毒
+bleed-status-effect-name,出血
+sparkle-status-effect-name,閃光
+sparkle-status-effect-application-message,閃光
+magic-shield-status-effect-name,魔法盾
+ephemeral-armor-status-effect-name,一時鎧
+ephemeral-shell-status-effect-name,一時貝
+electro-charge-status-effect-name,電気チャージ
+ephemeral-lock-status-effect-name,一時ロック
+exhaustion-status-effect-name,疲労
+malice-shield-status-effect-name,邪性盾
+armor-shield-status-effect-name,鎧盾
+freeze-status-effect-name,凍結
+frozen-status-effect-application-message,凍結
+fear-status-effect-name,恐怖
+invulnerability-status-effect-name,無敵
+inherited-sin-status-effect-name,罪の継承
+arthurs-mark-status-effect-name,アーサーの印
+timeout-status-effect-name,タイムアウト
+cinder-essence-status-effect-name,灰の真髄
+combat-insight-status-effect-name,戦闘インサイト
+magic-blitz-status-effect-name,魔法総攻撃
+magic-blitz-status-effect-application-message,魔法総攻撃
+omni-blitz-status-effect-name,オムニ総攻撃
+omni-blitz-status-effect-application-message,オムニ総攻撃
+vimblow-status-effect-name,ヴィンブロー
+dread-status-effect-name,戦慄
+fury-status-effect-name,憤激
+fury-status-effect-application-message,憤激
+counter-attack-charge-status-effect-name,カウンターアタックチャージ
+multi-attack-charge-status-effect-name,マルチ攻撃チャージ
+stun-attack-charge-status-effect-name,Ganmen-chāji
+debuff-immunity-status-effect-name,デバフ免除
+golden-heart-status-effect-name,金の心臓
+golden-lock-status-effect-name,金のロック
+lethality-status-effect-name,致死性
+madness-status-effect-name,狂気
+focused-status-effect-name,フォーカス
+blindness-status-effect-name,失明
+clarity-status-effect-name,意識
+elusive-status-effect-name,エルーシブ
+purification-status-effect-name,清め
+grace-status-effect-name,恩寵
+curse-of-the-tower-status-effect-name,塔の呪い
+blue-team-status-effect-name,青チーム
+red-team-status-effect-name,赤チーム
+unavoidable-keyword-name,不可避
+anti-steal-keyword-name,スティール対策
+attack-damage-keyword-name,攻撃ダメージ
+execute-keyword-name,処刑
+ascend-keyword-name,昇天
+tinker-keyword-name,ティンカー
+heal-keyword-name,治癒
+tier-i-reward-keyword-name,ティア I 報酬
+critical-strike-battle-action-name,クリティカルストライク
+counter-attack-battle-action-name,反撃
+multi-attack-battle-action-name,マルチ攻撃
+lucky-attack-battle-action-name,ラッキー攻撃
+armor-break-battle-action-name,鎧破壊
+omni-crit-battle-action-name,オムニクリティカル
+polymorph-battle-action-name,ポリモーフ
+immolate-battle-action-name,焼き打ち
+backstab-battle-action-name,バックスタブ
+cleanse-battle-action-name,浄化
+dodge-battle-action-name,回避
+parry-battle-action-name,身かわし
+block-battle-action-name,ブロック
+guard-battle-action-name,防御
+miss-battle-action-name,失敗
+hit-battle-action-name,ヒット
+arcane-roulette-ability-name,アルカンルーレット
+astral-dissolution-ability-name,天体消失
+barrier-ability-name,バリア
+bloodlust-aura-ability-name,ブラッドラストオーラ
+burden-of-power-ability-name,権力の重荷
+confusion-strike-ability-name,錯乱ストライク
+death-strike-ability-name,デスストライク
+drain-react-ability-name,ドレインリアクト
+drop-of-chaos-ability-name,混沌の雫
+enchanted-attack-ability-name,特殊攻撃
+fear-of-faith-ability-name,信念の恐れ
+frozen-strike-ability-name,凍結ストライク
+frozen-wind-ability-name,凍風
+galefire-ability-name,ゲイルファイア
+harness-ability-name,ハーネス
+headbutt-ability-name,頭突き
+heart-of-iron-ability-name,鉄の心
+iron-will-ability-name,鉄の意志
+mana-regen-ability-name,マナ回復
+mind-control-ability-name,マインドコントロール
+multi-cleanse-ability-name,マルチ浄化
+multi-heal-ability-name,マルチ治癒
+multi-magic-shield-ability-name,マルチ魔法盾
+multi-shield-ability-name,マルチ盾
+multi-stun-ability-name,マルチスタン
+my-justice-ability-name,我が正義
+my-way-ability-name,我が道
+normal-attack-ability-name,通常攻撃
+noxious-empowerment-ability-name,毒付与
+persistent-payback-ability-name,永続報復
+prowlers-strike-ability-name,潜行者の一撃
+purify-ability-name,純化
+replay-ability-name,リプレイ
+repulse-ability-name,撃退
+safeguard-ability-name,セーフガード
+shatter-strike-ability-name,自滅ストライク
+silhouette-ability-name,シルエット
+spell-bind-ability-name,呪縛
+steady-grip-ability-name,ステディグリップ
+steal-ability-name,スティール
+stun-attack-ability-name,スタン攻撃
+stun-strike-ability-name,スタンストライク
+toxic-attack-ability-name,有毒攻撃
+triple-attack-ability-name,三重攻撃
+venom-spit-ability-name,毒吐き
+absolution-passive-name,赦免
+all-is-mine-passive-name,すべて私のもの
+arcane-control-passive-name,秘術制御
+arcane-equilibrium-passive-name,アルケイン・イクリブリアム
+battleborn-passive-name,戦闘生まれ
+battleforged-heart-passive-name,戦鍛の心臓
+beyond-the-grave-passive-name,墓の彼方
+bloodedges-blood-slash-passive-name,ブラッドエッジのブラッドスラッシュ
+cinder-touch-passive-name,灰の恩恵
+combat-instinct-passive-name,戦闘本能
+consuming-darkness-passive-name,激烈な闇
+crimson-pact-passive-name,クリムゾンパクト
+critical-focus-passive-name,クリティカルフォーカス
+crystal-hardening-passive-name,水晶硬化
+crystal-insight-passive-name,クリスタルの洞察
+cursed-chain-passive-name,呪いのチェーン
+edens-wish-passive-name,エデンの願い
+edge-of-death-passive-name,死の縁
+edge-of-the-ruined-passive-name,壊滅のエッジ
+eldrids-fury-passive-name,エルドリッドの憤激
+empty-bastion-passive-name,空の要塞
+emulator-passive-name,エミュレーター
+escape-passive-name,逃亡
+evil-mark-passive-name,悪の印
+exploited-opportunity-passive-name,機会利用
+faded-discipline-passive-name,色褪せた規律
+faultbreaker-passive-name,欠陥潰し
+fear-of-pain-passive-name,痛みの恐怖
+folly-of-kings-passive-name,王の愚行
+freedom-drive-passive-name,フリーダムドライブ
+frozen-heart-passive-name,凍った心臓
+golden-altruism-passive-name,金の利他主義
+growing-anger-passive-name,増大する怒り
+iron-pact-passive-name,鉄の盟約
+ironclad-passive-name,装甲
+judgments-call-passive-name,審判の判定
+liberation-passive-name,自由化
+litany-of-malice-passive-name,悪意の連祷
+luminous-trial-passive-name,光の試練
+magic-flux-passive-name,魔力の流れ
+magical-frostflare-passive-name,魔法の氷炎
+mana-steal-passive-name,マナスティール
+manaflow-passive-name,マナフロー
+mimicry-passive-name,模倣
+plated-rot-passive-name,装甲黒斑
+potential-seeker-passive-name,ポテンシャルシーカー
+prime-guard-passive-name,プライムガード
+shaded-essence-passive-name,陰の真髄
+shattered-breath-passive-name,砕けた息吹
+shatterwave-passive-name,シャッターウェーブ
+spell-block-passive-name,スペルブロック
+spirit-of-the-unbroken-passive-name,不屈の精神
+strike-of-destiny-passive-name,運命の一撃
+thunderstrike-passive-name,サンダー攻撃
+toxic-redemption-passive-name,毒の救済
+toxshield-passive-name,毒盾
+undead-blessing-passive-name,不死の祝福
+undying-curse-passive-name,滅びぬ呪い
+vengeful-edge-passive-name,復讐の刃
+warriors-resolute-passive-name,戦士の決意
+whispers-of-anger-passive-name,怒りの囁き
+wind’s-grace-passive-name,風の恩恵
+wrath-of-the-broken-flesh-passive-name,壊れた肉の怒り
+honor-trial-name,名誉
+resilience-trial-name,レジリエンス
+swarm-trial-name,群れ
+confrontation-trial-name,対決
+sagacity-trial-name,賢明
+common-rarity-name,コモン
+uncommon-rarity-name,アンコモン
+rare-rarity-name,レア
+legendary-rarity-name,レジェンダリー
+mythic-rarity-name,ミシック
+eternal-rarity-name,エターナル
+abyssal-rarity-name,アビサル
+cosmic-rarity-name,コズミック
+divine-rarity-name,デバイン
+fren-adventurer-name,フレン
+pyry-adventurer-name,ピリ
+sid-adventurer-name,シド
+elys-adventurer-name,エリス
+fael-adventurer-name,ファエル
+tyr-adventurer-name,ティル
+viran-adventurer-name,ビラン
+kinno-adventurer-name,キノ
+riel-adventurer-name,リエル
+amon-adventurer-name,アモン
+jace-adventurer-name,ジェイス
+buff-status-effect-type-name,バフ
+debuff-status-effect-type-name,デバフ
+penalty-status-effect-type-name,ペナルティ
+neutral-status-effect-type-name,ニュートラル
+blessing-status-effect-type-name,加護
+accuracy-stat-description,命中率を決定する
+active-armor-stat-description,[armor]| 残数
+adaptive-attack-stat-description,現在の攻撃ダメージが増
+agility-stat-description,<.>|[dodge]|の確率を決定する|\n|<.>| [active-armor]によって減少する
+armor-stat-description,|[health]|の代わりにダメージを吸収
+armor-shields-stat-description,戦闘開始時に獲得する|[armor-shield]|スタックの数
+armor-steal-stat-description,命中時に対象から奪う|[armor]|の量|\n|<696969>不足分以上の|[armor]|は奪えない
+armored-attack-stat-description,|[active-armor]|の%を、ヒット時に与える|[armor-damage]|に変換
+blackrot-damage-stat-description,いかなる効果の影響も受けない
+combat-stat-description,合計|[combat]|に応じて|[physical-damage]|出力を増加
+crit-chance-stat-description,|[critical-strike]のチャンス
+critical-damage-stat-description,[critical-strike]|および|[omni-crit]|ダメージが増
+dazzle-stat-description,ヒット時、対象に付与する|[sparkle]|のスタック回数
+eldership-stat-description,<.>| |[eldership]| による合計 |[magic-damage]| を増加\n|<.>| |[eldership]| による合計 |[armor]| を増加
+electricity-stat-description,ヒット時に合計|[electricity]|に等しい|[electro-charge]|のスタックを対象に付与|\n|近くの敵にスタックの25%を付与
+elemental-power-stat-description,倍増：|\n|<.>| |[freeze-attack]|\n|<.>| |[cinder-damage]|\n|<.>| |[electricity]|\n|<.>| |[toxicity]
+elemental-resistance-stat-description,以下を減少させる：|\n|<.>| |[freeze-damage]|\n|<.>| |[cinder-damage]|\n|<.>| |[electric-damage]|\n|<.>| |[toxicity]
+energy-stat-description,アクションの実行が可能になる
+faith-stat-description,<.>| |[cleanse]| の確率を決定：|\n|[0@silver]|[*0@silver]| ターン終了時|\n|[4@silver]|[*4@silver]| デバフを受けた時|\n|\n|<.>| |[greed]| によって減少
+flow-stat-description,|[flow]|が0%未満の間はターンを行うことができません
+freeze-attack-stat-description,ヒット時に付与する|[freeze-damage]|量
+gold-on-kill-stat-description,キル毎に|[gold]|が増加
+greed-stat-description,獲得ゴールドを倍増
+health-stat-description,死亡するまでキャラクターが耐えうる最大ダメージ量
+lethality-stat-description,対象を % |[max-health]| 未満にするダメージ\n|かつ 値が % |[lethality]| のとき; |[execute]|が発動。
+life-steal-stat-description,[health]|に受けた|[physical-damage]|の|%分|[heal]
+luck-stat-description,次のアクションを実行する確率：|\n|[lucky-attack]
+magic-attack-stat-description,攻撃のヒット時に付与する|[magic-damage]|量
+malice-stat-description,保有者が攻撃されるたびに、合計|[malice]|に等しい|\n|[malice-damage]|を攻撃者に付与
+mana-stat-description,主にアビリティ使用時に消費するリソース
+max-health-stat-description,回復できる|[health]|の最大値
+max-mana-stat-description,回復できる|[mana]|の最大値
+omni-crit-chance-stat-description,|[omni-crit]|のチャンス
+omni-vamp-stat-description,[health]|に受けた|ダメージの|%|分[heal]
+penetration-stat-description,%|[armor]を無視
+physical-attack-stat-description,攻撃のヒット時に付与する|[physical-damage]|量
+power-stat-description,すべての|[attack-damage]|を倍増
+recovery-stat-description,[recovery]|に基づき、|\n|毎ターン失った|[health]|の一部を|[heal]
+spelldom-stat-description,初手に得る |[magic-blitz]| の量
+tenacity-stat-description,以下を受けない確率: |\n|<.>| |[slowness]|\n|<.>| |[stun]|
+total-attacks-stat-description,対象を攻撃する回数
+toughness-stat-description,攻撃によって受けるダメージを減少
+toxicity-stat-description,[toxicity]|毎にヒットに|[poison]|スタックを付与
+wisdom-stat-description,<.>| 合計|[wisdom]|に応じて|[magic-damage]|出力を増加
+enervation-status-effect-description,攻撃ダメージをスタックごとに25%減少
+weakness-status-effect-description,スタック毎に全攻撃ダメージを25%減
+black-curse-status-effect-description,全治癒力を75%減
+curse-status-effect-description,全治癒力を75%減
+stun-status-effect-description,一度付与すると、現ターンの間全アクションが使用不可
+slowness-status-effect-description,[agility]|が100%減
+confusion-status-effect-description,|[accuracy]| を100%低下
+silence-status-effect-description,アビリティ使用不可
+toxic-transmute-status-effect-description,体力にダメージを受けそうになるたびに;|\n|それを無効化し、|[poison]|に変換して|\n|自分に適用する
+poison-status-effect-description,ターンの最後HPに直接ダメージ
+bleed-status-effect-description,毎回の攻撃後; |[health]| に |[bleed-damage]| を受ける|\n|ダメージは |[bleed]| スタック % × |[max-health]| に等しい|\n|\n|<696969>毎ターン |[bleed]| が 2% 減少
+sparkle-status-effect-description,対象へのヒットで全|[sparkle]|スタックが弾け、|\n|スタック毎に次の効果を付与：|\n|\n|- 攻撃者に|[ephemeral-armor]|を付与|\n|- 対象に|[dazzle-damage]|を付与|\n|\n
+magic-shield-status-effect-description,アクティブ時、ダメージをすべてブロックした後、破壊して|\n|無効になる|\n|\n|<696969>（|[magic-damage]|<696969>では破壊しない）|\n
+ephemeral-armor-status-effect-description,バトル後に消失する一時|[armor]|\n|\n|ダメージを受けた後|[ephemeral-lock]|を負う|\n
+ephemeral-shell-status-effect-description,受けるダメージがスタックごとに12%減少
+electro-charge-status-effect-description,各ターンに所有者に対して、スタックの数に等しい |[electric-damage]| を与える
+ephemeral-lock-status-effect-description,[ephemeral-armor]|の受け取り不可
+exhaustion-status-effect-description,[total-attacks]|を1に制限|\n
+malice-shield-status-effect-description,次にヒットを受ける際に盾を1つ破壊し、|\n|[malice]*|<483a5d>+1|ダメージを無視する
+armor-shield-status-effect-description,次にヒットを受ける際に、盾が1破壊され、|\n|[armor]*|<6d758d>+1|ダメージを無視する|\n
+freeze-status-effect-description,あらゆる攻撃から25%の追加ダメージを受ける
+fear-status-effect-description,バフの受け取り不可
+invulnerability-status-effect-description,一切ダメージを受けない
+arthurs-mark-status-effect-description,この印がある対象は|[block]|、|[parry]|、または|[dodge]|が使用できない|\n
+timeout-status-effect-description,このターンでは何もできない
+cinder-essence-status-effect-description,ターン開始時、|\n|すべての|[cinder-essence]|スタックを消費し、\n|スタック毎に|[immolate]|を発動する
+combat-insight-status-effect-description,次に攻撃を受ける際に|\n|[combat-insight]|が5スタック以上ある場合、|\n|消費して|[parry]|\n
+magic-blitz-status-effect-description,攻撃時、全スタックを消費してスタック毎に|\n|[magic-attack]|が100%増|\n
+omni-blitz-status-effect-description,攻撃時、全スタックを消費してスタック毎に|\n|[physical-attack]|と|[magic-attack]|が100%増|\n
+vimblow-status-effect-description,攻撃時、1スタックを消費して|[max-health]|の25%に等しい|\n|ボーナス|[physical-attack]|を獲得|\n
+dread-status-effect-description,|[fear]| の敵は攻撃しない
+fury-status-effect-description,[physical-attack]|を|[fury]|のスタック毎に25%増|\n|<696969>（バトル後にリセット）|\n|\n
+counter-attack-charge-status-effect-description,加害者を攻撃する
+multi-attack-charge-status-effect-description,このターンは [multi-attack]|
+stun-attack-charge-status-effect-description,すべての攻撃が対象に |[stun]| を付与する
+debuff-immunity-status-effect-description,すべてのデバフの適用を停止
+golden-heart-status-effect-description,|[health]|が0になると:|\n|<.>| 復活し、|[max-health]|の25%分|[heal]|する|\n|[3@golden]|<.>| |[*3@golden]| |[invulnerability]|を獲得
+lethality-status-effect-description,ターゲットに、% |[lethality]|と等しい% |[max-health]|以下にするダメージを与えると|\n|そのターゲットを|[execute]|する
+madness-status-effect-description,自分自身のみを攻撃
+blindness-status-effect-description,あなたの |[accuracy]| を100%低下
+clarity-status-effect-description,次に|[stun]|を受ける際|\n||[clarity]|を1スタック消費して無効化する
+elusive-status-effect-description,あなたへの攻撃は |[accuracy]| を100%失う
+purification-status-effect-description,ターンの最後、1スタック消費して|[cleanse]|を発動する
+grace-status-effect-description,全ダメージを増
+curse-of-the-tower-status-effect-description,毎ターン、|[max-health]|の1%に等しい|[true-damage]|を受ける|\n|<696969>(戦闘が長引くと受ける)
+unavoidable-keyword-description,攻撃が常に当たる
+anti-steal-keyword-description,[steal]|から保護
+ascend-keyword-description,フロア1から昇天ランを開始; 獲得する|[diamond]|\nが2倍になります|<696969>（各レベル+1）|\n|<ff4500>以前のランで使用されたフロア2以上のアイテムは|\n|<ff4500>削除されます
+tinker-keyword-description,商人は渡したアイテムに次のことを行います：|\n|<.>| 鍛え直しとアイテムを工作キットに変換|\n|<.>| 鍛え直したアイテムをアップグレード
+heal-keyword-description,キャラクターの現在の|[health]|を補給するアクション
+tier-i-reward-keyword-description,<.>| |宝箱を開けると追加で|[diamond]|をゲット|\n|<.>| |+{gold} |[gold]|を持ってスタート
+critical-strike-battle-action-description,[physical-damage]| |が100% + % |[critical-damage]|増
+counter-attack-battle-action-description,攻撃者を攻撃
+multi-attack-battle-action-description,1ターンですべての敵を攻撃
+lucky-attack-battle-action-description,25%の追加ダメージを与える
+armor-break-battle-action-description,対象の鎧を0にまで減少させ破壊
+omni-crit-battle-action-description,|[physical-damage]| |と|[magic-damage]|が\n|100% + % |[critical-damage]増
+polymorph-battle-action-description,最強の敵をランダムな敵に変身させ|\n|ステータスをリセットする
+immolate-battle-action-description,前方のすべての敵に、|\n|自分の|[max-health]|の25%に等しい|[cinder-damage]| を与える
+backstab-battle-action-description,敵にバックスタブで攻撃ダメージを与える|\n|<.>| |敵の|[max-health]|が75%超：ダメージが45%減少|\n|<.>| |敵の|[max-health]|が75%以下：攻撃は|\n| |[critical-strike]|になり、|[accuracy]|+25%
+cleanse-battle-action-description,ランダムなデバフを1つ解除し、|[faith]|を25%減少させる|\n|<696969>バトル毎にリセット
+dodge-battle-action-description,受けるダメージを回避|\n|\n|[dodge]|する毎に：|\n|[agility]|が25%減少|\n|\n|<696969>バトル毎にリセット
+parry-battle-action-description,攻撃者にダメージとステータス効果を返す|\n|<696969>10回かわされると自分のターンが終了する
+block-battle-action-description,受けるダメージを100%減
+guard-battle-action-description,受けるダメージを25%減
+miss-battle-action-description,攻撃が対象にヒットしない|\n|<696969>10回失敗するとターン終了
+arcane-roulette-ability-description,|[magic-shield]| が壊れるたびに; ランダムな|\n|対象を攻撃\n|<696969>発動条件: |[magic-shield]| を展開中である
+astral-dissolution-ability-description,対象からのすべてのバフを解除
+barrier-ability-description,[magic-shield]|を獲得
+bloodlust-aura-ability-description,全ての敵に|[madness]|を付与|\n|<696969>発動条件: 1ターン内に|[heal]|<696969> 自分の|[max-health]|<696969>の25%
+burden-of-power-ability-description,ターン開始時; |[fear]|が付与された全ての敵から攻撃ダメージの75%を奪う|\n||\n|<696969>発動条件: 敵に|[fear]|<696969>を付与
+confusion-strike-ability-description,ヒット時|[confusion]|を2スタック付与
+death-strike-ability-description,このターン、\n|100% |[crit-chance]|を獲得
+drain-react-ability-description,全ての敵に|[enervation]|を5スタック付与|\n|<696969>発動条件: |[poison]|を持つ敵から攻撃を受ける
+drop-of-chaos-ability-description,対象にランダムなデバフを付与
+enchanted-attack-ability-description,このターンで攻撃ダメージ100%増
+fear-of-faith-ability-description,[invulnerability]|を2スタック獲得
+frozen-strike-ability-description,ヒット時、対象に|[weakness]|を3スタック付与
+frozen-wind-ability-description,対象に|[weakness]|を付与し、その後攻撃
+galefire-ability-description,対象に|[slowness]|を付与
+headbutt-ability-description,ヒット時にターゲットに|[stun]|を適用
+heart-of-iron-ability-description,|[health]|と同量の|[armor]|を得る|\n|<696969>発動条件: 3回被弾|\n|<696969>毎戦闘でリセット
+mana-regen-ability-description,すべての失われた|[mana]|を回復
+mind-control-ability-description,すべての対象に|[confusion]|を付与
+multi-cleanse-ability-description,自分と味方全員を|[cleanse]
+multi-heal-ability-description,自分と味方全員のHPを25%回復
+multi-magic-shield-ability-description,自分と味方全員に|[magic-shield]|を付与
+multi-shield-ability-description,自分と味方全員に、|[health]|に等しい|\n|[ephemeral-armor]|を付与
+multi-stun-ability-description,|[multi-attack-charge]|と|[stun-attack-charge]|を得て;|\n|その後攻撃|\n|<696969>発動条件: 攻撃をパリィ|\n|<696969>毎戦闘でリセット
+my-justice-ability-description,このターン; |[invulnerability]|と|[counter-attack-charge]|を得る|\n|<696969>発動条件: |[invulnerability]|を獲得
+my-way-ability-description,このターン; |[counter-attack-charge]|を得る|\n|<696969>発動条件: 3回攻撃
+noxious-empowerment-ability-description,このターンで|[toxicity]|が2倍
+persistent-payback-ability-description,このターンで|[counter-attack]
+prowlers-strike-ability-description,このターン敵に命中するたび; |[agility]|を{agility-amount}%獲得|\n|<696969>発動条件: |[dodge]|<696969>を少なくとも1回
+replay-ability-description,最後に模倣したアビリティを発動|\n|<696969>発動条件: アビリティを模倣する
+repulse-ability-description,このターンで|[parry]
+safeguard-ability-description,自分と味方全員に|[max-health]|の25%に等しい|\n|[armor]|を付与
+shatter-strike-ability-description,ヒット時|[armor-break]
+silhouette-ability-description,|[elusive]|になって攻撃|\n|<696969>発動条件: |[backstab]|\n|<696969>毎戦闘でリセット
+spell-bind-ability-description,対象に|[silence]|を付与
+steady-grip-ability-description,この戦闘中; |[total-attacks]| を1増やす
+steal-ability-description,対象から|[gold]|を25%奪う
+stun-attack-ability-description,ヒット時に対象に|[stun]|を付与
+stun-strike-ability-description,ヒット時にターゲットに|[stun]|を適用
+toxic-attack-ability-description,対象に攻撃がヒットする際、1 |[poison]を付与
+venom-spit-ability-description,合計 |[toxicity]| と等しい |[poison]| スタックを|\n|対象に付与
+absolution-passive-description,攻撃するたび、ランダムな敵1体に5|[magic-damage]|\n|を与える
+all-is-mine-passive-description,ターン開始時、対象からのすべての|\n|バフを奪う
+arcane-control-passive-description,攻撃を回避するたび; |[magic-shield]|が壊れ; 即座に再展開する
+arcane-equilibrium-passive-description,毎ターン終了時、全員の|[invulnerability]|を|\n|[magic-shield]|に変換する
+battleborn-passive-description,|[parry]|のたびに; 対象に|[stun]|
+battleforged-heart-passive-description,|[armor]| がダメージを受けたら、その量を |[max-health]| に変換|\n|<696969>戦闘ごとにリセット
+beyond-the-grave-passive-description,ターン終了時、相手のステータス効果を変換|\n|<.>| |[weakness]|を|[enervation]| に|\n|<.>| |[curse]| を |[black-curse]|に
+bloodedges-blood-slash-passive-description,攻撃する直前、|[health]|の10%を|\n|[physical-attack]|に変換する|\n|<696969>バトル毎にリセット
+cinder-touch-passive-description,ヒット時|[immolate]
+combat-instinct-passive-description,|[parry]|ダメージが2倍になる
+consuming-darkness-passive-description,|[fear]|と|[confusion]|が付いた敵が倒されたとき;|\n|その基礎ステータスを全て獲得 |<696969>(毎戦闘でリセット)
+crimson-pact-passive-description,|[health]|が45%未満になると; 全ての敵に|\n|[confusion]|を適用
+critical-focus-passive-description,あなたの |[critical-strike]| または |[omni-crit]| 攻撃は\n| |[accuracy]| +25%
+crystal-hardening-passive-description,最初のターンでダメージを受けない
+crystal-insight-passive-description,初手に |[magic-attack]| +100% を得る
+cursed-chain-passive-description,攻撃が当たらなくとも|\n|ヒット時ステータス効果を付与
+edens-wish-passive-description,毎ターン開始時; ランダムな味方に|\n|ランダムな加護または強化を付与
+edge-of-death-passive-description,初回ターンで、|[health]|は1以下にならない
+edge-of-the-ruined-passive-description,|[curse]|または|[black-curse]|がある間：|\n|攻撃は対象の|[health]|の11%に等しい|\n|追加ダメージを与える
+eldrids-fury-passive-description,治癒するたび、<696969>1ターンにつき1回、|\n|[vimblow]|を1スタック獲得
+empty-bastion-passive-description,|[armor]|が8倍になる; ただし; 各バトル開始時の|\n||[active-armor]|は0になる
+emulator-passive-description,ターンの終了時にデバフを再適用する
+escape-passive-description,盗みを試みた後; 戦闘を離脱する
+evil-mark-passive-description,ターン開始時、対象に|\n|[curse]|を付与する
+exploited-opportunity-passive-description,|[dodge]|後攻撃者を|[stun]|させる
+faded-discipline-passive-description,|[total-attacks]|+5を得るが、最初の5回の|\n|攻撃は99%少ないダメージを与える
+faultbreaker-passive-description,攻撃は、対象の|[active-armor]|を|\n|75%以下にして、|[armor-break]
+fear-of-pain-passive-description,このターンにダメージを受けたターゲットを攻撃しない
+folly-of-kings-passive-description,毎ターンランダムなステータス効果を受け、|\n|2ターンごとに|[polymorph]|する
+freedom-drive-passive-description,|[invulnerability]|を持つ間、|[tenacity]|+100%を得る
+golden-altruism-passive-description,味方全員に |[golden-heart]| を付与
+growing-anger-passive-description,命中のたびに |[crit-chance]| +5% |<696969>(毎戦闘でリセット)
+iron-pact-passive-description,|[active-armor]| が0%になるたび、|[health]|を10%消費して |[active-armor]| に変換
+ironclad-passive-description,[block]
+judgments-call-passive-description,攻撃により、|[cleanse]|で自分が解除したデバフを|\n|付与（バトル毎にリセット）
+liberation-passive-description,すべての|[armor]|を|[adaptive-attack]|に変換
+litany-of-malice-passive-description,対象にかかっているユニークなステータス効果ごとに、|\n|追加で+25%の |[malice-damage]| を与える
+luminous-trial-passive-description,<.>| 戦闘開始時に |[blindness]| を1スタック付与|<|\n||<.>| 相手は |[miss]| 1回ごとに |[accuracy]| +25%
+magical-frostflare-passive-description,|[freeze]|を持つ敵に与えた|[magic-damage]|と|\n|等しい|[ephemeral-armor]|を得る
+mana-steal-passive-description,ヒット時1|[mana]|をスティール
+manaflow-passive-description,自分の|[max-mana]|を1にセットする
+mimicry-passive-description,対象のアビリティを使用する
+plated-rot-passive-description,|[armor]|に与えられたダメージは; |[max-health]|に変換される
+prime-guard-passive-description,パッシブの所有者が倒されるまで、他の敵が受けるダメージが99%減少する
+shaded-essence-passive-description,敵に|[silence]|とともに|[magic-damage]|を375%付与
+shattered-breath-passive-description,|[parry]|するたびに、対象に|[exhaustion]|を適用する
+shatterwave-passive-description,敵に攻撃がヒットする際、|\n|自分の攻撃ダメージの25%を隣接する敵に与える
+spell-block-passive-description,ターンの開始時; アビリティを持つ最初の敵に|[silence]|\n|を適用
+strike-of-destiny-passive-description,|[invulnerability]|がある場合、ヒット時にターゲットからすべてのバフを解除
+thunderstrike-passive-description,ヒット時、対象が|[electro-charge]|を持つ場合、|[stun]|を付与
+toxic-redemption-passive-description,敵を倒すと、自分の|[poison]|をすべて除去し、除去した毒の量に等しい|\n||[physical-damage]|をすべての敵に与える
+toxshield-passive-description,自分のターン中に |[poison-damage]| が与えられるたびに;\n|同量の |[ephemeral-armor]| を得る
+undead-blessing-passive-description,味方が死亡すると、|\n|[purification]|を1スタック獲得
+undying-curse-passive-description,死亡時; |[curse]|\n|を殺害者に適用
+vengeful-edge-passive-description,|[counter-attack]| を行うと; もう一度 |[counter-attack]|
+warriors-resolute-passive-description,最初の3ターンで|[clarity]|を得る
+wind’s-grace-passive-description,全ての味方に|[swiftness]|を付与する
+wrath-of-the-broken-flesh-passive-description,体力がダメージを受けるたびに、|[fury]|のスタックを1つ獲得
+ancient-ice-item-set-description,[1@ancient-ice]|[*1@ancient-ice]|<.>| |[freeze]|状態の敵に与えた|[freeze-damage]|と|\n| 等しい|[ephemeral-armor]|を受け取る|\n|\n|<.>| 最初のターンの終了時; 全ての敵に|[freeze]|を|\n| 適用する
+ancient-shell-item-set-description,このターンにスタンスを使用した場合：|\n|[1@ancient-shell]|[*1@ancient-shell]| |[toughness]| はあらゆる種類のダメージを軽減する|\n|[3@ancient-shell]|[*3@ancient-shell]| ターン終了時に|[ephemeral-shell]|を受け取る|\n|[5@ancient-shell]|[*5@ancient-shell]| ターン終了時に|[ephemeral-lock]|を解除
+arcanum-item-set-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]| が有効な間; |<7569f5>+375%|[magic-damage]| を獲得|\n|[2@arcanum]|[*2@arcanum]| ターン終了時に |[magic-shield]| を獲得|\n|[4@arcanum]|[*4@arcanum]| 敵を倒した後; |[magic-shield]| を獲得
+bastolic-item-set-description,[1@bastolic]|[*1@bastolic]| |[magic-damage]|を与えると、ランダムな敵に|\n| |({magic_damage})|<7569f5>最大体力の5%|を追加で与える|\n|\n|[2@bastolic]|[*2@bastolic]| 最初のターンに受けた|[magic-damage]|は|\n| |[max-health]|に変換される|\n|<696969>戦闘ごとにリセット
+berserker-item-set-description,[1@berserker]|[*1@berserker]| 失った|[health]|に基づいてボーナス|[total-attacks]|を獲得:|\n| |<.>| 25% -> +1 |[total-attacks]|\n| |<.>| 50% -> +3 |[total-attacks]|\n| |<.>| 75% -> +6 |[total-attacks]|\n|\n|[2@berserker]|[*2@berserker]| |[health]|が25%未満の間; 100%の|[tenacity]|を獲得
+blackthorn-item-set-description,攻撃からのダメージを受けると、|\n|<.> |[magic-damage]|として攻撃者に|[active-armor]*|を付与
+cataclysm-item-set-description,敵全員に最大45%の |[lethality]
+celestial-item-set-description,ダメージを受けると、受けたダメージを|[elemental-power]|に変換|\n|<696969>バトル毎にリセット
+chromalure-item-set-description,[1@chromalure]|[*1@chromalure]| |[poison]|適用後、対象にその量と|\n| 等しい|[poison-damage]|を与える|\n|\n|[3@chromalure]|[*3@chromalure]| 毎ターン開始時、|[toxic-transmute]|を受け取る[0@chromalure]
+cursed-item-set-description,[1@cursed]|[*1@cursed]| 戦闘開始時、|[curse]|と|[malice-shield]| を5スタック受ける|\n|\n|[3@cursed]|[*3@cursed]| 与える |[malice-damage]| は |[curse]|を持つすべての敵に拡散する
+darkness-item-set-description,[1@darkness]|[*1@darkness]| ターン開始時、自分より攻撃ダメージの低い全ての敵に|[fear]|を適用|[3@darkness]|\n|[*3@darkness]| 敵を倒した後、|[dread]|を2スタック受け取る|[4@darkness]|\n|[*4@darkness]| 最初のターン開始時に|[madness]|を受け取る[0@darkness]
+demonic-item-set-description,[1@demonic]|[*1@demonic]| 基本|[max-health]|25ごとに|\n| |[physical-attack]|1%を獲得|\n|\n|[3@demonic]|[*3@demonic]| 最初のターン開始時に|[multi-attack-charge]|を受け取る
+flesh-item-set-description,|[max-health]| を超えて |[heal]| 可能\n|<696969>超過分は\n|<696969>ターン終了時に削除
+generic-item-set-description,すべてのアクティブなアイテムセットに+1としてカウントされる
+golden-item-set-description,バトル開始のたびに|[golden-heart]|を獲得
+hunter-item-set-description,[1@hunter]|[*1@hunter]| 100%を超える|[crit-chance]|1%ごとに|\n| |[critical-damage]|10%へ変換される|\n|[3@hunter]|[*3@hunter]| 対象はあなたの|[critical-strike]|攻撃を|[dodge]|できない
+jade-item-set-description,対象の|[sparkle]|スタックを弾くと、すべて再度付与する
+legacy-item-set-description,<.>| 戦闘開始時、|[invulnerability]|を受け取る|\n|\n|<.>| 最初のターンの終了時、ランダムな敵に|[arthurs-mark]|のスタックを適用|\n|\n|<.>| |[arthurs-mark]|を持つ敵が死ぬと、|\n| 別の敵に適用される
+magma-item-set-description,ターン開始前に、||\n||[cinder-essence]|を1スタック付与する
+mercenary-item-set-description,対象の|[health]|が90%超の場合：|\n|[1@mercenary]|[1@mercenary]| 25%|<00cd58> +|[luck]|増加した攻撃ダメージを与える|\n|[3@mercenary]|[*3@mercenary]| このターン、|[total-attacks]|+1を獲得
+orion-item-set-description,[1@orion]|[*1@orion]| |[health]| が減少するにつれてダメージ耐性が増加; |[health]| が25%の時に最大75%の耐性|\n|\n|[3@orion]|[*3@orion]| 最初の3ターンの終了時、|[armor]|の25%を修復|\n|\n|[4@orion]|[*4@orion]| |[heal]|不可
+phantom-item-set-description,装備不可
+poverty-item-set-description,<.> |[health]|が25%以下のとき、75%の|[crit-chance]|を獲得|\n|<.> |[anti-steal]|を獲得
+royal-item-set-description,初回ターンで|[inherited-sin]|を受ける|\n|\n|もし|[cleanse]|が解除された場合、|[inherited-sin]|を受けて、|\n|[debuff-immunity]|を5スタック獲得
+scout-item-set-description,[1@scout]|\n|<.>| |[*1@scout]|[agility]|が少しでもあれば|[dodge]|が保証される|[3@scout]|\n|<.>| |[*3@scout]| 3回|[dodge]|した後、|[elusive]|になる[0@scout]
+shadow-item-set-description,[1@shadow]|[*1@shadow]| 攻撃を回避するたびに; |[backstab]|\n|[3@shadow]|[*3@shadow]| |[elusive]|中に回避したダメージを|\n| |[adaptive-attack]|として得る<696969> - 戦闘ごとにリセット
+silver-item-set-description,[1@silver]|[*1@silver]| |[faith]|が少しでもある場合、|[cleanse]|が保証される|\n|\n|[3@silver]|[3@silver]| |[cleanse]|時に|[faith]| |[grace]|を受け取る
+swiftness-item-set-description,|[total-attacks]|を2倍にするが、各攻撃後に|[accuracy]|を|\n|5%失う<696969>毎ターンリセット
+thunder-item-set-description,[1@thunder]|[*1@thunder]|[electric-damage]|は、自分のターン中に25% + |[luck]*|の確率で|[stun]|する|\n|[3@thunder]|[*3@thunder]| 自分のターン中に適用された|[stun]|の持続時間を2倍にする
+unchained-item-set-description,[1@unchained]|[*1@unchained]| デバフが全ての敵に適用される|\n|[2@unchained]|[*2@unchained]| 自分が与えるデバフを2倍にする
+vampiric-item-set-description,[1@vampiric]|[*1@vampiric]| 新しい対象への最初の攻撃時; 8%の|[bleed]|を付与|\n|\n|[3@vampiric]|[*3@vampiric]| 敵が|[bleed-damage]|を受けるたび; その量だけ|[heal]|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]|は|[power]|に変換される|\n|<696969>戦闘ごとにリセット
+warrior-item-set-description,[1@warrior]|[*1@warrior]| 攻撃するたびに|[combat-insight]|を受け取る|\n|[4@warrior]|[*4@warrior]| 攻撃されると|[combat-insight]|を受け取る[0@warrior]
+wood-item-set-description,[1@wood]|[*1@wood]| +25% |[luck]|\n|[3@wood]|[*3@wood]| +10% |[luck]
+zephyron-item-set-description,[1@zephyron]|<.>| |[*1@zephyron]| 毎ターン {amount}% の |[magic-damage]| を獲得|<696969> 毎バトルでリセット|\n|[2@zephyron]|<.>| |[*2@zephyron]| 与えた |[magic-damage]| は |[silence]| 状態の敵に適用される|\n|[4@zephyron]|<.>| |[*4@zephyron]| 最初に発動したアビリティは |[mana] を消費しない
+beastbound-specialization-description,[1@hunter]|[*1@hunter]| 100%を超える|[crit-chance]|1%ごとに|\n| |[critical-damage]|10%へ変換される\n|[3@hunter]|[*3@hunter]| 対象はあなたの|[critical-strike]|攻撃を|[dodge]|できない\n|\n|<.>| |[crit-chance]|は|[parry]|攻撃にも影響する
+bloodcaster-specialization-description,[1@vampiric]|[*1@vampiric]| 新しい対象への最初の攻撃時; 8%の|[bleed]|を付与|\n|\n|[3@vampiric]|[*3@vampiric]| 敵が|[bleed-damage]|を受けるたび; その量だけ|[heal]|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]|は|[power]|に変換される|\n|<696969>戦闘ごとにリセット|\n|\n|自分が|[heal]|するたび：|\n|<.>| |[heal]|した量と等しい|[magic-damage]|を|\n|  選択した敵に与える
+vampiercer-specialization-description,[1@vampiric]|[*1@vampiric]| 新しい対象への最初の攻撃時; 8%の|[bleed]|を付与|\n|\n|[3@vampiric]|[*3@vampiric]| 敵が|[bleed-damage]|を受けるたび; その量だけ|[heal]|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]|は|[power]|に変換される|\n|<696969>戦闘ごとにリセット|\n|\n|自分が|[heal]|するたび：|\n|<.>| |[heal]|した量と等しい直接 |[physical-damage]| を|\n|  選択した敵に与える; 敵の |[armor]| を無視
+venomire-specialization-description,[1@vampiric]|[*1@vampiric]| 新しい対象への最初の攻撃時; 8%の|[bleed]|を付与|\n|\n|[3@vampiric]|[*3@vampiric]| 敵が|[bleed-damage]|を受けるたび; その量だけ|[heal]|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]|は|[power]|に変換される|\n|<696969>戦闘ごとにリセット|\n|\n|自分が|[heal]|するたび：|\n|<.>| |[heal]|した量と等しい|[poison]|スタックを|\n|  選択した敵に付与
+bloodmoon-specialization-description,<.>| 失った|[health]|の200%を|[physical-attack]|に変換|\n|<696969> バトル毎にリセット|\n|[1@shadow]|[*1@shadow]| 攻撃を回避するたび; |[backstab]|\n|[3@shadow]|[*3@shadow]| |[elusive]|中に回避したダメージを|\n| |[adaptive-attack]|として得る<696969> - 戦闘ごとにリセット
+moonlighter-specialization-description,[1@shadow]|[*1@shadow]| 攻撃を回避するたびに; |[backstab]|\n|[3@shadow]|[*3@shadow]| |[elusive]|中に回避したダメージを|\n| |[adaptive-attack]|として得る<696969> - 戦闘ごとにリセット
+nighthrust-specialization-description,[1@shadow]|[*1@shadow]| 攻撃を回避するたび; |[backstab]|\n|[3@shadow]|[*3@shadow]| |[elusive]|中に回避したダメージを|\n| |[adaptive-attack]|として得る<696969> - 戦闘ごとにリセット|\n|<.>| |[dodge]|で回避した攻撃ダメージを獲得|\n|<696969> バトル毎にリセット
+challenger-specialization-description,[1@demonic]|[*1@demonic]| 基本|[max-health]|25ごとに|\n| |[physical-attack]|1%を獲得|\n|\n|[3@demonic]|[*3@demonic]| 最初のターン開始時に|[multi-attack-charge]|を受け取る|\n|\n|<.>| |[arthurs-mark]|を持つ敵に与えたダメージの45%が|\n| 隣接する敵に拡散する
+chromaguard-specialization-description,[1@chromalure]|[*1@chromalure]| |[poison]|適用後、対象にその量と|\n| 等しい|[poison-damage]|を与える|\n|\n|[3@chromalure]|[*3@chromalure]| 毎ターン開始時、|[toxic-transmute]|を受け取る[0@chromalure]
+chromaspite-specialization-description,[1@chromalure]|[*1@chromalure]| |[poison]|適用後、対象にその量と|\n| 等しい|[poison-damage]|を与える|\n|\n|[3@chromalure]|[*3@chromalure]| 毎ターン開始時、|[toxic-transmute]|を受け取る[0@chromalure]|\n|\n|<.>| |[physical-attack]|の75%を|[toxicity]|に変換
+chromathorn-specialization-description,攻撃を受けた後:|\n|<.>| 攻撃者に|[magic-damage]|として|[active-armor]|を与える|\n|<.>| 攻撃を受けるたびに、あなたの|[toxicity]|に等しい|[poison]|を|\n| 攻撃者に適用する
+cinderthorn-specialization-description,攻撃を受けた後:|\n|<.>| 攻撃者に|[magic-damage]|として|[active-armor]*|を与える|\n|<.>| |[immolate]
+mindthorn-specialization-description,攻撃を受けた後:|\n|<.>| 攻撃者に|[magic-damage]|として|[active-armor]*|を与える|\n|<.>| |[wisdom]|+25% を獲得<696969> (毎戦闘でリセット)
+thornfrost-specialization-description,攻撃を受けた後:|\n|<.>| 攻撃者に|[magic-damage]|として|[active-armor]*|を与える|\n|<.>| 攻撃者に|[weakness]|を2スタック付与
+dauntless-specialization-description,[1@warrior]|[*1@warrior]| 攻撃するたびに|[combat-insight]|を受け取る|\n|[4@warrior]|[*4@warrior]| 攻撃されると|[combat-insight]|を受け取る[0@warrior]
+quickblade-specialization-description,[1@warrior]|[*1@warrior]| 攻撃するたびに|[combat-insight]|を受け取る|\n|[4@warrior]|[*4@warrior]| 攻撃されると|[combat-insight]|を受け取る[0@warrior]|\n|\n|<.>| |[parry]|するたびに|[total-attacks]|+1を受け取る|\n|<696969> バトル毎にリセット
+rampager-specialization-description,[1@warrior]|[*1@warrior]| 攻撃するたびに|[combat-insight]|を受け取る|\n|[4@warrior]|[*4@warrior]| 攻撃されると|[combat-insight]|を受け取る[0@warrior]
+thunderborn-specialization-description,[1@warrior]|[*1@warrior]| 攻撃するたびに|[combat-insight]|を受け取る|\n|[4@warrior]|[*4@warrior]| 攻撃されると|[combat-insight]|を受け取る[0@warrior]|\n|\n|<.>| 敵を気絶させるたびに攻撃する
+debilitator-specialization-description,[1@darkness]|[*1@darkness]| ターン開始時、自分より攻撃ダメージの低い全ての敵に|[fear]|を適用|[3@darkness]|\n|[*3@darkness]| 敵を倒した後、|[dread]|を2スタック受け取る|[4@darkness]|\n|[*4@darkness]| 最初のターン開始時に|[madness]|を受け取る[0@darkness]
+mindbreaker-specialization-description,<.>| |[confusion]|を持つ敵に|[madness]|を2スタック適用|\n|[1@darkness]|[*1@darkness]| ターン開始時、自分より攻撃ダメージの低い全ての敵に|[fear]|を適用|[3@darkness]|\n|[*3@darkness]| 敵を倒した後、|[dread]|を2スタック受け取る|[4@darkness]|\n|[*4@darkness]| 最初のターン開始時に|[madness]|を受け取る[0@darkness]
+deserter-specialization-description,対象の|[health]|が90%超の場合：|\n|[1@mercenary]|[1@mercenary]| 25%|<00cd58> +|[luck]|増加した攻撃ダメージを与える|\n|[3@mercenary]|[*3@mercenary]| このターン、|[total-attacks]|+1を獲得|\n|\n|<.>| 10フロアごとに|[total-attacks]|+1を獲得
+faithbound-specialization-description,対象の|[health]|が90%超の場合：|\n|[1@mercenary]|[1@mercenary]| 25%|<00cd58> +|[luck]|増加した攻撃ダメージを与える|\n|[3@mercenary]|[*3@mercenary]| このターン、|[total-attacks]|+1を獲得|\n|\n|<.>| パッシブ：|[judgments-call]
+echomancer-specialization-description,[1@unchained]|[*1@unchained]| デバフが全ての敵に適用される|\n|[2@unchained]|[*2@unchained]| 自分が付与するデバフが2倍になる
+evadium-specialization-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]| が有効な間; |<7569f5>+375%|[magic-damage]| を獲得|\n|[2@arcanum]|[*2@arcanum]| ターン終了時に |[magic-shield]| を獲得|\n|[4@arcanum]|[*4@arcanum]| 敵を倒した後; |[magic-shield]| を獲得|\n|\n|<.> | |[dodge]| するたび; |[counter-attack]
+invulnerium-specialization-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]| が有効な間; |<7569f5>+375%|[magic-damage]| を獲得|\n|[2@arcanum]|[*2@arcanum]| ターン終了時に |[magic-shield]| を獲得|\n|[4@arcanum]|[*4@arcanum]| 敵を倒した後; |[magic-shield]| を獲得|\n|\n|<.>| 最初に |[magic-shield]| が壊れた時; |[invulnerability]| を獲得
+stunium-specialization-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]| が有効な間; |<7569f5>+375%|[magic-damage]| を獲得|\n|<.>| |[magic-shield]| が壊れた時; 敵全体に |[stun]||\n|[2@arcanum]|[*2@arcanum]| ターン終了時に |[magic-shield]| を獲得|\n|[4@arcanum]|[*4@arcanum]| 敵を倒した後; |[magic-shield]| を獲得
+harbinger-specialization-description,<.>| |[arthurs-mark]|を持つ敵に+1000%の攻撃ダメージを与える|\n|\n|<.>| 戦闘開始時、|[invulnerability]|を受け取る|\n|\n|<.>| 最初のターンの終了時、ランダムな敵に|[arthurs-mark]|のスタックを適用|\n|\n|<.>| |[arthurs-mark]|を持つ敵が死ぬと、|\n| 別の敵に適用される
+lionheart-specialization-description,<.>| |[arthurs-mark]|を持つ敵からのダメージを1000%減少|\n|\n|<.>| 戦闘開始時、|[invulnerability]|を受け取る|\n|\n|<.>| 最初のターンの終了時、ランダムな敵に|[arthurs-mark]|のスタックを適用|\n|\n|<.>| |[arthurs-mark]|を持つ敵が死ぬと、|\n| 別の敵に適用される
+pursuer-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[agility]|が少しでもあれば|[dodge]|が保証される|[3@scout]|\n|<.>| |[*3@scout]| 3回|[dodge]|した後、|[elusive]|になる[0@scout]|\n|\n|攻撃を回避するたび：|\n|<.>| {lethality-amount}%の|[lethality]|を獲得<696969> - 戦闘ごとにリセット
+striker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[agility]|が少しでもあれば|[dodge]|が保証される|[3@scout]|\n|<.>| |[*3@scout]| 3回|[dodge]|した後、|[elusive]|になる[0@scout]|\n|\n|攻撃を回避するたび：|\n|<.>| |[counter-attack]
+windwalker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[agility]|が少しでもあれば|[dodge]|が保証される|[3@scout]|\n|<.>| |[*3@scout]| 3回|[dodge]|した後、|[elusive]|になる[0@scout]|\n|\n|攻撃を回避するたび：
+honor-trial-description,<.> |すべての敵が1レベル獲得
+resilience-trial-description,<.>| すべての敵が|[armor]|を獲得する
+swarm-trial-description,<.>| すべてのバトルに敵が6体
+confrontation-trial-description,<.>| すべての敵が |[total-attacks]| +1 を獲得
+sagacity-trial-description,アクションにタイマーが追加され、タイマーが0になるとランは終了
+?-label,

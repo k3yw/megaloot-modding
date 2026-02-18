@@ -1,10 +1,11 @@
-[gd_scene load_steps=12 format=3 uid="uid://doose4sbtg5ow"]
+[gd_scene load_steps=14 format=3 uid="uid://doose4sbtg5ow"]
 
 [ext_resource type="PackedScene" uid="uid://bqj2ahbx57yv1" path="res://scenes/popup_containers/popup_container/popup_container.tscn" id="1_pnu6v"]
 [ext_resource type="Shader" uid="uid://2iyv7xdg88rp" path="res://resources/shaders/global_colors.gdshader" id="2_5obxx"]
 [ext_resource type="Script" uid="uid://djn1umwklh0at" path="res://scenes/popup_containers/market_popup_container/market_popup_container.gd" id="2_7doxx"]
 [ext_resource type="PackedScene" uid="uid://b1ua27d8xdy1w" path="res://scenes/ui/generic_scroll_container/generic_scroll_container.tscn" id="3_q3axv"]
 [ext_resource type="PackedScene" uid="uid://4qjx8c3wfygx" path="res://scenes/ui/generic_label/generic_label.tscn" id="4_qfg73"]
+[ext_resource type="PackedScene" uid="uid://ibsed7a42sou" path="res://scenes/ui/generic_line_edit/generic_line_edit.tscn" id="5_ucguu"]
 [ext_resource type="PackedScene" uid="uid://bgr8hpnibms48" path="res://scenes/ui/close_button/close_button.tscn" id="6_lx55l"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_d54yk"]
@@ -103,6 +104,38 @@ shader_parameter/gradient_size = 1.0
 shader_parameter/gradient_animated = false
 shader_parameter/gradient_time = 0.0
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_hxvkm"]
+resource_local_to_scene = true
+shader = ExtResource("2_5obxx")
+shader_parameter/type = 2
+shader_parameter/modulate = Color(1, 1, 1, 1)
+shader_parameter/strength = 1.0
+shader_parameter/alpha = 1.0
+shader_parameter/texture_offset = Vector2(0, 0)
+shader_parameter/scale_mode = 0
+shader_parameter/scale = 1.0
+shader_parameter/saturation = 1.0
+shader_parameter/brightness = 0.0
+shader_parameter/use_screen_texture = false
+shader_parameter/fill = false
+shader_parameter/label_mode = false
+shader_parameter/outline_type = 0
+shader_parameter/outline_color = Color(1, 1, 1, 1)
+shader_parameter/outline_pattern = 0
+shader_parameter/add_margins = false
+shader_parameter/width = 0.0
+shader_parameter/flip_colors = false
+shader_parameter/inside = false
+shader_parameter/enable_dither = false
+shader_parameter/dither_colors = PackedInt32Array(0, 0, 0)
+shader_parameter/angle = 0.0
+shader_parameter/enable_gradient = false
+shader_parameter/gradient_blend_mode = 0
+shader_parameter/gradient_speed = 1.0
+shader_parameter/gradient_size = 1.0
+shader_parameter/gradient_animated = false
+shader_parameter/gradient_time = 0.0
+
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_6p04s"]
 resource_local_to_scene = true
 shader = ExtResource("2_5obxx")
@@ -167,16 +200,18 @@ shader_parameter/gradient_size = 1.0
 shader_parameter/gradient_animated = false
 shader_parameter/gradient_time = 0.0
 
-[node name="MarketPopupContainer" node_paths=PackedStringArray("item_holder", "close_button") instance=ExtResource("1_pnu6v")]
+[node name="MarketPopupContainer" node_paths=PackedStringArray("search_line_edit", "item_holder", "close_button") instance=ExtResource("1_pnu6v")]
 z_index = 1
 script = ExtResource("2_7doxx")
+search_line_edit = NodePath("MarginContainer/MarginContainer/VBoxContainer/SearchLineEdit")
 item_holder = NodePath("MarginContainer/MarginContainer/VBoxContainer/GenericScrollContainer/MarginContainer/ScrollContainer/GridContainer")
 close_button = NodePath("MarginContainer/MarginContainer2/CloseButton")
 
 [node name="MarginContainer" parent="." index="0"]
 offset_left = 147.0
+offset_top = 122.0
 offset_right = 492.0
-offset_bottom = 329.0
+offset_bottom = 367.0
 
 [node name="GenericPanel" parent="MarginContainer" index="0"]
 material = SubResource("ShaderMaterial_d54yk")
@@ -197,7 +232,16 @@ layout_mode = 2
 text = "Market Items"
 horizontal_alignment = 1
 
-[node name="GenericScrollContainer" parent="MarginContainer/MarginContainer/VBoxContainer" index="1" instance=ExtResource("3_q3axv")]
+[node name="SearchLineEdit" parent="MarginContainer/MarginContainer/VBoxContainer" index="1" instance=ExtResource("5_ucguu")]
+layout_mode = 2
+
+[node name="GenericPanel" parent="MarginContainer/MarginContainer/VBoxContainer/SearchLineEdit" index="0"]
+material = SubResource("ShaderMaterial_hxvkm")
+
+[node name="LineEdit" parent="MarginContainer/MarginContainer/VBoxContainer/SearchLineEdit/MarginContainer" index="0"]
+placeholder_text = "search..."
+
+[node name="GenericScrollContainer" parent="MarginContainer/MarginContainer/VBoxContainer" index="2" instance=ExtResource("3_q3axv")]
 layout_mode = 2
 size_flags_vertical = 3
 
@@ -221,4 +265,5 @@ theme_override_constants/margin_right = 6
 material = SubResource("ShaderMaterial_rrhst")
 layout_mode = 2
 
+[editable path="MarginContainer/MarginContainer/VBoxContainer/SearchLineEdit"]
 [editable path="MarginContainer/MarginContainer/VBoxContainer/GenericScrollContainer"]

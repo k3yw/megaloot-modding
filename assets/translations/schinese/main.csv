@@ -1,0 +1,1231 @@
+language-name-text,中文
+leaderboard-progress-text,通过到达第 {floor-record} 层，您超过了 {player-percentage-amount} 的玩家
+leaderboard-progress-connection-failed-text,无法连接至排行榜；到达第{floor-record}层
+final-floor-reached-text,到达最终层
+ascension-level-text,飞升 {level}
+final-floor-text,最终层
+new-journey-text,新旅程
+select-save-slot-text,选择
+delete-save-slot-text,删除
+update-text,更新
+upload-text,上传
+death-message-title-text,{player-name} 的死亡信息
+player-floor-record-text,{player-name} 的层数记录
+view-steam-profile-text,查看Steam档案
+no-achievements-text,无成就
+loading-file-text,加载中
+saving-file-text,保存中
+proceed-text,继续
+join-lobby-text,加入
+enter-password-text,输入密码
+enter-ip-text,输入IP
+specialization-floor-text,于第{floor-number}层激活
+convert-to-battle-stats-text,转化为战斗属性
+stat-per-kill-text,每次杀{stat}
+item-found-text,{item-name} 找到
+doubles-own-stat-text,将自身 |{stat} 翻倍
+victory-text,胜利
+defeat-text,失败
+ascend-text,飞升
+negative-flow-text,负|{flow}|；取消装备物品套组
+cannot-be-dismantled-text,无法分解
+waiting-for-dismantle-text,等待分解
+request-to-dismantle-text,请求分解
+battles-remaining-text,剩余战斗
+current-battle-text,当前战斗
+last-battle-text,最后一战
+gold-per-battle-text,每场战斗金币
+gold-per-kill-text,每次击杀金币
+enemy-player-immunity-text,在{player-name}的回合中||\n||承受的伤害降低{amount}%
+enemy-player-immunity-misc-text,每回合降低{amount}%
+player-sent-an-item-text,{player-name}给你送来了{item-name}
+send-item-to-player-text,发送物品
+burnout-description-text,倦怠：效果未激活
+infuse-description-text,为该层提供||\n||物品属性和效果
+infused-flow-info-text,已融合且未消耗|{flow-stat}
+infuse-text,融合
+to-open-battle-log-text,打开战斗日志
+to-unlock-stats-text,以解锁属性
+to-lock-stats-text,以锁定属性
+to-deselect-text,以取消选择
+to-convert-text,以转化
+to-select-text,以选择
+to-toggle-text,以切换
+to-unlock-text,解锁
+to-learn-text,要学习
+to-lock-text,以锁定
+to-consume-text,以继续
+to-activate-text,以激活
+to-restore-text,以回复
+to-remove-text,以移除
+to-banish-text,以放逐
+to-equip-text,以装备
+to-swap-text,以交换
+to-take-text,以拿取
+to-buy-text,以购买
+silenced-text,沉默
+highest-text,最高
+cost-text,花费
+diamond-reward-text,每 {floor} 层获得一个额外的 {diamond}
+gold-start-text,开始时拥有 +{amount} {gold}
+reforge-token-description-text,+{amount}% 几率使 |{stat}| 应用于||\n||重铸物品上
+item-multiplier-text,根据装备的|{item-set}|物品总数对该属性进行翻倍加成
+specialization-info-text,将 |{item-set}| 转化为 |{specialization}|
+required-item-sets-text,需要|{item-set}|物品才可装备
+required-stat-text,需要 |{stat}
+cant-move-during-battle-text,战斗中无法移动
+missing-item-socket-text,缺少 {socket-name} 插槽
+item-set-no-flow-text,|{item-set}| 的费用为 0% |{flow}|
+item-set-limit-reached-text,达到物品套组限制
+cant-equip-duplicates-text,无法装备重复项目
+cannot-be-upgraded-text,无法升级
+unlearned-ability-text,未学习的能力
+learn-ability-text,学习 {ability}
+skip-stance-text,跳过：本回合不攻击
+guard-stance-text,防御：本回合受到的伤害降低{amount}%
+attack-on-activation-ability-text,激活时攻击
+reforged-item-stats-text,重铸物品属性
+favorite-item-sets-text,收藏的物品套装
+market-item-sets-text,市场物品套装
+tinker-kit-item-name-text,修补工具包
+battle-information-text,战斗信息
+current-turn-text,第{turn-number}回合
+local-player-name-text,你
+dead-text,死亡
+battle-log-applied-status-effect-text,{character-1}对{character-2}施加了状态效果
+battle-log-applied-status-on-self-text,{character}对自身施加了状态效果
+battle-log-received-damage-from-source-text,{character}受到了来自{source}的伤害
+battle-log-received-damage-text,{character}受到了伤害
+battle-log-hit-with-text,{source})
+battle-log-activated-effect-text,{character}激活了效果
+battle-log-parry-text,{character-1}招架了{character-2}
+battle-log-block-text,{character-1}格挡了{character-2}
+battle-log-killed-text,{character-1}杀死了{character-2}
+battle-log-steal-text,{character} 从 {source} 偷走了
+battle-log-hit-text,{character-1}命中了{character-2}
+battle-log-cleanse-text,{character}进行了净化
+battle-log-dodged-text,{character}进行了闪避
+battle-log-healed-text,{character}得到了治疗
+overhealed-text,已过度治疗
+overheal-text,过度治疗
+executed-text,秒杀
+blocked-text,格挡
+debuff-immune-text,减益免疫
+failed-steal-text,偷取失败
+steal-text,偷取
+escaped-text,逃离
+cleanse-text,净化
+inventory-full-text,背包已满
+armor-break-text,护甲破坏！
+counter-attack-break-text,反击！
+missing-mana-text,已失去法力
+cleansed-text,净化
+heal-text,治疗
+attack-text,攻击
+enter-text,进入
+skip-text,跳过
+open-text,打开
+sell-all-text,全部出售
+close-text,关闭
+demo-tower-completed-text,演示塔完成
+grants-stat-consumable-text,为本场战斗提供|{amount}|{stat}
+temp-stat-to-add-potion-description-text,为本场战斗提供|{stat}|
+status-effect-potion-description-multiple-text,授予 {amount} 层 |{status-effect}
+status-effect-potion-description-single-text,授予一层 |{status-effect}
+potion-restores-text,回复{amount}|{stat}
+potion-regenerates-text,恢复 {amount} |{stat}
+potion-repairs-text,修复 {amount}% 的 |{stat}
+refills-every-battle-potion-text,每场战斗后补充
+stat-transform-text,将 |{stat-1}| 转化为 |{stat-2}
+banished-item-text,放逐{item-name}
+reforged-item-text,重铸的 {item-name}
+item-reforge-text,{item-name} 重铸
+banish-description-text,将 {item-name} 从塔中|\n|永久移除
+unlock-requirements-description-text,解锁所需的已完成战斗：
+unlimited-amount-text,无限
+max-amount-text,最大：{amount}
+corrupted-fragment-text,腐化残片
+specialization-text,专业化
+unknown-enemy-text,未知敌人
+unknown-item-text,未知物品
+passive-set-text,被动套组
+empty-set-text,空套装
+sell-for-text,出售以获取
+level-up-text,升级
+chapter-text,章节
+abilities-text,技能
+ability-text,能力
+passives-text,被动
+passive-text,被动
+rewards-text,奖励
+convert-text,转化
+upgrade-text,升级
+command-list-text,命令
+help-command-info-text,输入{command}以获取帮助
+kick-command-info-text,command} [player index]|\n|将玩家踢出大厅|\n|示例: {command} 1 (踢出你之后的第一个玩家)
+end-game-text-text,在塔中锻造；你的灵魂被证明是高尚的。
+highest-floor-result-screen-text,最高楼层：{floor-number}
+died-on-floor-text,于第{floor-number}层死亡
+merchant-exclusive-text,商人专属
+upgrades-into-text,升级为:
+highest-floor-text,最高楼层
+floor-number-text,第{number}层
+not-refinable-text,不可精炼
+top-player-text,顶级玩家
+refinable-text,可精炼
+deforge-text,反锻
+active-text,活跃
+floor-text,楼层
+split-text,分裂
+elite-text,精英
+gold-text,金币
+level-text,Lv
+set-text,套组
+xp-text,XP
+memories-button,存档
+name-label,名称
+lobbies-button,大厅
+game-mode-label,游戏模式
+locked-label,锁定
+players-label,玩家
+select-button,选择
+select-label,选择
+back-button,返回
+button-label,按钮
+wishlist-on-steam!-label,添加至Steam愿望单！
+enter-the-tower-button,进入塔
+library-button,图鉴
+library-label,图鉴
+workshop-button,创意工坊
+quit-button,退出
+market-hover-name,市场
+market-hover-description,<696969>每层都会添加新物品
+market-hover-bottom-hint,显示物品
+refresh-market-hover-name,刷新市场
+refresh-market-hover-description,<696969>价格在每场战斗后重置
+sell-label,出售
+split-label,拆分
+search-line-edit,搜索……
+current-battle-label,当前战斗
+turn-1-label,第1回合
+normal-battle-label,普通战斗
+ping-hover-name,延迟
+ping-hover-description,
+10-label,
+open-button,打开
+loot-stash-hover-name,战利品储藏
+loot-stash-hover-description,<696969>多余的战利品会放在这里
+button-button,按钮
+market-items-label,市场物品
+close-button,关闭
+waiting-for-all-players-to-connect-label,等待所有玩家建立连接……
+floor-record-x-label,层数记录: x
+battle-log-button,战斗日志
+battle-log-label,战斗日志
+feedback-button,反馈
+feedback-label,反馈
+confirm-button,确认
+overview-button,概览
+speedruns-button,速通
+submit-run-button,提交通关
+version-label,版本：
+selection-label,选择
+highest-floor-10-label,最高楼层：10
+top-player-label,顶级玩家
+time-label,时间
+enter-password-line-edit,输入密码...
+join-button,加入
+password-label,密码
+connection-type-label,连接类型
+challenge-drop-down-selection,挑战
+pvp-no-achievements-drop-down-selection,PvP [无成就]
+practice-no-achievements-drop-down-selection,练习 [无成就]
+public-label,公开
+--credits--label,- 开发人员名单 -
+thanks-button,致谢
+no-tutorial-label,无教程
+no-tutorial-info-label-label,本作认为学习应当通过|\n|试验与发现完成; 而不是通过指导。
+proceed-button,继续
+items-button,物品
+bestiary-button,兽书
+synergies-button,协同效应
+passives-button,被动
+build-planner-label,角色构型规划工具
+delete-label,删除
+build-1-label,构型 1
+blue-team-label,蓝队
++-join-label,[+] 加入
+player-name-label,玩家名称
+select-adventurer-label,选择冒险者
+red-team-label,红队
+trials-label,试炼
+configure-button,配置
+0/4-label,0/4
+begin-button,开始
+begin-label,开始
+restart-button,重启
+restart-label,重启
+resume-button,继续
+resume-label,继续
+options-button,选项
+save-&-exit-button,保存并退出
+text-label,文本
+controls-button,控制
+video-button,视频
+audio-button,音频
+misc-button,杂项
+primary-action-button,主要操作
+key-label,钥匙
+?-label,
+listening-for-input-label,正在聆听输入……
+ability-button,技能
+skip-button,跳过
+refresh-market-button,刷新市场
+brightness-label,亮度
+contrast-label,对比度
+window-mode-label,窗口模式：
+resolution-label,分辨率：
+v-sync-label,
+music-label,音乐
+sfx-label,音效
+tooltip-lock-time-label,工具提示锁定时间
+language-label,语言：
+chromatic-aberration-label,色差
+display-run-time-label,显示通关时间
+screen-shake-label,屏幕震动
+scan-lines-label,扫描线
+reset-to-defaults-button,重置为默认值
+->-label,
+end-button,结束
+enter-endless-button,进入无尽模式
+refresh-merchant-hover-name,刷新商人
+refresh-merchant-hover-description,<696969>提供新物品
+upgrade-label,升级
+-button,
+stance-hover-name,姿态
+activate-endless-button,激活无尽模式
+refresh-mystic-trader-hover-name,刷新神秘商人
+refresh-mystic-trader-hover-description,<696969>召唤新物品
+0/3-label,
+request-to-dismantle-button,请求分解
+dismantle-button,分解
+windowed-window-mode-name,窗口模式
+borderless-window-mode-name,无边框窗口
+fullscreen-window-mode-name,全屏
+challenge-game-mode-name,挑战
+pvp-game-mode-name,PvP
+practice-game-mode-name,练习
+-popup,
+counter-attack!-popup,反击！
+lucky-attack-popup,幸运攻击
+armor-break!-popup,护甲破坏！
+backstabbed-popup,被背刺
+dodged-popup,已闪避
+parried-popup,已招架
+blocked-popup,已格挡
+missed-popup,已丢失
+helmet-socket-name,头盔
+chestplate-socket-name,胸甲
+leggings-socket-name,长裤
+boots-socket-name,靴子
+necklace-socket-name,项链
+weapon-socket-name,武器
+ring-socket-name,戒指
+zefrot-item-name,泽弗罗特
+totem-of-greed-item-name,贪婪图腾
+steak-item-name,牛排
+ribbon-of-fortune-item-name,幸运丝带
+poor-mans-path-item-name,穷人的路
+pallac-item-name,帕拉克
+merchant-upgrade-item-name,商人升级
+frokt-item-name,弗洛克特
+poor-mans-blade-item-name,穷人之刃
+wooden-shoes-item-name,木鞋
+natures-gift-item-name,自然之礼
+magical-stick-item-name,魔法棒
+training-hammer-item-name,训练锤
+natures-collar-item-name,自然之领
+poor-mans-helmet-item-name,穷人头盔
+training-axe-item-name,训练斧
+wooden-plates-item-name,木板
+leather-boots-item-name,皮靴
+leather-helmet-item-name,皮头盔
+leather-pants-item-name,皮裤
+leather-chestplate-item-name,皮胸甲
+training-sword-item-name,训练剑
+insightus-item-name,洞察之眼
+amulet-of-life-item-name,生命护符
+starborn-ring-item-name,星诞戒指
+recruits-boots-item-name,新兵靴
+keepsake-item-name,纪念品
+recruits-hood-item-name,新兵兜帽
+iron-dagger-item-name,钢铁匕首
+hunters-boots-item-name,猎人靴
+hunters-hood-item-name,猎人兜帽
+recruits-pants-item-name,新兵裤
+chainmail-item-name,链甲
+hunters-necklace-item-name,猎人项链
+hunters-pants-item-name,猎人裤
+recruits-cloak-item-name,新兵斗篷
+hunters-ring-item-name,猎人戒指
+hunters-jerkin-item-name,猎人夹衫
+crystal-staff-item-name,水晶权杖
+vitality-ring-item-name,活力戒指
+ring-of-anger-item-name,怒火戒指
+zephyrons-tome-item-name,泽菲рон之书
+silver-ring-item-name,白银戒指
+marauders-helmet-item-name,劫掠者头盔
+silver-sabatons-item-name,白银铠靴
+silver-helmet-item-name,白银头盔
+life-seeker-item-name,寻生
+silver-leggings-item-name,白银长裤
+zephyrons-magical-shoes-item-name,泽法隆的魔法鞋
+silver-chestplate-item-name,白银胸甲
+zephyrons-eye-item-name,泽法隆之眼
+bastolics-guardian-item-name,巴斯托利克的守护者
+silver-sword-item-name,白银剑
+zephyrons-magical-ring-item-name,泽法隆的魔法戒指
+bastolics-gauntlet-item-name,巴斯托利克的护手
+zephyrons-magical-cloak-item-name,泽法隆的魔法斗篷
+zephyrons-magical-cap-item-name,泽法隆的魔法帽
+zephyrons-magical-staff-item-name,泽菲隆的魔法法杖
+believers-locket-item-name,信徒吊坠
+silver-axe-item-name,白银斧
+tome-of-arcanum-item-name,奥秘巨著
+arcanum-hood-item-name,奥术兜帽
+golden-dagger-item-name,黄金匕首
+golden-sabatons-item-name,黄金铠靴
+golden-helmet-item-name,黄金头盔
+arcanum-shoes-item-name,奥秘鞋
+golden-leggings-item-name,黄金长裤
+arcanum-robe-item-name,奥秘长袍
+golden-chestplate-item-name,黄金胸甲
+precious-ring-item-name,珍贵戒指
+magic-wand-item-name,魔法杖
+golden-crown-item-name,黄金冠
+golden-warden-item-name,黄金链领
+greeds-grasp-item-name,贪婪之攫
+golden-sword-item-name,黄金剑
+omni-ring-item-name,全能戒指
+darkwood-plates-item-name,黑檀木甲
+tome-of-attacks-item-name,攻击之书
+warriors-sabatons-item-name,勇士铠靴
+hunger-blade-item-name,饥饿之刃
+warriors-helmet-item-name,勇士头盔
+famished-blade-item-name,饥渴之刃
+unchained-gauntlet-item-name,无垠护手
+blackthorn-sabatons-item-name,黑棘马靴
+warriors-leggings-item-name,勇士长裤
+blackthorn-leggings-item-name,黑棘护腿
+warriors-chestplate-item-name,勇士胸甲
+warriors-war-hammer-item-name,勇士战锤
+blackthorn-chestplate-item-name,黑棘胸甲
+unchained-ring-item-name,无垠戒指
+hy-sword-item-name,高剑
+pantaloons-of-greatness-item-name,伟人笼裤
+warriors-ring-item-name,勇士戒指
+blackthorn-crown-item-name,黑棘冠
+orions-core-item-name,俄里翁之核
+orions-path-item-name,俄里翁之路
+orions-destiny-item-name,俄里翁之命
+orions-leggings-item-name,俄里翁长裤
+orions-sanguine-salvation-item-name,俄里翁的豁达救赎
+orions-heart-item-name,俄里翁之心
+orions-rage-item-name,俄里翁之怒
+living-boots-item-name,活靴
+living-helmet-item-name,活头盔
+living-leggings-item-name,活长裤
+living-chestplate-item-name,活胸甲
+berserkers-axe-item-name,狂战士之斧
+berserkers-helmet-item-name,狂战士头盔
+eldrids-ring-item-name,艾萃德戒指
+ring-of-power-item-name,力量戒指
+silver-heart-item-name,白银之心
+thunderiders-item-name,雷霆骑者
+thunderhelm-item-name,雷霆头盔
+royal-sabatons-item-name,皇家铠靴
+royal-helmet-item-name,皇家头盔
+royal-leggings-item-name,皇家长裤
+thunderstriders-item-name,雷霆踏者
+royal-chestplate-item-name,皇家胸甲
+thundergrace-item-name,雷霆恩典
+thunderblade-item-name,雷霆之刃
+thundervow-item-name,雷霆誓言
+iron-eater-item-name,食铁者
+tome-of-darkness-item-name,暗黑巨著
+witherscar-item-name,枯萎伤痕
+dark-magical-ring-item-name,黑魔法戒指
+nighthorn-item-name,夜棘
+ashcrow-item-name,灰鸦
+dark-harness-item-name,深黑挽具
+alchemists-wisdom-item-name,炼金术师之智慧
+shadow-wisdom-item-name,暗影智慧
+shadow-ring-item-name,暗影戒指
+shadow-piercer-item-name,暗影穿刺
+demonic-sabatons-item-name,恶魔铠靴
+shadow-cloak-item-name,暗影斗篷
+shadow-echo-item-name,暗影回响
+demonic-helmet-item-name,恶魔头盔
+demonic-axe-item-name,恶魔斧
+shadow-sentence-item-name,暗影审判
+shadow-vortex-item-name,暗影旋涡
+demonic-leggings-item-name,恶魔长裤
+demonic-claymore-item-name,恶魔大剑
+demonic-chestplate-item-name,恶魔胸甲
+demonic-ring-item-name,恶魔戒指
+shard-of-power-item-name,力量碎片
+emperors-will-item-name,帝王意志
+wooden-crown-item-name,木冠
+witchcraft-leggings-item-name,巫术护腿
+cursed-ring-item-name,诅咒戒指
+cursed-necklace-item-name,诅咒项链
+mask-of-the-cursed-item-name,诅咒面具
+blade-of-the-ruined-item-name,残破之刃
+lightning-boots-item-name,闪电靴
+shamans-robe-item-name,萨满长袍
+turtle-sabatons-item-name,乌龟铠靴
+turtle-leggings-item-name,乌龟长裤
+cowards-ring-item-name,胆小鬼戒指
+soul-collector-item-name,灵魂收割
+heart-of-gold-item-name,黄金之心
+turtle-chestplate-item-name,乌龟胸甲
+elemental-necklace-item-name,元素项链
+giants-ring-item-name,巨人戒指
+black-oath-item-name,黑誓
+turtle-gauntlet-item-name,龟甲手套
+gloom-item-name,幽暗
+qolk-item-name,苦苛
+blake-item-name,布雷克
+vampiric-helmet-item-name,吸血头盔
+vampiric-chestplate-item-name,吸血胸甲
+glimmer-item-name,微光
+vurk-item-name,威克
+bloodedge-item-name,血锋
+ethercrests-tome-item-name,以太嵴巨著
+ethercrests-sabatons-item-name,以太嵴铠靴
+ethercrests-blade-item-name,以太嵴之刃
+ethercrests-helmet-item-name,以太嵴头盔
+ethercrests-staff-item-name,以太嵴权杖
+ethercrests-sword-item-name,以太嵴剑
+ethercrests-leggings-item-name,以太嵴长裤
+ethercrests-chestplate-item-name,以太嵴胸甲
+ethercrests-ring-item-name,以太嵴戒指
+mask-of-cataclysm-item-name,灾变面具
+ring-of-interest-item-name,利益戒指
+rod-of-doom-item-name,末日之棍
+shadow-whisper-item-name,暗影低语
+magma-sabatons-item-name,熔岩铠靴
+magma-helmet-item-name,熔岩头盔
+magma-leggings-item-name,熔岩长裤
+magma-chestplate-item-name,熔岩胸甲
+magma-necklace-item-name,熔岩项链
+magma-poleaxe-item-name,熔岩戟斧
+ring-of-ice-item-name,冰霜戒指
+jesters-bone-mask-item-name,小丑骨面具
+celestial-sabatons-item-name,天界胫甲
+celestial-helmet-item-name,上界头盔
+celestial-leggings-item-name,天界护腿
+celestial-chestplate-item-name,上界胸甲
+throngler-item-name,壮格
+dawnbringer-item-name,破晓之剑
+ring-of-unity-item-name,团结戒指
+excalibur-item-name,神剑
+ribbon-of-fortune-item-description,<696969>打开箱子时有25%的几率|\n|<696969>获得额外物品
+merchant-upgrade-item-description,解锁 |[tinker]|
+bloodedge-item-description,<696969>过去每击杀一次都会变强
+excalibur-item-description,<696969>来自湖中的赠礼
+bat-enemy-name,蝙蝠
+leafing-enemy-name,叶叶
+fronk-enemy-name,弗荣克
+boar-enemy-name,野猪
+snow-pix-enemy-name,雪照
+pebbling-enemy-name,小卵石
+slime-enemy-name,史莱姆
+rat-enemy-name,老鼠
+goblin-enemy-name,小妖
+skeleton-warrior-enemy-name,骷髅勇士
+shadow-wizard-enemy-name,暗影巫师
+jellyrak-enemy-name,杰莱克
+efis-enemy-name,艾菲斯
+rogue-enemy-name,肉哥
+slorn-enemy-name,斯洛
+armored-goblin-enemy-name,盔甲小妖
+stone-golem-enemy-name,石傀儡
+witch-enemy-name,女巫
+wizard-skeleton-enemy-name,巫师骷髅
+giant-spider-enemy-name,大蜘蛛
+blood-ghoul-enemy-name,血尸鬼
+armored-spirit-enemy-name,盔甲幽灵
+red-orc-enemy-name,红兽人
+snow-wraith-enemy-name,雪怪
+venomous-spider-enemy-name,剧毒蜘蛛
+harpy-enemy-name,哈皮
+bravura-enemy-name,勇乌拉
+fire-dragon-enemy-name,火龙
+void-squid-enemy-name,虚空鱿鱼
+brother-enemy-name,兄弟
+shadow-ghost-enemy-name,暗影幽灵
+kotya-enemy-name,科特亚
+magma-golem-enemy-name,熔岩傀儡
+overseer-enemy-name,监察者
+braskap-enemy-name,布拉斯卡普
+cloud-dragon-enemy-name,云龙
+ruined-king-enemy-name,废王
+blinded-priest-enemy-name,盲眼牧师
+morizon-enemy-name,魔莱松
+moon-enemy-name,月亮
+cursed-abomination-enemy-name,诅咒的畸形怪
+mars-enemy-name,火星
+pinto-enemy-name,品托
+neptune-enemy-name,海王星
+thunder-dragon-enemy-name,雷霆巨龙
+eldrids-flesh-enemy-name,艾萃德血肉
+golden-guardian-enemy-name,黄金守卫
+venus-enemy-name,金星
+jupiter-enemy-name,木星
+saturn-enemy-name,土星
+uranus-enemy-name,天王星
+sun-enemy-name,太阳
+iron-golem-enemy-name,钢铁傀儡
+windwatcher-enemy-name,风之观察者
+graven-enemy-name,格雷文
+death-enemy-name,死神
+perfect-slave-enemy-name,完美奴隶
+common-chest-enemy-name,普通箱子
+golden-chest-enemy-name,黄金箱子
+heart-of-the-tower-enemy-name,高塔之心
+merchant-enemy-name,商人
+mystic-bison-enemy-name,神秘野牛
+mystic-trader-enemy-name,神秘商人
+training-dummy-enemy-name,训练假人
+ancient-ice-item-set-name,远古寒冰
+ancient-shell-item-set-name,远古贝壳
+arcanum-item-set-name,奥秘
+bastolic-item-set-name,巴斯托利克
+berserker-item-set-name,狂战士
+blackthorn-item-set-name,黑棘
+cataclysm-item-set-name,灾变
+celestial-item-set-name,上界
+chromalure-item-set-name,铬铝
+consumable-item-set-name,消耗品
+cursed-item-set-name,诅咒
+darkness-item-set-name,暗黑
+demonic-item-set-name,恶魔
+essential-item-set-name,基础
+flesh-item-set-name,血肉
+generic-item-set-name,平平无奇
+golden-item-set-name,黄金
+hunter-item-set-name,猎人
+jade-item-set-name,玉石
+legacy-item-set-name,传承
+magma-item-set-name,熔岩
+mercenary-item-set-name,佣兵
+orion-item-set-name,俄里翁
+phantom-item-set-name,魅影
+poverty-item-set-name,贫穷
+reforge-item-set-name,重铸
+royal-item-set-name,皇家
+scout-item-set-name,探子
+shadow-item-set-name,暗影
+silver-item-set-name,白银
+swiftness-item-set-name,迅捷
+thunder-item-set-name,雷霆
+tome-item-set-name,书
+unchained-item-set-name,无垠
+vampiric-item-set-name,吸血
+warrior-item-set-name,勇士
+wood-item-set-name,木头
+zephyron-item-set-name,泽法隆
+beastbound-specialization-name,兽缚
+bloodcaster-specialization-name,血法
+vampiercer-specialization-name,吸血
+venomire-specialization-name,毒液
+bloodmoon-specialization-name,血月
+moonlighter-specialization-name,月影者
+nighthrust-specialization-name,夜之突袭
+challenger-specialization-name,挑战
+chromaguard-specialization-name,变色卫
+chromaspite-specialization-name,变色怨
+chromathorn-specialization-name,变色棘
+cinderthorn-specialization-name,余烬
+mindthorn-specialization-name,灵心
+thornfrost-specialization-name,棘寒
+dauntless-specialization-name,无畏
+quickblade-specialization-name,快刃
+rampager-specialization-name,狂怒
+thunderborn-specialization-name,雷霆之裔
+debilitator-specialization-name,衰减
+mindbreaker-specialization-name,碎念
+deserter-specialization-name,背弃
+faithbound-specialization-name,信念
+echomancer-specialization-name,回音
+evadium-specialization-name,闪避
+invulnerium-specialization-name,无伤
+stunium-specialization-name,眩晕
+harbinger-specialization-name,预言
+lionheart-specialization-name,狮子
+pursuer-specialization-name,追逐
+striker-specialization-name,突击
+windwalker-specialization-name,风行
+accuracy-stat-name,命中率
+active-armor-stat-name,主动护甲
+adaptive-attack-stat-name,自适攻击
+agility-stat-name,敏捷
+armor-stat-name,护甲
+armor-damage-stat-name,护甲伤害
+armor-shields-stat-name,护甲护盾
+armor-steal-stat-name,护甲偷取
+armored-attack-stat-name,装甲攻击
+blackrot-damage-stat-name,黑蚀伤害
+bleed-damage-stat-name,流血伤害
+cinder-damage-stat-name,余烬伤害
+combat-stat-name,战斗
+crit-chance-stat-name,暴击几率
+critical-damage-stat-name,暴击伤害
+dazzle-stat-name,炫裂
+dazzle-damage-stat-name,炫裂伤害
+diamond-stat-name,钻石
+eldership-stat-name,长老会
+electric-damage-stat-name,电击伤害
+electricity-stat-name,电击
+elemental-power-stat-name,元素力量
+elemental-resistance-stat-name,元素抗性
+energy-stat-name,能量
+faith-stat-name,信念
+flow-stat-name,专精
+freeze-attack-stat-name,冰冻攻击
+freeze-damage-stat-name,冰冻伤害
+gold-stat-name,金币
+gold-on-kill-stat-name,击杀金币
+greed-stat-name,贪婪
+health-stat-name,生命
+lethality-stat-name,致命性
+life-steal-stat-name,吸血
+luck-stat-name,幸运
+magic-attack-stat-name,魔法攻击
+magic-damage-stat-name,魔法伤害
+malice-stat-name,恶意
+malice-damage-stat-name,恶意伤害
+mana-stat-name,法力
+max-health-stat-name,最大生命
+max-mana-stat-name,最大法力
+omni-crit-chance-stat-name,全能暴击几率
+omni-vamp-stat-name,全能吸血
+penetration-stat-name,侵彻
+physical-attack-stat-name,物理攻击
+physical-damage-stat-name,物理伤害
+poison-damage-stat-name,毒性伤害
+power-stat-name,力量
+random-stat-stat-name,随机属性
+recovery-stat-name,复原能力
+spelldom-stat-name,魔控
+tenacity-stat-name,韧性
+total-attacks-stat-name,总攻击数
+toughness-stat-name,强硬
+toxicity-stat-name,剧毒
+true-damage-stat-name,真实伤害
+wisdom-stat-name,智慧
+enervation-status-effect-name,虚弱
+enervated-status-effect-application-message,衰弱
+weakness-status-effect-name,削弱
+weakened-status-effect-application-message,已中削弱
+black-curse-status-effect-name,黑色诅咒
+cursed-status-effect-application-message,已中诅咒
+curse-status-effect-name,诅咒
+stun-status-effect-name,眩晕
+stunned-status-effect-application-message,已中眩晕
+slowness-status-effect-name,减速
+slowed-status-effect-application-message,已中减速
+confusion-status-effect-name,迷惑
+confused-status-effect-application-message,已中迷惑
+silence-status-effect-name,沉默
+silenced-status-effect-application-message,已中沉默
+toxic-transmute-status-effect-name,毒性转化
+poison-status-effect-name,中毒
+poisoned-status-effect-application-message,中毒
+bleed-status-effect-name,流血
+sparkle-status-effect-name,炫光
+sparkle-status-effect-application-message,已中炫光
+magic-shield-status-effect-name,魔法护盾
+ephemeral-armor-status-effect-name,瞬现盔甲
+ephemeral-shell-status-effect-name,瞬现贝壳
+electro-charge-status-effect-name,电子充能
+ephemeral-lock-status-effect-name,瞬现锁定
+exhaustion-status-effect-name,力竭
+malice-shield-status-effect-name,恶意护盾
+armor-shield-status-effect-name,盔甲护盾
+freeze-status-effect-name,已中冰冻
+frozen-status-effect-application-message,已中冻结
+fear-status-effect-name,恐惧
+invulnerability-status-effect-name,无敌
+inherited-sin-status-effect-name,承袭之罪
+arthurs-mark-status-effect-name,亚瑟标记
+timeout-status-effect-name,超时
+cinder-essence-status-effect-name,余烬精华
+combat-insight-status-effect-name,战斗洞察
+magic-blitz-status-effect-name,魔法闪击
+magic-blitz-status-effect-application-message,已中魔法闪击
+omni-blitz-status-effect-name,全能闪击
+omni-blitz-status-effect-application-message,已中全能闪击
+vimblow-status-effect-name,振奋打击
+dread-status-effect-name,惧怕
+fury-status-effect-name,狂怒
+fury-status-effect-application-message,已中狂怒
+counter-attack-charge-status-effect-name,反击充能
+multi-attack-charge-status-effect-name,多重攻击充能
+stun-attack-charge-status-effect-name,眩晕攻击充能
+debuff-immunity-status-effect-name,减益免疫
+golden-heart-status-effect-name,黄金之心
+golden-lock-status-effect-name,黄金锁定
+lethality-status-effect-name,致命
+madness-status-effect-name,疯狂
+focused-status-effect-name,专注
+blindness-status-effect-name,眼盲
+clarity-status-effect-name,清醒
+elusive-status-effect-name,难捉摸
+purification-status-effect-name,纯化
+grace-status-effect-name,恩典
+curse-of-the-tower-status-effect-name,塔之诅咒
+blue-team-status-effect-name,蓝队
+red-team-status-effect-name,红队
+unavoidable-keyword-name,避无可避
+anti-steal-keyword-name,反偷取
+attack-damage-keyword-name,攻击伤害
+execute-keyword-name,秒杀
+ascend-keyword-name,飞升
+tinker-keyword-name,修补
+heal-keyword-name,治疗
+tier-i-reward-keyword-name,I级奖励
+critical-strike-battle-action-name,暴击
+counter-attack-battle-action-name,反击
+multi-attack-battle-action-name,多重攻击
+lucky-attack-battle-action-name,幸运攻击
+armor-break-battle-action-name,护甲破坏
+omni-crit-battle-action-name,全能暴击
+polymorph-battle-action-name,变形
+immolate-battle-action-name,湮灭
+backstab-battle-action-name,背刺
+cleanse-battle-action-name,净化
+dodge-battle-action-name,闪避
+parry-battle-action-name,招架
+block-battle-action-name,格挡
+guard-battle-action-name,戒备
+miss-battle-action-name,丢失
+hit-battle-action-name,命中
+arcane-roulette-ability-name,奥术轮盘
+astral-dissolution-ability-name,星体消解
+barrier-ability-name,屏障
+bloodlust-aura-ability-name,嗜血光环
+burden-of-power-ability-name,权力之重
+confusion-strike-ability-name,迷惑打击
+death-strike-ability-name,死亡打击
+drain-react-ability-name,德雷恩反应
+drop-of-chaos-ability-name,混乱之滴
+enchanted-attack-ability-name,附魔攻击
+fear-of-faith-ability-name,信念之惧
+frozen-strike-ability-name,冻结打击
+frozen-wind-ability-name,冻风
+galefire-ability-name,烈风巨火
+harness-ability-name,收集
+headbutt-ability-name,头槌
+heart-of-iron-ability-name,钢铁之心
+iron-will-ability-name,钢铁意志
+mana-regen-ability-name,法力再生
+mind-control-ability-name,心灵控制
+multi-cleanse-ability-name,多重净化
+multi-heal-ability-name,多重治疗
+multi-magic-shield-ability-name,多重魔法护盾
+multi-shield-ability-name,多重护盾
+multi-stun-ability-name,多重眩晕
+my-justice-ability-name,我的正义
+my-way-ability-name,我的道路
+normal-attack-ability-name,普通攻击
+noxious-empowerment-ability-name,剧毒强化
+persistent-payback-ability-name,坚定复仇
+prowlers-strike-ability-name,潜行者打击
+purify-ability-name,纯化
+replay-ability-name,重播
+repulse-ability-name,击退
+safeguard-ability-name,守卫
+shatter-strike-ability-name,碎裂打击
+silhouette-ability-name,剪影
+spell-bind-ability-name,法术致盲
+steady-grip-ability-name,稳定握持
+steal-ability-name,偷取
+stun-attack-ability-name,眩晕攻击
+stun-strike-ability-name,眩晕打击
+toxic-attack-ability-name,毒性攻击
+triple-attack-ability-name,三重攻击
+venom-spit-ability-name,毒液吐息
+absolution-passive-name,天降救赎
+all-is-mine-passive-name,尽收吾手
+arcane-control-passive-name,奥术掌控
+arcane-equilibrium-passive-name,奥术均衡
+battleborn-passive-name,战生
+battleforged-heart-passive-name,战锻之心
+beyond-the-grave-passive-name,墓外
+bloodedges-blood-slash-passive-name,血锋之血斩
+cinder-touch-passive-name,余烬之触
+combat-instinct-passive-name,战斗本能
+consuming-darkness-passive-name,吞食暗黑
+crimson-pact-passive-name,猩红契约
+critical-focus-passive-name,暴击专注
+crystal-hardening-passive-name,水晶硬化
+crystal-insight-passive-name,水晶洞察
+cursed-chain-passive-name,诅咒之链
+edens-wish-passive-name,伊甸之愿
+edge-of-death-passive-name,死之边缘
+edge-of-the-ruined-passive-name,残破之锋
+eldrids-fury-passive-name,艾萃德狂怒
+empty-bastion-passive-name,空洞堡垒
+emulator-passive-name,模拟器
+escape-passive-name,逃离
+evil-mark-passive-name,邪恶标记
+exploited-opportunity-passive-name,稍纵即逝
+faded-discipline-passive-name,褪色的纪律
+faultbreaker-passive-name,错孽碎裂
+fear-of-pain-passive-name,疼痛恐惧
+folly-of-kings-passive-name,王者之愚
+freedom-drive-passive-name,自由驱动
+frozen-heart-passive-name,寒冰封心
+golden-altruism-passive-name,黄金舍己
+growing-anger-passive-name,增长的愤怒
+iron-pact-passive-name,钢铁契约
+ironclad-passive-name,钢铁护体
+judgments-call-passive-name,天命降临
+liberation-passive-name,自由解放
+litany-of-malice-passive-name,恶意祷文
+luminous-trial-passive-name,光明试炼
+magic-flux-passive-name,魔力流动
+magical-frostflare-passive-name,魔法霜花
+mana-steal-passive-name,法力偷取
+manaflow-passive-name,法力通流
+mimicry-passive-name,拟态
+plated-rot-passive-name,板甲黑蚀
+potential-seeker-passive-name,寻势
+prime-guard-passive-name,首要守卫
+shaded-essence-passive-name,影藏精华
+shattered-breath-passive-name,破碎之息
+shatterwave-passive-name,碎裂狂波
+spell-block-passive-name,法术格挡
+spirit-of-the-unbroken-passive-name,不挠灵精
+strike-of-destiny-passive-name,命运打击
+thunderstrike-passive-name,雷霆打击
+toxic-redemption-passive-name,毒性救赎
+toxshield-passive-name,毒盾
+undead-blessing-passive-name,不死福佑
+undying-curse-passive-name,不灭诅咒
+vengeful-edge-passive-name,复仇之刃
+warriors-resolute-passive-name,勇士决意
+whispers-of-anger-passive-name,愤怒低语
+wind’s-grace-passive-name,风之恩典
+wrath-of-the-broken-flesh-passive-name,破碎血肉之怒
+honor-trial-name,荣耀
+resilience-trial-name,坚韧
+swarm-trial-name,巢群
+confrontation-trial-name,对抗
+sagacity-trial-name,睿智
+common-rarity-name,普通
+uncommon-rarity-name,特别
+rare-rarity-name,稀有
+legendary-rarity-name,传奇
+mythic-rarity-name,神话
+eternal-rarity-name,永恒
+abyssal-rarity-name,深渊
+cosmic-rarity-name,宇宙
+divine-rarity-name,神圣
+fren-adventurer-name,福伦
+pyry-adventurer-name,派锐
+sid-adventurer-name,希德
+elys-adventurer-name,一力
+fael-adventurer-name,法埃
+tyr-adventurer-name,泰尔
+viran-adventurer-name,维兰
+kinno-adventurer-name,金诺
+riel-adventurer-name,瑞尔
+amon-adventurer-name,阿蒙
+jace-adventurer-name,简思
+buff-status-effect-type-name,增益
+debuff-status-effect-type-name,减益
+penalty-status-effect-type-name,惩罚
+neutral-status-effect-type-name,中立
+blessing-status-effect-type-name,祝福
+accuracy-stat-description,决定你击中目标的几率
+active-armor-stat-description,剩余|[armor]
+adaptive-attack-stat-description,提高你当前的攻击伤害
+agility-stat-description,<.>|决定你|[dodge]|的几率|\n|<.>|会被你的|[active-armor]|降低
+armor-stat-description,吸收伤害以代替|[health]|
+armor-shields-stat-description,战斗开始时|\n|可获得的|[armor-shield]|层数
+armor-steal-stat-description,命中时从目标处偷取的|[armor]|数量|\n|<696969>不能偷取超过你缺失的|[armor]|
+armored-attack-stat-description,将你 |[active-armor]| 的 % 转化为命中时造成的 |[armor-damage]|
+blackrot-damage-stat-description,不会受任何效果影响
+combat-stat-description,增加等同于总|[combat]|的|[physical-damage]|输出
+crit-chance-stat-description,几率|[critical-strike]|
+critical-damage-stat-description,提高|[critical-strike]|与|[omni-crit]|伤害
+dazzle-stat-description,命中时对目标施加的|[sparkle]|叠加层数
+eldership-stat-description,<.>| 按总 |[eldership]| 提高 |[magic-damage]|\n|<.>| 按总 |[eldership]| 提高 |[armor]|
+electricity-stat-description,命中时对目标施加等同于总|[electricity]|的|[electro-charge]|叠加|\n|且相邻敌人得到25%叠加层数
+elemental-power-stat-description,对以下选项进行翻倍加成：|\n|<.>| |[freeze-attack]|\n|<.>| |[cinder-damage]|\n|<.>| |[electricity]|\n|<.>| |[toxicity]
+elemental-resistance-stat-description,降低以下项目：|\n|<.>| |[freeze-damage]|\n|<.>| |[cinder-damage]|\n|<.>| |[electric-damage]|\n|<.>| |[toxicity]
+energy-stat-description,允许你行动
+faith-stat-description,<.>| 决定你 |[cleanse]| 的几率：|\n|[0@silver]|[*0@silver]| 回合结束时|\n|[4@silver]|[*4@silver]| 当你受到减益时|\n|\n|<.>| 会被你的 |[greed]| 降低
+flow-stat-description,当 |[flow]| 低于 0% 时无法行动
+freeze-attack-stat-description,命中时造成的|[freeze-damage]|量
+gold-on-kill-stat-description,提高每次击杀|[gold]
+greed-stat-description,金币收益翻倍
+health-stat-description,角色死亡前能够承受的最大伤害
+lethality-stat-description,造成伤害使目标低于 % |[max-health]|\n|且数值等于 % |[lethality]|时; 将触发 |[execute]|。
+life-steal-stat-description,让你恢复|[heal]|%对|[health]|造成的|[physical-damage]
+luck-stat-description,你有几率执行以下操作：|\n|[lucky-attack]
+magic-attack-stat-description,攻击命中时可造成的|[magic-damage]
+malice-stat-description,每次拥有者受到攻击时都会对攻击者|\n|施加等同于总|[malice]|的|[malice-damage]
+mana-stat-description,施放技能时通常会被消耗的一种资源
+max-health-stat-description,[health]|可以回复至的最大值
+max-mana-stat-description,可回复的最大|[mana]|值
+omni-crit-chance-stat-description,|[omni-crit]|几率
+omni-vamp-stat-description,让你恢复|[heal]|%对|[health]|造成的|[damage]|
+penetration-stat-description,忽略%|[armor]
+physical-attack-stat-description,攻击命中时可造成的|[physical-damage]
+power-stat-description,所有|[attack-damage]|翻倍
+recovery-stat-description,每回合根据|[recovery]|[heal]|一部分|\n|你失去的|[health]
+spelldom-stat-description,第一回合获得的 |[magic-blitz]| 数量
+tenacity-stat-description,不受到以下效果的几率: |\n|<.>| |[slowness]|\n|<.>| |[stun]|
+total-attacks-stat-description,你能够攻击一个目标的次数
+toughness-stat-description,降低从攻击中受到的伤害
+toxicity-stat-description,每有一点|[toxicity]|可在命中时施加一层|[poison]|叠加
+wisdom-stat-description,<.>| 增加等同于总 |[wisdom]| 的 |[magic-damage]| 输出
+enervation-status-effect-description,每层减少所有攻击伤害25%
+weakness-status-effect-description,每层叠加降低25%的所有攻击伤害
+black-curse-status-effect-description,所有治疗效果降低75%
+curse-status-effect-description,所有治疗效果降低75%
+stun-status-effect-description,中招后本回合无法进行任何行动
+slowness-status-effect-description,降低100%的|[agility]
+confusion-status-effect-description,将 |[accuracy]| 降低100%
+silence-status-effect-description,无法使用技能
+toxic-transmute-status-effect-description,每当你的生命即将受到伤害时;|\n|取消该伤害; 将其转化为 |[poison]| 并应用|\n|于自身
+poison-status-effect-description,回合结束时直接对生命值造成伤害
+bleed-status-effect-description,每次攻击后；对你的|[health]|造成|[bleed-damage]| |\n|伤害等于 |[bleed]| 层数的百分比乘以你的|\n|[max-health]| |\n|\n|<696969>每回合失去 2% |[bleed]
+sparkle-status-effect-description,命中一个目标会触发所有|[sparkle]|叠加且|\n|每层叠加会触发以下效果：|\n|\n|- 为攻击者提供|[ephemeral-armor]|\n|- 对目标造成|[dazzle-damage]|\n|\n
+magic-shield-status-effect-description,生效时格挡一切伤害然后被破坏并|\n|进入无效状态|\n|\n|<696969>（不会被|[magic-damage]|破坏）<696969>|\n
+ephemeral-armor-status-effect-description,会在战斗结束后消失的临时|[armor]|\n|\n|受到伤害时获得|[ephemeral-lock]|\n
+ephemeral-shell-status-effect-description,每层叠加受到的伤害降低12%
+electro-charge-status-effect-description,每回合对拥有者造成等同于层数的 |[electric-damage]|
+ephemeral-lock-status-effect-description,无法获得|[ephemeral-armor]
+exhaustion-status-effect-description,将|[total-attacks]|限制为1|\n
+malice-shield-status-effect-description,下次你即将被命中时破坏一个护盾并|\n|忽略|[malice]*|<483a5d>+1|伤害
+armor-shield-status-effect-description,下次你即将被命中时破坏一个护盾并|\n|忽略|[armor]*|<6d758d>+1|[damage]|\n
+freeze-status-effect-description,所有来源的伤害提高25%
+fear-status-effect-description,无法获得增益
+invulnerability-status-effect-description,不会受到任何伤害
+arthurs-mark-status-effect-description,带有此标记的目标无法|[block]|、|[parry]|或|[dodge]|\n
+timeout-status-effect-description,本回合什么也做不了
+cinder-essence-status-effect-description,回合开始时消耗|\n|所有|[cinder-essence]|叠加|\n|并每层叠加|[immolate]
+combat-insight-status-effect-description,下次即将受到攻击|\n|且有5层或更多的|[combat-insight]|叠加时|\n|将其全部消耗并进行|[parry]|\n
+magic-blitz-status-effect-description,攻击时消耗所有叠加层数并|\n|每层叠加+100%|[magic-attack]|\n
+omni-blitz-status-effect-description,攻击时消耗所有叠加层数并|\n|每层叠加+100%|[physical-attack]|与|[magic-attack]|\n
+vimblow-status-effect-description,攻击时消耗一层叠加并获得等同于25%|[max-health]|的|\n|[physical-attack]|加成|\n
+dread-status-effect-description,带有 |[fear]| 的敌人不会攻击你
+fury-status-effect-description,每层|[fury]|叠加提高25%的|\n|[physical-attack]|<696969>（每场战斗结束后重置）|\n|\n
+counter-attack-charge-status-effect-description,攻击攻击者
+multi-attack-charge-status-effect-description,本回合 [multi-attack]|
+stun-attack-charge-status-effect-description,你的所有命中都会对目标施加 |[stun]|
+debuff-immunity-status-effect-description,阻止所有减益的施放
+golden-heart-status-effect-description,当生命值降至 0 |[health]| 时:|\n|<.>| 复活并 |[heal]| 你 |[max-health]| 的 25%|\n|[3@golden]|<.>| |[*3@golden]| 获得 |[invulnerability]|
+lethality-status-effect-description,对目标造成使其低于 % |[max-health]| 的伤害|\n|如果等于 % |[lethality]|，将 |[execute]| 目标
+madness-status-effect-description,仅攻击你自己
+blindness-status-effect-description,将你的 |[accuracy]| 降低100%
+clarity-status-effect-description,下次你即将受到|[stun]|时|\n|消耗1层|[clarity]|并使其无效
+elusive-status-effect-description,对你的所有攻击将失去100% |[accuracy]|
+purification-status-effect-description,回合结束时消耗1层叠加并进行|[cleanse]
+grace-status-effect-description,提高所有伤害
+curse-of-the-tower-status-effect-description,每回合受到等于你|[max-health]|1%的|[true-damage]|\n|<696969>（战斗时间过长时获得）
+unavoidable-keyword-description,攻击总是会达成
+anti-steal-keyword-description,保护你免受|[steal]
+ascend-keyword-description,从第1层开始进行飞升挑战; 您获得的|[diamond]|\n将乘以2|<696969>（每级+1）|\n|<ff4500>先前挑战中使用过的2层以上物品将被|\n|<ff4500>移除
+tinker-keyword-description,商人会对你给他的物品进行以下操作：|\n|<.>| 将重铸和物品转化为修补工具包|\n|<.>| 升级重铸物品
+heal-keyword-description,刷新角色当前|[health]|的动作
+tier-i-reward-keyword-description,<.>| |打开箱子获得额外 |[diamond]||\n|<.>| |开始时拥有 +{gold} |[gold]
+critical-strike-battle-action-description,[physical-damage]|提高100%+%|[critical-damage]
+counter-attack-battle-action-description,攻击攻击者
+multi-attack-battle-action-description,在一个回合内攻击所有敌人
+lucky-attack-battle-action-description,造成25%额外伤害
+armor-break-battle-action-description,破坏目标的护甲并将其降低至0
+omni-crit-battle-action-description,[physical-damage]||与|[magic-damage]|\n|提高100%+%|[critical-damage]
+polymorph-battle-action-description,将最强的敌人变形为随机敌人|\n|并重置其属性
+immolate-battle-action-description,对你前方的所有敌人|\n|造成等于25%|[max-health]|的|[cinder-damage]
+backstab-battle-action-description,背刺一名敌人造成攻击伤害|\n|<.>| |敌人 |[max-health]| 高于75%：伤害降低45%|\n|<.>| |敌人 |[max-health]| 低于或等于75%：攻击将|\n| 是 |[critical-strike]| 并获得+25% |[accuracy]
+cleanse-battle-action-description,移除一个随机减益并将你的 |[faith]| 降低25%|\n|<696969>每场战斗重置
+dodge-battle-action-description,避免传入伤害|\n|\n|每次|[dodge]|时：|\n|[agility]|降低25%|\n|\n|<696969>每场战斗重置
+parry-battle-action-description,将伤害与状态效果返还给攻击者|\n|<696969>被招架10次会结束你的回合
+block-battle-action-description,降低100%传入伤害
+guard-battle-action-description,受到的伤害降低25%
+miss-battle-action-description,进行攻击但没有命中目标|\n|<696969>丢失10次将结束你的回合
+arcane-roulette-ability-description,每当你的 |[magic-shield]| 破裂时; 攻击一个|\n|随机目标\n|<696969>触发条件: 拥有一个激活的 |[magic-shield]|
+astral-dissolution-ability-description,从目标处移除所有增益
+barrier-ability-description,获得|[magic-shield]
+bloodlust-aura-ability-description,对所有敌人施加|[madness]||\n|<696969>激活条件: 在一回合内 |[heal]|<696969> 你|[max-health]|<696969>的25%
+burden-of-power-ability-description,回合开始时; 从所有带有|[fear]|的敌人处窃取75%的攻击伤害|\n||\n|<696969>激活条件: 已在一名敌人身上施加|[fear]|<696969>
+confusion-strike-ability-description,命中时施加2层|[confusion]|叠加
+death-strike-ability-description,本回合获得|\n|100%|[crit-chance]
+drain-react-ability-description,对所有敌人施加5层|[enervation]||\n|<696969>激活条件: 受到一名带有|[poison]|的敌人的攻击
+drop-of-chaos-ability-description,对目标施加随机减益
+enchanted-attack-ability-description,本回合+100%攻击伤害
+fear-of-faith-ability-description,获得2层|[invulnerability]|叠加
+frozen-strike-ability-description,命中时对目标施加3层|[weakness]|叠加
+frozen-wind-ability-description,对目标施加|[weakness]|并随后对其发动攻击
+galefire-ability-description,对目标施加|[slowness]|
+headbutt-ability-description,命中时对目标施加|[stun]|
+heart-of-iron-ability-description,获得等同于你|[health]|的|[armor]||\n|<696969>激活条件: 受到3次攻击|\n|<696969>每场战斗重置
+mana-regen-ability-description,恢复你所有已失去的|[mana]
+mind-control-ability-description,对所有目标施加|[confusion]|
+multi-cleanse-ability-description,[cleanse]|你自己与所有友方
+multi-heal-ability-description,为你和所有友方回复25%生命值
+multi-magic-shield-ability-description,为你和友方提供|[magic-shield]
+multi-shield-ability-description,为你和友方提供|\n|等同于你|[health]|的|[ephemeral-armor]
+multi-stun-ability-description,获得|[multi-attack-charge]|与|[stun-attack-charge]|;|\n|随后攻击|\n|<696969>激活条件: 招架一次攻击|\n|<696969>每场战斗重置
+my-justice-ability-description,本回合获得|[invulnerability]|与|[counter-attack-charge]||\n|<696969>激活条件: 获得|[invulnerability]|
+my-way-ability-description,本回合获得|[counter-attack-charge]||\n|<696969>激活条件: 攻击3次
+noxious-empowerment-ability-description,本回合|[toxicity]|翻倍
+persistent-payback-ability-description,本回合|[counter-attack]
+prowlers-strike-ability-description,本回合每次你命中敌人; 获得{agility-amount}% |[agility]||\n|<696969>激活条件: 至少一次|[dodge]|<696969>
+replay-ability-description,激活你最后一次模仿的能力|\n|<696969>激活条件: 模仿一项能力
+repulse-ability-description,本回合|[parry]
+safeguard-ability-description,为你和友方提供等同于|\n|你25%|[max-health]|的|[armor]
+shatter-strike-ability-description,命中时|[armor-break]
+silhouette-ability-description,变为|[elusive]|并进行攻击|\n|<696969>激活条件: |[backstab]|\n|<696969>每场战斗重置
+spell-bind-ability-description,对目标施加|[silence]|
+steady-grip-ability-description,本场战斗中; 你的 |[total-attacks]| +1
+steal-ability-description,从目标处偷取25% |[gold]|
+stun-attack-ability-description,命中时对目标施加 |[stun]|
+stun-strike-ability-description,命中时对目标施加|[stun]|
+toxic-attack-ability-description,命中目标时施加1点|[poison]
+venom-spit-ability-description,在你的目标上施加等同于|\n|[toxicity]|的|[poison]|叠加
+absolution-passive-description,每次攻击时对一名随机敌人|\n|造成5点|[magic-damage]
+all-is-mine-passive-description,回合开始时从目标处|\n|偷取所有增益
+arcane-control-passive-description,每当你躲避一次攻击; 你的|[magic-shield]|会破裂并立刻回满
+arcane-equilibrium-passive-description,在每回合结束时；将每个人的|[invulnerability]|转化为|[magic-shield]
+battleborn-passive-description,每当你|[parry]|; 对目标施加|[stun]|
+battleforged-heart-passive-description,你的 |[armor]| 受损后；将该数额转化为|\n||[max-health]|\n|<696969>每场战斗重置
+beyond-the-grave-passive-description,回合结束时；转化对手的状态效果|\n|<.>| |[weakness]| 转化为 |[enervation]|\n|<.>| |[curse]| 转化为 |[black-curse]
+bloodedges-blood-slash-passive-description,每次你即将攻击时；将10%|\n|你的|[health]|转化为|[physical-attack]|\n|<696969>每场战斗重置
+cinder-touch-passive-description,命中时|[immolate]|
+combat-instinct-passive-description,|[parry]|伤害翻倍
+consuming-darkness-passive-description,当一名同时带有|[fear]|与|[confusion]|的敌人被击杀时;|\n|获得其全部基础属性 |<696969>(每场战斗重置)
+crimson-pact-passive-description,生命值低于45%时；对所有敌人施加|\n|[confusion]|
+critical-focus-passive-description,你的 |[critical-strike]| 或 |[omni-crit]| 攻击\n|将获得 +25% |[accuracy]|
+crystal-hardening-passive-description,首回合受到0伤害
+crystal-insight-passive-description,第一回合获得 +100% |[magic-attack]|
+cursed-chain-passive-description,即使是你的攻击没有命中也会|\n|施加命中状态效果
+edens-wish-passive-description,每回合开始时; 给予一名随机友方|\n|一个随机的祝福或增益
+edge-of-death-passive-description,你的|[health]|不会在首回合中降低至1以下
+edge-of-the-ruined-passive-description,当你拥有|[curse]|或|[black-curse]|时：|\n|攻击将造成等于目标11% |[health]|的|\n|额外伤害
+eldrids-fury-passive-description,每次治疗时获得一层|[vimblow]|叠加|\n|<696969>每回合一次
+empty-bastion-passive-description,你的|[armor]|乘以8；但你每场战斗开始时|\n|只有0 |[active-armor]|
+emulator-passive-description,在回合结束时重新施加减益效果
+escape-passive-description,尝试偷窃后离开战斗
+evil-mark-passive-description,回合开始时|\n|对你的目标施加|[curse]
+exploited-opportunity-passive-description,在 |[dodge]| 后；对攻击者施加 |[stun]|
+faded-discipline-passive-description,获得+5 |[total-attacks]|，但你的前5次|\n|攻击伤害降低99%
+faultbreaker-passive-description,如果你的攻击使目标剩余 75%|\n|[active-armor]| 或更少；施加 |[armor-break]|
+fear-of-pain-passive-description,不会攻击本回合受到伤害的目标
+folly-of-kings-passive-description,每回合获得一个随机状态效果|\n|且每2回合|[polymorph]|一次
+freedom-drive-passive-description,拥有|[invulnerability]|时获得+100%|[tenacity]
+golden-altruism-passive-description,为所有友方提供|[golden-heart]
+growing-anger-passive-description,每次命中获得 5% |[crit-chance]| |<696969>(每场战斗重置)
+iron-pact-passive-description,每当你的 |[active-armor]| 达到0%时；消耗10%|\n|你的 |[health]| 并将其转化为 |[active-armor]
+ironclad-passive-description,[block]
+judgments-call-passive-description,你的攻击将施加通过|\n||[cleanse]|移除的减益（每场战斗重置）
+liberation-passive-description,将所有|[armor]|转化为|[adaptive-attack]
+litany-of-malice-passive-description,目标身上的每一种独特状态效果；|\n|对其造成+25%额外 |[malice-damage]|
+luminous-trial-passive-description,<.>| 进入战斗时施加 1 层 |[blindness]| |<|\n||<.>| 敌人每有一次 |[miss]|; 便获得 +25% |[accuracy]|
+magical-frostflare-passive-description,获得等同于对带有|[freeze]|的敌人造成|\n|的|[magic-damage]|的|[ephemeral-armor]
+mana-steal-passive-description,命中时偷取1点|[mana]|
+manaflow-passive-description,将你的|[max-mana]|设为1
+mimicry-passive-description,使用目标的能力
+plated-rot-passive-description,对|[armor]|造成的伤害; 将转化为|[max-health]|
+prime-guard-passive-description,其他敌人受到的伤害减少99%；直到|\n|该被动的拥有者被击败
+shaded-essence-passive-description,对|[silence]|敌人所造成的|[magic-damage]|+375%
+shattered-breath-passive-description,每次|[parry]|时；对目标施加|[exhaustion]
+shatterwave-passive-description,命中敌人时对其相邻敌人|\n|造成25%攻击伤害
+spell-block-passive-description,在回合开始时；对第一个有技能的敌人|\n|施加 |[silence]|
+strike-of-destiny-passive-description,如果你有|[invulnerability]|，击中时移除目标的所有增益
+thunderstrike-passive-description,如果目标有 |[electro-charge]|，命中时施加 |[stun]|
+toxic-redemption-passive-description,击杀敌人时; 移除自身所有 |[poison]| 并对所有敌人造成|\n|等同于已移除毒素数量的 |[physical-damage]|
+toxshield-passive-description,在你的回合中每当造成 |[poison-damage]| 时;\n|获得等量的 |[ephemeral-armor]|
+undead-blessing-passive-description,友方死亡时|\n|获得一层|[purification]|叠加
+undying-curse-passive-description,死亡时; 施加 |[curse]|\n|于击杀者
+vengeful-edge-passive-description,当你使用|[counter-attack]|时; 再次 |[counter-attack]|
+warriors-resolute-passive-description,前3个回合获得一次|[clarity]
+wind’s-grace-passive-description,赋予所有盟友 |[swiftness]|
+wrath-of-the-broken-flesh-passive-description,每次你的生命值受到伤害时；获得一层|[fury]|
+ancient-ice-item-set-description,[1@ancient-ice]|[*1@ancient-ice]|<.>| 获得等同于对带有|[freeze]|的敌人造成|\n| 的|[freeze-damage]|的|[ephemeral-armor]||\n|\n|<.>| 在你的首回合结束时; 对所有敌人施加|[freeze]|
+ancient-shell-item-set-description,如果你本回合使用了姿态：|\n|[1@ancient-shell]|[*1@ancient-shell]| |[toughness]| 将降低所有类型的伤害|\n|[3@ancient-shell]|[*3@ancient-shell]| 回合结束时获得|[ephemeral-shell]||\n|[5@ancient-shell]|[*5@ancient-shell]| 回合结束时移除|[ephemeral-lock]|
+arcanum-item-set-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]|激活时；获得|<7569f5>+375%|[magic-damage]|\n|[2@arcanum]|[*2@arcanum]| 回合结束时获得一个|[magic-shield]|\n|[4@arcanum]|[*4@arcanum]| 击杀敌人后获得一个|[magic-shield]
+bastolic-item-set-description,[1@bastolic]|[*1@bastolic]| 当你造成|[magic-damage]|时；对随机敌人造成|\n| |({magic_damage})|<7569f5>你最大生命值5%|的额外伤害|\n|\n|[2@bastolic]|[*2@bastolic]| 你在第一回合受到的|[magic-damage]|将|\n| 转化为|[max-health]|\n|<696969> 每场战斗重置
+berserker-item-set-description,[1@berserker]|[*1@berserker]| 根据已损失的|[health]|获得额外|[total-attacks]|：|\n| |<.>| 25% -> +1 |[total-attacks]|\n| |<.>| 50% -> +3 |[total-attacks]|\n| |<.>| 75% -> +6 |[total-attacks]|\n|\n|[2@berserker]|[*2@berserker]| 当|[health]|低于25%时；获得100%|[tenacity]
+blackthorn-item-set-description,受到攻击后：|\n|<.>|对攻击者造成|[active-armor]*|的|[magic-damage]
+cataclysm-item-set-description,所有敌人都会受到最高45% |[lethality]| 的影响
+celestial-item-set-description,在受到任意伤害时将其变化为|[elemental-power]|\n|<696969>每场战斗重置
+chromalure-item-set-description,[1@chromalure]|[*1@chromalure]| 施加|[poison]|后；对目标造成|\n| 等量的|[poison-damage]||\n|\n|[3@chromalure]|[*3@chromalure]| 每回合开始时，获得|[toxic-transmute]|[0@chromalure]
+cursed-item-set-description,[1@cursed]|[*1@cursed]| 战斗开始时；获得 |[curse]|\n|和5层 |[malice-shield]|\n|\n|[3@cursed]|[*3@cursed]| 你造成的 |[malice-damage]| 将扩散到|\n|所有带有|[curse]|的敌人
+darkness-item-set-description,[1@darkness]|[*1@darkness]| 在回合开始时对所有攻击力低于你的敌人施加|[fear]|[3@darkness]|\n|[*3@darkness]| 击杀敌人后获得2层|[dread]|[4@darkness]|\n|[*4@darkness]| 在第一回合开始时获得|[madness]|[0@darkness]
+demonic-item-set-description,[1@demonic]|[*1@demonic]| 每25点基础|[max-health]|\n|获得1%|[physical-attack]|\n|\n|[3@demonic]|[*3@demonic]| 在第一回合开始时获得|[multi-attack-charge]|
+flesh-item-set-description,允许 |[heal]| 超过你的 |[max-health]|\n|<696969>超出部分将在\n|<696969>回合结束时移除
+generic-item-set-description,计为所有已激活物品套装的+1
+golden-item-set-description,每场战斗开始时获得|[golden-heart]
+hunter-item-set-description,[1@hunter]|[*1@hunter]| 每超过100%的|[crit-chance]|每1%将转化为|\n| 10% |[critical-damage]|\n|[3@hunter]|[*3@hunter]| 目标无法|[dodge]|你的|[critical-strike]|攻击
+jade-item-set-description,触发后将所有|[sparkle]|叠加重新施放于目标之上
+legacy-item-set-description,<.>| 战斗开始时；获得|[invulnerability]|\n|\n|<.>| 在你的第一个回合结束时；对一个随机敌人施加一层|\n| |[arthurs-mark]||\n|\n|<.>| 当一个带有|[arthurs-mark]|的敌人死亡时；|\n| 它将被施加到另一个敌人身上
+magma-item-set-description,回合开始前|\n|提供1层|[cinder-essence]|叠加
+mercenary-item-set-description,如果目标|[health]|高于90%：|\n|[1@mercenary]|[1@mercenary]| 造成25%|<00cd58>+|[luck]|增加的攻击伤害|\n|[3@mercenary]|[*3@mercenary]| 本回合获得+1 |[total-attacks]|
+orion-item-set-description,[1@orion]|[*1@orion]| 随着你的 |[health]| 下降获得增加的伤害抗性；在25% |[health]| 时最高可达75%抗性|\n|\n|[3@orion]|[*3@orion]| 在前3个回合结束时；修复25%|\n|你的|[armor]|\n|\n|[4@orion]|[*4@orion]| 无法|[heal]
+phantom-item-set-description,无法装备
+poverty-item-set-description,<.>|[health]|低于25%时获得75%|[crit-chance]|\n|<.>|获得|[anti-steal]
+royal-item-set-description,首回合获得|[inherited-sin]|\n|\n|如果|[cleanse]|移除了|[inherited-sin]|则获得|\n|5层|[debuff-immunity]|叠加
+scout-item-set-description,[1@scout]|\n|<.>| |[*1@scout]|只要你有任意数量的|[agility]|，就保证|[dodge]|[3@scout]|\n|<.>| |[*3@scout]| |[dodge]|3次后，变为|[elusive]|[0@scout]
+shadow-item-set-description,[1@shadow]|[*1@shadow]| 每当你躲过一次攻击; |[backstab]|\n|[3@shadow]|[*3@shadow]| 在|[elusive]|期间避免的伤害将获得为|\n| |[adaptive-attack]|<696969> - 每场战斗重置
+silver-item-set-description,[1@silver]|[*1@silver]| 如果你有任何数量的|[faith]|，则保证|[cleanse]||\n|\n|[3@silver]|[3@silver]| 在|[cleanse]|时获得|[faith]| |[grace]
+swiftness-item-set-description,使你的|[total-attacks]|翻倍；但每次攻击后|\n|损失5%|[accuracy]|<696969> 每回合重置
+thunder-item-set-description,[1@thunder]|[*1@thunder]|[electric-damage]|在你的回合有25%+|[luck]*|的几率造成|[stun]|\n|[3@thunder]|[*3@thunder]| 使你在回合中施加的|[stun]|持续时间翻倍
+unchained-item-set-description,[1@unchained]|[*1@unchained]| 减益将施加给所有敌人|\n|[2@unchained]|[*2@unchained]| 你施加的减益数量翻倍
+vampiric-item-set-description,[1@vampiric]|[*1@vampiric]| 你对一个新目标的首次攻击施加8% |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| 每当敌人受到|[bleed-damage]|时；|[heal]|\n| 等量的生命值|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]| 将转化为|[power]|\n|<696969> 每场战斗重置
+warrior-item-set-description,[1@warrior]|[*1@warrior]| 每次攻击时获得|[combat-insight]|\n|[4@warrior]|[*4@warrior]| 被攻击时获得|[combat-insight]|[0@warrior]
+wood-item-set-description,[1@wood]|[*1@wood]| +25% |[luck]|\n|[3@wood]|[*3@wood]| +10% |[luck]
+zephyron-item-set-description,[1@zephyron]|<.>| |[*1@zephyron]| 每回合获得 {amount}% |[magic-damage]||<696969> 每场战斗后重置|\n|[2@zephyron]|<.>| |[*2@zephyron]| 造成的 |[magic-damage]| 将应用于带有 |[silence]| 的敌人|\n|[4@zephyron]|<.>| |[*4@zephyron]| 首个激活的能力不消耗 |[mana]
+beastbound-specialization-description,[1@hunter]|[*1@hunter]| 每超过100%的|[crit-chance]|每1%将转化为|\n| 10% |[critical-damage]|\n|[3@hunter]|[*3@hunter]| 目标无法|[dodge]|你的|[critical-strike]|攻击\n|\n|<.>| |[crit-chance]|将影响|[parry]|攻击
+bloodcaster-specialization-description,[1@vampiric]|[*1@vampiric]| 你对一个新目标的首次攻击施加8% |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| 每当敌人受到|[bleed-damage]|时；|[heal]|\n| 等量的生命值|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]| 将转化为|[power]|\n|<696969> 每场战斗重置|\n|\n|每次你 |[heal]|时:|\n|<.>| 对选定的敌人造成等于你|\n|  治疗量的 |[magic-damage]
+vampiercer-specialization-description,[1@vampiric]|[*1@vampiric]| 你对一个新目标的首次攻击施加8% |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| 每当敌人受到|[bleed-damage]|时；|[heal]|\n| 等量的生命值|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]| 将转化为|[power]|\n|<696969> 每场战斗重置|\n|\n|每次你 |[heal]|时:|\n|<.>| 对选定的敌人造成等于你|\n|  治疗量的直接 |[physical-damage]|；无视其 |[armor]
+venomire-specialization-description,[1@vampiric]|[*1@vampiric]| 你对一个新目标的首次攻击施加8% |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| 每当敌人受到|[bleed-damage]|时；|[heal]|\n| 等量的生命值|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]| 将转化为|[power]|\n|<696969> 每场战斗重置|\n|\n|每次你 |[heal]|时:|\n|<.>| 对选定的敌人施加等于你|\n|  治疗量的 |[poison]| 叠加
+bloodmoon-specialization-description,<.>| 将损失的200%|[health]|转化为|[physical-attack]|\n|<696969> 每场战斗重置|\n|[1@shadow]|[*1@shadow]| 每当你躲过一次攻击; |[backstab]|\n|[3@shadow]|[*3@shadow]| 在|[elusive]|期间避免的伤害将获得为|\n| |[adaptive-attack]|<696969> - 每场战斗重置
+moonlighter-specialization-description,[1@shadow]|[*1@shadow]| 每当你躲过一次攻击; |[backstab]|\n|[3@shadow]|[*3@shadow]| 在|[elusive]|期间避免的伤害将获得为|\n| |[adaptive-attack]|<696969> - 每场战斗重置
+nighthrust-specialization-description,[1@shadow]|[*1@shadow]| 每当你躲过一次攻击; |[backstab]|\n|[3@shadow]|[*3@shadow]| 在|[elusive]|期间避免的伤害将获得为|\n| |[adaptive-attack]|<696969> - 每场战斗重置|\n|<.>| 获得通过|[dodge]|避免的攻击伤害|\n|<696969> 每场战斗重置
+challenger-specialization-description,[1@demonic]|[*1@demonic]| 每25点基础|[max-health]|\n| 获得1%|[physical-attack]|\n|\n|[3@demonic]|[*3@demonic]| 在第一回合开始时获得|[multi-attack-charge]||\n|\n|<.>|对带有|[arthurs-mark]|的敌人造成伤害的45%将|\n| 扩散到相邻的敌人身上
+chromaguard-specialization-description,[1@chromalure]|[*1@chromalure]| 施加|[poison]|后；对目标造成|\n| 等量的|[poison-damage]||\n|\n|[3@chromalure]|[*3@chromalure]| 每回合开始时，获得|[toxic-transmute]|[0@chromalure]
+chromaspite-specialization-description,[1@chromalure]|[1@chromalure]| 施加|[poison]|后；对目标造成|\n| 等量的|[poison-damage]||\n|\n|[3@chromalure]|[3@chromalure]| 每回合开始时，获得|[toxic-transmute]|[0@chromalure]|\n|\n|<.>| 将75%的|[physical-attack]|转化为|\n| |[toxicity]
+chromathorn-specialization-description,受到攻击后:|\n|<.>| 对攻击者造成|[magic-damage]|; 数值为 |[active-armor]||\n|<.>| 每次你被击中时；对|\n| 攻击者施加等于你|[toxicity]|的|[poison]
+cinderthorn-specialization-description,受到攻击后:|\n|<.>| 对攻击者造成|[magic-damage]|; 数值为 |[active-armor]*||\n|<.>| |[immolate]
+mindthorn-specialization-description,受到攻击后:|\n|<.>| 对攻击者造成|[magic-damage]|; 数值为 |[active-armor]*||\n|<.>| 获得 +25% |[wisdom]|<696969> (每场战斗重置)
+thornfrost-specialization-description,受到攻击后:|\n|<.>| 对攻击者造成|[magic-damage]|; 数值为 |[active-armor]*||\n|<.>| 对攻击者施加 2 层 |[weakness]|
+dauntless-specialization-description,[1@warrior]|[*1@warrior]| 每次攻击时获得|[combat-insight]|\n|[4@warrior]|[*4@warrior]| 被攻击时获得|[combat-insight]|[0@warrior]
+quickblade-specialization-description,[1@warrior]|[*1@warrior]| 每次攻击时获得|[combat-insight]|\n|[4@warrior]|[*4@warrior]| 被攻击时获得|[combat-insight]|[0@warrior]|\n|\n|<.>| 每次|[parry]|时；获得+1|[total-attacks]|\n|<696969> 每场战斗重置
+rampager-specialization-description,[1@warrior]|[*1@warrior]| 每次攻击时获得|[combat-insight]|\n|[4@warrior]|[*4@warrior]| 被攻击时获得|[combat-insight]|[0@warrior]
+thunderborn-specialization-description,[1@warrior]|[*1@warrior]| 每次攻击时获得|[combat-insight]|\n|[4@warrior]|[*4@warrior]| 被攻击时获得|[combat-insight]|[0@warrior]|\n|\n|<.>| 每次你击晕敌人时；攻击它
+debilitator-specialization-description,[1@darkness]|[*1@darkness]| 在回合开始时对所有攻击力低于你的敌人施加|[fear]|[3@darkness]|\n|[*3@darkness]| 击杀敌人后获得2层|[dread]|[4@darkness]|\n|[*4@darkness]| 在第一回合开始时获得|[madness]|[0@darkness]
+mindbreaker-specialization-description,<.>| 对带有|[confusion]|的敌人施加2层|[madness]||\n|[1@darkness]|[*1@darkness]| 在回合开始时对所有攻击力低于你的敌人施加|[fear]|[3@darkness]|\n|[*3@darkness]| 击杀敌人后获得2层|[dread]|[4@darkness]|\n|[*4@darkness]| 在第一回合开始时获得|[madness]|[0@darkness]
+deserter-specialization-description,如果目标|[health]|高于90%：|\n|[1@mercenary]|[1@mercenary]| 造成25%|<00cd58>+|[luck]|增加的攻击伤害|\n|[3@mercenary]|[*3@mercenary]| 本回合获得+1 |[total-attacks]||\n|\n|<.>| 每10层获得+1|[total-attacks]|
+faithbound-specialization-description,如果目标|[health]|高于90%：|\n|[1@mercenary]|[1@mercenary]| 造成25%|<00cd58>+|[luck]|增加的攻击伤害|\n|[3@mercenary]|[*3@mercenary]| 本回合获得+1 |[total-attacks]||\n|\n|<.>| 被动：|[judgments-call]
+echomancer-specialization-description,[1@unchained]|[*1@unchained]| 负面效果会应用到所有敌人|\n|[2@unchained]|[*2@unchained]| 你施加的负面效果翻倍
+evadium-specialization-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]|激活时；获得|<7569f5>+375%|[magic-damage]|\n|[2@arcanum]|[*2@arcanum]| 回合结束时获得一个|[magic-shield]|\n|[4@arcanum]|[*4@arcanum]| 击杀敌人后获得一个|[magic-shield]|\n|\n|<.> | 每当你 |[dodge]| 时；|[counter-attack]
+invulnerium-specialization-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]|激活时；获得|<7569f5>+375%|[magic-damage]|\n|[2@arcanum]|[*2@arcanum]| 回合结束时获得一个|[magic-shield]|\n|[4@arcanum]|[*4@arcanum]| 击杀敌人后获得一个|[magic-shield]|\n|\n|<.>| 你的|[magic-shield]|第一次破碎时；获得|[invulnerability]
+stunium-specialization-description,[1@arcanum]|[*1@arcanum]| |[magic-shield]|激活时；获得|<7569f5>+375%|[magic-damage]|\n|<.>| 当你的|[magic-shield]|破碎时；|[stun]|所有敌人|\n|[2@arcanum]|[*2@arcanum]| 回合结束时获得一个|[magic-shield]|\n|[4@arcanum]|[*4@arcanum]| 击杀敌人后获得一个|[magic-shield]
+harbinger-specialization-description,<.>| 对带有|[arthurs-mark]|的敌人造成+1000%攻击伤害|\n|\n|<.>| 战斗开始时；获得|[invulnerability]|\n|\n|<.>| 在你的第一个回合结束时；对一个随机敌人施加一层|\n| |[arthurs-mark]||\n|\n|<.>| 当一个带有|[arthurs-mark]|的敌人死亡时；|\n| 它将被施加到另一个敌人身上
+lionheart-specialization-description,<.>| 使来自带有|[arthurs-mark]|的敌人的伤害降低1000%|\n|\n|<.>| 战斗开始时；获得|[invulnerability]|\n|\n|<.>| 在你的第一个回合结束时；对一个随机敌人施加一层|\n| |[arthurs-mark]||\n|\n|<.>| 当一个带有|[arthurs-mark]|的敌人死亡时；|\n| 它将被施加到另一个敌人身上
+pursuer-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|只要你有任意数量的|[agility]|，就保证|[dodge]|[3@scout]|\n|<.>| |[*3@scout]| |[dodge]|3次后，变为|[elusive]|[0@scout]|\n|\n|每次你躲避攻击时：|\n|<.>| 获得{lethality-amount}% |[lethality]|<696969> - 每场战斗重置
+striker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|只要你有任意数量的|[agility]|，就保证|[dodge]|[3@scout]|\n|<.>| |[*3@scout]| |[dodge]|3次后，变为|[elusive]|[0@scout]|\n|\n|每次你躲避攻击时：|\n|<.>| |[counter-attack]
+windwalker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|只要你有任意数量的|[agility]|，就保证|[dodge]|[3@scout]|\n|<.>| |[*3@scout]| |[dodge]|3次后，变为|[elusive]|[0@scout]|\n|\n|每次你躲避攻击时：
+honor-trial-description,<.>|所有敌人获得1级
+resilience-trial-description,<.>| 所有敌人将获得|[armor]|
+swarm-trial-description,<.>|每场战斗都会有6名敌人
+confrontation-trial-description,<.>| 所有敌人获得 +1 |[total-attacks]
+sagacity-trial-description,为你的行动增加一个计时器；如果|\n|计时器达到0；则结束本轮游戏
+?-label,

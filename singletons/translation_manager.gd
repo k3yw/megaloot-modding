@@ -2,11 +2,23 @@ extends Node
 
 signal language_changed
 
-const MAIN_TRANSLATION_CSV_PATH: String = "res://assets/translations/main.csv"
-const TRANSLATIONS_CSV_NAME: String = "translations.csv"
-
+const TRANSLATIONS_DIR: String = "res://assets/translations/"
 const BB_PRESETS_DIR: String = "res://resources/bb_presets/"
 
+
+const BASE_LANGUAGES: Array[String] = [
+        "english", 
+        "french", 
+        "german", 
+        "spanish", 
+        "japanese", 
+        "koreana", 
+        "polish", 
+        "portuguese", 
+        "russian", 
+        "schinese", 
+        "tchinese", 
+]
 
 
 var languages: Array[String] = []
@@ -14,7 +26,6 @@ var languages: Array[String] = []
 var translations: Dictionary = {}
 
 var bb_presets: Dictionary = {}
-
 
 
 func _ready() -> void :
@@ -36,34 +47,9 @@ func is_initialized() -> bool:
 
 
 func load_languages() -> void :
-    var read_file = FileAccess.open(get_translation_file_path(), FileAccess.READ)
-
-
-    if not is_instance_valid(read_file):
-        languages = [
-            "english", 
-            "french", 
-            "german", 
-            "spanish", 
-            "japanese", 
-            "koreana", 
-            "polish", 
-            "portuguese", 
-            "russian", 
-            "schinese", 
-            "tchinese", 
-        ]
-        return
-
-    var csv = read_file.get_csv_line()
-    csv.remove_at(0)
-
-    for key in csv:
-        languages.push_back(key)
-
-    read_file.close()
-
-
+    languages = File.get_directories_in_folder(TRANSLATIONS_DIR)
+    if languages.is_empty():
+        languages = BASE_LANGUAGES
 
 
 
@@ -72,7 +58,7 @@ func load_languages() -> void :
 func create_translations_dict() -> void :
     var scenes: Array[Node] = [
         load("res://scenes/states/memory_selection_state/memory_selection_state.tscn").instantiate(), 
-        load("res://scenes/states/main_menu_state/main_menu_state.tscn").instantiate(), 
+        States.MAIN_MENU_STATE.instantiate(), 
         States.GAMEPLAY_STATE.instantiate(), 
         load("res://scenes/managers/popup_manager/popup_manager.tscn").instantiate(), 
         load("res://scenes/states/profile_state/profile_state.tscn").instantiate(), 
@@ -448,71 +434,49 @@ func register_label(key_arr: Array[String], text_arr: Array[String], label: Gene
 
 
 func load_translation_file() -> void :
-    var read_file = FileAccess.open(get_translation_file_path(), FileAccess.READ)
+    for language in languages:
+        for file_path in get_translation_file_paths(language):
+            var read_file = FileAccess.open(file_path, FileAccess.READ)
 
-    if not is_instance_valid(read_file):
-        return
+            if not is_instance_valid(read_file):
+                return
 
-    var csv_languages: PackedStringArray = []
-    var line: int = 0
+            var line: int = 0
 
-    while not read_file.eof_reached():
-        var csv = read_file.get_csv_line()
-        line += 1
+            while not read_file.eof_reached():
+                var csv = read_file.get_csv_line()
+                line += 1
+                var key: String = csv[0]
 
-        if line == 1:
-            csv_languages = csv
-            continue
-
-        var key: String = csv[0]
-
-        if csv.size() < 2:
-            continue
-
-
-        if not translations.keys().has(key):
-            continue
-
-        var translation_reference: String = translations[key]["english"]
-        translation_reference = translation_reference.trim_suffix(" ")
-
-        if translation_reference == csv[languages.find("english") + 1]:
-            for idx in csv_languages.size():
-                if idx < 2:
+                if csv.size() < 2:
                     continue
 
-                var translation: String = ""
-                if csv.size() - 1 >= idx:
-                    translation = csv[idx]
+                if not translations.keys().has(key):
+                    translations[key] = {}
 
-                translations[key][csv_languages[idx]] = translation
+                translations[key][language] = csv[1]
 
 
-    read_file.close()
+            read_file.close()
 
 
 
 
 
 func create_translation_file() -> void :
-    var write_file = FileAccess.open(File.get_file_dir() + "/" + TRANSLATIONS_CSV_NAME, FileAccess.WRITE)
-    var csv_data: String = "id"
-
+    DirAccess.make_dir_recursive_absolute(File.get_file_dir() + "/translations")
 
     for language in languages:
-        csv_data += "," + language
+        var write_file = FileAccess.open(File.get_file_dir() + "/translations/" + language + ".csv", FileAccess.WRITE)
+        var csv_data = ""
 
+        for key in translations.keys():
+            csv_data += key + ","
+            csv_data += translations[key][language]
+            csv_data += "\n"
 
-    for key in translations.keys():
-        csv_data += "\n"
-        csv_data += key
-
-        for language in languages:
-            csv_data += "," + translations[key][language]
-
-
-    write_file.store_string(csv_data)
-    write_file.close()
+        write_file.store_string(csv_data)
+        write_file.close()
 
 
 
@@ -742,7 +706,7 @@ func fix_translation() -> void :
                 if text.length():
                     var bb_text = BBContainerData.new()
 
-                    if text.begins_with("<") and not "<.>" in text:
+                    if text.begins_with("<") and not "<.>" in text and text.length() > 1:
                         var color: Color = Color(text.left(8).replace("<", "").replace(">", ""))
                         text = text.right(text.length() - 8)
                         bb_text.left_image_color = color
@@ -984,10 +948,13 @@ func get_fixed_key(key: String, type: String) -> String:
 
 
 
-func get_translation_file_path() -> String:
-    var translation_file_path: String = File.get_file_dir() + "/" + "translations_override.csv"
+func get_translation_file_paths(language: String) -> Array[String]:
+    var translation_file_path: String = File.get_file_dir() + "/" + language + "_override.csv"
 
     if not FileAccess.file_exists(translation_file_path):
-        return MAIN_TRANSLATION_CSV_PATH
+        var file_paths: Array[String] = []
+        for file_name in File.get_file_paths(TRANSLATIONS_DIR + language):
+            file_paths.push_back(TRANSLATIONS_DIR + language + "/" + file_name)
+        return file_paths
 
-    return translation_file_path
+    return [translation_file_path]

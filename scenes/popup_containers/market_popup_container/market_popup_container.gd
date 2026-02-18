@@ -4,6 +4,7 @@ class_name MarketPopupContainer extends PopupContainer
 signal pressed_item(item_resource: ItemResource)
 
 
+@export var search_line_edit: GenericLineEdit
 @export var item_holder: GridContainer
 
 
@@ -12,6 +13,7 @@ var market_items: Array[ItemResource] = []
 var item_cache: Array[Item] = []
 var local_player: Player = null
 
+var last_frame_search: String = ""
 
 
 func _init() -> void :
@@ -40,6 +42,16 @@ func _process(_delta: float) -> void :
 
     if Input.is_action_just_pressed("press"):
         process_item_press()
+
+    process_search()
+
+
+func process_search() -> void :
+    if not last_frame_search == search_line_edit.line_edit.text:
+        Items.update_search(item_cache, search_line_edit.line_edit.text, item_holder)
+
+    last_frame_search = search_line_edit.line_edit.text
+
 
 
 

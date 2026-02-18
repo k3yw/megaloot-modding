@@ -304,7 +304,9 @@ func process_rarity_slider() -> void :
 
 func process_search() -> void :
     if not last_frame_search == search_line_edit.line_edit.text:
-        update_search()
+        Items.update_search(library.items, search_line_edit.line_edit.text, item_scroll_container.scroll_container.get_child(0).get_child(0))
+        await get_tree().process_frame
+        item_scroll_container.update()
 
     last_frame_search = search_line_edit.line_edit.text
 
@@ -312,49 +314,6 @@ func process_search() -> void :
 
 
 
-
-func update_search() -> void :
-    var items_indexes_to_hide: Array[int] = []
-
-    if search_line_edit.line_edit.text.length():
-        for idx in Items.LIST.size():
-            var hover_info_data = HoverInfoData.new()
-            var bb_container_data_arr: Array[BBContainerData] = []
-            var item: Item = library.items[idx]
-            var to_hide: bool = true
-
-            hover_info_data = Info.from_item(hover_info_data, item, null)
-
-            if not is_instance_valid(item.resource):
-                items_indexes_to_hide.push_back(idx)
-                continue
-
-            var item_name: String = T.get_translated_string(item.resource.name, "Item Name").to_lower()
-            if item_name.contains(search_line_edit.line_edit.text.to_lower()):
-                to_hide = false
-
-            bb_container_data_arr += hover_info_data.bb_container_data_arr
-
-            for bb_container_data in bb_container_data_arr:
-                if bb_container_data.text.to_lower().contains(search_line_edit.line_edit.text.to_lower()):
-                    to_hide = false
-
-            for set_resource in item.get_set_resources():
-                if set_resource.name.to_lower().contains(search_line_edit.line_edit.text.to_lower()):
-                    to_hide = false
-
-            if to_hide:
-                items_indexes_to_hide.push_back(idx)
-
-    var item_container: GridContainer = item_scroll_container.scroll_container.get_child(0).get_child(0)
-    for idx in item_container.get_child_count():
-        var item_texture_rect: ItemTextureRect = item_container.get_child(idx)
-        item_texture_rect.show()
-        if items_indexes_to_hide.has(idx):
-            item_texture_rect.hide()
-
-    await get_tree().process_frame
-    item_scroll_container.update()
 
 
 

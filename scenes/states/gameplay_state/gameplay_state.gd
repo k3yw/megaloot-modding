@@ -2283,9 +2283,9 @@ func change_floor_number(amount: int, silent: bool):
     if memory.game_mode == GameModes.CHALLENGE:
         for floor_number in memory.floor_number:
             var achievement_name: String = local_player.adventurer.name.to_upper() + "_" + (AdventurerBorder.Type.keys()[AdventurerBorder.get_type(local_player.adventurer, floor_number)] as String).to_upper()
-            ISteam.get_achievement(achievement_name)
+            Platform.get_achievement(achievement_name)
 
-    ISteam.update_rich_presence_floor(memory.local_player.floor_number)
+    Platform.update_rich_presence_floor(memory.local_player.floor_number)
 
 
     if not memory.game_mode == GameModes.PRACTICE:

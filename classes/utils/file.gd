@@ -4,6 +4,20 @@ class_name File
 
 
 
+static func get_directories_in_folder(path: String) -> Array:
+    var dir = DirAccess.open(path)
+    var directories: Array[String] = []
+
+    if dir:
+        dir.list_dir_begin()
+        var dir_name = dir.get_next()
+        while not dir_name == "":
+            if dir.current_is_dir():
+                directories.push_back(dir_name)
+            dir_name = dir.get_next()
+
+    return directories
+
 
 static func get_file_paths(path: String) -> Array[String]:
     var dir = DirAccess.open(path)
@@ -65,18 +79,18 @@ static func json_to_dict(file_path: String) -> Dictionary:
 
 
 static func get_user_file_dir() -> String:
-    if ISteam.is_active():
-        var install_dir = ISteam.steam.getAppInstallDir(ISteam.get_app_id())
+    if Platform.is_active():
+        var install_dir = Platform.steam.getAppInstallDir(Platform.get_app_id())
         if install_dir.has("directory"):
-            return install_dir["directory"].replace("\\", "/") + "/" + str(ISteam.get_steam_id())
+            return install_dir["directory"].replace("\\", "/") + "/" + str(Platform.get_steam_id())
 
     return "user://"
 
 
 static func get_file_dir() -> String:
-    if ISteam.is_active():
-        var install_dir = ISteam.steam.getAppInstallDir(ISteam.steam.getAppID())
+    if Platform.is_active():
+        var install_dir = Platform.steam.getAppInstallDir(Platform.steam.getAppID())
         if install_dir.has("directory"):
-            return ISteam.steam.getAppInstallDir(ISteam.steam.getAppID())["directory"].replace("\\", "/")
+            return Platform.steam.getAppInstallDir(Platform.steam.getAppID())["directory"].replace("\\", "/")
 
     return "user://"

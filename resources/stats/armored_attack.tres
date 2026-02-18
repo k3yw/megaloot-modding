@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="StatResource" load_steps=4 format=3 uid="uid://b64ap6hlsvruc"]
+[gd_resource type="Resource" script_class="StatResource" load_steps=5 format=3 uid="uid://b64ap6hlsvruc"]
 
 [ext_resource type="Script" uid="uid://ctq5askfk0kre" path="res://classes/resource/stat_resource.gd" id="1_n3ayj"]
 [ext_resource type="Texture2D" uid="uid://ddjwffxcxqg06" path="res://assets/textures/icons/stats/armored_attack.png" id="1_sp81i"]
+[ext_resource type="Script" uid="uid://b0cynnqlekyq5" path="res://resources/bb_scripts/armored_attack.gd" id="1_wkr5m"]
 [ext_resource type="Script" uid="uid://cbngjvaeiaan" path="res://resources/stat_scripts/armored_attack.gd" id="3_d68yv"]
 
 [resource]
@@ -15,3 +16,4 @@ max_amount = -1
 ignore_minimum_amount = false
 minimum_amount = 0.0
 stat_script = ExtResource("3_d68yv")
+bb_script = ExtResource("1_wkr5m")

@@ -1,0 +1,1231 @@
+language-name-text,Русский
+leaderboard-progress-text,Вы превзошли {player-percentage-amount} игроков; достигнув этажа {floor-record}
+leaderboard-progress-connection-failed-text,Не удалось получить доступ к списку лидеров. Достигнутый этаж: {floor-record}
+final-floor-reached-text,Достигнут последний этаж
+ascension-level-text,Вознесение {level}
+final-floor-text,Последний этаж
+new-journey-text,Новое путешествие
+select-save-slot-text,Выбрать
+delete-save-slot-text,Удалить
+update-text,Обновить
+upload-text,Загрузить
+death-message-title-text,Предсмертное послание игрока {player-name}
+player-floor-record-text,Лучший этаж игрока {player-name}
+view-steam-profile-text,посмотреть профиль Steam
+no-achievements-text,Нет достижений
+loading-file-text,Загрузка
+saving-file-text,Сохранение
+proceed-text,Продолжить
+join-lobby-text,Присоединиться
+enter-password-text,введите пароль
+enter-ip-text,введите IP
+specialization-floor-text,Активируется на этаже {floor-number}
+convert-to-battle-stats-text,Превратить в боевые характеристики
+stat-per-kill-text,{stat} за каждое убийство
+item-found-text,Найдено: {item-name}
+doubles-own-stat-text,Удваивает собственную |{stat}
+victory-text,Победа
+defeat-text,Поражение
+ascend-text,Вознесение
+negative-flow-text,Отрицательный |{flow}|; снимите комплекты предметов
+cannot-be-dismantled-text,Нельзя разобрать
+waiting-for-dismantle-text,Ожидание разборки
+request-to-dismantle-text,Запрос на разборку
+battles-remaining-text,Осталось боев
+current-battle-text,Текущая битва
+last-battle-text,Последняя битва
+gold-per-battle-text,Золота за бой
+gold-per-kill-text,Золота за убийство
+enemy-player-immunity-text,Получает на {amount}% меньше урона||\n||во время хода игрока {player-name}
+enemy-player-immunity-misc-text,Каждый ход снижается на {amount}%
+player-sent-an-item-text,Игрок {player-name} отправляет вам: {item-name}
+send-item-to-player-text,Отправить предмет
+burnout-description-text,Выгорание: эффекты неактивны
+infuse-description-text,Дает характеристики и эффекты предмета||\n||на этом этаже
+infused-flow-info-text,влито; |{flow-stat}| не расходуется
+infuse-text,Влить
+to-open-battle-log-text,для открытия журнала боя
+to-unlock-stats-text,для разблокировки характеристик
+to-lock-stats-text,для блокировки характеристик
+to-deselect-text,для отмены выбора
+to-convert-text,для превращения
+to-select-text,для выбора
+to-toggle-text,для переключения
+to-unlock-text,для разблокировки
+to-learn-text,Чтобы изучить
+to-lock-text,для блокировки
+to-consume-text,для расхода
+to-activate-text,для активации
+to-restore-text,для восстановления
+to-remove-text,для снятия
+to-banish-text,Чтобы изгнать
+to-equip-text,для использования
+to-swap-text,для замены
+to-take-text,для получения
+to-buy-text,для покупки
+silenced-text,Безмолвие
+highest-text,Наивысш.
+cost-text,Стоимость
+diamond-reward-text,Получайте дополнительный {diamond} каждые {floor} этажей
+gold-start-text,Начните с +{amount} {gold}
+reforge-token-description-text,+{amount}% шанс; что |{stat}| будет применен||\n||к перекованному предмету
+item-multiplier-text,Эта характеристика умножается на число использованных предметов комплекта |{item-set}
+specialization-info-text,Преобразует |{item-set}| в |{specialization}|
+required-item-sets-text,Требуется использовать предмет комплекта |{item-set}
+required-stat-text,Требуется |{stat}
+cant-move-during-battle-text,Нельзя двигаться во время боя
+missing-item-socket-text,Нет гнезда: {socket-name}
+item-set-no-flow-text,|{item-set}| стоит 0% |{flow}|
+item-set-limit-reached-text,Достигнут лимит комплектов
+cant-equip-duplicates-text,Нельзя использовать дубликаты
+cannot-be-upgraded-text,Нельзя улучшить
+unlearned-ability-text,Неизученная способность
+learn-ability-text,Изучить {ability}
+skip-stance-text,Пропустить: не атаковать в этот ход
+guard-stance-text,Защита: в этот ход получаемый урон снижен на {amount}%
+attack-on-activation-ability-text,атака при активации
+reforged-item-stats-text,Характеристики перекованного предмета
+favorite-item-sets-text,Избранные наборы предметов
+market-item-sets-text,Наборы предметов с рынка
+tinker-kit-item-name-text,Набор для умельца
+battle-information-text,Сведения о бое
+current-turn-text,Ход {turn-number}
+local-player-name-text,Вы
+dead-text,Смерть
+battle-log-applied-status-effect-text,{character-2} — получен эффект состояния ({character-1})
+battle-log-applied-status-on-self-text,{character} — наложен эффект состояния на себя
+battle-log-received-damage-from-source-text,{character} — получен урон ({source})
+battle-log-received-damage-text,{character} — получен урон
+battle-log-hit-with-text,{character-2} — получена атака ({character-1}
+battle-log-activated-effect-text,{character} — активирован эффект
+battle-log-parry-text,{character-1} — парирование атаки ({character-2})
+battle-log-block-text,{character-1} — использован блок атаки ({character-2})
+battle-log-killed-text,{character-2} — смерть ({character-1})
+battle-log-steal-text,{character} украл у {source}
+battle-log-hit-text,{character-2} — получена атака ({character-1})
+battle-log-cleanse-text,{character} — очищено
+battle-log-dodged-text,{character} — избегание
+battle-log-healed-text,{character} — лечение
+overhealed-text,Сверхлечение
+overheal-text,Сверхлечение
+executed-text,Казнь
+blocked-text,Блок
+debuff-immune-text,Иммунитет к отрицательным эффектам
+failed-steal-text,Неудачная кража
+steal-text,Кража
+escaped-text,Побег
+cleanse-text,Очищение
+inventory-full-text,Инвентарь заполнен
+armor-break-text,Разрушение брони!
+counter-attack-break-text,Контрудар!
+missing-mana-text,Потраченная мана
+cleansed-text,Очищено
+heal-text,Лечение
+attack-text,Атака
+enter-text,Войти
+skip-text,Пропустить
+open-text,Открыть
+sell-all-text,Продать все
+close-text,Закрыть
+demo-tower-completed-text,Демобашня пройдена
+grants-stat-consumable-text,{stat}| +|{amount}| в этом бою
+temp-stat-to-add-potion-description-text,#ERROR!
+status-effect-potion-description-multiple-text,#ERROR!
+status-effect-potion-description-single-text,{status-effect}| +1 заряд
+potion-restores-text,Восстанавливает {amount} характеристики |{stat}
+potion-regenerates-text,Восстанавливает {amount} характеристики |{stat}
+potion-repairs-text,Восстанавливает {amount}% характеристики |{stat}
+refills-every-battle-potion-text,Восполняется после каждого боя
+stat-transform-text,Преобразует |{stat-1}| в |{stat-2}
+banished-item-text,Изгнание: {item-name}
+reforged-item-text,Перекованный {item-name}
+item-reforge-text,Перековка {item-name}
+banish-description-text,Навсегда убирает {item-name}|\n|из башни
+unlock-requirements-description-text,Требуется завершенных боев для разблокировки:
+unlimited-amount-text,Нет лимита
+max-amount-text,Макс.: {amount}
+corrupted-fragment-text,Искаженный фрагмент
+specialization-text,Специализация
+unknown-enemy-text,Неизвестный враг
+unknown-item-text,Неизвестный предмет
+passive-set-text,Пассивный комплект
+empty-set-text,Пустой комплект
+sell-for-text,Продать за
+level-up-text,Новый уровень
+chapter-text,Глава
+abilities-text,Способности
+ability-text,Способность
+passives-text,Пассивн.
+passive-text,Пассивн.
+rewards-text,Награды
+convert-text,Преобразовать
+upgrade-text,Улучшить
+command-list-text,команды
+help-command-info-text,введите {command} чтобы получить помощь
+kick-command-info-text,{command} [player index]|\n|выгоняет игрока из лобби|\n|пример: {command} 1 (выгоняет первого игрока после вас)
+end-game-text-text,Ваша душа; закаленная в башне; доказала; что достойна.
+highest-floor-result-screen-text,Наивысший этаж: {floor-number}
+died-on-floor-text,Смерть на этаже {floor-number}
+merchant-exclusive-text,Эксклюзивно у торговца
+upgrades-into-text,Улучшает до:
+highest-floor-text,Наивысший этаж
+floor-number-text,Этаж {number}
+not-refinable-text,Нельзя доработать
+top-player-text,Лучший игрок
+refinable-text,Можно доработать
+deforge-text,Расковать
+active-text,Активн.
+floor-text,Этаж
+split-text,Разделить
+elite-text,Элитн.
+gold-text,Золото
+level-text,Ур
+set-text,— комплект
+xp-text,ОПТ
+memories-button,воспоминания
+name-label,Имя
+lobbies-button,лобби
+game-mode-label,Режим игры
+locked-label,Заблокировано
+players-label,Игроки
+select-button,ВЫБРАТЬ
+select-label,ВЫБРАТЬ
+back-button,НАЗАД
+button-label,КНОПКА
+wishlist-on-steam!-label,добавляйте в список желаемого в Steam!
+enter-the-tower-button,ВОЙТИ В БАШНЮ
+library-button,БИБЛИОТЕКА
+library-label,БИБЛИОТЕКА
+workshop-button,МАСТЕРСКАЯ
+quit-button,ВЫЙТИ
+market-hover-name,Рынок
+market-hover-description,<696969>новые предметы добавляются на каждом этаже
+market-hover-bottom-hint,показать предметы
+refresh-market-hover-name,ОБНОВИТЬ РЫНОК
+refresh-market-hover-description,<696969>цена сбрасывается после каждого боя
+sell-label,ПРОДАТЬ
+split-label,РАЗДЕЛИТЬ
+search-line-edit,поиск...
+current-battle-label,ТЕКУЩАЯ БИТВА
+turn-1-label,ХОД 1
+normal-battle-label,ОБЫЧНЫЙ БОЙ
+ping-hover-name,Пинг
+ping-hover-description,
+10-label,
+open-button,ОТКРЫТЬ
+loot-stash-hover-name,Тайник добычей
+loot-stash-hover-description,<696969>избыточная добыча идет сюда
+button-button,КНОПКА
+market-items-label,Предметы на рынке
+close-button,ЗАКРЫТЬ
+waiting-for-all-players-to-connect-label,Ждем подключения всех игроков...
+floor-record-x-label,Рекордный этаж: x
+battle-log-button,ЖУРНАЛ БИТВЫ
+battle-log-label,ЖУРНАЛ БИТВЫ
+feedback-button,ОТЗЫВ
+feedback-label,ОТЗЫВ
+confirm-button,ПОДТВЕРДИТЬ
+overview-button,обзор
+speedruns-button,спидраны
+submit-run-button,отправить данные о заходе
+version-label,Версия:
+selection-label,выбор
+highest-floor-10-label,Наивысший этаж: 10
+top-player-label,ЛУЧШИЙ ИГРОК
+time-label,Время
+enter-password-line-edit,введите пароль...
+join-button,ПРИСОЕДИНИТЬСЯ
+password-label,Пароль
+connection-type-label,Тип соединения
+challenge-drop-down-selection,Испытание
+pvp-no-achievements-drop-down-selection,PvP [без достижений]
+practice-no-achievements-drop-down-selection,Практика [без достижений]
+public-label,ПУБЛ.
+--credits--label,- Титры -
+thanks-button,СПАСИБО
+no-tutorial-label,Без обучения
+no-tutorial-info-label-label,Эта игра считает; что обучение должно происходить через|\n|эксперименты и открытия; а не через инструкции.
+proceed-button,ПРОДОЛЖИТЬ
+items-button,предметы
+bestiary-button,бестиарий
+synergies-button,синергии
+passives-button,пассивки
+build-planner-label,План сборки
+delete-label,УДАЛИТЬ
+build-1-label,СБОРКА 1
+blue-team-label,СИНЯЯ КОМАНДА
++-join-label,[+] ПРИСОЕДИНИТЬСЯ
+player-name-label,Имя игрока
+select-adventurer-label,ВЫБРАТЬ ПРИКЛЮЧЕНЦА
+red-team-label,КРАСНАЯ КОМАНДА
+trials-label,ИСПЫТАНИЯ
+configure-button,НАСТРОИТЬ
+0/4-label,0/4
+begin-button,НАЧАТЬ
+begin-label,НАЧАТЬ
+restart-button,НАЧАТЬ ЗАНОВО
+restart-label,НАЧАТЬ ЗАНОВО
+resume-button,ПРОДОЛЖИТЬ
+resume-label,ПРОДОЛЖИТЬ
+options-button,ОПЦИИ
+save-&-exit-button,СОХРАНИТЬ И ВЫЙТИ
+text-label,Текст
+controls-button,управление
+video-button,видео
+audio-button,звук
+misc-button,разное
+primary-action-button,основное действие
+key-label,клавиша
+?-label,
+listening-for-input-label,Ожидание ввода...
+ability-button,способность
+skip-button,пропустить
+refresh-market-button,обновить рынок
+brightness-label,Яркость
+contrast-label,Контраст
+window-mode-label,Режим окна:
+resolution-label,Разрешение:
+v-sync-label,
+music-label,Музыка
+sfx-label,Спецэффекты
+tooltip-lock-time-label,Время загрузки подсказок
+language-label,Язык:
+chromatic-aberration-label,Хроматическая аберрация
+display-run-time-label,Показать время захода
+screen-shake-label,Дрожание экрана
+scan-lines-label,Строки развертки
+reset-to-defaults-button,СБРОС ДО НАСТРОЕК ПО УМОЛЧАНИЮ
+->-label,
+end-button,ЗАКОНЧИТЬ
+enter-endless-button,ВОЙТИ В БЕСКОНЕЧНЫЙ РЕЖИМ
+refresh-merchant-hover-name,ОБНОВИТЬ ТОРГОВЦА
+refresh-merchant-hover-description,<696969>предлагает новые предметы
+upgrade-label,УЛУЧШИТЬ
+-button,
+stance-hover-name,Стойка
+activate-endless-button,АКТИВИРОВАТЬ БЕСКОНЕЧНЫЙ РЕЖИМ
+refresh-mystic-trader-hover-name,ОБНОВИТЬ МИСТИЧЕСКОГО ТОРГОВЦА
+refresh-mystic-trader-hover-description,<696969>создаёт новые предметы
+0/3-label,
+request-to-dismantle-button,ЗАПРОС НА РАЗБОРКУ
+dismantle-button,РАЗОБРАТЬ
+windowed-window-mode-name,В окне
+borderless-window-mode-name,Без рамки
+fullscreen-window-mode-name,Весь экран
+challenge-game-mode-name,Испытание
+pvp-game-mode-name,PvP
+practice-game-mode-name,Практика
+-popup,
+counter-attack!-popup,Контрудар!
+lucky-attack-popup,Удачная атака
+armor-break!-popup,Разрушение брони!
+backstabbed-popup,Удар в спину
+dodged-popup,Избегание
+parried-popup,Парирование
+blocked-popup,Блок
+missed-popup,Пропущено
+helmet-socket-name,Шлем
+chestplate-socket-name,Нагрудник
+leggings-socket-name,Поножи
+boots-socket-name,Ботинки
+necklace-socket-name,Ожерелье
+weapon-socket-name,Оружие
+ring-socket-name,Кольцо
+zefrot-item-name,Зефрот
+totem-of-greed-item-name,Тотем жадности
+steak-item-name,Стейк
+ribbon-of-fortune-item-name,Лента удачи
+poor-mans-path-item-name,Путь бедного
+pallac-item-name,Паллак
+merchant-upgrade-item-name,Улучшение торговца
+frokt-item-name,Фрокт
+poor-mans-blade-item-name,Клинок бедняка
+wooden-shoes-item-name,Деревянные ботинки
+natures-gift-item-name,Дар природы
+magical-stick-item-name,Волшебная ветка
+training-hammer-item-name,Тренировочный молот
+natures-collar-item-name,Ожерелье природы
+poor-mans-helmet-item-name,Шлем бедняка
+training-axe-item-name,Тренировочный топор
+wooden-plates-item-name,Деревянный нагрудник
+leather-boots-item-name,Кожаные ботинки
+leather-helmet-item-name,Кожаный шлем
+leather-pants-item-name,Кожаные штаны
+leather-chestplate-item-name,Кожаный нагрудник
+training-sword-item-name,Тренировочный меч
+insightus-item-name,Инсайтус
+amulet-of-life-item-name,Амулет жизни
+starborn-ring-item-name,Кольцо новой звезды
+recruits-boots-item-name,Ботинки новобранца
+keepsake-item-name,Талисман
+recruits-hood-item-name,Капюшон новобранца
+iron-dagger-item-name,Железный кинжал
+hunters-boots-item-name,Ботинки охотника
+hunters-hood-item-name,Капюшон охотника
+recruits-pants-item-name,Штаны новобранца
+chainmail-item-name,Кольчуга
+hunters-necklace-item-name,Ожерелье охотника
+hunters-pants-item-name,Штаны охотника
+recruits-cloak-item-name,Плащ новобранца
+hunters-ring-item-name,Кольцо охотника
+hunters-jerkin-item-name,Куртка охотника
+crystal-staff-item-name,Хрустальный посох
+vitality-ring-item-name,Кольцо выносливости
+ring-of-anger-item-name,Кольцо гнева
+zephyrons-tome-item-name,Фолиант Зефирона
+silver-ring-item-name,Серебряное кольцо
+marauders-helmet-item-name,Шлем мародера
+silver-sabatons-item-name,Серебряные сабатоны
+silver-helmet-item-name,Серебряный шлем
+life-seeker-item-name,Искатель жизни
+silver-leggings-item-name,Серебряные поножи
+zephyrons-magical-shoes-item-name,Волшебные ботинки Зефирона
+silver-chestplate-item-name,Серебряный нагрудник
+zephyrons-eye-item-name,Око Зефирона
+bastolics-guardian-item-name,Страж Бастолика
+silver-sword-item-name,Серебряный меч
+zephyrons-magical-ring-item-name,Волшебное кольцо Зефирона
+bastolics-gauntlet-item-name,Рукавица Бастолика
+zephyrons-magical-cloak-item-name,Волшебный плащ Зефирона
+zephyrons-magical-cap-item-name,Волшебная шляпа Зефирона
+zephyrons-magical-staff-item-name,Магический посох Зефирона
+believers-locket-item-name,Медальон ревнителя
+silver-axe-item-name,Серебряный топор
+tome-of-arcanum-item-name,Фолиант Арканума
+arcanum-hood-item-name,Капюшон Тайны
+golden-dagger-item-name,Золотой кинжал
+golden-sabatons-item-name,Золотые сабатоны
+golden-helmet-item-name,Золотой шлем
+arcanum-shoes-item-name,Ботинки Арканума
+golden-leggings-item-name,Золотые поножи
+arcanum-robe-item-name,Мантия Арканума
+golden-chestplate-item-name,Золотой нагрудник
+precious-ring-item-name,Драгоценное кольцо
+magic-wand-item-name,Волшебная палочка
+golden-crown-item-name,Золотая корона
+golden-warden-item-name,Золотой страж
+greeds-grasp-item-name,Алчная хватка
+golden-sword-item-name,Золотой меч
+omni-ring-item-name,Всекольцо
+darkwood-plates-item-name,Броня из темного дерева
+tome-of-attacks-item-name,Фолиант Атак
+warriors-sabatons-item-name,Сабатоны воина
+hunger-blade-item-name,Клинок голода
+warriors-helmet-item-name,Шлем воина
+famished-blade-item-name,Клинок истощения
+unchained-gauntlet-item-name,Перчатки освобождения
+blackthorn-sabatons-item-name,Терновые сабатоны
+warriors-leggings-item-name,Поножи воина
+blackthorn-leggings-item-name,Терновые поножи
+warriors-chestplate-item-name,Нагрудник воина
+warriors-war-hammer-item-name,Боевой молот воина
+blackthorn-chestplate-item-name,Терновый нагрудник
+unchained-ring-item-name,Кольцо освобождения
+hy-sword-item-name,Гипермеч
+pantaloons-of-greatness-item-name,Кальсоны величия
+warriors-ring-item-name,Кольцо воина
+blackthorn-crown-item-name,Терновая корона
+orions-core-item-name,Ядро Ориона
+orions-path-item-name,Путь Ориона
+orions-destiny-item-name,Судьба Ориона
+orions-leggings-item-name,Поножи Ориона
+orions-sanguine-salvation-item-name,Багровое спасение Ориона
+orions-heart-item-name,Сердце Ориона
+orions-rage-item-name,Ярость Ориона
+living-boots-item-name,Живые ботинки
+living-helmet-item-name,Живой шлем
+living-leggings-item-name,Живые поножи
+living-chestplate-item-name,Живой нагрудник
+berserkers-axe-item-name,Топор берсерка
+berserkers-helmet-item-name,Шлем берсерка
+eldrids-ring-item-name,Кольцо Элдрида
+ring-of-power-item-name,Кольцо силы
+silver-heart-item-name,Серебряное сердце
+thunderiders-item-name,Громовсадники
+thunderhelm-item-name,Громошлем
+royal-sabatons-item-name,Королевские сабатоны
+royal-helmet-item-name,Королевский шлем
+royal-leggings-item-name,Королевские поножи
+thunderstriders-item-name,Громостранники
+royal-chestplate-item-name,Королевский нагрудник
+thundergrace-item-name,Громомилость
+thunderblade-item-name,Громоклинок
+thundervow-item-name,Громоклятва
+iron-eater-item-name,Пожиратель железа
+tome-of-darkness-item-name,Фолиант тьмы
+witherscar-item-name,Губительный шрам
+dark-magical-ring-item-name,Кольцо темной магии
+nighthorn-item-name,Шип ночи
+ashcrow-item-name,Пепрок
+dark-harness-item-name,Темная портупея
+alchemists-wisdom-item-name,Мудрость алхимика
+shadow-wisdom-item-name,Мудрость тени
+shadow-ring-item-name,Кольцо тени
+shadow-piercer-item-name,Пронзатель тени
+demonic-sabatons-item-name,Демонические сабатоны
+shadow-cloak-item-name,Плащ тени
+shadow-echo-item-name,Эхо тени
+demonic-helmet-item-name,Демонический шлем
+demonic-axe-item-name,Демонический топор
+shadow-sentence-item-name,Приговор тени
+shadow-vortex-item-name,Вихрь тени
+demonic-leggings-item-name,Демонические поножи
+demonic-claymore-item-name,Демонический палаш
+demonic-chestplate-item-name,Демонический нагрудник
+demonic-ring-item-name,Демоническое кольцо
+shard-of-power-item-name,Осколок силы
+emperors-will-item-name,Воля императора
+wooden-crown-item-name,Деревянная корона
+witchcraft-leggings-item-name,Поножи колдовства
+cursed-ring-item-name,Проклятое кольцо
+cursed-necklace-item-name,Проклятое ожерелье
+mask-of-the-cursed-item-name,Маска проклятых
+blade-of-the-ruined-item-name,Погиблый клинок
+lightning-boots-item-name,Молниеносные ботинки
+shamans-robe-item-name,Мантия шамана
+turtle-sabatons-item-name,Черепаховые сабатоны
+turtle-leggings-item-name,Черепаховые поножи
+cowards-ring-item-name,Кольцо труса
+soul-collector-item-name,Собиратель душ
+heart-of-gold-item-name,Добросердие
+turtle-chestplate-item-name,Черепаховый нагрудник
+elemental-necklace-item-name,Стихийное ожерелье
+giants-ring-item-name,Кольцо великана
+black-oath-item-name,Черная клятва
+turtle-gauntlet-item-name,Черепаховые перчатки
+gloom-item-name,Мрак
+qolk-item-name,Кволк
+blake-item-name,Прошивные ботинки
+vampiric-helmet-item-name,Вампирский шлем
+vampiric-chestplate-item-name,Вампирский нагрудник
+glimmer-item-name,Мерцание
+vurk-item-name,Вурк
+bloodedge-item-name,Кровавое лезвие
+ethercrests-tome-item-name,Фолиант Этеркреста
+ethercrests-sabatons-item-name,Сабатоны Этеркреста
+ethercrests-blade-item-name,Клинок Этеркреста
+ethercrests-helmet-item-name,Шлем Этеркреста
+ethercrests-staff-item-name,Посох Этеркреста
+ethercrests-sword-item-name,Меч Этеркреста
+ethercrests-leggings-item-name,Поножи Этеркреста
+ethercrests-chestplate-item-name,Нагрудник Этеркреста
+ethercrests-ring-item-name,Кольцо Этеркреста
+mask-of-cataclysm-item-name,Маска бедствия
+ring-of-interest-item-name,Кольцо интереса
+rod-of-doom-item-name,Жезл рока
+shadow-whisper-item-name,Шепот тени
+magma-sabatons-item-name,Лавовые сабатоны
+magma-helmet-item-name,Лавовый шлем
+magma-leggings-item-name,Лавовые поножи
+magma-chestplate-item-name,Лавовый нагрудник
+magma-necklace-item-name,Лавовое ожерелье
+magma-poleaxe-item-name,Лавовая секира
+ring-of-ice-item-name,Кольцо льда
+jesters-bone-mask-item-name,Костяная маска шута
+celestial-sabatons-item-name,Небесные сабатоны
+celestial-helmet-item-name,Небесный шлем
+celestial-leggings-item-name,Небесные поножи
+celestial-chestplate-item-name,Небесный нагрудник
+throngler-item-name,Губитель
+dawnbringer-item-name,Меч Рассвета
+ring-of-unity-item-name,Кольцо единства
+excalibur-item-name,Экскалибур
+ribbon-of-fortune-item-description,<696969>+25% шанс получить дополнительный предмет при|\n|<696969>открытии сундука
+merchant-upgrade-item-description,Открывает |[tinker]|
+bloodedge-item-description,<696969>становился сильнее с каждым убийством
+excalibur-item-description,<696969>дар озера
+bat-enemy-name,Летучая мышь
+leafing-enemy-name,Листовик
+fronk-enemy-name,Кванк
+boar-enemy-name,Кабан
+snow-pix-enemy-name,Снегоискр
+pebbling-enemy-name,Каменек
+slime-enemy-name,Слизь
+rat-enemy-name,Крыса
+goblin-enemy-name,Гоблин
+skeleton-warrior-enemy-name,Скелет-воин
+shadow-wizard-enemy-name,Волшебник тени
+jellyrak-enemy-name,Медузла
+efis-enemy-name,Эфис
+rogue-enemy-name,Разбойник
+slorn-enemy-name,Слорн
+armored-goblin-enemy-name,Стойкий гоблин
+stone-golem-enemy-name,Каменный голем
+witch-enemy-name,Ведьма
+wizard-skeleton-enemy-name,Скелет волшебника
+giant-spider-enemy-name,Гигантский паук
+blood-ghoul-enemy-name,Кровавый упырь
+armored-spirit-enemy-name,Стойкий дух
+red-orc-enemy-name,Алый орк
+snow-wraith-enemy-name,Снежный призрак
+venomous-spider-enemy-name,Ядовитый паук
+harpy-enemy-name,Гарпия
+bravura-enemy-name,Бравура
+fire-dragon-enemy-name,Огненный дракон
+void-squid-enemy-name,Спрут пустоты
+brother-enemy-name,Брат
+shadow-ghost-enemy-name,Призрак тени
+kotya-enemy-name,Котия
+magma-golem-enemy-name,Лавовый голем
+overseer-enemy-name,Надсмотрщик
+braskap-enemy-name,Браскап
+cloud-dragon-enemy-name,Облачный дракон
+ruined-king-enemy-name,Погибший король
+blinded-priest-enemy-name,Слепой жрец
+morizon-enemy-name,Моризон
+moon-enemy-name,Луна
+cursed-abomination-enemy-name,Проклятое порождение
+mars-enemy-name,Марс
+pinto-enemy-name,Пинто
+neptune-enemy-name,Нептун
+thunder-dragon-enemy-name,Громовой дракон
+eldrids-flesh-enemy-name,Плоть Элдрида
+golden-guardian-enemy-name,Золотой страж
+venus-enemy-name,Венера
+jupiter-enemy-name,Юпитер
+saturn-enemy-name,Сатурн
+uranus-enemy-name,Уран
+sun-enemy-name,Солнце
+iron-golem-enemy-name,Железный голем
+windwatcher-enemy-name,Ветрострaж
+graven-enemy-name,Грейвен
+death-enemy-name,Смерть
+perfect-slave-enemy-name,Идеальный раб
+common-chest-enemy-name,Обычный сундук
+golden-chest-enemy-name,Золотой сундук
+heart-of-the-tower-enemy-name,Сердце Башни
+merchant-enemy-name,Торговец
+mystic-bison-enemy-name,Мистический Бизон
+mystic-trader-enemy-name,Мистический Торговец
+training-dummy-enemy-name,Тренировочный манекен
+ancient-ice-item-set-name,Древний лед
+ancient-shell-item-set-name,Древний панцирь
+arcanum-item-set-name,Арканум
+bastolic-item-set-name,Бастолик
+berserker-item-set-name,Берсерк
+blackthorn-item-set-name,Терновник
+cataclysm-item-set-name,Бедствие
+celestial-item-set-name,Небосвод
+chromalure-item-set-name,Хромохворь
+consumable-item-set-name,Расходуемое
+cursed-item-set-name,Проклятие
+darkness-item-set-name,Тьма
+demonic-item-set-name,Демон
+essential-item-set-name,Первооснова
+flesh-item-set-name,Плоть
+generic-item-set-name,Простота
+golden-item-set-name,Золото
+hunter-item-set-name,Охотник
+jade-item-set-name,Нефрит
+legacy-item-set-name,Наследие
+magma-item-set-name,Лава
+mercenary-item-set-name,Наемник
+orion-item-set-name,Орион
+phantom-item-set-name,Призрак
+poverty-item-set-name,Бедность
+reforge-item-set-name,Перековка
+royal-item-set-name,Монарх
+scout-item-set-name,Разведчик
+shadow-item-set-name,Тень
+silver-item-set-name,Серебро
+swiftness-item-set-name,Быстрота
+thunder-item-set-name,Гром
+tome-item-set-name,Фолиант
+unchained-item-set-name,Освобождение
+vampiric-item-set-name,Вампиризм
+warrior-item-set-name,Воин
+wood-item-set-name,Дерево
+zephyron-item-set-name,Зефирон
+beastbound-specialization-name,Зверосвяз
+bloodcaster-specialization-name,Заклинатель крови
+vampiercer-specialization-name,Вампронзатель
+venomire-specialization-name,Ядомпир
+bloodmoon-specialization-name,Кровавая Луна
+moonlighter-specialization-name,Лунный Скиталец
+nighthrust-specialization-name,Ночной Натиск
+challenger-specialization-name,Дуэлянт
+chromaguard-specialization-name,Хромостраж
+chromaspite-specialization-name,Хромозлость
+chromathorn-specialization-name,Хромошип
+cinderthorn-specialization-name,Пеплошип
+mindthorn-specialization-name,Умошип
+thornfrost-specialization-name,Хладошип
+dauntless-specialization-name,Удалец
+quickblade-specialization-name,Быстрый клинок
+rampager-specialization-name,Ратник
+thunderborn-specialization-name,Громорождённый
+debilitator-specialization-name,Изнуритель
+mindbreaker-specialization-name,Умопомрачитель
+deserter-specialization-name,Перебежчик
+faithbound-specialization-name,Догматик
+echomancer-specialization-name,Эхомант
+evadium-specialization-name,Избегатиум
+invulnerium-specialization-name,Неуязвимиум
+stunium-specialization-name,Оглушитиум
+harbinger-specialization-name,Вестник
+lionheart-specialization-name,Львиное сердце
+pursuer-specialization-name,Преследователь
+striker-specialization-name,Боец
+windwalker-specialization-name,Ветроход
+accuracy-stat-name,Точность
+active-armor-stat-name,Активная броня
+adaptive-attack-stat-name,Адаптивная атака
+agility-stat-name,Ловкость
+armor-stat-name,Броня
+armor-damage-stat-name,Урон броней
+armor-shields-stat-name,Броневые Щиты
+armor-steal-stat-name,Кража брони
+armored-attack-stat-name,Атака броней
+blackrot-damage-stat-name,Урон черногнилью
+bleed-damage-stat-name,Урон от Кровотечения
+cinder-damage-stat-name,Урон испепелением
+combat-stat-name,Борьба
+crit-chance-stat-name,Шанс крита
+critical-damage-stat-name,Критический урон
+dazzle-stat-name,Ослепление
+dazzle-damage-stat-name,Урон ослеплением
+diamond-stat-name,Алмаз
+eldership-stat-name,Старшинство
+electric-damage-stat-name,Урон электричеством
+electricity-stat-name,Электричество
+elemental-power-stat-name,Сила стихий
+elemental-resistance-stat-name,Стихийное сопротивление
+energy-stat-name,Энергия
+faith-stat-name,Вера
+flow-stat-name,Поток
+freeze-attack-stat-name,Атака морозом
+freeze-damage-stat-name,Урон морозом
+gold-stat-name,Золото
+gold-on-kill-stat-name,Золото при убийстве
+greed-stat-name,Алчность
+health-stat-name,Здоровье
+lethality-stat-name,Смертельность
+life-steal-stat-name,Вампиризм
+luck-stat-name,Удача
+magic-attack-stat-name,Магическая атака
+magic-damage-stat-name,Магический урон
+malice-stat-name,Коварство
+malice-damage-stat-name,Урон коварством
+mana-stat-name,Мана
+max-health-stat-name,Макс. здоровье
+max-mana-stat-name,Макс. мана
+omni-crit-chance-stat-name,Шанс всекрита
+omni-vamp-stat-name,Всевампиризм
+penetration-stat-name,Пронзание
+physical-attack-stat-name,Физическая атака
+physical-damage-stat-name,Физический урон
+poison-damage-stat-name,Урон ядом
+power-stat-name,Сила
+random-stat-stat-name,Случайная характеристика
+recovery-stat-name,Исцеление
+spelldom-stat-name,Маговласть
+tenacity-stat-name,Стойкость
+total-attacks-stat-name,Число атак
+toughness-stat-name,Выносливость
+toxicity-stat-name,Ядовитость
+true-damage-stat-name,Чистый урон
+wisdom-stat-name,Мудрость
+enervation-status-effect-name,Истощение
+enervated-status-effect-application-message,Истощение
+weakness-status-effect-name,Слабость
+weakened-status-effect-application-message,Ослабление
+black-curse-status-effect-name,Черное проклятие
+cursed-status-effect-application-message,Проклятие
+curse-status-effect-name,Проклятие
+stun-status-effect-name,Оглушение
+stunned-status-effect-application-message,Оглушение
+slowness-status-effect-name,Замедление
+slowed-status-effect-application-message,Замедление
+confusion-status-effect-name,Ошеломление
+confused-status-effect-application-message,Ошеломление
+silence-status-effect-name,Безмолвие
+silenced-status-effect-application-message,Безмолвие
+toxic-transmute-status-effect-name,Токсическое превращение
+poison-status-effect-name,Яд
+poisoned-status-effect-application-message,Отравление
+bleed-status-effect-name,Кровотечение
+sparkle-status-effect-name,Искра
+sparkle-status-effect-application-message,Искра
+magic-shield-status-effect-name,Волшебный щит
+ephemeral-armor-status-effect-name,Эфемерная броня
+ephemeral-shell-status-effect-name,Эфемерный панцирь
+electro-charge-status-effect-name,Электрозаряд
+ephemeral-lock-status-effect-name,Эфемерный замок
+exhaustion-status-effect-name,Истощение
+malice-shield-status-effect-name,Щит коварства
+armor-shield-status-effect-name,Щит брони
+freeze-status-effect-name,Мороз
+frozen-status-effect-application-message,Заморозка
+fear-status-effect-name,Страх
+invulnerability-status-effect-name,Неуязвимость
+inherited-sin-status-effect-name,Первородный грех
+arthurs-mark-status-effect-name,Метка Артура
+timeout-status-effect-name,Передышка
+cinder-essence-status-effect-name,Испепеляющая сущность
+combat-insight-status-effect-name,Боевая проницательность
+magic-blitz-status-effect-name,Волшебный налет
+magic-blitz-status-effect-application-message,Волшебный налет
+omni-blitz-status-effect-name,Всеналет
+omni-blitz-status-effect-application-message,Всеналет
+vimblow-status-effect-name,Напористый удар
+dread-status-effect-name,Ужас
+fury-status-effect-name,Неистовство
+fury-status-effect-application-message,Неистовство
+counter-attack-charge-status-effect-name,Заряд контратаки
+multi-attack-charge-status-effect-name,Заряд массовой атаки
+stun-attack-charge-status-effect-name,Заряд оглушающей атаки
+debuff-immunity-status-effect-name,Иммунитет к отрицательным эффектам
+golden-heart-status-effect-name,Золотое сердце
+golden-lock-status-effect-name,Золотой замок
+lethality-status-effect-name,Смертоносность
+madness-status-effect-name,Безумие
+focused-status-effect-name,Концентрация
+blindness-status-effect-name,Слепота
+clarity-status-effect-name,Ясность
+elusive-status-effect-name,Неуловимый
+purification-status-effect-name,Освящение
+grace-status-effect-name,Благодать
+curse-of-the-tower-status-effect-name,Проклятие башни
+blue-team-status-effect-name,Синяя команда
+red-team-status-effect-name,Красная команда
+unavoidable-keyword-name,Неотвратимость
+anti-steal-keyword-name,Антикража
+attack-damage-keyword-name,Урон от атаки
+execute-keyword-name,Казнь
+ascend-keyword-name,Вознесение
+tinker-keyword-name,Кузнец-умелец
+heal-keyword-name,Лечение
+tier-i-reward-keyword-name,Награда I уровня
+critical-strike-battle-action-name,Критический удар
+counter-attack-battle-action-name,Контрудар
+multi-attack-battle-action-name,Массовая атака
+lucky-attack-battle-action-name,Удачная атака
+armor-break-battle-action-name,Разрушение брони
+omni-crit-battle-action-name,Всекрит
+polymorph-battle-action-name,Превращение
+immolate-battle-action-name,Сожжение
+backstab-battle-action-name,Удар в спину
+cleanse-battle-action-name,Очищение
+dodge-battle-action-name,Избегание
+parry-battle-action-name,Парирование
+block-battle-action-name,Блок
+guard-battle-action-name,Защита
+miss-battle-action-name,Промах
+hit-battle-action-name,Попадание
+arcane-roulette-ability-name,Магическая рулетка
+astral-dissolution-ability-name,Астральное освобождение
+barrier-ability-name,Барьер
+bloodlust-aura-ability-name,Аура кровожадности
+burden-of-power-ability-name,Бремя власти
+confusion-strike-ability-name,Ошеломляющий удар
+death-strike-ability-name,Смертельный удар
+drain-react-ability-name,Дрейн Реакт
+drop-of-chaos-ability-name,Капля хаоса
+enchanted-attack-ability-name,Зачарованная атака
+fear-of-faith-ability-name,Страх веры
+frozen-strike-ability-name,Морозный удар
+frozen-wind-ability-name,Морозный ветер
+galefire-ability-name,Огненный шторм
+harness-ability-name,Обуздание
+headbutt-ability-name,Удар головой
+heart-of-iron-ability-name,Железное Сердце
+iron-will-ability-name,Железная Воля
+mana-regen-ability-name,Восстановление маны
+mind-control-ability-name,Контроль разума
+multi-cleanse-ability-name,Массовое очищение
+multi-heal-ability-name,Массовое лечение
+multi-magic-shield-ability-name,Массовый волшебный щит
+multi-shield-ability-name,Массовый щит
+multi-stun-ability-name,Множественное Оглушение
+my-justice-ability-name,Моя Справедливость
+my-way-ability-name,Мой Путь
+normal-attack-ability-name,Обычная Атака
+noxious-empowerment-ability-name,Тлетворное усиление
+persistent-payback-ability-name,Постоянная расплата
+prowlers-strike-ability-name,Удар Скитальца
+purify-ability-name,Избавление
+replay-ability-name,Повтор
+repulse-ability-name,Отпор
+safeguard-ability-name,Предосторожность
+shatter-strike-ability-name,Сокрушительный удар
+silhouette-ability-name,Силуэт
+spell-bind-ability-name,Связующие чары
+steady-grip-ability-name,Крепкая Хватка
+steal-ability-name,Кража
+stun-attack-ability-name,Оглушающая атака
+stun-strike-ability-name,Оглушающий удар
+toxic-attack-ability-name,Ядовитая атака
+triple-attack-ability-name,Тройная атака
+venom-spit-ability-name,Ядовитый плевок
+absolution-passive-name,Превосходство
+all-is-mine-passive-name,Все мое
+arcane-control-passive-name,Магический Контроль
+arcane-equilibrium-passive-name,Магическое равновесие
+battleborn-passive-name,Боерожденный
+battleforged-heart-passive-name,Закаленное в бою сердце
+beyond-the-grave-passive-name,По ту сторону могилы
+bloodedges-blood-slash-passive-name,Кровавый разрез Кровавого лезвия
+cinder-touch-passive-name,Испепеляющее касание
+combat-instinct-passive-name,Боевой инстинкт
+consuming-darkness-passive-name,Поглощение тьмы
+crimson-pact-passive-name,Алый пакт
+critical-focus-passive-name,Критический фокус
+crystal-hardening-passive-name,Кристаллизация
+crystal-insight-passive-name,Кристальное прозрение
+cursed-chain-passive-name,Проклятая цепь
+edens-wish-passive-name,Мечта о рае
+edge-of-death-passive-name,Острие смерти
+edge-of-the-ruined-passive-name,Острие погибели
+eldrids-fury-passive-name,Неистовство Элдрида
+empty-bastion-passive-name,Пустой бастион
+emulator-passive-name,Эмулятор
+escape-passive-name,Побег
+evil-mark-passive-name,Зловещая метка
+exploited-opportunity-passive-name,Использованный шанс
+faded-discipline-passive-name,Угасшая дисциплина
+faultbreaker-passive-name,Разрушительный изъян
+fear-of-pain-passive-name,Страх Боли
+folly-of-kings-passive-name,Безумие королей
+freedom-drive-passive-name,Стремление к свободе
+frozen-heart-passive-name,Ледяное сердце
+golden-altruism-passive-name,Золотое бескорыстие
+growing-anger-passive-name,Растущий гнев
+iron-pact-passive-name,Железный пакт
+ironclad-passive-name,Железное тело
+judgments-call-passive-name,Зов кары
+liberation-passive-name,Свобода
+litany-of-malice-passive-name,Литания коварства
+luminous-trial-passive-name,Светлое Испытание
+magic-flux-passive-name,Магический Поток
+magical-frostflare-passive-name,Вспышка морозной магии
+mana-steal-passive-name,Кража маны
+manaflow-passive-name,Поток маны
+mimicry-passive-name,Имитация
+plated-rot-passive-name,Латная гниль
+potential-seeker-passive-name,Искатель возможностей
+prime-guard-passive-name,Главный страж
+shaded-essence-passive-name,Темная сущность
+shattered-breath-passive-name,Разбитое дыхание
+shatterwave-passive-name,Сокрушительная волна
+spell-block-passive-name,Блок заклинаний
+spirit-of-the-unbroken-passive-name,Дух несломленных
+strike-of-destiny-passive-name,Удар судьбы
+thunderstrike-passive-name,Громовой удар
+toxic-redemption-passive-name,Токсическое искупление
+toxshield-passive-name,Токсщит
+undead-blessing-passive-name,Мертвое благословение
+undying-curse-passive-name,Неугасающее проклятие
+vengeful-edge-passive-name,Мстительный клинок
+warriors-resolute-passive-name,Решимость воина
+whispers-of-anger-passive-name,Шёпот Гнева
+wind’s-grace-passive-name,Благодать Ветра
+wrath-of-the-broken-flesh-passive-name,Гнев истерзанной плоти
+honor-trial-name,Честь
+resilience-trial-name,Стойкость
+swarm-trial-name,Рой
+confrontation-trial-name,Противостояние
+sagacity-trial-name,Проницательность
+common-rarity-name,ОБЫЧН.
+uncommon-rarity-name,НЕОБЫЧН.
+rare-rarity-name,РЕДК.
+legendary-rarity-name,ЛЕГЕНД.
+mythic-rarity-name,МИФИЧ.
+eternal-rarity-name,ВЕЧН.
+abyssal-rarity-name,ГЛУБИН.
+cosmic-rarity-name,КОСМИЧ.
+divine-rarity-name,БОЖЕСТВ.
+fren-adventurer-name,Френ
+pyry-adventurer-name,Пири
+sid-adventurer-name,Сид
+elys-adventurer-name,Элис
+fael-adventurer-name,Фэйль
+tyr-adventurer-name,Тир
+viran-adventurer-name,Виран
+kinno-adventurer-name,Кинно
+riel-adventurer-name,Риэль
+amon-adventurer-name,Амон
+jace-adventurer-name,Джейс
+buff-status-effect-type-name,Положительный эффект
+debuff-status-effect-type-name,Отрицательный эффект
+penalty-status-effect-type-name,Штраф
+neutral-status-effect-type-name,Нейтральный эффект
+blessing-status-effect-type-name,Благословение
+accuracy-stat-description,Определяет шанс попадания по цели
+active-armor-stat-description,Оставшаяся |[armor]
+adaptive-attack-stat-description,Повышает урон от текущей атаки
+agility-stat-description,<.>| Определяет шанс на |[dodge]|\n|<.>| Снижается характеристикой |[active-armor]
+armor-stat-description,Поглощает урон вместо |[health]|
+armor-shields-stat-description,Количество стаков |[armor-shield]| которые вы получите|\n|в начале боя
+armor-steal-stat-description,Количество для кражи при попадании по цели: |[armor]|\n|<696969>Нельзя украсть больше; чем ваша недостающая |[armor]|
+armored-attack-stat-description,Преобразует % вашей |[active-armor]| в |[armor-damage]| при попадании
+blackrot-damage-stat-description,Не действуют никакие эффекты
+combat-stat-description,Увеличивает исходящий |[physical-damage]| на общую характеристику |[combat]
+crit-chance-stat-description,Шанс на |[critical-strike]
+critical-damage-stat-description,Повышает урон: |[critical-strike]| и |[omni-crit]
+dazzle-stat-description,Число накладываемых на врага зарядов эффекта |[sparkle]| при попадании по нему
+eldership-stat-description,<.>| Увеличивает |[magic-damage]| на сумму |[eldership]|\n|<.>| Увеличивает |[armor]| на сумму |[eldership]
+electricity-stat-description,При попадании накладывает на цель |[electro-charge]|; число зарядов равно значению характеристики |[electricity]|\n|Ближайшие враги получают 25% зарядов
+elemental-power-stat-description,Умножает следующие характеристики: |\n|<.>| |[freeze-attack]|\n|<.>| |[cinder-damage]|\n|<.>| |[electricity]|\n|<.>| |[toxicity]
+elemental-resistance-stat-description,Снижает следующее: |\n|<.>| |[freeze-damage]|\n|<.>| |[cinder-damage]|\n|<.>| |[electric-damage]|\n|<.>| |[toxicity]
+energy-stat-description,Позволяет выполнять действия
+faith-stat-description,<.>| Определяет ваш шанс на |[cleanse]|:|\n|[0@silver]|[*0@silver]| В конце хода|\n|[4@silver]|[*4@silver]| При получении отрицательного эффекта|\n|\n|<.>| Снижается характеристикой |[greed]
+flow-stat-description,Невозможно совершить ход; если |[flow]| ниже 0%
+freeze-attack-stat-description,Наносимый при попадании |[freeze-damage]
+gold-on-kill-stat-description,Повышает |[gold]| за каждое убийство
+greed-stat-description,Умножает полученное золото
+health-stat-description,Лимит получаемого урона; при превышении которого персонаж умирает
+lethality-stat-description,Урон; после которого цель окажется ниже порога: % |[max-health]|\n|и при равенстве значению: % |[lethality]|; активируется |[execute]|.
+life-steal-stat-description,Дает |[heal]| и восполняет |[health]| на % от: нанесенный |[physical-damage]
+luck-stat-description,Ваш шанс выполнить следующее:|\n|[lucky-attack]
+magic-attack-stat-description,Наносимый при попадании атаки |[magic-damage]
+malice-stat-description,Если владельца атакуют; наносит |[malice-damage]|\n|атакующему в размере характеристики |[malice]
+mana-stat-description,Часто необходимый для применения способности ресурс
+max-health-stat-description,Макс. значение; до которого восстанавливается |[health]
+max-mana-stat-description,Макс. значение; до которого восстанавливается |[mana]
+omni-crit-chance-stat-description,Шанс на |[omni-crit]
+omni-vamp-stat-description,Дает |[heal]| и восполняет |[health]| на % нанесенного |урона
+penetration-stat-description,Игнорирует % характеристики |[armor]
+physical-attack-stat-description,Наносимый при попадании атаки |[physical-damage]
+power-stat-description,Умножает любой |[attack-damage]
+recovery-stat-description,Каждый ход |[heal]| восстанавливает потерянное |[health]|\n|в размере характеристики |[recovery]
+spelldom-stat-description,Количество |[magic-blitz]| в первый ход
+tenacity-stat-description,Шанс не получить следующие эффекты: |\n|<.>| |[slowness]|\n|<.>| |[stun]|
+total-attacks-stat-description,Число атак по цели
+toughness-stat-description,Снижает урон; полученный от атак
+toxicity-stat-description,При попадании накладывает |[poison]| (1 заряд) за каждую ед. характеристики |[toxicity]
+wisdom-stat-description,<.>| Увеличивает исходящий |[magic-damage]| на общую |[wisdom]|
+enervation-status-effect-description,Снижает весь урон от атак на 25% за каждый заряд
+weakness-status-effect-description,Снижает урон от всех атак на 25% за заряд
+black-curse-status-effect-description,Снижает все лечение на 75%
+curse-status-effect-description,Снижает все лечение на 75%
+stun-status-effect-description,После применения запрещает действовать на этом ходу
+slowness-status-effect-description,Снижает |[agility]| на 100%
+confusion-status-effect-description,Снижает |[accuracy]| на 100%
+silence-status-effect-description,Запрещает использовать способности
+toxic-transmute-status-effect-description,Каждый раз когда ваше здоровье должно получить урон;|\n|отменяет его; превращает его в |[poison]| и применяет|\n|на себя
+poison-status-effect-description,В конце хода наносит непосредственный урон здоровью
+bleed-status-effect-description,После каждой атаки; наносит урон |[bleed-damage]| по вашему |[health]|.|\n|Урон = (процент (%) стаков: |[bleed]|) * |[max-health]|.|\n|\n|<696969>Каждый ход: -2% |[bleed]|.
+sparkle-status-effect-description,При попадании по цели |[sparkle]| взрывается (все заряды).|\n|Каждый заряд:|\n|\n|- Дает |[ephemeral-armor]| атакующему|\n|- Наносит |[dazzle-damage]| цели|\n
+magic-shield-status-effect-description,Во время действия блокирует любой урон; затем разрушается и|\n|становится неактивен|\n|\n|<696969>(|[magic-damage]|<696969> его не разрушает)
+ephemeral-armor-status-effect-description,Временная |[armor]|; действующая до конца боя|\n|\n|Дает |[ephemeral-lock]| при получении урона
+ephemeral-shell-status-effect-description,Получаемый урон снижается на 12% за заряд
+electro-charge-status-effect-description,Каждый ход наносит владельцу |[electric-damage]|; равный количеству зарядов
+ephemeral-lock-status-effect-description,Запрещает получать эффект |[ephemeral-armor]
+exhaustion-status-effect-description,Ограничивает |[total-attacks]| до 1
+malice-shield-status-effect-description,В следующий раз; когда по вам должны попасть; разрушает 1 щит и|\n|игнорирует урон в размере характеристики |[malice]*|<483a5d>+1
+armor-shield-status-effect-description,В следующий раз; когда по вам должны попасть; разрушает 1 щит и|\n|игнорирует урон в размере характеристики |[armor]*|<6d758d>+1
+freeze-status-effect-description,Получаемый урон от всех источников увеличивается на 25%
+fear-status-effect-description,Запрещает получать положительные эффекты
+invulnerability-status-effect-description,Запрещает получать любой урон
+arthurs-mark-status-effect-description,[block]|; |[parry]| и |[dodge]| запрещается использовать помеченной цели
+timeout-status-effect-description,Запрещает действовать на этом ходу
+cinder-essence-status-effect-description,В начале хода расходуется|\n|[cinder-essence]| (все заряды)|\n|и используется |[immolate]| за каждый из них
+combat-insight-status-effect-description,Если в следующий раз; когда вас должны атаковать;|\n|у вас будет |[combat-insight]| (не менее 5 зарядов);|\n|расходует ее и использует |[parry]
+magic-blitz-status-effect-description,При атаке расходует все заряды и за каждый дает:|\n|[magic-attack]| +100%
+omni-blitz-status-effect-description,При атаке расходует все заряды и за каждый дает:|\n|[physical-attack]| и |[magic-attack]| +100%
+vimblow-status-effect-description,При атаке расходует 1 заряд и дает бонус: |[physical-attack]| +25%|\n|значения характеристики |[max-health]
+dread-status-effect-description,Враги с |[fear]| не будут атаковать вас
+fury-status-effect-description,[physical-attack]| +25% за каждый заряд эффекта |[fury]|\n|<696969>(сброс в конце боя)|\n
+counter-attack-charge-status-effect-description,Бьет атакующего
+multi-attack-charge-status-effect-description,[multi-attack]| в этот ход
+stun-attack-charge-status-effect-description,Все ваши попадания наложат на цель |[stun]|
+debuff-immunity-status-effect-description,Запрещает получать отрицательные эффекты
+golden-heart-status-effect-description,При падении до 0 |[health]|:|\n|<.>| воскресните и |[heal]| на 25% вашего |[max-health]|\n|[3@golden]|<.>| |[*3@golden]| получите |[invulnerability]|
+lethality-status-effect-description,Нанесение урона цели который оставит её ниже % |[max-health]||\n|равного % |[lethality]| |[execute]| её
+madness-status-effect-description,Позволяет атаковать только себя
+blindness-status-effect-description,Снижает вашу |[accuracy]| на 100%
+clarity-status-effect-description,В следующий раз; когда вы должны получить |[stun]|\n|поглотите 1 заряд |[clarity]| и отмените эффект
+elusive-status-effect-description,Все атаки по вам потеряют 100% |[accuracy]|
+purification-status-effect-description,В конце хода расходует 1 заряд и применяет |[cleanse]
+grace-status-effect-description,Повышает весь урон
+curse-of-the-tower-status-effect-description,Каждый ход получайте |[true-damage]|; равный 1% от вашего |[max-health]|\n|<696969>(получается; когда бой длится слишком долго)
+unavoidable-keyword-description,Атака всегда попадает в цель
+anti-steal-keyword-description,Защищает от эффекта |[steal]
+ascend-keyword-description,Начните вознесенный забег с 1-го этажа; получаемый |[diamond]|\nбудет умножен на 2|<696969> (+1 за каждый уровень)|\n|<ff4500>Предметы с этажей 2+ из прошлых забегов будут|\n|<ff4500>удалены
+tinker-keyword-description,Торговец сделает с вашими предметами следующее:|\n|<.>| Превратит перековки и предметы в наборы для умельца|\n|<.>| Улучшит перекованные предметы
+heal-keyword-description,Действие; восполняющее |[health]| персонажа
+tier-i-reward-keyword-description,<.>| |Получите дополнительный |[diamond]| при открытии сундука|\n|<.>| |Начните с +{gold} |[gold]
+critical-strike-battle-action-description,[physical-damage]| |+100% + % характеристики |[critical-damage]
+counter-attack-battle-action-description,Бьет атакующего
+multi-attack-battle-action-description,Атакует всех врагов за один ход
+lucky-attack-battle-action-description,Наносит 25% дополнительного урона
+armor-break-battle-action-description,Разрушает броню цели и снижает ее до 0
+omni-crit-battle-action-description,[physical-damage]| |и |[magic-damage]|\n|+100% + % характеристики |[critical-damage]
+polymorph-battle-action-description,Превращает сильнейшего врага в случайного|\n|и сбрасывает его характеристики
+immolate-battle-action-description,Наносит |[cinder-damage]| в размере 25% характеристики |\n|[max-health]| всем врагам в первом ряду
+backstab-battle-action-description,Удар в спину врагу; наносящий урон от атаки|\n|<.>| | |[max-health]| врага выше 75%: Урон снижен на 45%|\n|<.>| | |[max-health]| врага 75% или ниже: Атака|\n| будет |[critical-strike]| и получит +25% |[accuracy]
+cleanse-battle-action-description,Снимает случайный отрицательный эффект и снижает вашу |[faith]| на 25%|\n|<696969>сбрасывается каждый бой
+dodge-battle-action-description,Позволяет избежать получаемый урон|\n|\n|Каждое ваше |[dodge]|\n|снижает |[agility]| на 25%|\n|\n|<696969>(сброс каждый бой)
+parry-battle-action-description,Отражает урон и эффекты состояния в атакующего|\n|<696969>Если ваши атаки парируют 10 раз; ход заканчивается
+block-battle-action-description,Снижает получаемый урон на 100%
+guard-battle-action-description,Снижает получаемый урон на 25%
+miss-battle-action-description,Атаки не попадают по цели|\n|<696969>После 10 промахов ход заканчивается
+arcane-roulette-ability-description,Каждый раз; когда ломается ваш |[magic-shield]|; атакуется|\n|случайная цель\n|<696969>УСЛОВИЕ АКТИВАЦИИ: активный |[magic-shield]|
+astral-dissolution-ability-description,Снимает все положительные эффекты с цели
+barrier-ability-description,Дает |[magic-shield]
+bloodlust-aura-ability-description,Наложите |[madness]| на всех врагов|\n|<696969>УСЛОВИЕ АКТИВАЦИИ: за один ход |[heal]|<696969> 25%|\n|<696969>ориентир — ваша |[max-health]|<696969>
+burden-of-power-ability-description,В начале хода украдьте 75% урона атаки у всех врагов; на которых есть |[fear]||\n||\n|<696969>УСЛОВИЕ АКТИВАЦИИ: на врага наложено |[fear]|<696969>
+confusion-strike-ability-description,[confusion]| +2 заряда при попадании
+death-strike-ability-description,[crit-chance]| +100%|\n|на этом ходу
+drain-react-ability-description,Наложите на всех врагов 5 ед. |[enervation]||\n|<696969>УСЛОВИЕ АКТИВАЦИИ: получить удар от врага; на котором есть |[poison]|
+drop-of-chaos-ability-description,Накладывает случайный отрицательный эффект на цель
+enchanted-attack-ability-description,Урон от атаки +100% на этом ходу
+fear-of-faith-ability-description,[invulnerability]| +2 заряда
+frozen-strike-ability-description,При попадании накладывает на цель |[weakness]| (3 заряда)
+frozen-wind-ability-description,Накладывает |[weakness]| на цель и атакует ее
+galefire-ability-description,Накладывает |[slowness]| на цель
+headbutt-ability-description,Накладывает |[stun]| на цель при попадании
+heart-of-iron-ability-description,Получите |[armor]|; значение равно: ваша |[health]||\n|<696969>УСЛОВИЕ АКТИВАЦИИ: получить 3 удара|\n|<696969>сбрасывается в каждом бою
+mana-regen-ability-description,Восстанавливается вся потраченная |[mana]
+mind-control-ability-description,Накладывает |[confusion]| на все цели
+multi-cleanse-ability-description,[cleanse]| себя и всех союзников
+multi-heal-ability-description,Восстанавливает 25% здоровья вам и всем союзникам
+multi-magic-shield-ability-description,Дает вам и вашим союзникам |[magic-shield]
+multi-shield-ability-description,Дает вам и вашим союзникам эффект |[ephemeral-armor]|\n|в размере вашей характеристики |[health]
+multi-stun-ability-description,Получите |[multi-attack-charge]| и |[stun-attack-charge]|;|\n|затем атакуйте|\n|<696969>УСЛОВИЕ АКТИВАЦИИ: парировать атаку|\n|<696969>сбрасывается в каждом бою
+my-justice-ability-description,В этот ход получите |[invulnerability]| и |[counter-attack-charge]||\n|<696969>УСЛОВИЕ АКТИВАЦИИ: получена |[invulnerability]|
+my-way-ability-description,В этот ход получите |[counter-attack-charge]||\n|<696969>УСЛОВИЕ АКТИВАЦИИ: атаковать 3 раза
+noxious-empowerment-ability-description,[toxicity]| умножается на 2 на этом ходу
+persistent-payback-ability-description,[counter-attack]| на этом ходу
+prowlers-strike-ability-description,Каждый раз когда вы попадёте по врагу в этот ход; бонус: +{agility-amount}% |[agility]||\n|<696969>УСЛОВИЕ АКТИВАЦИИ: хотя бы один раз |[dodge]|<696969>
+replay-ability-description,Активируйте последнюю скопированную способность|\n|<696969>УСЛОВИЕ АКТИВАЦИИ: скопировать способность
+repulse-ability-description,[parry]| на этом ходу
+safeguard-ability-description,Дает вам и вашим союзникам эффект |[armor]|\n|в размере 25% вашей характеристики |[max-health]
+shatter-strike-ability-description,[armor-break]| при попадании
+silhouette-ability-description,Станьте |[elusive]| и атакуйте|\n|<696969>УСЛОВИЕ АКТИВАЦИИ: |[backstab]|\n|<696969>сбрасывается в каждом бою
+spell-bind-ability-description,Накладывает |[silence]| на цель
+steady-grip-ability-description,В этом бою ваша |[total-attacks]| увеличивается на 1
+steal-ability-description,Крадет у цели |[gold]| в размере 25%
+stun-attack-ability-description,При попадании накладывает |[stun]| на цель
+stun-strike-ability-description,Накладывает |[stun]| на цель при попадании
+toxic-attack-ability-description,При попадании по цели накладывает |[poison]| (1 заряд)
+venom-spit-ability-description,Накладывает на цель |[poison]|\n|Число зарядов равно значению характеристики |[toxicity]
+absolution-passive-description,Каждая ваша атака наносит |[magic-damage]| (5)|\n|случайному врагу
+all-is-mine-passive-description,В начале хода крадет все|\n|положительные эффекты цели
+arcane-control-passive-description,Каждый раз при уклонении: |[magic-shield]| ломается и сразу восполняется
+arcane-equilibrium-passive-description,В конце каждого хода преобразуйте |[invulnerability]| всех|\n|в |[magic-shield]
+battleborn-passive-description,Каждый раз когда вы |[parry]|; эффект на цели: |[stun]|
+battleforged-heart-passive-description,После того как ваша |[armor]| повреждена; преобразуйте|\n|это количество в |[max-health]|\n|<696969>сбрасывается каждый бой
+beyond-the-grave-passive-description,В конце хода; преобразуйте статусные эффекты противников|\n|<.>| |[weakness]| в |[enervation]|\n|<.>| |[curse]| в |[black-curse]
+bloodedges-blood-slash-passive-description,Каждый раз перед атакой преобразуйте 10%|\n|вашей |[health]| в |[physical-attack]|\n|<696969>сбрасывается каждый бой
+cinder-touch-passive-description,[immolate]| при попадании
+combat-instinct-passive-description,Урон от |[parry]| удваивается
+consuming-darkness-passive-description,Когда враг; на котором есть |[fear]| и |[confusion]|; будет убит;|\n|получите все его базовые характеристики |<696969>(сбрасывается в каждом бою)
+crimson-pact-passive-description,Если |[health]| ниже 45%; на всех врагов накладывается|\n|[confusion]|
+critical-focus-passive-description,Ваши атаки |[critical-strike]| или |[omni-crit]|\n|получат +25% к |[accuracy]|
+crystal-hardening-passive-description,0 получаемого урона на первом ходу
+crystal-insight-passive-description,Даёт +100% |[magic-attack]| в первый ход
+cursed-chain-passive-description,Накладывает эффект состояния; как при попадании; даже если атаки|\n|не попадают
+edens-wish-passive-description,В начале каждого хода; случайному союзнику даётся|\n|случайное благословение или бафф
+edge-of-death-passive-description,Ваше |[health]| не может упасть ниже 1 на первом ходу
+edge-of-the-ruined-passive-description,Пока у вас есть |[curse]| или |[black-curse]|:|\n|атаки наносят дополнительный урон; равный|\n|11% от |[health]| цели
+eldrids-fury-passive-description,Каждое ваше лечение дает |[vimblow]| (1 заряд)|\n|<696969>один раз за ход
+empty-bastion-passive-description,Ваш |[armor]| умножается на 8; но в начале|\n|каждого боя ваш |[active-armor]| равен 0.
+emulator-passive-description,Повторно накладывает штрафы в конце хода
+escape-passive-description,Покиньте бой после попытки кражи
+evil-mark-passive-description,В начале хода накладывает |[curse]|\n|на цель
+exploited-opportunity-passive-description,После |[dodge]|; |[stun]| атакующего
+faded-discipline-passive-description,Получите +5 |[total-attacks]|; но ваши первые 5|\n|атак нанесут на 99% меньше урона
+faultbreaker-passive-description,Если после атаки у цели остаётся 75%|\n|[active-armor]| или меньше; |[armor-break]
+fear-of-pain-passive-description,Не атакует цели; получившие урон в этом ходу
+folly-of-kings-passive-description,Получайте случайный эффект состояния каждый ход|\n|и |[polymorph]| каждые 2 хода
+freedom-drive-passive-description,Получите +100% |[tenacity]|; пока у вас есть |[invulnerability]
+golden-altruism-passive-description,Дает всем союзникам |[golden-heart]
+growing-anger-passive-description,Получайте 5% |[crit-chance]| за каждое попадание |<696969>(сбрасывается каждый бой)
+iron-pact-passive-description,Каждый раз; когда ваша |[active-armor]| достигает 0%; потратьте 10%|\n|вашей |[health]| и преобразуйте в |[active-armor]
+ironclad-passive-description,[block]
+judgments-call-passive-description,Ваши атаки накладывают отрицательные эффекты;|\n|которые сняло |[cleanse]| (сброс каждый бой)
+liberation-passive-description,Вся |[armor]| превращается в характеристику |[adaptive-attack]
+litany-of-malice-passive-description,За каждый уникальный статусный эффект на цели; |\n|Нанесите +25% бонусного |[malice-damage]|
+luminous-trial-passive-description,<.>| Накладывает 1 заряд |[blindness]| при входе в бой|<|\n||<.>| Противники получают +25% |[accuracy]| за каждый |[miss]|
+magical-frostflare-passive-description,Получите |[ephemeral-armor]|; равное |[magic-damage]|\n|; нанесенному врагам с |[freeze]
+mana-steal-passive-description,При попадании воруется |[mana]| (1)
+manaflow-passive-description,[max-mana]| становится равна 1
+mimicry-passive-description,Используйте способность цели
+plated-rot-passive-description,Урон по |[armor]|; преобразуется в |[max-health]|
+prime-guard-passive-description,Другие враги получают на 99% меньше урона; пока|\n|владелец пассивного навыка не будет побежден
+shaded-essence-passive-description,[magic-damage]| +375% врагам; на которых наложено |[silence]
+shattered-breath-passive-description,Каждый раз; когда вы |[parry]|; накладывайте |[exhaustion]|\n|на цель
+shatterwave-passive-description,После попадания по врагу наносит 25% вашего|\n|урона от атаки ближайшим врагам
+spell-block-passive-description,В начале хода накладывает |[silence]|\n|на первого врага со способностью
+strike-of-destiny-passive-description,Снимает все положительные эффекты с цели при попадании|\n|если у вас есть |[invulnerability]
+thunderstrike-passive-description,Применяет |[stun]| при ударе если цель имеет |[electro-charge]
+toxic-redemption-passive-description,При убийстве врага; удаляет весь |[poison]| с себя и наносит |[physical-damage]||\n|всем врагам равный количеству удалённого яда
+toxshield-passive-description,Каждый раз; когда в ваш ход наносится |[poison-damage]|;\n|получайте |[ephemeral-armor]| в размере\n|этого значения
+undead-blessing-passive-description,После гибели союзника дает |[purification]|\n|(1 заряд)
+undying-curse-passive-description,При смерти; накладывает |[curse]|\n|на убийцу
+vengeful-edge-passive-description,После применения: ещё одно |[counter-attack]|.
+warriors-resolute-passive-description,Получите |[clarity]| в первые 3 хода
+wind’s-grace-passive-description,Даёт всем союзникам |[swiftness]|
+wrath-of-the-broken-flesh-passive-description,Каждый раз при получении урона здоровью вы получаете заряд |[fury]|
+ancient-ice-item-set-description,[1@ancient-ice]|[*1@ancient-ice]|<.>| Получите |[ephemeral-armor]|; равное |[freeze-damage]|\n|; нанесенному врагам с |[freeze]|\n|\n|<.>| В конце вашего первого хода; наложите |[freeze]| на всех|\n| врагов
+ancient-shell-item-set-description,Если в этот ход использована стойка:|\n|[1@ancient-shell]|[*1@ancient-shell]| |[toughness]| будет снижать любой урон|\n|[3@ancient-shell]|[*3@ancient-shell]| Получите |[ephemeral-shell]| в конце хода|\n|[5@ancient-shell]|[*5@ancient-shell]| Снимает |[ephemeral-lock]| в конце хода
+arcanum-item-set-description,[1@arcanum]|[*1@arcanum]| Пока |[magic-shield]| активен; |<7569f5>+375%|[magic-damage]|\n|[2@arcanum]|[*2@arcanum]| Получите |[magic-shield]| в конце хода|\n|[4@arcanum]|[*4@arcanum]| Получите |[magic-shield]| после убийства врага
+bastolic-item-set-description,[1@bastolic]|[*1@bastolic]| Когда вы наносите |[magic-damage]|; нанесите еще|\n| |({magic_damage})|<7569f5> 5% от вашего макс. здоровья| случайному врагу|\n|\n|[2@bastolic]|[*2@bastolic]| |[magic-damage]|; полученный в первом|\n| ходу; будет преобразован в |[max-health]|\n|<696969> сбрасывается в каждом бою
+berserker-item-set-description,[1@berserker]|[*1@berserker]| Бонус к |[total-attacks]| за недостающее |[health]|:|\n| |<.>| 25% -> +1 |[total-attacks]|\n| |<.>| 50% -> +3 |[total-attacks]|\n| |<.>| 75% -> +6 |[total-attacks]|\n|\n|[2@berserker]|[*2@berserker]| Если |[health]| ниже 25%; |[tenacity]| +100%
+blackthorn-item-set-description,Если по вам попали атакой:|\n|<.>| Наносит атакующему |[magic-damage]| в размере характеристики |[active-armor]*
+cataclysm-item-set-description,Все враги получают |[lethality]| до 45%
+celestial-item-set-description,При получении любого урона он превращается в характеристику |[elemental-power]|\n|<696969>(сброс каждый бой)
+chromalure-item-set-description,[1@chromalure]|[*1@chromalure]| После применения |[poison]|; нанесите |[poison-damage]|; который|\n| равен этому количеству цели|\n|\n|[3@chromalure]|[*3@chromalure]| В начале каждого хода получайте |[toxic-transmute]|[0@chromalure]
+cursed-item-set-description,[1@cursed]|[*1@cursed]| В начале боя; получите |[curse]|\n| и 5 зарядов |[malice-shield]|\n|\n|[3@cursed]|[*3@cursed]| Наносимый вами |[malice-damage]| будет распределен|\n| на всех врагов с |[curse]
+darkness-item-set-description,[1@darkness]|[*1@darkness]| Наложите |[fear]| на всех врагов с меньшим уроном от атаки|\n|; чем у вас; в начале хода|[3@darkness]|\n|[*3@darkness]| После убийства врага; получите 2 стака |[dread]|[4@darkness]|\n|[*4@darkness]| В начале первого хода получите |[madness]|[0@darkness]
+demonic-item-set-description,[1@demonic]|[*1@demonic]| За каждые 25 базового |[max-health]|\n| получите 1% |[physical-attack]|\n|\n|[3@demonic]|[*3@demonic]| Получите |[multi-attack-charge]|\n| в начале первого хода
+flesh-item-set-description,Позволяет |[heal]| сверх вашей |[max-health]|\n|<696969>излишек снимается\n|<696969>в конце хода
+generic-item-set-description,Считается как +1 ко всем активным наборам предметов
+golden-item-set-description,В начале каждого боя дает эффект |[golden-heart]
+hunter-item-set-description,[1@hunter]|[*1@hunter]| Каждый 1% |[crit-chance]| сверх 100% превращается в|\n| 10% |[critical-damage]|\n|[3@hunter]|[*3@hunter]| Невозможно |[dodge]| ваши атаки: |[critical-strike]|
+jade-item-set-description,[sparkle]| (все заряды) будет заново наложена на цель после взрыва
+legacy-item-set-description,<.>| В начале боя получите |[invulnerability]|\n|\n|<.>| В конце вашего первого хода наложите заряд|\n| |[arthurs-mark]| на случайного врага|\n|\n|<.>| Когда враг с |[arthurs-mark]| умирает;|\n| он будет применен к другому врагу
+magma-item-set-description,[cinder-essence]| +1 заряд перед| |\n||началом хода
+mercenary-item-set-description,Если у цели более 90% |[health]|:|\n|[1@mercenary]|[1@mercenary]| Нанесите 25%|<00cd58> +|[luck]| увеличенного урона от атаки|\n|[3@mercenary]|[*3@mercenary]| Получите +1 |[total-attacks]| в этот ход
+orion-item-set-description,[1@orion]|[*1@orion]| Получайте повышенное сопротивление урону по мере падения |[health]|\n|; до 75% сопротивления при 25% |[health]|\n|\n|[3@orion]|[*3@orion]| В конце первых 3 ходов; отремонтируйте 25%|\n| вашей |[armor]|\n|\n|[4@orion]|[*4@orion]| Невозможно |[heal]
+phantom-item-set-description,Нельзя использовать
+poverty-item-set-description,<.>| Если |[health]| ниже 25%; |[crit-chance]| +75%|\n|<.>| Накладывается |[anti-steal]
+royal-item-set-description,Накладывает |[inherited-sin]| на первом ходу|\n|\n|Если |[cleanse]| снимает |[inherited-sin]|; дает|\n|[debuff-immunity]| (5 зарядов)
+scout-item-set-description,[1@scout]|\n|<.>| |[*1@scout]|[dodge]| гарантировано; если у вас есть любое количество |[agility]|[3@scout]|\n|<.>| |[*3@scout]| После 3 |[dodge]|; станьте |[elusive]|[0@scout]
+shadow-item-set-description,[1@shadow]|[*1@shadow]| Каждый раз когда вы избегаете атаки; |[backstab]|\n|[3@shadow]|[*3@shadow]| Избежанный урон в состоянии |[elusive]| засчитывается|\n| как |[adaptive-attack]|<696969> - сбрасывается в каждом бою
+silver-item-set-description,[1@silver]|[*1@silver]| |[cleanse]| гарантировано; если у вас есть любое|\n| количество |[faith]|\n|\n|[3@silver]|[3@silver]| При |[cleanse]| получите |[faith]| |[grace]
+swiftness-item-set-description,Удваивает ваши |[total-attacks]|; но после каждой атаки|\n|теряете 5% |[accuracy]|<696969> сбрасывается каждый ход
+thunder-item-set-description,[1@thunder]|[*1@thunder]|[electric-damage]| имеет 25% + |[luck]*| шанс на |[stun]|\n| во время вашего хода|\n|[3@thunder]|[*3@thunder]| Удваивает длительность |[stun]|; наложенного в ваш ход
+unchained-item-set-description,[1@unchained]|[*1@unchained]| Дебаффы применяются ко всем врагам|\n|[2@unchained]|[*2@unchained]| Вдвое больше дебаффов которые вы накладываете
+vampiric-item-set-description,[1@vampiric]|[*1@vampiric]| При первой атаке на новую цель; накладывает 8% |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| Каждый раз; когда враг получает |[bleed-damage]|; |[heal]|\n| на это значение|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]| будет преобразован в |[power]|\n|<696969> сбрасывается каждый бой
+warrior-item-set-description,[1@warrior]|[*1@warrior]| Каждый раз; когда вы атакуете; получайте |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Когда вас атакуют; получайте |[combat-insight]|[0@warrior]
+wood-item-set-description,[1@wood]|[*1@wood]| +25% |[luck]|\n|[3@wood]|[*3@wood]| +10% |[luck]
+zephyron-item-set-description,[1@zephyron]|<.>| |[*1@zephyron]| Получайте {amount}% |[magic-damage]| каждый ход|<696969> сбрасывается в каждом бою|\n|[2@zephyron]|<.>| |[*2@zephyron]| Нанесенный |[magic-damage]| будет применен к врагам с |[silence]|\n|[4@zephyron]|<.>| |[*4@zephyron]| Первая активированная способность не потребляет |[mana]
+beastbound-specialization-description,[1@hunter]|[*1@hunter]| Каждый 1% |[crit-chance]| сверх 100% превращается в|\n| 10% |[critical-damage]|\n|[3@hunter]|[*3@hunter]| Невозможно |[dodge]| ваши атаки: |[critical-strike]|\n|\n|<.>| |[crit-chance]| влияет на атаки |[parry]|
+bloodcaster-specialization-description,[1@vampiric]|[*1@vampiric]| При первой атаке на новую цель; накладывает 8% |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| Каждый раз; когда враг получает |[bleed-damage]|; |[heal]|\n| на это значение|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]| будет преобразован в |[power]|\n|<696969> сбрасывается каждый бой|\n|\n|Каждый раз; когда вы |[heal]|:|\n|<.>| Наносит |[magic-damage]|; равный количеству;|\n|  которое вы |[heal]|; выбранному врагу
+vampiercer-specialization-description,[1@vampiric]|[*1@vampiric]| При первой атаке на новую цель; накладывает 8% |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| Каждый раз; когда враг получает |[bleed-damage]|; |[heal]|\n| на это значение|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]| будет преобразован в |[power]|\n|<696969> сбрасывается каждый бой|\n|\n|Каждый раз; когда вы |[heal]|:|\n|<.>| Наносит прямой |[physical-damage]|; равный количеству;|\n|  которое вы |[heal]|; выбранному врагу; игнорируя |[armor]
+venomire-specialization-description,[1@vampiric]|[*1@vampiric]| При первой атаке на новую цель; накладывает 8% |[bleed]|\n|\n|[3@vampiric]|[*3@vampiric]| Каждый раз; когда враг получает |[bleed-damage]|; |[heal]|\n| на это значение|\n|\n|[5@vampiric]|[*5@vampiric]| |[bleed-damage]| будет преобразован в |[power]|\n|<696969> сбрасывается каждый бой|\n|\n|Каждый раз; когда вы |[heal]|:|\n|<.>| Накладывает |[poison]| заряды на выбранного врага;|\n|  равные количеству; которое вы |[heal]
+bloodmoon-specialization-description,<.>| Преобразует 200% потерянной |[health]| в |[physical-attack]|\n|<696969> сбрасывается каждый бой|\n|[1@shadow]|[*1@shadow]| Каждый раз когда вы избегаете атаки; |[backstab]|\n|[3@shadow]|[*3@shadow]| Избежанный урон в состоянии |[elusive]| засчитывается|\n| как |[adaptive-attack]|<696969> - сбрасывается в каждом бою
+moonlighter-specialization-description,[1@shadow]|[*1@shadow]| Каждый раз когда вы избегаете атаки; |[backstab]|\n|[3@shadow]|[*3@shadow]| Избежанный урон в состоянии |[elusive]| засчитывается|\n| как |[adaptive-attack]|<696969> - сбрасывается в каждом бою
+nighthrust-specialization-description,[1@shadow]|[*1@shadow]| Каждый раз когда вы избегаете атаки; |[backstab]|\n|[3@shadow]|[*3@shadow]| Избежанный урон в состоянии |[elusive]| засчитывается|\n| как |[adaptive-attack]|<696969> - сбрасывается в каждом бою|\n|<.>| Получите урон от атаки; избежанной с помощью |[dodge]|\n|<696969> сбрасывается каждый бой
+challenger-specialization-description,[1@demonic]|[*1@demonic]| За каждые 25 базового |[max-health]|\n| получите 1% |[physical-attack]|\n|\n|[3@demonic]|[*3@demonic]| Получите |[multi-attack-charge]|\n| в начале первого хода|\n|\n|<.>| 45% урона; нанесенного врагу|\n| с |[arthurs-mark]|;|\n| распространится на соседних врагов
+chromaguard-specialization-description,[1@chromalure]|[*1@chromalure]| После применения |[poison]|; нанесите |[poison-damage]|; который|\n| равен этому количеству цели|\n|\n|[3@chromalure]|[*3@chromalure]| В начале каждого хода получайте |[toxic-transmute]|[0@chromalure]
+chromaspite-specialization-description,[1@chromalure]|[1@chromalure]| После применения |[poison]|; нанесите |[poison-damage]|; который|\n| равен этому количеству цели|\n|\n|[3@chromalure]|[3@chromalure]| В начале каждого хода получайте |[toxic-transmute]|[0@chromalure]|\n|\n|<.>| Преобразуйте 75% вашего |[physical-attack]| в|\n| |[toxicity]
+chromathorn-specialization-description,После попадания по вам:|\n|<.>| Урон как |[magic-damage]| по атакующему: |[active-armor]||\n|<.>| Каждый раз; когда по вам попадают; накладывайте |[poison]| на|\n| атакующего; который равен вашей |[toxicity]
+cinderthorn-specialization-description,После попадания по вам:|\n|<.>| Урон как |[magic-damage]| по атакующему: |[active-armor]*||\n|<.>| |[immolate]
+mindthorn-specialization-description,После попадания по вам:|\n|<.>| Урон как |[magic-damage]| по атакующему: |[active-armor]*||\n|<.>| +25%: |[wisdom]|<696969> (сбрасывается в каждом бою)
+thornfrost-specialization-description,После попадания по вам:|\n|<.>| Урон как |[magic-damage]| по атакующему: |[active-armor]*||\n|<.>| На атакующего применяется: 2 стака |[weakness]|
+dauntless-specialization-description,[1@warrior]|[*1@warrior]| Каждый раз; когда вы атакуете; получайте |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Когда вас атакуют; получайте |[combat-insight]|[0@warrior]
+quickblade-specialization-description,[1@warrior]|[*1@warrior]| Каждый раз; когда вы атакуете; получайте |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Когда вас атакуют; получайте |[combat-insight]|[0@warrior]|\n|\n|<.>| Каждый раз; когда вы |[parry]|; получайте +1 |[total-attacks]|\n|<696969> сбрасывается каждый бой
+rampager-specialization-description,[1@warrior]|[*1@warrior]| Каждый раз; когда вы атакуете; получайте |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Когда вас атакуют; получайте |[combat-insight]|[0@warrior]
+thunderborn-specialization-description,[1@warrior]|[*1@warrior]| Каждый раз; когда вы атакуете; получайте |[combat-insight]|\n|[4@warrior]|[*4@warrior]| Когда вас атакуют; получайте |[combat-insight]|[0@warrior]|\n|\n|<.>| Каждый раз; когда вы оглушаете врага; атакуйте его
+debilitator-specialization-description,[1@darkness]|[*1@darkness]| Наложите |[fear]| на всех врагов с меньшим уроном от атаки|\n|; чем у вас; в начале хода|[3@darkness]|\n|[*3@darkness]| После убийства врага; получите 2 стака |[dread]|[4@darkness]|\n|[*4@darkness]| В начале первого хода получите |[madness]|[0@darkness]
+mindbreaker-specialization-description,<.>| Наложите 2 стака |[madness]| на врагов с |[confusion]|\n|[1@darkness]|[*1@darkness]| Наложите |[fear]| на всех врагов с меньшим уроном от атаки|\n|; чем у вас; в начале хода|[3@darkness]|\n|[*3@darkness]| После убийства врага; получите 2 стака |[dread]|[4@darkness]|\n|[*4@darkness]| В начале первого хода получите |[madness]|[0@darkness]
+deserter-specialization-description,Если у цели более 90% |[health]|:|\n|[1@mercenary]|[1@mercenary]| Нанесите 25%|<00cd58> +|[luck]| увеличенного урона от атаки|\n|[3@mercenary]|[*3@mercenary]| Получите +1 |[total-attacks]| в этот ход|\n|\n|<.>| получайте +1 к |[total-attacks]| каждые 10 этажей
+faithbound-specialization-description,Если у цели более 90% |[health]|:|\n|[1@mercenary]|[1@mercenary]| Нанесите 25%|<00cd58> +|[luck]| увеличенного урона от атаки|\n|[3@mercenary]|[*3@mercenary]| Получите +1 |[total-attacks]| в этот ход|\n|\n|<.>| ПАССИВНЫЙ: |[judgments-call]
+echomancer-specialization-description,[1@unchained]|[*1@unchained]| Дебаффы применяются ко всем врагам|\n|[2@unchained]|[*2@unchained]| Вдвое больше дебаффов; которые вы накладываете
+evadium-specialization-description,[1@arcanum]|[*1@arcanum]| Пока |[magic-shield]| активен; |<7569f5>+375%|[magic-damage]|\n|[2@arcanum]|[*2@arcanum]| Получите |[magic-shield]| в конце хода|\n|[4@arcanum]|[*4@arcanum]| Получите |[magic-shield]| после убийства врага|\n|\n|<.> | Каждый раз; когда вы |[dodge]|; |[counter-attack]
+invulnerium-specialization-description,[1@arcanum]|[*1@arcanum]| Пока |[magic-shield]| активен; |<7569f5>+375%|[magic-damage]|\n|[2@arcanum]|[*2@arcanum]| Получите |[magic-shield]| в конце хода|\n|[4@arcanum]|[*4@arcanum]| Получите |[magic-shield]| после убийства врага|\n|\n|<.>| Когда ваш |[magic-shield]| сломается в первый раз; получите |[invulnerability]
+stunium-specialization-description,[1@arcanum]|[*1@arcanum]| Пока |[magic-shield]| активен; |<7569f5>+375%|[magic-damage]|\n|<.>| Когда ваш |[magic-shield]| ломается; |[stun]| всем врагам|\n|[2@arcanum]|[*2@arcanum]| Получите |[magic-shield]| в конце хода|\n|[4@arcanum]|[*4@arcanum]| Получите |[magic-shield]| после убийства врага
+harbinger-specialization-description,<.>| Нанесите +1000% урона от атаки врагам с |[arthurs-mark]|\n|\n|<.>| В начале боя получите |[invulnerability]|\n|\n|<.>| В конце вашего первого хода наложите заряд|\n| |[arthurs-mark]| на случайного врага|\n|\n|<.>| Когда враг с |[arthurs-mark]| умирает;|\n| он будет применен к другому врагу
+lionheart-specialization-description,<.>| Уменьшите урон на 1000% от врагов с |[arthurs-mark]|\n|\n|<.>| В начале боя получите |[invulnerability]|\n|\n|<.>| В конце вашего первого хода наложите заряд|\n| |[arthurs-mark]| на случайного врага|\n|\n|<.>| Когда враг с |[arthurs-mark]| умирает;|\n| он будет применен к другому врагу
+pursuer-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[dodge]| гарантировано; если у вас есть любое количество |[agility]|[3@scout]|\n|<.>| |[*3@scout]| После 3 |[dodge]|; станьте |[elusive]|[0@scout]|\n|\n|Каждый раз; когда вы избегаете атаки:|\n|<.>| Получайте {lethality-amount}% |[lethality]|<696969> - сбрасывается в каждом бою
+striker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[dodge]| гарантировано; если у вас есть любое количество |[agility]|[3@scout]|\n|<.>| |[*3@scout]| После 3 |[dodge]|; станьте |[elusive]|[0@scout]|\n|\n|Каждый раз; когда вы избегаете атаки:|\n|<.>| |[counter-attack]
+windwalker-specialization-description,[1@scout]|\n|<.>| |[*1@scout]|[dodge]| гарантировано; если у вас есть любое количество |[agility]|[3@scout]|\n|<.>| |[*3@scout]| После 3 |[dodge]|; станьте |[elusive]|[0@scout]|\n|\n|Каждый раз; когда вы избегаете атаки:
+honor-trial-description,<.>| Все враги получают 1 уровень
+resilience-trial-description,<.>| Все враги получат |[armor]|
+swarm-trial-description,<.>| В каждом бою будет по 6 врагов
+confrontation-trial-description,<.>| Все враги: +1 |[total-attacks]
+sagacity-trial-description,Добавляет таймер к вашим действиям; если|\n|таймер достигает 0; забег завершается
+?-label,
